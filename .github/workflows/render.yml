@@ -25,9 +25,9 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 120
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
@@ -56,7 +56,7 @@ jobs:
           COMPOSITION: ${{ inputs.composition }}
         run: npx remotion ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate -of csv=p=0 "out/$COMPOSITION.mp4"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: ${{ inputs.composition }}
           path: out/*.mp4
