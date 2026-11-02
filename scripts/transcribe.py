@@ -2,7 +2,8 @@
 
 Usage: .venv\\Scripts\\python scripts/transcribe.py <video> [--model small] [--language hi]
 
-Writes work/<video name>.transcript.json. Close Chrome first; this needs free RAM.
+Writes work/<video name>.<model>.transcript.json. Close Chrome first; this needs free RAM.
+Never use this output as a source for Quranic text.
 """
 import argparse
 import json
@@ -39,6 +40,7 @@ def main():
     loaded = time.perf_counter()
     segments, info = model.transcribe(
         str(wav), language=args.language, word_timestamps=True, vad_filter=True,
+        initial_prompt=(ROOT / "config" / "whisper_terms.txt").read_text(encoding="utf-8").strip(),
     )
 
     result = []
@@ -53,7 +55,7 @@ def main():
         print(f"[{segment.start:7.2f}] {segment.text.strip()}", flush=True)
     finished = time.perf_counter()
 
-    output = work / f"{args.video.stem}.transcript.json"
+    output = work / f"{args.video.stem}.{args.model}.transcript.json"
     output.write_text(
         json.dumps({"language": info.language, "model": args.model,
                     "durationSeconds": info.duration, "segments": result},
