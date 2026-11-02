@@ -1,6 +1,6 @@
 """Transcribe a video on the laptop with word timings.
 
-Usage: .venv\\Scripts\\python scripts/transcribe.py <video> [--model small] [--language hi]
+Usage: .venv\\Scripts\\python scripts/transcribe.py <video> [--model medium] [--language hi]
 
 Writes work/<video name>.<model>.transcript.json. Close Chrome first; this needs free RAM.
 Never use this output as a source for Quranic text.
@@ -19,7 +19,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("video", type=pathlib.Path)
-    parser.add_argument("--model", default="small")
+    parser.add_argument("--model", default="medium")
     parser.add_argument("--language", default="hi")
     args = parser.parse_args()
 
