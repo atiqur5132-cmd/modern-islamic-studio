@@ -22,7 +22,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 HOP_SECONDS = 0.01
 SAMPLE_RATE = 16000
-LOW_MARGIN_DB = 6  # above the room noise: catches quiet word endings
+LOW_MARGIN_DB = 8  # above the room noise: catches quiet word endings
+SMOOTHING_STEPS = 5  # 50 ms, so brief room-noise spikes do not read as speech
 HIGH_MARGIN_DB = 12  # above the room noise: clearly voiced sound
 MIN_VOICED_SECONDS = 0.3  # shorter bursts are breaths or mouth noise
 FLAG_UNTRANSCRIBED_SECONDS = 0.5
@@ -32,6 +33,7 @@ KEPT_PAUSE_SECONDS = 0.3  # the breath left where a pause was cut
 LEAD_IN_SECONDS = 0.1
 TAIL_SECONDS = 0.3
 CUT_MARGIN_SECONDS = 0.1  # room tone either side of a cut, for the audio crossfade
+WORD_TAIL_SECONDS = 0.15  # room after speech for a voice that trails off, as on "हैं"
 PHRASE_GAP_SECONDS = 0.3
 MIN_RETAKE_WORDS = 3
 RETAKE_SIMILARITY = 0.75
@@ -44,7 +46,8 @@ THUMB_WIDTH, THUMB_HEIGHT = 54, 96
 def loudness_db(samples):
     hop = int(HOP_SECONDS * SAMPLE_RATE)
     frames = samples[: len(samples) // hop * hop].reshape(-1, hop)
-    return 20 * np.log10(np.sqrt(np.mean(frames**2, axis=1)) + 1e-9)
+    db = 20 * np.log10(np.sqrt(np.mean(frames**2, axis=1)) + 1e-9)
+    return np.convolve(db, np.ones(SMOOTHING_STEPS) / SMOOTHING_STEPS, mode="same")
 
 
 def regions_of(mask):
@@ -167,7 +170,7 @@ def read_thumbnails(video):
 def best_cut(thumbs, speech_end, speech_start):
     """Choose the out and in frames, inside the pause, where the picture matches best."""
     removed_frames = round((speech_start - speech_end - KEPT_PAUSE_SECONDS) * FPS)
-    first = round((speech_end + CUT_MARGIN_SECONDS) * FPS)
+    first = round((speech_end + WORD_TAIL_SECONDS) * FPS)
     last = round((speech_start - CUT_MARGIN_SECONDS) * FPS) - removed_frames
     last = min(last, len(thumbs) - 1 - removed_frames)
     candidates = range(first, max(first, last) + 1)
