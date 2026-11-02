@@ -1,40 +1,125 @@
-import {useMemo} from "react";
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from "remotion";
+import {ThreeCanvas} from "@remotion/three";
+import {AbsoluteFill, interpolate, random, spring, useCurrentFrame, useVideoConfig} from "remotion";
+import {DoubleSide} from "three";
+import {useRidgeTexture, RidgePattern} from "../scenes/ridges";
 import {GOLD, IVORY, LATIN_FONT} from "../theme";
 import {GraphicFrame} from "./GraphicFrame";
 
-const WIDTH = 600;
-const HEIGHT = 760;
-const CENTER = {x: 300, y: 400};
-const RIDGES = 28;
-const RIDGE_STAGGER_FRAMES = 1.2;
-const RIDGE_DRAW_FRAMES = 22;
+const CANVAS_TOP = 700;
+const CANVAS_HEIGHT = 820;
+const MINUTIAE = 5;
+const RECORDS = {columns: 4, rows: 3};
+// A record at the edge of the grid, so the scanner pane never hides the match.
+const MATCH_RECORD = 3;
+const MATCH_LABEL_TOP = 1290;
+export const MATCH_FRAME = 70;
 
-// Ridge lines of a loop-pattern fingertip, built from distorted ellipses.
-const ridgePaths = () =>
-  Array.from({length: RIDGES}, (_, i) => {
-    const rx = 22 + i * 10.5;
-    const ry = 30 + i * 13;
-    const closed = i < 6;
-    const [from, to] = closed ? [0, Math.PI * 2] : [Math.PI * 0.62, Math.PI * 2.38];
-    const points: string[] = [];
-    for (let angle = from; angle <= to + 0.001; angle += Math.PI / 60) {
-      const wobble = 1 + 0.035 * Math.sin(3 * angle + i * 0.7) + 0.02 * Math.sin(7 * angle + i * 1.3);
-      const x = CENTER.x + rx * wobble * Math.cos(angle);
-      const y = CENTER.y + ry * wobble * Math.sin(angle) + (closed ? 0 : i * 1.5);
-      points.push(`${x.toFixed(1)} ${y.toFixed(1)}`);
-    }
-    return `M ${points.join(" L ")}`;
-  });
+const settle = (frame: number, fps: number, delay = 0) =>
+  spring({frame: frame - delay, fps, config: {damping: 200}});
 
-// Points where ridges end or split, the marks examiners compare.
-const MINUTIAE = [
-  {x: 228, y: 262, label: "RIDGE ENDING"},
-  {x: 392, y: 318, label: "BIFURCATION"},
-  {x: 196, y: 470, label: "DOT"},
-  {x: 418, y: 520, label: "RIDGE ENDING"},
-  {x: 300, y: 610, label: "BIFURCATION"},
-];
+// One fingerprint on a pane of glass, with its distinguishing points marked.
+const Print = ({
+  pattern,
+  seed,
+  x,
+  turn,
+  delay,
+}: {
+  pattern: RidgePattern;
+  seed: number;
+  x: number;
+  turn: number;
+  delay: number;
+}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const drawn = interpolate(frame - delay, [0, 30], [0, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp"});
+  const ridges = useRidgeTexture(pattern, seed, drawn, IVORY);
+  const enter = settle(frame, fps, delay);
+
+  return (
+    <group position={[x, 0, 0]} rotation={[0.1, turn + Math.sin(frame / 40 + seed) * 0.15, 0]} scale={enter}>
+      <mesh>
+        <circleGeometry args={[1.25, 64]} />
+        <meshStandardMaterial color="#1B2D52" transparent opacity={0.55} roughness={0.15} metalness={0.4} />
+      </mesh>
+      <mesh position={[0, 0, 0.01]} scale={[0.82, 1.05, 1]}>
+        <circleGeometry args={[1.25, 64]} />
+        <meshBasicMaterial map={ridges} transparent side={DoubleSide} depthWrite={false} />
+      </mesh>
+      {Array.from({length: MINUTIAE}, (_, index) => {
+        const show = spring({frame: frame - delay - 30 - index * 6, fps, config: {damping: 10, stiffness: 220}});
+        const angle = random(`minutia-a-${seed}-${index}`) * Math.PI * 2;
+        const distance = 0.25 + random(`minutia-d-${seed}-${index}`) * 0.7;
+        return (
+          <mesh
+            key={index}
+            position={[Math.cos(angle) * distance * 0.82, Math.sin(angle) * distance * 1.05, 0.03]}
+            scale={show}
+          >
+            <ringGeometry args={[0.07, 0.1, 32]} />
+            <meshBasicMaterial color={GOLD} transparent opacity={0.95} />
+          </mesh>
+        );
+      })}
+    </group>
+  );
+};
+
+// Two different prints side by side: no two have ever been found the same.
+const Comparison = () => (
+  <>
+    <Print pattern="loop" seed={1.7} x={-1.45} turn={0.35} delay={4} />
+    <Print pattern="whorl" seed={4.2} x={1.45} turn={-0.35} delay={12} />
+  </>
+);
+
+// A print on a scanner pane, swept by a beam and checked against stored records.
+const Scan = () => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const sweep = Math.sin(frame / 14) * 1.2;
+  const matched = settle(frame, fps, MATCH_FRAME);
+  const ridges = useRidgeTexture("loop", 1.7, 1, IVORY);
+
+  return (
+    <>
+      {Array.from({length: RECORDS.columns * RECORDS.rows}, (_, index) => {
+        const column = index % RECORDS.columns;
+        const row = Math.floor(index / RECORDS.columns);
+        const isMatch = index === MATCH_RECORD;
+        return (
+          <mesh key={index} position={[(column - 1.5) * 1.15, (row - 1) * 1.4 + 0.2, -3]}>
+            <planeGeometry args={[0.95, 1.2]} />
+            <meshBasicMaterial
+              color={isMatch ? GOLD : "#22375F"}
+              transparent
+              opacity={isMatch ? 0.25 + 0.75 * matched : 0.6}
+            />
+          </mesh>
+        );
+      })}
+      <group rotation={[-0.35, 0.25, 0]}>
+        <mesh>
+          <boxGeometry args={[2.3, 2.9, 0.06]} />
+          <meshStandardMaterial color="#9FB6E6" transparent opacity={0.18} roughness={0.05} metalness={0.6} />
+        </mesh>
+        <mesh position={[0, 0, 0.04]} scale={[0.82, 1.05, 1]}>
+          <circleGeometry args={[1.15, 64]} />
+          <meshBasicMaterial map={ridges} transparent depthWrite={false} />
+        </mesh>
+        <mesh position={[0, sweep, 0.08]}>
+          <boxGeometry args={[2.5, 0.05, 0.02]} />
+          <meshBasicMaterial color={GOLD} />
+        </mesh>
+        <mesh position={[0, sweep - 0.25, 0.07]}>
+          <planeGeometry args={[2.5, 0.5]} />
+          <meshBasicMaterial color={GOLD} transparent opacity={0.18} depthWrite={false} />
+        </mesh>
+      </group>
+    </>
+  );
+};
 
 export const Fingerprint = ({
   mode,
@@ -48,11 +133,9 @@ export const Fingerprint = ({
   fact: string;
 }) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const paths = useMemo(ridgePaths, []);
+  const {fps, width} = useVideoConfig();
+  const factIn = settle(frame, fps, 24);
   const scanning = mode === "scan";
-  const factIn = spring({frame: frame - 24, fps, config: {damping: 200}});
-  const scanY = interpolate(frame % 50, [0, 50], [80, 720]);
 
   return (
     <GraphicFrame tag={tag} heading={heading}>
@@ -72,78 +155,24 @@ export const Fingerprint = ({
       >
         {fact}
       </div>
-      <svg
-        viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-        style={{position: "absolute", top: 760, left: 295, width: 490, height: 620}}
-      >
-        <defs>
-          <clipPath id="fingertip">
-            <ellipse cx={CENTER.x} cy={CENTER.y + 20} rx={235} ry={330} />
-          </clipPath>
-          <linearGradient id="scan" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0" stopColor={GOLD} stopOpacity="0" />
-            <stop offset="1" stopColor={GOLD} stopOpacity="0.55" />
-          </linearGradient>
-          <filter id="glow">
-            <feGaussianBlur stdDeviation="3" result="blur" />
-            <feMerge>
-              <feMergeNode in="blur" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
-        <g clipPath="url(#fingertip)" filter="url(#glow)">
-          {paths.map((d, i) => {
-            const drawn = scanning
-              ? 1
-              : interpolate(
-                  frame,
-                  [i * RIDGE_STAGGER_FRAMES, i * RIDGE_STAGGER_FRAMES + RIDGE_DRAW_FRAMES],
-                  [0, 1],
-                  {extrapolateLeft: "clamp", extrapolateRight: "clamp"},
-                );
-            return (
-              <path
-                key={d}
-                d={d}
-                pathLength={1}
-                fill="none"
-                stroke={IVORY}
-                strokeOpacity={0.85}
-                strokeWidth={5}
-                strokeLinecap="round"
-                strokeDasharray={1}
-                strokeDashoffset={1 - drawn}
-              />
-            );
-          })}
-          {scanning ? <rect x={0} y={scanY - 90} width={WIDTH} height={90} fill="url(#scan)" /> : null}
-        </g>
-        {scanning
-          ? MINUTIAE.map((point, i) => {
-              const show = spring({frame: frame - 10 - i * 9, fps, config: {damping: 12, stiffness: 200}});
-              const right = point.x > CENTER.x;
-              return (
-                <g key={`${point.x}-${point.y}`} opacity={show}>
-                  <circle cx={point.x} cy={point.y} r={16 * show} fill="none" stroke={GOLD} strokeWidth={4} />
-                  <line
-                    x1={point.x + (right ? 16 : -16)}
-                    y1={point.y}
-                    x2={right ? 560 : 40}
-                    y2={point.y}
-                    stroke={GOLD}
-                    strokeWidth={2}
-                  />
-                </g>
-              );
-            })
-          : null}
-      </svg>
+      <AbsoluteFill style={{top: CANVAS_TOP, height: CANVAS_HEIGHT}}>
+        <ThreeCanvas
+          width={width}
+          height={CANVAS_HEIGHT}
+          gl={{alpha: true, antialias: true}}
+          camera={{position: [0, 0, 7], fov: 40}}
+        >
+          <ambientLight intensity={0.6} />
+          <directionalLight position={[-3, 4, 6]} intensity={1.5} />
+          <pointLight position={[Math.sin(frame / 20) * 3, 1, 3]} intensity={20} color={GOLD} />
+          {scanning ? <Scan /> : <Comparison />}
+        </ThreeCanvas>
+      </AbsoluteFill>
       {scanning ? (
         <div
           style={{
             position: "absolute",
-            top: 1350,
+            top: MATCH_LABEL_TOP,
             width: "100%",
             textAlign: "center",
             fontFamily: LATIN_FONT,
@@ -151,12 +180,28 @@ export const Fingerprint = ({
             fontSize: 46,
             letterSpacing: 8,
             color: GOLD,
-            opacity: spring({frame: frame - 60, fps, config: {damping: 200}}),
+            opacity: settle(frame, fps, MATCH_FRAME),
           }}
         >
           PEHCHAAN: MATCH
         </div>
-      ) : null}
+      ) : (
+        <div
+          style={{
+            position: "absolute",
+            top: CANVAS_TOP + CANVAS_HEIGHT / 2 - 70,
+            width: "100%",
+            textAlign: "center",
+            fontFamily: LATIN_FONT,
+            fontWeight: 900,
+            fontSize: 110,
+            color: GOLD,
+            opacity: settle(frame, fps, 40),
+          }}
+        >
+          ≠
+        </div>
+      )}
     </GraphicFrame>
   );
 };

@@ -13,4 +13,5 @@ models/
 *.mp4
 *.mov
 *.wav
+!public/sfx/*.wav
 *.m4a

@@ -17,6 +17,9 @@ import {Fingerprint} from "../overlays/Fingerprint";
 import {Statement} from "../overlays/Statement";
 import {Title} from "../overlays/Title";
 import {BonesScene} from "../scenes/BonesScene";
+import {FingertipScene} from "../scenes/FingertipScene";
+import {Grain} from "../overlays/Grain";
+import {soundCues} from "../timeline/sfx";
 import {GOLD, NAVY, PIP} from "../theme";
 import {
   Edit,
@@ -36,6 +39,7 @@ const FACE_FOCUS = {x: 540, y: 730};
 const CROSSFADE_HALF_FRAMES = 3;
 
 const CAPTION_HOLD_FRAMES = 8;
+const SFX_FRAMES = FPS;
 // Graphics that already put the spoken words on screen; captions would repeat them.
 const SPOKEN_TEXT_TYPES: Overlay["type"][] = ["statement", "endcard"];
 const PIP_MOVE_FRAMES = 9;
@@ -73,7 +77,7 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[]) => {
     case "broll":
       return <Broll src={overlay.src} blur={overlay.blur} />;
     case "scene":
-      return <BonesScene />;
+      return overlay.scene === "bones" ? <BonesScene /> : <FingertipScene />;
   }
 };
 
@@ -83,11 +87,22 @@ export const Short = ({footage, segments, overlays, captions}: Edit) => {
   const fullScreen = overlays.filter((o) => FULL_SCREEN_TYPES.includes(o.type));
   const layered = overlays.filter((o) => !FULL_SCREEN_TYPES.includes(o.type));
 
+  // Back-to-back full-screen graphics count as one stretch, so the speaker stays
+  // in the corner between them instead of jumping back for a frame.
+  const stretches: {start: number; end: number}[] = [];
+  for (const range of fullScreen.map((o) => outputRange(segments, o)).sort((a, b) => a.start - b.start)) {
+    const last = stretches[stretches.length - 1];
+    if (last && range.start <= last.end + 1) {
+      last.end = Math.max(last.end, range.end);
+    } else {
+      stretches.push({...range});
+    }
+  }
+
   // 0 = speaker fills the frame, 1 = speaker in the corner circle.
   const pip = Math.max(
     0,
-    ...fullScreen.map((overlay) => {
-      const {start, end} = outputRange(segments, overlay);
+    ...stretches.map(({start, end}) => {
       if (end - start < 2 * PIP_MOVE_FRAMES) {
         return 0;
       }
@@ -101,6 +116,8 @@ export const Short = ({footage, segments, overlays, captions}: Edit) => {
   );
   const pipScale = interpolate(pip, [0, 1], [1, PIP.radius / 360]);
   const clipRadius = interpolate(pip, [0, 1], [1600, 360]);
+
+  const cues = soundCues(segments, overlays, stretches);
 
   const renderTimed = (overlay: Overlay) => {
     const {start, end} = outputRange(segments, overlay);
@@ -188,7 +205,13 @@ export const Short = ({footage, segments, overlays, captions}: Edit) => {
           </Sequence>
         );
       })}
+      {cues.map((cue, index) => (
+        <Sequence key={`sfx-${index}`} from={cue.frame} durationInFrames={SFX_FRAMES}>
+          <Audio src={staticFile(`sfx/${cue.sound}.wav`)} volume={cue.volume} />
+        </Sequence>
+      ))}
       {layered.map(renderTimed)}
+      <Grain />
       {captions.map((phrase, index) => {
         const start = sourceToOutputFrame(segments, phrase[0].start);
         const lastWord = phrase[phrase.length - 1];

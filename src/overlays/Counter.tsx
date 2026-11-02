@@ -2,7 +2,8 @@ import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConf
 import {GOLD, IVORY, LATIN_FONT, NAVY, SAFE_AREA} from "../theme";
 import {EmphasisText} from "./Emphasis";
 
-const COUNT_FRAMES = [4, 40];
+export const COUNTER_LANDS_FRAME = 40;
+const COUNT_FRAMES = [4, COUNTER_LANDS_FRAME];
 
 // A hook number that counts up, with a label and a short line under it.
 export const Counter = ({value, label, text}: {value: number; label: string; text: string}) => {

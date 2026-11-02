@@ -96,6 +96,12 @@
       "ayah": "75:4"
     },
     {
+      "type": "scene",
+      "scene": "fingertip",
+      "start": 16.7,
+      "end": 21.7
+    },
+    {
       "type": "broll",
       "start": 26.1,
       "end": 28.3,

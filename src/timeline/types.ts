@@ -26,7 +26,7 @@ export type EndCardOverlay = Timed & {type: "endcard"; lines: string[]};
 export type BrollOverlay = Timed & {type: "broll"; src: string; blur?: number};
 
 // Code-built 3D scenes, named by what they show.
-export type SceneOverlay = Timed & {type: "scene"; scene: "bones"};
+export type SceneOverlay = Timed & {type: "scene"; scene: "bones" | "fingertip"};
 
 export type Overlay =
   | TitleOverlay

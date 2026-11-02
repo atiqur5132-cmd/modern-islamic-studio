@@ -1,34 +1,14 @@
-import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from "remotion";
-import {GOLD, IVORY, LATIN_FONT, NAVY, NAVY_LIGHT} from "../theme";
+import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from "remotion";
+import {StarField} from "../scenes/StarField";
+import {IVORY, LATIN_FONT, NAVY, NAVY_LIGHT} from "../theme";
 import {EmphasisText} from "./Emphasis";
 
-const TILE = 180;
 const LINE_STAGGER_FRAMES = 14;
-
-// One eight-pointed star: two overlapping squares, a classic Islamic motif.
-const Star = ({x, y}: {x: number; y: number}) => {
-  const half = TILE * 0.32;
-  const square = `${-half},${-half} ${half},${-half} ${half},${half} ${-half},${half}`;
-  return (
-    <g transform={`translate(${x} ${y})`}>
-      <polygon points={square} />
-      <polygon points={square} transform="rotate(45)" />
-    </g>
-  );
-};
 
 export const EndCard = ({lines}: {lines: string[]}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const enter = spring({frame, fps, config: {damping: 200}});
-  const drift = interpolate(frame, [0, 300], [0, TILE]);
-
-  const stars = [];
-  for (let row = -1; row < 1920 / TILE + 2; row++) {
-    for (let column = -1; column < 1080 / TILE + 2; column++) {
-      stars.push(<Star key={`${row}-${column}`} x={column * TILE} y={row * TILE} />);
-    }
-  }
 
   return (
     <AbsoluteFill
@@ -40,11 +20,9 @@ export const EndCard = ({lines}: {lines: string[]}) => {
         fontFamily: LATIN_FONT,
       }}
     >
-      <svg width={1080} height={1920} style={{position: "absolute", top: 0, left: 0, opacity: 0.12}}>
-        <g transform={`translate(0 ${drift})`} fill="none" stroke={GOLD} strokeWidth={2}>
-          {stars}
-        </g>
-      </svg>
+      <StarField />
+      {/* A dark centre so the lines stay readable over the lit stars. */}
+      <AbsoluteFill style={{background: `radial-gradient(ellipse at 50% 50%, ${NAVY}F5 0%, ${NAVY}D0 30%, ${NAVY}00 70%)`}} />
       {lines.map((line, index) => {
         const land = spring({
           frame: frame - 8 - index * LINE_STAGGER_FRAMES,
@@ -55,6 +33,7 @@ export const EndCard = ({lines}: {lines: string[]}) => {
           <div
             key={line}
             style={{
+              position: "relative",
               fontWeight: 900,
               fontSize: 96,
               lineHeight: 1.2,
