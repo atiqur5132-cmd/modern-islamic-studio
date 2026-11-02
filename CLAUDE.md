@@ -42,7 +42,17 @@ npm run dev
 ```
 
 ```bash
+.venv\Scripts\python scripts/auto_edit.py public/footage/clip.mp4
+```
+
+```bash
 .venv\Scripts\python scripts/render_on_github.py Short --props projects/clip/edit.json --footage public/footage/clip.mp4
 ```
+
+```bash
+.venv\Scripts\python -m unittest discover tests
+```
+
+`auto_edit.py` writes every decision to `work/<clip>.auto_edit.json`. Read it before rendering: `lostWords` must be empty, and `untranscribedSoundKept` may be recitation that needs a human ear. Overlay times are on the source footage, so re-running it never moves an Ayah off its spoken words.
 
 Each video has `projects/<name>/edit.json`: its footage, kept segments and overlays. Add `--vertical` to the prepare step only for real landscape footage; phone clips marked with rotation are already vertical.

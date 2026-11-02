@@ -1,10 +1,13 @@
-import {AbsoluteFill, OffthreadVideo, Sequence, staticFile} from "remotion";
+import {AbsoluteFill, interpolate, OffthreadVideo, Sequence, staticFile} from "remotion";
 import {AyahCard} from "../overlays/AyahCard";
 import {Title} from "../overlays/Title";
 import {NAVY} from "../theme";
-import {Edit, FPS, toFrames} from "../timeline/types";
+import {Edit, FPS, segmentFrames, sourceToOutputFrame, toFrames} from "../timeline/types";
 
 const SEGMENT_PREMOUNT_FRAMES = FPS;
+const AUDIO_FADE_FRAMES = 2;
+
+const FACE_FOCUS = "50% 38%";
 
 export const Short = ({footage, segments, overlays}: Edit) => {
   let cursor = 0;
@@ -12,38 +15,53 @@ export const Short = ({footage, segments, overlays}: Edit) => {
   return (
     <AbsoluteFill style={{backgroundColor: NAVY}}>
       {segments.map((segment) => {
-        const trimBefore = toFrames(segment.from);
-        const trimAfter = toFrames(segment.to);
+        const length = segmentFrames(segment);
         const from = cursor;
-        cursor += trimAfter - trimBefore;
+        cursor += length;
         return (
           <Sequence
             key={segment.from}
             from={from}
-            durationInFrames={trimAfter - trimBefore}
+            durationInFrames={length}
             premountFor={SEGMENT_PREMOUNT_FRAMES}
           >
             <OffthreadVideo
               src={staticFile(`footage/${footage}`)}
-              trimBefore={trimBefore}
-              trimAfter={trimAfter}
+              trimBefore={toFrames(segment.from)}
+              trimAfter={toFrames(segment.to)}
+              volume={(frame) =>
+                interpolate(
+                  frame,
+                  [0, AUDIO_FADE_FRAMES, length - AUDIO_FADE_FRAMES, length],
+                  [0, 1, 1, 0],
+                  {extrapolateLeft: "clamp", extrapolateRight: "clamp"},
+                )
+              }
+              style={{transform: `scale(${segment.zoom})`, transformOrigin: FACE_FOCUS}}
             />
           </Sequence>
         );
       })}
-      {overlays.map((overlay) => (
-        <Sequence
-          key={`${overlay.type}-${overlay.start}`}
-          from={toFrames(overlay.start)}
-          durationInFrames={toFrames(overlay.end) - toFrames(overlay.start)}
-        >
-          {overlay.type === "title" ? (
-            <Title text={overlay.text} />
-          ) : (
-            <AyahCard ayahKey={overlay.ayah} />
-          )}
-        </Sequence>
-      ))}
+      {overlays.map((overlay) => {
+        const start = sourceToOutputFrame(segments, overlay.start);
+        const end = sourceToOutputFrame(segments, overlay.end);
+        if (end <= start) {
+          return null;
+        }
+        return (
+          <Sequence
+            key={`${overlay.type}-${overlay.start}`}
+            from={start}
+            durationInFrames={end - start}
+          >
+            {overlay.type === "title" ? (
+              <Title text={overlay.text} />
+            ) : (
+              <AyahCard ayahKey={overlay.ayah} />
+            )}
+          </Sequence>
+        );
+      })}
     </AbsoluteFill>
   );
 };
