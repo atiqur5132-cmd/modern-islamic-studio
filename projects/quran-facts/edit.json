@@ -63,10 +63,12 @@
   ],
   "overlays": [
     {
-      "type": "title",
+      "type": "counter",
       "start": 0.3,
-      "end": 5.2,
-      "text": "*1400 साल पहले* उंगलियों के पोरों का ज़िक्र"
+      "end": 5.1,
+      "value": 1400,
+      "label": "SAAL PEHLE",
+      "text": "ungliyon ke *poron* ka zikr"
     },
     {
       "type": "ayah",
@@ -79,30 +81,70 @@
       "start": 16.7,
       "end": 21.7,
       "ayah": "75:4"
+    },
+    {
+      "type": "fingerprint",
+      "start": 28.35,
+      "end": 31.81,
+      "mode": "unique",
+      "tag": "SCIENCE · ESTABLISHED",
+      "heading": "Har fingerprint *unique*",
+      "fact": "Ab tak kisi do insaanon ke fingerprints ek jaise nahi mile, identical twins ke bhi nahi."
+    },
+    {
+      "type": "fingerprint",
+      "start": 31.81,
+      "end": 37.9,
+      "mode": "scan",
+      "tag": "FORENSIC SCIENCE",
+      "heading": "Fingerprint se *pehchaan*",
+      "fact": "Crime scene par mile prints ko record se milakar insaan pehchana jaata hai."
+    },
+    {
+      "type": "statement",
+      "start": 42.2,
+      "end": 46.6,
+      "tag": "QURANIC CONTEXT",
+      "lines": [
+        "Is aayat ka",
+        "*asal context:*",
+        "Qayamat ke din",
+        "*dobara zinda* karna"
+      ]
+    },
+    {
+      "type": "endcard",
+      "start": 57.8,
+      "end": 63.2,
+      "lines": [
+        "Quran *padho*",
+        "Gaur *karo*",
+        "Paighaam *samjho*"
+      ]
     }
   ],
   "captions": [
     [
       {
-        "text": "क्या",
+        "text": "Kya",
         "start": 0.0,
         "end": 0.26,
         "emphasis": false
       },
       {
-        "text": "तुम्हें",
+        "text": "tumhe",
         "start": 0.26,
         "end": 0.56,
         "emphasis": false
       },
       {
-        "text": "पता",
+        "text": "pata",
         "start": 0.56,
         "end": 0.76,
         "emphasis": false
       },
       {
-        "text": "है,",
+        "text": "hai,",
         "start": 0.76,
         "end": 0.94,
         "emphasis": false
@@ -110,13 +152,13 @@
     ],
     [
       {
-        "text": "क़ुरान",
+        "text": "Quran",
         "start": 1.02,
         "end": 1.34,
         "emphasis": false
       },
       {
-        "text": "में",
+        "text": "mein",
         "start": 1.34,
         "end": 1.48,
         "emphasis": false
@@ -128,7 +170,7 @@
         "emphasis": true
       },
       {
-        "text": "साल",
+        "text": "saal",
         "start": 1.98,
         "end": 2.18,
         "emphasis": true
@@ -136,31 +178,31 @@
     ],
     [
       {
-        "text": "पहले",
+        "text": "pehle",
         "start": 2.18,
         "end": 2.44,
         "emphasis": false
       },
       {
-        "text": "इंसान",
+        "text": "insaan",
         "start": 2.44,
         "end": 2.84,
         "emphasis": false
       },
       {
-        "text": "की",
+        "text": "ki",
         "start": 2.84,
         "end": 2.98,
         "emphasis": false
       },
       {
-        "text": "उंगलियों",
+        "text": "ungliyon",
         "start": 2.98,
         "end": 3.42,
         "emphasis": false
       },
       {
-        "text": "के",
+        "text": "ke",
         "start": 3.42,
         "end": 3.48,
         "emphasis": false
@@ -168,37 +210,37 @@
     ],
     [
       {
-        "text": "पोरों",
+        "text": "poron",
         "start": 3.48,
         "end": 3.82,
         "emphasis": true
       },
       {
-        "text": "का",
+        "text": "ka",
         "start": 3.82,
         "end": 3.96,
         "emphasis": false
       },
       {
-        "text": "ज़िक्र",
+        "text": "zikr",
         "start": 3.96,
         "end": 4.26,
         "emphasis": false
       },
       {
-        "text": "किया",
+        "text": "kiya",
         "start": 4.26,
         "end": 4.5,
         "emphasis": false
       },
       {
-        "text": "गया",
+        "text": "gaya",
         "start": 4.5,
         "end": 4.72,
         "emphasis": false
       },
       {
-        "text": "था?",
+        "text": "tha?",
         "start": 4.72,
         "end": 5.18,
         "emphasis": false
@@ -206,33 +248,33 @@
     ],
     [
       {
-        "text": "सूरह",
+        "text": "Surah",
         "start": 5.18,
         "end": 5.88,
         "emphasis": false
       },
       {
-        "text": "अल-क़ियामह",
+        "text": "Al-Qiyamah",
         "start": 5.96,
         "end": 6.48,
         "emphasis": false
       },
       {
-        "text": "की",
+        "text": "ki",
         "start": 6.48,
         "end": 6.58,
-        "emphasis": false
-      },
-      {
-        "text": "आयत",
-        "start": 6.58,
-        "end": 6.9,
         "emphasis": false
       }
     ],
     [
       {
-        "text": "नंबर",
+        "text": "aayat",
+        "start": 6.58,
+        "end": 6.9,
+        "emphasis": false
+      },
+      {
+        "text": "number",
         "start": 6.9,
         "end": 7.22,
         "emphasis": false
@@ -244,11 +286,13 @@
         "emphasis": false
       },
       {
-        "text": "और",
+        "text": "aur",
         "start": 7.54,
         "end": 7.7,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "4",
         "start": 7.7,
@@ -256,33 +300,33 @@
         "emphasis": false
       },
       {
-        "text": "में",
+        "text": "mein",
         "start": 8.0,
         "end": 8.26,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
-        "text": "अल्लाह",
+        "text": "Allah",
         "start": 8.26,
         "end": 8.56,
         "emphasis": false
       },
       {
-        "text": "तआला",
+        "text": "Ta'ala",
         "start": 8.56,
         "end": 8.76,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
-        "text": "फ़रमाते",
+        "text": "farmate",
         "start": 8.76,
         "end": 9.32,
         "emphasis": false
       },
       {
-        "text": "हैं,",
+        "text": "hain,",
         "start": 9.32,
         "end": 10.46,
         "emphasis": false
@@ -290,63 +334,63 @@
     ],
     [
       {
-        "text": "क्या",
+        "text": "kya",
         "start": 12.31,
         "end": 12.71,
         "emphasis": false
       },
       {
-        "text": "इंसान",
+        "text": "insaan",
         "start": 12.71,
         "end": 13.11,
         "emphasis": false
       },
       {
-        "text": "यह",
+        "text": "yeh",
         "start": 13.11,
         "end": 13.21,
         "emphasis": false
       },
       {
-        "text": "समझता",
+        "text": "samajhta",
         "start": 13.21,
         "end": 13.79,
         "emphasis": false
       },
       {
-        "text": "है",
+        "text": "hai",
         "start": 13.79,
         "end": 13.83,
+        "emphasis": false
+      },
+      {
+        "text": "ki",
+        "start": 13.83,
+        "end": 13.97,
         "emphasis": false
       }
     ],
     [
       {
-        "text": "कि",
-        "start": 13.83,
-        "end": 13.97,
-        "emphasis": false
-      },
-      {
-        "text": "हम",
+        "text": "hum",
         "start": 13.97,
         "end": 14.17,
         "emphasis": false
       },
       {
-        "text": "उसकी",
+        "text": "uski",
         "start": 14.17,
         "end": 14.49,
         "emphasis": false
       },
       {
-        "text": "हड्डियों",
+        "text": "haddiyon",
         "start": 14.49,
         "end": 14.99,
         "emphasis": false
       },
       {
-        "text": "को",
+        "text": "ko",
         "start": 14.99,
         "end": 15.21,
         "emphasis": false
@@ -354,25 +398,25 @@
     ],
     [
       {
-        "text": "जमा",
+        "text": "jama",
         "start": 15.21,
         "end": 15.63,
         "emphasis": false
       },
       {
-        "text": "नहीं",
+        "text": "nahi",
         "start": 15.63,
         "end": 15.89,
         "emphasis": false
       },
       {
-        "text": "कर",
+        "text": "kar",
         "start": 15.89,
         "end": 16.09,
         "emphasis": false
       },
       {
-        "text": "सकेंगे?",
+        "text": "sakenge?",
         "start": 16.09,
         "end": 16.77,
         "emphasis": false
@@ -380,13 +424,13 @@
     ],
     [
       {
-        "text": "क्यों",
+        "text": "Kyon",
         "start": 17.03,
         "end": 17.15,
         "emphasis": false
       },
       {
-        "text": "नहीं?",
+        "text": "nahi?",
         "start": 17.15,
         "end": 17.57,
         "emphasis": false
@@ -394,31 +438,31 @@
     ],
     [
       {
-        "text": "हम",
+        "text": "Hum",
         "start": 17.77,
         "end": 18.21,
         "emphasis": false
       },
       {
-        "text": "तो",
+        "text": "to",
         "start": 18.21,
         "end": 18.37,
         "emphasis": false
       },
       {
-        "text": "उसकी",
+        "text": "uski",
         "start": 18.37,
         "end": 18.71,
         "emphasis": false
       },
       {
-        "text": "उंगलियों",
+        "text": "ungliyon",
         "start": 18.71,
         "end": 19.21,
         "emphasis": false
       },
       {
-        "text": "के",
+        "text": "ke",
         "start": 19.21,
         "end": 19.33,
         "emphasis": false
@@ -426,25 +470,25 @@
     ],
     [
       {
-        "text": "पोरों",
+        "text": "poron",
         "start": 19.33,
         "end": 19.71,
         "emphasis": true
       },
       {
-        "text": "तक",
+        "text": "tak",
         "start": 19.71,
         "end": 19.99,
         "emphasis": false
       },
       {
-        "text": "को",
+        "text": "ko",
         "start": 19.99,
         "end": 20.15,
         "emphasis": false
       },
       {
-        "text": "ठीक",
+        "text": "theek",
         "start": 20.15,
         "end": 20.47,
         "emphasis": false
@@ -452,25 +496,25 @@
     ],
     [
       {
-        "text": "करने",
+        "text": "karne",
         "start": 20.47,
         "end": 20.85,
         "emphasis": false
       },
       {
-        "text": "पर",
+        "text": "par",
         "start": 20.85,
         "end": 21.09,
         "emphasis": false
       },
       {
-        "text": "क़ादिर",
+        "text": "qaadir",
         "start": 21.09,
         "end": 21.41,
         "emphasis": false
       },
       {
-        "text": "हैं।",
+        "text": "hain.",
         "start": 21.41,
         "end": 21.77,
         "emphasis": false
@@ -478,25 +522,25 @@
     ],
     [
       {
-        "text": "अब",
+        "text": "Ab",
         "start": 21.77,
         "end": 23.38,
         "emphasis": false
       },
       {
-        "text": "ज़रा",
+        "text": "zara",
         "start": 23.38,
         "end": 23.74,
         "emphasis": false
       },
       {
-        "text": "ग़ौर",
+        "text": "gaur",
         "start": 23.74,
         "end": 23.94,
         "emphasis": false
       },
       {
-        "text": "करो,",
+        "text": "karo,",
         "start": 23.94,
         "end": 24.62,
         "emphasis": false
@@ -504,91 +548,91 @@
     ],
     [
       {
-        "text": "आज",
+        "text": "aaj",
         "start": 26.13,
         "end": 26.85,
         "emphasis": false
       },
       {
-        "text": "मॉडर्न",
+        "text": "modern",
         "start": 26.85,
         "end": 27.39,
         "emphasis": false
       },
       {
-        "text": "साइंस",
+        "text": "science",
         "start": 27.39,
         "end": 27.75,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
-        "text": "जानती",
+        "text": "jaanti",
         "start": 27.75,
         "end": 28.23,
         "emphasis": false
       },
       {
-        "text": "है",
+        "text": "hai",
         "start": 28.23,
         "end": 28.35,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
-        "text": "कि",
+        "text": "ki",
         "start": 28.35,
         "end": 28.49,
         "emphasis": false
       },
       {
-        "text": "हर",
+        "text": "har",
         "start": 28.49,
         "end": 28.67,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
-        "text": "इंसान",
+        "text": "insaan",
         "start": 28.67,
         "end": 29.09,
         "emphasis": false
       },
       {
-        "text": "के",
+        "text": "ke",
         "start": 29.09,
         "end": 29.19,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
-        "text": "फिंगरप्रिंट्स",
+        "text": "fingerprints",
         "start": 29.19,
         "end": 30.01,
         "emphasis": true
-      },
-      {
-        "text": "बहुत",
-        "start": 30.01,
-        "end": 30.39,
-        "emphasis": false
       }
     ],
     [
       {
-        "text": "डिस्टिंक्टिव",
+        "text": "bahut",
+        "start": 30.01,
+        "end": 30.39,
+        "emphasis": false
+      },
+      {
+        "text": "distinctive",
         "start": 30.39,
         "end": 31.03,
         "emphasis": false
       },
       {
-        "text": "होते",
+        "text": "hote",
         "start": 31.03,
         "end": 31.37,
         "emphasis": false
       },
       {
-        "text": "हैं।",
+        "text": "hain.",
         "start": 31.37,
         "end": 31.81,
         "emphasis": false
@@ -596,25 +640,25 @@
     ],
     [
       {
-        "text": "इसीलिए",
+        "text": "Isiliye",
         "start": 31.81,
         "end": 32.23,
         "emphasis": false
       },
       {
-        "text": "फ़ॉरेंसिक",
+        "text": "forensic",
         "start": 32.23,
         "end": 32.77,
         "emphasis": false
       },
       {
-        "text": "साइंस",
+        "text": "science",
         "start": 32.77,
         "end": 33.15,
         "emphasis": false
       },
       {
-        "text": "में",
+        "text": "mein",
         "start": 33.15,
         "end": 33.49,
         "emphasis": false
@@ -622,39 +666,39 @@
     ],
     [
       {
-        "text": "फिंगरप्रिंट्स",
+        "text": "fingerprints",
         "start": 33.49,
         "end": 34.25,
         "emphasis": false
       },
       {
-        "text": "का",
+        "text": "ka",
         "start": 34.25,
         "end": 34.39,
+        "emphasis": false
+      },
+      {
+        "text": "istemaal",
+        "start": 34.39,
+        "end": 34.91,
         "emphasis": false
       }
     ],
     [
       {
-        "text": "इस्तेमाल",
-        "start": 34.39,
-        "end": 34.91,
-        "emphasis": false
-      },
-      {
-        "text": "किसी",
+        "text": "kisi",
         "start": 34.91,
         "end": 35.25,
         "emphasis": false
       },
       {
-        "text": "की",
+        "text": "ki",
         "start": 35.25,
         "end": 35.37,
         "emphasis": false
       },
       {
-        "text": "पहचान",
+        "text": "pehchaan",
         "start": 35.37,
         "end": 35.85,
         "emphasis": false
@@ -662,25 +706,25 @@
     ],
     [
       {
-        "text": "एस्टैब्लिश",
+        "text": "establish",
         "start": 35.85,
         "end": 36.39,
         "emphasis": false
       },
       {
-        "text": "करने",
+        "text": "karne",
         "start": 36.39,
         "end": 36.73,
         "emphasis": false
       },
       {
-        "text": "के",
+        "text": "ke",
         "start": 36.73,
         "end": 36.97,
         "emphasis": false
       },
       {
-        "text": "लिए",
+        "text": "liye",
         "start": 36.97,
         "end": 37.05,
         "emphasis": false
@@ -688,19 +732,19 @@
     ],
     [
       {
-        "text": "किया",
+        "text": "kiya",
         "start": 37.05,
         "end": 37.35,
         "emphasis": false
       },
       {
-        "text": "जाता",
+        "text": "jaata",
         "start": 37.35,
         "end": 37.65,
         "emphasis": false
       },
       {
-        "text": "है।",
+        "text": "hai.",
         "start": 37.65,
         "end": 37.99,
         "emphasis": false
@@ -708,19 +752,19 @@
     ],
     [
       {
-        "text": "लेकिन",
+        "text": "Lekin",
         "start": 40.95,
         "end": 41.57,
         "emphasis": false
       },
       {
-        "text": "याद",
+        "text": "yaad",
         "start": 41.57,
         "end": 41.81,
         "emphasis": false
       },
       {
-        "text": "रखो,",
+        "text": "rakho,",
         "start": 41.81,
         "end": 42.15,
         "emphasis": false
@@ -728,25 +772,25 @@
     ],
     [
       {
-        "text": "इस",
+        "text": "is",
         "start": 42.27,
         "end": 42.39,
         "emphasis": false
       },
       {
-        "text": "आयत",
+        "text": "aayat",
         "start": 42.39,
         "end": 42.73,
         "emphasis": false
       },
       {
-        "text": "का",
+        "text": "ka",
         "start": 42.73,
         "end": 42.89,
         "emphasis": false
       },
       {
-        "text": "असल",
+        "text": "asal",
         "start": 42.89,
         "end": 43.15,
         "emphasis": true
@@ -754,65 +798,65 @@
     ],
     [
       {
-        "text": "कॉन्टेक्स्ट",
+        "text": "context",
         "start": 43.15,
         "end": 43.67,
         "emphasis": true
       },
       {
-        "text": "क़यामत",
+        "text": "Qayamat",
         "start": 43.67,
         "end": 44.19,
         "emphasis": false
       },
       {
-        "text": "के",
+        "text": "ke",
         "start": 44.19,
         "end": 44.27,
+        "emphasis": false
+      },
+      {
+        "text": "din",
+        "start": 44.27,
+        "end": 44.45,
         "emphasis": false
       }
     ],
     [
       {
-        "text": "दिन",
-        "start": 44.27,
-        "end": 44.45,
-        "emphasis": false
-      },
-      {
-        "text": "इंसान",
+        "text": "insaan",
         "start": 44.45,
         "end": 44.97,
         "emphasis": false
       },
       {
-        "text": "को",
+        "text": "ko",
         "start": 44.97,
         "end": 45.09,
         "emphasis": false
       },
       {
-        "text": "दोबारा",
+        "text": "dobara",
         "start": 45.09,
         "end": 45.57,
+        "emphasis": false
+      },
+      {
+        "text": "zinda",
+        "start": 45.57,
+        "end": 45.89,
         "emphasis": false
       }
     ],
     [
       {
-        "text": "ज़िंदा",
-        "start": 45.57,
-        "end": 45.89,
-        "emphasis": false
-      },
-      {
-        "text": "करना",
+        "text": "karna",
         "start": 45.89,
         "end": 46.19,
         "emphasis": false
       },
       {
-        "text": "है।",
+        "text": "hai.",
         "start": 46.19,
         "end": 46.69,
         "emphasis": false
@@ -820,31 +864,31 @@
     ],
     [
       {
-        "text": "और",
+        "text": "Aur",
         "start": 49.42,
         "end": 49.88,
         "emphasis": false
       },
       {
-        "text": "यही",
+        "text": "yahi",
         "start": 49.88,
         "end": 50.14,
         "emphasis": false
       },
       {
-        "text": "बात",
+        "text": "baat",
         "start": 50.14,
         "end": 50.44,
         "emphasis": false
       },
       {
-        "text": "सोचने",
+        "text": "sochne",
         "start": 50.44,
         "end": 50.9,
         "emphasis": false
       },
       {
-        "text": "पर",
+        "text": "par",
         "start": 50.9,
         "end": 51.08,
         "emphasis": false
@@ -852,19 +896,19 @@
     ],
     [
       {
-        "text": "मजबूर",
+        "text": "majboor",
         "start": 51.08,
         "end": 51.52,
         "emphasis": false
       },
       {
-        "text": "करती",
+        "text": "karti",
         "start": 51.52,
         "end": 51.88,
         "emphasis": false
       },
       {
-        "text": "है।",
+        "text": "hai.",
         "start": 51.88,
         "end": 52.16,
         "emphasis": false
@@ -872,25 +916,25 @@
     ],
     [
       {
-        "text": "एक",
+        "text": "Ek",
         "start": 52.76,
         "end": 53.42,
         "emphasis": false
       },
       {
-        "text": "इंसान",
+        "text": "insaan",
         "start": 53.42,
         "end": 53.84,
         "emphasis": false
       },
       {
-        "text": "का",
+        "text": "ka",
         "start": 53.84,
         "end": 53.96,
         "emphasis": false
       },
       {
-        "text": "जिस्म",
+        "text": "jism",
         "start": 53.96,
         "end": 54.28,
         "emphasis": false
@@ -898,41 +942,39 @@
     ],
     [
       {
-        "text": "कितनी",
+        "text": "kitni",
         "start": 54.28,
         "end": 54.64,
         "emphasis": false
+      },
+      {
+        "text": "hairat-angez",
+        "start": 54.64,
+        "end": 55.0,
+        "emphasis": true
       }
     ],
     [
       {
-        "text": "हैरतअंगेज़",
-        "start": 55.0,
-        "end": 55.4,
-        "emphasis": true
-      },
-      {
-        "text": "डिटेल",
+        "text": "detail",
         "start": 55.4,
         "end": 55.78,
         "emphasis": false
       },
       {
-        "text": "से",
+        "text": "se",
         "start": 55.78,
         "end": 55.96,
         "emphasis": false
       },
       {
-        "text": "बना",
+        "text": "bana",
         "start": 55.96,
         "end": 56.26,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
-        "text": "है।",
+        "text": "hai.",
         "start": 56.26,
         "end": 56.8,
         "emphasis": false
@@ -940,19 +982,19 @@
     ],
     [
       {
-        "text": "क़ुरान",
+        "text": "Quran",
         "start": 57.83,
         "end": 58.41,
         "emphasis": false
       },
       {
-        "text": "को",
+        "text": "ko",
         "start": 58.41,
         "end": 58.57,
         "emphasis": false
       },
       {
-        "text": "पढ़ो,",
+        "text": "padho,",
         "start": 58.57,
         "end": 59.15,
         "emphasis": false
@@ -960,25 +1002,25 @@
     ],
     [
       {
-        "text": "उस",
+        "text": "us",
         "start": 59.31,
         "end": 59.49,
         "emphasis": false
       },
       {
-        "text": "पर",
+        "text": "par",
         "start": 59.49,
         "end": 59.63,
         "emphasis": false
       },
       {
-        "text": "ग़ौर",
+        "text": "gaur",
         "start": 59.63,
         "end": 59.95,
         "emphasis": false
       },
       {
-        "text": "करो,",
+        "text": "karo,",
         "start": 59.95,
         "end": 60.27,
         "emphasis": false
@@ -986,25 +1028,25 @@
     ],
     [
       {
-        "text": "और",
+        "text": "aur",
         "start": 60.61,
         "end": 60.71,
         "emphasis": false
       },
       {
-        "text": "उसके",
+        "text": "uske",
         "start": 60.71,
         "end": 61.03,
         "emphasis": false
       },
       {
-        "text": "पैग़ाम",
+        "text": "paighaam",
         "start": 61.03,
         "end": 61.45,
         "emphasis": false
       },
       {
-        "text": "को",
+        "text": "ko",
         "start": 61.45,
         "end": 61.67,
         "emphasis": false
@@ -1012,25 +1054,25 @@
     ],
     [
       {
-        "text": "समझने",
+        "text": "samajhne",
         "start": 61.67,
         "end": 62.21,
         "emphasis": false
       },
       {
-        "text": "की",
+        "text": "ki",
         "start": 62.21,
         "end": 62.37,
         "emphasis": false
       },
       {
-        "text": "कोशिश",
+        "text": "koshish",
         "start": 62.37,
         "end": 62.71,
         "emphasis": false
       },
       {
-        "text": "करो।",
+        "text": "karo.",
         "start": 62.71,
         "end": 63.07,
         "emphasis": false

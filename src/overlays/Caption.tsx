@@ -1,5 +1,5 @@
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from "remotion";
-import {GOLD, HINDI_FONT, IVORY, NAVY, SAFE_AREA} from "../theme";
+import {GOLD, LATIN_FONT, IVORY, NAVY, SAFE_AREA} from "../theme";
 
 export type TimedCaptionWord = {text: string; emphasis: boolean; frame: number};
 
@@ -23,9 +23,9 @@ export const Caption = ({words, aboveCard}: {words: TimedCaptionWord[]; aboveCar
     >
       <div
         style={{
-          fontFamily: HINDI_FONT,
+          fontFamily: LATIN_FONT,
           fontWeight: 800,
-          fontSize: 74,
+          fontSize: 70,
           lineHeight: 1.35,
           textAlign: "center",
           opacity: entrance,

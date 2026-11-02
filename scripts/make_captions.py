@@ -1,4 +1,7 @@
-"""Build captions: spelling from the script, timing from Whisper.
+"""Build Hinglish captions: spelling from the script, timing from Whisper.
+
+The script is written in Hinglish (Roman Hindi). Whisper writes Devanagari; the two
+are matched by sound.
 
 Usage: .venv\\Scripts\\python scripts/make_captions.py <clip>
            [--transcript work/clip.medium.transcript.json]
@@ -10,11 +13,12 @@ timing is uncertain are listed in work/<clip>.captions_review.txt.
 Whisper text never reaches the screen. It only says when each script word was spoken.
 """
 import argparse
-import difflib
 import json
 import pathlib
 import re
 import unicodedata
+
+import hinglish
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -29,7 +33,9 @@ MAX_PHRASE_CHARS = 24
 PHRASE_BREAK_SECONDS = 0.25
 SENTENCE_END = (",", ".", "?", "!", "।", ":", ";")
 # Hindi words that lean on the word before, so a caption must not start with them.
-CLINGING_WORDS = {"का", "की", "के", "को", "में", "पर", "से", "तक", "है", "हैं", "था", "थी", "थे",
+CLINGING_WORDS = {"ka", "ki", "ke", "ko", "mein", "me", "par", "se", "tak", "hai", "hain", "tha",
+                  "thi", "the", "ho", "gaya", "gayi", "gaye",
+                  "का", "की", "के", "को", "में", "पर", "से", "तक", "है", "हैं", "था", "थी", "थे",
                   "हो", "गया", "गई", "गए"}
 MIN_KEPT_OVERLAP_SECONDS = 0.1
 
@@ -51,12 +57,11 @@ def parse_script(text):
 def normalise(text):
     decomposed = unicodedata.normalize("NFD", text)
     cleaned = re.sub(r"[^\wऀ-ॿ]", "", decomposed)
-    return cleaned.replace(NUKTA, "").replace(CHANDRABINDU, ANUSVARA)
+    return cleaned.replace(NUKTA, "").replace(CHANDRABINDU, ANUSVARA).lower()
 
 
 def similarity(script_word, whisper_word):
-    a, b = normalise(script_word), normalise(whisper_word)
-    return difflib.SequenceMatcher(None, a, b).ratio()
+    return hinglish.similarity(script_word, whisper_word)
 
 
 def align(script_words, whisper_words):
@@ -132,7 +137,9 @@ def group_phrases(words):
             sentence_ended = current[-1]["text"].endswith(SENTENCE_END)
             too_long = len(current) >= MAX_PHRASE_WORDS or characters > MAX_PHRASE_CHARS
             clings = normalise(word["text"]) in {normalise(w) for w in CLINGING_WORDS}
-            if spoken_break or sentence_ended or (too_long and not clings):
+            # A last word that ends the sentence joins the caption rather than standing alone.
+            closes = word["text"].endswith(SENTENCE_END) and len(current) < MAX_PHRASE_WORDS + 1
+            if spoken_break or sentence_ended or (too_long and not clings and not closes):
                 phrases.append([])
         phrases[-1].append(word)
     return phrases

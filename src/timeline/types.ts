@@ -1,13 +1,41 @@
 // All times are in seconds on the source footage, so overlays stay on the
-// same spoken words when the cuts change.
+// same spoken words when the cuts change. Text marked with *stars* is emphasised.
 
 export type Segment = {from: number; to: number; zoom: number; cutDifference?: number};
 
-export type TitleOverlay = {type: "title"; start: number; end: number; text: string};
+type Timed = {start: number; end: number};
 
-export type AyahOverlay = {type: "ayah"; start: number; end: number; ayah: string};
+export type TitleOverlay = Timed & {type: "title"; text: string};
 
-export type Overlay = TitleOverlay | AyahOverlay;
+export type AyahOverlay = Timed & {type: "ayah"; ayah: string};
+
+export type CounterOverlay = Timed & {type: "counter"; value: number; label: string; text: string};
+
+export type FingerprintOverlay = Timed & {
+  type: "fingerprint";
+  mode: "unique" | "scan";
+  tag: string;
+  heading: string;
+  fact: string;
+};
+
+export type StatementOverlay = Timed & {type: "statement"; tag: string; lines: string[]};
+
+export type EndCardOverlay = Timed & {type: "endcard"; lines: string[]};
+
+export type BrollOverlay = Timed & {type: "broll"; src: string};
+
+export type Overlay =
+  | TitleOverlay
+  | AyahOverlay
+  | CounterOverlay
+  | FingerprintOverlay
+  | StatementOverlay
+  | EndCardOverlay
+  | BrollOverlay;
+
+// These cover the frame; the speaker moves into a small circle while they play.
+export const FULL_SCREEN_TYPES: Overlay["type"][] = ["fingerprint", "statement", "endcard", "broll"];
 
 export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};
 

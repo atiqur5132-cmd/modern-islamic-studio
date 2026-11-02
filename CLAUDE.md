@@ -4,6 +4,8 @@ Premium Islamic education shorts for Gen Z, in Hindi/Hinglish. Quality over quan
 
 Output: 1080x1920, 30 fps, H.264 + AAC, MP4. Keep captions inside platform-safe areas.
 
+Captions and on-screen text are always Hinglish (Roman Hindi), never Devanagari. Quranic Arabic stays in Arabic script on Ayah cards. Full-screen graphics carry a tag saying what kind of claim they show (science, forensic science, Quranic context).
+
 ## Where work runs
 
 - Laptop: Whisper, FFmpeg, Remotion preview. i3-1115G4, 8 GB RAM, Intel UHD; ask the user to close Chrome before heavy jobs.

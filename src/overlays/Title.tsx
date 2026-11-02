@@ -1,20 +1,8 @@
 import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from "remotion";
-import {GOLD, HINDI_FONT, IVORY, NAVY, SAFE_AREA} from "../theme";
+import {GOLD, IVORY, LATIN_FONT, NAVY, SAFE_AREA} from "../theme";
+import {parseEmphasis} from "./Emphasis";
 
 const WORD_STAGGER_FRAMES = 3;
-
-// Words between *stars* turn gold.
-const parseWords = (text: string) => {
-  let emphasis = false;
-  return text.split(" ").map((token) => {
-    emphasis = emphasis || token.startsWith("*");
-    const word = {text: token.replaceAll("*", ""), emphasis};
-    if (token.endsWith("*")) {
-      emphasis = false;
-    }
-    return word;
-  });
-};
 
 export const Title = ({text}: {text: string}) => {
   const frame = useCurrentFrame();
@@ -32,10 +20,10 @@ export const Title = ({text}: {text: string}) => {
     >
       <div
         style={{
-          fontFamily: HINDI_FONT,
+          fontFamily: LATIN_FONT,
           fontWeight: 800,
-          fontSize: 68,
-          lineHeight: 1.3,
+          fontSize: 64,
+          lineHeight: 1.25,
           textAlign: "center",
           backgroundColor: `${NAVY}E6`,
           borderBottom: `6px solid ${GOLD}`,
@@ -44,7 +32,7 @@ export const Title = ({text}: {text: string}) => {
           transform: `translateY(${(1 - panel) * -30}px)`,
         }}
       >
-        {parseWords(text).map((word, index) => {
+        {parseEmphasis(text).map((word, index) => {
           const reveal = spring({
             frame: frame - index * WORD_STAGGER_FRAMES,
             fps,
@@ -55,7 +43,7 @@ export const Title = ({text}: {text: string}) => {
               key={`${index}-${word.text}`}
               style={{
                 display: "inline-block",
-                margin: "0 10px",
+                margin: "0 9px",
                 color: word.emphasis ? GOLD : IVORY,
                 opacity: reveal,
                 transform: `translateY(${(1 - reveal) * 24}px)`,

@@ -1,6 +1,6 @@
 import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from "remotion";
 import {AYAHS} from "../data/quran";
-import {ARABIC_FONT, GOLD, HINDI_FONT, IVORY, NAVY, SAFE_AREA} from "../theme";
+import {ARABIC_FONT, GOLD, LATIN_FONT, IVORY, NAVY, SAFE_AREA} from "../theme";
 
 // With `continues`, the card follows another Ayah, so only its text changes.
 export const AyahCard = ({ayahKey, continues}: {ayahKey: string; continues: boolean}) => {
@@ -46,8 +46,8 @@ export const AyahCard = ({ayahKey, continues}: {ayahKey: string; continues: bool
         >
           {ayah.textUthmani}
         </div>
-        <div style={{fontFamily: HINDI_FONT, color: GOLD, fontSize: 34, fontWeight: 600}}>
-          {`सूरह ${ayah.surahNameEnglish} · ${ayah.key}`}
+        <div style={{fontFamily: LATIN_FONT, color: GOLD, fontSize: 34, fontWeight: 600}}>
+          {`Surah ${ayah.surahNameEnglish} · ${ayah.key}`}
         </div>
       </div>
     </AbsoluteFill>

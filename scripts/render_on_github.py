@@ -8,6 +8,7 @@ Footage goes up in a draft release, which is deleted once the run ends.
 """
 import argparse
 import datetime
+import json
 import pathlib
 import re
 import subprocess
@@ -38,8 +39,16 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("composition")
     parser.add_argument("--props", default="")
-    parser.add_argument("--footage", nargs="*", default=[], type=pathlib.Path)
+    parser.add_argument("--footage", nargs="*", default=None, type=pathlib.Path,
+                        help="defaults to every file the --props edit uses")
     args = parser.parse_args()
+
+    if args.footage is None:
+        args.footage = []
+        if args.props:
+            edit = json.loads((ROOT / args.props).read_text(encoding="utf-8"))
+            names = [edit["footage"]] + [o["src"] for o in edit["overlays"] if o["type"] == "broll"]
+            args.footage = [ROOT / "public" / "footage" / name for name in names]
 
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=ROOT, check=True,
                             text=True, capture_output=True).stdout.strip()
