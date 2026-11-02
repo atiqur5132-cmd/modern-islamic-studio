@@ -28,8 +28,8 @@ ANUSVARA = "ं"
 MATCH_THRESHOLD = 0.5
 GAP_PENALTY = -0.3
 REVIEW_BELOW = 0.6
-MAX_PHRASE_WORDS = 4
-MAX_PHRASE_CHARS = 24
+MAX_PHRASE_WORDS = 3
+MAX_PHRASE_CHARS = 16
 PHRASE_BREAK_SECONDS = 0.25
 SENTENCE_END = (",", ".", "?", "!", "।", ":", ";")
 # Hindi words that lean on the word before, so a caption must not start with them.

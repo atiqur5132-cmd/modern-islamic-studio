@@ -78,6 +78,12 @@
       "blur": 12
     },
     {
+      "type": "scene",
+      "scene": "bones",
+      "start": 12.3,
+      "end": 16.7
+    },
+    {
       "type": "ayah",
       "start": 12.5,
       "end": 16.7,
@@ -193,21 +199,23 @@
         "start": 1.48,
         "end": 1.98,
         "emphasis": true
-      },
+      }
+    ],
+    [
       {
         "text": "saal",
         "start": 1.98,
         "end": 2.18,
         "emphasis": true
-      }
-    ],
-    [
+      },
       {
         "text": "pehle",
         "start": 2.18,
         "end": 2.44,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "insaan",
         "start": 2.44,
@@ -219,7 +227,9 @@
         "start": 2.84,
         "end": 2.98,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "ungliyon",
         "start": 2.98,
@@ -251,7 +261,9 @@
         "start": 3.96,
         "end": 4.26,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "kiya",
         "start": 4.26,
@@ -309,15 +321,15 @@
         "start": 7.22,
         "end": 7.54,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "aur",
         "start": 7.54,
         "end": 7.7,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "4",
         "start": 7.7,
@@ -329,7 +341,9 @@
         "start": 8.0,
         "end": 8.26,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "Allah",
         "start": 8.26,
@@ -375,7 +389,9 @@
         "start": 13.11,
         "end": 13.21,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "samajhta",
         "start": 13.21,
@@ -407,7 +423,9 @@
         "start": 14.17,
         "end": 14.49,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "haddiyon",
         "start": 14.49,
@@ -419,15 +437,15 @@
         "start": 14.99,
         "end": 15.21,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "jama",
         "start": 15.21,
         "end": 15.63,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "nahi",
         "start": 15.63,
@@ -479,7 +497,9 @@
         "start": 18.37,
         "end": 18.71,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "ungliyon",
         "start": 18.71,
@@ -511,15 +531,15 @@
         "start": 19.99,
         "end": 20.15,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "theek",
         "start": 20.15,
         "end": 20.47,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "karne",
         "start": 20.47,
@@ -531,7 +551,9 @@
         "start": 20.85,
         "end": 21.09,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "qaadir",
         "start": 21.09,
@@ -583,15 +605,15 @@
         "start": 26.85,
         "end": 27.39,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "science",
         "start": 27.39,
         "end": 27.75,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "jaanti",
         "start": 27.75,
@@ -609,15 +631,15 @@
         "start": 28.35,
         "end": 28.49,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "har",
         "start": 28.49,
         "end": 28.67,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "insaan",
         "start": 28.67,
@@ -629,7 +651,9 @@
         "start": 29.09,
         "end": 29.19,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "fingerprints",
         "start": 29.19,
@@ -643,7 +667,9 @@
         "start": 30.01,
         "end": 30.39,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "distinctive",
         "start": 30.39,
@@ -675,7 +701,9 @@
         "start": 32.23,
         "end": 32.77,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "science",
         "start": 32.77,
@@ -701,15 +729,15 @@
         "start": 34.25,
         "end": 34.39,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "istemaal",
         "start": 34.39,
         "end": 34.91,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "kisi",
         "start": 34.91,
@@ -721,7 +749,9 @@
         "start": 35.25,
         "end": 35.37,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "pehchaan",
         "start": 35.37,
@@ -747,15 +777,15 @@
         "start": 36.73,
         "end": 36.97,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "liye",
         "start": 36.97,
         "end": 37.05,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "kiya",
         "start": 37.05,
@@ -813,21 +843,23 @@
         "start": 42.73,
         "end": 42.89,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "asal",
         "start": 42.89,
         "end": 43.15,
         "emphasis": true
-      }
-    ],
-    [
+      },
       {
         "text": "context",
         "start": 43.15,
         "end": 43.67,
         "emphasis": true
-      },
+      }
+    ],
+    [
       {
         "text": "Qayamat",
         "start": 43.67,
@@ -865,15 +897,15 @@
         "start": 45.09,
         "end": 45.57,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "zinda",
         "start": 45.57,
         "end": 45.89,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "karna",
         "start": 45.89,
@@ -905,7 +937,9 @@
         "start": 50.14,
         "end": 50.44,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "sochne",
         "start": 50.44,
@@ -957,21 +991,23 @@
         "start": 53.84,
         "end": 53.96,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "jism",
         "start": 53.96,
         "end": 54.28,
         "emphasis": false
-      }
-    ],
-    [
+      },
       {
         "text": "kitni",
         "start": 54.28,
         "end": 54.64,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "hairat-angez",
         "start": 54.64,
@@ -1063,7 +1099,9 @@
         "start": 60.71,
         "end": 61.03,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "paighaam",
         "start": 61.03,
@@ -1089,7 +1127,9 @@
         "start": 62.21,
         "end": 62.37,
         "emphasis": false
-      },
+      }
+    ],
+    [
       {
         "text": "koshish",
         "start": 62.37,

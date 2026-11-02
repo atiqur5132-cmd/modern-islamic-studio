@@ -25,6 +25,9 @@ export type EndCardOverlay = Timed & {type: "endcard"; lines: string[]};
 
 export type BrollOverlay = Timed & {type: "broll"; src: string; blur?: number};
 
+// Code-built 3D scenes, named by what they show.
+export type SceneOverlay = Timed & {type: "scene"; scene: "bones"};
+
 export type Overlay =
   | TitleOverlay
   | AyahOverlay
@@ -32,10 +35,17 @@ export type Overlay =
   | FingerprintOverlay
   | StatementOverlay
   | EndCardOverlay
-  | BrollOverlay;
+  | BrollOverlay
+  | SceneOverlay;
 
 // These cover the frame; the speaker moves into a small circle while they play.
-export const FULL_SCREEN_TYPES: Overlay["type"][] = ["fingerprint", "statement", "endcard", "broll"];
+export const FULL_SCREEN_TYPES: Overlay["type"][] = [
+  "fingerprint",
+  "statement",
+  "endcard",
+  "broll",
+  "scene",
+];
 
 export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};
 

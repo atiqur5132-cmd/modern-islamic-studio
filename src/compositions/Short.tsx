@@ -16,6 +16,7 @@ import {EndCard} from "../overlays/EndCard";
 import {Fingerprint} from "../overlays/Fingerprint";
 import {Statement} from "../overlays/Statement";
 import {Title} from "../overlays/Title";
+import {BonesScene} from "../scenes/BonesScene";
 import {GOLD, NAVY, PIP} from "../theme";
 import {
   Edit,
@@ -35,6 +36,8 @@ const FACE_FOCUS = {x: 540, y: 730};
 const CROSSFADE_HALF_FRAMES = 3;
 
 const CAPTION_HOLD_FRAMES = 8;
+// Graphics that already put the spoken words on screen; captions would repeat them.
+const SPOKEN_TEXT_TYPES: Overlay["type"][] = ["statement", "endcard"];
 const PIP_MOVE_FRAMES = 9;
 // circle() percentages are of the frame diagonal divided by the square root of two.
 const CLIP_UNIT = Math.hypot(1080, 1920) / Math.SQRT2;
@@ -69,6 +72,8 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[]) => {
       return <EndCard lines={overlay.lines} />;
     case "broll":
       return <Broll src={overlay.src} blur={overlay.blur} />;
+    case "scene":
+      return <BonesScene />;
   }
 };
 
@@ -190,7 +195,11 @@ export const Short = ({footage, segments, overlays, captions}: Edit) => {
         const hold = sourceToOutputFrame(segments, lastWord.end) + CAPTION_HOLD_FRAMES;
         const next = captions[index + 1];
         const end = next ? Math.min(hold, sourceToOutputFrame(segments, next[0].start)) : hold;
-        if (end <= start) {
+        const repeatsGraphic = overlays.some((overlay) => {
+          const range = outputRange(segments, overlay);
+          return SPOKEN_TEXT_TYPES.includes(overlay.type) && range.start <= start && range.end >= end;
+        });
+        if (end <= start || repeatsGraphic) {
           return null;
         }
         const aboveCard = overlays.some((overlay) => {

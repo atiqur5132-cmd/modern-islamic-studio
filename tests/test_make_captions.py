@@ -66,9 +66,11 @@ class Phrases(unittest.TestCase):
         self.assertTrue(all(len(p) <= mc.MAX_PHRASE_WORDS for p in mc.group_phrases(words)))
 
     def test_caption_never_starts_with_a_clinging_word(self):
-        words = [self.word(t, i * 0.3) for i, t in enumerate("अ ब स द के पोरों".split())]
-        phrases = mc.group_phrases(words)
-        self.assertEqual(phrases[0][-1]["text"], "के")
+        for text in ("अ ब स द के पोरों", "a b c ke poron ka zikr", "a b c d e ke f"):
+            with self.subTest(text):
+                words = [self.word(t, i * 0.3) for i, t in enumerate(text.split())]
+                for phrase in mc.group_phrases(words)[1:]:
+                    self.assertNotIn(phrase[0]["text"], mc.CLINGING_WORDS)
 
     def test_word_starting_just_before_a_cut_is_kept(self):
         segments = [{"from": 12.4, "to": 16}]

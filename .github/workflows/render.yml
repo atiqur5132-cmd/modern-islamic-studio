@@ -54,7 +54,7 @@ jobs:
         env:
           COMPOSITION: ${{ inputs.composition }}
           PROPS: ${{ inputs.props }}
-        run: npx remotion render "$COMPOSITION" "out/$COMPOSITION.mp4" --concurrency=4 ${PROPS:+--props="$PROPS"}
+        run: npx remotion render "$COMPOSITION" "out/$COMPOSITION.mp4" --concurrency=4 --gl=swangle ${PROPS:+--props="$PROPS"}
 
       - name: Check output
         env:
