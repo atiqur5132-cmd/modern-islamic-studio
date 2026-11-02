@@ -70,11 +70,47 @@ class Speech(unittest.TestCase):
         self.assertTrue(any(s <= 4.5 and e >= 4.8 for s, e in spans))
 
 
+def still_thumbs(seconds, level=100):
+    frames = int(seconds * 30)
+    return np.full((frames, auto_edit.THUMB_HEIGHT, auto_edit.THUMB_WIDTH), level, dtype=np.int16)
+
+
 class Segments(unittest.TestCase):
-    def test_cuts_land_on_frames_and_zoom_alternates(self):
-        segments = auto_edit.to_segments([(1, 2), (4, 5)], 10)
-        for segment in segments:
-            self.assertAlmostEqual(segment["from"] * 30, round(segment["from"] * 30), places=1)
+    def test_short_pause_gets_no_cut(self):
+        segments = auto_edit.to_segments([(1, 2), (2.7, 4)], 10, still_thumbs(10))
+        self.assertEqual(len(segments), 1)
+
+    def test_long_pause_is_shortened_not_removed(self):
+        segments = auto_edit.to_segments([(1, 2), (5, 7)], 10, still_thumbs(10))
+        self.assertEqual(len(segments), 2)
+        kept = (segments[0]["to"] - 2) + (5 - segments[1]["from"])
+        self.assertAlmostEqual(kept, auto_edit.kept_pause(3), delta=0.05)
+
+    def test_longer_pause_keeps_more(self):
+        self.assertGreater(auto_edit.kept_pause(2), auto_edit.kept_pause(1))
+
+    def test_cut_picks_the_best_matching_frames(self):
+        thumbs = still_thumbs(10)
+        # The picture only matches across the cut when the out point is frame 66.
+        thumbs[:66] = 0
+        thumbs[66:] = 200
+        out_frame, in_frame, difference = auto_edit.best_cut(thumbs, 2, 5)
+        self.assertEqual(difference, 0)
+        self.assertGreaterEqual(out_frame, 66)
+        self.assertGreater(in_frame, out_frame)
+
+    def test_cut_stays_in_the_pause_with_room_tone_around_it(self):
+        out_frame, in_frame, _ = auto_edit.best_cut(still_thumbs(10), 2, 5)
+        self.assertGreaterEqual(out_frame / 30, 2 + auto_edit.CUT_MARGIN_SECONDS - 0.02)
+        self.assertLessEqual(in_frame / 30, 5 - auto_edit.CUT_MARGIN_SECONDS + 0.02)
+
+    def test_punch_in_only_when_a_jump_remains(self):
+        thumbs = still_thumbs(10)
+        segments = auto_edit.to_segments([(1, 2), (5, 7)], 10, thumbs)
+        self.assertEqual([s["zoom"] for s in segments], [1, 1])
+        thumbs[:90] = 0
+        thumbs[90:] = 200
+        segments = auto_edit.to_segments([(1, 2), (2.9 + 2, 7)], 10, thumbs)
         self.assertEqual([s["zoom"] for s in segments], [1, auto_edit.PUNCH_IN])
 
     def test_retake_is_cut_out(self):

@@ -1,7 +1,7 @@
 // All times are in seconds on the source footage, so overlays stay on the
 // same spoken words when the cuts change.
 
-export type Segment = {from: number; to: number; zoom: number};
+export type Segment = {from: number; to: number; zoom: number; cutDifference?: number};
 
 export type TitleOverlay = {type: "title"; start: number; end: number; text: string};
 

@@ -27,14 +27,22 @@ HIGH_MARGIN_DB = 12  # above the room noise: clearly voiced sound
 MIN_VOICED_SECONDS = 0.3  # shorter bursts are breaths or mouth noise
 FLAG_UNTRANSCRIBED_SECONDS = 0.5
 BRIDGE_SECONDS = 0.25  # dips shorter than this are part of the same phrase
-MIN_PAUSE_SECONDS = 0.5  # pauses shorter than this stay as natural rhythm
-PAD_BEFORE_SECONDS = 0.06
-PAD_AFTER_SECONDS = 0.14
+MIN_PAUSE_SECONDS = 0.5  # pauses shorter than this are one breath, never split
+LEAD_IN_SECONDS = 0.1
+TAIL_SECONDS = 0.3
+# A pause is shortened, not removed: a longer pause was meant, so more of it stays.
+KEPT_PAUSE_BASE_SECONDS = 0.35
+KEPT_PAUSE_SHARE = 0.15
+KEPT_PAUSE_MAX_SECONDS = 0.7
+MIN_REMOVED_SECONDS = 0.6  # saving less than this is not worth a visible jump
+CUT_MARGIN_SECONDS = 0.1  # room tone either side of a cut, for the audio crossfade
 PHRASE_GAP_SECONDS = 0.3
 MIN_RETAKE_WORDS = 3
 RETAKE_SIMILARITY = 0.75
 PUNCH_IN = 1.07
+PUNCH_IN_ABOVE_DIFFERENCE = 6  # mean grey-level change that still reads as a jump
 FPS = 30
+THUMB_WIDTH, THUMB_HEIGHT = 54, 96
 
 
 def loudness_db(samples):
@@ -131,17 +139,52 @@ def subtract(spans, removals):
     return spans
 
 
-def to_segments(spans, duration):
-    padded = merge(
-        [(max(0, s - PAD_BEFORE_SECONDS), min(duration, e + PAD_AFTER_SECONDS)) for s, e in spans],
-        0,
-    )
+def read_thumbnails(video):
+    """Tiny grey frames, enough to compare head position across a cut."""
+    raw = subprocess.run(
+        ["ffmpeg", "-loglevel", "error", "-i", str(video),
+         "-vf", f"fps={FPS},scale={THUMB_WIDTH}:{THUMB_HEIGHT},format=gray",
+         "-f", "rawvideo", "-"],
+        check=True, capture_output=True,
+    ).stdout
+    return np.frombuffer(raw, dtype=np.uint8).reshape(-1, THUMB_HEIGHT, THUMB_WIDTH).astype(np.int16)
+
+
+def kept_pause(gap):
+    return min(KEPT_PAUSE_BASE_SECONDS + KEPT_PAUSE_SHARE * gap, KEPT_PAUSE_MAX_SECONDS)
+
+
+def best_cut(thumbs, speech_end, speech_start):
+    """Choose the out and in frames, inside the pause, where the picture matches best."""
+    gap = speech_start - speech_end
+    removed_frames = round((gap - kept_pause(gap)) * FPS)
+    first = round((speech_end + CUT_MARGIN_SECONDS) * FPS)
+    last = round((speech_start - CUT_MARGIN_SECONDS) * FPS) - removed_frames
+    last = min(last, len(thumbs) - 1 - removed_frames)
+    candidates = range(first, max(first, last) + 1)
+    differences = [float(np.mean(np.abs(thumbs[f] - thumbs[f + removed_frames]))) for f in candidates]
+    best = int(np.argmin(differences))
+    return candidates[best], candidates[best] + removed_frames, differences[best]
+
+
+def to_segments(spans, duration, thumbs):
+    """Join the speech, cutting only the pauses worth shortening."""
     segments = []
-    for index, (start, end) in enumerate(padded):
-        segments.append(
-            {"from": round(round(start * FPS) / FPS, 3), "to": round(round(end * FPS) / FPS, 3),
-             "zoom": PUNCH_IN if index % 2 else 1}
-        )
+    zoom = 1
+    start_frame = round(max(0, spans[0][0] - LEAD_IN_SECONDS) * FPS)
+    for (_, speech_end), (speech_start, _) in zip(spans, spans[1:]):
+        gap = speech_start - speech_end
+        if gap - kept_pause(gap) < MIN_REMOVED_SECONDS:
+            continue
+        out_frame, in_frame, difference = best_cut(thumbs, speech_end, speech_start)
+        segments.append({"from": round(start_frame / FPS, 3), "to": round(out_frame / FPS, 3),
+                         "zoom": zoom, "cutDifference": round(difference, 1)})
+        if difference > PUNCH_IN_ABOVE_DIFFERENCE:
+            zoom = 1 if zoom != 1 else PUNCH_IN
+        start_frame = in_frame
+    end_frame = round(min(duration, spans[-1][1] + TAIL_SECONDS) * FPS)
+    segments.append({"from": round(start_frame / FPS, 3), "to": round(end_frame / FPS, 3),
+                     "zoom": zoom})
     return segments
 
 
@@ -181,7 +224,7 @@ def main():
 
     spans, flagged = speech_spans(loudness_db(samples.astype(np.float32) / 32768), words)
     retakes = [] if args.keep_repeats else find_retakes(phrases_of(words))
-    segments = to_segments(subtract(spans, retakes), duration)
+    segments = to_segments(subtract(spans, retakes), duration, read_thumbnails(args.video))
     lost = lost_words(words, segments, retakes)
 
     project = ROOT / "projects" / stem
