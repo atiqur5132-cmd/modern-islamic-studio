@@ -3,38 +3,56 @@
   "segments": [
     {
       "from": 0.0,
-      "to": 10.567,
+      "to": 10.3,
       "zoom": 1,
-      "cutDifference": 2.9
+      "cutDifference": 6.0
     },
     {
-      "from": 11.8,
-      "to": 21.933,
+      "from": 12.3,
+      "to": 17.567,
       "zoom": 1,
-      "cutDifference": 2.1
+      "cutDifference": 3.2
     },
     {
-      "from": 22.633,
+      "from": 17.767,
+      "to": 21.7,
+      "zoom": 1,
+      "cutDifference": 4.5
+    },
+    {
+      "from": 23.0,
       "to": 24.733,
       "zoom": 1,
-      "cutDifference": 5.7
+      "cutDifference": 10.2
     },
     {
-      "from": 25.667,
-      "to": 38.433,
+      "from": 26.2,
+      "to": 38.133,
+      "zoom": 1.07,
+      "cutDifference": 7.9
+    },
+    {
+      "from": 40.967,
+      "to": 46.5,
       "zoom": 1,
-      "cutDifference": 5.4
+      "cutDifference": 7.9
     },
     {
-      "from": 40.667,
-      "to": 46.8,
-      "zoom": 1,
-      "cutDifference": 4.3
+      "from": 49.433,
+      "to": 52.1,
+      "zoom": 1.07,
+      "cutDifference": 5.2
     },
     {
-      "from": 48.833,
-      "to": 63.367,
-      "zoom": 1
+      "from": 52.733,
+      "to": 57.333,
+      "zoom": 1.07,
+      "cutDifference": 4.5
+    },
+    {
+      "from": 57.933,
+      "to": 63.267,
+      "zoom": 1.07
     }
   ],
   "overlays": [

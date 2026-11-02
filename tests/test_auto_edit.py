@@ -76,18 +76,28 @@ def still_thumbs(seconds, level=100):
 
 
 class Segments(unittest.TestCase):
-    def test_short_pause_gets_no_cut(self):
-        segments = auto_edit.to_segments([(1, 2), (2.7, 4)], 10, still_thumbs(10))
-        self.assertEqual(len(segments), 1)
-
-    def test_long_pause_is_shortened_not_removed(self):
-        segments = auto_edit.to_segments([(1, 2), (5, 7)], 10, still_thumbs(10))
+    def test_every_pause_above_half_a_second_is_cut(self):
+        db = loudness([(1, 3, -16), (3.6, 5, -16)], 10)
+        spans, _ = auto_edit.speech_spans(db, [word("क", 1, 3), word("ख", 3.6, 5)])
+        segments = auto_edit.to_segments(spans, 10, still_thumbs(10))
         self.assertEqual(len(segments), 2)
-        kept = (segments[0]["to"] - 2) + (5 - segments[1]["from"])
-        self.assertAlmostEqual(kept, auto_edit.kept_pause(3), delta=0.05)
 
-    def test_longer_pause_keeps_more(self):
-        self.assertGreater(auto_edit.kept_pause(2), auto_edit.kept_pause(1))
+    def test_pause_under_half_a_second_is_left_alone(self):
+        db = loudness([(1, 3, -16), (3.4, 5, -16)], 10)
+        spans, _ = auto_edit.speech_spans(db, [word("क", 1, 3), word("ख", 3.4, 5)])
+        self.assertEqual(len(auto_edit.to_segments(spans, 10, still_thumbs(10))), 1)
+
+    def test_cut_leaves_a_short_breath(self):
+        segments = auto_edit.to_segments([(1, 2), (5, 7)], 10, still_thumbs(10))
+        kept = (segments[0]["to"] - 2) + (5 - segments[1]["from"])
+        self.assertAlmostEqual(kept, auto_edit.KEPT_PAUSE_SECONDS, delta=0.05)
+
+    def test_silence_inside_a_word_span_does_not_hide_a_pause(self):
+        db = loudness([(1, 2, -16), (4, 5, -16)], 10)
+        # Whisper says the first word lasts until 3.9, but its sound ends at 2.
+        words = auto_edit.tighten_words(db, [word("क", 1, 3.9), word("ख", 4, 5)])
+        spans, _ = auto_edit.speech_spans(db, words)
+        self.assertEqual(len(spans), 2)
 
     def test_cut_picks_the_best_matching_frames(self):
         thumbs = still_thumbs(10)

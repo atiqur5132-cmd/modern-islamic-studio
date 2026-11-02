@@ -27,14 +27,10 @@ HIGH_MARGIN_DB = 12  # above the room noise: clearly voiced sound
 MIN_VOICED_SECONDS = 0.3  # shorter bursts are breaths or mouth noise
 FLAG_UNTRANSCRIBED_SECONDS = 0.5
 BRIDGE_SECONDS = 0.25  # dips shorter than this are part of the same phrase
-MIN_PAUSE_SECONDS = 0.5  # pauses shorter than this are one breath, never split
+MIN_PAUSE_SECONDS = 0.5  # the creator's rule: every longer pause gets cut
+KEPT_PAUSE_SECONDS = 0.3  # the breath left where a pause was cut
 LEAD_IN_SECONDS = 0.1
 TAIL_SECONDS = 0.3
-# A pause is shortened, not removed: a longer pause was meant, so more of it stays.
-KEPT_PAUSE_BASE_SECONDS = 0.35
-KEPT_PAUSE_SHARE = 0.15
-KEPT_PAUSE_MAX_SECONDS = 0.7
-MIN_REMOVED_SECONDS = 0.6  # saving less than this is not worth a visible jump
 CUT_MARGIN_SECONDS = 0.1  # room tone either side of a cut, for the audio crossfade
 PHRASE_GAP_SECONDS = 0.3
 MIN_RETAKE_WORDS = 3
@@ -65,6 +61,24 @@ def merge(spans, max_gap):
         else:
             merged.append((start, end))
     return merged
+
+
+def tighten_words(db, words):
+    """Trim silence from word edges. Whisper often runs a word on into the pause.
+
+    A word with no measurable sound stays as it is, so it can never be cut away.
+    """
+    low = float(np.percentile(db, 10)) + LOW_MARGIN_DB
+    tightened = []
+    for word in words:
+        first = int(word["start"] / HOP_SECONDS)
+        loud = np.flatnonzero(db[first : int(word["end"] / HOP_SECONDS)] > low)
+        if loud.size == 0:
+            tightened.append(word)
+            continue
+        tightened.append({**word, "start": (first + int(loud[0])) * HOP_SECONDS,
+                          "end": (first + int(loud[-1]) + 1) * HOP_SECONDS})
+    return tightened
 
 
 def speech_spans(db, words):
@@ -150,14 +164,9 @@ def read_thumbnails(video):
     return np.frombuffer(raw, dtype=np.uint8).reshape(-1, THUMB_HEIGHT, THUMB_WIDTH).astype(np.int16)
 
 
-def kept_pause(gap):
-    return min(KEPT_PAUSE_BASE_SECONDS + KEPT_PAUSE_SHARE * gap, KEPT_PAUSE_MAX_SECONDS)
-
-
 def best_cut(thumbs, speech_end, speech_start):
     """Choose the out and in frames, inside the pause, where the picture matches best."""
-    gap = speech_start - speech_end
-    removed_frames = round((gap - kept_pause(gap)) * FPS)
+    removed_frames = round((speech_start - speech_end - KEPT_PAUSE_SECONDS) * FPS)
     first = round((speech_end + CUT_MARGIN_SECONDS) * FPS)
     last = round((speech_start - CUT_MARGIN_SECONDS) * FPS) - removed_frames
     last = min(last, len(thumbs) - 1 - removed_frames)
@@ -168,14 +177,11 @@ def best_cut(thumbs, speech_end, speech_start):
 
 
 def to_segments(spans, duration, thumbs):
-    """Join the speech, cutting only the pauses worth shortening."""
+    """Join the speech, with a cut at every pause left between the spans."""
     segments = []
     zoom = 1
     start_frame = round(max(0, spans[0][0] - LEAD_IN_SECONDS) * FPS)
     for (_, speech_end), (speech_start, _) in zip(spans, spans[1:]):
-        gap = speech_start - speech_end
-        if gap - kept_pause(gap) < MIN_REMOVED_SECONDS:
-            continue
         out_frame, in_frame, difference = best_cut(thumbs, speech_end, speech_start)
         segments.append({"from": round(start_frame / FPS, 3), "to": round(out_frame / FPS, 3),
                          "zoom": zoom, "cutDifference": round(difference, 1)})
@@ -222,7 +228,9 @@ def main():
         samples = np.frombuffer(audio.readframes(audio.getnframes()), dtype=np.int16)
     duration = len(samples) / SAMPLE_RATE
 
-    spans, flagged = speech_spans(loudness_db(samples.astype(np.float32) / 32768), words)
+    db = loudness_db(samples.astype(np.float32) / 32768)
+    words = tighten_words(db, words)
+    spans, flagged = speech_spans(db, words)
     retakes = [] if args.keep_repeats else find_retakes(phrases_of(words))
     segments = to_segments(subtract(spans, retakes), duration, read_thumbnails(args.video))
     lost = lost_words(words, segments, retakes)
