@@ -1,0 +1,66 @@
+"""Fetch an Ayah from Quran.com and cross-check it against alquran.cloud.
+
+Usage: py scripts/fetch_ayah.py 96:1
+
+Quranic text must only ever enter this project through this script. Never type
+or edit it by hand. The script stops if the two sources disagree.
+"""
+import datetime
+import json
+import pathlib
+import sys
+import unicodedata
+import urllib.request
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+OUT_DIR = ROOT / "src" / "data" / "quran"
+HAFS_BASMALA_WORDS = 4
+
+
+def get_json(url):
+    request = urllib.request.Request(url, headers={"User-Agent": "modern-islamic-studio"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.load(response)
+
+
+def comparable(text):
+    """Reduce text to letters and marks in a stable order, for comparison only."""
+    return "".join(unicodedata.normalize("NFC", text).split())
+
+
+def main():
+    key = sys.argv[1]
+    surah, ayah = key.split(":")
+
+    primary = get_json(f"https://api.quran.com/api/v4/verses/by_key/{key}?fields=text_uthmani")
+    text = primary["verse"]["text_uthmani"].strip()
+    if primary["verse"]["verse_key"] != key:
+        sys.exit(f"Wrong verse returned: {primary['verse']['verse_key']}")
+
+    second = get_json(f"https://api.alquran.cloud/v1/ayah/{key}/quran-uthmani")["data"]
+    second_text = second["text"].strip()
+    # alquran.cloud prepends the Basmala to Ayah 1 of most Surahs.
+    if ayah == "1" and surah not in ("1", "9"):
+        second_text = " ".join(second_text.split()[HAFS_BASMALA_WORDS:])
+
+    if comparable(text) != comparable(second_text):
+        print("Primary:", text.encode("unicode_escape").decode())
+        print("Second: ", second_text.encode("unicode_escape").decode())
+        sys.exit(f"Sources disagree on {key}. Nothing written. Review by hand.")
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    path = OUT_DIR / f"{surah}-{ayah}.json"
+    record = {
+        "key": key,
+        "surahNameEnglish": second["surah"]["englishName"],
+        "textUthmani": text,
+        "source": "api.quran.com v4, text_uthmani",
+        "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+        "fetchedOn": datetime.date.today().isoformat(),
+    }
+    path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"OK {key} verified by both sources: {path.relative_to(ROOT)}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,64 @@
+name: Render video
+
+# Manual only. Pushing code never starts a render.
+on:
+  workflow_dispatch:
+    inputs:
+      composition:
+        description: Remotion composition id
+        required: true
+        default: StudioTest
+      footage_release:
+        description: Draft release tag holding prepared footage (optional)
+        required: false
+        default: ""
+
+concurrency:
+  group: render
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch prepared footage
+        if: inputs.footage_release != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FOOTAGE_RELEASE: ${{ inputs.footage_release }}
+        run: |
+          mkdir -p public/footage
+          gh release download "$FOOTAGE_RELEASE" --dir public/footage
+
+      - name: Install browser
+        run: npx remotion browser ensure
+
+      - name: Render
+        env:
+          COMPOSITION: ${{ inputs.composition }}
+        run: npx remotion render "$COMPOSITION" "out/$COMPOSITION.mp4" --concurrency=4
+
+      - name: Check output
+        env:
+          COMPOSITION: ${{ inputs.composition }}
+        run: npx remotion ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate -of csv=p=0 "out/$COMPOSITION.mp4"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.composition }}
+          path: out/*.mp4
+          retention-days: 3
+          compression-level: 0

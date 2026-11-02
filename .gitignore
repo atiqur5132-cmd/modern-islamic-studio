@@ -1,0 +1,15 @@
+node_modules/
+out/
+.venv/
+.env
+__pycache__/
+*.log
+
+# Footage and working media stay on the laptop, never in Git
+footage/
+work/
+models/
+*.mp4
+*.mov
+*.wav
+*.m4a

@@ -1,0 +1,8 @@
+{
+  "key": "96:1",
+  "surahNameEnglish": "Al-Alaq",
+  "textUthmani": "ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-02"
+}
