@@ -13,7 +13,7 @@ Output: 1080x1920, 30 fps, H.264 + AAC, MP4. Keep captions inside platform-safe 
 ## Religious and factual accuracy
 
 - Quranic text enters the project only through `scripts/fetch_ayah.py`. Never type, edit or trim it by hand.
-- Whisper output is never a source for Quranic text.
+- Whisper output is never a source for Quranic text, and never reaches the screen: captions take their spelling from `projects/<clip>/script.txt` and only their timing from Whisper. The creator confirms the script before a final render.
 - Verify every Surah and Ayah reference. Keep translation separate from interpretation.
 - Use reliable Tafsir and authentic Hadith references; state scholarly differences.
 - Label claims as established science, hypothesis, interpretation, numerical observation or speculative. Never manufacture a scientific or mathematical miracle.
@@ -43,6 +43,10 @@ npm run dev
 
 ```bash
 .venv\Scripts\python scripts/auto_edit.py public/footage/clip.mp4
+```
+
+```bash
+.venv\Scripts\python scripts/make_captions.py clip
 ```
 
 ```bash

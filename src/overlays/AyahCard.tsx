@@ -2,7 +2,8 @@ import {AbsoluteFill, spring, useCurrentFrame, useVideoConfig} from "remotion";
 import {AYAHS} from "../data/quran";
 import {ARABIC_FONT, GOLD, HINDI_FONT, IVORY, NAVY, SAFE_AREA} from "../theme";
 
-export const AyahCard = ({ayahKey}: {ayahKey: string}) => {
+// With `continues`, the card follows another Ayah, so only its text changes.
+export const AyahCard = ({ayahKey, continues}: {ayahKey: string; continues: boolean}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const entrance = spring({frame, fps, config: {damping: 200}});
@@ -28,14 +29,20 @@ export const AyahCard = ({ayahKey}: {ayahKey: string}) => {
           borderTop: `3px solid ${GOLD}`,
           padding: "30px 40px 36px",
           textAlign: "center",
-          opacity: entrance,
-          transform: `translateY(${(1 - entrance) * 30}px)`,
+          opacity: continues ? 1 : entrance,
+          transform: `translateY(${continues ? 0 : (1 - entrance) * 30}px)`,
         }}
       >
         <div
           dir="rtl"
           lang="ar"
-          style={{fontFamily: ARABIC_FONT, color: IVORY, fontSize: 64, lineHeight: 2.3}}
+          style={{
+            fontFamily: ARABIC_FONT,
+            color: IVORY,
+            fontSize: 64,
+            lineHeight: 2.3,
+            opacity: entrance,
+          }}
         >
           {ayah.textUthmani}
         </div>

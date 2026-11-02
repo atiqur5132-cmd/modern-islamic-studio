@@ -9,10 +9,13 @@ export type AyahOverlay = {type: "ayah"; start: number; end: number; ayah: strin
 
 export type Overlay = TitleOverlay | AyahOverlay;
 
+export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};
+
 export type Edit = {
   footage: string;
   segments: Segment[];
   overlays: Overlay[];
+  captions: CaptionWord[][];
 };
 
 export const FPS = 30;

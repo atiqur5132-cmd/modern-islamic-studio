@@ -1,5 +1,6 @@
 import {AbsoluteFill, Audio, interpolate, OffthreadVideo, Sequence, staticFile} from "remotion";
 import {AyahCard} from "../overlays/AyahCard";
+import {Caption} from "../overlays/Caption";
 import {Title} from "../overlays/Title";
 import {NAVY} from "../theme";
 import {Edit, FPS, segmentFrames, sourceToOutputFrame, toFrames} from "../timeline/types";
@@ -10,9 +11,11 @@ const FACE_FOCUS = "50% 38%";
 // Each side of a cut lends this much room tone, so the sound never drops out.
 const CROSSFADE_HALF_FRAMES = 3;
 
+const CAPTION_HOLD_FRAMES = 8;
+
 const equalPower = (progress: number) => Math.sin((progress * Math.PI) / 2);
 
-export const Short = ({footage, segments, overlays}: Edit) => {
+export const Short = ({footage, segments, overlays, captions}: Edit) => {
   const src = staticFile(`footage/${footage}`);
   let videoCursor = 0;
   let audioCursor = 0;
@@ -76,8 +79,39 @@ export const Short = ({footage, segments, overlays}: Edit) => {
             {overlay.type === "title" ? (
               <Title text={overlay.text} />
             ) : (
-              <AyahCard ayahKey={overlay.ayah} />
+              <AyahCard
+                ayahKey={overlay.ayah}
+                continues={overlays.some((o) => o.type === "ayah" && o.end === overlay.start)}
+              />
             )}
+          </Sequence>
+        );
+      })}
+      {captions.map((phrase, index) => {
+        const start = sourceToOutputFrame(segments, phrase[0].start);
+        const lastWord = phrase[phrase.length - 1];
+        const hold = sourceToOutputFrame(segments, lastWord.end) + CAPTION_HOLD_FRAMES;
+        const next = captions[index + 1];
+        const end = next ? Math.min(hold, sourceToOutputFrame(segments, next[0].start)) : hold;
+        if (end <= start) {
+          return null;
+        }
+        const aboveCard = overlays.some(
+          (overlay) =>
+            overlay.type === "ayah" &&
+            sourceToOutputFrame(segments, overlay.start) < end &&
+            sourceToOutputFrame(segments, overlay.end) > start,
+        );
+        return (
+          <Sequence key={`caption-${phrase[0].start}`} from={start} durationInFrames={end - start}>
+            <Caption
+              aboveCard={aboveCard}
+              words={phrase.map((word) => ({
+                text: word.text,
+                emphasis: word.emphasis,
+                frame: Math.max(sourceToOutputFrame(segments, word.start) - start, 0),
+              }))}
+            />
           </Sequence>
         );
       })}
