@@ -23,7 +23,7 @@ export type StatementOverlay = Timed & {type: "statement"; tag: string; lines: s
 
 export type EndCardOverlay = Timed & {type: "endcard"; lines: string[]};
 
-export type BrollOverlay = Timed & {type: "broll"; src: string};
+export type BrollOverlay = Timed & {type: "broll"; src: string; blur?: number};
 
 export type Overlay =
   | TitleOverlay

@@ -68,7 +68,7 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[]) => {
     case "endcard":
       return <EndCard lines={overlay.lines} />;
     case "broll":
-      return <Broll src={overlay.src} />;
+      return <Broll src={overlay.src} blur={overlay.blur} />;
   }
 };
 

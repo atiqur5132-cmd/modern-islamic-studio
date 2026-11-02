@@ -1,0 +1,4 @@
+broll-quran-mushaf.jpg: "Quran-Mus'haf Al Tajweed.jpg" by Amr Fayez (TheEgyptian), CC BY 2.5, https://commons.wikimedia.org/wiki/File:Quran-Mus%27haf_Al_Tajweed.jpg
+broll-microscope.jpg: "Doctor looking in the microscope.jpg" by Nenad Stojkovic, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Doctor_looking_in_the_microscope.jpg
+broll-fingertip.jpg: "Fingerprint detail on male finger in Třebíč, Třebíč District.jpg" by Frettie, CC BY 3.0, https://commons.wikimedia.org/wiki/File:Fingerprint_detail_on_male_finger_in_T%C5%99eb%C3%AD%C4%8D,_T%C5%99eb%C3%AD%C4%8D_District.jpg
+broll-iris.jpg: "Iris eclipse - Explored - Flickr - creyesk.jpg" by Carlos Andrés Reyes from Cologne, Germany, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Iris_eclipse_-_Explored_-_Flickr_-_creyesk.jpg
