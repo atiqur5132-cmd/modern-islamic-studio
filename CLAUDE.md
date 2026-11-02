@@ -34,13 +34,15 @@ npm run dev
 ```
 
 ```bash
-.venv\Scripts\python scripts/prepare_footage.py path/to/raw.mp4 --vertical
+.venv\Scripts\python scripts/prepare_footage.py path/to/raw.mp4
 ```
 
 ```bash
-.venv\Scripts\python scripts/transcribe.py footage/clip.prepared.mp4 --model medium
+.venv\Scripts\python scripts/transcribe.py public/footage/clip.mp4
 ```
 
 ```bash
-.venv\Scripts\python scripts/render_on_github.py StudioTest --footage footage/clip.prepared.mp4
+.venv\Scripts\python scripts/render_on_github.py Short --props projects/clip/edit.json --footage public/footage/clip.mp4
 ```
+
+Each video has `projects/<name>/edit.json`: its footage, kept segments and overlays. Add `--vertical` to the prepare step only for real landscape footage; phone clips marked with rotation are already vertical.

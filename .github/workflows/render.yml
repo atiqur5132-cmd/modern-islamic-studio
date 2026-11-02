@@ -12,6 +12,10 @@ on:
         description: Draft release tag holding prepared footage (optional)
         required: false
         default: ""
+      props:
+        description: Path to an edit.json (optional)
+        required: false
+        default: ""
 
 concurrency:
   group: render
@@ -49,7 +53,8 @@ jobs:
       - name: Render
         env:
           COMPOSITION: ${{ inputs.composition }}
-        run: npx remotion render "$COMPOSITION" "out/$COMPOSITION.mp4" --concurrency=4
+          PROPS: ${{ inputs.props }}
+        run: npx remotion render "$COMPOSITION" "out/$COMPOSITION.mp4" --concurrency=4 ${PROPS:+--props="$PROPS"}
 
       - name: Check output
         env:

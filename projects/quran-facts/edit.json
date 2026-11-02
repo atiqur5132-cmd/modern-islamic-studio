@@ -1,0 +1,16 @@
+{
+  "footage": "quran-facts.mp4",
+  "segments": [
+    {"from": 0, "to": 10.4},
+    {"from": 12.4, "to": 21.8},
+    {"from": 23.1, "to": 38.6},
+    {"from": 41.1, "to": 46.5},
+    {"from": 48.9, "to": 56.5},
+    {"from": 57.9, "to": 63.3}
+  ],
+  "overlays": [
+    {"type": "title", "start": 0.3, "end": 5.2, "text": "1400 साल पहले उंगलियों के पोरों का ज़िक्र"},
+    {"type": "ayah", "start": 10.4, "end": 14.6, "ayah": "75:3"},
+    {"type": "ayah", "start": 14.6, "end": 19.8, "ayah": "75:4"}
+  ]
+}

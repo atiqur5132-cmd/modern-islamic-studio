@@ -3,10 +3,11 @@
 Usage: .venv\\Scripts\\python scripts/prepare_footage.py <video> [--vertical]
 
 --vertical centre-crops landscape footage to 9:16 at 1080x1920.
-Writes footage/<video name>.prepared.mp4, which stays out of Git.
+Writes public/footage/<video-name>.mp4, where Remotion can read it. It stays out of Git.
 """
 import argparse
 import pathlib
+import re
 import subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -23,9 +24,10 @@ def main():
     if args.vertical:
         filters.append("crop='min(iw,ih*9/16)':'min(ih,iw*16/9)',scale=1080:1920")
 
-    out_dir = ROOT / "footage"
-    out_dir.mkdir(exist_ok=True)
-    output = out_dir / f"{args.video.stem}.prepared.mp4"
+    out_dir = ROOT / "public" / "footage"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    slug = re.sub(r"[^a-z0-9]+", "-", args.video.stem.lower()).strip("-")
+    output = out_dir / f"{slug}.mp4"
     subprocess.run(
         ["ffmpeg", "-y", "-loglevel", "error", "-stats", "-i", str(args.video),
          "-vf", ",".join(filters),

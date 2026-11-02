@@ -1,17 +1,6 @@
-import {loadFont as loadAmiriQuran} from "@remotion/google-fonts/AmiriQuran";
-import {loadFont as loadDevanagari} from "@remotion/google-fonts/NotoSansDevanagari";
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from "remotion";
 import ayah from "../data/quran/96-1.json";
-
-const {fontFamily: arabicFont} = loadAmiriQuran();
-const {fontFamily: hindiFont} = loadDevanagari("normal", {
-  weights: ["600"],
-  subsets: ["devanagari", "latin"],
-});
-
-const NAVY = "#0A1426";
-const GOLD = "#C9A45C";
-const IVORY = "#F2EDE3";
+import {ARABIC_FONT, GOLD, HINDI_FONT, IVORY, NAVY} from "../theme";
 
 export const StudioTest = () => {
   const frame = useCurrentFrame();
@@ -27,7 +16,7 @@ export const StudioTest = () => {
         dir="rtl"
         lang="ar"
         style={{
-          fontFamily: arabicFont,
+          fontFamily: ARABIC_FONT,
           color: IVORY,
           fontSize: 92,
           lineHeight: 2.2,
@@ -40,7 +29,7 @@ export const StudioTest = () => {
       </div>
       <div
         style={{
-          fontFamily: hindiFont,
+          fontFamily: HINDI_FONT,
           color: GOLD,
           fontSize: 40,
           fontWeight: 600,
@@ -52,7 +41,7 @@ export const StudioTest = () => {
       </div>
       <div
         style={{
-          fontFamily: hindiFont,
+          fontFamily: HINDI_FONT,
           color: IVORY,
           fontSize: 30,
           fontWeight: 600,

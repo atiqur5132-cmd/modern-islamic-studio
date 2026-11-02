@@ -1,8 +1,9 @@
 """Render a composition on GitHub Actions and download the result.
 
-Usage: .venv\\Scripts\\python scripts/render_on_github.py <composition> [--footage file ...]
+Usage: .venv\\Scripts\\python scripts/render_on_github.py <composition>
+           [--props projects/x/edit.json] [--footage file ...]
 
-Commit and push code first: GitHub renders what is on main, not local edits.
+Commit and push first: GitHub renders the current branch as pushed, not local edits.
 Footage goes up in a draft release, which is deleted once the run ends.
 """
 import argparse
@@ -23,11 +24,16 @@ def gh(*args, capture=False):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("composition")
+    parser.add_argument("--props", default="")
     parser.add_argument("--footage", nargs="*", default=[], type=pathlib.Path)
     args = parser.parse_args()
 
+    branch = subprocess.run(["git", "branch", "--show-current"], cwd=ROOT, check=True,
+                            text=True, capture_output=True).stdout.strip()
+
     tag = ""
-    dispatch = ["workflow", "run", "render.yml", "-f", f"composition={args.composition}"]
+    dispatch = ["workflow", "run", "render.yml", "--ref", branch,
+                "-f", f"composition={args.composition}", "-f", f"props={args.props}"]
     if args.footage:
         tag = "footage-" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
         gh("release", "create", tag, "--draft", "--title", tag, "--notes", "Temporary render input",
