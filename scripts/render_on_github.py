@@ -11,14 +11,27 @@ import datetime
 import pathlib
 import re
 import subprocess
+import time
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
+GH_ATTEMPTS = 3
+GH_RETRY_SECONDS = 15
+
+
 def gh(*args, capture=False):
-    result = subprocess.run(["gh", *args], cwd=ROOT, check=True, text=True,
-                            capture_output=capture)
-    return result.stdout if capture else None
+    """Run gh, retrying when the connection to GitHub drops for a moment."""
+    for attempt in range(1, GH_ATTEMPTS + 1):
+        try:
+            result = subprocess.run(["gh", *args], cwd=ROOT, check=True, text=True,
+                                    capture_output=capture)
+            return result.stdout if capture else None
+        except subprocess.CalledProcessError:
+            if attempt == GH_ATTEMPTS:
+                raise
+            print(f"gh {args[0]} failed, retrying in {GH_RETRY_SECONDS}s")
+            time.sleep(GH_RETRY_SECONDS)
 
 
 def main():
