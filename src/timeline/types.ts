@@ -49,11 +49,16 @@ export const FULL_SCREEN_TYPES: Overlay["type"][] = [
 
 export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};
 
+// Written by scripts/track_face.py: the face's aim point every `step` seconds, in
+// footage pixels.
+export type FaceTrack = {step: number; points: [number, number][]};
+
 export type Edit = {
   footage: string;
   segments: Segment[];
   overlays: Overlay[];
   captions: CaptionWord[][];
+  face?: FaceTrack;
 };
 
 export const FPS = 30;

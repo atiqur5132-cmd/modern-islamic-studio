@@ -3,7 +3,8 @@ import {GOLD, IVORY, LATIN_FONT, NAVY, SAFE_AREA} from "../theme";
 
 export type TimedCaptionWord = {text: string; emphasis: boolean; frame: number};
 
-const CARD_TOP_FROM_BOTTOM = 640;
+// The Ayah card is about 260 px tall above its safe-area margin.
+const CARD_TOP_FROM_BOTTOM = SAFE_AREA.bottom + 260;
 const OUTLINE = 10;
 
 // Short-form caption style: a few big uppercase words that pop in together; the
@@ -18,9 +19,9 @@ export const Caption = ({words, aboveCard}: {words: TimedCaptionWord[]; aboveCar
       style={{
         justifyContent: "flex-end",
         alignItems: "center",
-        paddingBottom: aboveCard ? CARD_TOP_FROM_BOTTOM + 24 : SAFE_AREA.bottom + 50,
-        paddingLeft: SAFE_AREA.side,
-        paddingRight: SAFE_AREA.side,
+        paddingBottom: aboveCard ? CARD_TOP_FROM_BOTTOM + 24 : SAFE_AREA.bottom + 20,
+        paddingLeft: SAFE_AREA.rail,
+        paddingRight: SAFE_AREA.rail,
       }}
     >
       <div

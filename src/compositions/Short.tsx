@@ -19,6 +19,7 @@ import {Title} from "../overlays/Title";
 import {BonesScene} from "../scenes/BonesScene";
 import {FingertipScene} from "../scenes/FingertipScene";
 import {Grain} from "../overlays/Grain";
+import {cameraAt, emphasisPunches} from "../timeline/camera";
 import {soundCues} from "../timeline/sfx";
 import {GOLD, NAVY, PIP} from "../theme";
 import {
@@ -33,7 +34,6 @@ import {
 } from "../timeline/types";
 
 const SEGMENT_PREMOUNT_FRAMES = FPS;
-const FACE_FOCUS = {x: 540, y: 730};
 
 // Each side of a cut lends this much room tone, so the sound never drops out.
 const CROSSFADE_HALF_FRAMES = 3;
@@ -81,7 +81,7 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[]) => {
   }
 };
 
-export const Short = ({footage, segments, overlays, captions}: Edit) => {
+export const Short = ({footage, segments, overlays, captions, face}: Edit) => {
   const frame = useCurrentFrame();
   const src = staticFile(`footage/${footage}`);
   const fullScreen = overlays.filter((o) => FULL_SCREEN_TYPES.includes(o.type));
@@ -116,6 +116,7 @@ export const Short = ({footage, segments, overlays, captions}: Edit) => {
   );
   const pipScale = interpolate(pip, [0, 1], [1, PIP.radius / 360]);
   const clipRadius = interpolate(pip, [0, 1], [1600, 360]);
+  const camera = cameraAt(frame, segments, emphasisPunches(segments, captions, stretches), face);
 
   const cues = soundCues(segments, overlays, stretches);
 
@@ -139,35 +140,38 @@ export const Short = ({footage, segments, overlays, captions}: Edit) => {
       {fullScreen.map(renderTimed)}
       <AbsoluteFill
         style={{
-          clipPath: `circle(${(clipRadius / CLIP_UNIT) * 100}% at ${FACE_FOCUS.x}px ${FACE_FOCUS.y}px)`,
-          transformOrigin: `${FACE_FOCUS.x}px ${FACE_FOCUS.y}px`,
-          transform: `translate(${(PIP.x - FACE_FOCUS.x) * pip}px, ${(PIP.y - FACE_FOCUS.y) * pip}px) scale(${pipScale})`,
+          clipPath: `circle(${(clipRadius / CLIP_UNIT) * 100}% at ${camera.face.x}px ${camera.face.y}px)`,
+          transformOrigin: `${camera.face.x}px ${camera.face.y}px`,
+          transform: `translate(${(PIP.x - camera.face.x) * pip}px, ${(PIP.y - camera.face.y) * pip}px) scale(${pipScale})`,
         }}
       >
-        {segments.map((segment) => {
-          const length = segmentFrames(segment);
-          const from = videoCursor;
-          videoCursor += length;
-          return (
-            <Sequence
-              key={segment.from}
-              from={from}
-              durationInFrames={length}
-              premountFor={SEGMENT_PREMOUNT_FRAMES}
-            >
-              <OffthreadVideo
-                muted
-                src={src}
-                trimBefore={toFrames(segment.from)}
-                trimAfter={toFrames(segment.to)}
-                style={{
-                  transform: `scale(${segment.zoom})`,
-                  transformOrigin: `${FACE_FOCUS.x}px ${FACE_FOCUS.y}px`,
-                }}
-              />
-            </Sequence>
-          );
-        })}
+        <AbsoluteFill
+          style={{
+            transformOrigin: "0 0",
+            transform: `translate(${camera.x}px, ${camera.y}px) scale(${camera.scale})`,
+          }}
+        >
+          {segments.map((segment) => {
+            const length = segmentFrames(segment);
+            const from = videoCursor;
+            videoCursor += length;
+            return (
+              <Sequence
+                key={segment.from}
+                from={from}
+                durationInFrames={length}
+                premountFor={SEGMENT_PREMOUNT_FRAMES}
+              >
+                <OffthreadVideo
+                  muted
+                  src={src}
+                  trimBefore={toFrames(segment.from)}
+                  trimAfter={toFrames(segment.to)}
+                />
+              </Sequence>
+            );
+          })}
+        </AbsoluteFill>
       </AbsoluteFill>
       {pip > 0 ? (
         <div

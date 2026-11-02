@@ -19,8 +19,8 @@ export const AyahCard = ({ayahKey, continues}: {ayahKey: string; continues: bool
       style={{
         justifyContent: "flex-end",
         paddingBottom: SAFE_AREA.bottom,
-        paddingLeft: SAFE_AREA.side,
-        paddingRight: SAFE_AREA.side,
+        paddingLeft: SAFE_AREA.rail,
+        paddingRight: SAFE_AREA.rail,
       }}
     >
       <div
