@@ -59,6 +59,18 @@ npm run dev
 .venv\Scripts\python -m unittest discover tests
 ```
 
+Laptop render (about 6 minutes for a 49 s Short with 3D; ask the user to close Chrome first, keep concurrency at 2 for 8 GB RAM):
+
+```bash
+npx remotion render Short out/local/clip.mp4 --props=projects/clip/edit.json --concurrency=2 --gl=angle
+```
+
+The Windows render comes out full range (`yuvj420p`), which can look washed out after upload. Always convert it before use:
+
+```bash
+ffmpeg -i out/local/clip.mp4 -vf "scale=in_range=pc:out_range=tv,format=yuv420p" -color_range tv -c:v libx264 -preset veryfast -crf 18 -c:a copy -movflags +faststart out/local/clip-final.mp4
+```
+
 `auto_edit.py` writes every decision to `work/<clip>.auto_edit.json`. Read it before rendering: `lostWords` must be empty, and `untranscribedSoundKept` may be recitation that needs a human ear. Overlay times are on the source footage, so re-running it never moves an Ayah off its spoken words.
 
 Each video has `projects/<name>/edit.json`: its footage, kept segments and overlays. Add `--vertical` to the prepare step only for real landscape footage; phone clips marked with rotation are already vertical.
