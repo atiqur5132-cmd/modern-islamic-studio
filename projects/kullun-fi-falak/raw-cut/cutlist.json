@@ -1,0 +1,754 @@
+{
+  "sourceSeconds": 302.72,
+  "keptSeconds": 95.47,
+  "segments": 23,
+  "fillersRemoved": [],
+  "flaggedLines": [
+    4,
+    11
+  ],
+  "inventedByWhisper": [
+    {
+      "start": 127.98,
+      "end": 129.38,
+      "text": "अपने लिए इस्ट्रोनॉमर्स के लिए भार पर से लिए पर लिए पर लिए पर लिए पर लिए पर कुरान करते हैं।"
+    },
+    {
+      "start": 213.64,
+      "end": 215.44,
+      "text": "आपचाइन जब चाल पट्रमेंटा, अल-अंबिया, आयत 33, कुरान, सुरह अल-अंबिया, आयत 33, कुरान, आयत 33, आयत 33, आयत 33."
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "script": "Quran mein ek line hai... jiske letters aap *ulta* padho, toh bhi same rehte hain.",
+      "sourceIn": 0,
+      "sourceOut": 4.33,
+      "sameTakeAs": [
+        2
+      ],
+      "pieces": [
+        {
+          "from": 0,
+          "to": 7.57
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "कुरान में एक लाइन हैं, जिसकिर लेटर्स को आप उल्टा पडो तो भी सेम रहते हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 2,
+      "script": "Aur mazedaar baat ye hai ki wo line hai hi ghoomne ke baare mein.",
+      "sourceIn": 4.13,
+      "sourceOut": 7.57,
+      "sameTakeAs": [
+        1
+      ],
+      "pieces": [
+        {
+          "from": 0,
+          "to": 7.57
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 87,
+      "heard": "और मजेदार बात यह ही कि वो लाइन है ही घूमने के बारे में।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 286.82,
+          "end": 289.14,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "script": "Surah Al-Anbiya, ayat 33.",
+      "sourceIn": 17.38,
+      "sourceOut": 19.37,
+      "sameTakeAs": [
+        4
+      ],
+      "pieces": [
+        {
+          "from": 17.33,
+          "to": 22.78
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 89,
+      "heard": "सूरह अल -अंबिया के आयत 33",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 9.62,
+          "end": 11.91,
+          "score": 89,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "script": "Isme raat, din, Sun aur Moon ki baat hoti hai...",
+      "sourceIn": 19.17,
+      "sourceOut": 22.73,
+      "sameTakeAs": [
+        3
+      ],
+      "pieces": [
+        {
+          "from": 17.33,
+          "to": 22.78
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 72,
+      "heard": "में राद, दिन, सन, इन, मून की बात होती हैं।",
+      "reason": "FLAG: no clean take; best match used (start missing)",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 11.91,
+          "end": 15.69,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "script": "aur phir aata hai: \"Kullun fi falakin yasbahun.\"",
+      "sourceIn": 23.94,
+      "sourceOut": 28.17,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 23.94,
+          "to": 28.22
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 94,
+      "heard": "और फिर आता है, कुल्लुन फी फ़लकिन यस्बहून।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 235.71,
+          "end": 242.57,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "script": "Matlab, sab apne-apne falak mein tair rahe hain.",
+      "sourceIn": 30.48,
+      "sourceOut": 32.84,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 30.48,
+          "to": 32.84
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 91,
+      "heard": "मतलब सब अपने आपने फ़लक में तेर रहे हैं,",
+      "reason": "only clean take",
+      "override": "Whisper ran 'hain' on to 33.17; re-transcribed alone, 'matlab (apne-apne orbit...)' starts at 32.82. Cut in the dip before it, so the unscripted orbit clause is dropped.",
+      "otherAttempts": [
+        {
+          "start": 33.17,
+          "end": 35.41,
+          "score": 69,
+          "problems": [
+            "match 69 < 72"
+          ]
+        },
+        {
+          "start": 193.4,
+          "end": 196.11,
+          "score": 70,
+          "problems": [
+            "match 70 < 72"
+          ]
+        },
+        {
+          "start": 205.28,
+          "end": 208.13,
+          "score": 70,
+          "problems": [
+            "match 70 < 72"
+          ]
+        },
+        {
+          "start": 287.43,
+          "end": 290.49,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "script": "Ab ek kaam karo. Pehle teen words lo, aur saare vowel marks hata do.",
+      "sourceIn": 43.82,
+      "sourceOut": 48.68,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 43.79,
+          "to": 48.8
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "अब एक काम करो, पहले तीन वोट सलो, और सारे भावल मर्क्स को हटा दो,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 8,
+      "script": "Sirf jo letters likhe hue hain, wo dekho.",
+      "sourceIn": 52.11,
+      "sourceOut": 54.78,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 52.08,
+          "to": 54.8
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 95,
+      "heard": "सिर्फ जो लेटर्स लिएके हुए हैं वो देखो।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 9,
+      "script": "Kaaf. Laam. Fa.",
+      "sourceIn": 58.35,
+      "sourceOut": 60.04,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 58.04,
+          "to": 60.19
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 100,
+      "heard": "काफ, लाम, फ़ा,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 64.48,
+          "end": 69.37,
+          "score": 80,
+          "problems": []
+        },
+        {
+          "start": 69.81,
+          "end": 75.15,
+          "score": 62,
+          "problems": [
+            "match 62 < 72"
+          ]
+        },
+        {
+          "start": 92.44,
+          "end": 93.26,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 145.46,
+          "end": 146.12,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "script": "Ya. Fa. Laam. Kaaf.",
+      "sourceIn": 67.85,
+      "sourceOut": 70.85,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 67.78,
+          "to": 71.31
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 100,
+      "heard": "या, फा, लाम, काफ़।",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 31.55,
+          "end": 32.17,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 58.43,
+          "end": 59.92,
+          "score": 67,
+          "problems": [
+            "match 67 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 62.85,
+          "end": 64.76,
+          "score": 100,
+          "problems": []
+        },
+        {
+          "start": 92.44,
+          "end": 93.26,
+          "score": 74,
+          "problems": [
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "script": "Ab ulti side se padho. *Same.*",
+      "sourceIn": 74.48,
+      "sourceOut": 76.97,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 74.39,
+          "to": 76.98
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 62,
+      "heard": "आप उल्टी साथ से पटो, सेनॉ।",
+      "reason": "FLAG: no clean take; best match used (match 62 < 72, start missing, end missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 12,
+      "script": "Haan, ek cheez clear kar doon. Bolne mein ye ulta same nahi lagega.",
+      "sourceIn": 79.16,
+      "sourceOut": 85.14,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 79.15,
+          "to": 85.21
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "हां, एक चीस क्लियार करदू, बोलने में ये उल्ता सेम नहीं लगेगा।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 13,
+      "script": "Ye likhawat ka palindrome hai, awaaz ka nahi.",
+      "sourceIn": 87.26,
+      "sourceOut": 90.24,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 87.26,
+          "to": 90.24
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 89,
+      "heard": "ये लिक्खावत का पैलिंड्रोम हैं, आवास का नहीं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 158.72,
+          "end": 162.81,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "script": "Ab falak ka matlab samjho. Koi bhi gol cheez, gol raasta.",
+      "sourceIn": 92.37,
+      "sourceOut": 96.9,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 92.37,
+          "to": 96.93
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 91,
+      "heard": "आब फ़लक का मतलब सम्झो, कोई भी गोल चीज या गोल रस्ता।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 15,
+      "script": "Aur Ibn Abbas se riwayat hai ki unhone ise charkhe ki ghoomti hui chakri se samjhaya tha.",
+      "sourceIn": 117.67,
+      "sourceOut": 123.05,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 117.56,
+          "to": 123.05
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 86,
+      "heard": "और इब्न अब्बास से रिवायत है कि उन्हों नहीं से चक्रे की खुमती हुई चक्री से सम्झाया था।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 110.85,
+          "end": 116.16,
+          "score": 79,
+          "problems": [
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 16,
+      "script": "Aur Sun? Wo bhi ek jagah ruka hua nahi hai.",
+      "sourceIn": 129.92,
+      "sourceOut": 132.57,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 129.91,
+          "to": 132.57
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "और सन भी एक जगा रुका हुआ नहीं हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 17,
+      "script": "Lagbhag *230 kilometre per second* ki speed se poori galaxy ka chakkar laga raha hai.",
+      "sourceIn": 141.38,
+      "sourceOut": 146.61,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 141.28,
+          "to": 146.61
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 83,
+      "heard": "लगबक 230 किलोमीटर पर सेकंड के स्पीट से पूरे गैलेक्सी का चकर लगा रहा है।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 18,
+      "script": "Aur ek chakkar poora hone mein? Takreeban *23 crore saal* lagte hain.",
+      "sourceIn": 148.44,
+      "sourceOut": 153.1,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 148.44,
+          "to": 153.13
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 91,
+      "heard": "और एक चकर पूरा होने में तकरीबान 23 करोड साल लगते हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 19,
+      "script": "Lekin main honest rahunga. Arabic mein aur bhi palindromes hain.",
+      "sourceIn": 156.28,
+      "sourceOut": 160.45,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 156.28,
+          "to": 160.45
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 73,
+      "heard": "लेकिन में अणिश रहूंगा, एराबिक में और भी बहुत सारे पैलिंड्रोम्स हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 20,
+      "script": "Aur purane zamaane ke astronomers bhi maante the ki Sun ghoomta hai.",
+      "sourceIn": 173.11,
+      "sourceOut": 177.57,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 173.05,
+          "to": 177.63
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "और पूराने जमाने की एस्ट्रोनॉमर्स भी यह मानते थे कि सन कुमता है।",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 33.49,
+          "end": 35.41,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 162.57,
+          "end": 166.59,
+          "score": 83,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "line": 21,
+      "script": "Toh main ye nahi keh raha ki ye koi proof hai.",
+      "sourceIn": 183.91,
+      "sourceOut": 186.88,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 183.89,
+          "to": 186.89
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 76,
+      "heard": "तो मैं यह नहीं कह रहा कि यह कुई प्रूफ हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 22,
+      "script": "Bas ek baat socho. Jis line ka matlab hai \"sab apne circle mein ghoom rahe hain\"...",
+      "sourceIn": 202.88,
+      "sourceOut": 208.21,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 202.82,
+          "to": 208.21
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 81,
+      "heard": "बस एक बात सोचो, जिस आयत का मतलब है, सब अपने सर्कल में घोंग रहे हैं।",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 32.71,
+          "end": 35.41,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 190.78,
+          "end": 196.11,
+          "score": 78,
+          "problems": []
+        },
+        {
+          "start": 287.43,
+          "end": 290.49,
+          "score": 55,
+          "problems": [
+            "match 55 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 23,
+      "script": "uske letters bhi ghoom ke wahin wapas aa jaate hain, jahan se shuru hue the.",
+      "sourceIn": 226.8,
+      "sourceOut": 230.83,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 226.78,
+          "to": 230.89
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 78,
+      "heard": "उसके लेटर्स भी खुम के वही आ जाते हैं जहां से श्रूब हुये थे।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 24,
+      "script": "Kuch lines sirf baat nahi karti.",
+      "sourceIn": 279.37,
+      "sourceOut": 281.93,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 279.12,
+          "to": 282.13
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 75,
+      "heard": "कुछ लायन्स सिर्फ बाद नहीं करती,",
+      "reason": "last of 4 clean takes",
+      "override": "Keep the fluent 'karti, wo' and cut in the dip before the stumble 'sirf wahi baat'.",
+      "otherAttempts": [
+        {
+          "start": 234.11,
+          "end": 236.07,
+          "score": 84,
+          "problems": []
+        },
+        {
+          "start": 241.17,
+          "end": 242.99,
+          "score": 80,
+          "problems": []
+        },
+        {
+          "start": 253.15,
+          "end": 255.17,
+          "score": 84,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "line": 25,
+      "script": "Wo khud wahi ban jaati hain... jiske baare mein wo baat kar rahi hain.",
+      "sourceIn": 286.52,
+      "sourceOut": 290.3,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 286.52,
+          "to": 290.3
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 86,
+      "heard": "वो खुद वही बाद बन जाती है, जिसके बारे में बात कर रही हैं।",
+      "reason": "only clean take",
+      "override": "Start on 'khud' (286.64) after the drawn-out 'wo...' (284.5-285.9); 'wo' comes from line 24's take.",
+      "otherAttempts": [
+        {
+          "start": 5.6,
+          "end": 10.57,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 228.03,
+          "end": 236.35,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 243.31,
+          "end": 254.71,
+          "score": 61,
+          "problems": [
+            "match 61 < 72"
+          ]
+        }
+      ]
+    }
+  ]
+}

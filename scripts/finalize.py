@@ -1,11 +1,12 @@
 """Turn a Remotion render into the file that gets uploaded, and prove its sound is in spec.
 
-Usage: .venv\\Scripts\\python scripts/finalize.py out/local/clip.mp4
+Usage: .venv\\Scripts\\python scripts/finalize.py out/local/clip.mp4 [--final out.mp4]
 
 Converts the Windows full-range render to TV range, brings the mix to -14 LUFS with
 the true peak under -1 dBTP (two-pass loudnorm, linear, so the mix is not squashed),
-then measures the written file. Writes <name>-final.mp4 next to the render and exits
-with an error when the result is out of spec.
+then measures the written file. Writes <name>-final.mp4 next to the render (or, with
+--final, the delivery file: x264 High, preset slow, AAC 320 kbps) and exits with an
+error when the result is out of spec.
 """
 import argparse
 import json
@@ -19,8 +20,23 @@ MAX_TRUE_PEAK = -1.0
 # Aim under the limit: AAC encoding adds a few tenths of a dB of peak.
 TARGET_TRUE_PEAK = -1.8
 LRA = 11
-VIDEO = ["-vf", "scale=in_range=pc:out_range=tv,format=yuv420p", "-color_range", "tv",
-         "-c:v", "libx264", "-preset", "veryfast", "-crf", "18"]
+# The Windows render is full range; a Linux render (GitHub) may already be TV range.
+# Convert from whatever the file says it is, so TV range is never squeezed twice.
+VIDEO = ["-color_range", "tv", "-c:v", "libx264", "-profile:v", "high", "-crf", "18"]
+PREVIEW = {"preset": "veryfast", "audio": "192k"}
+DELIVERY = {"preset": "slow", "audio": "320k"}
+
+
+def colour_range(video):
+    """'pc' (full) or 'tv' (limited), from the file's own stream info."""
+    probe = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=color_range,pix_fmt",
+         "-of", "json", str(video)],
+        capture_output=True, text=True, check=True,
+    )
+    stream = json.loads(probe.stdout)["streams"][0]
+    full = stream.get("color_range") == "pc" or stream.get("pix_fmt", "").startswith("yuvj")
+    return "pc" if full else "tv"
 
 
 def loudnorm_measure(video):
@@ -51,17 +67,22 @@ def ebur128(video):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("render", type=pathlib.Path)
+    parser.add_argument("--final", type=pathlib.Path, help="write the delivery file here")
     args = parser.parse_args()
+    quality = DELIVERY if args.final else PREVIEW
 
+    source_range = colour_range(args.render)
     measured = loudnorm_measure(args.render)
     loudnorm = (f"loudnorm=I={TARGET_LUFS}:TP={TARGET_TRUE_PEAK}:LRA={LRA}"
                 f":measured_I={measured['input_i']}:measured_TP={measured['input_tp']}"
                 f":measured_LRA={measured['input_lra']}:measured_thresh={measured['input_thresh']}"
                 f":offset={measured['target_offset']}:linear=true")
-    output = args.render.with_name(f"{args.render.stem}-final.mp4")
+    output = args.final or args.render.with_name(f"{args.render.stem}-final.mp4")
+    output.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(
-        ["ffmpeg", "-y", "-loglevel", "error", "-i", str(args.render), *VIDEO,
-         "-af", loudnorm, "-ar", "48000", "-c:a", "aac", "-b:a", "192k",
+        ["ffmpeg", "-y", "-loglevel", "error", "-i", str(args.render),
+         "-vf", f"scale=in_range={source_range}:out_range=tv,format=yuv420p", *VIDEO, "-preset", quality["preset"],
+         "-af", loudnorm, "-ar", "48000", "-c:a", "aac", "-b:a", quality["audio"],
          "-movflags", "+faststart", str(output)],
         check=True,
     )
@@ -69,6 +90,7 @@ def main():
     integrated, peak = ebur128(output)
     loud_ok = abs(integrated - TARGET_LUFS) <= LUFS_TOLERANCE
     peak_ok = peak <= MAX_TRUE_PEAK
+    print(f"Picture: {source_range} range in, tv range out")
     print(f"Before: {float(measured['input_i']):.1f} LUFS, true peak {float(measured['input_tp']):.1f} dBTP")
     print(f"After:  {integrated:.1f} LUFS ({'pass' if loud_ok else 'FAIL'}), "
           f"true peak {peak:.1f} dBTP ({'pass' if peak_ok else 'FAIL'})")

@@ -1,5 +1,14 @@
 import {Easing, interpolate} from "remotion";
-import {CaptionWord, FaceTrack, FPS, Segment, segmentFrames, sourceToOutputFrame, toFrames} from "./types";
+import {
+  CaptionWord,
+  FaceTrack,
+  footageFrames,
+  FPS,
+  Segment,
+  segmentFrames,
+  sourceToOutputFrame,
+  toFrames,
+} from "./types";
 
 // The virtual camera on the speaker: each cut keeps its punch-in, every shot creeps
 // in slowly, key words get a short push, and the crop follows the face.
@@ -46,32 +55,44 @@ export const emphasisPunches = (
     }))
     .filter(({start, end}) => end > start && !stretches.some((s) => start < s.end && end > s.start));
 
+// A quick punch lands on an ease-out and leaves on a slower ease-in-out.
+const punchAmount = (frame: number, start: number, end: number) =>
+  frame < start
+    ? interpolate(frame, [start - PUNCH_IN_FRAMES, start], [0, 1], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+        easing: Easing.out(Easing.cubic),
+      })
+    : interpolate(frame, [end + PUNCH_HOLD_FRAMES, end + PUNCH_HOLD_FRAMES + PUNCH_OUT_FRAMES], [1, 0], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+        easing: Easing.inOut(Easing.quad),
+      });
+
 export const cameraAt = (
   frame: number,
   segments: Segment[],
   punches: {start: number; end: number}[],
   face: FaceTrack | undefined,
+  punchToZoom?: number,
 ): Camera => {
   let cursor = 0;
   for (const segment of segments) {
     const length = segmentFrames(segment);
     if (frame < cursor + length) {
-      const inShot = frame - cursor;
-      const punch = Math.max(
-        0,
-        ...punches.map(({start, end}) =>
-          interpolate(
-            frame,
-            [start - PUNCH_IN_FRAMES, start, end + PUNCH_HOLD_FRAMES, end + PUNCH_HOLD_FRAMES + PUNCH_OUT_FRAMES],
-            [0, 1, 1, 0],
-            {extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad)},
-          ),
-        ),
-      );
-      const scale = Math.min(
-        segment.zoom * (1 + (DRIFT * inShot) / Math.max(length, 1)) * (1 + EMPHASIS_PUNCH * punch),
-        MAX_ZOOM,
-      );
+      // During a hold the picture is frozen, and so is the camera.
+      const footage = footageFrames(segment);
+      const inShot = Math.min(frame - cursor, footage - 1);
+      const punch = Math.max(0, ...punches.map(({start, end}) => punchAmount(Math.min(frame, cursor + footage - 1), start, end)));
+      const progress = inShot / Math.max(footage, 1);
+      const creep = segment.push
+        ? 1 + segment.push * Easing.inOut(Easing.sin)(progress)
+        : 1 + DRIFT * progress;
+      const base = segment.zoom * creep;
+      const punched = punchToZoom
+        ? base + (Math.max(base, punchToZoom) - base) * punch
+        : base * (1 + EMPHASIS_PUNCH * punch);
+      const scale = Math.min(punched, MAX_ZOOM);
       const source = faceAt(face, (toFrames(segment.from) + inShot) / FPS);
       // Move the face toward the target, but never so far that the frame edge shows.
       const x = Math.min(0, Math.max(WIDTH * (1 - scale), FACE_TARGET.x - scale * source.x));

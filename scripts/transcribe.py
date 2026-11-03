@@ -1,6 +1,6 @@
 """Transcribe a video on the laptop with word timings.
 
-Usage: .venv\\Scripts\\python scripts/transcribe.py <video> [--model medium] [--language hi]
+Usage: .venv\\Scripts\\python scripts/transcribe.py <video> [--model medium] [--language hi] [--terms file]
 
 Writes work/<video name>.<model>.transcript.json. Close Chrome first; this needs free RAM.
 Never use this output as a source for Quranic text.
@@ -34,6 +34,8 @@ def main():
     parser.add_argument("video", type=pathlib.Path)
     parser.add_argument("--model", default="medium")
     parser.add_argument("--language", default="hi")
+    parser.add_argument("--terms", type=pathlib.Path, default=ROOT / "config" / "whisper_terms.txt",
+                        help="words to prime Whisper with, for this reel's vocabulary")
     args = parser.parse_args()
 
     work = ROOT / "work"
@@ -56,7 +58,7 @@ def main():
         samples = np.frombuffer(audio.readframes(audio.getnframes()), dtype=np.int16)
     samples = samples.astype(np.float32) / 32768
     duration = len(samples) / SAMPLE_RATE
-    prompt = (ROOT / "config" / "whisper_terms.txt").read_text(encoding="utf-8").strip()
+    prompt = args.terms.read_text(encoding="utf-8").strip()
 
     # Each take goes to Whisper alone. Given both together, it merges a repeated
     # line into one and hides the retake.

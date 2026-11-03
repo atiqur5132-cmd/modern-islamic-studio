@@ -48,6 +48,7 @@ def main():
         if args.props:
             edit = json.loads((ROOT / args.props).read_text(encoding="utf-8"))
             names = [edit["footage"]] + [o["src"] for o in edit["overlays"] if o["type"] == "broll"]
+            names += [shot["src"] for o in edit["overlays"] if o["type"] == "montage" for shot in o["shots"]]
             args.footage = [ROOT / "public" / "footage" / name for name in names]
 
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=ROOT, check=True,

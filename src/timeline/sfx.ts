@@ -2,19 +2,59 @@ import {COUNTER_LANDS_FRAME} from "../overlays/Counter";
 import {MATCH_FRAME} from "../overlays/Fingerprint";
 import {boneLandingFrame} from "../scenes/BonesScene";
 import {buildSkeleton} from "../scenes/skeleton";
-import {Overlay, Segment, sourceToOutputFrame} from "./types";
+import {FPS, Overlay, Segment, segmentFrames, sourceToOutputFrame} from "./types";
 
 // Where sound effects fall, worked out from the edit itself, so they move when
 // the cuts or graphics move. Kept sparse: a sound marks a change, nothing more.
 
-export type Sound = "whoosh" | "impact" | "tick";
+export type Sound =
+  | "whoosh"
+  | "whoosh-2"
+  | "whoosh-3"
+  | "impact"
+  | "tick"
+  | "tick-soft-1"
+  | "tick-soft-2"
+  | "tick-soft-3"
+  | "riser"
+  | "sub-hit"
+  | "shimmer";
 export type SoundCue = {frame: number; sound: Sound; volume: number};
 
+// Seconds of each file (scripts/make_sfx.py), so no sound is cut short.
+export const SOUND_SECONDS: Record<Sound, number> = {
+  whoosh: 0.7,
+  "whoosh-2": 0.6,
+  "whoosh-3": 0.8,
+  impact: 0.9,
+  tick: 0.05,
+  "tick-soft-1": 0.12,
+  "tick-soft-2": 0.12,
+  "tick-soft-3": 0.12,
+  riser: 1.2,
+  "sub-hit": 1.4,
+  shimmer: 1.9,
+};
+
+// A repeated sound rotates through its takes (QUALITY.md).
+const WHOOSHES: Sound[] = ["whoosh", "whoosh-2", "whoosh-3"];
+const SOFT_TICKS: Sound[] = ["tick-soft-1", "tick-soft-2", "tick-soft-3"];
+
 const WHOOSH_LEAD_FRAMES = 6;
+// A whoosh swells to its loudest about a third of a second in; a whip's cut sits there.
+const WHOOSH_PEAK_FRAMES = 10;
+// Effects peak one frame after the picture that causes them (QUALITY.md).
+const AFTER_PICTURE = 1;
 // The effect files all peak at -3 dB; these keep them under the voice.
 const WHOOSH_VOLUME = 0.45;
+const EXIT_WHOOSH_VOLUME = 0.25;
 const IMPACT_VOLUME = 0.5;
 const TICK_VOLUME = 0.18;
+const LETTER_TICK_VOLUME = 0.24;
+const RISER_VOLUME = 0.22;
+const SUB_HIT_VOLUME = 0.28; // it lands on the spoken "Same"; louder clips
+const SHIMMER_VOLUME = 0.22;
+const NUMBER_LANDS_VOLUME = 0.3;
 const TICK_EVERY_NTH_BONE = 3;
 
 export const soundCues = (
@@ -23,12 +63,28 @@ export const soundCues = (
   stretches: {start: number; end: number}[],
 ): SoundCue[] => {
   const cues: SoundCue[] = [];
-  for (const {start, end} of stretches) {
-    cues.push({frame: start - WHOOSH_LEAD_FRAMES, sound: "whoosh", volume: WHOOSH_VOLUME});
-    cues.push({frame: end - WHOOSH_LEAD_FRAMES, sound: "whoosh", volume: WHOOSH_VOLUME * 0.7});
-  }
+  const at = (seconds: number) => sourceToOutputFrame(segments, seconds);
+  const endPhraseStarts = overlays.filter((o) => o.type === "endphrase").map((o) => at(o.start));
+
+  stretches.forEach(({start, end}, index) => {
+    cues.push({frame: start - WHOOSH_LEAD_FRAMES, sound: WHOOSHES[index % 3], volume: WHOOSH_VOLUME});
+    // No exit sound where the end card already covers the speaker's return.
+    if (!endPhraseStarts.some((f) => f <= end)) {
+      cues.push({frame: end - WHOOSH_LEAD_FRAMES, sound: WHOOSHES[(index + 1) % 3], volume: EXIT_WHOOSH_VOLUME});
+    }
+  });
+
+  // The whip between sections.
+  let cursor = 0;
+  segments.forEach((segment, index) => {
+    if (segment.transition === "whip") {
+      cues.push({frame: cursor - WHOOSH_PEAK_FRAMES, sound: WHOOSHES[(index + 2) % 3], volume: WHOOSH_VOLUME});
+    }
+    cursor += segmentFrames(segment);
+  });
+
   for (const overlay of overlays) {
-    const start = sourceToOutputFrame(segments, overlay.start);
+    const start = at(overlay.start);
     if (overlay.type === "counter") {
       cues.push({frame: start + COUNTER_LANDS_FRAME, sound: "impact", volume: IMPACT_VOLUME});
     } else if (overlay.type === "statement") {
@@ -41,6 +97,26 @@ export const soundCues = (
         cues.push({frame: start + Math.round(boneLandingFrame(index)), sound: "tick", volume: TICK_VOLUME});
       }
       cues.push({frame: start + Math.round(boneLandingFrame(bones - 1)), sound: "impact", volume: IMPACT_VOLUME * 0.7});
+    } else if (overlay.type === "hook") {
+      // The punch on "ulta" and its mirror line: a light swish.
+      cues.push({frame: at(overlay.mirrorAt) - WHOOSH_PEAK_FRAMES + AFTER_PICTURE, sound: "whoosh-2", volume: WHOOSH_VOLUME * 0.6});
+    } else if (overlay.type === "palindrome") {
+      overlay.letters.forEach((letter, index) => {
+        cues.push({frame: at(letter.at) + AFTER_PICTURE, sound: SOFT_TICKS[index % 3], volume: LETTER_TICK_VOLUME});
+      });
+      // A riser through the read-back that stops dead on "Same", where the sub hits.
+      const same = at(overlay.sameAt);
+      cues.push({frame: same - Math.round(SOUND_SECONDS.riser * FPS) + AFTER_PICTURE, sound: "riser", volume: RISER_VOLUME});
+      cues.push({frame: same + AFTER_PICTURE, sound: "sub-hit", volume: SUB_HIT_VOLUME});
+    } else if (overlay.type === "falak") {
+      // The rings settling into the whorl.
+      cues.push({frame: at(overlay.morphAt) - WHOOSH_PEAK_FRAMES + 12, sound: "whoosh-3", volume: WHOOSH_VOLUME * 0.5});
+    } else if (overlay.type === "galaxy") {
+      cues.push({frame: at(overlay.speed.at) + AFTER_PICTURE, sound: "impact", volume: NUMBER_LANDS_VOLUME});
+      cues.push({frame: at(overlay.period.at) + AFTER_PICTURE, sound: "impact", volume: NUMBER_LANDS_VOLUME});
+    } else if (overlay.type === "ring") {
+      // The orbit drawing itself in.
+      cues.push({frame: start + 6, sound: "shimmer", volume: SHIMMER_VOLUME});
     }
   }
   return cues.filter((cue) => cue.frame >= 0).sort((a, b) => a.frame - b.frame);
