@@ -20,8 +20,9 @@ export const Root = () => (
     <Composition
       id="Thumbnail"
       component={Thumbnail}
-      defaultProps={{edit: sampleEdit as Edit, frame: 0, title: ""}}
+      defaultProps={{edit: sampleEdit as Edit, title: ""}}
       durationInFrames={1}
+      calculateMetadata={({props}) => ({durationInFrames: editDurationInFrames(props.edit)})}
       {...SHORTS}
     />
     <Composition id="StudioTest" component={StudioTest} durationInFrames={150} {...SHORTS} />

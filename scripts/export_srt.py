@@ -62,7 +62,7 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("".join(f"{n}\n{timestamp(s)} --> {timestamp(e)}\n{text}\n\n"
                            for n, (s, e, text) in enumerate(entries, 1)), encoding="utf-8")
-    print(f"{len(entries)} captions -> {out.relative_to(ROOT)}")
+    print(f"{len(entries)} captions -> {out}")
 
 
 if __name__ == "__main__":
