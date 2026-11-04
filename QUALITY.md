@@ -21,6 +21,12 @@ measured, not felt: the final report lists every gate as pass or fail with its e
 - Something changes on screen every 2–4 s: a cut, a punch-in, a graphic, B-roll. No shot holds unchanged past 4 s.
 - The payoff lands before the viewer would swipe; the end card is short and the last line holds at least 2 s.
 
+## 2a. Call to action
+
+- A spoken CTA of one line under 3 s, tied to the topic, after the last line, asking for a follow (reels go to Instagram and Facebook; YouTube is set aside for now).
+- A Follow animation with real, unaltered Instagram and Facebook icons; like and comment icons with a specific comment question.
+- CTA graphics appear at the end and 1–2 times mid-video (2–3 s each), never during the hook or payoff, never over the face, and clear of the right-hand action rail.
+
 ## 3. Camera on the speaker
 
 - `track_face.py` has run: `face` exists in `edit.json`, face missed in under 5% of samples.

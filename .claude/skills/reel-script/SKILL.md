@@ -43,7 +43,7 @@ Research process: search broadly first (several queries in one turn; `/deep-rese
 
 ## 3. The script
 
-**Length:** 45–60 s. The creator speaks about 3.3 Hinglish words a second (measured: 275 words in 79 s, 146 words in 49 s), so 150–200 words.
+**Length:** 45–60 s including the CTA. The creator speaks about 3.3 Hinglish words a second (measured: 275 words in 79 s, 146 words in 49 s), so 150–200 words.
 
 **Shape:**
 1. Hook, 0–5 s, spoken over full-screen visuals (the creator is not on screen yet). One surprising, concrete line; the picture shows it. No "Kya aap jaante hain", no greeting, no "aaj hum baat karenge".
@@ -52,7 +52,12 @@ Research process: search broadly first (several queries in one turn; `/deep-rese
 4. Build: one concrete example worked through, each step shown on screen. Open a smaller loop as you close one.
 5. The honesty beat: what this does not prove, or what scholars differ on.
 6. Payoff: the idea lands, ideally turning back on the hook.
-7. Last line: short, quotable, held 2 s. No "like and subscribe".
+7. Last line: short, quotable, held 2 s.
+8. CTA, one line under 3 s, after the last line: tied to the topic ("Aise aur patterns ke liye follow kar lo"), never a generic "like, share, subscribe". Reels go to Instagram and Facebook only for now, so the CTA asks for a follow.
+
+**Comment ask:** pick one specific question about the topic that a viewer can answer in a few words, and place it as on-screen text (with the comment icon) at a mid-video CTA or the end card.
+
+**Mid-video CTAs:** mark 1–2 spots in `beats.md` for a small follow/subscribe or like/comment animation, 2–3 s each, at a calm moment after a mini-payoff (about 40–60% in). Never during the hook or the payoff.
 
 **Voice.** Learn it from `projects/*/script.txt`: talk to one friend ("tum", "Ab ek kaam karo"); sentences of 5–12 words; Hindi grammar with natural English words (orbit, speed, fingerprints); an Arabic term stays and gets its meaning beside it; `*word*` marks spoken emphasis. Avoid: "Kya aap jaante hain", "Aaiye jaante hain", "doston", "dosto aaj ki video mein", "shocking", "you won't believe", stacked adjectives, rhetorical triplets, and any line that sounds like a translation from English.
 
@@ -61,8 +66,8 @@ Research process: search broadly first (several queries in one turn; `/deep-rese
 ## 4. Deliverables
 
 - `projects/<clip>/research.md`: sources and claim ledger.
-- `projects/<clip>/script.txt`: spoken lines only, one sentence per line, `*emphasis*` marked. This file is the caption spelling source, so it must be exactly what the creator will say.
-- `projects/<clip>/beats.md`: one row per line: time, line, visual and layout (full-screen hook, split, circle, speaker, B-roll), on-screen English text, claim tag, the sound, and the asset with its source and licence.
+- `projects/<clip>/script.txt`: spoken lines only, one sentence per line, `*emphasis*` marked. This file is the caption spelling source, so it must be exactly what the creator will say. The CTA line is the last line.
+- `projects/<clip>/beats.md`: one row per line: time, line, visual and layout (full-screen hook, split, circle, speaker, B-roll), on-screen English text, claim tag, the sound, and the asset with its source and licence. CTA rows (mid-video and end) say which animation plays (follow, or like and comment).
 - `projects/<clip>/credits.txt`: every source and asset.
 
 Then self-review before handing over:
