@@ -8,9 +8,10 @@ measured, not felt: the final report lists every gate as pass or fail with its e
 
 - Eyes about a third of the way down the frame (y ≈ 640), chin above y ≈ 1050, so captions at y 1100–1310 sit on the chest, not the face, even at zoom 1.
 
-## 1. Hook (0–1.5 s)
+## 1. Hook (0–5 s)
 
-- Frame 0 is the thumbnail: the face plus one bold line already on screen. Never black, a logo or a fade-in.
+- The reel opens on full-screen motion graphics or real visuals timed to the spoken hook; the creator appears only after it, at a sentence break, usually 3–5 s in.
+- Frame 0 is the thumbnail: a strong visual plus one bold line already on screen. Never black, a logo or a fade-in.
 - The question, claim or surprise is spoken and shown within 1.5 s.
 - Muted test: the first 3 s make sense with the sound off.
 
@@ -28,8 +29,10 @@ measured, not felt: the final report lists every gate as pass or fail with its e
 
 ## 4. Captions and on-screen text
 
-- Hinglish in Roman script, spelling from `script.txt`, timing from Whisper; the creator confirmed the script.
+- Spoken captions are Hinglish in Roman script, spelling from `script.txt`, timing from Whisper; the creator confirmed the script.
+- Every other on-screen text (titles, labels, graphics, claim tags) is English. Ayah stays in Arabic script; explanatory terms keep the original word with its meaning beside it.
 - 2–4 words per caption group, one group on screen at a time, the spoken word highlighted.
+- Caption position follows the shot: off the face, clear of graphics and B-roll, moved per layout (split, circle, full-screen). The caption look (fonts, colour, animation) is planned per reel to fit its theme, with at most 3 type roles used by fixed rules.
 - All text sits inside y 168–1330 px on 1080×1920 (above the Shorts/Reels caption, handle and buttons) and clear of the right-hand action rail. Nothing meant to be read is under 28 px.
 - Captions never cover the face or repeat a graphic that already shows the words.
 
@@ -39,7 +42,8 @@ measured, not felt: the final report lists every gate as pass or fail with its e
 - Full-screen claims carry their tag (science, forensic science, Quranic context, …).
 - Titles land and hold dead still; exits are 40–50% shorter than entrances; arrivals ease out on a long tail.
 - 3–5 kinds of transition in a reel, each with a cause on screen; never the same entrance on every graphic.
-- One accent colour (gold) carries meaning; navy, gold and ivory only.
+- Each reel's look comes from its subject and is written down as numbers before building (ground, ink, one accent, faces and sizes). One accent colour carries meaning. No dark void with floating elements, glow rings or decorative particles unless the subject itself calls for them.
+- B-roll layout is chosen per beat (circle, top/bottom split, speaker full screen with a card, or full-screen B-roll), with a reason, and varies across the reel.
 
 ## 6. Sound
 
