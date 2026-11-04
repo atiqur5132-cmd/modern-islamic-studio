@@ -1,4 +1,5 @@
 import {COUNTER_LANDS_FRAME} from "../overlays/Counter";
+import {HEART_FRAME, TAP_FRAME} from "../overlays/Cta";
 import {MATCH_FRAME} from "../overlays/Fingerprint";
 import {boneLandingFrame} from "../scenes/BonesScene";
 import {buildSkeleton} from "../scenes/skeleton";
@@ -55,6 +56,7 @@ const RISER_VOLUME = 0.22;
 const SUB_HIT_VOLUME = 0.28; // it lands on the spoken "Same"; louder clips
 const SHIMMER_VOLUME = 0.22;
 const NUMBER_LANDS_VOLUME = 0.3;
+const CTA_TICK_VOLUME = 0.3;
 const TICK_EVERY_NTH_BONE = 3;
 
 export const soundCues = (
@@ -83,9 +85,14 @@ export const soundCues = (
     cursor += segmentFrames(segment);
   });
 
+  let ctaTakes = 0;
   for (const overlay of overlays) {
     const start = at(overlay.start);
-    if (overlay.type === "counter") {
+    if (overlay.type === "cta") {
+      // The tap on Follow, or the heart filling.
+      const beat = overlay.mode === "follow" ? TAP_FRAME : HEART_FRAME;
+      cues.push({frame: start + beat + AFTER_PICTURE, sound: SOFT_TICKS[ctaTakes++ % 3], volume: CTA_TICK_VOLUME});
+    } else if (overlay.type === "counter") {
       cues.push({frame: start + COUNTER_LANDS_FRAME, sound: "impact", volume: IMPACT_VOLUME});
     } else if (overlay.type === "statement") {
       cues.push({frame: start + 6, sound: "impact", volume: IMPACT_VOLUME});

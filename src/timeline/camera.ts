@@ -24,6 +24,9 @@ const PUNCH_IN_FRAMES = 4;
 const PUNCH_HOLD_FRAMES = 10; // past the end of the word
 const PUNCH_OUT_FRAMES = 10;
 const MAX_ZOOM = 1.16; // more and 1080p footage turns soft
+// While a card sits in the headroom the camera eases back to the full frame, so the
+// cap drops clear of it; the move starts this many frames before the card lands.
+const ROOM_FRAMES = 10;
 
 export type Camera = {scale: number; x: number; y: number; face: {x: number; y: number}};
 
@@ -69,12 +72,20 @@ const punchAmount = (frame: number, start: number, end: number) =>
         easing: Easing.inOut(Easing.quad),
       });
 
+const roomAmount = (frame: number, {start, end}: {start: number; end: number}) =>
+  interpolate(frame, [start - ROOM_FRAMES, start, end, end + ROOM_FRAMES], [0, 1, 1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.inOut(Easing.cubic),
+  });
+
 export const cameraAt = (
   frame: number,
   segments: Segment[],
   punches: {start: number; end: number}[],
   face: FaceTrack | undefined,
   punchToZoom?: number,
+  headroom: {start: number; end: number}[] = [],
 ): Camera => {
   let cursor = 0;
   for (const segment of segments) {
@@ -92,7 +103,8 @@ export const cameraAt = (
       const punched = punchToZoom
         ? base + (Math.max(base, punchToZoom) - base) * punch
         : base * (1 + EMPHASIS_PUNCH * punch);
-      const scale = Math.min(punched, MAX_ZOOM);
+      const room = Math.max(0, ...headroom.map((range) => roomAmount(frame, range)));
+      const scale = Math.min(punched, MAX_ZOOM) * (1 - room) + room;
       const source = faceAt(face, (toFrames(segment.from) + inShot) / FPS);
       // Move the face toward the target, but never so far that the frame edge shows.
       const x = Math.min(0, Math.max(WIDTH * (1 - scale), FACE_TARGET.x - scale * source.x));

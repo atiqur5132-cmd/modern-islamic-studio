@@ -13,6 +13,7 @@ import {AyahCard} from "../overlays/AyahCard";
 import {Broll} from "../overlays/Broll";
 import {Caption} from "../overlays/Caption";
 import {Counter} from "../overlays/Counter";
+import {Cta} from "../overlays/Cta";
 import {EndCard} from "../overlays/EndCard";
 import {Fingerprint} from "../overlays/Fingerprint";
 import {Statement} from "../overlays/Statement";
@@ -33,6 +34,7 @@ import {cameraAt, emphasisPunches} from "../timeline/camera";
 import {SOUND_SECONDS, soundCues} from "../timeline/sfx";
 import {GOLD, NAVY, PIP, PIP_HEAD_LIFT} from "../theme";
 import {
+  CtaOverlay,
   Edit,
   FPS,
   footageFrames,
@@ -102,6 +104,8 @@ const outputRange = (segments: Segment[], overlay: Overlay) => ({
 
 const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue) => {
   switch (overlay.type) {
+    case "cta":
+      return <Cta cta={overlay} />;
     case "hook":
       return <Hook title={overlay.title} ayah={overlay.ayah} mirrorAt={overlay.mirrorAt} cue={cue} />;
     case "versetag":
@@ -214,7 +218,22 @@ export const Short = ({
   );
   const pipScale = interpolate(pip, [0, 1], [1, PIP.radius / PIP.view]);
   const clipRadius = interpolate(pip, [0, 1], [1600, PIP.view]);
-  const camera = cameraAt(frame, segments, emphasisPunches(segments, captions, stretches), face, punchToZoom);
+  const ctaRanges = (placement: "top" | "caption") =>
+    overlays
+      .filter((o): o is CtaOverlay => o.type === "cta" && (o.placement ?? "top") === placement)
+      .map((o) => outputRange(segments, o));
+  // A card in the headroom: no punch-ins under it, and the camera eases back to the
+  // full frame so the cap drops clear of it.
+  const headroomCards = ctaRanges("top");
+  const endCards = ctaRanges("caption");
+  const camera = cameraAt(
+    frame,
+    segments,
+    emphasisPunches(segments, captions, [...stretches, ...headroomCards]),
+    face,
+    punchToZoom,
+    headroomCards,
+  );
   const head = {x: camera.face.x, y: camera.face.y - PIP_HEAD_LIFT * pip};
   const whip = whipAt(frame, segments);
   const speakerFilter = [
@@ -364,13 +383,16 @@ export const Short = ({
         const lastWord = phrase[phrase.length - 1];
         const hold = sourceToOutputFrame(segments, lastWord.end) + CAPTION_HOLD_FRAMES;
         const next = captions[index + 1];
-        const end = next ? Math.min(hold, sourceToOutputFrame(segments, next[0].start)) : hold;
+        const until = next ? Math.min(hold, sourceToOutputFrame(segments, next[0].start)) : hold;
+        // The end follow card takes the caption band: captions stop where it starts.
+        const end = Math.min(until, ...endCards.filter((card) => card.start > start).map((card) => card.start));
+        const underCard = endCards.some((card) => start >= card.start && start < card.end);
         const repeatsGraphic = overlays.some((overlay) => {
           const range = outputRange(segments, overlay);
           return SPOKEN_TEXT_TYPES.includes(overlay.type) && range.start <= start && range.end >= end;
         });
         const graphicIsHero = captionHide.some((hide) => phrase[0].start >= hide.start && phrase[0].start < hide.end);
-        if (end <= start || repeatsGraphic || graphicIsHero) {
+        if (end <= start || repeatsGraphic || graphicIsHero || underCard) {
           return null;
         }
         const aboveCard = overlays.some((overlay) => {

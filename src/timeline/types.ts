@@ -113,7 +113,19 @@ export type RingOverlay = Timed & {type: "ring"; ayah: string; runAt: number; ho
 // so the final frame matches the dark Arabic look the reel loops back into.
 export type EndPhraseOverlay = Timed & {type: "endphrase"; ayah: string};
 
+// Calls to follow, like and comment. `top` sits small in the headroom above the
+// speaker mid-reel; `caption` is the large end card in the caption band, which
+// replaces the captions while it shows. `y` moves a `top` card for other framings;
+// `text` is the engage card's line, in English.
+export type CtaOverlay = Timed & {
+  type: "cta";
+  placement?: "top" | "caption";
+  tone?: "light" | "dark";
+  y?: number;
+} & ({mode: "follow"} | {mode: "engage"; text: string});
+
 export type Overlay =
+  | CtaOverlay
   | HookOverlay
   | VerseTagOverlay
   | MontageOverlay
