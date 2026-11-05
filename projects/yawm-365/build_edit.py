@@ -15,7 +15,10 @@ HERE = pathlib.Path(__file__).resolve().parent
 # changes the framing: zooms alternate so no cut is a jump between equal shots.
 CUTS = [0.033, 5.433, 9.567, 13.533, 15.333, 17.333, 20.9, 23.067, 27.567, 31.133, 33.433,
         36.1, 41.4, 43.567, 47.567, 49.0, 50.9, 53.167, 55.4, 58.0, 61.967, 64.6, 67.0]
-ZOOMS = [1.0, 1.08, 1.0, 1.12, 1.0, 1.0, 1.1, 1.0, 1.08, 1.0, 1.08,
+# Shots under the posts or a headroom card are held at 1.0 by the camera, so the shot
+# after them starts tighter (the scan at 9.567); the "yawm" card sits clear of the cap
+# at 1.1, so it needs no headroom.
+ZOOMS = [1.0, 1.0, 1.1, 1.0, 1.1, 1.0, 1.1, 1.0, 1.1, 1.0, 1.1,
          1.0, 1.1, 1.0, 1.1, 1.0, 1.08, 1.0, 1.08, 1.0, 1.08, 1.0]
 
 # Real data for the scan and the ledger grid, from the Quranic Arabic Corpus (make_stats.py).
@@ -43,7 +46,7 @@ OVERLAYS = [
      "heading": "Every word, counted", "totalLabel": "words checked",
      "surahWords": STATS["surahWords"], "hits": [[surah, position] for surah, position, _ in STATS["yawm"]],
      "source": "Quranic Arabic Corpus, cross-checked with the Tanzil text"},
-    {"type": "headcard", "start": 15.333, "end": 17.333, "word": YAWM, "headroom": True,
+    {"type": "headcard", "start": 15.333, "end": 17.333, "word": YAWM,
      "lines": [{"text": "yawm", "at": 16.9, "term": True}, {"text": "= day", "at": 16.0}]},
     {"type": "ledger", "start": 17.333, "end": 43.567, "tag": "NUMERICAL OBSERVATION",
      "source": COUNT_SOURCE, "finalAt": 42.6, "dots": [form for _, _, form in STATS["yawm"]],

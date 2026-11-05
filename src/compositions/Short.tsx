@@ -234,7 +234,10 @@ export const Short = ({
   // Back-to-back full-screen graphics count as one stretch, so the speaker stays
   // in the corner between them instead of jumping back for a frame.
   const stretches: {start: number; end: number}[] = [];
-  for (const range of fullScreen.map((o) => outputRange(segments, o)).sort((a, b) => a.start - b.start)) {
+  // Footage that covers the frame (the speaker off screen) joins a stretch it touches,
+  // so the circle does not grow back for a moment between a graphic and the footage.
+  const covers = overlays.filter((o) => o.type === "factfootage");
+  for (const range of [...fullScreen, ...covers].map((o) => outputRange(segments, o)).sort((a, b) => a.start - b.start)) {
     const last = stretches[stretches.length - 1];
     if (last && range.start <= last.end + 1) {
       last.end = Math.max(last.end, range.end);

@@ -3,19 +3,21 @@ import {SAFE_AREA} from "../../theme";
 import {Cue} from "../falak/common";
 import {FactFootageOverlay} from "../../timeline/types";
 import {Tag} from "./HeadCard";
-import {arrive, COUNT, leave, MONO, PAPER, SANS} from "./look";
+import {arrive, COUNT, MONO, PAPER, SANS} from "./look";
 
 // Real footage over the whole frame, the speaker off screen, and one number landing
 // on the word that says it, with its source and the footage credit.
 export const FactFootage = ({fact, cue}: {fact: FactFootageOverlay; cue: Cue}) => {
   const frame = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
-  const life = Math.min(arrive(frame, 0, 6), leave(frame, durationInFrames - 5, 5));
+
   const value = arrive(frame, cue(fact.valueAt), 12);
   const label = arrive(frame, cue(fact.valueAt) + 4, 12);
 
   return (
-    <AbsoluteFill style={{backgroundColor: "#000", opacity: life}}>
+    // It starts and ends on the creator's cuts, so it cuts in and out: no fade that
+    // would show the speaker for a frame.
+    <AbsoluteFill style={{backgroundColor: "#000"}}>
       <OffthreadVideo
         muted
         src={staticFile(`footage/${fact.src}`)}
