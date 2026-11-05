@@ -124,6 +124,43 @@ export const soundCues = (
     } else if (overlay.type === "ring") {
       // The orbit drawing itself in.
       cues.push({frame: start + 6, sound: "shimmer", volume: SHIMMER_VOLUME});
+    } else if (overlay.type === "yawmhook") {
+      // The year of days ticking in: three soft ticks across the fill.
+      const year = at(overlay.yearAt);
+      [2, 14, 26].forEach((offset, index) => {
+        cues.push({frame: year + offset + AFTER_PICTURE, sound: SOFT_TICKS[index % 3], volume: TICK_VOLUME * 1.4});
+      });
+    } else if (overlay.type === "ledger") {
+      // The board rising under the speaker, each total landing, the last one heavier.
+      cues.push({frame: start - WHOOSH_LEAD_FRAMES + 4, sound: "whoosh-2", volume: WHOOSH_VOLUME * 0.7});
+      overlay.steps.forEach((step) => {
+        const final = step.at === overlay.finalAt;
+        cues.push({
+          frame: at(step.at) + AFTER_PICTURE,
+          sound: final ? "sub-hit" : "impact",
+          volume: final ? SUB_HIT_VOLUME : NUMBER_LANDS_VOLUME,
+        });
+      });
+      cues.push({frame: at(overlay.finalAt) + 4, sound: "shimmer", volume: SHIMMER_VOLUME});
+      overlay.entries.forEach((entry) => {
+        entry.words.forEach((word, index) => {
+          cues.push({frame: at(word.at) + AFTER_PICTURE, sound: SOFT_TICKS[index % 3], volume: TICK_VOLUME * 1.4});
+        });
+      });
+    } else if (overlay.type === "factfootage") {
+      cues.push({frame: start - WHOOSH_LEAD_FRAMES, sound: "whoosh-3", volume: WHOOSH_VOLUME * 0.8});
+      cues.push({frame: at(overlay.valueAt) + AFTER_PICTURE, sound: "impact", volume: NUMBER_LANDS_VOLUME});
+    } else if (overlay.type === "posts") {
+      // Each post landing, and the burst on the reaction.
+      overlay.posts.forEach((post, index) => {
+        cues.push({frame: at(post.at) - WHOOSH_LEAD_FRAMES + 4, sound: WHOOSHES[index % 3], volume: WHOOSH_VOLUME * 0.45});
+      });
+      cues.push({frame: at(overlay.burstAt) + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.6});
+    } else if (overlay.type === "scan") {
+      // The scan line crossing the Quran.
+      cues.push({frame: start + 6, sound: "riser", volume: RISER_VOLUME * 0.8});
+    } else if (overlay.type === "headcard" && (overlay.tag || overlay.word || overlay.icon)) {
+      cues.push({frame: start + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME * 0.8});
     }
   }
   return cues.filter((cue) => cue.frame >= 0).sort((a, b) => a.frame - b.frame);

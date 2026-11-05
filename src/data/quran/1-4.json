@@ -1,0 +1,8 @@
+{
+  "key": "1:4",
+  "surahNameEnglish": "Al-Faatiha",
+  "textUthmani": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-06"
+}

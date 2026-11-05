@@ -26,7 +26,7 @@ const PUNCH_OUT_FRAMES = 10;
 const MAX_ZOOM = 1.16; // more and 1080p footage turns soft
 // While a card sits in the headroom the camera eases back to the full frame, so the
 // cap drops clear of it; the move starts this many frames before the card lands.
-const ROOM_FRAMES = 10;
+export const ROOM_FRAMES = 10;
 
 export type Camera = {scale: number; x: number; y: number; face: {x: number; y: number}};
 

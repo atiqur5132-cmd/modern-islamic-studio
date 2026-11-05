@@ -30,9 +30,17 @@ import {Palindrome} from "../overlays/falak/Palindrome";
 import {EndPhrase, Note, Ring} from "../overlays/falak/Ring";
 import {Split} from "../overlays/falak/Split";
 import {VerseTag} from "../overlays/falak/VerseTag";
-import {cameraAt, emphasisPunches} from "../timeline/camera";
+import {FactFootage} from "../overlays/yawm/FactFootage";
+import {HeadCard} from "../overlays/yawm/HeadCard";
+import {YawmHook} from "../overlays/yawm/Hook";
+import {Ledger} from "../overlays/yawm/Ledger";
+import {Posts} from "../overlays/yawm/Posts";
+import {STACK_FACE_Y, STACK_HEIGHT, STACK_MOVE_FRAMES} from "../overlays/yawm/look";
+import {Rules} from "../overlays/yawm/Rules";
+import {Scan} from "../overlays/yawm/Scan";
+import {cameraAt, emphasisPunches, ROOM_FRAMES} from "../timeline/camera";
 import {SOUND_SECONDS, soundCues} from "../timeline/sfx";
-import {GOLD, NAVY, PIP, PIP_HEAD_LIFT} from "../theme";
+import {GOLD, NAVY, PIP, PIP_HEAD_LIFT, SAFE_AREA} from "../theme";
 import {
   CtaOverlay,
   Edit,
@@ -43,6 +51,7 @@ import {
   Segment,
   segmentFrames,
   sourceToOutputFrame,
+  STACK_TYPES,
   toFrames,
 } from "../timeline/types";
 
@@ -52,6 +61,8 @@ const SEGMENT_PREMOUNT_FRAMES = FPS;
 const CROSSFADE_HALF_FRAMES = 3;
 
 const CAPTION_HOLD_FRAMES = 8;
+// The caption's foot above the frame's bottom edge in the default band.
+const CAPTION_BAND_BOTTOM = SAFE_AREA.bottom + 20;
 // Graphics that already put the spoken words on screen; captions would repeat them.
 const SPOKEN_TEXT_TYPES: Overlay["type"][] = ["statement", "endcard"];
 const PIP_MOVE_FRAMES = 9;
@@ -169,6 +180,20 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue) => {
       return <Broll src={overlay.src} blur={overlay.blur} />;
     case "scene":
       return overlay.scene === "bones" ? <BonesScene /> : <FingertipScene />;
+    case "yawmhook":
+      return <YawmHook hook={overlay} cue={cue} />;
+    case "scan":
+      return <Scan scan={overlay} />;
+    case "ledger":
+      return <Ledger ledger={overlay} cue={cue} />;
+    case "rules":
+      return <Rules rules={overlay} />;
+    case "factfootage":
+      return <FactFootage fact={overlay} cue={cue} />;
+    case "headcard":
+      return <HeadCard card={overlay} cue={cue} />;
+    case "posts":
+      return <Posts posts={overlay} cue={cue} />;
   }
 };
 
@@ -183,11 +208,28 @@ export const Short = ({
   hideCaptions,
   captionStyle,
   captionHide = [],
+  captionTerms = [],
+  palette = {ground: NAVY, ink: NAVY, accent: GOLD},
 }: Edit) => {
   const frame = useCurrentFrame();
   const src = staticFile(`footage/${footage}`);
   const fullScreen = overlays.filter((o) => FULL_SCREEN_TYPES.includes(o.type));
   const layered = overlays.filter((o) => !FULL_SCREEN_TYPES.includes(o.type));
+  // The stack layout: the speaker slides into the top window as its board rises, and
+  // returns to the full frame on the cut where the board ends.
+  const stackRanges = overlays.filter((o) => STACK_TYPES.includes(o.type)).map((o) => outputRange(segments, o));
+  const stack = Math.max(
+    0,
+    ...stackRanges.map(({start, end}) =>
+      frame >= end
+        ? 0
+        : interpolate(frame, [start, start + STACK_MOVE_FRAMES], [0, 1], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+            easing: Easing.inOut(Easing.cubic),
+          }),
+    ),
+  );
 
   // Back-to-back full-screen graphics count as one stretch, so the speaker stays
   // in the corner between them instead of jumping back for a frame.
@@ -224,12 +266,20 @@ export const Short = ({
       .map((o) => outputRange(segments, o));
   // A card in the headroom: no punch-ins under it, and the camera eases back to the
   // full frame so the cap drops clear of it.
-  const headroomCards = ctaRanges("top");
+  const headroomCards = [
+    ...ctaRanges("top"),
+    // These start on the creator's cuts: the camera settles after the cut, not before
+    // it, so the cut itself still changes the framing.
+    ...overlays
+      .filter((o) => (o.type === "headcard" && o.headroom) || o.type === "posts")
+      .map((o) => outputRange(segments, o))
+      .map(({start, end}) => ({start: start + ROOM_FRAMES, end})),
+  ];
   const endCards = ctaRanges("caption");
   const camera = cameraAt(
     frame,
     segments,
-    emphasisPunches(segments, captions, [...stretches, ...headroomCards]),
+    emphasisPunches(segments, captions, [...stretches, ...headroomCards, ...stackRanges]),
     face,
     punchToZoom,
     headroomCards,
@@ -261,13 +311,14 @@ export const Short = ({
   let audioCursor = 0;
 
   return (
-    <AbsoluteFill style={{backgroundColor: NAVY}}>
+    <AbsoluteFill style={{backgroundColor: palette.ground}}>
       {fullScreen.map(renderTimed)}
+      <AbsoluteFill style={stack > 0 ? {clipPath: `inset(0 0 ${(1920 - STACK_HEIGHT) * stack}px 0)`} : undefined}>
       <AbsoluteFill
         style={{
           clipPath: `circle(${(clipRadius / CLIP_UNIT) * 100}% at ${head.x}px ${head.y}px)`,
           transformOrigin: `${head.x}px ${head.y}px`,
-          transform: `translate(${(PIP.x - head.x) * pip}px, ${(PIP.y - head.y) * pip}px) scale(${pipScale})`,
+          transform: `translate(${(PIP.x - head.x) * pip}px, ${(PIP.y - head.y) * pip + (STACK_FACE_Y - head.y) * stack}px) scale(${pipScale})`,
         }}
       >
         <AbsoluteFill
@@ -321,6 +372,7 @@ export const Short = ({
           </AbsoluteFill>
         </AbsoluteFill>
       </AbsoluteFill>
+      </AbsoluteFill>
       <svg width={0} height={0} style={{position: "absolute"}}>
         <filter id="grade" colorInterpolationFilters="sRGB">
           <feComponentTransfer>
@@ -342,8 +394,11 @@ export const Short = ({
             width: PIP.radius * 2,
             height: PIP.radius * 2,
             borderRadius: "50%",
-            border: `4px solid ${GOLD}`,
-            boxShadow: `0 0 0 10px ${NAVY}88, 0 0 40px ${GOLD}33`,
+            border: `4px solid ${palette.accent === GOLD ? GOLD : palette.ink}`,
+            boxShadow:
+              palette.accent === GOLD
+                ? `0 0 0 10px ${NAVY}88, 0 0 40px ${GOLD}33`
+                : `0 0 0 10px ${palette.ground}, 0 18px 40px rgba(0,0,0,0.18)`,
             boxSizing: "border-box",
             opacity: interpolate(pip, [0.7, 1], [0, 1], {extrapolateLeft: "clamp"}),
           }}
@@ -377,7 +432,7 @@ export const Short = ({
         </Sequence>
       ))}
       {layered.map(renderTimed)}
-      <Grain vignette={grade?.vignette} />
+      <Grain vignette={grade?.vignette} color={palette.ground === NAVY ? NAVY : palette.ink} />
       {(hideCaptions ? [] : captions).map((phrase, index) => {
         const start = sourceToOutputFrame(segments, phrase[0].start);
         const lastWord = phrase[phrase.length - 1];
@@ -404,6 +459,9 @@ export const Short = ({
             <Caption
               aboveCard={aboveCard}
               look={captionStyle}
+              terms={captionTerms}
+              // Captions ride with the speaker's window as it moves, never ahead of it.
+              bottom={stack > 0 ? CAPTION_BAND_BOTTOM + (1920 - STACK_HEIGHT + 22 - CAPTION_BAND_BOTTOM) * stack : undefined}
               words={phrase.map((word) => ({
                 text: word.text,
                 emphasis: word.emphasis,

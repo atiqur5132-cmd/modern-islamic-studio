@@ -1,8 +1,9 @@
 """Render a composition on GitHub Actions and download the result.
 
 Usage: .venv\\Scripts\\python scripts/render_on_github.py <composition>
-           [--props projects/x/edit.json] [--footage file ...]
+           [--props projects/x/edit.json] [--footage file ...] [--frames 510-1320]
 
+--frames renders only that range, for a short motion preview.
 Commit and push first: GitHub renders the current branch as pushed, not local edits.
 Footage goes up in a draft release, which is deleted once the run ends.
 """
@@ -41,13 +42,14 @@ def main():
     parser.add_argument("--props", default="")
     parser.add_argument("--footage", nargs="*", default=None, type=pathlib.Path,
                         help="defaults to every file the --props edit uses")
+    parser.add_argument("--frames", default="", help="a frame range such as 510-1320, for a preview")
     args = parser.parse_args()
 
     if args.footage is None:
         args.footage = []
         if args.props:
             edit = json.loads((ROOT / args.props).read_text(encoding="utf-8"))
-            names = [edit["footage"]] + [o["src"] for o in edit["overlays"] if o["type"] == "broll"]
+            names = [edit["footage"]] + [o["src"] for o in edit["overlays"] if o["type"] in ("broll", "factfootage")]
             names += [shot["src"] for o in edit["overlays"] if o["type"] == "montage" for shot in o["shots"]]
             args.footage = [ROOT / "public" / "footage" / name for name in names]
 
@@ -57,6 +59,8 @@ def main():
     tag = ""
     dispatch = ["workflow", "run", "render.yml", "--ref", branch,
                 "-f", f"composition={args.composition}", "-f", f"props={args.props}"]
+    if args.frames:
+        dispatch += ["-f", f"frames={args.frames}"]
     if args.footage:
         tag = "footage-" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
         gh("release", "create", tag, "--draft", "--title", tag, "--notes", "Temporary render input",

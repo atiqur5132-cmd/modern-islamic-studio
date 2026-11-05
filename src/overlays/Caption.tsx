@@ -1,5 +1,8 @@
 import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from "remotion";
 import {GOLD, IVORY, LATIN_FONT, NAVY, SAFE_AREA} from "../theme";
+import {COUNT, INK, MONO, PAPER, SANS, TERM} from "./yawm/look";
+
+const LEDGER = {sans: SANS, mono: MONO, term: TERM, ink: INK, paper: PAPER, count: COUNT, white: "#FFFDF8"};
 
 export type TimedCaptionWord = {text: string; emphasis: boolean; frame: number};
 
@@ -75,22 +78,131 @@ const HighlightCaption = ({words, aboveCard}: {words: TimedCaptionWord[]; aboveC
   );
 };
 
+const LEDGER_WIPE_FRAMES = 3;
+const LEDGER_ENTER_FRAMES = 5;
+const NUMBER = /^\d[\d,.]*$/;
+const bareToken = (text: string) => text.replace(/[*"“”.,!?:;…]/g, "").toLowerCase();
+
+// The "ledger" look (Yawm 365): sentence-case words, white with an ink edge so they
+// read on the wall, the chest and the paper alike. Three roles by fixed rules: words
+// in Inter Tight, numbers in IBM Plex Mono in the count colour, the reel's Arabic
+// terms in Fraunces italic. The spoken word is wiped onto an ink tab (a number onto
+// a count-coloured tab), like a line being ticked off.
+const LedgerCaption = ({
+  words,
+  bottom,
+  terms,
+}: {
+  words: TimedCaptionWord[];
+  bottom: number;
+  terms: string[];
+}) => {
+  const frame = useCurrentFrame();
+  const enter = interpolate(frame, [0, LEDGER_ENTER_FRAMES], [0, 1], {
+    extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  return (
+    <AbsoluteFill
+      style={{
+        justifyContent: "flex-end",
+        alignItems: "center",
+        paddingBottom: bottom,
+        paddingLeft: SAFE_AREA.rail,
+        paddingRight: SAFE_AREA.rail,
+      }}
+    >
+      <div
+        style={{
+          fontSize: 76,
+          lineHeight: 1.22,
+          textAlign: "center",
+          opacity: enter,
+          transform: `translateY(${(1 - enter) * 12}px)`,
+        }}
+      >
+        {words.map((word, index) => {
+          const active = frame >= word.frame && frame < (words[index + 1]?.frame ?? Infinity);
+          const wipe = active
+            ? interpolate(frame, [word.frame, word.frame + LEDGER_WIPE_FRAMES], [0, 1], {
+                extrapolateRight: "clamp",
+                easing: Easing.out(Easing.cubic),
+              })
+            : 0;
+          const token = bareToken(word.text);
+          const isNumber = NUMBER.test(token);
+          const isTerm = terms.includes(token);
+          const inverted = wipe > 0.5;
+          return (
+            <span
+              key={`${word.frame}-${word.text}`}
+              style={{position: "relative", display: "inline-block", margin: "2px 10px", padding: "0 6px"}}
+            >
+              <span
+                style={{
+                  position: "absolute",
+                  inset: "8px -8px 4px",
+                  borderRadius: 10,
+                  backgroundColor: isNumber ? LEDGER.count : LEDGER.ink,
+                  transform: `scaleX(${wipe})`,
+                  transformOrigin: "0 50%",
+                }}
+              />
+              <span
+                style={{
+                  position: "relative",
+                  fontFamily: isNumber ? LEDGER.mono : isTerm ? LEDGER.term : LEDGER.sans,
+                  fontWeight: isNumber ? 700 : isTerm ? 600 : 900,
+                  fontStyle: isTerm ? "italic" : "normal",
+                  letterSpacing: isNumber ? -2 : 0,
+                  color: inverted ? LEDGER.paper : isNumber ? LEDGER.count : LEDGER.white,
+                  WebkitTextStroke: inverted ? "0px" : `9px ${LEDGER.ink}`,
+                  paintOrder: "stroke fill",
+                  textShadow: inverted ? "none" : `0 5px 14px ${LEDGER.ink}66`,
+                }}
+              >
+                {word.text.replaceAll("*", "")}
+              </span>
+            </span>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 // Short-form caption style: a few big uppercase words that pop in together; the
 // word being spoken sits on a gold pill, and key words stay gold and larger.
 export const Caption = ({
   words,
   aboveCard,
   look = "pill",
+  bottom,
+  terms = [],
 }: {
   words: TimedCaptionWord[];
   aboveCard: boolean;
-  look?: "pill" | "highlight";
+  look?: "pill" | "highlight" | "ledger";
+  // Distance of the caption's foot from the frame's bottom edge, for layouts that
+  // move the speaker (the stack window); the band default otherwise.
+  bottom?: number;
+  terms?: string[];
 }) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const pop = spring({frame, fps, config: {damping: 11, stiffness: 260, mass: 0.7}});
   if (look === "highlight") {
     return <HighlightCaption words={words} aboveCard={aboveCard} />;
+  }
+  if (look === "ledger") {
+    return (
+      <LedgerCaption
+        words={words}
+        terms={terms}
+        bottom={bottom ?? (aboveCard ? CARD_TOP_FROM_BOTTOM + 24 : SAFE_AREA.bottom + 20)}
+      />
+    );
   }
 
   return (
