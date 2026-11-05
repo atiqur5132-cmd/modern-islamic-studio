@@ -134,10 +134,19 @@ const LedgerCaption = ({
           const isNumber = NUMBER.test(token);
           const isTerm = terms.includes(token);
           const inverted = wipe > 0.5;
+          // A number waits for its word: the graphics reveal each total as it is said,
+          // and the caption must not give it away first. Its space is kept.
+          const hidden = isNumber && frame < word.frame;
           return (
             <span
               key={`${word.frame}-${word.text}`}
-              style={{position: "relative", display: "inline-block", margin: "2px 10px", padding: "0 6px"}}
+              style={{
+                position: "relative",
+                display: "inline-block",
+                margin: "2px 10px",
+                padding: "0 6px",
+                opacity: hidden ? 0 : 1,
+              }}
             >
               <span
                 style={{
