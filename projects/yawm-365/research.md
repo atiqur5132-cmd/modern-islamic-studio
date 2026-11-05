@@ -2,7 +2,7 @@
 
 Reel type: misconception corrected gently, with a numerical observation shown step by step.
 
-**Script status:** first draft approved 2026-11-05; rewritten the same day in a more natural spoken voice at the creator's request (same claims, same numbers). New wording approved by the creator on 2026-11-05. Any line changed while speaking goes back into `script.txt` before captions.
+**Script status:** first draft approved 2026-11-05; rewritten the same day in a more natural spoken voice at the creator's request (same claims, same numbers). New wording approved by the creator on 2026-11-05. Any line changed while speaking goes back into `script.txt` before captions. After the shoot `script.txt` was matched to the take; the creator confirmed it on 2026-11-06, including "aaya" (line 3) and "Jaise" (line 12).
 Researched 2026-11-05. Creator reads this before the script.
 
 ## The claim
