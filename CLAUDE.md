@@ -31,6 +31,7 @@ Every reel must clear `QUALITY.md`, the world-class standard the creator set. Re
 - Build one phase at a time and show a preview after each major phase.
 - Never say a feature works unless it was tested.
 - Explain and get approval before installing paid or heavy software.
+- Every reel belongs to a series in `SERIES.md` (Viral Claim Check, Forgotten History, Quran ke Lafz); topic candidates and their scores live in `TOPICS.md`.
 - Do not force Islamic ornament into every scene. Every B-roll shot must serve the narrative.
 
 ## Commands

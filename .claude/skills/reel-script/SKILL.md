@@ -13,6 +13,8 @@ Suggest 5 topics at a time as cards: the one-line hook, the payoff, the claim ty
 
 Score each topic 1–5 on: curiosity (would a 19-year-old stop scrolling?), sources (can every claim be sourced well?), visuals (can it be shown, not just said?), freshness (search YouTube/Instagram for the topic: skip it if the angle is already everywhere, or find the angle nobody took), and honesty (does it survive without overclaiming?). Drop anything that scores 1 on sources or honesty.
 
+**Series.** Every topic belongs to one series in `SERIES.md` (A Viral Claim Check, B Forgotten History, C Quran ke Lafz), which sets its hook shape, honesty beat, on-screen look and claim labels. Keep the A, B, C rotation unless the creator asks otherwise. Draw candidates from `TOPICS.md` first; add every new card you suggest there with its scores and the date of the freshness check, and move a topic to "Made" when it ships.
+
 Pillars to draw from: the Quran's language and structure (patterns, word choice, rhetoric), Quranic context and what a verse actually says vs. what people claim, Seerah moments told as scenes, Hadith wisdom applied to Gen Z life, the history of Muslim scientists and scholars, nature and the human body as signs (ayat) without "miracle" overclaims, and common misconceptions corrected gently.
 
 ## 2. Research
@@ -28,7 +30,7 @@ Write `projects/<clip>/research.md` before any script. The creator reads it firs
 | Tafsir | Classical: al-Tabari, Ibn Kathir, al-Qurtubi; modern: Ma'ariful Quran, Tafheem-ul-Quran. Say whose view it is; give differing views when they exist. |
 | Hadith | Collection, book and number, plus its grading (sunnah.com or dorar.net). Use only sahih or hasan. Never quote a hadith without a grading. |
 | Science | Peer-reviewed papers, university or agency pages (NASA, ESA, NIH), standard textbooks. Not blogs, not "miracle" websites. |
-| History | Academic histories and encyclopedias (Encyclopaedia of Islam, Britannica), with the original source when possible. |
+| History | Academic histories and encyclopedias (Encyclopaedia of Islam, Britannica, Cambridge History of Islam), with the original chronicle in a named translation when possible. For each detail, note when its source was written: a chronicle of the time, a report written centuries later, or a legend. "First" and "oldest" claims name who makes them and who disputes them. Give years as CE and AH. |
 | Numbers | Recompute every figure yourself and show the working. |
 
 **Claim ledger.** Every claim the script makes gets one row: the claim in plain words, its label (established science, hypothesis, interpretation, numerical observation, speculative, historical report), the source with link, and the counter-view or caveat.
@@ -38,6 +40,7 @@ Write `projects/<clip>/research.md` before any script. The creator reads it firs
 - Check whether the meaning was known before (Greek, Indian or classical Arab sources). If it was, say so.
 - State what the claim is NOT (the channel's "Lekin main honest rahunga" beat). This builds trust and is the channel's signature.
 - A fiqh ruling or a disputed matter goes to the creator with a note to check it with a qualified scholar.
+- History visuals: never depict the Prophets or the Companions; never present an AI-generated person or place as real; no film stills. Use maps, manuscripts, archival photos and real places (visual-sourcing rules), and tag any reconstruction `RECONSTRUCTION`.
 
 Research process: search broadly first (several queries in one turn; `/deep-research` for a big topic), read the primary pages, never cite a page you did not open, and note the access date.
 
