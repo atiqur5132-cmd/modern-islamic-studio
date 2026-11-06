@@ -43,8 +43,16 @@ ABSORB_GAP_SECONDS = 0.35
 ABSORB_MAX_CHARS = 22  # may wrap to a second line, still inside the caption band
 
 
+ARABIC_IN_BRACKETS = re.compile(r"\s*\([^()]*[؀-ۿ][^()]*\)")
+
+
 def parse_script(text):
-    """Split the script into words, tracking which sit between *stars*."""
+    """Split the script into words, tracking which sit between *stars*.
+
+    Arabic script in brackets, e.g. "sutihat (سُطِحَتْ)", is a reading aid for the creator.
+    It is not spoken as a separate word, so it never becomes a caption.
+    """
+    text = ARABIC_IN_BRACKETS.sub("", text)
     words = []
     emphasis = False
     for token in text.split():

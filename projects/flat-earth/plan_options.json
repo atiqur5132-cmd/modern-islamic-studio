@@ -1,0 +1,475 @@
+{
+ "title": "Quran mein zameen flat?",
+ "lines": [
+  {
+   "line": "Zameen *flat* hai, aur ye Quran mein likha hai.",
+   "section": "hook",
+   "options": [
+    {
+     "layout": "full-screen graphic, speaker off",
+     "visual": "0.0 s: a real 19th-century flat-earth map (Gleason 1892, public domain) fills the frame, already pushing in. 0.8 s: the word FLAT? slams on in giant type. 1.4 s: a phone-screen viral post slides over it with the claim.",
+     "text": "FLAT? / \"It's in the Quran\"",
+     "tag": "VIRAL CLAIM",
+     "sound": "impact on frame 0, paper whoosh on the post",
+     "why": "Frame 0 is a bold, strange real object that reads at thumbnail size; the key word lands by 0.8 s.",
+     "ref": "references/yevorqq-ai-websites/hook.jpg"
+    },
+    {
+     "layout": "full-screen graphic, speaker off",
+     "visual": "0.0 s: NASA Blue Marble earth, full frame, rotating. 0.7 s: it is crushed flat into a disc with a thud. 1.4 s: a VIRAL CLAIM post slaps onto the disc.",
+     "text": "FLAT EARTH IN THE QURAN?",
+     "tag": "VIRAL CLAIM",
+     "sound": "low thud on the flatten",
+     "why": "The contradiction (round globe squashed flat) reads with the sound off.",
+     "ref": "references/nitish-rajput-black-box/detail-split-and-crash.jpg"
+    },
+    {
+     "layout": "full-screen collage, speaker off",
+     "visual": "0.0 s: B&W cut-out of the earth on one bold orange ground, a ruler laid across it. 0.8 s: giant word FLAT drops in front. 1.4 s: a stamped QURAN? tag.",
+     "text": "FLAT? QURAN?",
+     "tag": "VIRAL CLAIM",
+     "sound": "stamp hit at 1.4 s",
+     "why": "yevorqq collage grammar: one subject, strong contrast, giant keyword.",
+     "ref": "references/aashqeen-plus-billi/detail-keywords.jpg"
+    }
+   ]
+  },
+  {
+   "line": "Jawab milta hai, \"Nahi bhai, Quran ne toh zameen ko *anda* bola hai.\"",
+   "section": "hook",
+   "options": [
+    {
+     "layout": "full-screen graphic, speaker off",
+     "visual": "2.7 s: hard cut to a second viral post: an ostrich egg photo beside the earth, \"Quran said EGG\". 4.2 s: the egg and the earth snap side by side, each with a ? stamp.",
+     "text": "\"No, the Quran said EGG\"",
+     "tag": "VIRAL CLAIM",
+     "sound": "whip on the cut, pop on the egg",
+     "why": "A new real image every 1.5 s; sets up the two-sided reel visually.",
+     "ref": "references/yevorqq-ai-websites/hook.jpg"
+    },
+    {
+     "layout": "split: top post, bottom egg",
+     "visual": "Top half: the second post. Bottom half: a real ostrich egg rolls into frame and stops beside the globe.",
+     "text": "\"Quran said EGG\"",
+     "tag": "VIRAL CLAIM",
+     "sound": "roll, then tick",
+     "why": "Both claims on screen together; the comparison is the hook.",
+     "ref": "references/nitish-rajput-black-box/detail-split-and-crash.jpg"
+    },
+    {
+     "layout": "full-screen collage",
+     "visual": "Same orange collage world as option C of line 1: the ruler is swapped for a giant cut-out egg that pushes the earth aside.",
+     "text": "EGG?",
+     "tag": "VIRAL CLAIM",
+     "sound": "rubbery bump",
+     "why": "Continues the collage hook if line 1 picks C.",
+     "ref": "references/aashqeen-plus-billi/detail-keywords.jpg"
+    }
+   ]
+  },
+  {
+   "line": "Maine dono check kiye. Sach bataun? Dono hi galat nikle.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "speaker full screen (first appearance)",
+     "visual": "Creator appears at the sentence break; both posts shrink to small cards either side of the creator; at \"dono hi galat\" each gets a red FALSE stamp.",
+     "text": "FLAT? FALSE / EGG? FALSE",
+     "tag": "VERDICT",
+     "sound": "two stamp hits",
+     "why": "QUALITY 1: creator after the hook, at a sentence break; the double stamp is the reel's promise."
+    },
+    {
+     "layout": "speaker full screen + headroom card",
+     "visual": "Plain talking head; at \"galat\" one card above the head: BOTH WRONG.",
+     "text": "BOTH WRONG",
+     "tag": "VERDICT",
+     "sound": "single stamp",
+     "why": "Calmer; saves the stamps for the payoff."
+    }
+   ]
+  },
+  {
+   "line": "Pehle flat wala. Surah Ghashiyah ke verse 20 mein word hai, \"sutihat\" (سُطِحَتْ).",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen Ayah card, speaker off",
+     "visual": "Torn paper card with 88:20 in Arabic (fetched), orange 88:20 tag; push-in to the word, ringed by hand in orange.",
+     "text": "Al-Ghashiyah 88:20 / sutihat",
+     "tag": "QURANIC TEXT",
+     "sound": "paper rustle, pen scratch on the ring",
+     "why": "The reel stands on one word; show the word itself.",
+     "ref": "references/towards-eternity-ant-crush/detail-ayah-card-and-word.jpg"
+    },
+    {
+     "layout": "circle PiP over Ayah card",
+     "visual": "Same card, creator in a circle bottom-left so \"pehle flat wala\" stays personal.",
+     "text": "Al-Ghashiyah 88:20",
+     "tag": "QURANIC TEXT",
+     "sound": "paper rustle",
+     "why": "Keeps the speaker's energy while the card holds.",
+     "ref": "references/towards-eternity-machhar/detail-ayah-card.jpg"
+    }
+   ]
+  },
+  {
+   "line": "Matlab, *bichha dena*. Jaise chadar bichhate hain.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen B-roll",
+     "visual": "Real footage: a sheet (chadar) flicked out and settling flat on a bed; beside it: sutihat = spread out.",
+     "text": "sutihat = spread out, laid flat",
+     "tag": "LINGUISTICS",
+     "sound": "cloth whoosh",
+     "why": "The line's analogy is literal footage, so the meaning lands without reading."
+    },
+    {
+     "layout": "speaker + headroom card",
+     "visual": "Card: sutihat = spread out (Tabari, Qurtubi, Ibn Kathir).",
+     "text": "sutihat = spread out",
+     "tag": "LINGUISTICS",
+     "sound": "soft tick",
+     "why": "Simpler if the chadar shot is hard to get."
+    }
+   ]
+  },
+  {
+   "line": "Par baat kis cheez ki ho rahi hai? Thoda peeche padho.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "speaker full screen, punch-in",
+     "visual": "Punch-in on \"kis cheez ki\"; on \"thoda peeche padho\" the Ayah card slides up to reveal 88:17-19 above 88:20.",
+     "text": "WHAT CONTEXT?",
+     "tag": "QURANIC CONTEXT",
+     "sound": "page turn on the slide",
+     "why": "The question is the viewer's own; the slide starts the answer."
+    },
+    {
+     "layout": "full-screen Ayah stack",
+     "visual": "The 88:20 card zooms out to show 88:17-20 stacked as four torn strips.",
+     "text": "Al-Ghashiyah 88:17-20",
+     "tag": "QURANIC CONTEXT",
+     "sound": "paper slide",
+     "why": "Shows that one verse was cut out of four.",
+     "ref": "references/towards-eternity-ant-crush/detail-ayah-card-and-word.jpg"
+    }
+   ]
+  },
+  {
+   "line": "Quran poochta hai, ye log oont ko nahi dekhte? Aasmaan ko, pahadon ko?",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen, four strips",
+     "visual": "88:17-19 strips in Arabic (fetched) with an English gloss each: CAMELS, SKY, MOUNTAINS; each strip gets a small real photo as it is spoken.",
+     "text": "Camels / sky / mountains",
+     "tag": "TRANSLATION (paraphrase)",
+     "sound": "one tick per strip",
+     "why": "Each word is a picture; the strips make the list countable.",
+     "ref": "references/towards-eternity-ant-crush/detail-ayah-card-and-word.jpg"
+    },
+    {
+     "layout": "top/bottom split",
+     "visual": "Top: speaker. Bottom: real photos cut on the beat: camel, sky, mountains.",
+     "text": "Do they not look at...",
+     "tag": "TRANSLATION (paraphrase)",
+     "sound": "cuts on the beat",
+     "why": "Keeps the speaker's questioning face while the list is shown.",
+     "ref": "references/nitish-rajput-black-box/detail-split-and-crash.jpg"
+    }
+   ]
+  },
+  {
+   "line": "Aur zameen ko, ki wo kaise *bichhayi* gayi?",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen, fourth strip",
+     "visual": "The 88:20 strip joins the stack; real photo of desert ground underfoot; the word ringed again.",
+     "text": "...and the earth, how it was spread out",
+     "tag": "TRANSLATION (paraphrase)",
+     "sound": "tick, then soft hit on the ring",
+     "why": "Completes the four and calls back the word."
+    },
+    {
+     "layout": "speaker + card",
+     "visual": "Speaker; a card with four icons in a row.",
+     "text": "Camel / Sky / Mountains / Earth",
+     "tag": "QURANIC CONTEXT",
+     "sound": "tick",
+     "why": "Lighter version."
+    }
+   ]
+  },
+  {
+   "line": "Socho, registan mein ek aadmi oont pe baitha hai. Yahi chaar cheezein toh uske saamne hain.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen B-roll",
+     "visual": "Real wide desert footage, a camel rider small in frame; four labels appear on what he sees: CAMEL, SKY, MOUNTAINS, GROUND.",
+     "text": "What he sees",
+     "tag": "QURANIC CONTEXT",
+     "sound": "wind bed, label ticks",
+     "why": "The scene the tafsir describes (Qurtubi, Razi), shown, not said."
+    },
+    {
+     "layout": "circle PiP over desert",
+     "visual": "Same footage with the speaker in a circle.",
+     "text": "What he sees",
+     "tag": "QURANIC CONTEXT",
+     "sound": "wind bed",
+     "why": "If \"socho\" needs the creator's face."
+    }
+   ]
+  },
+  {
+   "line": "Baat uske pairon ke neeche ki zameen ki hai. Planet ki shape ki nahi.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen, tilt down",
+     "visual": "Camera tilts from the rider down to the sand at his feet: THE GROUND UNDER HIS FEET; then a tiny globe with PLANET SHAPE crossed out.",
+     "text": "The ground under his feet, not the planet's shape",
+     "tag": "QURANIC CONTEXT",
+     "sound": "tilt whoosh, cross-out scratch",
+     "why": "One move carries the whole point: from his feet, not from space."
+    },
+    {
+     "layout": "speaker + verdict card",
+     "visual": "Speaker; card: FLAT CLAIM: CONTEXT MISSING.",
+     "text": "Context missing",
+     "tag": "VERDICT",
+     "sound": "stamp",
+     "why": "Simpler."
+    }
+   ]
+  },
+  {
+   "line": "Lekin main honest rahunga. Kuch purane scholars ne bhi ise flat hi samjha tha, jaise Tafsir Jalalayn.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen manuscript",
+     "visual": "A real Tafsir al-Jalalayn manuscript page (public-domain scan, to source) as a B&W cut-out; the 88:20 passage highlighted; English: \"sutihat shows the earth is flat\" - al-Mahalli, d. 1459 CE / 864 AH.",
+     "text": "Some classical scholars read it as flat",
+     "tag": "SCHOLARLY VIEW",
+     "sound": "low hit on \"honest\"",
+     "why": "The honesty beat needs the real source on screen, not a claim about it."
+    },
+    {
+     "layout": "speaker full screen, close",
+     "visual": "Tight framing, no graphics on \"main honest rahunga\"; at Jalalayn a small parchment card with the quote and dates.",
+     "text": "Tafsir al-Jalalayn on 88:20",
+     "tag": "SCHOLARLY VIEW",
+     "sound": "silence, then soft paper",
+     "why": "The channel's signature line gets the speaker's face."
+    }
+   ]
+  },
+  {
+   "line": "Par Imam Razi ne isi verse pe likha, ki bahut badi ball ka har hissa *flat* hi dikhta hai.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen diagram",
+     "visual": "A huge 3D ball with a tiny figure standing on it; the camera drops to his eye level and the curve becomes a flat line. Parchment caption: al-Razi on 88:20, d. 1210 CE / 606 AH.",
+     "text": "\"A very large ball looks flat in every part\" - al-Razi",
+     "tag": "SCHOLARLY VIEW",
+     "sound": "swoop down",
+     "why": "Razi's argument is visual; show it happen."
+    },
+    {
+     "layout": "top/bottom split",
+     "visual": "Top: speaker. Bottom: the same ball-to-flat zoom.",
+     "text": "al-Razi on 88:20",
+     "tag": "SCHOLARLY VIEW",
+     "sound": "swoop",
+     "why": "Keeps the speaker visible on a long line."
+    }
+   ]
+  },
+  {
+   "line": "Tum abhi jahan khade ho, zameen flat lag rahi hai na? Phir bhi gol hai.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "speaker full screen, then B-roll",
+     "visual": "\"Tum jahan khade ho\": real phone-height footage of a flat road or field to the horizon; \"Phir bhi gol hai\": cut to the Blue Marble earth, round. Mid-video FOLLOW animation after this line.",
+     "text": "Looks flat. Still round.",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "breath, then a clean hit on \"gol\"",
+     "why": "The viewer's own ground proves Razi's point; callback to the hook globe."
+    },
+    {
+     "layout": "speaker full screen",
+     "visual": "Speaker gestures at the ground; small globe icon on \"gol\"; FOLLOW animation after.",
+     "text": "Still round.",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "hit on \"gol\"",
+     "why": "Simpler."
+    }
+   ]
+  },
+  {
+   "line": "Ab ande wala claim. Surah Nazi'at ke verse 30 mein word hai \"dahaha\" (دَحَىٰهَآ).",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen Ayah card",
+     "visual": "New torn card 79:30 (fetched), orange tag, the word ringed. A hard wipe from the flat half signals the second claim.",
+     "text": "An-Nazi'at 79:30 / dahaha",
+     "tag": "QURANIC TEXT",
+     "sound": "wipe, pen scratch",
+     "why": "Same card grammar as 88:20, so the viewer feels the pattern.",
+     "ref": "references/towards-eternity-ant-crush/detail-ayah-card-and-word.jpg"
+    },
+    {
+     "layout": "split: card + egg post",
+     "visual": "Top: 79:30 card. Bottom: the egg post from the hook returns.",
+     "text": "An-Nazi'at 79:30",
+     "tag": "QURANIC TEXT",
+     "sound": "wipe",
+     "why": "Callback to the hook's second claim.",
+     "ref": "references/nitish-rajput-black-box/detail-split-and-crash.jpg"
+    }
+   ]
+  },
+  {
+   "line": "Kehte hain, matlab shutur-murg ka anda. Par dictionary mein iska matlab bhi wahi hai, *phailana*.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen",
+     "visual": "Real ostrich egg photo (licence to check) labelled EGG; on \"dictionary mein\" a lexicon page slides over; EGG is struck through and SPREAD OUT written beside it.",
+     "text": "dahaha = spread out (not egg)",
+     "tag": "LINGUISTICS",
+     "sound": "strike-through scratch",
+     "why": "The correction happens on the same object.",
+     "ref": "references/aashqeen-plus-billi/detail-keywords.jpg"
+    },
+    {
+     "layout": "speaker + headroom card",
+     "visual": "Card: dahaha = spread out, with the sutihat card returning beside it.",
+     "text": "dahaha = sutihat = spread out",
+     "tag": "LINGUISTICS",
+     "sound": "tick",
+     "why": "Shows \"bhi wahi\" as two matching cards."
+    }
+   ]
+  },
+  {
+   "line": "Shutur-murg se rishta hai, par ande ka nahi, uske *nest* ka.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen B-roll",
+     "visual": "Real photo of an ostrich nest scrape in sand with eggs in it (Wikimedia, licence to check); NEST lands on the scrape, EGG fades.",
+     "text": "Not the egg. The nest.",
+     "tag": "LINGUISTICS",
+     "sound": "sand scrape",
+     "why": "The twist is a picture most viewers have never seen."
+    },
+    {
+     "layout": "circle PiP over nest",
+     "visual": "Same nest photo with the speaker in a circle.",
+     "text": "Not the egg. The nest.",
+     "tag": "LINGUISTICS",
+     "sound": "sand scrape",
+     "why": "If the reveal needs the creator's reaction."
+    }
+   ]
+  },
+  {
+   "line": "Wo ret phaila ke nest banata hai, aur usi ko \"udhiyy\" (أُدْحِيّ) kehte hain.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen B-roll",
+     "visual": "Footage of an ostrich scraping sand with its feet (licence to check); label: udhiyy = the nest it spreads out (Lane's Lexicon; Qurtubi on 79:30).",
+     "text": "udhiyy: the nest it spreads out",
+     "tag": "LINGUISTICS",
+     "sound": "scrape loop",
+     "why": "Shows why the word means spreading."
+    },
+    {
+     "layout": "speaker + card",
+     "visual": "Card: udhiyy = the ostrich's spread-out nest (Lane; Qurtubi on 79:30).",
+     "text": "udhiyy = nest",
+     "tag": "LINGUISTICS",
+     "sound": "tick",
+     "why": "If no usable ostrich footage."
+    }
+   ]
+  },
+  {
+   "line": "Toh ek ne verse se flat zameen nikaal li. Doosre ne anda.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen, both posts",
+     "visual": "Both viral posts return side by side; the flat map and the egg peel out of the verse card like stickers; both get the same stamp: READ INTO IT.",
+     "text": "Flat: read into it / Egg: read into it",
+     "tag": "VERDICT",
+     "sound": "two stamp hits matching the hook",
+     "why": "The payoff turns back on the hook: same two posts, same mistake."
+    },
+    {
+     "layout": "speaker full screen",
+     "visual": "Speaker; the two FALSE stamps from line 3 return small on either side.",
+     "text": "Both read into it",
+     "tag": "VERDICT",
+     "sound": "stamps",
+     "why": "Simpler."
+    }
+   ]
+  },
+  {
+   "line": "Aur verse bas itna keh raha tha, dekho, ye zameen tumhare liye kaise *bichhayi* gayi.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "full-screen Ayah card, held",
+     "visual": "Back to the clean 88:20 card, word ringed, held still for 2+ s.",
+     "text": "\"...how it was spread out\" (88:20)",
+     "tag": "QURANIC TEXT",
+     "sound": "music out, room tone",
+     "why": "The last line returns to the verse itself, held 2 s (QUALITY 2)."
+    },
+    {
+     "layout": "speaker full screen, held",
+     "visual": "Speaker close, still, no graphics.",
+     "text": "",
+     "tag": "",
+     "sound": "silence",
+     "why": "Lets the line breathe."
+    }
+   ]
+  },
+  {
+   "line": "Aise aur viral claims ke liye follow kar lo.",
+   "section": "body",
+   "options": [
+    {
+     "layout": "speaker + CTA animation",
+     "visual": "Instagram and Facebook Follow animation with the real icons, plus the comment icon and question.",
+     "text": "Follow for more viral claim checks / Which viral claim should we check next?",
+     "tag": "",
+     "sound": "pop",
+     "why": "QUALITY 2a: topic-tied CTA and a specific comment question."
+    },
+    {
+     "layout": "end card",
+     "visual": "Short end card: series name VIRAL CLAIM CHECK, follow icons, comment question.",
+     "text": "VIRAL CLAIM CHECK / Which claim next?",
+     "tag": "",
+     "sound": "pop",
+     "why": "Builds the series identity."
+    }
+   ]
+  }
+ ]
+}
