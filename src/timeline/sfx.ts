@@ -159,6 +159,63 @@ export const soundCues = (
     } else if (overlay.type === "scan") {
       // The scan line crossing the Quran.
       cues.push({frame: start + 6, sound: "riser", volume: RISER_VOLUME * 0.8});
+    } else if (overlay.type === "flathook") {
+      // Frame 0 hits under the voice; the post slides, the cut whips, the egg and the
+      // globe snap, and each "?" stamps.
+      cues.push({frame: start, sound: "impact", volume: IMPACT_VOLUME});
+      cues.push({frame: at(overlay.punchAt) + AFTER_PICTURE, sound: "tick", volume: TICK_VOLUME * 1.6});
+      cues.push({frame: at(overlay.flatPost.at) - WHOOSH_LEAD_FRAMES + 4, sound: "whoosh", volume: WHOOSH_VOLUME * 0.6});
+      cues.push({frame: at(overlay.eggPost.at) - WHOOSH_PEAK_FRAMES + AFTER_PICTURE, sound: "whoosh-2", volume: WHOOSH_VOLUME * 0.7});
+      cues.push({frame: at(overlay.snapAt) + AFTER_PICTURE, sound: "tick-soft-1", volume: CTA_TICK_VOLUME});
+      cues.push({frame: at(overlay.marksAt) + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.55});
+      cues.push({frame: at(overlay.marksAt) + 4 + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME});
+    } else if (overlay.type === "verdicts" || overlay.type === "readinto") {
+      // The same two stamp hits on "galat" and again at the payoff.
+      const first = overlay.type === "verdicts" ? at(overlay.stampAt) : at(overlay.leftAt) + 2;
+      const second = overlay.type === "verdicts" ? first + 4 : at(overlay.rightAt) + 2;
+      if (overlay.type === "verdicts") {
+        cues.push({frame: at(overlay.at) - WHOOSH_LEAD_FRAMES + 4, sound: "whoosh-3", volume: WHOOSH_VOLUME * 0.45});
+      }
+      cues.push({frame: first + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.6});
+      cues.push({frame: second + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.6});
+    } else if (overlay.type === "ayahstrips") {
+      overlay.strips.forEach((strip, index) => {
+        if (strip.at > overlay.start) {
+          cues.push({frame: at(strip.at) + AFTER_PICTURE, sound: SOFT_TICKS[index % 3], volume: TICK_VOLUME * 1.4});
+        }
+      });
+      if (overlay.ring) {
+        cues.push({frame: at(overlay.ring.at) + AFTER_PICTURE, sound: "tick", volume: TICK_VOLUME * 1.4});
+      }
+    } else if (overlay.type === "flatfootage") {
+      (overlay.labels ?? []).forEach((label, index) => {
+        cues.push({frame: at(label.at) + AFTER_PICTURE, sound: SOFT_TICKS[index % 3], volume: TICK_VOLUME * 1.4});
+      });
+      if (overlay.notPlanet) {
+        cues.push({frame: at(overlay.notPlanet.at) + AFTER_PICTURE, sound: "tick-soft-3", volume: TICK_VOLUME * 1.4});
+        cues.push({frame: at(overlay.notPlanet.strikeAt) + AFTER_PICTURE, sound: "tick", volume: TICK_VOLUME * 1.6});
+      }
+      if (overlay.globe) {
+        cues.push({frame: at(overlay.globe.at) + AFTER_PICTURE, sound: "sub-hit", volume: SUB_HIT_VOLUME * 0.8});
+      }
+    } else if (overlay.type === "flatboard") {
+      cues.push({frame: start - WHOOSH_LEAD_FRAMES + 4, sound: "whoosh-2", volume: WHOOSH_VOLUME * 0.6});
+      (overlay.shots ?? []).forEach((shot, index) => {
+        cues.push({frame: at(shot.at) + AFTER_PICTURE, sound: SOFT_TICKS[index % 3], volume: TICK_VOLUME * 1.5});
+      });
+      if (overlay.ayah) {
+        cues.push({frame: at(overlay.ayah.ringAt) + AFTER_PICTURE, sound: "tick", volume: TICK_VOLUME * 1.4});
+      }
+    } else if (overlay.type === "quotecard") {
+      cues.push({frame: start + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME * 0.8});
+    } else if (overlay.type === "ball") {
+      cues.push({frame: at(overlay.dropAt) + 4, sound: "whoosh-3", volume: WHOOSH_VOLUME * 0.6});
+      cues.push({frame: at(overlay.dropAt) + 24 + AFTER_PICTURE, sound: "impact", volume: NUMBER_LANDS_VOLUME});
+    } else if (overlay.type === "eggcheck") {
+      cues.push({frame: at(overlay.lexiconAt) - WHOOSH_LEAD_FRAMES + 4, sound: "whoosh", volume: WHOOSH_VOLUME * 0.5});
+      cues.push({frame: at(overlay.strikeAt) + AFTER_PICTURE, sound: "tick", volume: TICK_VOLUME * 1.6});
+    } else if (overlay.type === "nest") {
+      cues.push({frame: at(overlay.nestAt) + AFTER_PICTURE, sound: "impact", volume: NUMBER_LANDS_VOLUME});
     } else if (overlay.type === "headcard" && (overlay.tag || overlay.word || overlay.icon)) {
       cues.push({frame: start + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME * 0.8});
     }

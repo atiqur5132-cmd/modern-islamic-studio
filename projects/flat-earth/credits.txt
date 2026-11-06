@@ -1,0 +1,66 @@
+Quran mein zameen flat? — credits and sources
+=============================================
+
+Quranic text
+- 88:17, 88:18, 88:19, 88:20, 79:30 (also fetched: 71:19, 15:19, 39:5): api.quran.com v4
+  (text_uthmani), cross-checked with api.alquran.cloud (quran-uthmani) by
+  scripts/fetch_ayah.py, 2026-11-06.
+- English: Sahih International (quran.com translation 20). Spoken lines 7-8 are the
+  creator's paraphrase of 88:17-20, labelled as such on screen.
+
+Tafsir and scholarship (full quotes and links in research.md)
+- al-Tabari, al-Qurtubi, Ibn Kathir on 88:20 and 79:30 (api.quran.com tafsirs 15, 90, 14).
+- Tafsir al-Jalalayn (al-Mahalli), Ibn Atiyya, Fakhr al-Din al-Razi, al-Sa'di, Ibn Ashur
+  on 88:20: quran-tafsir.net.
+- Ibn Hazm, al-Fisal fi al-Milal, vol. 2: ar.wikisource.org.
+- Ibn al-Munadi via Ibn Taymiyyah, Majmu' al-Fatawa 25/195: islamqa.info/ar/answers/118698.
+- E. W. Lane, Arabic-English Lexicon, entry udhiyy: laneslexicon.com.
+
+Images and footage
+- Map of the Square and Stationary Earth, Orlando Ferguson, 1893. Library of Congress,
+  https://www.loc.gov/item/2011594831/ (public domain), via Wikimedia Commons. Cropped.
+- The Blue Marble, Apollo 17 crew (NASA), AS17-148-22727 (public domain), via Wikimedia Commons.
+- Pexels (Pexels License, pexels.com/license, read 2026-11-06: free to use and modify, no
+  attribution required; credited anyway):
+  - video 7641639 "A man making bed" (5.8-8.0 s)
+  - video 37180549 "Desert road at sunset with dramatic skies"
+  - video 38114878 "Desert camel ride in vast dunes" (also the SKY frame on line 7)
+  - video 32018898 "Camel ride in expansive desert landscape" (one frame at 13 s: the camel, and
+    a crop of its sand behind the 88:17-20 card)
+  - photo 33128657 "Cluster of ostrich eggs in natural nest"
+  - photo 25650573 "Ostrich eggs in South African sand"
+  - photo 39194976 "Ostrich nesting with eggs in natural habitat"
+  - photo 28322811 "Sunlit rocky mountains in Sinai at dusk"
+  Each at https://www.pexels.com/video/<id>/ or https://www.pexels.com/photo/<id>/.
+
+Words in Arabic script that are not Quranic
+- udhiyy (أُدْحِيّ), the ostrich's nest: Lane's Lexicon (laneslexicon.com/word/أدحى/n12225) and
+  al-Qurtubi on 79:30. Shown on line 17 as the "other word" the creator mentions.
+
+Scholar cards (English renderings of the Arabic in research.md)
+- Line 11 ("Kuch purane scholars bhi ise flat hi samajh rahe the") has no card on screen, by
+  the creator's choice. Its source: Tafsir al-Jalalayn (al-Mahalli) and Ibn Atiyya on 88:20
+  (research.md).
+- Line 12: Fakhr al-Din al-Razi, Mafatih al-Ghayb on 88:20, "when a ball is very large,
+  every piece of it is like a flat surface".
+
+Platform icons (follow and comment cards, src/overlays/Cta.tsx, src/brand.ts)
+- Instagram glyph and Facebook "f" logo: path data from Simple Icons 13.21.0 (CC0 1.0,
+  github.com/simple-icons/simple-icons), drawn unaltered at full shape. Simple Icons lists
+  their source and guidelines as Meta's brand resources:
+  - Instagram: https://about.meta.com/brand/resources/instagram (now www.meta.com/brand/...)
+  - Facebook: https://about.meta.com/brand/resources/facebook/logo
+  Read 2026-11-07. Facebook: logo "complete and unaltered", Facebook Blue (#0866FF) with a
+  white "f", and "You may also use the 'f' logo to drive to your presence on Facebook".
+  Instagram: no use that "implies partnership, sponsorship or endorsement"; permission is
+  needed for "any video not part of a series" (this reel is part of the Viral Claim Check
+  series). Meta's official asset packs were not downloaded (they ask for terms to be
+  accepted); the Instagram glyph is filled with Instagram's published gradient.
+- Like (heart) and comment (speech bubble) icons: own generic drawings. Meta offers no
+  official like or comment icon among its brand assets (the Facebook page says not to use
+  the thumbs-up in place of the logo), so none is used.
+- No endorsement is implied: the cards show only the creator's own profile and a Follow
+  button.
+
+Illustrative posts (lines 1-2, 18)
+- The viral posts are made up: no platform, no account, no real person's post.

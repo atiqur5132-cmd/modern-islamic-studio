@@ -1,3 +1,5 @@
+import {FlatOverlay} from "./flatTypes";
+
 // All times are in seconds on the source footage, so overlays stay on the
 // same spoken words when the cuts change. Text marked with *stars* is emphasised.
 
@@ -223,6 +225,7 @@ export type CtaOverlay = Timed & {
 } & ({mode: "follow"} | {mode: "engage"; text: string});
 
 export type Overlay =
+  | FlatOverlay
   | CtaOverlay
   | HookOverlay
   | VerseTagOverlay
@@ -265,10 +268,15 @@ export const FULL_SCREEN_TYPES: Overlay["type"][] = [
   "ring",
   "scan",
   "rules",
+  "nest",
 ];
 
 // The speaker moves into the top window and the graphic takes the space below.
-export const STACK_TYPES: Overlay["type"][] = ["ledger"];
+export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto"];
+
+// These cover the whole frame with the speaker off screen (drawn over the speaker);
+// they join a full-screen stretch they touch, so the circle never flashes between them.
+export const COVER_TYPES: Overlay["type"][] = ["factfootage", "flathook", "ayahstrips", "flatfootage", "ball", "eggcheck"];
 
 export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};
 
@@ -303,6 +311,8 @@ export type Edit = {
   // Source-time stretches where a graphic is the hero (recitation, letter by letter):
   // no caption starts inside them.
   captionHide?: {start: number; end: number; why?: string}[];
+  // Files in public/footage the reel's components draw by name, for the GitHub render.
+  assets?: string[];
 };
 
 export const FPS = 30;

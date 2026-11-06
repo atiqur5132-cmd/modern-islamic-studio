@@ -38,10 +38,19 @@ import {Posts} from "../overlays/yawm/Posts";
 import {STACK_FACE_Y, STACK_HEIGHT, STACK_MOVE_FRAMES} from "../overlays/yawm/look";
 import {Rules} from "../overlays/yawm/Rules";
 import {Scan} from "../overlays/yawm/Scan";
+import {AyahStrips} from "../overlays/flat/AyahStrips";
+import {Board, ReadInto} from "../overlays/flat/Board";
+import {FlatFootage} from "../overlays/flat/Footage";
+import {FlatHook} from "../overlays/flat/Hook";
+import {EggCheck, Nest} from "../overlays/flat/Ostrich";
+import {Ball, QuoteCard} from "../overlays/flat/Scholars";
+import {Verdicts} from "../overlays/flat/Verdicts";
+import {CTA_TOP_Y} from "../overlays/Cta";
 import {cameraAt, emphasisPunches, ROOM_FRAMES} from "../timeline/camera";
 import {SOUND_SECONDS, soundCues} from "../timeline/sfx";
 import {GOLD, NAVY, PIP, PIP_HEAD_LIFT, SAFE_AREA} from "../theme";
 import {
+  COVER_TYPES,
   CtaOverlay,
   Edit,
   FPS,
@@ -194,6 +203,26 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue) => {
       return <HeadCard card={overlay} cue={cue} />;
     case "posts":
       return <Posts posts={overlay} cue={cue} />;
+    case "flathook":
+      return <FlatHook hook={overlay} cue={cue} />;
+    case "verdicts":
+      return <Verdicts v={overlay} cue={cue} />;
+    case "ayahstrips":
+      return <AyahStrips card={overlay} cue={cue} />;
+    case "flatfootage":
+      return <FlatFootage f={overlay} cue={cue} />;
+    case "flatboard":
+      return <Board b={overlay} cue={cue} />;
+    case "readinto":
+      return <ReadInto r={overlay} cue={cue} />;
+    case "quotecard":
+      return <QuoteCard q={overlay} />;
+    case "ball":
+      return <Ball b={overlay} cue={cue} />;
+    case "eggcheck":
+      return <EggCheck e={overlay} cue={cue} />;
+    case "nest":
+      return <Nest n={overlay} cue={cue} />;
   }
 };
 
@@ -236,7 +265,7 @@ export const Short = ({
   const stretches: {start: number; end: number}[] = [];
   // Footage that covers the frame (the speaker off screen) joins a stretch it touches,
   // so the circle does not grow back for a moment between a graphic and the footage.
-  const covers = overlays.filter((o) => o.type === "factfootage");
+  const covers = overlays.filter((o) => COVER_TYPES.includes(o.type));
   for (const range of [...fullScreen, ...covers].map((o) => outputRange(segments, o)).sort((a, b) => a.start - b.start)) {
     const last = stretches[stretches.length - 1];
     if (last && range.start <= last.end + 1) {
@@ -266,6 +295,7 @@ export const Short = ({
   const ctaRanges = (placement: "top" | "caption") =>
     overlays
       .filter((o): o is CtaOverlay => o.type === "cta" && (o.placement ?? "top") === placement)
+      .filter((o) => placement === "caption" || (o.y ?? CTA_TOP_Y) <= CTA_TOP_Y)
       .map((o) => outputRange(segments, o));
   // A card in the headroom: no punch-ins under it, and the camera eases back to the
   // full frame so the cap drops clear of it.

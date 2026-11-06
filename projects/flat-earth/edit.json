@@ -1,0 +1,3804 @@
+{
+  "overlays": [
+    {
+      "type": "flathook",
+      "start": 0,
+      "end": 5.767,
+      "tag": "VIRAL CLAIM",
+      "line": "FLAT EARTH?",
+      "punchAt": 0.5,
+      "flatPost": {
+        "headline": "“The Quran says the earth is flat!”",
+        "at": 1.3
+      },
+      "eggPost": {
+        "headline": "“No bro, the Quran calls the earth an EGG!”",
+        "at": 2.3
+      },
+      "snapAt": 3.6,
+      "marksAt": 4.82
+    },
+    {
+      "type": "verdicts",
+      "start": 5.767,
+      "end": 9.0,
+      "left": "FLAT?",
+      "right": "EGG?",
+      "at": 5.85,
+      "stamp": "FALSE",
+      "stampAt": 8.46
+    },
+    {
+      "type": "ayahstrips",
+      "start": 9.0,
+      "end": 13.333,
+      "tag": "QURANIC TEXT",
+      "strips": [
+        {
+          "ayah": "88:20",
+          "at": 0
+        }
+      ],
+      "ring": {
+        "ayah": "88:20",
+        "word": 4,
+        "at": 12.62,
+        "term": "sutihat"
+      },
+      "push": true
+    },
+    {
+      "type": "flatfootage",
+      "start": 13.333,
+      "end": 15.5,
+      "tag": "LINGUISTICS",
+      "src": "fe-bed.mp4",
+      "trim": 0.3,
+      "line": {
+        "term": "sutihat",
+        "text": "spread out, laid flat",
+        "at": 13.72
+      },
+      "credit": "Video: Pexels 7641639"
+    },
+    {
+      "type": "flatboard",
+      "start": 18.5,
+      "end": 22.8,
+      "tag": "TRANSLATION (PARAPHRASE)",
+      "heading": "Do they not look at…",
+      "shots": [
+        {
+          "src": "fe-camel.jpg",
+          "at": 20.08,
+          "label": "CAMELS",
+          "focus": [
+            0.6,
+            0.12
+          ]
+        },
+        {
+          "src": "fe-sky.jpg",
+          "at": 21.12,
+          "label": "SKY",
+          "focus": [
+            0.5,
+            0.2
+          ]
+        },
+        {
+          "src": "fe-mountains.jpg",
+          "at": 22.14,
+          "label": "MOUNTAINS",
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ayahstrips",
+      "start": 22.8,
+      "end": 24.867,
+      "tag": "QURANIC TEXT",
+      "photo": "fe-ground.jpg",
+      "strips": [
+        {
+          "ayah": "88:17",
+          "at": 22.8,
+          "gloss": "camels"
+        },
+        {
+          "ayah": "88:18",
+          "at": 22.8,
+          "gloss": "sky"
+        },
+        {
+          "ayah": "88:19",
+          "at": 22.8,
+          "gloss": "mountains"
+        },
+        {
+          "ayah": "88:20",
+          "at": 23.3,
+          "gloss": "earth"
+        }
+      ],
+      "ring": {
+        "ayah": "88:20",
+        "word": 4,
+        "at": 24.2
+      },
+      "translation": {
+        "text": "“…and at the earth, how it was spread out?” (88:20)",
+        "at": 23.64
+      }
+    },
+    {
+      "type": "flatfootage",
+      "start": 24.867,
+      "end": 29.133,
+      "tag": "QURANIC CONTEXT",
+      "src": "fe-pov.mp4",
+      "line": {
+        "text": "What a rider in the desert sees",
+        "at": 25.36
+      },
+      "labels": [
+        {
+          "text": "CAMEL",
+          "at": 26.42,
+          "x": 330,
+          "y": 1010
+        },
+        {
+          "text": "SKY",
+          "at": 27.62,
+          "x": 640,
+          "y": 470
+        },
+        {
+          "text": "HORIZON",
+          "at": 27.95,
+          "x": 90,
+          "y": 700
+        },
+        {
+          "text": "GROUND",
+          "at": 28.3,
+          "x": 620,
+          "y": 860
+        }
+      ],
+      "credit": "Video: Pexels 38114878"
+    },
+    {
+      "type": "flatfootage",
+      "start": 29.133,
+      "end": 33.0,
+      "tag": "QURANIC CONTEXT",
+      "src": "fe-pov.mp4",
+      "trim": 4.27,
+      "move": {
+        "from": [
+          1.6,
+          0.5,
+          0.12
+        ],
+        "to": [
+          1.9,
+          0.9,
+          0.62
+        ],
+        "at": 29.3,
+        "frames": 45
+      },
+      "line": {
+        "text": "The ground under his feet",
+        "at": 29.96
+      },
+      "notPlanet": {
+        "at": 31.86,
+        "strikeAt": 32.68
+      },
+      "credit": "Video: Pexels 38114878"
+    },
+    {
+      "type": "ball",
+      "start": 37.467,
+      "end": 42.867,
+      "tag": "SCHOLARLY VIEW",
+      "dropAt": 40.28,
+      "quote": {
+        "text": "“When a ball is very large, every piece of it is like a flat surface.”",
+        "at": 38.0
+      },
+      "source": "Fakhr al-Din al-Razi on 88:20, Mafatih al-Ghayb (d. 1210 CE / 606 AH)"
+    },
+    {
+      "type": "flatfootage",
+      "start": 44.88,
+      "end": 47.333,
+      "tag": "ESTABLISHED SCIENCE",
+      "src": "fe-road.mp4",
+      "line": {
+        "text": "Looks flat.",
+        "at": 45.28
+      },
+      "globe": {
+        "src": "fe-blue_marble.jpg",
+        "at": 46.5,
+        "text": "Still round."
+      },
+      "credit": "Video: Pexels 37180549"
+    },
+    {
+      "type": "cta",
+      "mode": "follow",
+      "start": 47.36,
+      "end": 49.9,
+      "placement": "top",
+      "tone": "light",
+      "y": 1030
+    },
+    {
+      "type": "flatboard",
+      "start": 49.9,
+      "end": 52.12,
+      "tag": "QURANIC TEXT",
+      "ayah": {
+        "key": "79:30",
+        "word": 4,
+        "at": 49.9,
+        "ringAt": 51.42,
+        "label": "An-Nazi'at 79:30",
+        "term": "dahaha"
+      }
+    },
+    {
+      "type": "eggcheck",
+      "start": 52.12,
+      "end": 55.9,
+      "tag": "LINGUISTICS",
+      "lexiconAt": 54.22,
+      "strikeAt": 55.32,
+      "term": "dahaha",
+      "meaning": "spread out",
+      "source": "Qurtubi on 79:30; Lane, Arabic-English Lexicon"
+    },
+    {
+      "type": "nest",
+      "start": 55.9,
+      "end": 59.4,
+      "tag": "LINGUISTICS",
+      "nestAt": 58.7,
+      "line": "Not the egg. The nest."
+    },
+    {
+      "type": "flatfootage",
+      "start": 59.4,
+      "end": 63.167,
+      "tag": "LINGUISTICS",
+      "src": "fe-ostrich_v.jpg",
+      "image": true,
+      "move": {
+        "from": [
+          1.0,
+          0.4,
+          0.75
+        ],
+        "to": [
+          1.12,
+          0.4,
+          0.75
+        ]
+      },
+      "line": {
+        "term": "udhiyy",
+        "arabic": "أُدْحِيّ",
+        "text": "the nest it spreads out",
+        "at": 61.88
+      },
+      "labels": [
+        {
+          "text": "NEST",
+          "at": 60.4,
+          "x": 300,
+          "y": 1080
+        }
+      ],
+      "credit": "Qurtubi on 79:30; Lane · Photo: Pexels 39194976"
+    },
+    {
+      "type": "readinto",
+      "start": 63.167,
+      "end": 66.7,
+      "tag": "VERDICT",
+      "leftAt": 64.36,
+      "rightAt": 66.26,
+      "stamp": "READ INTO IT"
+    },
+    {
+      "type": "ayahstrips",
+      "start": 66.7,
+      "end": 71.167,
+      "tag": "QURANIC TEXT",
+      "strips": [
+        {
+          "ayah": "88:20",
+          "at": 0
+        }
+      ],
+      "ring": {
+        "ayah": "88:20",
+        "word": 4,
+        "at": 70.44,
+        "term": "sutihat"
+      },
+      "translation": {
+        "text": "“…and at the earth, how it was spread out?” (88:20)",
+        "at": 69.3
+      },
+      "hold": true
+    },
+    {
+      "type": "cta",
+      "mode": "follow",
+      "start": 71.2,
+      "end": 74.367,
+      "placement": "caption",
+      "tone": "light"
+    },
+    {
+      "type": "cta",
+      "mode": "engage",
+      "start": 71.2,
+      "end": 74.367,
+      "placement": "top",
+      "tone": "light",
+      "text": "Which viral claim should we check next?"
+    }
+  ],
+  "footage": "flat-earth.mp4",
+  "segments": [
+    {
+      "from": 0.0,
+      "to": 2.2,
+      "zoom": 1.0
+    },
+    {
+      "from": 2.2,
+      "to": 5.767,
+      "zoom": 1.0
+    },
+    {
+      "from": 5.767,
+      "to": 9.0,
+      "zoom": 1.0
+    },
+    {
+      "from": 9.0,
+      "to": 13.333,
+      "zoom": 1.0
+    },
+    {
+      "from": 13.333,
+      "to": 15.5,
+      "zoom": 1.0
+    },
+    {
+      "from": 15.5,
+      "to": 17.5,
+      "zoom": 1.0
+    },
+    {
+      "from": 17.5,
+      "to": 18.5,
+      "zoom": 1.14
+    },
+    {
+      "from": 18.5,
+      "to": 23.633,
+      "zoom": 1.0
+    },
+    {
+      "from": 23.633,
+      "to": 24.867,
+      "zoom": 1.0
+    },
+    {
+      "from": 24.867,
+      "to": 27.267,
+      "zoom": 1.0
+    },
+    {
+      "from": 27.267,
+      "to": 29.133,
+      "zoom": 1.0
+    },
+    {
+      "from": 29.133,
+      "to": 33.0,
+      "zoom": 1.0
+    },
+    {
+      "from": 33.0,
+      "to": 34.46,
+      "zoom": 1.14
+    },
+    {
+      "from": 34.46,
+      "to": 37.467,
+      "zoom": 1.0
+    },
+    {
+      "from": 37.467,
+      "to": 42.867,
+      "zoom": 1.0
+    },
+    {
+      "from": 42.867,
+      "to": 47.333,
+      "zoom": 1.0
+    },
+    {
+      "from": 47.333,
+      "to": 48.433,
+      "zoom": 1.1
+    },
+    {
+      "from": 48.433,
+      "to": 54.167,
+      "zoom": 1.0
+    },
+    {
+      "from": 54.167,
+      "to": 55.9,
+      "zoom": 1.0
+    },
+    {
+      "from": 55.9,
+      "to": 58.3,
+      "zoom": 1.0
+    },
+    {
+      "from": 58.3,
+      "to": 59.4,
+      "zoom": 1.12
+    },
+    {
+      "from": 59.4,
+      "to": 63.167,
+      "zoom": 1.0
+    },
+    {
+      "from": 63.167,
+      "to": 66.7,
+      "zoom": 1.0
+    },
+    {
+      "from": 66.7,
+      "to": 69.033,
+      "zoom": 1.0
+    },
+    {
+      "from": 69.033,
+      "to": 71.167,
+      "zoom": 1.0
+    },
+    {
+      "from": 71.167,
+      "to": 74.367,
+      "zoom": 1.0
+    }
+  ],
+  "captions": [
+    [
+      {
+        "text": "Zameen",
+        "start": 0.0,
+        "end": 0.5,
+        "emphasis": false
+      },
+      {
+        "text": "flat",
+        "start": 0.5,
+        "end": 0.74,
+        "emphasis": true
+      },
+      {
+        "text": "hai,",
+        "start": 0.74,
+        "end": 1.0,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "aur",
+        "start": 1.08,
+        "end": 1.2,
+        "emphasis": false
+      },
+      {
+        "text": "ye",
+        "start": 1.2,
+        "end": 1.3,
+        "emphasis": false
+      },
+      {
+        "text": "Quran",
+        "start": 1.3,
+        "end": 1.6,
+        "emphasis": false
+      },
+      {
+        "text": "mein",
+        "start": 1.6,
+        "end": 1.72,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "likha",
+        "start": 1.72,
+        "end": 2.06,
+        "emphasis": false
+      },
+      {
+        "text": "hai.",
+        "start": 2.06,
+        "end": 2.34,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Jawab",
+        "start": 2.34,
+        "end": 2.6,
+        "emphasis": false
+      },
+      {
+        "text": "milta",
+        "start": 2.6,
+        "end": 2.92,
+        "emphasis": false
+      },
+      {
+        "text": "hai,",
+        "start": 2.92,
+        "end": 3.06,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "\"Nahi",
+        "start": 3.1,
+        "end": 3.34,
+        "emphasis": false
+      },
+      {
+        "text": "bhai,",
+        "start": 3.34,
+        "end": 3.76,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Quran",
+        "start": 3.82,
+        "end": 4.16,
+        "emphasis": false
+      },
+      {
+        "text": "ne",
+        "start": 4.16,
+        "end": 4.3,
+        "emphasis": false
+      },
+      {
+        "text": "toh",
+        "start": 4.3,
+        "end": 4.36,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "zameen",
+        "start": 4.36,
+        "end": 4.74,
+        "emphasis": false
+      },
+      {
+        "text": "ko",
+        "start": 4.74,
+        "end": 4.82,
+        "emphasis": false
+      },
+      {
+        "text": "ande",
+        "start": 4.82,
+        "end": 5.08,
+        "emphasis": true
+      }
+    ],
+    [
+      {
+        "text": "jaisa",
+        "start": 5.08,
+        "end": 5.34,
+        "emphasis": false
+      },
+      {
+        "text": "bola",
+        "start": 5.34,
+        "end": 5.62,
+        "emphasis": false
+      },
+      {
+        "text": "hai.\"",
+        "start": 5.62,
+        "end": 5.84,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Maine",
+        "start": 5.84,
+        "end": 6.12,
+        "emphasis": false
+      },
+      {
+        "text": "dono",
+        "start": 6.12,
+        "end": 6.42,
+        "emphasis": false
+      },
+      {
+        "text": "ko",
+        "start": 6.42,
+        "end": 6.52,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "check",
+        "start": 6.52,
+        "end": 6.74,
+        "emphasis": false
+      },
+      {
+        "text": "kiya,",
+        "start": 6.74,
+        "end": 7.14,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "aur",
+        "start": 7.22,
+        "end": 7.36,
+        "emphasis": false
+      },
+      {
+        "text": "sach",
+        "start": 7.36,
+        "end": 7.54,
+        "emphasis": false
+      },
+      {
+        "text": "bataun,",
+        "start": 7.54,
+        "end": 8.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "dono",
+        "start": 8.16,
+        "end": 8.46,
+        "emphasis": false
+      },
+      {
+        "text": "galat",
+        "start": 8.46,
+        "end": 8.7,
+        "emphasis": false
+      },
+      {
+        "text": "nikle.",
+        "start": 8.7,
+        "end": 9.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Pehle",
+        "start": 9.04,
+        "end": 9.36,
+        "emphasis": false
+      },
+      {
+        "text": "flat",
+        "start": 9.36,
+        "end": 9.64,
+        "emphasis": false
+      },
+      {
+        "text": "wala.",
+        "start": 9.64,
+        "end": 10.24,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Surah",
+        "start": 10.24,
+        "end": 10.48,
+        "emphasis": false
+      },
+      {
+        "text": "Ghashiyah",
+        "start": 10.48,
+        "end": 10.92,
+        "emphasis": false
+      },
+      {
+        "text": "ke",
+        "start": 10.92,
+        "end": 11.0,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "verse",
+        "start": 11.0,
+        "end": 11.22,
+        "emphasis": false
+      },
+      {
+        "text": "number",
+        "start": 11.22,
+        "end": 11.52,
+        "emphasis": false
+      },
+      {
+        "text": "20",
+        "start": 11.52,
+        "end": 11.78,
+        "emphasis": false
+      },
+      {
+        "text": "mein",
+        "start": 11.78,
+        "end": 11.98,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ek",
+        "start": 11.98,
+        "end": 12.16,
+        "emphasis": false
+      },
+      {
+        "text": "word",
+        "start": 12.16,
+        "end": 12.36,
+        "emphasis": false
+      },
+      {
+        "text": "hai,",
+        "start": 12.36,
+        "end": 12.62,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "\"sutihat\".",
+        "start": 13.08,
+        "end": 13.4,
+        "emphasis": false
+      },
+      {
+        "text": "Matlab,",
+        "start": 13.4,
+        "end": 13.72,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Matlab,",
+        "start": 13.4,
+        "end": 13.72,
+        "emphasis": false
+      },
+      {
+        "text": "\"sutihat\".",
+        "start": 13.08,
+        "end": 13.4,
+        "emphasis": false
+      },
+      {
+        "text": "Matlab,",
+        "start": 13.4,
+        "end": 13.72,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "bichhate",
+        "start": 15.0,
+        "end": 15.4,
+        "emphasis": false
+      },
+      {
+        "text": "hain.",
+        "start": 15.4,
+        "end": 15.66,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Par",
+        "start": 15.66,
+        "end": 15.78,
+        "emphasis": false
+      },
+      {
+        "text": "baat",
+        "start": 15.78,
+        "end": 16.12,
+        "emphasis": false
+      },
+      {
+        "text": "kis",
+        "start": 16.12,
+        "end": 16.38,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "cheez",
+        "start": 16.38,
+        "end": 16.56,
+        "emphasis": false
+      },
+      {
+        "text": "ki",
+        "start": 16.56,
+        "end": 16.66,
+        "emphasis": false
+      },
+      {
+        "text": "ho",
+        "start": 16.66,
+        "end": 16.8,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "rahi",
+        "start": 16.8,
+        "end": 17.0,
+        "emphasis": false
+      },
+      {
+        "text": "thi?",
+        "start": 17.0,
+        "end": 17.58,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Thoda",
+        "start": 17.58,
+        "end": 17.86,
+        "emphasis": false
+      },
+      {
+        "text": "peeche",
+        "start": 17.86,
+        "end": 18.16,
+        "emphasis": false
+      },
+      {
+        "text": "padho.",
+        "start": 18.16,
+        "end": 18.68,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Quran",
+        "start": 18.68,
+        "end": 18.96,
+        "emphasis": false
+      },
+      {
+        "text": "poochta",
+        "start": 18.96,
+        "end": 19.42,
+        "emphasis": false
+      },
+      {
+        "text": "hai,",
+        "start": 19.42,
+        "end": 19.7,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ye",
+        "start": 19.7,
+        "end": 19.88,
+        "emphasis": false
+      },
+      {
+        "text": "log",
+        "start": 19.88,
+        "end": 20.08,
+        "emphasis": false
+      },
+      {
+        "text": "oont",
+        "start": 20.08,
+        "end": 20.28,
+        "emphasis": false
+      },
+      {
+        "text": "ko",
+        "start": 20.28,
+        "end": 20.46,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "nahi",
+        "start": 20.46,
+        "end": 20.64,
+        "emphasis": false
+      },
+      {
+        "text": "dekhte?",
+        "start": 20.64,
+        "end": 21.12,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Aasmaan",
+        "start": 21.12,
+        "end": 21.84,
+        "emphasis": false
+      },
+      {
+        "text": "ko,",
+        "start": 21.84,
+        "end": 22.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "pahadon",
+        "start": 22.14,
+        "end": 22.56,
+        "emphasis": false
+      },
+      {
+        "text": "ko?",
+        "start": 22.56,
+        "end": 22.82,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Aur",
+        "start": 22.82,
+        "end": 22.94,
+        "emphasis": false
+      },
+      {
+        "text": "zameen",
+        "start": 22.94,
+        "end": 23.3,
+        "emphasis": false
+      },
+      {
+        "text": "ko,",
+        "start": 23.3,
+        "end": 23.64,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ki",
+        "start": 23.64,
+        "end": 23.78,
+        "emphasis": false
+      },
+      {
+        "text": "wo",
+        "start": 23.78,
+        "end": 23.88,
+        "emphasis": false
+      },
+      {
+        "text": "kaisi",
+        "start": 23.88,
+        "end": 24.2,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "bichhayi",
+        "start": 24.2,
+        "end": 24.52,
+        "emphasis": true
+      },
+      {
+        "text": "gayi?",
+        "start": 24.52,
+        "end": 24.76,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Socho,",
+        "start": 24.98,
+        "end": 25.36,
+        "emphasis": false
+      },
+      {
+        "text": "registan",
+        "start": 25.36,
+        "end": 25.84,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "mein",
+        "start": 25.84,
+        "end": 25.94,
+        "emphasis": false
+      },
+      {
+        "text": "ek",
+        "start": 25.94,
+        "end": 26.18,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "aadmi",
+        "start": 26.18,
+        "end": 26.42,
+        "emphasis": false
+      },
+      {
+        "text": "oont",
+        "start": 26.42,
+        "end": 26.66,
+        "emphasis": false
+      },
+      {
+        "text": "par",
+        "start": 26.66,
+        "end": 26.74,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "baitha",
+        "start": 26.74,
+        "end": 27.08,
+        "emphasis": false
+      },
+      {
+        "text": "hai.",
+        "start": 27.08,
+        "end": 27.36,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Yahi",
+        "start": 27.36,
+        "end": 27.62,
+        "emphasis": false
+      },
+      {
+        "text": "chaar",
+        "start": 27.62,
+        "end": 27.88,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "cheezein",
+        "start": 27.88,
+        "end": 28.14,
+        "emphasis": false
+      },
+      {
+        "text": "toh",
+        "start": 28.14,
+        "end": 28.24,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "uske",
+        "start": 28.24,
+        "end": 28.48,
+        "emphasis": false
+      },
+      {
+        "text": "saamne",
+        "start": 28.48,
+        "end": 28.84,
+        "emphasis": false
+      },
+      {
+        "text": "hain.",
+        "start": 28.84,
+        "end": 29.24,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Baat",
+        "start": 29.3,
+        "end": 29.58,
+        "emphasis": false
+      },
+      {
+        "text": "uske",
+        "start": 29.58,
+        "end": 29.96,
+        "emphasis": false
+      },
+      {
+        "text": "pairon",
+        "start": 29.96,
+        "end": 30.34,
+        "emphasis": false
+      },
+      {
+        "text": "ke",
+        "start": 30.34,
+        "end": 30.44,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "neeche",
+        "start": 30.44,
+        "end": 30.76,
+        "emphasis": false
+      },
+      {
+        "text": "ki",
+        "start": 30.76,
+        "end": 30.86,
+        "emphasis": false
+      },
+      {
+        "text": "zameen",
+        "start": 30.86,
+        "end": 31.22,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ki",
+        "start": 31.22,
+        "end": 31.36,
+        "emphasis": false
+      },
+      {
+        "text": "hai.",
+        "start": 31.36,
+        "end": 31.8,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Planet",
+        "start": 31.86,
+        "end": 32.24,
+        "emphasis": false
+      },
+      {
+        "text": "ki",
+        "start": 32.24,
+        "end": 32.32,
+        "emphasis": false
+      },
+      {
+        "text": "shape",
+        "start": 32.32,
+        "end": 32.54,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ki",
+        "start": 32.54,
+        "end": 32.68,
+        "emphasis": false
+      },
+      {
+        "text": "nahi.",
+        "start": 32.68,
+        "end": 33.02,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Lekin",
+        "start": 33.06,
+        "end": 33.46,
+        "emphasis": false
+      },
+      {
+        "text": "main",
+        "start": 33.46,
+        "end": 33.54,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "honest",
+        "start": 33.54,
+        "end": 33.82,
+        "emphasis": false
+      },
+      {
+        "text": "rahunga.",
+        "start": 33.82,
+        "end": 34.3,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Kuch",
+        "start": 34.46,
+        "end": 34.7,
+        "emphasis": false
+      },
+      {
+        "text": "purane",
+        "start": 34.7,
+        "end": 35.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "scholars",
+        "start": 35.04,
+        "end": 35.54,
+        "emphasis": false
+      },
+      {
+        "text": "bhi",
+        "start": 35.54,
+        "end": 35.72,
+        "emphasis": false
+      },
+      {
+        "text": "ise",
+        "start": 35.72,
+        "end": 36.3,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "flat",
+        "start": 36.3,
+        "end": 36.68,
+        "emphasis": false
+      },
+      {
+        "text": "hi",
+        "start": 36.68,
+        "end": 36.84,
+        "emphasis": false
+      },
+      {
+        "text": "samajh",
+        "start": 36.84,
+        "end": 37.1,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "rahe",
+        "start": 37.1,
+        "end": 37.3,
+        "emphasis": false
+      },
+      {
+        "text": "the.",
+        "start": 37.3,
+        "end": 37.38,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Par",
+        "start": 37.16,
+        "end": 37.64,
+        "emphasis": false
+      },
+      {
+        "text": "Imam",
+        "start": 37.64,
+        "end": 38.0,
+        "emphasis": false
+      },
+      {
+        "text": "Razi",
+        "start": 38.0,
+        "end": 38.26,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ne",
+        "start": 38.26,
+        "end": 38.42,
+        "emphasis": false
+      },
+      {
+        "text": "isi",
+        "start": 38.42,
+        "end": 38.68,
+        "emphasis": false
+      },
+      {
+        "text": "verse",
+        "start": 38.68,
+        "end": 38.92,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "pe",
+        "start": 38.92,
+        "end": 39.04,
+        "emphasis": false
+      },
+      {
+        "text": "likha,",
+        "start": 39.04,
+        "end": 39.6,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ki",
+        "start": 39.62,
+        "end": 39.74,
+        "emphasis": false
+      },
+      {
+        "text": "bahut",
+        "start": 39.74,
+        "end": 40.06,
+        "emphasis": false
+      },
+      {
+        "text": "badi",
+        "start": 40.06,
+        "end": 40.28,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ball",
+        "start": 40.28,
+        "end": 40.54,
+        "emphasis": false
+      },
+      {
+        "text": "ka",
+        "start": 40.54,
+        "end": 40.96,
+        "emphasis": false
+      },
+      {
+        "text": "har",
+        "start": 40.96,
+        "end": 41.3,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "chhota",
+        "start": 41.3,
+        "end": 41.74,
+        "emphasis": false
+      },
+      {
+        "text": "hissa",
+        "start": 41.74,
+        "end": 42.06,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "flat",
+        "start": 42.06,
+        "end": 42.24,
+        "emphasis": true
+      },
+      {
+        "text": "hi",
+        "start": 42.24,
+        "end": 42.38,
+        "emphasis": false
+      },
+      {
+        "text": "dikhta",
+        "start": 42.38,
+        "end": 42.72,
+        "emphasis": false
+      },
+      {
+        "text": "hai.",
+        "start": 42.72,
+        "end": 42.94,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Tum",
+        "start": 42.94,
+        "end": 43.08,
+        "emphasis": false
+      },
+      {
+        "text": "abhi",
+        "start": 43.08,
+        "end": 43.32,
+        "emphasis": false
+      },
+      {
+        "text": "jahan",
+        "start": 43.32,
+        "end": 43.62,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "pe",
+        "start": 43.62,
+        "end": 43.68,
+        "emphasis": false
+      },
+      {
+        "text": "khade",
+        "start": 43.68,
+        "end": 43.96,
+        "emphasis": false
+      },
+      {
+        "text": "ho",
+        "start": 43.96,
+        "end": 44.16,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ya",
+        "start": 44.16,
+        "end": 44.28,
+        "emphasis": false
+      },
+      {
+        "text": "baithe",
+        "start": 44.28,
+        "end": 44.62,
+        "emphasis": false
+      },
+      {
+        "text": "ho,",
+        "start": 44.62,
+        "end": 44.86,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "toh",
+        "start": 44.88,
+        "end": 44.98,
+        "emphasis": false
+      },
+      {
+        "text": "zameen",
+        "start": 44.98,
+        "end": 45.28,
+        "emphasis": false
+      },
+      {
+        "text": "flat",
+        "start": 45.28,
+        "end": 45.54,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "hi",
+        "start": 45.54,
+        "end": 45.62,
+        "emphasis": false
+      },
+      {
+        "text": "lag",
+        "start": 45.62,
+        "end": 45.8,
+        "emphasis": false
+      },
+      {
+        "text": "rahi",
+        "start": 45.8,
+        "end": 45.94,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "hai",
+        "start": 45.94,
+        "end": 46.14,
+        "emphasis": false
+      },
+      {
+        "text": "na?",
+        "start": 46.14,
+        "end": 46.26,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Phir",
+        "start": 46.5,
+        "end": 46.8,
+        "emphasis": false
+      },
+      {
+        "text": "bhi",
+        "start": 46.8,
+        "end": 46.8,
+        "emphasis": false
+      },
+      {
+        "text": "gol",
+        "start": 46.8,
+        "end": 47.04,
+        "emphasis": false
+      },
+      {
+        "text": "hai.",
+        "start": 47.04,
+        "end": 47.36,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Ab",
+        "start": 47.36,
+        "end": 47.56,
+        "emphasis": false
+      },
+      {
+        "text": "ande",
+        "start": 47.56,
+        "end": 47.86,
+        "emphasis": false
+      },
+      {
+        "text": "wala",
+        "start": 47.86,
+        "end": 48.16,
+        "emphasis": false
+      },
+      {
+        "text": "claim.",
+        "start": 48.16,
+        "end": 48.42,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Surah",
+        "start": 48.5,
+        "end": 48.88,
+        "emphasis": false
+      },
+      {
+        "text": "Nazi'at",
+        "start": 48.88,
+        "end": 49.26,
+        "emphasis": false
+      },
+      {
+        "text": "ke",
+        "start": 49.26,
+        "end": 53.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "ayat",
+        "start": 49.38,
+        "end": 49.64,
+        "emphasis": false
+      },
+      {
+        "text": "number",
+        "start": 49.64,
+        "end": 49.82,
+        "emphasis": false
+      },
+      {
+        "text": "30",
+        "start": 49.82,
+        "end": 50.1,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "pe",
+        "start": 50.1,
+        "end": 50.34,
+        "emphasis": false
+      },
+      {
+        "text": "ek",
+        "start": 50.34,
+        "end": 50.54,
+        "emphasis": false
+      },
+      {
+        "text": "word",
+        "start": 50.54,
+        "end": 50.74,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "hai,",
+        "start": 50.74,
+        "end": 51.12,
+        "emphasis": false
+      },
+      {
+        "text": "\"dahaha\".",
+        "start": 51.42,
+        "end": 52.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Kehte",
+        "start": 52.12,
+        "end": 52.44,
+        "emphasis": false
+      },
+      {
+        "text": "hain,",
+        "start": 52.44,
+        "end": 52.56,
+        "emphasis": false
+      },
+      {
+        "text": "matlab",
+        "start": 52.64,
+        "end": 53.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "shutur-murg",
+        "start": 53.04,
+        "end": 53.64,
+        "emphasis": false
+      },
+      {
+        "text": "ka",
+        "start": 53.64,
+        "end": 53.8,
+        "emphasis": false
+      },
+      {
+        "text": "anda.",
+        "start": 53.8,
+        "end": 54.12,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Par",
+        "start": 54.22,
+        "end": 54.38,
+        "emphasis": false
+      },
+      {
+        "text": "iska",
+        "start": 54.38,
+        "end": 54.68,
+        "emphasis": false
+      },
+      {
+        "text": "matlab",
+        "start": 54.68,
+        "end": 55.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "bhi",
+        "start": 55.04,
+        "end": 55.16,
+        "emphasis": false
+      },
+      {
+        "text": "hai,",
+        "start": 55.16,
+        "end": 55.32,
+        "emphasis": false
+      },
+      {
+        "text": "phailana.",
+        "start": 55.32,
+        "end": 55.84,
+        "emphasis": true
+      }
+    ],
+    [
+      {
+        "text": "Shutur-murg",
+        "start": 55.84,
+        "end": 56.54,
+        "emphasis": false
+      },
+      {
+        "text": "se",
+        "start": 56.54,
+        "end": 56.66,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "rishta",
+        "start": 56.66,
+        "end": 56.94,
+        "emphasis": false
+      },
+      {
+        "text": "hai,",
+        "start": 56.94,
+        "end": 57.2,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "par",
+        "start": 57.2,
+        "end": 57.5,
+        "emphasis": false
+      },
+      {
+        "text": "ande",
+        "start": 57.5,
+        "end": 57.8,
+        "emphasis": false
+      },
+      {
+        "text": "ka",
+        "start": 57.8,
+        "end": 57.96,
+        "emphasis": false
+      },
+      {
+        "text": "nahi,",
+        "start": 57.96,
+        "end": 58.34,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "uske",
+        "start": 58.42,
+        "end": 58.7,
+        "emphasis": false
+      },
+      {
+        "text": "nest",
+        "start": 58.7,
+        "end": 59.06,
+        "emphasis": true
+      },
+      {
+        "text": "ka.",
+        "start": 59.06,
+        "end": 59.44,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Wo",
+        "start": 59.48,
+        "end": 59.7,
+        "emphasis": false
+      },
+      {
+        "text": "ret",
+        "start": 59.7,
+        "end": 59.96,
+        "emphasis": false
+      },
+      {
+        "text": "phaila",
+        "start": 59.96,
+        "end": 60.3,
+        "emphasis": false
+      },
+      {
+        "text": "ke",
+        "start": 60.3,
+        "end": 60.4,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "nest",
+        "start": 60.4,
+        "end": 60.64,
+        "emphasis": false
+      },
+      {
+        "text": "banata",
+        "start": 60.64,
+        "end": 61.1,
+        "emphasis": false
+      },
+      {
+        "text": "hai.",
+        "start": 61.1,
+        "end": 61.26,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Uske",
+        "start": 61.44,
+        "end": 61.72,
+        "emphasis": false
+      },
+      {
+        "text": "liye",
+        "start": 61.72,
+        "end": 61.88,
+        "emphasis": false
+      },
+      {
+        "text": "Arabic",
+        "start": 61.88,
+        "end": 62.24,
+        "emphasis": false
+      },
+      {
+        "text": "mein",
+        "start": 62.24,
+        "end": 62.38,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "doosra",
+        "start": 62.38,
+        "end": 62.7,
+        "emphasis": false
+      },
+      {
+        "text": "word",
+        "start": 62.7,
+        "end": 62.82,
+        "emphasis": false
+      },
+      {
+        "text": "hai.",
+        "start": 62.82,
+        "end": 62.96,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Toh",
+        "start": 62.84,
+        "end": 63.32,
+        "emphasis": false
+      },
+      {
+        "text": "ek",
+        "start": 63.32,
+        "end": 63.54,
+        "emphasis": false
+      },
+      {
+        "text": "ne",
+        "start": 63.54,
+        "end": 63.72,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "verse",
+        "start": 63.72,
+        "end": 64.06,
+        "emphasis": false
+      },
+      {
+        "text": "se",
+        "start": 64.06,
+        "end": 64.36,
+        "emphasis": false
+      },
+      {
+        "text": "flat",
+        "start": 64.36,
+        "end": 64.76,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "zameen",
+        "start": 64.76,
+        "end": 65.04,
+        "emphasis": false
+      },
+      {
+        "text": "nikaali,",
+        "start": 65.04,
+        "end": 65.58,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "aur",
+        "start": 65.58,
+        "end": 65.82,
+        "emphasis": false
+      },
+      {
+        "text": "doosre",
+        "start": 65.82,
+        "end": 66.18,
+        "emphasis": false
+      },
+      {
+        "text": "ne",
+        "start": 66.18,
+        "end": 66.26,
+        "emphasis": false
+      },
+      {
+        "text": "anda.",
+        "start": 66.26,
+        "end": 66.66,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Aur",
+        "start": 66.66,
+        "end": 66.92,
+        "emphasis": false
+      },
+      {
+        "text": "verse",
+        "start": 66.92,
+        "end": 67.3,
+        "emphasis": false
+      },
+      {
+        "text": "sirf",
+        "start": 67.3,
+        "end": 67.6,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "itna",
+        "start": 67.6,
+        "end": 67.9,
+        "emphasis": false
+      },
+      {
+        "text": "keh",
+        "start": 67.9,
+        "end": 68.06,
+        "emphasis": false
+      },
+      {
+        "text": "raha",
+        "start": 68.06,
+        "end": 68.3,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "hai",
+        "start": 68.3,
+        "end": 68.38,
+        "emphasis": false
+      },
+      {
+        "text": "ki",
+        "start": 68.38,
+        "end": 68.54,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "dekho,",
+        "start": 68.54,
+        "end": 69.1,
+        "emphasis": false
+      },
+      {
+        "text": "ye",
+        "start": 69.1,
+        "end": 69.3,
+        "emphasis": false
+      },
+      {
+        "text": "zameen",
+        "start": 69.3,
+        "end": 69.66,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "tumhare",
+        "start": 69.66,
+        "end": 70.04,
+        "emphasis": false
+      },
+      {
+        "text": "liye",
+        "start": 70.04,
+        "end": 70.2,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "kaisi",
+        "start": 70.2,
+        "end": 70.44,
+        "emphasis": false
+      },
+      {
+        "text": "bichhayi",
+        "start": 70.44,
+        "end": 70.8,
+        "emphasis": true
+      },
+      {
+        "text": "gayi.",
+        "start": 70.8,
+        "end": 71.04,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "Aise",
+        "start": 71.04,
+        "end": 71.44,
+        "emphasis": false
+      },
+      {
+        "text": "aur",
+        "start": 71.44,
+        "end": 71.6,
+        "emphasis": false
+      },
+      {
+        "text": "videos",
+        "start": 71.6,
+        "end": 71.94,
+        "emphasis": false
+      },
+      {
+        "text": "ke",
+        "start": 71.94,
+        "end": 72.02,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "liye",
+        "start": 72.02,
+        "end": 72.14,
+        "emphasis": false
+      },
+      {
+        "text": "follow",
+        "start": 72.14,
+        "end": 72.38,
+        "emphasis": false
+      },
+      {
+        "text": "kar",
+        "start": 72.38,
+        "end": 72.54,
+        "emphasis": false
+      },
+      {
+        "text": "lo,",
+        "start": 72.54,
+        "end": 72.74,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "aur",
+        "start": 72.74,
+        "end": 73.12,
+        "emphasis": false
+      },
+      {
+        "text": "video",
+        "start": 73.12,
+        "end": 73.44,
+        "emphasis": false
+      },
+      {
+        "text": "ko",
+        "start": 73.44,
+        "end": 73.5,
+        "emphasis": false
+      }
+    ],
+    [
+      {
+        "text": "share",
+        "start": 73.5,
+        "end": 73.7,
+        "emphasis": false
+      },
+      {
+        "text": "bhi",
+        "start": 73.7,
+        "end": 73.82,
+        "emphasis": false
+      },
+      {
+        "text": "kar",
+        "start": 73.82,
+        "end": 73.94,
+        "emphasis": false
+      },
+      {
+        "text": "dena.",
+        "start": 73.94,
+        "end": 74.18,
+        "emphasis": false
+      }
+    ]
+  ],
+  "face": {
+    "step": 0.2,
+    "points": [
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        520,
+        724
+      ],
+      [
+        514,
+        713
+      ],
+      [
+        514,
+        713
+      ],
+      [
+        514,
+        713
+      ],
+      [
+        514,
+        713
+      ],
+      [
+        514,
+        713
+      ],
+      [
+        500,
+        711
+      ],
+      [
+        500,
+        711
+      ],
+      [
+        483,
+        713
+      ],
+      [
+        483,
+        713
+      ],
+      [
+        483,
+        713
+      ],
+      [
+        483,
+        713
+      ],
+      [
+        483,
+        713
+      ],
+      [
+        483,
+        713
+      ],
+      [
+        493,
+        720
+      ],
+      [
+        493,
+        720
+      ],
+      [
+        493,
+        720
+      ],
+      [
+        493,
+        720
+      ],
+      [
+        493,
+        720
+      ],
+      [
+        478,
+        727
+      ],
+      [
+        478,
+        727
+      ],
+      [
+        478,
+        727
+      ],
+      [
+        478,
+        727
+      ],
+      [
+        485,
+        737
+      ],
+      [
+        485,
+        737
+      ],
+      [
+        497,
+        740
+      ],
+      [
+        497,
+        740
+      ],
+      [
+        513,
+        742
+      ],
+      [
+        513,
+        742
+      ],
+      [
+        513,
+        742
+      ],
+      [
+        517,
+        726
+      ],
+      [
+        517,
+        726
+      ],
+      [
+        517,
+        726
+      ],
+      [
+        505,
+        719
+      ],
+      [
+        505,
+        719
+      ],
+      [
+        505,
+        719
+      ],
+      [
+        491,
+        723
+      ],
+      [
+        491,
+        723
+      ],
+      [
+        491,
+        723
+      ],
+      [
+        491,
+        723
+      ],
+      [
+        504,
+        721
+      ],
+      [
+        504,
+        721
+      ],
+      [
+        504,
+        721
+      ],
+      [
+        519,
+        727
+      ],
+      [
+        519,
+        727
+      ],
+      [
+        519,
+        727
+      ],
+      [
+        519,
+        727
+      ],
+      [
+        519,
+        727
+      ],
+      [
+        519,
+        727
+      ],
+      [
+        505,
+        729
+      ],
+      [
+        505,
+        729
+      ],
+      [
+        505,
+        729
+      ],
+      [
+        505,
+        729
+      ],
+      [
+        505,
+        729
+      ],
+      [
+        505,
+        729
+      ],
+      [
+        505,
+        729
+      ],
+      [
+        505,
+        729
+      ],
+      [
+        493,
+        732
+      ],
+      [
+        493,
+        732
+      ],
+      [
+        493,
+        732
+      ],
+      [
+        493,
+        732
+      ],
+      [
+        493,
+        732
+      ],
+      [
+        493,
+        732
+      ],
+      [
+        481,
+        741
+      ],
+      [
+        468,
+        744
+      ],
+      [
+        455,
+        747
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        442,
+        750
+      ],
+      [
+        456,
+        748
+      ],
+      [
+        456,
+        748
+      ],
+      [
+        456,
+        748
+      ],
+      [
+        456,
+        748
+      ],
+      [
+        456,
+        748
+      ],
+      [
+        471,
+        752
+      ],
+      [
+        471,
+        752
+      ],
+      [
+        471,
+        752
+      ],
+      [
+        484,
+        754
+      ],
+      [
+        484,
+        754
+      ],
+      [
+        484,
+        754
+      ],
+      [
+        484,
+        754
+      ],
+      [
+        500,
+        750
+      ],
+      [
+        500,
+        750
+      ],
+      [
+        500,
+        750
+      ],
+      [
+        500,
+        750
+      ],
+      [
+        505,
+        738
+      ],
+      [
+        505,
+        738
+      ],
+      [
+        505,
+        738
+      ],
+      [
+        505,
+        738
+      ],
+      [
+        505,
+        738
+      ],
+      [
+        505,
+        738
+      ],
+      [
+        491,
+        732
+      ],
+      [
+        491,
+        732
+      ],
+      [
+        491,
+        732
+      ],
+      [
+        476,
+        730
+      ],
+      [
+        476,
+        730
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        469,
+        740
+      ],
+      [
+        481,
+        733
+      ],
+      [
+        481,
+        733
+      ],
+      [
+        494,
+        734
+      ],
+      [
+        494,
+        734
+      ],
+      [
+        494,
+        734
+      ],
+      [
+        506,
+        740
+      ],
+      [
+        506,
+        740
+      ],
+      [
+        506,
+        740
+      ],
+      [
+        506,
+        740
+      ],
+      [
+        506,
+        740
+      ],
+      [
+        506,
+        740
+      ],
+      [
+        506,
+        740
+      ],
+      [
+        506,
+        740
+      ],
+      [
+        503,
+        725
+      ],
+      [
+        503,
+        725
+      ],
+      [
+        508,
+        709
+      ],
+      [
+        508,
+        709
+      ],
+      [
+        508,
+        709
+      ],
+      [
+        508,
+        709
+      ],
+      [
+        508,
+        709
+      ],
+      [
+        508,
+        709
+      ],
+      [
+        490,
+        709
+      ],
+      [
+        490,
+        709
+      ],
+      [
+        490,
+        709
+      ],
+      [
+        490,
+        709
+      ],
+      [
+        490,
+        709
+      ],
+      [
+        490,
+        709
+      ],
+      [
+        490,
+        709
+      ],
+      [
+        494,
+        723
+      ],
+      [
+        494,
+        723
+      ],
+      [
+        494,
+        723
+      ],
+      [
+        494,
+        723
+      ],
+      [
+        494,
+        723
+      ],
+      [
+        494,
+        723
+      ],
+      [
+        498,
+        736
+      ],
+      [
+        498,
+        736
+      ],
+      [
+        498,
+        736
+      ],
+      [
+        498,
+        736
+      ],
+      [
+        498,
+        736
+      ],
+      [
+        483,
+        731
+      ],
+      [
+        483,
+        731
+      ],
+      [
+        460,
+        732
+      ],
+      [
+        460,
+        732
+      ],
+      [
+        450,
+        738
+      ],
+      [
+        450,
+        738
+      ],
+      [
+        450,
+        738
+      ],
+      [
+        467,
+        744
+      ],
+      [
+        467,
+        744
+      ],
+      [
+        484,
+        742
+      ],
+      [
+        484,
+        742
+      ],
+      [
+        484,
+        742
+      ],
+      [
+        484,
+        742
+      ],
+      [
+        491,
+        730
+      ],
+      [
+        491,
+        730
+      ],
+      [
+        491,
+        730
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        485,
+        715
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        479,
+        728
+      ],
+      [
+        487,
+        719
+      ],
+      [
+        487,
+        719
+      ],
+      [
+        487,
+        719
+      ],
+      [
+        487,
+        719
+      ],
+      [
+        487,
+        719
+      ],
+      [
+        487,
+        719
+      ],
+      [
+        487,
+        719
+      ],
+      [
+        500,
+        723
+      ],
+      [
+        500,
+        723
+      ],
+      [
+        500,
+        723
+      ],
+      [
+        500,
+        723
+      ],
+      [
+        500,
+        723
+      ],
+      [
+        500,
+        723
+      ],
+      [
+        489,
+        734
+      ],
+      [
+        489,
+        734
+      ],
+      [
+        475,
+        740
+      ],
+      [
+        475,
+        740
+      ],
+      [
+        475,
+        740
+      ],
+      [
+        475,
+        740
+      ],
+      [
+        475,
+        740
+      ],
+      [
+        475,
+        740
+      ],
+      [
+        491,
+        737
+      ],
+      [
+        491,
+        737
+      ],
+      [
+        506,
+        738
+      ],
+      [
+        506,
+        738
+      ],
+      [
+        506,
+        738
+      ],
+      [
+        506,
+        738
+      ],
+      [
+        506,
+        738
+      ],
+      [
+        506,
+        738
+      ],
+      [
+        506,
+        738
+      ],
+      [
+        506,
+        738
+      ],
+      [
+        488,
+        737
+      ],
+      [
+        488,
+        737
+      ],
+      [
+        473,
+        736
+      ],
+      [
+        473,
+        736
+      ],
+      [
+        473,
+        736
+      ],
+      [
+        473,
+        736
+      ],
+      [
+        473,
+        736
+      ],
+      [
+        490,
+        744
+      ],
+      [
+        490,
+        744
+      ],
+      [
+        490,
+        744
+      ],
+      [
+        490,
+        744
+      ],
+      [
+        490,
+        744
+      ],
+      [
+        501,
+        739
+      ],
+      [
+        501,
+        739
+      ],
+      [
+        501,
+        739
+      ],
+      [
+        501,
+        739
+      ],
+      [
+        501,
+        739
+      ],
+      [
+        501,
+        739
+      ],
+      [
+        501,
+        739
+      ],
+      [
+        493,
+        750
+      ],
+      [
+        493,
+        750
+      ],
+      [
+        493,
+        750
+      ],
+      [
+        493,
+        750
+      ],
+      [
+        479,
+        752
+      ],
+      [
+        479,
+        752
+      ],
+      [
+        479,
+        752
+      ],
+      [
+        479,
+        752
+      ],
+      [
+        479,
+        752
+      ],
+      [
+        491,
+        737
+      ],
+      [
+        491,
+        737
+      ],
+      [
+        502,
+        726
+      ],
+      [
+        502,
+        726
+      ],
+      [
+        489,
+        724
+      ],
+      [
+        489,
+        724
+      ],
+      [
+        475,
+        734
+      ],
+      [
+        475,
+        734
+      ],
+      [
+        475,
+        734
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        474,
+        749
+      ],
+      [
+        484,
+        758
+      ],
+      [
+        484,
+        758
+      ],
+      [
+        469,
+        759
+      ],
+      [
+        469,
+        759
+      ],
+      [
+        452,
+        760
+      ],
+      [
+        452,
+        760
+      ],
+      [
+        452,
+        760
+      ],
+      [
+        452,
+        760
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        468,
+        752
+      ],
+      [
+        486,
+        755
+      ],
+      [
+        486,
+        755
+      ],
+      [
+        499,
+        759
+      ],
+      [
+        499,
+        759
+      ],
+      [
+        508,
+        769
+      ],
+      [
+        508,
+        769
+      ],
+      [
+        508,
+        769
+      ],
+      [
+        508,
+        769
+      ],
+      [
+        491,
+        770
+      ],
+      [
+        491,
+        770
+      ],
+      [
+        472,
+        760
+      ],
+      [
+        472,
+        760
+      ],
+      [
+        459,
+        757
+      ],
+      [
+        459,
+        757
+      ],
+      [
+        459,
+        757
+      ],
+      [
+        459,
+        757
+      ],
+      [
+        459,
+        757
+      ],
+      [
+        459,
+        757
+      ],
+      [
+        459,
+        757
+      ],
+      [
+        459,
+        757
+      ],
+      [
+        473,
+        758
+      ],
+      [
+        473,
+        758
+      ],
+      [
+        494,
+        765
+      ],
+      [
+        494,
+        765
+      ],
+      [
+        505,
+        774
+      ],
+      [
+        505,
+        774
+      ],
+      [
+        483,
+        773
+      ],
+      [
+        469,
+        769
+      ],
+      [
+        455,
+        764
+      ],
+      [
+        441,
+        759
+      ],
+      [
+        441,
+        759
+      ],
+      [
+        441,
+        759
+      ],
+      [
+        432,
+        750
+      ],
+      [
+        432,
+        750
+      ],
+      [
+        432,
+        750
+      ],
+      [
+        432,
+        750
+      ],
+      [
+        432,
+        750
+      ],
+      [
+        450,
+        756
+      ],
+      [
+        450,
+        756
+      ],
+      [
+        450,
+        756
+      ],
+      [
+        465,
+        757
+      ],
+      [
+        465,
+        757
+      ],
+      [
+        465,
+        757
+      ],
+      [
+        465,
+        757
+      ],
+      [
+        465,
+        757
+      ],
+      [
+        465,
+        757
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        451,
+        759
+      ],
+      [
+        468,
+        761
+      ],
+      [
+        468,
+        761
+      ],
+      [
+        468,
+        761
+      ],
+      [
+        468,
+        761
+      ],
+      [
+        482,
+        757
+      ],
+      [
+        482,
+        757
+      ],
+      [
+        482,
+        757
+      ],
+      [
+        482,
+        757
+      ],
+      [
+        482,
+        757
+      ]
+    ]
+  },
+  "captionHide": [
+    {
+      "start": 0,
+      "end": 5.767,
+      "why": "the hook's posts carry the claim in words"
+    }
+  ],
+  "punchToZoom": 1.16,
+  "grade": {
+    "contrast": 1.04,
+    "saturation": 1.03,
+    "vignette": 0.12
+  },
+  "captionStyle": "ledger",
+  "captionTerms": [
+    "sutihat",
+    "dahaha"
+  ],
+  "palette": {
+    "ground": "#EFE4CF",
+    "ink": "#1B1B1B",
+    "accent": "#E4572E"
+  },
+  "assets": [
+    "fe-ferguson_disc.jpg",
+    "fe-egg.jpg",
+    "fe-blue_marble.jpg",
+    "fe-nest.jpg"
+  ]
+}

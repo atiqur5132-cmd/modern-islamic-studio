@@ -36,6 +36,20 @@ def gh(*args, capture=False):
             time.sleep(GH_RETRY_SECONDS)
 
 
+MEDIA = (".mp4", ".mov", ".jpg", ".jpeg", ".png", ".webp")
+
+
+def media_in(value):
+    """Every footage file an overlay names, at any depth (src, photo, shots, globe...)."""
+    if isinstance(value, dict):
+        return [name for item in value.values() for name in media_in(item)]
+    if isinstance(value, list):
+        return [name for item in value for name in media_in(item)]
+    if isinstance(value, str) and value.lower().endswith(MEDIA) and (ROOT / "public" / "footage" / value).is_file():
+        return [value]
+    return []
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("composition")
@@ -49,9 +63,8 @@ def main():
         args.footage = []
         if args.props:
             edit = json.loads((ROOT / args.props).read_text(encoding="utf-8"))
-            names = [edit["footage"]] + [o["src"] for o in edit["overlays"] if o["type"] in ("broll", "factfootage")]
-            names += [shot["src"] for o in edit["overlays"] if o["type"] == "montage" for shot in o["shots"]]
-            args.footage = [ROOT / "public" / "footage" / name for name in names]
+            names = [edit["footage"], *edit.get("assets", []), *media_in(edit["overlays"])]
+            args.footage = [ROOT / "public" / "footage" / name for name in dict.fromkeys(names)]
 
     branch = subprocess.run(["git", "branch", "--show-current"], cwd=ROOT, check=True,
                             text=True, capture_output=True).stdout.strip()
