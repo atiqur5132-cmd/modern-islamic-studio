@@ -114,7 +114,7 @@ OVERLAYS = [
 
 # Pictures the reel's components draw by name (src/overlays/flat/parts.tsx, Ostrich.tsx),
 # so render_on_github.py uploads them with the footage.
-ASSETS = ["fe-ferguson_disc.jpg", "fe-egg.jpg", "fe-blue_marble.jpg", "fe-nest.jpg"]
+ASSETS = ["fe-ferguson_disc.jpg", "fe-egg.jpg", "fe-eggs.jpg", "fe-blue_marble.jpg", "fe-nest.jpg"]
 
 CAPTION_HIDE = [
     {"start": 0, "end": 5.767, "why": "the hook's posts carry the claim in words"},

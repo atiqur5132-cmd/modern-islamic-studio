@@ -166,9 +166,9 @@ export const soundCues = (
       cues.push({frame: at(overlay.punchAt) + AFTER_PICTURE, sound: "tick", volume: TICK_VOLUME * 1.6});
       cues.push({frame: at(overlay.flatPost.at) - WHOOSH_LEAD_FRAMES + 4, sound: "whoosh", volume: WHOOSH_VOLUME * 0.6});
       cues.push({frame: at(overlay.eggPost.at) - WHOOSH_PEAK_FRAMES + AFTER_PICTURE, sound: "whoosh-2", volume: WHOOSH_VOLUME * 0.7});
-      cues.push({frame: at(overlay.snapAt) + AFTER_PICTURE, sound: "tick-soft-1", volume: CTA_TICK_VOLUME});
-      cues.push({frame: at(overlay.marksAt) + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.55});
-      cues.push({frame: at(overlay.marksAt) + 4 + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME});
+      cues.push({frame: at(overlay.snapAt) - WHOOSH_PEAK_FRAMES + AFTER_PICTURE, sound: "whoosh-3", volume: WHOOSH_VOLUME * 0.6});
+      cues.push({frame: at(overlay.marksAt) + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.6});
+      cues.push({frame: at(overlay.marksAt) + 6 + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME});
     } else if (overlay.type === "verdicts" || overlay.type === "readinto") {
       // The same two stamp hits on "galat" and again at the payoff.
       const first = overlay.type === "verdicts" ? at(overlay.stampAt) : at(overlay.leftAt) + 2;

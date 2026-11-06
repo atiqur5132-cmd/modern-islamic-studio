@@ -1,8 +1,8 @@
-import {AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig} from "remotion";
+import {AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig} from "remotion";
 import {FlatHookOverlay} from "../../timeline/flatTypes";
 import {Cue} from "../falak/common";
-import {arrive, INK, MARK, SAND, SANS, SIDE, TEXT_TOP} from "./look";
-import {Credit, Disc, Egg, Globe, Post, Stamp, Tag} from "./parts";
+import {arrive, INK, MARK, RAIL, SAND, SANS, SIDE, TEXT_TOP} from "./look";
+import {Credit, Disc, Globe, Post, Stamp, Tag} from "./parts";
 
 const CLAMP = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
 
@@ -73,55 +73,76 @@ const FlatHalf = ({hook, cue, end}: {hook: FlatHookOverlay; cue: Cue; end: numbe
   );
 };
 
+// Three hard cuts, each a new picture for the eye (QUALITY §1: not one layout decorating
+// itself): the real eggs full-bleed under the post; the egg and the Earth split down the
+// middle; then the claim drawn, the Earth stretched into an egg.
 const EggHalf = ({hook, cue, cut, end}: {hook: FlatHookOverlay; cue: Cue; cut: number; end: number}) => {
   const frame = useCurrentFrame();
-  const snap = cue(hook.snapAt);
-  const marks = cue(hook.marksAt);
-  // The post lands on the cut with a small settle, so the cut itself is the change.
-  const settle = interpolate(frame, [cut, cut + 6], [1.06, 1], {...CLAMP, easing: Easing.out(Easing.cubic)});
-  const side = interpolate(frame, [snap, snap + 6], [0, 1], {...CLAMP, easing: Easing.out(Easing.back(1.4))});
-  const drift = interpolate(frame, [cut, end], [1, 1.05], CLAMP);
-  const eggWidth = interpolate(side, [0, 1], [720, 440]);
-  const eggX = interpolate(side, [0, 1], [540, 290]);
-  const globeX = interpolate(side, [0, 1], [1400, 790]);
-  const labels = arrive(frame, snap + 3, 8);
-  return (
-    <AbsoluteFill>
+  const split = cue(hook.snapAt);
+  const claim = cue(hook.marksAt);
+  const land = (at: number) => interpolate(frame, [at, at + 6], [1.08, 1], {...CLAMP, easing: Easing.out(Easing.cubic)});
+  const drift = (from: number, to: number) => interpolate(frame, [from, to], [1, 1.06], CLAMP);
+
+  if (frame >= claim) {
+    const stretch = interpolate(frame, [claim, claim + 8], [1, 1.28], {...CLAMP, easing: Easing.out(Easing.back(1.6))});
+    return (
+      <AbsoluteFill style={{backgroundColor: SAND}}>
+        <div style={{position: "absolute", top: TEXT_TOP, left: SIDE, right: SIDE}}>
+          <Tag text={hook.tag} color={MARK} />
+          <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 150, lineHeight: 0.95, letterSpacing: -4, color: INK, marginTop: 14, transform: `scale(${land(claim)})`, transformOrigin: "left top"}}>
+            EARTH = EGG?
+          </div>
+        </div>
+        <div style={{position: "absolute", top: 640, left: 0, right: 0, display: "flex", justifyContent: "center"}}>
+          <div style={{transform: `scale(${drift(claim, end)}) scaleY(${stretch})`, transformOrigin: "50% 40%"}}>
+            <Globe size={560} style={{boxShadow: "0 30px 60px rgba(27,27,27,0.3)"}} />
+          </div>
+        </div>
+        <Stamp text="?" at={claim + 6} size={190} rotate={-10} style={{left: 640, top: 760}} />
+      </AbsoluteFill>
+    );
+  }
+
+  const post = (
+    <>
       <div style={{position: "absolute", left: SIDE, top: 190}}>
         <Tag text={hook.tag} color={MARK} />
       </div>
-      <div style={{position: "absolute", left: 0, right: 0, top: TEXT_TOP + 14, display: "flex", justifyContent: "center", transform: `scale(${settle})`}}>
+      <div style={{position: "absolute", left: 0, right: 0, top: TEXT_TOP + 14, display: "flex", justifyContent: "center", transform: `scale(${frame < split ? land(cut) : 1})`}}>
         <Post headline={<span style={{fontSize: 62}}>{hook.eggPost.headline}</span>} width={940} />
       </div>
-      <div style={{position: "absolute", top: 700, left: 0, width: 1080, height: 640, transform: `scale(${drift})`}}>
-        <div style={{position: "absolute", left: eggX - eggWidth / 2, top: interpolate(side, [0, 1], [-60, 60])}}>
-          <Egg width={eggWidth} gray={false} />
-          <Stamp text="?" at={marks} size={120} rotate={-10} style={{left: eggWidth * 0.3, top: eggWidth * 0.32}} />
+    </>
+  );
+
+  if (frame >= split) {
+    const label = {position: "absolute" as const, top: 1150, fontFamily: SANS, fontWeight: 900, fontSize: 64, letterSpacing: 3, color: "#FFFFFF", textShadow: "0 4px 16px rgba(0,0,0,0.6)"};
+    return (
+      <AbsoluteFill style={{backgroundColor: "#000"}}>
+        <div style={{position: "absolute", left: 0, top: 0, width: 540, height: 1920, overflow: "hidden"}}>
+          <Img src={staticFile("footage/fe-egg.jpg")} style={{width: "100%", height: "100%", objectFit: "cover", transform: `scale(${land(split) * drift(split, claim)})`}} />
         </div>
-        <div style={{position: "absolute", left: globeX - 210, top: 100}}>
-          <Globe size={420} />
-          <Stamp text="?" at={marks + 4} size={120} rotate={8} style={{left: 150, top: 110}} />
+        <div style={{position: "absolute", left: 540, top: 0, width: 540, height: 1920, overflow: "hidden", backgroundColor: "#05070C"}}>
+          <div style={{position: "absolute", left: -250, top: 520, transform: `scale(${land(split) * drift(split, claim)})`}}>
+            <Globe size={1040} />
+          </div>
         </div>
-        <div
-          style={{
-            position: "absolute",
-            top: 560,
-            left: 0,
-            right: 0,
-            display: "flex",
-            justifyContent: "space-around",
-            fontFamily: SANS,
-            fontWeight: 900,
-            fontSize: 56,
-            letterSpacing: 2,
-            color: INK,
-            opacity: labels,
-          }}
-        >
-          <span style={{width: 420, textAlign: "center"}}>EGG</span>
-          <span style={{width: 420, textAlign: "center"}}>EARTH</span>
-        </div>
-      </div>
+        <div style={{position: "absolute", left: 537, top: 0, width: 6, height: 1920, backgroundColor: SAND}} />
+        <div style={{...label, left: SIDE}}>EGG</div>
+        <div style={{...label, right: RAIL}}>EARTH</div>
+        {post}
+      </AbsoluteFill>
+    );
+  }
+
+  return (
+    <AbsoluteFill style={{backgroundColor: "#000"}}>
+      <Img
+        src={staticFile("footage/fe-eggs.jpg")}
+        style={{width: "100%", height: "100%", objectFit: "cover", objectPosition: "45% 60%", transform: `scale(${land(cut) * drift(cut, split)})`}}
+      />
+      <AbsoluteFill style={{background: "linear-gradient(180deg, rgba(239,228,207,0.85) 0%, transparent 30%)"}} />
+      {post}
+      <Credit text="Photo: Pexels 33128657" color="#FFFFFFCC" style={{right: RAIL, top: 1160, textShadow: "0 2px 8px rgba(0,0,0,0.6)"}} />
     </AbsoluteFill>
   );
 };
