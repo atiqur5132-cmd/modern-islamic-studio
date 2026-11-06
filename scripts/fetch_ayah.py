@@ -23,13 +23,20 @@ def get_json(url):
         return json.load(response)
 
 
+# Recitation guides only: the small meem that marks iqlab, which some sources print
+# and others leave to the reader. They change no letter and no vowel.
+TAJWEED_ONLY_MARKS = "ۭۢ"
+
+
 def comparable(text):
     """Reduce text to letters and marks in a stable order, for comparison only.
 
-    Kashida (U+0640) only stretches a letter, and the sources use it differently.
-    The saved text always stays exactly as Quran.com gives it.
+    Kashida (U+0640) only stretches a letter, and the sources use it differently;
+    the same goes for the tajweed-only marks above. Every letter and every vowel
+    must still match. The saved text always stays exactly as Quran.com gives it.
     """
-    return "".join(unicodedata.normalize("NFC", text).replace("ـ", "").split())
+    text = unicodedata.normalize("NFC", text).replace("ـ", "")
+    return "".join(c for c in "".join(text.split()) if c not in TAJWEED_ONLY_MARKS)
 
 
 def write_index():

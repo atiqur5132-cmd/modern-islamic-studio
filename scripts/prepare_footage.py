@@ -31,7 +31,8 @@ def main():
     subprocess.run(
         ["ffmpeg", "-y", "-loglevel", "error", "-stats", "-i", str(args.video),
          "-vf", ",".join(filters),
-         "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p",
+         # Every later step works from this file, so spend time here, not quality.
+         "-c:v", "libx264", "-preset", "slow", "-crf", "18", "-pix_fmt", "yuv420p",
          "-af", LOUDNESS, "-ar", "48000", "-c:a", "aac", "-b:a", "192k",
          "-movflags", "+faststart", str(output)],
         check=True,

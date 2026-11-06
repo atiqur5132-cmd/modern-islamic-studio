@@ -15,3 +15,10 @@ models/
 *.wav
 !public/sfx/*.wav
 *.m4a
+output/
+
+# Reference reels belong to other creators and the repo is public: only our written
+# notes (breakdown.md, study.json, LIBRARY.md) are committed, never their pictures
+references/**/*.jpg
+references/**/*.png
+references/**/*.webp

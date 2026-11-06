@@ -1,0 +1,41 @@
+Yawm 365 baar? A viral number claim, counted: sources and credits
+====================================================================
+
+Quranic text
+- Not shown in the final reel (creator chose not to record the 2:23 lines). For the record:
+  Surah Al-Baqarah 2:23, text_uthmani from api.quran.com v4, cross-checked with
+  api.alquran.cloud (quran-uthmani) by scripts/fetch_ayah.py on 2026-11-05.
+- Translation: Sahih International (quran.com translation id 20). The spoken line is the
+  creator's Hinglish rendering of the meaning, labelled as translation.
+
+Word counts (numerical observation, recomputed by us)
+- Quranic Arabic Corpus morphology, Kais Dukes, corpus.quran.com (GNU GPL), via the
+  corrected copy github.com/mustafa0x/quran-morphology, quran-morphology.txt.
+- Tanzil "quran-simple-clean" text (tanzil.net, Creative Commons Attribution 3.0, text
+  unchanged) via api.alquran.cloud/v1/quran/quran-simple-clean.
+- Scripts: projects/yawm-365/rules.py and regex.py. Both data sets give 475 / 445 / 375 / 365.
+
+Scholarly view
+- IslamQA 69741, "Discussion of numerical miracles in the Qur'aan and use of the solar
+  calendar" (2011-11-23), quoting Dr. Fahd al-Roomi (Ittijahat al-Tafsir 2/699-700) and
+  Dr. Ashraf Abd al-Razzaq Qatanah. https://islamqa.info/en/answers/69741
+
+Science
+- Mean synodic month 29.53059 days: NASA, "Eclipses and the Moon's Orbit", section 4.2.
+  https://eclipse.gsfc.nasa.gov/SEhelp/moonorbit.html  (12 x 29.53059 = 354.37 days)
+
+Visual assets
+- Moon phase B-roll: NASA Scientific Visualization Studio, "Moon Phase and Libration, 2026"
+  (SVS 5587, visualizer Ernie Wright, USRA), file phases_2026_plain_v_1920p30.mp4 (silent, no
+  music), https://svs.gsfc.nasa.gov/5587/ . Licence: SVS help page (accessed 2026-11-06):
+  "All of our content is in the public domain (unless otherwise noted)". Only the music
+  versions carry licensed music; the plain file used here has no audio. Courtesy credit:
+  "Moon: NASA's Scientific Visualization Studio". No NASA logo used, no endorsement implied.
+  NASA's general media guidelines page was not opened.
+  Edit: source 14.0-37.6 s (one new moon to the next, 2026 data) sped up 4.8x to 4.9 s,
+  saved as public/footage/broll-moon-phases.mp4 (not committed; raw in Raw footages/).
+- All counters, chips, cards, charts and icons: own graphics (icons drawn for this reel).
+- Scan bars and ledger dots: projects/yawm-365/quran_stats.json, derived from the Quranic
+  Arabic Corpus morphology by make_stats.py (77,429 words; 475 occurrences of the root).
+- The three social posts in the 5-9 s beat are made up for illustration: no platform,
+  no account, no real post.

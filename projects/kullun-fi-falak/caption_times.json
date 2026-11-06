@@ -1,0 +1,16 @@
+{
+  "why": "Whisper wrote none of these words. Times are where the voice rises above the room tone (loudness, 10 ms steps). Inside the recitation only 'Kullun' is separated by a pause; 'fi falakin yasbahun' is one breath, split by syllable count.",
+  "words": [
+    {"text": "\"Kullun", "near": 12.74, "start": 12.93, "end": 13.37},
+    {"text": "fi", "near": 13.24, "start": 13.49, "end": 13.68},
+    {"text": "falakin", "near": 13.74, "start": 13.68, "end": 14.0},
+    {"text": "yasbahun.\"", "near": 14.24, "start": 14.0, "end": 14.4},
+    {"text": "Kaaf.", "near": 25.24, "start": 25.28, "end": 25.55},
+    {"text": "Laam.", "near": 25.88, "start": 25.86, "end": 26.28},
+    {"text": "Fa.", "near": 26.52, "start": 26.6, "end": 26.86},
+    {"text": "Ya.", "near": 27.15, "start": 27.12, "end": 27.44},
+    {"text": "Fa.", "near": 27.79, "start": 27.75, "end": 28.03},
+    {"text": "Laam.", "near": 28.4, "start": 28.63, "end": 28.92},
+    {"text": "Kaaf.", "near": 29.0, "start": 29.02, "end": 29.25}
+  ]
+}

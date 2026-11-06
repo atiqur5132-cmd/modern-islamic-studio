@@ -1,0 +1,5 @@
+{
+  "6": {"to": 32.84, "why": "Whisper ran 'hain' on to 33.17; re-transcribed alone, 'matlab (apne-apne orbit...)' starts at 32.82. Cut in the dip before it, so the unscripted orbit clause is dropped."},
+  "24": {"from": 279.12, "to": 282.13, "why": "Keep the fluent 'karti, wo' and cut in the dip before the stumble 'sirf wahi baat'."},
+  "25": {"from": 286.52, "to": 290.3, "why": "Start on 'khud' (286.64) after the drawn-out 'wo...' (284.5-285.9); 'wo' comes from line 24's take."}
+}

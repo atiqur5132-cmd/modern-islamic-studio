@@ -29,6 +29,13 @@ class Script(unittest.TestCase):
         self.assertEqual(words[2]["text"], "कॉन्टेक्स्ट,")
 
 
+    def test_arabic_in_brackets_is_not_a_caption_word(self):
+        words = mc.parse_script('Word hai *"sutihat"* (سُطِحَتْ), matlab (spread out).')
+        self.assertEqual([w["text"] for w in words],
+                         ["Word", "hai", '"sutihat",', "matlab", "(spread", "out)."])
+        self.assertTrue(words[2]["emphasis"])
+
+
 class Alignment(unittest.TestCase):
     def test_spelling_comes_from_the_script(self):
         words = build("क़ुरान को पढ़ो", spoken("कुरान को पढो"))

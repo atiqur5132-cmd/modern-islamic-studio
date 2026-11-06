@@ -11,7 +11,7 @@ export const GraphicFrame = ({
   children,
 }: {
   tag: string;
-  heading: string;
+  heading?: string;
   children: ReactNode;
 }) => {
   const frame = useCurrentFrame();
@@ -54,6 +54,7 @@ export const GraphicFrame = ({
         >
           {tag}
         </div>
+        {heading ? (
         <div
           style={{
             marginTop: 22,
@@ -67,6 +68,7 @@ export const GraphicFrame = ({
         >
           <EmphasisText text={heading} />
         </div>
+        ) : null}
       </div>
       {children}
     </AbsoluteFill>

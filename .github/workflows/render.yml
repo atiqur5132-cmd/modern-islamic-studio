@@ -16,6 +16,10 @@ on:
         description: Path to an edit.json (optional)
         required: false
         default: ""
+      frames:
+        description: Frame range for a short preview, e.g. 510-1320 (optional)
+        required: false
+        default: ""
 
 concurrency:
   group: render
@@ -54,7 +58,8 @@ jobs:
         env:
           COMPOSITION: ${{ inputs.composition }}
           PROPS: ${{ inputs.props }}
-        run: npx remotion render "$COMPOSITION" "out/$COMPOSITION.mp4" --concurrency=4 --gl=swangle ${PROPS:+--props="$PROPS"}
+          FRAMES: ${{ inputs.frames }}
+        run: npx remotion render "$COMPOSITION" "out/$COMPOSITION.mp4" --concurrency=4 --gl=swangle ${PROPS:+--props="$PROPS"} ${FRAMES:+--frames="$FRAMES"}
 
       - name: Check output
         env:

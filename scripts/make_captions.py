@@ -7,7 +7,8 @@ Usage: .venv\\Scripts\\python scripts/make_captions.py <clip>
            [--transcript work/clip.medium.transcript.json]
 
 Reads projects/<clip>/script.txt, where *stars* mark words to emphasise, and writes
-the captions into projects/<clip>/edit.json. Run it after auto_edit.py. Words whose
+the captions into projects/<clip>/edit.json. Run it after auto_edit.py. Times measured
+by hand for words Whisper missed go in projects/<clip>/caption_times.json. Words whose
 timing is uncertain are listed in work/<clip>.captions_review.txt.
 
 Whisper text never reaches the screen. It only says when each script word was spoken.
@@ -38,10 +39,20 @@ CLINGING_WORDS = {"ka", "ki", "ke", "ko", "mein", "me", "par", "se", "tak", "hai
                   "का", "की", "के", "को", "में", "पर", "से", "तक", "है", "हैं", "था", "थी", "थे",
                   "हो", "गया", "गई", "गए"}
 MIN_KEPT_OVERLAP_SECONDS = 0.1
+ABSORB_GAP_SECONDS = 0.35
+ABSORB_MAX_CHARS = 22  # may wrap to a second line, still inside the caption band
+
+
+ARABIC_IN_BRACKETS = re.compile(r"\s*\([^()]*[؀-ۿ][^()]*\)")
 
 
 def parse_script(text):
-    """Split the script into words, tracking which sit between *stars*."""
+    """Split the script into words, tracking which sit between *stars*.
+
+    Arabic script in brackets, e.g. "sutihat (سُطِحَتْ)", is a reading aid for the creator.
+    It is not spoken as a separate word, so it never becomes a caption.
+    """
+    text = ARABIC_IN_BRACKETS.sub("", text)
     words = []
     emphasis = False
     for token in text.split():
@@ -126,6 +137,20 @@ def timed_words(script_words, whisper_words, pairs):
     return words
 
 
+def apply_measured_times(words, path):
+    """Words Whisper never wrote (recitation, single letters) get times measured by hand
+    from the audio, in projects/<clip>/caption_times.json; each goes to the word of
+    that text nearest its `near` time."""
+    if not path.exists():
+        return
+    for fixed in json.loads(path.read_text(encoding="utf-8"))["words"]:
+        same = [w for w in words if w["text"] == fixed["text"]]
+        if not same:
+            raise SystemExit(f"caption_times.json: no script word {fixed['text']!r}")
+        word = min(same, key=lambda w: abs(w["start"] - fixed["near"]))
+        word.update(start=fixed["start"], end=fixed["end"], score=1.0)
+
+
 def group_phrases(words):
     """Group words into short captions that break where the speaker breaks."""
     phrases = [[]]
@@ -143,6 +168,46 @@ def group_phrases(words):
                 phrases.append([])
         phrases[-1].append(word)
     return phrases
+
+
+def absorb_single_words(phrases):
+    """A caption of one word flashes by; join it to a neighbour spoken close to it.
+    An emphasised word may stand alone, and so may a word with no close neighbour.
+    A full neighbour lends its last word instead, so no caption passes four words."""
+    def chars(words):
+        return sum(len(w["text"]) + 1 for w in words)
+
+    def close(a, b):
+        """Spoken close together, and inside one sentence (a comma may sit between)."""
+        ends_sentence = a["text"].rstrip('"').endswith(SENTENCE_END) and not a["text"].endswith(",")
+        return b["start"] - a["end"] <= ABSORB_GAP_SECONDS and not ends_sentence
+
+    result = []
+    for phrase in phrases:
+        result.append(list(phrase))
+    index = 0
+    while index < len(result):
+        phrase = result[index]
+        if len(phrase) != 1 or phrase[0]["emphasis"]:
+            index += 1
+            continue
+        before = result[index - 1] if index else None
+        after = result[index + 1] if index + 1 < len(result) else None
+        if before and close(before[-1], phrase[0]) and len(before) < MAX_PHRASE_WORDS + 1                 and chars(before + phrase) <= ABSORB_MAX_CHARS and not before[-1]["emphasis"]:
+            before.extend(phrase)
+            del result[index]
+        elif after and close(phrase[0], after[0]) and len(after) < MAX_PHRASE_WORDS + 1                 and chars(phrase + after) <= ABSORB_MAX_CHARS and not after[0]["emphasis"]:
+            after[:0] = phrase
+            del result[index]
+        elif before and len(before) >= MAX_PHRASE_WORDS + 1 and close(before[-1], phrase[0]):
+            phrase.insert(0, before.pop())
+            index += 1
+        elif after and len(after) >= 2 and close(phrase[0], after[0]) and not after[0]["emphasis"]:
+            phrase.append(after.pop(0))
+            index += 1
+        else:
+            index += 1
+    return result
 
 
 def kept_words(words, segments):
@@ -172,11 +237,12 @@ def main():
     script_words = parse_script((project / "script.txt").read_text(encoding="utf-8"))
     pairs = align(script_words, whisper_words)
     words = timed_words(script_words, whisper_words, pairs)
+    apply_measured_times(words, project / "caption_times.json")
 
     edit["captions"] = [
         [{"text": w["text"], "start": w["start"], "end": w["end"], "emphasis": w["emphasis"]}
          for w in phrase]
-        for phrase in group_phrases(words)
+        for phrase in absorb_single_words(group_phrases(words))
     ]
     edit_path.write_text(json.dumps(edit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
