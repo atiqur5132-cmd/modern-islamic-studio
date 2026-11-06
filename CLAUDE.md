@@ -64,8 +64,18 @@ npm run dev
 ```
 
 ```bash
+.venv\Scripts\python scripts/make_plan.py clip
+```
+
+```bash
+.venv\Scripts\python scripts/study_reel.py path/to/reel.mp4 --name some-reel --source https://...
+```
+
+```bash
 .venv\Scripts\python -m unittest discover tests
 ```
+
+`make_plan.py` turns `projects/<clip>/plan_options.json` into `plan.html`, where the creator picks a visual for every script line; their choices decide `beats.md`. `study_reel.py` adds a reel to the reference library (`references/LIBRARY.md`; its pictures are never committed), or with `--ours` measures our own render's hook against the QUALITY.md gates.
 
 Laptop render (about 6 minutes for a 49 s Short with 3D; ask the user to close Chrome first, keep concurrency at 2 for 8 GB RAM):
 

@@ -24,7 +24,7 @@ or the reel does not ship.
 - The hook opens a gap the viewer must close (a contradiction, a "galat", a stake), not a setup or a topic announcement.
 - Sound hits at frame 0 (the voice or a cut-in impact), and each hook beat has a sound cause; no soft or silent start.
 - Muted test: the first 3 s make sense with the sound off.
-- Before building, 2–3 hook storyboards (frame 0 plus the beats to 6 s) go to the creator and one is approved. Before the final render, a strip of frames at 0, 0.5, 1 … 6 s and frame 0 at 270 px go to the creator, and the hook is judged against the strongest reels in the niche, not against our own earlier reels.
+- Before building, 3 hook storyboards (frame 0 plus the beats to 6 s) go to the creator in `plan.html` (`scripts/make_plan.py`) and one is picked. Before the final render, `scripts/study_reel.py <render> --ours` measures the beats, the longest still stretch and the sound start, and its `hook.jpg` (frames every 0.5 s to 6 s) and `frame0_270.jpg` go to the creator. The hook is judged against the reels in `references/LIBRARY.md`, not against our own earlier reels.
 
 ## 2. Pacing
 
