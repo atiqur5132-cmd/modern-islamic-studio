@@ -2,7 +2,7 @@ import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from "remot
 import {EggCheckOverlay, NestOverlay} from "../../timeline/flatTypes";
 import {Cue} from "../falak/common";
 import {arrive, CARD, INK, MARK, MUTED, SAND, SANS, SIDE, TEXT_TOP} from "./look";
-import {Credit, Egg, Strike, Tag, Term} from "./parts";
+import {Egg, Strike, Tag, Term} from "./parts";
 
 const CLAMP = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
 
@@ -49,7 +49,6 @@ export const EggCheck = ({e, cue}: {e: EggCheckOverlay; cue: Cue}) => {
         <Term term={e.term} meaning={e.meaning} size={72} />
         <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 28, lineHeight: 1.3, color: MUTED, marginTop: 10}}>{e.source}</div>
       </div>
-      <Credit text="Photo: Pexels 33128657" style={{right: 140, top: 1160}} />
     </AbsoluteFill>
   );
 };
@@ -89,7 +88,6 @@ export const Nest = ({n, cue}: {n: NestOverlay; cue: Cue}) => {
         </div>
         <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 52, color: CARD, marginTop: 12, textShadow: "0 3px 12px rgba(0,0,0,0.6)"}}>{n.line}</div>
       </div>
-      <Credit text="Photo: Pexels 25650573" color={`${CARD}CC`} style={{right: 140, top: 1160}} />
     </AbsoluteFill>
   );
 };

@@ -57,7 +57,9 @@ export type FlatFootageOverlay = Timed & {
   labels?: {text: string; at: number; x: number; y: number; strike?: number}[];
   // Camera inside the picture: scale and the focus point (0..1) at the start and end.
   move?: {from: [number, number, number]; to: [number, number, number]; at?: number; frames?: number};
-  credit: string;
+  // A scholarly source line shown on the picture (picture credits are not shown;
+  // they are in credits.txt and the upload description).
+  source?: string;
   // A small globe with "planet shape" struck out (line 10).
   notPlanet?: {at: number; strikeAt: number};
   // "Phir bhi gol hai": hard cut to this picture, centred and round.

@@ -58,8 +58,7 @@
         "term": "sutihat",
         "text": "spread out, laid flat",
         "at": 13.72
-      },
-      "credit": "Video: Pexels 7641639"
+      }
     },
     {
       "type": "flatboard",
@@ -170,8 +169,7 @@
           "x": 620,
           "y": 860
         }
-      ],
-      "credit": "Video: Pexels 38114878"
+      ]
     },
     {
       "type": "flatfootage",
@@ -201,8 +199,7 @@
       "notPlanet": {
         "at": 31.86,
         "strikeAt": 32.68
-      },
-      "credit": "Video: Pexels 38114878"
+      }
     },
     {
       "type": "ball",
@@ -230,8 +227,7 @@
         "src": "fe-blue_marble.jpg",
         "at": 46.5,
         "text": "Still round."
-      },
-      "credit": "Video: Pexels 37180549"
+      }
     },
     {
       "type": "cta",
@@ -308,7 +304,7 @@
           "y": 1080
         }
       ],
-      "credit": "Qurtubi on 79:30; Lane · Photo: Pexels 39194976"
+      "source": "Qurtubi on 79:30; Lane's Lexicon"
     },
     {
       "type": "readinto",

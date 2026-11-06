@@ -40,8 +40,7 @@ OVERLAYS = [
      "ring": {"ayah": "88:20", "word": 4, "at": 12.62, "term": "sutihat"}, "push": True},
     # 5. "Matlab bichha dena. Jaise chadar bichhate hain."
     {"type": "flatfootage", "start": 13.333, "end": 15.5, "tag": "LINGUISTICS", "src": "fe-bed.mp4", "trim": 0.3,
-     "line": {"term": "sutihat", "text": "spread out, laid flat", "at": 13.72},
-     "credit": "Video: Pexels 7641639"},
+     "line": {"term": "sutihat", "text": "spread out, laid flat", "at": 13.72}},
     # 7. "Quran poochta hai, ye log oont ko nahi dekhte? Aasmaan ko, pahadon ko?"
     {"type": "flatboard", "start": 18.5, "end": 22.8, "tag": "TRANSLATION (PARAPHRASE)",
      "heading": "Do they not look at…",
@@ -62,14 +61,12 @@ OVERLAYS = [
      "labels": [{"text": "CAMEL", "at": 26.42, "x": 330, "y": 1010},
                 {"text": "SKY", "at": 27.62, "x": 640, "y": 470},
                 {"text": "HORIZON", "at": 27.95, "x": 90, "y": 700},
-                {"text": "GROUND", "at": 28.3, "x": 620, "y": 860}],
-     "credit": "Video: Pexels 38114878"},
+                {"text": "GROUND", "at": 28.3, "x": 620, "y": 860}]},
     # 10. "Baat uske pairon ke neeche ki zameen ki hai. Planet ki shape ki nahi."
     {"type": "flatfootage", "start": 29.133, "end": 33.0, "tag": "QURANIC CONTEXT", "src": "fe-pov.mp4", "trim": 4.27,
      "move": {"from": [1.6, 0.5, 0.12], "to": [1.9, 0.9, 0.62], "at": 29.3, "frames": 45},
      "line": {"text": "The ground under his feet", "at": 29.96},
-     "notPlanet": {"at": 31.86, "strikeAt": 32.68},
-     "credit": "Video: Pexels 38114878"},
+     "notPlanet": {"at": 31.86, "strikeAt": 32.68}},
     # 11. The honest beat: the speaker alone, close and then wider. No card: the creator
     # chose not to name a book or scholar here (2026-11-07).
     # 12. Al-Razi: a very large ball looks flat from any spot on it.
@@ -79,8 +76,7 @@ OVERLAYS = [
     # 13. "…toh zameen flat hi lag rahi hai na? Phir bhi gol hai."
     {"type": "flatfootage", "start": 44.88, "end": 47.333, "tag": "ESTABLISHED SCIENCE", "src": "fe-road.mp4",
      "line": {"text": "Looks flat.", "at": 45.28},
-     "globe": {"src": "fe-blue_marble.jpg", "at": 46.5, "text": "Still round."},
-     "credit": "Video: Pexels 37180549"},
+     "globe": {"src": "fe-blue_marble.jpg", "at": 46.5, "text": "Still round."}},
     # Mid-video follow call, on the chest below the face, before the egg half.
     {"type": "cta", "mode": "follow", "start": 47.36, "end": 49.9, "placement": "top", "tone": "light", "y": 1030},
     # 14. "Surah Nazi'at ke ayat number 30 pe ek word hai, dahaha."
@@ -97,7 +93,7 @@ OVERLAYS = [
      "move": {"from": [1.0, 0.4, 0.75], "to": [1.12, 0.4, 0.75]},
      "line": {"term": "udhiyy", "arabic": "أُدْحِيّ", "text": "the nest it spreads out", "at": 61.88},
      "labels": [{"text": "NEST", "at": 60.4, "x": 300, "y": 1080}],
-     "credit": "Qurtubi on 79:30; Lane · Photo: Pexels 39194976"},
+     "source": "Qurtubi on 79:30; Lane's Lexicon"},
     # 18. "Toh ek ne verse se flat zameen nikaali, aur doosre ne anda."
     {"type": "readinto", "start": 63.167, "end": 66.7, "tag": "VERDICT", "leftAt": 64.36, "rightAt": 66.26,
      "stamp": "READ INTO IT"},

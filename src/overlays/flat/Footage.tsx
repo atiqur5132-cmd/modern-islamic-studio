@@ -91,7 +91,9 @@ export const FlatFootage = ({f, cue}: {f: FlatFootageOverlay; cue: Cue}) => {
         );
       })}
       {f.notPlanet ? <NotPlanet at={cue(f.notPlanet.at)} strikeAt={cue(f.notPlanet.strikeAt)} /> : null}
-      <Credit text={f.credit} color={`${CARD}CC`} style={{right: RAIL, top: 1160, textAlign: "right", textShadow: "0 2px 8px rgba(0,0,0,0.6)"}} />
+      {f.source ? (
+        <Credit text={f.source} color={`${CARD}CC`} style={{right: RAIL, top: 1160, textAlign: "right", textShadow: "0 2px 8px rgba(0,0,0,0.6)"}} />
+      ) : null}
     </AbsoluteFill>
   );
 };
@@ -143,7 +145,6 @@ const GlobeCut = ({f, at}: {f: FlatFootageOverlay; at: number}) => {
       <div style={{position: "absolute", top: 520, left: 0, right: 0, display: "flex", justifyContent: "center"}}>
         <Globe size={760} style={{transform: `scale(${land}) rotate(${spin}deg)`, boxShadow: "0 30px 60px rgba(27,27,27,0.25)"}} />
       </div>
-      <Credit text="The Blue Marble, Apollo 17 (NASA)" style={{left: SIDE, top: 420, color: MUTED}} />
     </AbsoluteFill>
   );
 };

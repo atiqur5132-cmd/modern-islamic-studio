@@ -2,7 +2,7 @@ import {AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame, use
 import {FlatHookOverlay} from "../../timeline/flatTypes";
 import {Cue} from "../falak/common";
 import {arrive, INK, MARK, RAIL, SAND, SANS, SIDE, TEXT_TOP} from "./look";
-import {Credit, Disc, Globe, Post, Stamp, Tag} from "./parts";
+import {Disc, Globe, Post, Stamp, Tag} from "./parts";
 
 const CLAMP = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
 
@@ -68,7 +68,6 @@ const FlatHalf = ({hook, cue, end}: {hook: FlatHookOverlay; cue: Cue; end: numbe
           <Post headline={<span style={{fontSize: 62}}>{hook.flatPost.headline}</span>} width={900} />
         </div>
       ) : null}
-      <Credit text="Map: O. Ferguson, 1893 (Library of Congress)" style={{right: SIDE, top: TEXT_TOP, textAlign: "right"}} />
     </AbsoluteFill>
   );
 };
@@ -142,7 +141,6 @@ const EggHalf = ({hook, cue, cut, end}: {hook: FlatHookOverlay; cue: Cue; cut: n
       />
       <AbsoluteFill style={{background: "linear-gradient(180deg, rgba(239,228,207,0.85) 0%, transparent 30%)"}} />
       {post}
-      <Credit text="Photo: Pexels 33128657" color="#FFFFFFCC" style={{right: RAIL, top: 1160, textShadow: "0 2px 8px rgba(0,0,0,0.6)"}} />
     </AbsoluteFill>
   );
 };
