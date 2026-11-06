@@ -50,10 +50,9 @@ export const Ball = ({b, cue}: {b: BallOverlay; cue: Cue}) => {
   const PIN_Y = 900;
   const radius = 380 * zoom;
   const person = 26 * Math.min(zoom, 6) ** 0.55;
-  const out = leave(frame, durationInFrames - 5, 5);
 
   return (
-    <AbsoluteFill style={{backgroundColor: SAND, opacity: out}}>
+    <AbsoluteFill style={{backgroundColor: SAND}}>
       <svg width={1080} height={1920} style={{position: "absolute", inset: 0}}>
         <defs>
           <radialGradient id="ball-shade" cx="40%" cy="30%" r="75%">

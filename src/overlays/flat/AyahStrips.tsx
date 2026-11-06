@@ -17,12 +17,14 @@ export const AyahStrips = ({card, cue}: {card: AyahStripsOverlay; cue: Cue}) => 
   const ringAt = card.ring ? cue(card.ring.at) : Infinity;
   const push = card.push ? interpolate(frame, [Math.min(ringAt, durationInFrames) - 12, durationInFrames], [1, 1.12], CLAMP) : 1;
   const drift = interpolate(frame, [0, durationInFrames], [1, 1.03], CLAMP);
-  const out = card.hold ? 1 : leave(frame, durationInFrames - 5, 5);
+  // It covers the frame and ends on a cut: no fade, which would show the speaker's
+  // circle through it for a frame. It lands with a short rise instead of fading in.
+  const rise = arrive(frame, 0, 8);
   const label = card.ring ? arrive(frame, ringAt + 6, 10) : 0;
   const translation = card.translation ? arrive(frame, cue(card.translation.at), 12) : 0;
 
   return (
-    <AbsoluteFill style={{backgroundColor: SAND, opacity: out}}>
+    <AbsoluteFill style={{backgroundColor: SAND}}>
       {card.photo ? (
         <AbsoluteFill>
           <Img
@@ -45,10 +47,11 @@ export const AyahStrips = ({card, cue}: {card: AyahStripsOverlay; cue: Cue}) => 
           transformOrigin: single ? "28% 40%" : "50% 80%",
         }}
       >
-        <TornCard style={{opacity: arrive(frame, 0, 8)}}>
+        <TornCard style={{transform: `translateY(${(1 - rise) * 60}px) scale(${0.96 + 0.04 * rise})`}}>
           <div style={{display: "flex", flexDirection: "column", gap: single ? 0 : 6}}>
             {card.strips.map((strip, index) => {
-              const shown = index === 0 && strip.at <= 0 ? 1 : arrive(frame, Math.max(0, cue(strip.at)), 10);
+              // Strips due at the card's own start are there from its first frame.
+              const shown = cue(strip.at) <= 0 ? 1 : arrive(frame, cue(strip.at), 10);
               const ring = card.ring && card.ring.ayah === strip.ayah ? {word: card.ring.word, at: ringAt} : undefined;
               const surah = (AYAHS as Record<string, {key: string}>)[strip.ayah]?.key ?? strip.ayah;
               return (
