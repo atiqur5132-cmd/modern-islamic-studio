@@ -8,12 +8,23 @@ measured, not felt: the final report lists every gate as pass or fail with its e
 
 - Eyes about a third of the way down the frame (y ≈ 640), chin above y ≈ 1050, so captions at y 1100–1310 sit on the chest, not the face, even at zoom 1.
 
-## 1. Hook (0–5 s)
+## 1. Hook (0–6 s), strict
+
+The first 6 s decide whether the reel is watched (Yawm 365, Nov 2026: viewers skipped
+because the opening visual was weak). Every gate here is strict: a fail cannot be passed
+with a note. It is fixed by rebuilding the hook, rewriting or re-recording the first line,
+or the reel does not ship.
 
 - The reel opens on full-screen motion graphics or real visuals timed to the spoken hook; the creator appears only after it, at a sentence break, usually 3–5 s in.
 - Frame 0 is the thumbnail: a strong visual plus one bold line already on screen. Never black, a logo or a fade-in.
-- The question, claim or surprise is spoken and shown within 1.5 s.
+- Frame 0 reads at thumbnail size: shrunk to 270 px wide, the subject and the line are still clear. One subject fills at least 40% of the frame, with strong contrast between subject and ground; no pale-on-pale, no small element floating in space.
+- Motion from the first frame: something is already moving at frame 0, and the picture makes a visible change (new image, cut, scale jump, number hit, reveal) at least every 1.5 s through 0–6 s, so 4 or more distinct visual beats. Nothing holds still, fills slowly or fades for longer than 1.5 s.
+- Each beat is a new idea for the eye, not the same layout decorating itself: a real image, footage or a bold graphic change, not only text appearing or a counter ticking.
+- The question, claim or surprise is spoken and shown within 1.5 s. The key word itself (the number, the name, the contradiction) is said inside 1.5 s, not just the start of the sentence; the script is written so it comes first.
+- The hook opens a gap the viewer must close (a contradiction, a "galat", a stake), not a setup or a topic announcement.
+- Sound hits at frame 0 (the voice or a cut-in impact), and each hook beat has a sound cause; no soft or silent start.
 - Muted test: the first 3 s make sense with the sound off.
+- Before building, 2–3 hook storyboards (frame 0 plus the beats to 6 s) go to the creator and one is approved. Before the final render, a strip of frames at 0, 0.5, 1 … 6 s and frame 0 at 270 px go to the creator, and the hook is judged against the strongest reels in the niche, not against our own earlier reels.
 
 ## 2. Pacing
 

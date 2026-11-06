@@ -46,7 +46,7 @@ Research process: search broadly first (several queries in one turn; `/deep-rese
 **Length:** 45–60 s including the CTA. The creator speaks about 3.3 Hinglish words a second (measured: 275 words in 79 s, 146 words in 49 s), so 150–200 words.
 
 **Shape:**
-1. Hook, 0–5 s, spoken over full-screen visuals (the creator is not on screen yet). One surprising, concrete line; the picture shows it. No "Kya aap jaante hain", no greeting, no "aaj hum baat karenge".
+1. Hook, 0–5 s, spoken over full-screen visuals (the creator is not on screen yet). One surprising, concrete line; the picture shows it. No "Kya aap jaante hain", no greeting, no "aaj hum baat karenge". Put the key word (the number, the name, the contradiction) in the first 4–5 spoken words so it lands inside 1.5 s ("365 baar? Galat." not "Quran mein din ka lafz poore 365 baar…"). Plan the hook's visuals with the line: a visible change at least every 1.5 s to 6 s, and frame 0 strong enough to be the thumbnail (QUALITY.md §1, strict).
 2. Open the loop: the question the viewer now needs answered.
 3. Context: the verse, scene or fact, in the fewest words.
 4. Build: one concrete example worked through, each step shown on screen. Open a smaller loop as you close one.
