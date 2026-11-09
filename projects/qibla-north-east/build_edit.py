@@ -87,7 +87,8 @@ OVERLAYS = [
     # 19. "Aur itni door se Kaaba ki direction ki taraf muh karna hi kaafi hai, ye bahut se scholars ki raay hai."
     {"type": "qayah", "start": 55.233, "end": 59.633, "tag": "QURANIC CONTEXT", "ayah": "2:144",
      "label": "AL-BAQARAH 2:144", "from": 12, "to": 16,
-     "translation": "“…So turn your face toward al-Masjid al-Haram…” (Sahih International)",
+     "translation": "“…So turn your face toward al-Masjid al-Haram…”",
+     "translationSource": "Sahih International",
      "note": {"tag": "SCHOLARLY VIEW", "text": "Many scholars: from far away, facing the direction is enough.",
               "sub": "For your own case, ask a scholar.", "at": 58.24}},
     # 20. "Bas gol duniya ko flat dikhane mein thoda khinch jaata hai." The globe unwraps.

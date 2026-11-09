@@ -1,6 +1,6 @@
 import {ThreeCanvas} from "@remotion/three";
 import {useThree} from "@react-three/fiber";
-import {useEffect, useLayoutEffect, useMemo, useState} from "react";
+import {useCallback, useEffect, useLayoutEffect, useMemo, useState} from "react";
 import {continueRender, delayRender, random, staticFile} from "remotion";
 import * as THREE from "three";
 import {EarthState, GORES, place, View} from "./earth";
@@ -68,18 +68,59 @@ void main() {
   #include <colorspace_fragment>
 }`;
 
-const useEarthTexture = () => {
-  const [texture, setTexture] = useState<THREE.Texture | null>(null);
-  const [handle] = useState(() => delayRender("Loading the Earth texture"));
-  useEffect(() => {
-    new THREE.TextureLoader().load(staticFile(EARTH_TEXTURE), (loaded) => {
-      loaded.colorSpace = THREE.SRGBColorSpace;
-      loaded.anisotropy = 8;
-      setTexture(loaded);
-      continueRender(handle);
+// Loaded once and kept, so every scene that mounts later has the texture on its first frame.
+let cachedEarth: THREE.Texture | null = null;
+let loadingEarth: Promise<THREE.Texture> | null = null;
+const loadEarth = () => {
+  if (!loadingEarth) {
+    loadingEarth = new Promise((resolve, reject) => {
+      new THREE.TextureLoader().load(
+        staticFile(EARTH_TEXTURE),
+        (loaded) => {
+          loaded.colorSpace = THREE.SRGBColorSpace;
+          loaded.anisotropy = 8;
+          loaded.wrapS = THREE.RepeatWrapping;
+          loaded.needsUpdate = true;
+          cachedEarth = loaded;
+          resolve(loaded);
+        },
+        undefined,
+        reject,
+      );
     });
+  }
+  return loadingEarth;
+};
+
+// The render waits until the canvas has actually drawn the Earth: during a render the
+// canvas only draws when the frame changes, so a texture that arrives later would
+// otherwise leave this frame blank.
+const useEarthTexture = () => {
+  const [texture, setTexture] = useState<THREE.Texture | null>(cachedEarth);
+  const [handle] = useState(() => (cachedEarth ? null : delayRender("Loading the Earth texture")));
+  useEffect(() => {
+    if (texture) {
+      return;
+    }
+    loadEarth().then(setTexture);
+  }, [texture]);
+  const release = useCallback(() => {
+    if (handle !== null) {
+      continueRender(handle);
+    }
   }, [handle]);
-  return texture;
+  return {texture, release};
+};
+
+const DrawWhenReady = ({ready, onDrawn}: {ready: boolean; onDrawn: () => void}) => {
+  const {advance} = useThree();
+  useEffect(() => {
+    if (ready) {
+      advance(performance.now());
+      onDrawn();
+    }
+  }, [ready, advance, onDrawn]);
+  return null;
 };
 
 const Camera = ({view}: {view: View}) => {
@@ -154,13 +195,13 @@ const Petal = ({index, state, material}: {index: number; state: EarthState; mate
 };
 
 export const Earth3D = ({state, view, skin = 1}: {state: EarthState; view: View; skin?: number}) => {
-  const earth = useEarthTexture();
+  const {texture: earth, release} = useEarthTexture();
   const peel = useMemo(orangeTexture, []);
   const material = useMemo(() => {
     if (!earth) {
       return null;
     }
-    earth.wrapS = THREE.RepeatWrapping;
+    peel.wrapS = THREE.RepeatWrapping;
     return new THREE.ShaderMaterial({
       uniforms: {earth: {value: earth}, peel: {value: peel}, skin: {value: 1}, shade: {value: 0}},
       vertexShader,
@@ -178,6 +219,7 @@ export const Earth3D = ({state, view, skin = 1}: {state: EarthState; view: View;
       {material
         ? Array.from({length: GORES}, (_, index) => <Petal key={index} index={index} state={state} material={material} />)
         : null}
+      <DrawWhenReady ready={material !== null} onDrawn={release} />
     </ThreeCanvas>
   );
 };

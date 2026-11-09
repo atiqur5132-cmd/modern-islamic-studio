@@ -99,6 +99,7 @@ export type QAyahOverlay = Timed & {
   from: number;
   to: number;
   translation: string;
+  translationSource: string;
   note: Beat & {tag: string; sub: string};
 };
 

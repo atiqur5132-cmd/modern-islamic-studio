@@ -234,8 +234,8 @@ export const QAyah = ({o, cue}: {o: QAyahOverlay; cue: Cue}) => {
           position: "absolute",
           left: 60,
           right: 60,
-          top: 330,
-          padding: "40px 46px 46px",
+          top: 290,
+          padding: "34px 44px 38px",
           backgroundColor: CARD,
           borderRadius: 12,
           boxShadow: "0 22px 44px rgba(16,32,58,0.18)",
@@ -243,11 +243,14 @@ export const QAyah = ({o, cue}: {o: QAyahOverlay; cue: Cue}) => {
           transform: `translateY(${(1 - card) * 80}px)`,
         }}
       >
-        <div style={{fontFamily: MONO, fontWeight: 700, fontSize: 34, color: QIBLA}}>{o.label}</div>
-        <div style={{direction: "rtl", textAlign: "center", fontFamily: ARABIC_FONT, fontSize: 92, lineHeight: 1.9, color: INK, marginTop: 6}}>
+        <div style={{display: "flex", justifyContent: "space-between", alignItems: "baseline"}}>
+          <span style={{fontFamily: MONO, fontWeight: 700, fontSize: 34, color: QIBLA}}>{o.label}</span>
+          <span style={{fontFamily: SANS, fontWeight: 700, fontSize: 26, color: MUTED}}>{o.translationSource}</span>
+        </div>
+        <div style={{direction: "rtl", textAlign: "center", fontFamily: ARABIC_FONT, fontSize: 88, lineHeight: 1.75, color: INK, marginTop: 4, marginBottom: 18}}>
           {tokens.join(" ")}
         </div>
-        <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 44, lineHeight: 1.18, color: INK, marginTop: 4}}>{o.translation}</div>
+        <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 42, lineHeight: 1.16, color: INK}}>{o.translation}</div>
       </div>
       {frame >= noteAt ? (
         <div
@@ -255,8 +258,8 @@ export const QAyah = ({o, cue}: {o: QAyahOverlay; cue: Cue}) => {
             position: "absolute",
             left: 60,
             right: RAIL,
-            top: 930,
-            padding: "30px 40px 34px",
+            top: 840,
+            padding: "24px 36px 26px",
             backgroundColor: INK,
             borderRadius: 12,
             opacity: note,
@@ -264,8 +267,8 @@ export const QAyah = ({o, cue}: {o: QAyahOverlay; cue: Cue}) => {
           }}
         >
           <Tag text={o.note.tag} color="#FFFFFF" size={26} />
-          <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 44, lineHeight: 1.15, color: "#FFFFFF", marginTop: 12}}>{o.note.text}</div>
-          <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 32, color: "rgba(255,255,255,0.75)", marginTop: 12}}>{o.note.sub}</div>
+          <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 40, lineHeight: 1.15, color: "#FFFFFF", marginTop: 10}}>{o.note.text}</div>
+          <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 30, color: "rgba(255,255,255,0.75)", marginTop: 8}}>{o.note.sub}</div>
         </div>
       ) : null}
     </AbsoluteFill>
