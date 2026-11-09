@@ -1,10 +1,12 @@
 # QA: "America mein qibla north-east kyun?" against QUALITY.md (2026-11-09)
 
-State: final render on GitHub (run 42650240210, commit d563e3e), finished by `finalize.py` into
+State: final render on GitHub (run 42655935258, commit 09104a0), finished by `finalize.py` into
 `out/qibla/qibla-north-east-final.mp4` (not committed). Two earlier renders were reviewed and
 rejected: run 42641659477 (hook still for 1.9 s; Ayah note under two-line captions; one blank
 frame at 44.07 s from a texture race) and run 42645991670 (two globe labels overlapping at
-37.6-40.1 s; hook without a claim-kind tag; "qibla" without its meaning). All were fixed.
+37.6-40.1 s; hook without a claim-kind tag; "qibla" without its meaning), then run 42650240210
+(the creator saw the second compass's title and calculation line hidden behind the dial; fixed,
+). All were fixed.
 
 **Not finished:** the gates marked fail or unchecked below. The creator has not watched the render.
 
@@ -54,7 +56,7 @@ joined (`merge_transcript.py`). The creator approved the render with the script 
 | 4 | Other text English; Ayah in Arabic; terms with their meaning | Pass | All labels and tags English; Arabic only on the 2:144 card, from `src/data/quran/2-144.json` (tokens 12-16, cut by code); "qibla" glossed as "prayer direction" in the hook. |
 | 4 | 2-4 words a group, one at a time, spoken word highlighted | Pass | 93 groups, sizes 2-4 (`edit.json`); ledger look. |
 | 4 | Caption position follows the shot | Pass (frames) | Hidden in the hook; ride up with the speaker window in the three stack shots; band foot y 1310 elsewhere, clear of the Ayah note (which ends at y ≈ 1060). |
-| 4 | Text inside y 168-1330, clear of the right rail; nothing under 28 px | Pass (frames) | Lowest text: the hook chip at y 1260-1310, x 120-915; all labels ≥ 28 px (tags 28, sources 28, chips 34 and up). |
+| 4 | Text inside y 168-1330, clear of the right rail; nothing under 28 px | Pass (frames) | Lowest text: the hook chip at y 1260-1310, x 120-915; all labels ≥ 28 px (tags 28, sources 28, chips 34 and up). No text hidden behind a graphic: both compasses checked on the final file (, 8.5, 9.5, 40.4, 41.9 s). |
 | 4 | Captions never cover the face or repeat a graphic | Pass (frames) | Hidden where the hook carries the words; the English graphics never repeat the Hinglish line. |
 | 5 | Every graphic serves its sentence | Pass | `beats.md`: each graphic lands on the spoken word it shows. |
 | 5 | Full-screen claims carry their tag | Pass | HISTORICAL RECORD, ESTABLISHED SCIENCE, NUMERICAL OBSERVATION · OUR CALCULATION, QURANIC CONTEXT + SCHOLARLY VIEW. The wall-map B-roll (no claim) is labelled THE MAP WE ALL LEARNED. |
