@@ -1,11 +1,6 @@
 name: Render video
 
 # Manual only. Pushing code never starts a render.
-#
-# The frames are split into parts that render on separate runners at the same
-# time; the sound renders once for the whole range, and a last job joins the
-# parts without re-encoding and checks the frame count. The result is the same
-# single artifact, named after the composition, that a one-runner render made.
 on:
   workflow_dispatch:
     inputs:
@@ -25,14 +20,6 @@ on:
         description: Frame range for a short preview, e.g. 510-1320 (optional)
         required: false
         default: ""
-      parts:
-        description: How many runners share the frames
-        required: false
-        default: "6"
-      concurrency:
-        description: Browser tabs per runner (each runner has 4 cores)
-        required: false
-        default: "4"
 
 concurrency:
   group: render
@@ -40,151 +27,48 @@ concurrency:
 
 permissions:
   contents: write
-  actions: write
-
-env:
-  COMPOSITION: ${{ inputs.composition }}
-  PROPS: ${{ inputs.props }}
-  FOOTAGE_RELEASE: ${{ inputs.footage_release }}
 
 jobs:
-  plan:
+  render:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
-    outputs:
-      chunks: ${{ steps.split.outputs.chunks }}
-      total: ${{ steps.split.outputs.total }}
-      range: ${{ steps.split.outputs.range }}
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v7
+
       - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
+
       - run: npm ci
-      - run: npx remotion browser ensure
-      - name: Split the frames
-        id: split
+
+      - name: Fetch prepared footage
+        if: inputs.footage_release != ''
         env:
+          GH_TOKEN: ${{ github.token }}
+          FOOTAGE_RELEASE: ${{ inputs.footage_release }}
+        run: |
+          mkdir -p public/footage
+          gh release download "$FOOTAGE_RELEASE" --dir public/footage
+
+      - name: Install browser
+        run: npx remotion browser ensure
+
+      - name: Render
+        env:
+          COMPOSITION: ${{ inputs.composition }}
+          PROPS: ${{ inputs.props }}
           FRAMES: ${{ inputs.frames }}
-          PARTS: ${{ inputs.parts }}
-        run: |
-          plan=$(node scripts/frame_chunks.mjs "$COMPOSITION" "$PROPS" "$FRAMES" "$PARTS" | tail -n 1)
-          echo "$plan"
-          echo "chunks=$(echo "$plan" | jq -c .chunks)" >> "$GITHUB_OUTPUT"
-          echo "total=$(echo "$plan" | jq .total)" >> "$GITHUB_OUTPUT"
-          first=$(echo "$plan" | jq -r '.chunks[0].frames | split("-")[0]')
-          last=$(echo "$plan" | jq -r '.chunks[-1].frames | split("-")[1]')
-          echo "range=$first-$last" >> "$GITHUB_OUTPUT"
+        run: npx remotion render "$COMPOSITION" "out/$COMPOSITION.mp4" --concurrency=4 --gl=swangle ${PROPS:+--props="$PROPS"} ${FRAMES:+--frames="$FRAMES"}
 
-  part:
-    needs: plan
-    runs-on: ubuntu-24.04
-    timeout-minutes: 60
-    strategy:
-      fail-fast: true
-      matrix:
-        chunk: ${{ fromJSON(needs.plan.outputs.chunks) }}
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: npm
-      - run: npm ci
-      - name: Fetch prepared footage
-        if: inputs.footage_release != ''
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          mkdir -p public/footage
-          gh release download "$FOOTAGE_RELEASE" --dir public/footage
-      - run: npx remotion browser ensure
-      - name: Render frames ${{ matrix.chunk.frames }}
-        env:
-          FRAMES: ${{ matrix.chunk.frames }}
-          TABS: ${{ inputs.concurrency }}
-        run: npx remotion render "$COMPOSITION" "out/part.mp4" --muted --frames="$FRAMES" --concurrency="$TABS" --gl=swangle ${PROPS:+--props="$PROPS"}
-      - uses: actions/upload-artifact@v7
-        with:
-          name: part-${{ matrix.chunk.index }}
-          path: out/part.mp4
-          retention-days: 1
-          compression-level: 0
-
-  sound:
-    needs: plan
-    runs-on: ubuntu-24.04
-    timeout-minutes: 30
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: npm
-      - run: npm ci
-      - name: Fetch prepared footage
-        if: inputs.footage_release != ''
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          mkdir -p public/footage
-          gh release download "$FOOTAGE_RELEASE" --dir public/footage
-      - run: npx remotion browser ensure
-      - name: Render the sound
-        env:
-          FRAMES: ${{ needs.plan.outputs.range }}
-        run: npx remotion render "$COMPOSITION" "out/sound.wav" --codec=wav --frames="$FRAMES" ${PROPS:+--props="$PROPS"}
-      - uses: actions/upload-artifact@v7
-        with:
-          name: part-sound
-          path: out/sound.wav
-          retention-days: 1
-
-  join:
-    needs: [plan, part, sound]
-    runs-on: ubuntu-24.04
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: npm
-      - run: npm ci
-      - uses: actions/download-artifact@v7
-        with:
-          pattern: part-*
-          path: parts
-      - name: Join the parts
-        run: |
-          mkdir -p out
-          n=$(ls -d parts/part-[0-9]* | wc -l)
-          : > parts/list.txt
-          for i in $(seq 0 $((n - 1))); do echo "file '$PWD/parts/part-$i/part.mp4'" >> parts/list.txt; done
-          cat parts/list.txt
-          # Video is copied as rendered; only the sound is encoded, as a one-runner render would.
-          npx remotion ffmpeg -hide_banner -y -f concat -safe 0 -i parts/list.txt -i parts/part-sound/sound.wav \
-            -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 320k -movflags +faststart "out/$COMPOSITION.mp4"
       - name: Check output
         env:
-          TOTAL: ${{ needs.plan.outputs.total }}
-        run: |
-          npx remotion ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate -of csv=p=0 "out/$COMPOSITION.mp4"
-          frames=$(npx remotion ffprobe -v error -select_streams v:0 -count_packets -show_entries stream=nb_read_packets -of csv=p=0 "out/$COMPOSITION.mp4")
-          echo "frames: $frames of $TOTAL"
-          test "$frames" -eq "$TOTAL"
+          COMPOSITION: ${{ inputs.composition }}
+        run: npx remotion ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate -of csv=p=0 "out/$COMPOSITION.mp4"
+
       - uses: actions/upload-artifact@v7
         with:
           name: ${{ inputs.composition }}
           path: out/*.mp4
           retention-days: 3
           compression-level: 0
-      - name: Delete the part artifacts
-        if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts" --paginate \
-            --jq '.artifacts[] | select(.name | startswith("part-")) | .id' |
-            while read -r id; do gh api -X DELETE "repos/$GITHUB_REPOSITORY/actions/artifacts/$id"; done

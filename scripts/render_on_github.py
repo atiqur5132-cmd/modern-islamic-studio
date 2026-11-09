@@ -87,9 +87,7 @@ def main():
         gh("run", "watch", run_id, "--exit-status", "--interval", "15")
 
         target = ROOT / "out" / run_id
-        # Only the joined video: the per-runner parts are working files.
-        gh("run", "download", run_id, "--name", args.composition,
-           "--dir", str(target / args.composition))
+        gh("run", "download", run_id, "--dir", str(target))
         print(f"Saved in {target.relative_to(ROOT)}")
     finally:
         if tag:
