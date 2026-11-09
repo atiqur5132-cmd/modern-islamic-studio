@@ -30,7 +30,8 @@ NEWSPAPER = "The Washington Daily News, 15 April 1953 (quoted by S. K. Abdali)"
 
 OVERLAYS = [
     # 1-2. The hook, speaker off: worshippers under the compass, the minaret, the map.
-    {"type": "qhook", "start": 0, "end": 5.267, "tag": "QIBLA IN AMERICA", "line": "NORTH-EAST?",
+    {"type": "qhook", "start": 0, "end": 5.267, "tag": HISTORY, "line": "NORTH-EAST?",
+     "sub": "The qibla (prayer direction) in America",
      "lockAt": 1.20, "minaretAt": 1.90, "mapAt": 2.733, "lineAt": 3.56, "seAt": 4.22},
     # 3. "1953 mein Washington ki ek nayi masjid ke saath yahi hua." First time on screen.
     {"type": "qboard", "start": 5.267, "end": 8.333, "tag": HISTORY, "src": "qb-1954.jpg", "gray": True,

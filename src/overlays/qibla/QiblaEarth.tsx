@@ -289,7 +289,7 @@ export const QiblaEarth = ({o, cue}: {o: QGlobeOverlay; cue: Cue}) => {
         <PathLine points={DC_PATH} state={state} view={view} width={10} />
         <PathLine points={DC_PATH} state={state} view={view} upTo={progress} width={16} />
         <Pin x={headAt.x} y={headAt.y} at={0} color={QIBLA} size={30} />
-        {frame >= b("atlantic") && atl.visible ? <Chip size={44} dark style={{left: Math.max(40, atl.x - 120), top: atl.y + 30, transform: `scale(${land(frame, b("atlantic"), 1.3)})`}}>ATLANTIC</Chip> : null}
+        {frame >= b("atlantic") && frame < b("europe") && atl.visible ? <Chip size={44} dark style={{left: Math.max(40, atl.x - 120), top: atl.y + 30, transform: `scale(${land(frame, b("atlantic"), 1.3)})`}}>ATLANTIC</Chip> : null}
         {frame >= b("europe") && eur.visible ? <Chip size={44} dark style={{left: eur.x - 90, top: eur.y - 110, transform: `scale(${land(frame, b("europe"), 1.3)})`}}>EUROPE</Chip> : null}
         {frame >= b("makkah") ? (
           <>

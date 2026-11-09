@@ -41,6 +41,7 @@ export const QHook = ({o, cue}: {o: QHookOverlay; cue: Cue}) => {
       >
         {o.line}
       </div>
+      <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 40, color: "#FFFFFF", marginTop: 14, textShadow: "0 3px 14px rgba(0,0,0,0.6)"}}>{o.sub}</div>
     </div>
   );
 

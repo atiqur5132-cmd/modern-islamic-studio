@@ -11,6 +11,8 @@ export type QHookOverlay = Timed & {
   type: "qhook";
   tag: string;
   line: string;
+  // Under the line: what the word means for a viewer who has not met it (CLAUDE.md).
+  sub: string;
   lockAt: number;
   minaretAt: number;
   mapAt: number;
