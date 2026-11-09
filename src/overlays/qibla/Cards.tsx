@@ -88,7 +88,7 @@ export const QCompass = ({o, cue}: {o: QCompassOverlay; cue: Cue}) => {
   const angle = o.mode === "1953" ? 56.55 * t : 56.5;
   const cx = 540;
   const cy = 860;
-  const r = 290;
+  const r = 245;
   const degrees = Math.floor(56.554 * roll);
   const minutes = Math.floor((56.554 * roll - degrees) * 60);
   const enter = arrive(frame, 0, 10);
@@ -100,16 +100,16 @@ export const QCompass = ({o, cue}: {o: QCompassOverlay; cue: Cue}) => {
         <Tag text={o.tag} />
         <div style={{display: "flex", alignItems: "baseline", gap: 18, marginTop: 14}}>
           {o.mode === "1953" ? (
-            <span style={{fontFamily: MONO, fontWeight: 700, fontSize: 132, letterSpacing: -4, color: frame >= turn ? QIBLA : INK}}>
+            <span style={{fontFamily: MONO, fontWeight: 700, fontSize: 118, letterSpacing: -4, color: frame >= turn ? QIBLA : INK}}>
               {degrees}°{String(minutes).padStart(2, "0")}′
             </span>
           ) : (
-            <span style={{fontFamily: MONO, fontWeight: 700, fontSize: 132, letterSpacing: -4, color: QIBLA}}>56° NE</span>
+            <span style={{fontFamily: MONO, fontWeight: 700, fontSize: 118, letterSpacing: -4, color: QIBLA}}>56° NE</span>
           )}
         </div>
-        <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 52, lineHeight: 1.05, color: INK, marginTop: 4}}>{o.line}</div>
+        <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 46, lineHeight: 1.05, color: INK, marginTop: 4}}>{o.line}</div>
         {o.source ? <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 28, color: MUTED, marginTop: 10}}>{o.source}</div> : null}
-        {o.sub ? <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 34, color: INK, marginTop: 10}}>{o.sub}</div> : null}
+        {o.sub ? <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 32, color: INK, marginTop: 10}}>{o.sub}</div> : null}
       </div>
       <div style={{position: "absolute", inset: 0, opacity: enter, transform: `scale(${0.92 + 0.08 * enter})`, transformOrigin: `${cx}px ${cy}px`}}>
         <Dial cx={cx} cy={cy} r={r} needle={angle} face={CARD} showNeedle={o.mode === "match" || frame >= turn} />
