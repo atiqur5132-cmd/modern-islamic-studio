@@ -45,6 +45,9 @@ import {FlatHook} from "../overlays/flat/Hook";
 import {EggCheck, Nest} from "../overlays/flat/Ostrich";
 import {Ball, QuoteCard} from "../overlays/flat/Scholars";
 import {Verdicts} from "../overlays/flat/Verdicts";
+import {QAyah, QBoard, QChest, QCompass, QFootage, QQuote} from "../overlays/qibla/Cards";
+import {QHook} from "../overlays/qibla/Hook";
+import {QiblaEarth} from "../overlays/qibla/QiblaEarth";
 import {CTA_TOP_Y} from "../overlays/Cta";
 import {cameraAt, emphasisPunches, ROOM_FRAMES} from "../timeline/camera";
 import {SOUND_SECONDS, soundCues} from "../timeline/sfx";
@@ -223,6 +226,23 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue) => {
       return <EggCheck e={overlay} cue={cue} />;
     case "nest":
       return <Nest n={overlay} cue={cue} />;
+    case "qhook":
+      return <QHook o={overlay} cue={cue} />;
+    case "qboard":
+      return <QBoard o={overlay} cue={cue} />;
+    case "qcompass":
+      return <QCompass o={overlay} cue={cue} />;
+    case "qchest":
+      return <QChest o={overlay} cue={cue} />;
+    case "qquote":
+      return <QQuote o={overlay} cue={cue} />;
+    case "qfootage":
+      return <QFootage o={overlay} cue={cue} />;
+    case "qglobe":
+    case "qglobepip":
+      return <QiblaEarth o={overlay} cue={cue} />;
+    case "qayah":
+      return <QAyah o={overlay} cue={cue} />;
   }
 };
 

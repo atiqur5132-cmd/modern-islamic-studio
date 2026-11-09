@@ -1,0 +1,466 @@
+{
+ "title": "America mein qibla north-east kyun? (talking head)",
+ "lines": [
+  {
+   "line": "America mein Muslim namaz *north-east* ki taraf muh karke padhte hain.",
+   "options": [
+    {
+     "layout": "full-screen photo + graphic, speaker off",
+     "visual": "0.0: real photo of worshippers in the Islamic Center of Washington's prayer hall (USIA, public domain), darkened, pushing in; a huge compass ring over it, needle already swinging. 1.2 (\"north-east\"): needle locks on NE, turns orange, NORTH-EAST slams up. 1.9: hard cut to the mosque's minaret against blue sky (colour), an orange arrow drawn up-right.",
+     "text": "QIBLA IN AMERICA / NORTH-EAST?",
+     "tag": "HISTORICAL RECORD",
+     "sound": "impact on frame 0, tick on the lock, whoosh on the cut",
+     "why": "Frame 0 is a real mosque with a bold one-word question; the needle moves from frame 0; three beats before 2 s.",
+     "ref": "references/yevorqq-ai-websites/hook.jpg"
+    },
+    {
+     "layout": "full-screen 3D globe, speaker off",
+     "visual": "0.0: the globe fills the frame, spinning; 0.8: it brakes on North America, a pin drops on Washington; 1.2: an orange arrow leaves the pin up-right, NORTH-EAST.",
+     "text": "NORTH-EAST?",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "riser into a thud on the pin",
+     "why": "Sets up the globe world early, but a spinning globe is a common opener and less specific than a real mosque.",
+     "ref": "references/nitish-rajput-black-box/detail-split-and-crash.jpg"
+    },
+    {
+     "layout": "full-screen map, speaker off",
+     "visual": "0.0: the classroom map already zoomed on the North Atlantic, Washington pin, both arrows drawn: orange NE and white SE, with a ? between them. 1.2: the NE arrow pulses.",
+     "text": "WHICH WAY?",
+     "tag": "-",
+     "sound": "impact on frame 0",
+     "why": "Shows the whole contradiction at once, but gives away line 2 before it is said and has no real image."
+    }
+   ],
+   "section": "hook"
+  },
+  {
+   "line": "Par map kholo, toh Makkah wahan se *south-east* mein dikhta hai.",
+   "options": [
+    {
+     "layout": "full-screen map, speaker off",
+     "visual": "2.73 (creator's cut): hard cut to the Mercator classroom map (built from NASA Blue Marble, public domain), framed on the North Atlantic; pins WASHINGTON and MAKKAH. 3.56 (\"Makkah\"): a straight white line draws from Washington to Makkah, down-right. 4.22 (\"south-east\"): SOUTH-EAST slams beside the line, and the orange NE arrow from the hook flashes back on the same pin: two directions, one city.",
+     "text": "THE MAP SAYS / SOUTH-EAST",
+     "tag": "-",
+     "sound": "whoosh on the cut, marker squeak on the line, hit on SOUTH-EAST",
+     "why": "The contradiction is drawn on the map the viewer knows; muted, the first 6 s read: QIBLA NORTH-EAST / MAP SOUTH-EAST."
+    },
+    {
+     "layout": "top/bottom split",
+     "visual": "The compass (top) and the map (bottom) side by side; the map's line draws on \"Makkah\".",
+     "text": "NE vs SE",
+     "tag": "-",
+     "sound": "whoosh",
+     "why": "Clear comparison, but a split this early shrinks both pictures below thumbnail strength."
+    },
+    {
+     "layout": "speaker full screen + card",
+     "visual": "The creator appears; a small map card beside his head shows the SE line.",
+     "text": "MAP: SOUTH-EAST",
+     "tag": "-",
+     "sound": "tick",
+     "why": "Puts the creator on screen at 2.8 s, earlier than the hook rule wants; the map is too small to read."
+    }
+   ],
+   "section": "hook"
+  },
+  {
+   "line": "1953 mein Washington ki ek nayi masjid ke saath yahi hua.",
+   "options": [
+    {
+     "layout": "top/bottom split (speaker top, photo below)",
+     "visual": "5.27 (creator's cut): the speaker slides into the top window, first time on screen; below, the 1954 UPI photo of the mosque nearly finished (public domain, B&W) rises in, slow push. WASHINGTON DC · 1953 lands on \"1953\"; a small 'photo: 1954' under it.",
+     "text": "WASHINGTON DC · 1953 / A new mosque",
+     "tag": "HISTORICAL RECORD",
+     "sound": "whoosh as the board rises",
+     "why": "The story starts on a real archival picture while the creator finally shows his face."
+    },
+    {
+     "layout": "full-screen archival photo",
+     "visual": "The 1954 photo full frame with the date over it.",
+     "text": "1953",
+     "tag": "HISTORICAL RECORD",
+     "sound": "paper slap",
+     "why": "Stronger photo, but keeps the creator off screen until 8.3 s."
+    }
+   ]
+  },
+  {
+   "line": "Uska rukh north-east rakha gaya, aur dekhne wale ghabra gaye ki masjid galat taraf ban rahi hai.",
+   "options": [
+    {
+     "layout": "full-screen graphic, then speaker + chest card",
+     "visual": "8.33: hard cut to a big compass dial on chart paper; the mosque's outline turns from north to 56 degrees, the number rolls up to 56°33′ (\"north-east\"), source line The Washington Daily News, 15 April 1953. 9.97 (creator's cut): back to the speaker; on his chest a paper card with the passers-by's words from the same paper, \"Take any map… the line would go slightly south.\" On \"galat\" (11.58) a WRONG WAY? stamp hits the card.",
+     "text": "FACES 56°33′ EAST OF NORTH / \"Take any map… the line would go slightly south.\"",
+     "tag": "HISTORICAL RECORD",
+     "sound": "ratchet ticks, lock; stamp hit",
+     "why": "Uses the real 1953 numbers and the real words people said, instead of an invented reaction."
+    },
+    {
+     "layout": "circle PiP over the map",
+     "visual": "The map with a crowd of ? marks around Washington; speaker in the corner circle.",
+     "text": "WRONG WAY?",
+     "tag": "-",
+     "sound": "pops",
+     "why": "Simple, but the ? icons are decoration and lose the real quote."
+    }
+   ]
+  },
+  {
+   "line": "Masjid *galat* nahi thi. Gadbad us map mein thi, jo hum school se dekhte aa rahe hain.",
+   "options": [
+    {
+     "layout": "speaker full screen, then full-screen B-roll",
+     "visual": "12.63: speaker, punch-in on \"galat\". 15.10 (creator's cut, \"jo hum school se\"): a wall map, a hand moving across it (Pexels 8829564), tag THE MAP FROM SCHOOL.",
+     "text": "THE MAP FROM SCHOOL",
+     "tag": "-",
+     "sound": "whoosh",
+     "why": "The punch carries the reversal; the wall-map shot makes 'that map' concrete in 1.5 s."
+    },
+    {
+     "layout": "speaker full screen only",
+     "visual": "Punch-in on \"galat\", wider on \"Gadbad\".",
+     "text": "-",
+     "tag": "-",
+     "sound": "-",
+     "why": "Keeps the creator's authority on the reversal, but misses the chance to show the map."
+    }
+   ]
+  },
+  {
+   "line": "Map flat hai, aur zameen gol.",
+   "options": [
+    {
+     "layout": "full-screen split graphic",
+     "visual": "16.67: top half the flat map lands on \"flat\" (FLAT), bottom half the 3D globe turning lands on \"gol\" (ROUND).",
+     "text": "FLAT / ROUND",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "two ticks",
+     "why": "The whole idea of the reel in two words and two pictures."
+    },
+    {
+     "layout": "speaker + chest card",
+     "visual": "Card FLAT MAP vs ROUND EARTH.",
+     "text": "FLAT vs ROUND",
+     "tag": "-",
+     "sound": "tick",
+     "why": "Lighter, but the idea is visual and deserves pictures."
+    }
+   ]
+  },
+  {
+   "line": "Ek santre ka chhilka utaro, aur use table par bilkul flat karke dikhao.",
+   "options": [
+    {
+     "layout": "top/bottom split (speaker top, B-roll below)",
+     "visual": "18.37: real close-up of hands peeling a large orange in one piece (Pexels 6535276, 4K) in the lower board, the speaker above. Label TRY THIS: LAY THE PEEL FLAT on \"flat karke dikhao\".",
+     "text": "TRY THIS: LAY THE PEEL FLAT",
+     "tag": "-",
+     "sound": "soft whoosh as the board rises",
+     "why": "A real, tactile demo everyone has done; the creator stays on screen giving the challenge."
+    },
+    {
+     "layout": "full-screen B-roll",
+     "visual": "The peel clip full frame.",
+     "text": "-",
+     "tag": "-",
+     "sound": "-",
+     "why": "Bigger fruit, but no face for 8 s with the next graphic."
+    }
+   ]
+  },
+  {
+   "line": "Nahi hoga. Kahin phatega, kahin *stretch* ho jaayega.",
+   "options": [
+    {
+     "layout": "full-screen graphic, speaker off",
+     "visual": "21.80: an orange skin splits into 8 petals that fall flat onto paper. 23.02 (\"phatega\"): the gaps between petals flash, TEARS. 23.82 (\"stretch\"): the petals stretch sideways until the gaps close into a rectangle, STRETCHES.",
+     "text": "TEARS / STRETCHES",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "tick on TEARS, whoosh on STRETCHES",
+     "why": "Turns the spoken demo into an exact picture of what a map does."
+    },
+    {
+     "layout": "speaker + two chips",
+     "visual": "TEARS and STRETCHES as chips beside the face.",
+     "text": "TEARS / STRETCHES",
+     "tag": "-",
+     "sound": "ticks",
+     "why": "Cheap; the idea needs to be seen."
+    }
+   ]
+  },
+  {
+   "line": "Duniya ka map bhi aise hi khincha hua hai.",
+   "options": [
+    {
+     "layout": "full-screen graphic, speaker off",
+     "visual": "24.73: the same petals swap their orange skin for the Earth (NASA Blue Marble) and stretch into the world map; Greenland swells as the map stretches towards the poles. 26.18 (\"khincha\"): GREENLAND and AFRICA marked, chip AFRICA IS 14x BIGGER.",
+     "text": "GREENLAND looks as big as AFRICA / AFRICA IS 14x BIGGER",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "whoosh, hit on the chip",
+     "why": "Proves 'stretched' with the most famous example; the flat-earth viewers said the concept was unclear, this makes it unmissable."
+    },
+    {
+     "layout": "full-screen map",
+     "visual": "The finished map only, with STRETCHED stamped on it.",
+     "text": "STRETCHED",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "stamp",
+     "why": "Says it without showing how."
+    }
+   ]
+  },
+  {
+   "line": "Isliye map par jo line seedhi dikhti hai, wo zameen par sabse chhota raasta nahi hoti.",
+   "options": [
+    {
+     "layout": "circle PiP over the map",
+     "visual": "26.80 (creator's cut): the classroom map again with the hook's straight white line, label STRAIGHT ON THE MAP; the speaker in the corner circle. 29.42 (\"sabse chhota\"): NOT THE SHORTEST stamps on the white line.",
+     "text": "STRAIGHT ON THE MAP / NOT THE SHORTEST",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "whoosh in, stamp",
+     "why": "Calls back the hook's line and states the rule while the creator stays visible."
+    },
+    {
+     "layout": "full-screen map",
+     "visual": "Same without the circle.",
+     "text": "-",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "-",
+     "why": "Cleaner, but a long stretch without the face."
+    }
+   ]
+  },
+  {
+   "line": "Ab ek globe par Washington se Makkah tak ek dhaaga *tight* karke lagao.",
+   "options": [
+    {
+     "layout": "circle PiP over the 3D globe",
+     "visual": "30.60: the 3D globe (NASA texture) turns to the Atlantic; pins land on WASHINGTON (31.40) and MAKKAH (31.94); 33.08 (\"tight\"): an orange string snaps tight between them along the great circle.",
+     "text": "PULL A STRING TIGHT",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "pin clicks, string snap",
+     "why": "The globe is the answer; the string is a physical, testable demo."
+    },
+    {
+     "layout": "full-screen globe",
+     "visual": "Same, no circle.",
+     "text": "-",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "-",
+     "why": "More globe, less creator."
+    }
+   ]
+  },
+  {
+   "line": "Dhaaga pehle upar ki taraf jaata hai, north-east.",
+   "options": [
+    {
+     "layout": "full-screen 3D globe, speaker off",
+     "visual": "34.23: camera close on Washington; the string leaves up and to the right; a compass badge on the pin points along it: STARTS NORTH-EAST (36.12).",
+     "text": "STARTS NORTH-EAST",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "whoosh",
+     "why": "The single fact the whole reel turns on, shown at the pin."
+    },
+    {
+     "layout": "full-screen flat map",
+     "visual": "The great circle drawn on the flat map as a curve.",
+     "text": "-",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "-",
+     "why": "Less physical than the globe."
+    }
+   ]
+  },
+  {
+   "line": "Phir Atlantic aur Europe ke upar se mudta hai, aur Makkah par utarta hai.",
+   "options": [
+    {
+     "layout": "full-screen 3D globe, speaker off",
+     "visual": "36.77: the camera rides along the string over the ocean: ATLANTIC (37.02), EUROPE (37.62), bends down and lands on MAKKAH (39.10).",
+     "text": "ATLANTIC · EUROPE · MAKKAH",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "whoosh, soft hit on Makkah",
+     "why": "The surprising route (over Europe) is the 'wow' viewers share."
+    },
+    {
+     "layout": "full-screen flat map",
+     "visual": "Same route on the flat map.",
+     "text": "-",
+     "tag": "-",
+     "sound": "-",
+     "why": "Weaker."
+    }
+   ]
+  },
+  {
+   "line": "Wo pehli direction hi Washington ka pehla qibla hai.",
+   "options": [
+    {
+     "layout": "full-screen compass graphic",
+     "visual": "40.10 (creator's cut): back to the compass dial from line 4; the string's first direction drops into it and matches the mosque's 56 degrees: QIBLA = FIRST DIRECTION · 56° NE.",
+     "text": "QIBLA = FIRST DIRECTION / 56° NE",
+     "tag": "NUMERICAL OBSERVATION (our calculation)",
+     "sound": "lock",
+     "why": "Closes the loop with the 1953 number."
+    },
+    {
+     "layout": "speaker + chest card",
+     "visual": "Card QIBLA = 56° NE.",
+     "text": "-",
+     "tag": "-",
+     "sound": "-",
+     "why": "Lighter."
+    }
+   ]
+  },
+  {
+   "line": "Toh masjid bilkul *sahi* bani thi.",
+   "options": [
+    {
+     "layout": "speaker full screen + chest chip",
+     "visual": "42.60 (creator's cut): speaker, punch-in on \"sahi\"; an orange tick chip RIGHT ALL ALONG on the chest.",
+     "text": "RIGHT ALL ALONG",
+     "tag": "-",
+     "sound": "tick",
+     "why": "The verdict belongs to the creator's face."
+    },
+    {
+     "layout": "full-screen photo",
+     "visual": "The minaret photo with a tick.",
+     "text": "-",
+     "tag": "-",
+     "sound": "-",
+     "why": "Loses the face at the verdict."
+    }
+   ]
+  },
+  {
+   "line": "Alaska mein toh qibla seedha, lagbhag *north* ki taraf hai, pole ke upar se.",
+   "options": [
+    {
+     "layout": "full-screen 3D globe, speaker off",
+     "visual": "44.07: the globe swings so the North Pole faces the camera; pin on ALASKA; the orange string goes up over the pole and down to Makkah. 46.16 (\"north\"): ALMOST DUE NORTH · 351°.",
+     "text": "ALASKA: ALMOST DUE NORTH",
+     "tag": "NUMERICAL OBSERVATION (our calculation)",
+     "sound": "whoosh, hit",
+     "why": "The most surprising case, and only a globe can show it."
+    },
+    {
+     "layout": "full-screen flat map",
+     "visual": "Alaska's line drawn on the flat map.",
+     "text": "-",
+     "tag": "-",
+     "sound": "-",
+     "why": "On a flat map it looks absurd, which is the point, but harder to read."
+    }
+   ]
+  },
+  {
+   "line": "Muslim astronomers ye hisaab hazaar saal pehle hi spherical trigonometry se laga rahe the.",
+   "options": [
+    {
+     "layout": "top/bottom split (speaker top, manuscript below)",
+     "visual": "47.83 (creator's cut): al-Biruni's astronomy diagram from Kitab al-Tafhim (public domain, c. 1029 CE) on the board, slow push; label 1,000 YEARS AGO; 50.26 (\"spherical trigonometry\"): a spherical triangle draws over a small globe beside it.",
+     "text": "1,000 YEARS AGO / spherical trigonometry",
+     "tag": "HISTORICAL RECORD",
+     "sound": "tick, soft hit",
+     "why": "A real manuscript of a Muslim astronomer; no portraits."
+    },
+    {
+     "layout": "full-screen astrolabe photo",
+     "visual": "Indo-Persian astrolabe, 1601 (Art Institute of Chicago, CC0).",
+     "text": "-",
+     "tag": "HISTORICAL RECORD",
+     "sound": "-",
+     "why": "Beautiful, but 1601 is not 1,000 years ago."
+    }
+   ]
+  },
+  {
+   "line": "Waise America ki kuch masjidein aaj bhi south-east ki taraf hain.",
+   "options": [
+    {
+     "layout": "speaker full screen + mid-video follow card",
+     "visual": "51.87 (creator's cut): the honest beat to camera, no graphic; the Follow card sits on the chest for 2.5 s, clear of the face and the right rail.",
+     "text": "Follow (Instagram, Facebook)",
+     "tag": "-",
+     "sound": "tap tick",
+     "why": "Honesty lands best from the face; the one speaker stretch long enough for the mid-video CTA."
+    },
+    {
+     "layout": "full-screen map",
+     "visual": "North America with a few SE arrows among many NE.",
+     "text": "-",
+     "tag": "HISTORICAL RECORD",
+     "sound": "-",
+     "why": "Would need a survey we don't have."
+    }
+   ]
+  },
+  {
+   "line": "Aur itni door se Kaaba ki direction ki taraf muh karna hi kaafi hai, ye bahut se scholars ki raay hai.",
+   "options": [
+    {
+     "layout": "full-screen Ayah card",
+     "visual": "55.23 (creator's cut): torn-paper card, 2:144 from src/data/quran/2-144.json, the part from \"fa walli wajhaka shatra\" (cut by code), Sahih International below; 58.24 (\"scholars\"): a note slides up: Many scholars: from far away, facing the direction is enough. For your own case, ask a scholar.",
+     "text": "2:144 · Turn your face toward al-Masjid al-Haram / SCHOLARLY VIEW",
+     "tag": "QURANIC CONTEXT · SCHOLARLY VIEW",
+     "sound": "tick",
+     "why": "Shows where 'direction' comes from without issuing a ruling. Needs the creator's OK because the Ayah is not spoken."
+    },
+    {
+     "layout": "speaker + chest card",
+     "visual": "The scholarly note only.",
+     "text": "-",
+     "tag": "SCHOLARLY VIEW",
+     "sound": "-",
+     "why": "Safer, plainer."
+    }
+   ]
+  },
+  {
+   "line": "Map *jhooth* nahi bolta. Bas gol duniya ko flat dikhane mein thoda *khinch* jaata hai.",
+   "options": [
+    {
+     "layout": "speaker, then full-screen payoff graphic",
+     "visual": "59.63: speaker, punch on \"jhooth\". 61.00 (creator's cut): the flat map wraps itself back round the globe; the orange string is on both. THE MAP ISN'T LYING. IT'S STRETCHED. lands and holds still to the end of the line.",
+     "text": "THE MAP ISN'T LYING. / IT'S STRETCHED.",
+     "tag": "ESTABLISHED SCIENCE",
+     "sound": "soft whoosh, hit on the line",
+     "why": "Ends on the reel's one idea as a picture: flat and round."
+    },
+    {
+     "layout": "speaker only",
+     "visual": "-",
+     "text": "-",
+     "tag": "-",
+     "sound": "-",
+     "why": "Misses the visual payoff."
+    }
+   ]
+  },
+  {
+   "line": "Follow kar lo, aise hi fascinating videos ke liye.",
+   "options": [
+    {
+     "layout": "speaker + end cards",
+     "visual": "63.73 (creator's cut): Follow card in the caption band (Instagram + Facebook icons, unaltered) and the comment card in the headroom: \"What's the qibla direction from your city?\"",
+     "text": "Follow / What's the qibla direction from your city?",
+     "tag": "-",
+     "sound": "tap tick, heart",
+     "why": "The comment question invites every viewer to work out their own city."
+    },
+    {
+     "layout": "speaker + follow only",
+     "visual": "-",
+     "text": "-",
+     "tag": "-",
+     "sound": "-",
+     "why": "No comment prompt."
+    }
+   ]
+  }
+ ]
+}

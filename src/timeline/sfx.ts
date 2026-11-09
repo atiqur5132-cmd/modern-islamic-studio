@@ -216,6 +216,72 @@ export const soundCues = (
       cues.push({frame: at(overlay.strikeAt) + AFTER_PICTURE, sound: "tick", volume: TICK_VOLUME * 1.6});
     } else if (overlay.type === "nest") {
       cues.push({frame: at(overlay.nestAt) + AFTER_PICTURE, sound: "impact", volume: NUMBER_LANDS_VOLUME});
+    } else if (overlay.type === "qhook") {
+      // Frame 0 hits under the voice; the needle locks, each hard cut swishes, the map's
+      // line draws, and SOUTH-EAST lands.
+      cues.push({frame: start, sound: "impact", volume: IMPACT_VOLUME});
+      cues.push({frame: at(overlay.lockAt) + AFTER_PICTURE, sound: "tick", volume: TICK_VOLUME * 1.8});
+      cues.push({frame: at(overlay.minaretAt) - WHOOSH_PEAK_FRAMES + AFTER_PICTURE, sound: "whoosh", volume: WHOOSH_VOLUME * 0.6});
+      cues.push({frame: at(overlay.mapAt) - WHOOSH_PEAK_FRAMES + AFTER_PICTURE, sound: "whoosh-2", volume: WHOOSH_VOLUME * 0.7});
+      cues.push({frame: at(overlay.lineAt) + AFTER_PICTURE, sound: "tick-soft-1", volume: CTA_TICK_VOLUME});
+      cues.push({frame: at(overlay.seAt) + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.7});
+    } else if (overlay.type === "qboard") {
+      cues.push({frame: start - WHOOSH_LEAD_FRAMES + 4, sound: "whoosh-2", volume: WHOOSH_VOLUME * 0.6});
+      if (overlay.heading) {
+        cues.push({frame: at(overlay.heading.at) + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME * 0.8});
+      }
+      if (overlay.sphere) {
+        cues.push({frame: at(overlay.sphere.at) + AFTER_PICTURE, sound: "tick-soft-3", volume: CTA_TICK_VOLUME * 0.8});
+      }
+    } else if (overlay.type === "qcompass") {
+      const turn = at(overlay.turnAt);
+      [0, 5, 10].forEach((offset, index) => {
+        cues.push({frame: turn + offset + AFTER_PICTURE, sound: SOFT_TICKS[index % 3], volume: TICK_VOLUME * 1.5});
+      });
+      cues.push({frame: turn + 16 + AFTER_PICTURE, sound: "impact", volume: NUMBER_LANDS_VOLUME});
+    } else if (overlay.type === "qquote") {
+      cues.push({frame: start + 2 + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME * 0.8});
+      cues.push({frame: at(overlay.stamp.at) + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.6});
+    } else if (overlay.type === "qchest") {
+      cues.push({frame: at(overlay.chip.at) + AFTER_PICTURE, sound: "tick-soft-1", volume: CTA_TICK_VOLUME});
+    } else if (overlay.type === "qayah") {
+      cues.push({frame: at(overlay.note.at) + AFTER_PICTURE, sound: "tick-soft-3", volume: CTA_TICK_VOLUME * 0.8});
+    } else if (overlay.type === "qglobe" || overlay.type === "qglobepip") {
+      const beat = (name: string) => at(overlay.beats[name]);
+      const soft = (name: string, index: number) => cues.push({frame: beat(name) + AFTER_PICTURE, sound: SOFT_TICKS[index % 3], volume: TICK_VOLUME * 1.6});
+      const hit = (name: string, volume = NUMBER_LANDS_VOLUME) => cues.push({frame: beat(name) + AFTER_PICTURE, sound: "impact", volume});
+      const swish = (name: string, sound: Sound = "whoosh-3", lead = WHOOSH_LEAD_FRAMES) =>
+        cues.push({frame: beat(name) - lead + AFTER_PICTURE, sound, volume: WHOOSH_VOLUME * 0.55});
+      if (overlay.scene === "flatround") {
+        soft("flat", 0);
+        soft("round", 1);
+      } else if (overlay.scene === "peel") {
+        swish("open", "whoosh");
+        hit("tears", IMPACT_VOLUME * 0.5);
+        swish("stretch", "whoosh-2");
+        swish("merc", "whoosh-3");
+        hit("mark");
+      } else if (overlay.scene === "mapline") {
+        soft("line", 2);
+        hit("stamp", IMPACT_VOLUME * 0.6);
+      } else if (overlay.scene === "string") {
+        swish("wrap", "whoosh");
+        soft("dc", 0);
+        soft("mk", 1);
+        cues.push({frame: beat("tight") + AFTER_PICTURE, sound: "sub-hit", volume: SUB_HIT_VOLUME * 0.8});
+      } else if (overlay.scene === "depart") {
+        hit("ne");
+      } else if (overlay.scene === "ride") {
+        soft("atlantic", 0);
+        soft("europe", 1);
+        hit("makkah");
+      } else if (overlay.scene === "alaska") {
+        soft("alaska", 2);
+        hit("north");
+      } else if (overlay.scene === "payoff") {
+        swish("unwrap", "whoosh-2");
+        cues.push({frame: beat("title") + AFTER_PICTURE, sound: "sub-hit", volume: SUB_HIT_VOLUME * 0.7});
+      }
     } else if (overlay.type === "headcard" && (overlay.tag || overlay.word || overlay.icon)) {
       cues.push({frame: start + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME * 0.8});
     }

@@ -1,0 +1,50 @@
+America mein qibla north-east kyun? — credits and sources
+=========================================================
+
+Quranic text
+- 2:144, only the part "fa walli wajhaka shatra al-masjid al-haram" (cut by code from the
+  fetched Ayah): api.quran.com v4 (text_uthmani), cross-checked with api.alquran.cloud
+  (quran-uthmani) by scripts/fetch_ayah.py, 2026-11-08.
+- English: Sahih International (quran.com translation 20).
+
+History (full notes in research.md)
+- S. Kamal Abdali, "The Correct Qibla", rev. 1997-09-17 (geomete.com/abdali/papers/qibla.pdf),
+  quoting The Washington Daily News, 15 April 1953: the mosque "faces 56 degrees, 33 minutes,
+  and 15 seconds east of true north"; passers-by: "Take any map… the line would go slightly
+  south".
+- Wikipedia, "Islamic Center of Washington": cornerstone 1949, completed 1954, dedicated 1957.
+- Wikipedia, "Qibla" (citing King 1996, Bilici 2012, Bashori 2015): methods of Muslim
+  astronomers from the 9th-10th centuries; most North American Muslims follow north-east,
+  some mosques face east/south-east; facing the general direction (jihat al-ka'ba) accepted
+  by many jurists.
+
+Science and numbers
+- Greenland and Africa: Wikipedia, "Mercator projection" ("Greenland appears the same size
+  as Africa, when in reality Africa's area is 14 times as large"); areas 2,166,086 km²
+  (Greenland) and 30,370,000 km² (Africa), Wikipedia, read 2026-11-09.
+- Our own calculations (projects/qibla-north-east/make_maps.py and src/overlays/qibla/look.ts):
+  great-circle bearing from the Islamic Center of Washington to the Kaaba 56.5° (1953 record:
+  56°33′); from Anchorage 350.9°; the Washington-Makkah great circle crosses the Atlantic,
+  France, southern Italy and passes near Crete (highest point 49.5° N); the Anchorage path
+  passes within about 500 km of the North Pole (highest point 85.6° N).
+
+Images and footage
+- "Worshipers at the Islamic Center of Washington, D.C.", U.S. Information Agency, public
+  domain, https://commons.wikimedia.org/wiki/File:Worshipers_at_the_Islamic_Center_of_Washington,_D.C.jpg
+- "Islamic Center of Washington 1954 by UPI", United Press International, public domain,
+  https://commons.wikimedia.org/wiki/File:Islamic_Center_of_Washington_1954_by_UPI.jpg
+- "Islamic Center of Washington DC" by dbking, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/),
+  cropped, https://commons.wikimedia.org/wiki/File:Islamic_Center_of_Washington_DC.jpg
+- "Lunar phases al-Biruni" (al-Biruni, Kitab al-Tafhim), public domain,
+  https://commons.wikimedia.org/wiki/File:Lunar_phases_al-Biruni.jpg
+- Globe and maps drawn from "Blue Marble Next Generation + topography + bathymetry",
+  Reto Stöckli, NASA Earth Observatory, public domain,
+  https://commons.wikimedia.org/wiki/File:Blue_Marble_Next_Generation_%2B_topography_%2B_bathymetry.jpg
+- Pexels (Pexels License, pexels.com/license: free to use and modify, no attribution required;
+  credited anyway):
+  - video 6535276 "A person is peeling the orange using her hands"
+  - video 8829564 "People pointing continents on a map"
+  Each at https://www.pexels.com/video/<id>/.
+
+Platform icons (end and mid-video follow cards): official Instagram and Facebook brand
+assets, unaltered (src/overlays/Cta.tsx).

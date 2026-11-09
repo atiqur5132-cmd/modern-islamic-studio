@@ -1,4 +1,5 @@
 import {FlatOverlay} from "./flatTypes";
+import {QiblaOverlay} from "./qiblaTypes";
 
 // All times are in seconds on the source footage, so overlays stay on the
 // same spoken words when the cuts change. Text marked with *stars* is emphasised.
@@ -226,6 +227,7 @@ export type CtaOverlay = Timed & {
 
 export type Overlay =
   | FlatOverlay
+  | QiblaOverlay
   | CtaOverlay
   | HookOverlay
   | VerseTagOverlay
@@ -269,14 +271,28 @@ export const FULL_SCREEN_TYPES: Overlay["type"][] = [
   "scan",
   "rules",
   "nest",
+  "qquote",
+  "qglobepip",
 ];
 
 // The speaker moves into the top window and the graphic takes the space below.
-export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto"];
+export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto", "qboard"];
 
 // These cover the whole frame with the speaker off screen (drawn over the speaker);
 // they join a full-screen stretch they touch, so the circle never flashes between them.
-export const COVER_TYPES: Overlay["type"][] = ["factfootage", "flathook", "ayahstrips", "flatfootage", "ball", "eggcheck"];
+export const COVER_TYPES: Overlay["type"][] = [
+  "factfootage",
+  "flathook",
+  "ayahstrips",
+  "flatfootage",
+  "ball",
+  "eggcheck",
+  "qhook",
+  "qcompass",
+  "qfootage",
+  "qglobe",
+  "qayah",
+];
 
 export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};
 

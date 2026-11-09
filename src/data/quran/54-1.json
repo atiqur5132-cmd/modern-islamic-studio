@@ -1,0 +1,8 @@
+{
+  "key": "54:1",
+  "surahNameEnglish": "Al-Qamar",
+  "textUthmani": "ٱقْتَرَبَتِ ٱلسَّاعَةُ وَٱنشَقَّ ٱلْقَمَرُ",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-09"
+}
