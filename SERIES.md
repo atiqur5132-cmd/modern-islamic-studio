@@ -15,8 +15,9 @@ The channel's signature: a claim people forward, checked by hand on camera.
 - **Done:** Yawm 365.
 - **Hook shape:** the claim itself, stated as the post states it, with the number inside
   the first 1.5 s ("Samandar 32 baar, zameen 13 baar?").
-- **Spine:** "Maine khud gina / khud check kiya" → the count or source, shown step by
-  step → under which rule the claim holds or breaks → what is actually remarkable.
+- **Spine:** the count or source, shown step by step → under which rule the claim holds
+  or breaks → what is actually remarkable. One claim per reel unless two share one idea;
+  worded fresh each time (no stock "maine khud check kiya" line).
 - **Honesty beat:** what the claim gets wrong and what it gets right. Never a sneer at
   the people who shared it.
 - **On screen:** a `VIRAL CLAIM` tag on the post; a verdict stamp at the payoff

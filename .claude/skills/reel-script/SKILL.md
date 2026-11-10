@@ -38,7 +38,7 @@ Write `projects/<clip>/research.md` before any script. The creator reads it firs
 **The honesty test.** Many Muslim scholars and scientists (e.g. Nidhal Guessoum, Hamza Tzortzis) warn against "scientific miracle" (i'jaz 'ilmi) claims. Science changes, every tradition can find such matches, and forcing modern theory onto a verse skips tafsir method. So:
 - Never say the Quran "predicted" or "proved" a modern finding. Say what the verse says, what science says, and let the viewer reflect.
 - Check whether the meaning was known before (Greek, Indian or classical Arab sources). If it was, say so.
-- State what the claim is NOT (the channel's "Lekin main honest rahunga" beat). This builds trust and is the channel's signature.
+- State what the claim is NOT, or where scholars differ. This builds trust. Say it in the topic's own words, where it naturally belongs in the explanation, never as a stock line (no fixed "Lekin main honest rahunga").
 - A fiqh ruling or a disputed matter goes to the creator with a note to check it with a qualified scholar.
 - History visuals: never depict the Prophets or the Companions; never present an AI-generated person or place as real; no film stills. Use maps, manuscripts, archival photos and real places (visual-sourcing rules), and tag any reconstruction `RECONSTRUCTION`.
 
@@ -48,15 +48,19 @@ Research process: search broadly first (several queries in one turn; `/deep-rese
 
 **Length:** 45–60 s including the CTA. The creator speaks about 3.3 Hinglish words a second (measured: 275 words in 79 s, 146 words in 49 s), so 150–200 words.
 
-**Shape:**
-1. Hook, 0–5 s, spoken over full-screen visuals (the creator is not on screen yet). One surprising, concrete line; the picture shows it. No "Kya aap jaante hain", no greeting, no "aaj hum baat karenge". Put the key word (the number, the name, the contradiction) in the first 4–5 spoken words so it lands inside 1.5 s ("365 baar? Galat." not "Quran mein din ka lafz poore 365 baar…"). Plan the hook's visuals with the line: a visible change at least every 1.5 s to 6 s, and frame 0 strong enough to be the thumbnail (QUALITY.md §1, strict).
-2. Open the loop: the question the viewer now needs answered.
-3. Context: the verse, scene or fact, in the fewest words.
-4. Build: one concrete example worked through, each step shown on screen. Open a smaller loop as you close one.
-5. The honesty beat: what this does not prove, or what scholars differ on.
-6. Payoff: the idea lands, ideally turning back on the hook.
-7. Last line: short, quotable, held 2 s.
-8. CTA, one line under 3 s, after the last line: tied to the topic ("Aise aur patterns ke liye follow kar lo"), never a generic "like, share, subscribe". Reels go to Instagram and Facebook only for now, so the CTA asks for a follow.
+**Clarity first (creator, 2026-11-09).** Viewers of the flat-earth reel commented that the concept was not clear: it packed two claims, two Arabic words, a nest-vs-egg detail and a scholar's quote into 70 s. A human scriptwriter picks ONE idea per reel and makes sure it lands. Before writing, state that idea in one sentence a 15-year-old could repeat to a friend. Explain it with one concrete picture or analogy (map vs globe, chadar bichhana), build it step by step, and cut every fact that does not serve it, however true or interesting (park it in research.md for another reel). Read the draft as a viewer who knows nothing: at each line, would they still follow?
+
+**No template.** Each script gets the structure its topic needs: a story told in order, a question chased to its answer, a mistake taken apart, a demonstration. Do not reuse lines or scaffolding across reels. Before handing over, compare the draft with the last three `projects/*/script.txt` and remove any repeated stock phrase, opener or transition ("Maine khud check kiya/gina", "Sach bataun", "Lekin main honest rahunga", "Ab … wala", the same CTA wording). The caveat and the scholarly difference still have to be there, said in the words of this topic, at the point where they matter.
+
+**Controversy check.** The creator found the moon-split topic too controversial (2026-11-09). Avoid topics whose check would seem to question a core belief, a miracle reported in sahih hadith, or a living community's cherished story; prefer claims where the honest answer clarifies rather than unsettles.
+
+**What every script needs (in whatever order and words fit the topic):**
+- Hook, 0–5 s, spoken on camera: the creator is on screen from the first frame for at least 2–3 s, with the hook's B-roll and motion graphics beside them (split, circle over a visual, or footage and cards around them); after that each scene's layout is chosen for the reel. One surprising, concrete line; the picture shows it. No "Kya aap jaante hain", no greeting, no "aaj hum baat karenge". Put the key word (the number, the name, the contradiction) in the first 4–5 spoken words so it lands inside 1.5 s ("365 baar? Galat." not "Quran mein din ka lafz poore 365 baar…"). Plan the hook's visuals with the line: a visible change at least every 1.5 s to 6 s, and frame 0 strong enough to be the thumbnail (QUALITY.md §1, strict).
+- A question the viewer now needs answered.
+- The one idea, explained so it is understood, each step shown on screen.
+- The caveat: what this does not prove, or what scholars differ on, in the topic's own words.
+- A payoff that lands, ideally turning back on the hook, and a short quotable last line held 2 s.
+- CTA, one line under 3 s, after the last line: tied to this topic and worded fresh for it, never a generic "like, share, subscribe". Reels go to Instagram and Facebook only for now, so the CTA asks for a follow.
 
 **Comment ask:** pick one specific question about the topic that a viewer can answer in a few words, and place it as on-screen text (with the comment icon) at a mid-video CTA or the end card.
 
@@ -71,7 +75,7 @@ Research process: search broadly first (several queries in one turn; `/deep-rese
 - `projects/<clip>/research.md`: sources and claim ledger.
 - `projects/<clip>/script.txt`: spoken lines only, one sentence per line, `*emphasis*` marked. This file is the caption spelling source, so it must be exactly what the creator will say. The CTA line is the last line.
 - `projects/<clip>/plan_options.json`, then `.venv\Scripts\python scripts/make_plan.py <clip>` → `projects/<clip>/plan.html`. The creator plans the edit, Claude builds it: for every script line offer 2–4 visual options (3 for hook lines, each a storyboard to 6 s), your pick first, each with layout, what moves, on-screen English, claim tag, sound and why. Draw them from `references/LIBRARY.md` and its breakdowns, pointing `ref` at a reference picture where one shows the idea. The creator picks in the browser and pastes "Copy choices" back; their picks and notes decide `beats.md`. Do not build graphics before the choices come back.
-- `projects/<clip>/beats.md`, written from the creator's choices: one row per line: time, line, visual and layout (full-screen hook, split, circle, speaker, B-roll), on-screen English text, claim tag, the sound, and the asset with its source and licence. CTA rows (mid-video and end) say which animation plays (follow, or like and comment).
+- `projects/<clip>/beats.md`, written from the creator's choices: one row per line: time, line, visual and layout (speaker-led hook, split, circle, speaker, full-screen graphic, B-roll), on-screen English text, claim tag, the sound, and the asset with its source and licence. CTA rows (mid-video and end) say which animation plays (follow, or like and comment).
 - `projects/<clip>/credits.txt`: every source and asset.
 
 Then self-review before handing over:

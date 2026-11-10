@@ -13,7 +13,7 @@ plan_options.json:
   "lines": [
     {"line": "<exactly one line of script.txt>", "section": "hook",
      "options": [
-       {"layout": "full-screen graphic", "visual": "what moves, beat by beat",
+       {"layout": "split: speaker top, visual below", "visual": "what moves, beat by beat",
         "text": "on-screen English", "tag": "VIRAL CLAIM", "sound": "impact on frame 0",
         "ref": "references/<reel>/hook.jpg", "why": "why it serves the line"}
      ]}

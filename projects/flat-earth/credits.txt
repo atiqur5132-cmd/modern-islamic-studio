@@ -64,3 +64,13 @@ Platform icons (follow and comment cards, src/overlays/Cta.tsx, src/brand.ts)
 
 Illustrative posts (lines 1-2, 18)
 - The viral posts are made up: no platform, no account, no real person's post.
+
+On screen and in the description (2026-11-07)
+- Picture credits are not shown on screen (Pexels needs none; the map and the Blue Marble
+  are public domain). They go in the upload description instead. Scholarly sources (Razi on
+  88:20, Qurtubi on 79:30, Lane's Lexicon) stay on screen where they are quoted.
+- Description credit line (English, ready to paste):
+  Visuals: Map of the Square and Stationary Earth, Orlando Ferguson, 1893 (Library of
+  Congress, public domain); The Blue Marble, Apollo 17 (NASA, public domain); stock
+  footage and photos from Pexels. Quran text: quran.com. Sources: Tafsir al-Razi and
+  al-Qurtubi; Lane's Arabic-English Lexicon.

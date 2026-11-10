@@ -15,10 +15,11 @@ because the opening visual was weak). Every gate here is strict: a fail cannot b
 with a note. It is fixed by rebuilding the hook, rewriting or re-recording the first line,
 or the reel does not ship.
 
-- The reel opens on full-screen motion graphics or real visuals timed to the spoken hook; the creator appears only after it, at a sentence break, usually 3–5 s in.
-- Frame 0 is the thumbnail: a strong visual plus one bold line already on screen. Never black, a logo or a fade-in.
-- Frame 0 reads at thumbnail size: shrunk to 270 px wide, the subject and the line are still clear. One subject fills at least 40% of the frame, with strong contrast between subject and ground; no pale-on-pale, no small element floating in space.
+- The creator is on screen from frame 0 for at least the first 2–3 s (longer when the reel needs it), sharing the frame with the hook's B-roll and motion graphics: a top/bottom split, the creator in a circle over a full-screen visual, or the creator full screen with footage or cards around them. After that, each scene's layout is chosen for that reel (§5), including full-screen visuals with the creator off screen. (Changed 2026-11-10 by the creator; until then reels opened on full-screen graphics with the creator off screen for 3–5 s.)
+- Frame 0 is the thumbnail: the creator plus a strong visual and one bold line already on screen. Never black, a logo or a fade-in.
+- Frame 0 reads at thumbnail size: shrunk to 270 px wide, the creator's face, the visual and the line are still clear. The visual part is big enough to read on its own (a split half, the full frame behind a circle), with strong contrast between subject and ground; no pale-on-pale, no small element floating in space.
 - Motion from the first frame: something is already moving at frame 0, and the picture makes a visible change (new image, cut, scale jump, number hit, reveal) at least every 1.5 s through 0–6 s, so 4 or more distinct visual beats. Nothing holds still, fills slowly or fades for longer than 1.5 s.
+- While the creator is on screen, the visual part of the frame carries the beats: a new image or footage in the split or behind the circle, or a cut to another layout. A punch-in or a small stamp on a card is not a beat (measured 2026-11-10 on the Qibla render: a punch to 1.16 and a WRONG WAY stamp over a quote card did not register in `study_reel.py`, and they do not count by eye either).
 - Each beat is a new idea for the eye, not the same layout decorating itself: a real image, footage or a bold graphic change, not only text appearing or a counter ticking.
 - The question, claim or surprise is spoken and shown within 1.5 s. The key word itself (the number, the name, the contradiction) is said inside 1.5 s, not just the start of the sentence; the script is written so it comes first.
 - The hook opens a gap the viewer must close (a contradiction, a "galat", a stake), not a setup or a topic announcement.

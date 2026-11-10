@@ -78,6 +78,14 @@ const CAPTION_BAND_BOTTOM = SAFE_AREA.bottom + 20;
 // Graphics that already put the spoken words on screen; captions would repeat them.
 const SPOKEN_TEXT_TYPES: Overlay["type"][] = ["statement", "endcard"];
 const PIP_MOVE_FRAMES = 9;
+
+// A layout that opens the reel (the speaker-led hook, QUALITY.md §1) is already in
+// place at frame 0, so frame 0 shows the split or circle, not the move into it: its
+// entry move is placed before the reel starts.
+const settledStart = (start: number, move: number) => (start <= 0 ? start - move : start);
+// How far a full-screen graphic that opens the reel is pre-rolled, so its entrance has
+// landed by frame 0 (entrances run 10-20 frames).
+const OPENING_ARRIVAL_FRAMES = 20;
 // circle() percentages are of the frame diagonal divided by the square root of two.
 const CLIP_UNIT = Math.hypot(1080, 1920) / Math.SQRT2;
 
@@ -269,15 +277,16 @@ export const Short = ({
   const stackRanges = overlays.filter((o) => STACK_TYPES.includes(o.type)).map((o) => outputRange(segments, o));
   const stack = Math.max(
     0,
-    ...stackRanges.map(({start, end}) =>
-      frame >= end
+    ...stackRanges.map(({start, end}) => {
+      const from = settledStart(start, STACK_MOVE_FRAMES);
+      return frame >= end
         ? 0
-        : interpolate(frame, [start, start + STACK_MOVE_FRAMES], [0, 1], {
+        : interpolate(frame, [from, from + STACK_MOVE_FRAMES], [0, 1], {
             extrapolateLeft: "clamp",
             extrapolateRight: "clamp",
             easing: Easing.inOut(Easing.cubic),
-          }),
-    ),
+          });
+    }),
   );
 
   // Back-to-back full-screen graphics count as one stretch, so the speaker stays
@@ -302,9 +311,10 @@ export const Short = ({
       if (end - start < 2 * PIP_MOVE_FRAMES) {
         return 0;
       }
+      const from = settledStart(start, PIP_MOVE_FRAMES);
       return interpolate(
         frame,
-        [start, start + PIP_MOVE_FRAMES, end - PIP_MOVE_FRAMES, end],
+        [from, from + PIP_MOVE_FRAMES, end - PIP_MOVE_FRAMES, end],
         [0, 1, 1, 0],
         {extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic)},
       );
@@ -353,9 +363,16 @@ export const Short = ({
     if (end <= start) {
       return null;
     }
+    // A board, or a graphic behind the circle, that opens the reel has already arrived at
+    // frame 0; its cues keep their times.
+    const from = STACK_TYPES.includes(overlay.type)
+      ? settledStart(start, STACK_MOVE_FRAMES)
+      : FULL_SCREEN_TYPES.includes(overlay.type)
+        ? settledStart(start, OPENING_ARRIVAL_FRAMES)
+        : start;
     return (
-      <Sequence key={`${overlay.type}-${overlay.start}`} from={start} durationInFrames={end - start}>
-        {renderOverlay(overlay, overlays, (seconds) => sourceToOutputFrame(segments, seconds) - start)}
+      <Sequence key={`${overlay.type}-${overlay.start}`} from={from} durationInFrames={end - from}>
+        {renderOverlay(overlay, overlays, (seconds) => sourceToOutputFrame(segments, seconds) - from)}
       </Sequence>
     );
   };
