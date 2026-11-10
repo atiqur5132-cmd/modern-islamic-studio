@@ -225,7 +225,25 @@ export type CtaOverlay = Timed & {
   y?: number;
 } & ({mode: "follow"} | {mode: "engage"; text: string});
 
+// A real quote set as a pull quote beside the speaker's circle (src/overlays/PullQuote.tsx).
+// `mark` is a phrase inside `quote`, marked when it is spoken. `tag` is the claim kind
+// in sentence case ("Historical record"), shown with the source on one credit line.
+export type PullQuoteOverlay = Timed & {
+  type: "pullquote";
+  quote: string;
+  who: string;
+  source: string;
+  tag: string;
+  mark?: {text: string; at: number};
+  serif?: string;
+  sans?: string;
+  size?: number;
+  ground?: string;
+  ink?: string;
+};
+
 export type Overlay =
+  | PullQuoteOverlay
   | FlatOverlay
   | QiblaOverlay
   | CtaOverlay
@@ -257,6 +275,7 @@ export type Overlay =
 
 // These cover the frame; the speaker moves into a small circle while they play.
 export const FULL_SCREEN_TYPES: Overlay["type"][] = [
+  "pullquote",
   "fingerprint",
   "statement",
   "endcard",
@@ -304,6 +323,15 @@ export type FaceTrack = {step: number; points: [number, number][]};
 // highlights) and a vignette of at most `vignette` darkening at the corners.
 export type Grade = {contrast: number; saturation: number; vignette: number};
 
+// A reel's caption type: names from src/fonts.ts, size in px of the spoken words.
+export type CaptionDesign = {
+  sans?: string;
+  serif?: string;
+  size?: number;
+  color?: string;
+  accent?: string;
+};
+
 export type Edit = {
   footage: string;
   segments: Segment[];
@@ -315,11 +343,18 @@ export type Edit = {
   punchToZoom?: number;
   // For picture-edit previews: keep caption timing for the punches, show no captions.
   hideCaptions?: boolean;
-  // "pill": the spoken word on a gold pill (default). "highlight": ivory words, the
+  // Left out, captions use "editorial" (the default for new reels since 2026-11-10).
+  // "pill": the spoken word on a gold pill. "highlight": ivory words, the
   // spoken one turns gold with a small pop.
   // "ledger": white words with an ink edge, the spoken word inverted on an ink tab,
   // numbers in mono in the count colour, quoted Arabic terms in a serif italic.
-  captionStyle?: "pill" | "highlight" | "ledger";
+  // The newer looks (STYLE.md, Captions) take their fonts and size from captionDesign:
+  // "editorial": sentence case in the reel's sans, soft shadow instead of an outline,
+  // words not yet spoken dimmed, *emphasis* words in the reel's serif italic and accent.
+  // "punch": condensed caps (Anton) for high-energy reels, the emphasis word in the accent.
+  // "quiet": small sentence-case words with no highlight, when the picture does the work.
+  captionStyle?: "pill" | "highlight" | "ledger" | "editorial" | "punch" | "quiet";
+  captionDesign?: CaptionDesign;
   // Words the "ledger" captions set as terms (compared without quotes or punctuation).
   captionTerms?: string[];
   // The reel's ground, ink and accent; the circle, grain and backdrop take them.

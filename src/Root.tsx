@@ -18,7 +18,9 @@ export const Root = () => (
     <Composition
       id="Short"
       component={Short}
-      defaultProps={sampleEdit as Edit}
+      // Remotion fills props a reel leaves out from these defaults, so the sample's own
+      // caption look must not leak into new reels: left out, they get "editorial".
+      defaultProps={{...(sampleEdit as Edit), captionStyle: undefined}}
       durationInFrames={1}
       calculateMetadata={({props}) => ({durationInFrames: editDurationInFrames(props)})}
       {...SHORTS}

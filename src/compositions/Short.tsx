@@ -12,6 +12,7 @@ import {
 import {AyahCard} from "../overlays/AyahCard";
 import {Broll} from "../overlays/Broll";
 import {Caption} from "../overlays/Caption";
+import {PullQuote} from "../overlays/PullQuote";
 import {Counter} from "../overlays/Counter";
 import {Cta} from "../overlays/Cta";
 import {EndCard} from "../overlays/EndCard";
@@ -133,8 +134,21 @@ const outputRange = (segments: Segment[], overlay: Overlay) => ({
   end: sourceToOutputFrame(segments, overlay.end),
 });
 
-const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue) => {
+type Palette = NonNullable<Edit["palette"]>;
+
+// Graphics drawn on the reel's own ground (no footage behind the captions).
+const PAGE_TYPES: Overlay["type"][] = ["pullquote"];
+
+// Relative luminance above 0.5 counts as a light ground.
+const isLight = (hex: string) => {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.5;
+};
+
+const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue, palette: Palette) => {
   switch (overlay.type) {
+    case "pullquote":
+      return <PullQuote o={overlay} cue={cue} palette={palette} />;
     case "cta":
       return <Cta cta={overlay} />;
     case "hook":
@@ -264,6 +278,7 @@ export const Short = ({
   punchToZoom,
   hideCaptions,
   captionStyle,
+  captionDesign,
   captionHide = [],
   captionTerms = [],
   palette = {ground: NAVY, ink: NAVY, accent: GOLD},
@@ -372,7 +387,7 @@ export const Short = ({
         : start;
     return (
       <Sequence key={`${overlay.type}-${overlay.start}`} from={from} durationInFrames={end - from}>
-        {renderOverlay(overlay, overlays, (seconds) => sourceToOutputFrame(segments, seconds) - from)}
+        {renderOverlay(overlay, overlays, (seconds) => sourceToOutputFrame(segments, seconds) - from, palette)}
       </Sequence>
     );
   };
@@ -520,6 +535,13 @@ export const Short = ({
         if (end <= start || repeatsGraphic || graphicIsHero || underCard) {
           return null;
         }
+        // On a page graphic drawn on a light ground, the newer caption looks take the ink.
+        const onPage =
+          isLight(palette.ground) &&
+          overlays.some((overlay) => {
+            const range = outputRange(segments, overlay);
+            return PAGE_TYPES.includes(overlay.type) && range.start <= start && range.end > start;
+          });
         const aboveCard = overlays.some((overlay) => {
           const range = outputRange(segments, overlay);
           return overlay.type === "ayah" && range.start < end && range.end > start;
@@ -530,6 +552,9 @@ export const Short = ({
               aboveCard={aboveCard}
               look={captionStyle}
               terms={captionTerms}
+              design={captionDesign}
+              accent={palette.accent}
+              ink={onPage ? palette.ink : undefined}
               // Captions ride with the speaker's window as it moves, never ahead of it.
               bottom={stack > 0 ? CAPTION_BAND_BOTTOM + (1920 - STACK_HEIGHT + 22 - CAPTION_BAND_BOTTOM) * stack : undefined}
               words={phrase.map((word) => ({

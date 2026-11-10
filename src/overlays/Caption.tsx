@@ -1,6 +1,8 @@
 import {AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from "remotion";
 import {GOLD, IVORY, LATIN_FONT, NAVY, SAFE_AREA} from "../theme";
 import {COUNT, INK, MONO, PAPER, SANS, TERM} from "./yawm/look";
+import {FONTS, FontName} from "../fonts";
+import {CaptionDesign} from "../timeline/types";
 
 const LEDGER = {sans: SANS, mono: MONO, term: TERM, ink: INK, paper: PAPER, count: COUNT, white: "#FFFDF8"};
 
@@ -181,26 +183,160 @@ const LedgerCaption = ({
   );
 };
 
+type TypeLook = "editorial" | "punch" | "quiet";
+
+// Soft, layered shadow: reads on the pale wall and on footage without the hard
+// sticker outline of template captions.
+const softShadow = (ink: string) => `0 1px 2px ${ink}99, 0 3px 14px ${ink}59`;
+
+// The newer looks (STYLE.md, Captions). Fonts and size come from the reel's
+// captionDesign; the accent is the reel's one accent colour.
+const TypeCaption = ({
+  words,
+  bottom,
+  look,
+  design,
+  accent,
+  ink,
+}: {
+  words: TimedCaptionWord[];
+  bottom: number;
+  look: TypeLook;
+  design: CaptionDesign;
+  accent: string;
+  ink?: string;
+}) => {
+  const frame = useCurrentFrame();
+  const sans = FONTS[(design.sans ?? (look === "punch" ? "Anton" : "Inter Tight")) as FontName];
+  const serif = FONTS[(design.serif ?? "Instrument Serif") as FontName];
+  // Over footage: warm white, and emphasis keeps that white (an accent on skin or
+  // clothes turns muddy) unless the reel sets one. On a light page: the reel's ink,
+  // no shadow, emphasis in the accent.
+  const onPage = Boolean(ink);
+  const color = onPage ? ink! : design.color ?? "#FBF8F2";
+  const accentColor = onPage ? accent : design.accent ?? color;
+  const shade = "#0B0D12";
+  const size = design.size ?? {editorial: 68, punch: 100, quiet: 54}[look];
+  const enter = interpolate(frame, [0, 6], [0, 1], {extrapolateRight: "clamp", easing: Easing.out(Easing.exp)});
+
+  return (
+    <AbsoluteFill
+      style={{
+        justifyContent: "flex-end",
+        alignItems: "center",
+        paddingBottom: bottom,
+        paddingLeft: SAFE_AREA.rail,
+        paddingRight: SAFE_AREA.rail,
+      }}
+    >
+      <div
+        style={{
+          fontSize: size,
+          lineHeight: look === "punch" ? 1.02 : 1.18,
+          textAlign: "center",
+          opacity: enter,
+          transform: `translateY(${(1 - enter) * 10}px)`,
+        }}
+      >
+        {words.map((word, index) => {
+          const spoken = frame >= word.frame;
+          const active = spoken && frame < (words[index + 1]?.frame ?? Infinity);
+          const lit = interpolate(frame, [word.frame, word.frame + 3], [0, 1], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+          });
+          const text = word.text.replaceAll("*", "");
+          const base = {
+            display: "inline-block",
+            margin: look === "punch" ? "0 0.12em" : "0 0.13em",
+            textShadow: onPage ? "none" : softShadow(shade),
+          } as const;
+          if (look === "punch") {
+            return (
+              <span
+                key={`${word.frame}-${text}`}
+                style={{
+                  ...base,
+                  fontFamily: sans,
+                  textTransform: "uppercase",
+                  letterSpacing: 0.5,
+                  color: word.emphasis ? design.accent ?? accent : color,
+                  WebkitTextStroke: onPage ? "0px" : `5px ${shade}D9`,
+                  paintOrder: "stroke fill",
+                  transform: `scale(${active ? 1 + 0.05 * lit : 1})`,
+                }}
+              >
+                {text}
+              </span>
+            );
+          }
+          const italic = word.emphasis;
+          return (
+            <span
+              key={`${word.frame}-${text}`}
+              style={{
+                ...base,
+                fontFamily: italic ? serif : sans,
+                fontStyle: italic ? "italic" : "normal",
+                fontWeight: italic ? 400 : look === "quiet" ? 600 : 700,
+                // The serif is lighter and smaller on the body: lift it to match.
+                fontSize: italic ? "1.28em" : "1em",
+                lineHeight: 0.9,
+                letterSpacing: italic ? 0 : -0.5,
+                color: italic && look === "editorial" ? accentColor : color,
+                // Editorial: words not yet said wait at half strength, then light up.
+                opacity: look === "editorial" ? 0.5 + 0.5 * lit : 1,
+              }}
+            >
+              {text}
+            </span>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 // Short-form caption style: a few big uppercase words that pop in together; the
 // word being spoken sits on a gold pill, and key words stay gold and larger.
 export const Caption = ({
   words,
   aboveCard,
-  look = "pill",
+  // New reels default to "editorial" (STYLE.md); earlier reels name their look.
+  look = "editorial",
   bottom,
   terms = [],
+  design = {},
+  accent = GOLD,
+  ink,
 }: {
   words: TimedCaptionWord[];
   aboveCard: boolean;
-  look?: "pill" | "highlight" | "ledger";
+  look?: "pill" | "highlight" | "ledger" | TypeLook;
   // Distance of the caption's foot from the frame's bottom edge, for layouts that
   // move the speaker (the stack window); the band default otherwise.
   bottom?: number;
   terms?: string[];
+  design?: CaptionDesign;
+  accent?: string;
+  // Set when the caption sits on a light page graphic: words take this ink colour.
+  ink?: string;
 }) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const pop = spring({frame, fps, config: {damping: 11, stiffness: 260, mass: 0.7}});
+  if (look === "editorial" || look === "punch" || look === "quiet") {
+    return (
+      <TypeCaption
+        words={words}
+        look={look}
+        design={design}
+        accent={accent}
+        ink={ink}
+        bottom={bottom ?? (aboveCard ? CARD_TOP_FROM_BOTTOM + 24 : SAFE_AREA.bottom + 20)}
+      />
+    );
+  }
   if (look === "highlight") {
     return <HighlightCaption words={words} aboveCard={aboveCard} />;
   }

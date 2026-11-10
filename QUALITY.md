@@ -51,6 +51,7 @@ or the reel does not ship.
 - Every other on-screen text (titles, labels, graphics, claim tags) is English. Ayah stays in Arabic script; explanatory terms keep the original word with its meaning beside it.
 - 2–4 words per caption group, one group on screen at a time, the spoken word highlighted.
 - Caption position follows the shot: off the face, clear of graphics and B-roll, moved per layout (split, circle, full-screen). The caption look (fonts, colour, animation) is planned per reel to fit its theme, with at most 3 type roles used by fixed rules.
+- New reels use a `STYLE.md` caption look (`editorial`, `punch` or `quiet`), named with its fonts in `beats.md`; no sticker captions (thick outline, pill behind the word).
 - All text sits inside y 168–1330 px on 1080×1920 (above the Shorts/Reels caption, handle and buttons) and clear of the right-hand action rail. Nothing meant to be read is under 28 px.
 - Captions never cover the face or repeat a graphic that already shows the words.
 
@@ -61,6 +62,8 @@ or the reel does not ship.
 - Titles land and hold dead still; exits are 40–50% shorter than entrances; arrivals ease out on a long tail.
 - 3–5 kinds of transition in a reel, each with a cause on screen; never the same entrance on every graphic.
 - Each reel's look comes from its subject and is written down as numbers before building (ground, ink, one accent, faces and sizes). One accent colour carries meaning. No dark void with floating elements, glow rings or decorative particles unless the subject itself calls for them.
+- The look is premium and calm by `STYLE.md` (tinted ground, never pure white or black; low saturation; margins of at least 90 px; arrivals of 14–20 frames with no bounce) and is not the previous reel's palette.
+- Every on-screen text passes the editor check in `STYLE.md`: none of the template tells (eyebrow labels with a bullet, UI cards, rubber stamps, sticker captions); a real artifact before typeset text where one exists; one phrase big with a one-line credit that carries the claim tag and the source.
 - B-roll layout is chosen per beat (circle, top/bottom split, speaker full screen with a card, or full-screen B-roll), with a reason, and varies across the reel.
 
 ## 6. Sound

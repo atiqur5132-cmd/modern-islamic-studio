@@ -24,7 +24,7 @@ Spoken captions are Hinglish (Roman Hindi), never Devanagari. All other on-scree
 
 ## Quality bar
 
-Every reel must clear `QUALITY.md`, the world-class standard the creator set. Read it before starting a reel and again before delivery; report every gate as pass or fail with evidence. Never call a reel finished or world class while a gate fails or is unchecked.
+Every reel must clear `QUALITY.md`, the world-class standard the creator set. On-screen text, each reel's theme and its captions follow `STYLE.md` (think like a senior human editor; no template look). Read it before starting a reel and again before delivery; report every gate as pass or fail with evidence. Never call a reel finished or world class while a gate fails or is unchecked.
 
 ## Working rules
 
