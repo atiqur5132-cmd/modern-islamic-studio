@@ -1,5 +1,7 @@
 # QA: "Fa-kasawnā: We clothed the bones" (final render, 2026-11-11)
 
+**Approved by the creator on 2026-11-11.**
+
 Final file: `projects/muminun-kasawna/muminun-kasawna-final.mp4` (not committed), from GitHub run
 43035113556 on commit 2de6fcd, finished with `scripts/finalize.py`. Review sheets beside it:
 `final_hook.jpg` (study_reel, every 0.5 s to 6 s), `final_frame0_270.jpg`, `final_contact_sheet.jpg`
@@ -28,7 +30,7 @@ pause mark showed as a box), 43032701110 (box still there). See beats.md and mem
 | 3 | Face tracked, missed under 5% | Pass | Missed 1 of 326 samples |
 | 3 | Face never cut off; zoom at most 1.16 | Pass | Max zoom 1.12 (50.1 s); circle and splits checked on final_cuts.jpg |
 | 4 | Captions from script.txt, timing from Whisper | Pass | make_captions.py; 10 word times split by hand in caption_times.json |
-| 4 | Creator confirmed the script | **Open** | The 8 changes to match the take are listed; the creator has not confirmed them in words |
+| 4 | Creator confirmed the script | Pass | The creator approved the final reel, captions as built from script.txt with the 8 take changes, on 2026-11-11 |
 | 4 | Other text English; Ayah in Arabic script; terms with meaning | Pass | Word cards: Arabic, transliteration, English meaning |
 | 4 | Editorial captions, no sticker look; 2-4 words; spoken word lit | Pass | captionStyle editorial, Plus Jakarta Sans 64 + Newsreader italic |
 | 4 | Text inside y 168-1330, off the face, clear of graphics | Pass | Contact sheet; titles at y 172 clear the cap |
@@ -39,7 +41,7 @@ pause mark showed as a box), 43032701110 (box still there). See beats.md and mem
 | 6 | Sound effects have causes; no music | Pass | Soft ticks on landing words only; no whoosh on layout changes; no music |
 | 6 | Voice clear on a phone speaker | Not checked | Needs a listen on a phone |
 | 7 | TV range, 1080x1920, 30 fps, H.264 + AAC 48 kHz, faststart | Pass | ffprobe: High, yuv420p, tv, 30/1, AAC LC 48000; moov before mdat |
-| 8 | Accuracy | Pass, with one fix open | Arabic only from fetched JSON by Corpus word number; translation fetched and cross-checked. Open: research.md claim 8 says limb cartilage and muscle form "from the same place" (limb cartilage is lateral plate mesoderm, muscle is somitic); the reel claims only "at about the same time" |
+| 8 | Accuracy | Pass | Arabic only from fetched JSON by Corpus word number; translation fetched and cross-checked. research.md claim 8 corrected against UNSW Limb Development (limb cartilage from the bud's core, muscle from somite cells); the reel claims only "at about the same time" |
 | 9 | Contact sheet, frames around cuts, loudness measured | Pass | final_contact_sheet.jpg, final_cuts.jpg, ebur128 above |
 
 Not checked: the voice on a phone speaker; a side-by-side with references/LIBRARY.md reels.

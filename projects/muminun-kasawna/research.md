@@ -60,8 +60,13 @@ is built and name the translator; not quoted here from memory.
    - Bone timeline: https://embryology.med.unsw.edu.au/embryology/index.php/Musculoskeletal_System_-_Bone_Development_Timeline
      "Endochondral ossification within the limb begins at Carnegie stage 18" (day 44);
      cartilage template replaced by bone over "week 5-12".
-   - Reading: cartilage and muscle come from the same somites and form at about the same time in
-     the limb (days 44–48). No source gives a clean "all bones first, then all flesh" order.
+   - Limb development: https://embryology.med.unsw.edu.au/embryology/index.php/Musculoskeletal_System_-_Limb_Development
+     (accessed 2026-11-11): the early limb bud has "a mesoderm core that vascularises and both somite
+     mesoderm and nerves invade"; "Embryonic skeletal muscles arise from the somite myotome region".
+   - Reading: in the limb, cartilage forms from the bud's own core and muscle from somite cells that
+     move in; both form at about the same time (days 44–48). (Corrected 2026-11-11: an earlier reading
+     here said both come from the same somites, which holds for the trunk, not the limb.) No source
+     gives a clean "all bones first, then all flesh" order.
 4. **Galen, On Semen (170s CE).** https://en.wikipedia.org/wiki/On_Semen (accessed 2026-11-11),
    citing Debru, "Physiology", in Hankinson (ed.), *The Cambridge Companion to Galen* (2008),
    pp. 278–280: Galen describes "an initial phase of semen, followed by an undifferentiated
@@ -79,7 +84,7 @@ is built and name the translator; not quoted here from memory.
 | 5 | Linking "clinging" to implantation | Interpretation | modern reading | Not in classical tafsir; tag `INTERPRETATION` |
 | 6 | mudghah = a small piece of flesh with no shape yet | Quranic context | Ibn Kathir | "Chewed" sense unverified, not used |
 | 7 | kasawnā = "We clothed"; same root as kiswah, clothing | Linguistic observation | Corpus ك س و | Ibn Kathir: "cover it and strengthen it" |
-| 8 | Bone (cartilage) and muscle form at about the same time, from the same place | Established science | UNSW Somitogenesis, Muscle and Bone timelines | Limb: days 44–48; ossification later |
+| 8 | Bone (cartilage) and muscle form at about the same time | Established science | UNSW Limb Development, Muscle and Bone timelines | Limb: days 44–48; ossification later. Not from the same place: limb cartilage from the bud's core, limb muscle from somite cells (corrected 2026-11-11; the reel never claimed the same place) |
 | 9 | The verse gives a picture, not a timetable | Interpretation | ours, from 7 and 8 | Some scholars read a strict sequence; we do not claim one either way |
 | 10 | Greek doctors (Galen) wrote of the embryo growing in stages centuries before the Quran | Historical report | On Semen; Debru 2008 | Galen's stages are not the same five; we claim only "stages" |
 | 11 | khalqan ākhar = "another creation"; many scholars, as Ibn Kathir, link it to the soul | Quranic context / interpretation | Ibn Kathir; Ibn Mas'ud hadith (Bukhari, Muslim) | Script says only "a new creation"; the soul is not claimed in the spoken line |

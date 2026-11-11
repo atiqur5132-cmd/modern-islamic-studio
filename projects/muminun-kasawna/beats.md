@@ -154,7 +154,7 @@ Downloads go to `public/` (not committed) once the creator approves these beats,
   likely not right (standard embryology: limb cartilage comes from the lateral plate mesoderm,
   limb muscle from the somites; to verify on the UNSW limb page).
   Beat 15a claims only "at about the same time", which the UNSW timelines support. Fix the ledger
-  wording before posting.
+  wording before posting. (Resolved 2026-11-11: research.md corrected against UNSW Limb Development.)
 - QUALITY §0: the chin sits near y 960 on the contact sheet, above the 1050 limit; checked again on stills when building.
 
 ## Built (2026-11-11), judged on stills only
