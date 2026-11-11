@@ -226,8 +226,20 @@ export const KAyah = ({o, cue}: {o: KAyahOverlay; cue: Cue}) => {
   const translationAt = o.translation ? cue(o.translation.at) : Infinity;
   const translation = arrive(frame, translationAt, 18);
   const stepsAt = o.stepsAt !== undefined ? cue(o.stepsAt) : Infinity;
-  // A pause mark only shows inside a run of words, never at an edge.
-  const shown = tokens.filter((t, i) => t.word !== null || (i > 0 && i < tokens.length - 1));
+  // A pause mark only shows inside a run of words, never at an edge. It is a combining
+  // sign: it rides in the same span as the word before it, after the space it sits on, as
+  // in the fetched text. Alone at the start of a span, Linux Chrome (the GitHub render)
+  // puts a dotted-circle placeholder in front of it, which Amiri Quran draws as a box.
+  const shown = tokens
+    .filter((t, i) => t.word !== null || (i > 0 && i < tokens.length - 1))
+    .reduce<{text: string; word: number | null}[]>((groups, t) => {
+      if (t.word === null && groups.length > 0) {
+        groups[groups.length - 1].text += ` ${t.text}`;
+      } else {
+        groups.push({text: t.text, word: t.word});
+      }
+      return groups;
+    }, []);
   const top = pip ? 700 : 360;
   return (
     <AbsoluteFill style={{backgroundColor: GROUND}}>
@@ -243,7 +255,7 @@ export const KAyah = ({o, cue}: {o: KAyahOverlay; cue: Cue}) => {
         </svg>
         <div style={{direction: "rtl", textAlign: "center", fontFamily: ARABIC_FONT, fontSize: o.size, lineHeight: pip ? 1.72 : 1.85, color: INK}}>
           {shown.map((t, i) => (
-            <span key={i} style={{color: lit(t.word) > 0 ? ACCENT : INK, opacity: t.word === null ? 0.6 : 0.78 + 0.22 * lit(t.word)}}>
+            <span key={i} style={{color: lit(t.word) > 0 ? ACCENT : INK, opacity: 0.78 + 0.22 * lit(t.word)}}>
               {t.text}{" "}
             </span>
           ))}
