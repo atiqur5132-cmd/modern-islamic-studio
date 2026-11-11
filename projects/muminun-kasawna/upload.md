@@ -11,7 +11,7 @@ Honesty rules for this copy (from research.md's claim ledger):
   time. The point of the reel is the word *kasawnā*, a picture of care, not a timetable.
 - Saheeh International translates kasawnā as "covered"; the root k-s-w means to clothe (kiswah,
   clothing). The copy says both.
-- The OpenStax drawing is CC BY 3.0 and must be credited; the credit line stays in both captions.
+- The OpenStax drawing is CC BY 3.0 and must be credited; the credit line stays in every caption, short or long.
 
 ## Why this copy should travel
 
@@ -25,7 +25,36 @@ Honesty rules for this copy (from research.md's claim ledger):
 - **One share reason**: a mother, or anyone expecting a baby.
 - **Five hashtags**, the most Instagram allows, all on topic.
 
-## Instagram (Reel caption)
+## One-line caption (the creator's choice for short captions)
+
+Many reels travel with a one-line caption: reach comes mostly from the video itself (watch time,
+rewatches, shares), and one line keeps every eye on it. The long caption below mainly helps Instagram
+search. With the one-liner, the sources and the honest notes go in the pinned comment, so nothing
+is lost; the OpenStax credit stays in the caption (CC BY), hidden behind "more".
+
+Pick one line (recommended first):
+1. Allah didn't say He joined flesh to the bones. He said He clothed them. 🤍
+2. You were once a single drop. 💧
+3. Drop, clinging, or clothed: which word stayed with you?
+
+Instagram, as posted (only the first line shows before "more"):
+
+Allah didn't say He joined flesh to the bones. He said He clothed them. 🤍
+
+Drawing: OpenStax, CC BY 3.0. Sources and notes in the pinned comment.
+#Quran #Islam #QuranicArabic #SurahMuminun #Embryology
+
+Facebook, as posted:
+
+Allah didn't say He joined flesh to the bones. He said He clothed them. 🤍
+
+Drawing: OpenStax, CC BY 3.0. Sources and notes in the first comment.
+#Quran #Islam #QuranicArabic
+
+With the one-liner, pin the longer comment under "Pinned first comment" below (it carries the
+sources and the notes).
+
+## Instagram (Reel caption, long version)
 
 First line, pick one (recommended first):
 1. The Quran didn't say Allah "joined" flesh to the bones. It says He clothed them. 🤍
@@ -69,7 +98,7 @@ towards the clothed one), and fa-kasawnā (from the fetched Ayah) in a rose box 
 inside the 4:5 feed crop and the 3:4 grid and reads at 128 px wide (`cover_crops.jpg`). Use the
 same file as the Facebook cover.
 
-## Facebook (Reel caption)
+## Facebook (Reel caption, long version)
 
 The Quran didn't say Allah "joined" flesh to the bones. It says He clothed them. 🤍
 
@@ -87,6 +116,10 @@ Translation: Saheeh International. Sources: Ibn Kathir; Quranic Arabic Corpus; U
 ## Pinned first comment (both platforms)
 
 The words of 23:12–14, one by one: nutfah (a drop) → ʿalaqah (that which clings / a clot of blood) → mudghah (a small piece of flesh) → ʿizām (bones) → fa-kasawnā al-ʿizāma laḥmā (then We clothed the bones with flesh) → khalqan ākhar (another creation). Many scholars, Ibn Kathir among them, explain "another creation" as the soul being breathed in. Linking ʿalaqah to the embryo attaching to the womb is a modern reading; the classical reading is a clot of blood. Both are shared here, so you can see the difference.
+
+With the one-line caption, add this paragraph to the same pinned comment:
+
+Not a timetable: bones and muscles form at about the same time, and the Greek doctor Galen described the embryo growing in stages in the 170s CE. The beauty is the word: kasawnā comes from k-s-w, the root of kiswah, clothing. Translation: Saheeh International (which renders kasawnā as "covered"). Sources: Ibn Kathir's Tafsir; Quranic Arabic Corpus; UNSW Embryology; Galen, On Semen. Visuals: drawing adapted from OpenStax, Anatomy & Physiology, CC BY 3.0; Galen's works, Basel 1538 (public domain); Pexels. The illustrations are drawn, not real embryos.
 
 ## Replies for the comments
 
