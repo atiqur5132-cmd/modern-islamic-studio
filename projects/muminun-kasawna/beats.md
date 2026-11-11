@@ -187,3 +187,25 @@ Changes from the plan while building:
 - Out of a stack board, the circle is now a hard cut (`Short.tsx`): no full-screen flash at 3.43 s.
 - Sound: no whoosh on layout changes (`stretchSounds: false`); one soft tick, three takes rotating,
   as each Quranic word or key word lands. Not heard yet.
+
+## Hook rebuilt after the first render (2026-11-11)
+
+`study_reel.py --ours` on the first GitHub render (run 43024445353) measured hook beats at 0.0, 2.8
+and 3.4 s, longest still 2.8 s: two strict QUALITY §1 gates failed. The tool counts a beat only when
+the whole picture changes (mean grey change ≥ 24); the tight cut and the drawings happened inside
+the dark lower half and did not count. New hook, every beat a change of the whole frame:
+
+| Time | Words | Picture |
+| --- | --- | --- |
+| 0.00 | Tum kabhi ek | Split: creator on top, the drop's crown below, "You were once / *a drop.*" |
+| 0.92 | *boond* | Cut: the drop fills the frame (graded toward steel blue) behind the creator's circle; "a drop" underlined |
+| 1.47 | (creator's cut) | The shot jumps tight on the crown |
+| 1.80 | itni *chhoti* | The whole picture shrinks to a point of light on the dark page |
+| 2.78 | dikhti | A fine ring lands round the point |
+| 3.43 | Aur Surah Mu'minun | Cut: creator full screen, "Surah Al-Mu'minun" on the wall above the cap |
+| 4.36 | tumhari ye poori kahani ko | Cut: circle over 23:14; each stage word lights as its drawing arrives |
+| 5.64 | ek hi verse mein | Cut: creator full screen, "*One verse.*" above |
+
+Measured on 10 fps stills with study_reel.py's own beat function (it reproduces the first render's
+numbers exactly): beats 0.0, 0.9, 2.1, 3.4, 4.4, 5.6 s; longest still 1.3 s. The circle now comes and
+goes on hard cuts (`pipCuts`), not slides.

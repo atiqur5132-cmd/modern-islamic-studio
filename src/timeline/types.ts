@@ -296,6 +296,7 @@ export const FULL_SCREEN_TYPES: Overlay["type"][] = [
   "qglobepip",
   "kayahpip",
   "kfootagepip",
+  "khookpip",
 ];
 
 // The speaker moves into the top window and the graphic takes the space below.
@@ -373,6 +374,8 @@ export type Edit = {
   captionHide?: {start: number; end: number; why?: string}[];
   // Left false, a full-screen stretch gets no whoosh in and out (calm reels, STYLE.md Sound).
   stretchSounds?: boolean;
+  // The speaker goes into and out of the corner circle on a hard cut, not a slide.
+  pipCuts?: boolean;
   // Files in public/footage the reel's components draw by name, for the GitHub render.
   assets?: string[];
 };

@@ -32,15 +32,24 @@ ILLUSTRATION = "Illustration"
 SURAH = "Surah Al-Mu'minun 23:14"
 
 OVERLAYS = [
-    # 1. "Tum kabhi ek boond the. Itni chhoti, ki aankh se dikhti bhi nahi." Creator on top.
-    {"type": "khook", "start": 0, "end": 3.433, "line": "You were once\n*a drop.*", "src": "mk-drop.mp4", "trim": 0.95,
-     "markAt": 0.92, "tightAt": 1.467, "pointAt": 2.20, "ringAt": 2.78},
+    # 1. "Tum kabhi ek boond the. Itni chhoti, ki aankh se dikhti bhi nahi." The creator on
+    # top with the drop's crown below; on "boond" the drop takes the whole frame behind the
+    # creator's circle; on the creator's cut it jumps tight; then it shrinks to a point.
+    # Every hook beat is a large change of the whole picture (study_reel.py measures them).
+    {"type": "khook", "start": 0, "end": 0.92, "line": "You were once\n*a drop.*", "src": "mk-drop.mp4", "trim": 0.95,
+     "markAt": 0.92, "tightAt": 9, "pointAt": 9, "ringAt": 9},
+    {"type": "khookpip", "start": 0.92, "end": 3.433, "line": "You were once\n*a drop.*", "src": "mk-drop.mp4",
+     "trim": 1.87, "markAt": 0.92, "tightAt": 1.467, "pointAt": 1.80, "ringAt": 2.78},
     # 2. "Aur Surah Mu'minun tumhari ye poori kahani ko, ek hi verse mein sunati hai."
-    {"type": "kayahpip", "start": 3.433, "end": 6.767, "credit": f"Quranic text · {SURAH}", "ayah": "23:14",
+    # Full screen on the Surah's name, the circle over 23:14 for "your whole story" (each
+    # stage word lights as its drawing arrives), full screen again on "One verse".
+    {"type": "ktitle", "start": 3.433, "end": 4.36, "text": "Surah Al-Mu'minun"},
+    {"type": "kayahpip", "start": 4.36, "end": 5.64, "credit": f"Quranic text · {SURAH}", "ayah": "23:14",
      "from": 1, "to": 21, "size": 64,
-     "lights": [{"from": 3, "at": 4.36}, {"from": 4, "at": 4.56}, {"from": 7, "at": 4.76}, {"from": 10, "at": 4.96},
-                {"from": 13, "at": 5.16}, {"from": 16, "to": 17, "at": 5.36}],
-     "bracket": {"text": "*One verse.*", "at": 5.64}, "stepsAt": 4.36},
+     "lights": [{"from": 3, "at": 4.46}, {"from": 4, "at": 4.62}, {"from": 7, "at": 4.78}, {"from": 10, "at": 4.94},
+                {"from": 13, "at": 5.10}, {"from": 16, "to": 17, "at": 5.26}],
+     "stepsAt": 4.46},
+    {"type": "ktitle", "start": 5.64, "end": 6.767, "text": "*One verse.*"},
     # 3-4. "Pehle tum the nutfah. Bas ek boond. Phir wo boond ek jagah chipak gayi." (read)
     {"type": "kword", "start": 6.767, "end": 10.367, "credit": f"Quranic context · Ibn Kathir on 23:13 · {ILLUSTRATION}",
      "word": {"ayah": "23:13", "from": 3, "at": 7.44}, "meaning": {"text": "*nutfah:* a drop", "at": 7.62},
@@ -129,6 +138,7 @@ def main():
     edit["grade"] = {"contrast": 1.04, "saturation": 0.92, "vignette": 0.12}
     edit["punchToZoom"] = 1.12
     edit["stretchSounds"] = False
+    edit["pipCuts"] = True
     edit["assets"] = ["mk-drop.mp4", "mk-dress.mp4", "mk-ultrasound.mp4", "mk-hand.mp4", "mk-galen.jpg", "mk-implant.jpg"]
     path.write_text(json.dumps(edit, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Saved {path.name}: {len(edit['segments'])} segments, {len(OVERLAYS)} overlays")

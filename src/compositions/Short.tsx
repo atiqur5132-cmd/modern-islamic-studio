@@ -51,7 +51,7 @@ import {QHook} from "../overlays/qibla/Hook";
 import {QiblaEarth} from "../overlays/qibla/QiblaEarth";
 import {KStack} from "../overlays/kasawna/Board";
 import {KHook} from "../overlays/kasawna/Hook";
-import {KAyah, KFootage, KPlate, KScience, KWord} from "../overlays/kasawna/Pages";
+import {KAyah, KFootage, KPlate, KScience, KTitle, KWord} from "../overlays/kasawna/Pages";
 import {CTA_TOP_Y} from "../overlays/Cta";
 import {cameraAt, emphasisPunches, ROOM_FRAMES} from "../timeline/camera";
 import {SOUND_SECONDS, soundCues} from "../timeline/sfx";
@@ -269,7 +269,10 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue, palette:
     case "qayah":
       return <QAyah o={overlay} cue={cue} />;
     case "khook":
+    case "khookpip":
       return <KHook o={overlay} cue={cue} />;
+    case "ktitle":
+      return <KTitle o={overlay} cue={cue} />;
     case "kword":
       return <KWord o={overlay} cue={cue} />;
     case "kplate":
@@ -302,6 +305,7 @@ export const Short = ({
   captionTerms = [],
   palette = {ground: NAVY, ink: NAVY, accent: GOLD},
   stretchSounds = true,
+  pipCuts = false,
 }: Edit) => {
   const frame = useCurrentFrame();
   const src = staticFile(`footage/${footage}`);
@@ -343,7 +347,7 @@ export const Short = ({
   const pip = Math.max(
     0,
     ...stretches.map(({start, end}) => {
-      if (end - start < 2 * PIP_MOVE_FRAMES) {
+      if (end - start < (pipCuts ? 2 : 2 * PIP_MOVE_FRAMES)) {
         return 0;
       }
       // Straight out of a stack board the circle is a hard cut, in place on the cut's
@@ -352,7 +356,11 @@ export const Short = ({
       const from = settledStart(start, PIP_MOVE_FRAMES);
       return interpolate(
         frame,
-        fromStack ? [start - 1, start, end - PIP_MOVE_FRAMES, end] : [from, from + PIP_MOVE_FRAMES, end - PIP_MOVE_FRAMES, end],
+        pipCuts
+          ? [start - 1, start, end - 1, end]
+          : fromStack
+            ? [start - 1, start, end - PIP_MOVE_FRAMES, end]
+            : [from, from + PIP_MOVE_FRAMES, end - PIP_MOVE_FRAMES, end],
         [0, 1, 1, 0],
         {extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic)},
       );

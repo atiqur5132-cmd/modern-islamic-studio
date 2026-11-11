@@ -30,8 +30,9 @@ export type KForm = {
 // The hook (stack layout): the speaker in the top window, a falling drop below with the
 // opening line. The drop crowns, the shot jumps tight, shrinks to a point of light and a
 // fine ring marks where it almost vanishes.
+// "khookpip" is the same drop filling the frame behind the speaker's circle.
 export type KHookOverlay = Timed & {
-  type: "khook";
+  type: "khook" | "khookpip";
   line: string;
   src: string;
   trim: number;
@@ -129,7 +130,12 @@ export type KFootageOverlay = Timed & {
   zoom?: number;
 };
 
+// A title set on the wall above the creator's head while they speak full screen (the
+// Surah's name, "One verse."), in the page's dark ink. *stars* set italic.
+export type KTitleOverlay = Timed & {type: "ktitle"; text: string};
+
 export type KasawnaOverlay =
+  | KTitleOverlay
   | KHookOverlay
   | KWordOverlay
   | KPlateOverlay

@@ -1,7 +1,7 @@
 import {CSSProperties} from "react";
 import {AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame} from "remotion";
 import {ARABIC_FONT} from "../../theme";
-import {KAyahOverlay, KFootageOverlay, KForm, KPlateOverlay, KScienceOverlay, KWordOverlay} from "../../timeline/kasawnaTypes";
+import {KAyahOverlay, KFootageOverlay, KForm, KPlateOverlay, KScienceOverlay, KTitleOverlay, KWordOverlay} from "../../timeline/kasawnaTypes";
 import {Cue} from "../falak/common";
 import {CONTACT, Form, FormState} from "./Form";
 import {ACCENT, arrive, ayahTokens, ayahWords, draw, GROUND, INK, MUTED, RAIL, SANS, SERIF, SIDE, starParts, TEXT_TOP} from "./look";
@@ -396,6 +396,20 @@ export const KFootage = ({o}: {o: KFootageOverlay}) => {
           <Credit text={o.credit} />
         </>
       ) : null}
+    </AbsoluteFill>
+  );
+};
+
+// A title on the wall above the creator's head (the pale wall takes the page's dark
+// ink), arriving on its spoken word.
+export const KTitle = ({o}: {o: KTitleOverlay; cue: Cue}) => {
+  const frame = useCurrentFrame();
+  const t = arrive(frame, 0, 10);
+  return (
+    <AbsoluteFill>
+      <div style={{position: "absolute", left: SIDE, right: RAIL, top: 172, opacity: t, transform: `translateY(${(1 - t) * 14}px)`}}>
+        <Serif text={o.text} size={72} color={GROUND} />
+      </div>
     </AbsoluteFill>
   );
 };
