@@ -1,4 +1,4 @@
-import {Easing, interpolate} from "remotion";
+import {cancelRender, continueRender, delayRender, Easing, interpolate, staticFile} from "remotion";
 import {AYAHS} from "../../data/quran";
 import {FONTS} from "../../fonts";
 
@@ -15,6 +15,23 @@ export const ACCENT = "#C98170";
 // Two Latin faces by fixed rules: words and credits in Plus Jakarta Sans, meanings and
 // emphasis in Newsreader (italic for transliterations). Arabic is Amiri Quran.
 export const SANS = FONTS["Plus Jakarta Sans"];
+
+// Arabic in this reel uses the whole Amiri Quran font (public/fonts/amiri-quran.woff, the
+// unsplit file Google Fonts serves, SIL OFL), not the Google subsets that theme.ts loads.
+// With the subsets, a pause mark after a space (the space from the Latin file, the mark
+// from the Arabic one) rendered as an empty box on the GitHub (Linux) render. One file
+// holds both, so the text is drawn exactly as fetched.
+export const ARABIC = "Amiri Quran Whole";
+if (typeof document !== "undefined" && ![...document.fonts].some((f) => f.family === ARABIC)) {
+  const handle = delayRender("Loading the whole Amiri Quran font");
+  new FontFace(ARABIC, `url(${staticFile("fonts/amiri-quran.woff")}) format("woff")`)
+    .load()
+    .then((face) => {
+      document.fonts.add(face);
+      continueRender(handle);
+    })
+    .catch((error) => cancelRender(error));
+}
 export const SERIF = FONTS.Newsreader;
 
 // Text that must be read stays inside y 168-1330, with side margins of at least 90 px

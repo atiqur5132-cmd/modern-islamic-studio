@@ -45,7 +45,7 @@ OVERLAYS = [
     # stage word lights as its drawing arrives), full screen again on "One verse".
     {"type": "ktitle", "start": 3.433, "end": 4.36, "text": "Surah Al-Mu'minun"},
     {"type": "kayahpip", "start": 4.36, "end": 5.64, "credit": f"Quranic text · {SURAH}", "ayah": "23:14",
-     "from": 1, "to": 21, "size": 64,
+     "from": 1, "to": 21, "size": 60,
      "lights": [{"from": 3, "at": 4.46}, {"from": 4, "at": 4.62}, {"from": 7, "at": 4.78}, {"from": 10, "at": 4.94},
                 {"from": 13, "at": 5.10}, {"from": 16, "to": 17, "at": 5.26}],
      "stepsAt": 4.46},

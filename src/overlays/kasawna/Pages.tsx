@@ -1,10 +1,9 @@
 import {CSSProperties} from "react";
 import {AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame} from "remotion";
-import {ARABIC_FONT} from "../../theme";
 import {KAyahOverlay, KFootageOverlay, KForm, KPlateOverlay, KScienceOverlay, KTitleOverlay, KWordOverlay} from "../../timeline/kasawnaTypes";
 import {Cue} from "../falak/common";
 import {CONTACT, Form, FormState} from "./Form";
-import {ACCENT, arrive, ayahTokens, ayahWords, draw, GROUND, INK, MUTED, RAIL, SANS, SERIF, SIDE, starParts, TEXT_TOP} from "./look";
+import {ACCENT, ARABIC, arrive, ayahTokens, ayahWords, draw, GROUND, INK, MUTED, RAIL, SANS, SERIF, SIDE, starParts, TEXT_TOP} from "./look";
 
 // The documentary credit: the claim kind first, then the source, small and quiet, in
 // sentence case. Multi-part credits are split on " · ".
@@ -71,7 +70,7 @@ const Serif = ({text, size, color = INK, mark, markProgress = 0}: {text: string;
 
 // An Arabic word or phrase from the verified Ayah, never typed.
 export const Arabic = ({ayah, from, to, size, color = ACCENT, style}: {ayah: string; from: number; to?: number; size: number; color?: string; style?: CSSProperties}) => (
-  <div style={{direction: "rtl", display: "inline-block", fontFamily: ARABIC_FONT, fontSize: size, lineHeight: 1.6, color, ...style}}>
+  <div style={{direction: "rtl", display: "inline-block", fontFamily: ARABIC, fontSize: size, lineHeight: 1.6, color, ...style}}>
     {ayahWords(ayah, from, to)}
   </div>
 );
@@ -227,14 +226,15 @@ export const KAyah = ({o, cue}: {o: KAyahOverlay; cue: Cue}) => {
   const translation = arrive(frame, translationAt, 18);
   const stepsAt = o.stepsAt !== undefined ? cue(o.stepsAt) : Infinity;
   // A pause mark only shows inside a run of words, never at an edge. It is a combining
-  // sign: it rides in the same span as the word before it, after the space it sits on, as
-  // in the fetched text. Alone at the start of a span, Linux Chrome (the GitHub render)
-  // puts a dotted-circle placeholder in front of it, which Amiri Quran draws as a box.
+  // sign, set on the end of the word before it: Amiri Quran places it there correctly,
+  // while after a space it floats a line too high (whole font) or comes out as a box (the
+  // Google subsets on the Linux render). Only the space between a word and its sign is
+  // left out; every letter and mark stays as fetched, in order.
   const shown = tokens
     .filter((t, i) => t.word !== null || (i > 0 && i < tokens.length - 1))
     .reduce<{text: string; word: number | null}[]>((groups, t) => {
       if (t.word === null && groups.length > 0) {
-        groups[groups.length - 1].text += ` ${t.text}`;
+        groups[groups.length - 1].text += t.text;
       } else {
         groups.push({text: t.text, word: t.word});
       }
@@ -253,7 +253,7 @@ export const KAyah = ({o, cue}: {o: KAyahOverlay; cue: Cue}) => {
         <svg width={1080 - 2 * SIDE} height={4} style={{display: "block", marginBottom: 18, opacity: bracket}}>
           <line x1={(1 - bracket) * 448} y1={2} x2={448 + bracket * 448} y2={2} stroke={ACCENT} strokeWidth={3} />
         </svg>
-        <div style={{direction: "rtl", textAlign: "center", fontFamily: ARABIC_FONT, fontSize: o.size, lineHeight: pip ? 1.72 : 1.85, color: INK}}>
+        <div style={{direction: "rtl", textAlign: "center", fontFamily: ARABIC, fontSize: o.size, lineHeight: pip ? 2.1 : 1.85, color: INK, textWrap: "balance"}}>
           {shown.map((t, i) => (
             <span key={i} style={{color: lit(t.word) > 0 ? ACCENT : INK, opacity: 0.78 + 0.22 * lit(t.word)}}>
               {t.text}{" "}

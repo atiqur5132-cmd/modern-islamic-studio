@@ -3,9 +3,8 @@ import {KStackOverlay} from "../../timeline/kasawnaTypes";
 import {Cue} from "../falak/common";
 import {STACK_HEIGHT, STACK_MOVE_FRAMES} from "../yawm/look";
 import {Form} from "./Form";
-import {ACCENT, arrive, ayahWords, draw, GROUND, INK, leave, MUTED, RAIL, SANS, SERIF, SIDE} from "./look";
+import {ACCENT, ARABIC, arrive, ayahWords, draw, GROUND, INK, leave, MUTED, RAIL, SANS, SERIF, SIDE} from "./look";
 import {Arabic} from "./Pages";
-import {ARABIC_FONT} from "../../theme";
 
 const CLAMP = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
 // Text on the board stays above the platform's caption and buttons.
@@ -99,7 +98,7 @@ const Kasawna = ({o, cue}: {o: KStackOverlay; cue: Cue}) => {
       >
         <div style={{direction: "rtl", display: "flex", alignItems: "baseline", gap: 26}}>
           <Arabic ayah={word.ayah} from={word.from} size={210} />
-          <div style={{fontFamily: ARABIC_FONT, fontSize: 96, color: INK, opacity: 0.8}}>{ayahWords(word.ayah, word.from + 1, word.bigTo ?? word.from + 2)}</div>
+          <div style={{fontFamily: ARABIC, fontSize: 96, color: INK, opacity: 0.8}}>{ayahWords(word.ayah, word.from + 1, word.bigTo ?? word.from + 2)}</div>
         </div>
       </div>
       {/* After the cut: the bare skeleton, then the flesh pulled on. */}

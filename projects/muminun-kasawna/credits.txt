@@ -20,3 +20,8 @@ Sources for claims (see research.md)
 - Quranic Arabic Corpus dictionary: roots '-l-q, m-d-gh, k-s-w.
 - UNSW Embryology (Mark Hill): Implantation; Somitogenesis; muscle and bone development timelines.
 - Galen, On Semen (170s CE); Debru, "Physiology", in The Cambridge Companion to Galen (2008), pp. 278-280.
+
+Fonts
+- Arabic: Amiri Quran by Khaled Hosny (SIL Open Font License 1.1), bundled whole as public/fonts/amiri-quran.woff
+  (the unsplit file Google Fonts serves), so the pause mark in 23:14 renders on the GitHub (Linux) render.
+- Latin: Plus Jakarta Sans and Newsreader (SIL OFL), via Google Fonts.
