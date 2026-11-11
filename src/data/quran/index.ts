@@ -10,6 +10,9 @@ import a2_144 from "./2-144.json";
 import a2_203 from "./2-203.json";
 import a2_23 from "./2-23.json";
 import a21_33 from "./21-33.json";
+import a23_12 from "./23-12.json";
+import a23_13 from "./23-13.json";
+import a23_14 from "./23-14.json";
 import a32_14 from "./32-14.json";
 import a36_1 from "./36-1.json";
 import a39_5 from "./39-5.json";
@@ -43,6 +46,9 @@ export const AYAHS = {
   [a2_203.key]: a2_203,
   [a2_23.key]: a2_23,
   [a21_33.key]: a21_33,
+  [a23_12.key]: a23_12,
+  [a23_13.key]: a23_13,
+  [a23_14.key]: a23_14,
   [a32_14.key]: a32_14,
   [a36_1.key]: a36_1,
   [a39_5.key]: a39_5,

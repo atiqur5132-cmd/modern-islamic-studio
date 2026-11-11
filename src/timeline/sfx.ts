@@ -178,6 +178,21 @@ export const soundCues = (
       }
       cues.push({frame: first + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.6});
       cues.push({frame: second + AFTER_PICTURE, sound: "impact", volume: IMPACT_VOLUME * 0.6});
+    } else if (overlay.type === "kword" || overlay.type === "kstack" || overlay.type === "kplate" || overlay.type === "kayah" || overlay.type === "kayahpip") {
+      // "Fa-kasawnā": one soft tick as each Quranic word or key word lands, nothing else.
+      let lands: (number | undefined)[] = [];
+      if (overlay.type === "kplate") {
+        lands = [overlay.count.at];
+      } else if (overlay.type === "kayah" || overlay.type === "kayahpip") {
+        lands = [overlay.bracket?.at, overlay.translation?.at];
+      } else if (overlay.type === "kstack") {
+        lands = [overlay.word?.at, overlay.clothed?.at];
+      } else if (overlay.type === "kword") {
+        lands = [overlay.word?.at];
+      }
+      lands.filter((t): t is number => t !== undefined).forEach((time) => {
+        cues.push({frame: at(time) + AFTER_PICTURE, sound: SOFT_TICKS[ctaTakes++ % 3], volume: TICK_VOLUME * 1.4});
+      });
     } else if (overlay.type === "ayahstrips") {
       overlay.strips.forEach((strip, index) => {
         if (strip.at > overlay.start) {

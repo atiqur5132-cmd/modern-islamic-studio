@@ -1,4 +1,5 @@
 import {FlatOverlay} from "./flatTypes";
+import {KasawnaOverlay} from "./kasawnaTypes";
 import {QiblaOverlay} from "./qiblaTypes";
 
 // All times are in seconds on the source footage, so overlays stay on the
@@ -244,6 +245,7 @@ export type PullQuoteOverlay = Timed & {
 
 export type Overlay =
   | PullQuoteOverlay
+  | KasawnaOverlay
   | FlatOverlay
   | QiblaOverlay
   | CtaOverlay
@@ -292,10 +294,12 @@ export const FULL_SCREEN_TYPES: Overlay["type"][] = [
   "nest",
   "qquote",
   "qglobepip",
+  "kayahpip",
+  "kfootagepip",
 ];
 
 // The speaker moves into the top window and the graphic takes the space below.
-export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto", "qboard"];
+export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto", "qboard", "khook", "kstack"];
 
 // These cover the whole frame with the speaker off screen (drawn over the speaker);
 // they join a full-screen stretch they touch, so the circle never flashes between them.
@@ -311,6 +315,11 @@ export const COVER_TYPES: Overlay["type"][] = [
   "qfootage",
   "qglobe",
   "qayah",
+  "kword",
+  "kplate",
+  "kayah",
+  "kscience",
+  "kfootage",
 ];
 
 export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};
@@ -362,6 +371,8 @@ export type Edit = {
   // Source-time stretches where a graphic is the hero (recitation, letter by letter):
   // no caption starts inside them.
   captionHide?: {start: number; end: number; why?: string}[];
+  // Left false, a full-screen stretch gets no whoosh in and out (calm reels, STYLE.md Sound).
+  stretchSounds?: boolean;
   // Files in public/footage the reel's components draw by name, for the GitHub render.
   assets?: string[];
 };

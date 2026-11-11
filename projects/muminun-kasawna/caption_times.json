@@ -1,0 +1,15 @@
+{
+  "why": "Whisper merged these words into one (sachme, bangai, saath saath) or heard them faintly (I'm very bad at). Times are split from the merged Whisper word's span on the take, 2026-11-11.",
+  "words": [
+    {"text": "sach", "near": 12.94, "start": 12.94, "end": 13.16},
+    {"text": "mein,", "near": 13.38, "start": 13.16, "end": 13.36},
+    {"text": "chhathe-saatwe", "near": 13.70, "start": 13.38, "end": 14.0},
+    {"text": "ban", "near": 20.30, "start": 20.30, "end": 20.48},
+    {"text": "gayi", "near": 20.68, "start": 20.48, "end": 20.66},
+    {"text": "saath-saath", "near": 41.74, "start": 41.32, "end": 41.88},
+    {"text": "I'm", "near": 63.36, "start": 63.48, "end": 63.62},
+    {"text": "very", "near": 63.60, "start": 63.64, "end": 63.86},
+    {"text": "bad", "near": 63.64, "start": 63.88, "end": 64.16},
+    {"text": "at", "near": 63.88, "start": 64.18, "end": 64.40}
+  ]
+}

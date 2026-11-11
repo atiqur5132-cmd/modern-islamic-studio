@@ -1,0 +1,22 @@
+Credits and sources: "Fa-kasawna: We clothed the bones" (Al-Mu'minun 23:12-14)
+Licences read on each file's own page, 2026-11-11.
+
+Quran
+- Arabic of 23:12-14: api.quran.com v4 (text_uthmani), cross-checked with api.alquran.cloud (scripts/fetch_ayah.py).
+- Translation of 23:14: Saheeh International (api.quran.com translation 20, cross-checked with alquran.cloud en.sahih).
+
+Pictures and footage
+- Water drop: "A water drop is shown in the water", Film Composite, Pexels (pexels.com/video/16478020). Pexels licence.
+- Mother dressing her baby: Karolina Grabowska (Kaboompics), Pexels (pexels.com/video/8909618). Pexels licence.
+- Ultrasound: MART PRODUCTION, Pexels (pexels.com/video/7088947), cropped to the scan. Pexels licence.
+- Baby's hand: William Fortunato, Pexels (pexels.com/video/6392156). Pexels licence.
+- Implantation drawing: OpenStax College, Anatomy & Physiology, "2905 Implantation.jpg" (Wikimedia Commons), CC BY 3.0.
+  Adapted: panel 1 only, labels and pointer lines removed.
+- Galen's collected works in Greek, title page, Basel 1538: "Galenou Apanta.tif" (Wikimedia Commons), public domain.
+- The drop, wall, lump, skeleton, cloth layer and limb section are drawn in code for this reel (illustrations).
+
+Sources for claims (see research.md)
+- Ibn Kathir, Tafsir on 23:12-16 (quran.com, abridged English).
+- Quranic Arabic Corpus dictionary: roots '-l-q, m-d-gh, k-s-w.
+- UNSW Embryology (Mark Hill): Implantation; Somitogenesis; muscle and bone development timelines.
+- Galen, On Semen (170s CE); Debru, "Physiology", in The Cambridge Companion to Galen (2008), pp. 278-280.

@@ -49,6 +49,9 @@ import {Verdicts} from "../overlays/flat/Verdicts";
 import {QAyah, QBoard, QChest, QCompass, QFootage, QQuote} from "../overlays/qibla/Cards";
 import {QHook} from "../overlays/qibla/Hook";
 import {QiblaEarth} from "../overlays/qibla/QiblaEarth";
+import {KStack} from "../overlays/kasawna/Board";
+import {KHook} from "../overlays/kasawna/Hook";
+import {KAyah, KFootage, KPlate, KScience, KWord} from "../overlays/kasawna/Pages";
 import {CTA_TOP_Y} from "../overlays/Cta";
 import {cameraAt, emphasisPunches, ROOM_FRAMES} from "../timeline/camera";
 import {SOUND_SECONDS, soundCues} from "../timeline/sfx";
@@ -265,6 +268,22 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue, palette:
       return <QiblaEarth o={overlay} cue={cue} />;
     case "qayah":
       return <QAyah o={overlay} cue={cue} />;
+    case "khook":
+      return <KHook o={overlay} cue={cue} />;
+    case "kword":
+      return <KWord o={overlay} cue={cue} />;
+    case "kplate":
+      return <KPlate o={overlay} cue={cue} />;
+    case "kayah":
+    case "kayahpip":
+      return <KAyah o={overlay} cue={cue} />;
+    case "kstack":
+      return <KStack o={overlay} cue={cue} />;
+    case "kscience":
+      return <KScience o={overlay} cue={cue} />;
+    case "kfootage":
+    case "kfootagepip":
+      return <KFootage o={overlay} />;
   }
 };
 
@@ -282,6 +301,7 @@ export const Short = ({
   captionHide = [],
   captionTerms = [],
   palette = {ground: NAVY, ink: NAVY, accent: GOLD},
+  stretchSounds = true,
 }: Edit) => {
   const frame = useCurrentFrame();
   const src = staticFile(`footage/${footage}`);
@@ -326,10 +346,13 @@ export const Short = ({
       if (end - start < 2 * PIP_MOVE_FRAMES) {
         return 0;
       }
+      // Straight out of a stack board the circle is a hard cut, in place on the cut's
+      // first frame, so the speaker never flashes full screen between the two layouts.
+      const fromStack = stackRanges.some((range) => Math.abs(range.end - start) <= 1);
       const from = settledStart(start, PIP_MOVE_FRAMES);
       return interpolate(
         frame,
-        [from, from + PIP_MOVE_FRAMES, end - PIP_MOVE_FRAMES, end],
+        fromStack ? [start - 1, start, end - PIP_MOVE_FRAMES, end] : [from, from + PIP_MOVE_FRAMES, end - PIP_MOVE_FRAMES, end],
         [0, 1, 1, 0],
         {extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic)},
       );
@@ -371,7 +394,7 @@ export const Short = ({
     .join(" ")
     .trim();
 
-  const cues = soundCues(segments, overlays, stretches);
+  const cues = soundCues(segments, overlays, stretchSounds ? stretches : []);
 
   const renderTimed = (overlay: Overlay) => {
     const {start, end} = outputRange(segments, overlay);
