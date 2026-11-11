@@ -113,6 +113,47 @@ Translation: Saheeh International. Sources: Ibn Kathir; Quranic Arabic Corpus; U
 
 #Quran #Islam #QuranicArabic
 
+## YouTube Shorts
+
+Asked for by the creator on 2026-11-11. The video's end cards show Instagram and Facebook (Follow,
+like and comment); a Subscribe version would need its own render (cta-rules), so this upload uses
+the same file.
+
+**Title** (pick one; the first ~40 characters show on the Short, so the hook comes first):
+1. Allah said He clothed the bones 🤍 Quran 23:14
+2. You were once a single drop 💧 Surah Al-Mu'minun
+3. The most beautiful word in Quran 23:14
+
+**Description:**
+
+The Quran didn't say Allah "joined" flesh to the bones. It says He clothed them.
+
+Surah Al-Mu'minun 23:12–14 tells the story of every human body in a few words:
+nutfah (a drop) → ʿalaqah (that which clings; classical scholars like Ibn Kathir read it as a clot of blood) → mudghah (a small piece of flesh, no shape yet) → ʿizām (bones) → fa-kasawnā al-ʿizāma laḥmā ("then We clothed the bones with flesh") → khalqan ākhar ("another creation").
+
+Kasawnā comes from the root k-s-w, the same root as kiswah, clothing. Like a mother dressing her child.
+
+Honest notes: linking ʿalaqah to the embryo attaching to the womb wall (around day 6–7) is a modern interpretation, not the classical reading. Bones and muscles form at about the same time, so the verse is a picture of care, not a timetable. The Greek doctor Galen also described the embryo growing in stages, in the 170s CE.
+
+Which word stayed with you: drop, clinging, or clothed? Tell me in the comments.
+
+Quran 23:14, translation Saheeh International (which renders kasawnā as "covered").
+Sources: Ibn Kathir's Tafsir; Quranic Arabic Corpus; UNSW Embryology; Galen, On Semen (170s CE).
+Visuals: drawing adapted from OpenStax, Anatomy & Physiology (CC BY 3.0); Galen's works, Basel 1538 (public domain); Pexels. The illustrations are drawn, not real embryos.
+
+#Shorts #Quran #Islam #QuranicArabic #SurahMuminun
+
+**Tags** (YouTube Studio → Show more → Tags):
+Quran, Surah Al-Muminun, Surah Muminun 23:14, Quran 23:14, We clothed the bones with flesh, kasawna, nutfah, alaqah, mudghah, Quranic Arabic, Quran words, Quran embryo, Islam, Ibn Kathir, Islamic shorts, Hindi Islamic video
+
+**Pinned comment** (the description carries the notes, so the comment asks the question):
+
+Which word stayed with you: drop 💧, clinging 🔗, or clothed 🧥? Mine is kasawnā: Allah didn't say He joined flesh to the bones, He said He clothed them.
+
+**Thumbnail:** when uploading in the YouTube app, pick the frame at 0.0 s (the creator with the
+drop's crown and "You were once a drop."); it is the strongest. If your YouTube Studio offers a
+custom thumbnail upload for Shorts, use `cover.jpg` (not checked whether this account has it).
+
 ## Pinned first comment (both platforms)
 
 The words of 23:12–14, one by one: nutfah (a drop) → ʿalaqah (that which clings / a clot of blood) → mudghah (a small piece of flesh) → ʿizām (bones) → fa-kasawnā al-ʿizāma laḥmā (then We clothed the bones with flesh) → khalqan ākhar (another creation). Many scholars, Ibn Kathir among them, explain "another creation" as the soul being breathed in. Linking ʿalaqah to the embryo attaching to the womb is a modern reading; the classical reading is a clot of blood. Both are shared here, so you can see the difference.
