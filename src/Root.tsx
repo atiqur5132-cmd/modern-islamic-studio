@@ -6,6 +6,7 @@ import {Thumbnail} from "./compositions/Thumbnail";
 import {YawmThumbnail} from "./compositions/YawmThumbnail";
 import {FlatThumbnail} from "./compositions/FlatThumbnail";
 import {QiblaThumbnail} from "./compositions/QiblaThumbnail";
+import {MuminunThumbnail} from "./compositions/MuminunThumbnail";
 import {FilTerrainTest} from "./scenes/fil/TerrainScene";
 import yawmStats from "../projects/yawm-365/quran_stats.json";
 import {Edit, editDurationInFrames, FPS} from "./timeline/types";
@@ -57,6 +58,13 @@ export const Root = () => (
       id="QiblaThumbnail"
       component={QiblaThumbnail}
       defaultProps={{photo: "qb-thumb.png", face: [534, 628] as [number, number], at: [540, 1090] as [number, number], scale: 1.0, panelTop: 548}}
+      durationInFrames={1}
+      {...SHORTS}
+    />
+    <Composition
+      id="MuminunThumbnail"
+      component={MuminunThumbnail}
+      defaultProps={{photo: "mk-thumb.png", face: [509, 718] as [number, number], at: [509, 1078] as [number, number], scale: 1.0, panelTop: 600}}
       durationInFrames={1}
       {...SHORTS}
     />
