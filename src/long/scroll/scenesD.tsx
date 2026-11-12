@@ -265,7 +265,7 @@ export const DataScene = ({cues}: P) => {
           at most, of the difference in well-being
         </Label>
       </div>
-      <Big at={l94} top={780} size={80} width={900} outAt={l95 - 6}>
+      <Big at={l94} top={800} left={1160} size={80} width={640} outAt={l95 - 6}>
         Not poison.
       </Big>
       {/* the average hides people */}
@@ -337,7 +337,7 @@ export const DetoxScene = ({cues}: P) => {
           <div style={{marginTop: 24, fontFamily: SANS, fontWeight: 700, fontSize: 34, color: LOOK.ivory}}>— Peter Grinspoon, MD</div>
           <div style={{marginTop: 6, fontFamily: SANS, fontWeight: 600, fontSize: 28, color: LOOK.muted}}>Expert view · Harvard Health Publishing, 26 February 2020</div>
         </div>
-        <Label at={l101} left={1180} top={450} size={40} color={LOOK.ivory} width={620}>
+        <Label at={l101} left={1240} top={790} size={38} color={LOOK.ivory} width={560}>
           It isn’t a toxin. It’s part of your brain.
         </Label>
       </div>

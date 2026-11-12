@@ -73,7 +73,17 @@ of voice.
 `script.txt`: 152 lines, 1,546 words, about 7.8 min at 3.3 words/s (8.5–9 min with pauses and
 visuals). Assumed until the creator answers: YouTube subscribe CTA, one practical idea at the end.
 
-Still to verify before the final render (the script relies on them):
+Checked 2026-11-13 (night of the build):
+- Schultz's set-up: Schultz, "Dopamine reward prediction error coding", *Dialogues in Clinical
+  Neuroscience* 18(1):23–32 (2016), PMC4826767: dopamine neurons respond "when a stimulus, such
+  as a light, picture, or sound predicts a reward", "remain at baseline activity for fully
+  predicted rewards", and the monkeys' rewards are fruit juices. Lines 49–51 hold.
+- Pigeons on ratio schedules: pigeon key-pecking on variable-ratio schedules is standard (e.g.
+  "Yoked variable-ratio and variable-interval responding in pigeons", JEAB, PMC1333627); secondary
+  sources describe Ferster & Skinner (1957) as mostly pigeon work. The three-box scene stays
+  tagged `Illustration`.
+
+Earlier list (now settled as above):
 - **Skinner's pigeons and the three boxes** (fixed every time, every 10th peck, random): Ferster &
   Skinner (1957) used pigeons, but the book was not opened. The three-box scene is our
   illustration of the schedules; tag it `ILLUSTRATION`, and check the pigeon detail in the book or
