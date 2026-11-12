@@ -5,8 +5,10 @@ import {LOOK} from "./look";
 // Reels are abstract tiles: a tone, a shape and two text bars, enough to read as "a reel".
 const TONES = ["#4b5a6e", "#6e5a4b", "#4b6e62", "#5f4b6e", "#6e4b55", "#55604a", "#46607a", "#7a6446"];
 
+export const reelTone = (n: number, good = false) => (good ? LOOK.amber : TONES[((n % TONES.length) + TONES.length) % TONES.length]);
+
 export const Reel = ({n, good = false, gray = false}: {n: number; good?: boolean; gray?: boolean}) => {
-  const tone = good ? LOOK.amber : TONES[((n % TONES.length) + TONES.length) % TONES.length];
+  const tone = reelTone(n, good);
   const shape = ((n * 7) % 3 + 3) % 3;
   return (
     <div

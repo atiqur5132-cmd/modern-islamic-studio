@@ -1,34 +1,56 @@
 import {AbsoluteFill, interpolate, useCurrentFrame} from "remotion";
 import {arrive, CLAMP, LOOK, MARGIN, SANS, SERIF} from "./look";
 import {Big, Credit, Drift, Ground, Label} from "./parts";
-import {Phone, swipes} from "./Phone";
+import {Phone, reelTone, swipes} from "./Phone";
 import {Pigeon} from "./Pigeon";
 import {Cues} from "./types";
 
 type P = {cues: Cues};
 
-// Lines 1–3. Frame 0 is already mid-swipe: a phone in 3D, a reel counter that will not
-// stop, then the clock that says how long it really was.
+// Camera set-ups for the hook: each cut is a new framing of the same phone.
+type Shot = {x: number; y: number; width: number; tiltX: number; tiltY: number};
+const WIDE: Shot = {x: 1120, y: 90, width: 380, tiltX: 8, tiltY: -16};
+const CLOSE: Shot = {x: 1240, y: -60, width: 560, tiltX: 0, tiltY: -4};
+const TOP: Shot = {x: 1060, y: 40, width: 440, tiltX: 34, tiltY: 10};
+
+// Lines 1–3. Frame 0 is already moving: reel 1 lands on a phone in a dark room, its light
+// spilling on the walls. The camera cuts between set-ups on the spoken phrases, the reels
+// change with every "phir", then the swipes run away until the clock says how long it was.
 export const HookScene = ({cues}: P) => {
   const frame = useCurrentFrame();
   const l2 = cues.line(2);
   const l3 = cues.line(3);
-  // Swipes: on "Ek reel", "ek aur", "aakhri", then faster and faster until the clock.
-  const times = [-4, cues.word(1, 2), cues.word(1, 5)];
-  for (let f = cues.word(1, 5) + 14, gap = 12; f < l2; gap = Math.max(5, gap - 1), f += gap) times.push(f);
-  const s = swipes(frame, times, 8);
-  const count = Math.max(1, Math.floor(s) + 1);
+  const ek = cues.word(1, 0);
+  const aur = cues.word(1, 2);
+  const bas = cues.word(1, 5);
+  const aakhri = cues.word(1, 7);
+  // Swipes: reel 1 lands at frame 0, then on "Phir ek aur" and "aakhri", then faster and
+  // faster until the clock.
+  const times = [-5, aur, aakhri];
+  for (let f = aakhri + 12, gap = 10; f < l2; gap = Math.max(4, gap - 1), f += gap) times.push(f);
+  const s = swipes(frame, times, 7);
+  const count = Math.max(1, Math.floor(s));
+  // Cuts: wide, close on "Ek", from above half-way through "Ek reel", wide on "Phir ek
+  // aur", close on "Phir bas", wide again for the run-away swipes.
+  const mid = Math.round((ek + aur) / 2);
+  const shots: [number, Shot][] = [[-1, WIDE], [ek, CLOSE], [mid, TOP], [aur, WIDE], [bas, CLOSE], [aakhri + 10, WIDE]];
+  const shot = [...shots].reverse().find(([at]) => frame >= at)![1];
   const clock = arrive(frame, l2, 18);
   const minutes = interpolate(frame, [l2, l2 + 34], [0, 90], {...CLAMP, easing: (t) => 1 - Math.pow(1 - t, 3)});
-  const turn = interpolate(frame, [l3, l3 + 60], [-16, 0], CLAMP);
+  const turn = interpolate(frame, [l3, l3 + 60], [shot.tiltY, 0], CLAMP);
   const back = interpolate(frame, [l3, l3 + 60], [1, 0.9], CLAMP);
   const hh = 21 + Math.floor((minutes + 0) / 60);
   const mm = Math.floor(minutes % 60);
+  const tone = reelTone(Math.round(s));
+  const cx = shot.x + shot.width / 2;
+  const cy = shot.y + shot.width;
   return (
     <Ground>
-      <AbsoluteFill style={{left: 1120, top: 90}}>
+      {/* the screen's light on the room, in the colour of the reel on it */}
+      <AbsoluteFill style={{background: `radial-gradient(circle at ${cx}px ${cy}px, ${tone}88 0%, ${tone}33 30%, transparent 62%)`}} />
+      <AbsoluteFill style={{left: shot.x, top: shot.y}}>
         <div style={{transform: `scale(${back})`, transformOrigin: "30% 50%"}}>
-          <Phone scroll={s} width={380} tiltY={turn} />
+          <Phone scroll={s} width={shot.width} tiltX={shot.tiltX} tiltY={turn} />
         </div>
       </AbsoluteFill>
       {/* the reel counter */}
