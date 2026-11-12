@@ -1,0 +1,7157 @@
+{
+  "sourceSeconds": 906.94,
+  "keptSeconds": 572.12,
+  "segments": 100,
+  "fillersRemoved": [],
+  "flaggedLines": [
+    3,
+    7,
+    30,
+    40,
+    46,
+    48,
+    56,
+    57,
+    66,
+    67,
+    70,
+    82,
+    90,
+    93,
+    107,
+    109,
+    117,
+    124
+  ],
+  "inventedByWhisper": [
+    {
+      "start": 162.45,
+      "end": 162.95,
+      "text": "अच्छान प्रेडिक्शन एरर, स्लॉट मशीन, प्रेडिक्शन एरर, सब्सक्राइब।"
+    },
+    {
+      "start": 269.01,
+      "end": 280.93,
+      "text": "वौल्फरीम सकलज नएब beaver digital saint..."
+    },
+    {
+      "start": 433.86,
+      "end": 435.2,
+      "text": "स्क्रॉलॉ"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "script": "Ek reel. Phir ek aur. Phir bas *aakhri*.",
+      "sourceIn": 10.59,
+      "sourceOut": 14.63,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 10.25,
+          "to": 15.05
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 88,
+      "heard": "एक रील, फिर एक अवर, फिर बस आखरी.",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 119.51,
+          "end": 121.13,
+          "score": 55,
+          "problems": [
+            "match 55 < 72"
+          ]
+        },
+        {
+          "start": 234.24,
+          "end": 237.58,
+          "score": 63,
+          "problems": [
+            "match 63 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 285.73,
+          "end": 287.79,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 407.02,
+          "end": 408.28,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "script": "Phir ghadi dekhi, aur dedh ghanta ja chuka tha.",
+      "sourceIn": 15.34,
+      "sourceOut": 18.48,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 15.34,
+          "to": 18.52
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 87,
+      "heard": "फिर घड़ी देखी और देड़ घंटा जा छुका था,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 3,
+      "script": "Ye kahani tumhari bhi hai, aur meri bhi.",
+      "sourceIn": 18.72,
+      "sourceOut": 21.37,
+      "sameTakeAs": [
+        4,
+        5,
+        6
+      ],
+      "pieces": [
+        {
+          "from": 18.72,
+          "to": 30.44
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 79,
+      "heard": "कहानी तुम्हारी भी है और मेरी भी,",
+      "reason": "FLAG: no clean take; best match used (start missing)",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 725.78,
+          "end": 727.64,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 742.38,
+          "end": 744.58,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "script": "Toh chalo, ek chhota sa hisaab lagate hain.",
+      "sourceIn": 21.5,
+      "sourceOut": 24.7,
+      "sameTakeAs": [
+        3,
+        5,
+        6
+      ],
+      "pieces": [
+        {
+          "from": 18.72,
+          "to": 30.44
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 98,
+      "heard": "तो चलो एक छोटा सा हिसाब लगाते हैं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 107.63,
+          "end": 108.89,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 207.08,
+          "end": 208.75,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 211.66,
+          "end": 213.3,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 263.69,
+          "end": 265.58,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 320.13,
+          "end": 322.88,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 389.25,
+          "end": 390.81,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 529.65,
+          "end": 533.9,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "script": "Agar koi roz sirf *do ghante* scroll kare.",
+      "sourceIn": 24.68,
+      "sourceOut": 27.74,
+      "sameTakeAs": [
+        3,
+        4,
+        6
+      ],
+      "pieces": [
+        {
+          "from": 18.72,
+          "to": 30.44
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 92,
+      "heard": "अगर कोई रोज सिर्फ दो घंटे स्क्रॉल करें,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 6,
+      "script": "Toh ek saal mein, saat sau tees ghante.",
+      "sourceIn": 27.56,
+      "sourceOut": 30.19,
+      "sameTakeAs": [
+        3,
+        4,
+        5
+      ],
+      "pieces": [
+        {
+          "from": 18.72,
+          "to": 30.44
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 88,
+      "heard": "तो एक साल में साथ सो तीस घंटें।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 41.06,
+          "end": 51.75,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 375.51,
+          "end": 379.73,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "script": "Saath saal mein, tetaalees hazaar aath sau ghante.",
+      "sourceIn": 44.39,
+      "sourceOut": 51.87,
+      "sameTakeAs": [
+        8
+      ],
+      "pieces": [
+        {
+          "from": 44.39,
+          "to": 47.66
+        },
+        {
+          "from": 48.58,
+          "to": 55.17
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 47.83,
+          "to": 48.58,
+          "why": "pause"
+        },
+        {
+          "from": 47.66,
+          "to": 47.73,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 59,
+      "heard": "साट साल मे 43 ,809 गण्टि साट साल में 43 ,800 गंटे,",
+      "reason": "FLAG: no clean take; best match used (match 59 < 72)",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 28.06,
+          "end": 30.07,
+          "score": 58,
+          "problems": [
+            "match 58 < 72"
+          ]
+        },
+        {
+          "start": 54.65,
+          "end": 63.14,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 594.01,
+          "end": 599.51,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "script": "Yaani poore *paanch saal*. Din aur raat, bina soye.",
+      "sourceIn": 51.9,
+      "sourceOut": 55.17,
+      "sameTakeAs": [
+        7
+      ],
+      "pieces": [
+        {
+          "from": 48.58,
+          "to": 55.17
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 90,
+      "heard": "यानि पूरे पाज साल दिन और राद बिना सोए।",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 37.9,
+          "end": 41.68,
+          "score": 89,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "script": "Jaagte waqt ka har *aathwa* ghanta.",
+      "sourceIn": 60.28,
+      "sourceOut": 63.26,
+      "sameTakeAs": [
+        10,
+        11
+      ],
+      "pieces": [
+        {
+          "from": 60.15,
+          "to": 67.27
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 96,
+      "heard": "जागते वक्त का हर आथवा गंटा,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 108.33,
+          "end": 113.18,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 502.5,
+          "end": 504.7,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 529.65,
+          "end": 534.07,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 625.95,
+          "end": 627.39,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 717.52,
+          "end": 721.6,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 744.58,
+          "end": 749.25,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 786.06,
+          "end": 788.14,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 788.38,
+          "end": 792.4,
+          "score": 61,
+          "problems": [
+            "match 61 < 72"
+          ]
+        },
+        {
+          "start": 792.9,
+          "end": 795.34,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 866.93,
+          "end": 868.21,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "script": "Aur ajeeb baat ye hai ki hum rukna chahte hain.",
+      "sourceIn": 63.3,
+      "sourceOut": 66.09,
+      "sameTakeAs": [
+        9,
+        11
+      ],
+      "pieces": [
+        {
+          "from": 60.15,
+          "to": 67.27
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 90,
+      "heard": "और आजीब बात यह है कि हम रुकना चाहते हैं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 223.5,
+          "end": 229.66,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 592.09,
+          "end": 595.59,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 890.62,
+          "end": 893.18,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "script": "Phir bhi ruk nahi paate.",
+      "sourceIn": 65.96,
+      "sourceOut": 67.27,
+      "sameTakeAs": [
+        9,
+        10
+      ],
+      "pieces": [
+        {
+          "from": 60.15,
+          "to": 67.27
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "फिर भी रुक नहीं पाते",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 64.22,
+          "end": 65.48,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 235.3,
+          "end": 236.3,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "script": "Kyun?",
+      "sourceIn": 67.36,
+      "sourceOut": 67.88,
+      "sameTakeAs": [
+        13
+      ],
+      "pieces": [
+        {
+          "from": 67.33,
+          "to": 69.41
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 75,
+      "heard": "क्यों?",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 68.09,
+          "end": 68.34,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 216.6,
+          "end": 216.76,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 218.18,
+          "end": 218.34,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 238.9,
+          "end": 239.1,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 248.71,
+          "end": 248.95,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 251.71,
+          "end": 251.93,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 324.94,
+          "end": 325.16,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 386.11,
+          "end": 386.33,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 394.94,
+          "end": 395.26,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 399.86,
+          "end": 400.12,
+          "score": 67,
+          "problems": [
+            "match 67 < 72"
+          ]
+        },
+        {
+          "start": 501.22,
+          "end": 501.48,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 515.15,
+          "end": 515.67,
+          "score": 67,
+          "problems": [
+            "match 67 < 72"
+          ]
+        },
+        {
+          "start": 561.95,
+          "end": 562.19,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 565.77,
+          "end": 566.01,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 598.49,
+          "end": 598.71,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 612.3,
+          "end": 612.86,
+          "score": 60,
+          "problems": [
+            "match 60 < 72"
+          ]
+        },
+        {
+          "start": 614.24,
+          "end": 614.84,
+          "score": 60,
+          "problems": [
+            "match 60 < 72"
+          ]
+        },
+        {
+          "start": 618.55,
+          "end": 619.11,
+          "score": 60,
+          "problems": [
+            "match 60 < 72"
+          ]
+        },
+        {
+          "start": 626.3,
+          "end": 626.51,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 665.8,
+          "end": 666.06,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 709.54,
+          "end": 709.76,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 715.06,
+          "end": 715.26,
+          "score": 67,
+          "problems": [
+            "match 67 < 72"
+          ]
+        },
+        {
+          "start": 810.93,
+          "end": 811.11,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 855.95,
+          "end": 856.19,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 865.75,
+          "end": 866.01,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 875.24,
+          "end": 875.48,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "script": "Kya hum kamzor hain?",
+      "sourceIn": 68.01,
+      "sourceOut": 69.41,
+      "sameTakeAs": [
+        12
+      ],
+      "pieces": [
+        {
+          "from": 67.33,
+          "to": 69.41
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 94,
+      "heard": "क्या हम कम्जोर हैं?",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 18.64,
+          "end": 19.21,
+          "score": 64,
+          "problems": [
+            "match 64 < 72"
+          ]
+        },
+        {
+          "start": 89.79,
+          "end": 90.83,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 184.62,
+          "end": 185.04,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 248.71,
+          "end": 249.75,
+          "score": 61,
+          "problems": [
+            "match 61 < 72"
+          ]
+        },
+        {
+          "start": 251.71,
+          "end": 252.16,
+          "score": 61,
+          "problems": [
+            "match 61 < 72"
+          ]
+        },
+        {
+          "start": 264.67,
+          "end": 265.58,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 327.24,
+          "end": 327.74,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 330.78,
+          "end": 331.26,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 385.87,
+          "end": 387.43,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 533.15,
+          "end": 533.9,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 621.27,
+          "end": 622.57,
+          "score": 59,
+          "problems": [
+            "match 59 < 72"
+          ]
+        },
+        {
+          "start": 626.3,
+          "end": 627.39,
+          "score": 62,
+          "problems": [
+            "match 62 < 72"
+          ]
+        },
+        {
+          "start": 695.01,
+          "end": 696.03,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        },
+        {
+          "start": 706.2,
+          "end": 707.58,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 715.82,
+          "end": 716.58,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 722.58,
+          "end": 726.36,
+          "score": 67,
+          "problems": [
+            "match 67 < 72"
+          ]
+        },
+        {
+          "start": 810.93,
+          "end": 813.25,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 829.09,
+          "end": 829.92,
+          "score": 62,
+          "problems": [
+            "match 62 < 72"
+          ]
+        },
+        {
+          "start": 875.24,
+          "end": 876.36,
+          "score": 59,
+          "problems": [
+            "match 59 < 72"
+          ]
+        },
+        {
+          "start": 889.18,
+          "end": 890.26,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "script": "Ya koi cheez hume pakad kar *kheench* rahi hai?",
+      "sourceIn": 78.32,
+      "sourceOut": 81.46,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 78.11,
+          "to": 81.58
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 81,
+      "heard": "या कोई चीज़ हमें पकड़कर खीछ रही हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 616.17,
+          "end": 617.36,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "script": "Is sawaal ka jawab ek kabutar se shuru hota hai.",
+      "sourceIn": 85.91,
+      "sourceOut": 89.91,
+      "sameTakeAs": [
+        16,
+        17
+      ],
+      "pieces": [
+        {
+          "from": 85.91,
+          "to": 95.11
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 93,
+      "heard": "इस सावल का जवाब एक कबूतर से शुरू होता हैं",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 81.96,
+          "end": 84.74,
+          "score": 92,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "line": 16,
+      "script": "Aur khatam hota hai ek aise lafz par, jo 1400 saal purane bazaar ki zubaan hai.",
+      "sourceIn": 89.71,
+      "sourceOut": 95.13,
+      "sameTakeAs": [
+        15,
+        17
+      ],
+      "pieces": [
+        {
+          "from": 85.91,
+          "to": 95.11
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 80,
+      "heard": "और खतम होता है एक एसे लव्स पर जो चोदासो साल पूराने बाजार की जबान हैं",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 17,
+      "script": "Pichhli sadi mein America mein ek psychologist the, B. F. Skinner.",
+      "sourceIn": 95.43,
+      "sourceOut": 99.71,
+      "sameTakeAs": [
+        15,
+        16
+      ],
+      "pieces": [
+        {
+          "from": 95.39,
+          "to": 100.0
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 73,
+      "heard": "पिछली सदी में अमेरिका के एक साइकॉलोजिश थे बी एफ स्किनर",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 18,
+      "script": "Unhone ek dabba banaya.",
+      "sourceIn": 103.35,
+      "sourceOut": 105.61,
+      "sameTakeAs": [
+        19
+      ],
+      "pieces": [
+        {
+          "from": 103.1,
+          "to": 109.44
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 95,
+      "heard": "उन्होंने एक डबबा बनाया,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 114.31,
+          "end": 115.56,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 116.75,
+          "end": 118.06,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 298.11,
+          "end": 300.23,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 395.56,
+          "end": 396.7,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 401.22,
+          "end": 402.91,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 419.08,
+          "end": 419.8,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 453.51,
+          "end": 454.23,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 457.31,
+          "end": 458.19,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 468.01,
+          "end": 469.21,
+          "score": 65,
+          "problems": [
+            "match 65 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 473.82,
+          "end": 474.92,
+          "score": 65,
+          "problems": [
+            "match 65 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 598.33,
+          "end": 599.13,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 715.06,
+          "end": 716.58,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 881.62,
+          "end": 882.22,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 19,
+      "script": "Andar ek kabutar, aur saamne ek chhota sa button.",
+      "sourceIn": 105.67,
+      "sourceOut": 109.01,
+      "sameTakeAs": [
+        18
+      ],
+      "pieces": [
+        {
+          "from": 103.1,
+          "to": 109.44
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 90,
+      "heard": "अंदर एक कबूतर, और सामने एक छोटा सा बटन।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 387.87,
+          "end": 390.01,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 571.92,
+          "end": 587.75,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 20,
+      "script": "Kabutar button par chonch maarta, toh khaane ka ek daana girta.",
+      "sourceIn": 112.1,
+      "sourceOut": 116.05,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 112.05,
+          "to": 116.5
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 86,
+      "heard": "कबूतर बटन पर चोच मारता, तो खाने का एक दाना किरता।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 116.75,
+          "end": 118.71,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 168.05,
+          "end": 171.19,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 21,
+      "script": "Simple sa khel.",
+      "sourceIn": 118.87,
+      "sourceOut": 120.0,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 118.83,
+          "to": 120.08
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 78,
+      "heard": "सिमपल चा खेल,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 95.51,
+          "end": 96.17,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 206.76,
+          "end": 207.08,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 211.28,
+          "end": 211.66,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 252.8,
+          "end": 253.38,
+          "score": 63,
+          "problems": [
+            "match 63 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 253.38,
+          "end": 253.92,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 266.37,
+          "end": 266.67,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 379.05,
+          "end": 379.37,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 379.37,
+          "end": 380.53,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 382.19,
+          "end": 382.69,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 388.93,
+          "end": 389.45,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        },
+        {
+          "start": 420.44,
+          "end": 420.92,
+          "score": 63,
+          "problems": [
+            "match 63 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 454.91,
+          "end": 455.41,
+          "score": 63,
+          "problems": [
+            "match 63 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 481.97,
+          "end": 483.23,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 502.7,
+          "end": 504.06,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 602.05,
+          "end": 602.55,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 871.96,
+          "end": 872.46,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 22,
+      "script": "Lekin phir Skinner ne khel ke rules badal diye.",
+      "sourceIn": 124.78,
+      "sourceOut": 127.79,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 124.78,
+          "to": 127.84
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 90,
+      "heard": "लेकिन फिर स्किनर ने खेल के रूल्स बदल दिएं।",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 120.25,
+          "end": 122.74,
+          "score": 90,
+          "problems": []
+        },
+        {
+          "start": 795.58,
+          "end": 797.36,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 23,
+      "script": "Ek dabbe mein daana har baar milta tha.",
+      "sourceIn": 128.47,
+      "sourceOut": 131.25,
+      "sameTakeAs": [
+        24
+      ],
+      "pieces": [
+        {
+          "from": 128.47,
+          "to": 135.17
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 95,
+      "heard": "एक डब्वे में दाना हर बार मिलता था,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 114.86,
+          "end": 116.95,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        },
+        {
+          "start": 165.27,
+          "end": 166.77,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 889.46,
+          "end": 891.2,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 24,
+      "script": "Dusre mein har dasween chonch par.",
+      "sourceIn": 131.2,
+      "sourceOut": 135.09,
+      "sameTakeAs": [
+        23
+      ],
+      "pieces": [
+        {
+          "from": 128.47,
+          "to": 135.17
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 89,
+      "heard": "दोस्रे में हर दस्वी चोच पर।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 25,
+      "script": "Aur teesre mein, koi pattern hi nahi.",
+      "sourceIn": 142.92,
+      "sourceOut": 145.63,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 142.52,
+          "to": 145.68
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 76,
+      "heard": "और तीसरी में कोई पेटर्न ही नहीं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 466.73,
+          "end": 469.21,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 472.42,
+          "end": 474.92,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 669.52,
+          "end": 674.64,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 709.76,
+          "end": 714.44,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 816.67,
+          "end": 821.25,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 26,
+      "script": "Kabhi teesri chonch par, kabhi beeswi par, kabhi do baar lagataar.",
+      "sourceIn": 157.04,
+      "sourceOut": 166.89,
+      "sameTakeAs": [
+        27,
+        28
+      ],
+      "pieces": [
+        {
+          "from": 157.02,
+          "to": 160.94
+        },
+        {
+          "from": 162.55,
+          "to": 162.92
+        },
+        {
+          "from": 163.52,
+          "to": 163.74
+        },
+        {
+          "from": 165.17,
+          "to": 173.41
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 160.94,
+          "to": 162.55,
+          "why": "pause"
+        },
+        {
+          "from": 162.92,
+          "to": 163.52,
+          "why": "pause"
+        },
+        {
+          "from": 163.74,
+          "to": 165.17,
+          "why": "pause"
+        },
+        {
+          "from": 163.62,
+          "to": 163.64,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 78,
+      "heard": "कबी तीसरी चौच पर, कबी बीस्वी पर, कबी दो... कभी दो बार लगातार,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 27,
+      "script": "Ab socho, kaun sa kabutar sabse zyada chonch maarta tha?",
+      "sourceIn": 166.95,
+      "sourceOut": 169.89,
+      "sameTakeAs": [
+        26,
+        28
+      ],
+      "pieces": [
+        {
+          "from": 165.17,
+          "to": 173.41
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 84,
+      "heard": "अब सोचो, कोंसा कबूतर ज्यादा छोच मारता था,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 108.23,
+          "end": 114.1,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 651.95,
+          "end": 656.09,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 28,
+      "script": "Wahi, jise pata hi nahi tha ki agla daana *kab* aayega.",
+      "sourceIn": 170.11,
+      "sourceOut": 173.35,
+      "sameTakeAs": [
+        26,
+        27
+      ],
+      "pieces": [
+        {
+          "from": 165.17,
+          "to": 173.41
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "वोही जिसे पता ही नहीं था कि अगला दाना कब आयगा।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 359.21,
+          "end": 363.53,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 879.4,
+          "end": 881.38,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 29,
+      "script": "Aur jab daana aana bilkul band ho gaya, tab bhi sabse der tak wahi laga raha.",
+      "sourceIn": 175.56,
+      "sourceOut": 181.64,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 175.5,
+          "to": 182.01
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 96,
+      "heard": "और जब दाना आना बिल्कुल बंध हो गया, तब भी सब से देर तक वही लगा रहा।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 30,
+      "script": "Psychology ki kitabon mein ise kehte hain *variable reward*.",
+      "sourceIn": 183.6,
+      "sourceOut": 186.56,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 183.6,
+          "to": 186.57
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 74,
+      "heard": "की किताबों में इसे कहते है वेरियबल र्वार्ड।",
+      "reason": "FLAG: no clean take; best match used (start missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 31,
+      "script": "Inaam milega, lekin kab milega, ye pata nahi.",
+      "sourceIn": 202.73,
+      "sourceOut": 205.9,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 202.73,
+          "to": 205.96
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 96,
+      "heard": "इनाम मिलेगा लेकिन कब मिलेगा ये पता नहीं",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 246.07,
+          "end": 248.19,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 359.67,
+          "end": 361.21,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 364.29,
+          "end": 370.12,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 624.51,
+          "end": 627.39,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 720.74,
+          "end": 726.36,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 32,
+      "script": "Aur kitabein iski sabse mashhoor misaal deti hain: casino ki *slot machine*.",
+      "sourceIn": 210.3,
+      "sourceOut": 215.16,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 210.3,
+          "to": 215.21
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "और किताबे इसकी सबसे मशहोर मिसाल देती हैं कसीनो की, स्लॉट मशीन,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 33,
+      "script": "Lever kheencho. Kuch nahi.",
+      "sourceIn": 215.62,
+      "sourceOut": 217.36,
+      "sameTakeAs": [
+        34,
+        35
+      ],
+      "pieces": [
+        {
+          "from": 215.58,
+          "to": 222.63
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 76,
+      "heard": "लवर कीचो, कुछ नहीं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 217.58,
+          "end": 218.88,
+          "score": 69,
+          "problems": [
+            "match 69 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 34,
+      "script": "Phir kheencho. Kuch nahi.",
+      "sourceIn": 217.26,
+      "sourceOut": 219.0,
+      "sameTakeAs": [
+        33,
+        35
+      ],
+      "pieces": [
+        {
+          "from": 215.58,
+          "to": 222.63
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 87,
+      "heard": "फिर कीचो, कुछ नहीं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 66.04,
+          "end": 66.84,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 216.04,
+          "end": 217.24,
+          "score": 74,
+          "problems": [
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 35,
+      "script": "Phir achanak ghantiyan baj uthti hain.",
+      "sourceIn": 219.02,
+      "sourceOut": 222.4,
+      "sameTakeAs": [
+        33,
+        34
+      ],
+      "pieces": [
+        {
+          "from": 215.58,
+          "to": 222.63
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 91,
+      "heard": "फिर अचानक गंटिया बज उठती हैं.",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 222.52,
+          "end": 224.48,
+          "score": 85,
+          "problems": [
+            "start missing"
+          ]
+        },
+        {
+          "start": 735.5,
+          "end": 738.02,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 787.02,
+          "end": 788.88,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 36,
+      "script": "Aur insaan sochta hai, bas *ek aur* baar.",
+      "sourceIn": 227.72,
+      "sourceOut": 231.1,
+      "sameTakeAs": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "pieces": [
+        {
+          "from": 227.42,
+          "to": 241.2
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 98,
+      "heard": "और इन्सान सोचता है बस एक और बार,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 89.79,
+          "end": 92.41,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        },
+        {
+          "start": 107.11,
+          "end": 112.68,
+          "score": 61,
+          "problems": [
+            "match 61 < 72"
+          ]
+        },
+        {
+          "start": 210.38,
+          "end": 212.44,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 327.74,
+          "end": 331.16,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 887.18,
+          "end": 889.82,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 37,
+      "script": "Ab apna phone socho.",
+      "sourceIn": 231.24,
+      "sourceOut": 232.84,
+      "sameTakeAs": [
+        36,
+        38,
+        39,
+        40,
+        41
+      ],
+      "pieces": [
+        {
+          "from": 227.42,
+          "to": 241.2
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 93,
+      "heard": "अब अपना फोन सोचो,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 167.03,
+          "end": 167.55,
+          "score": 60,
+          "problems": [
+            "match 60 < 72"
+          ]
+        },
+        {
+          "start": 282.51,
+          "end": 284.44,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 402.24,
+          "end": 403.4,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 495.84,
+          "end": 496.62,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 617.2,
+          "end": 619.57,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 806.11,
+          "end": 806.71,
+          "score": 67,
+          "problems": [
+            "match 67 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 856.19,
+          "end": 856.79,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 866.01,
+          "end": 866.63,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 38,
+      "script": "Angootha upar. Ek bekaar reel.",
+      "sourceIn": 232.86,
+      "sourceOut": 235.18,
+      "sameTakeAs": [
+        36,
+        37,
+        39,
+        40,
+        41
+      ],
+      "pieces": [
+        {
+          "from": 227.42,
+          "to": 241.2
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 95,
+      "heard": "अंगोथा उपर एक बेकर रिल,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 18.8,
+          "end": 20.84,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 152.19,
+          "end": 157.91,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 235.5,
+          "end": 237.8,
+          "score": 67,
+          "problems": [
+            "match 67 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 374.37,
+          "end": 375.51,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 519.47,
+          "end": 523.47,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 607.05,
+          "end": 610.0,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 668.16,
+          "end": 670.2,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 825.77,
+          "end": 827.37,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 39,
+      "script": "Phir upar. Ek aur bekaar.",
+      "sourceIn": 235.22,
+      "sourceOut": 237.19,
+      "sameTakeAs": [
+        36,
+        37,
+        38,
+        40,
+        41
+      ],
+      "pieces": [
+        {
+          "from": 227.42,
+          "to": 241.2
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 100,
+      "heard": "फिर उपर एक और बेकर,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 12.31,
+          "end": 13.25,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 15.38,
+          "end": 16.92,
+          "score": 71,
+          "problems": [
+            "match 71 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 120.56,
+          "end": 121.73,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 134.68,
+          "end": 144.05,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 152.66,
+          "end": 157.91,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 157.91,
+          "end": 159.0,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 159.5,
+          "end": 165.57,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 229.26,
+          "end": 230.98,
+          "score": 65,
+          "problems": [
+            "match 65 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 233.48,
+          "end": 234.68,
+          "score": 79,
+          "problems": [
+            "start missing"
+          ]
+        },
+        {
+          "start": 374.91,
+          "end": 375.51,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 410.2,
+          "end": 411.18,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 601.05,
+          "end": 601.96,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 651.95,
+          "end": 653.16,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 688.13,
+          "end": 692.14,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 876.52,
+          "end": 879.28,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 40,
+      "script": "Aur phir ek aisi reel, jo dil khush kar de.",
+      "sourceIn": 237.28,
+      "sourceOut": 239.6,
+      "sameTakeAs": [
+        36,
+        37,
+        38,
+        39,
+        41
+      ],
+      "pieces": [
+        {
+          "from": 227.42,
+          "to": 241.2
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 81,
+      "heard": "फिर एक एसी रिल जो दिल खुश कर दे,",
+      "reason": "FLAG: no clean take; best match used (start missing)",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 13.93,
+          "end": 16.92,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 41,
+      "script": "Lever wahi hai.",
+      "sourceIn": 239.86,
+      "sourceOut": 241.11,
+      "sameTakeAs": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "pieces": [
+        {
+          "from": 227.42,
+          "to": 241.2
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 80,
+      "heard": "लेवर वही हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 64.09,
+          "end": 64.37,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 80.39,
+          "end": 81.34,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 507.04,
+          "end": 507.44,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 616.94,
+          "end": 617.36,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 621.45,
+          "end": 622.57,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 658.35,
+          "end": 659.5,
+          "score": 61,
+          "problems": [
+            "match 61 < 72"
+          ]
+        },
+        {
+          "start": 741.7,
+          "end": 743.6,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 823.55,
+          "end": 823.85,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 856.79,
+          "end": 857.73,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 42,
+      "script": "Bas casino ki jagah, ab wo tumhari *jeb* mein hai.",
+      "sourceIn": 243.73,
+      "sourceOut": 247.05,
+      "sameTakeAs": [
+        43
+      ],
+      "pieces": [
+        {
+          "from": 243.67,
+          "to": 250.27
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 79,
+      "heard": "बस कसीनो की जगा आब वो तुम्हान जैब में हैं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 17.7,
+          "end": 20.18,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 43,
+      "script": "Lekin ye \"shayad\" itna taqatwar kyun hai?",
+      "sourceIn": 246.95,
+      "sourceOut": 249.87,
+      "sameTakeAs": [
+        42
+      ],
+      "pieces": [
+        {
+          "from": 243.67,
+          "to": 250.27
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 92,
+      "heard": "लेकिन ये शायद इतना ताकत्वर क्यू हैं?",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 250.19,
+          "end": 252.16,
+          "score": 79,
+          "problems": [
+            "start missing"
+          ]
+        },
+        {
+          "start": 265.58,
+          "end": 269.01,
+          "score": 59,
+          "problems": [
+            "match 59 < 72"
+          ]
+        },
+        {
+          "start": 321.66,
+          "end": 323.72,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 625.61,
+          "end": 627.39,
+          "score": 60,
+          "problems": [
+            "match 60 < 72"
+          ]
+        },
+        {
+          "start": 657.99,
+          "end": 659.5,
+          "score": 55,
+          "problems": [
+            "match 55 < 72"
+          ]
+        },
+        {
+          "start": 721.78,
+          "end": 726.36,
+          "score": 60,
+          "problems": [
+            "match 60 < 72"
+          ]
+        },
+        {
+          "start": 856.79,
+          "end": 861.1,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 866.63,
+          "end": 869.08,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 889.46,
+          "end": 891.32,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 44,
+      "script": "Iske liye dimaag ke andar chalte hain.",
+      "sourceIn": 252.73,
+      "sourceOut": 257.26,
+      "sameTakeAs": [
+        45
+      ],
+      "pieces": [
+        {
+          "from": 252.73,
+          "to": 259.48
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 92,
+      "heard": "इसके लिए दिमाख के अंदर चलते हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 64.22,
+          "end": 65.97,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 206.24,
+          "end": 208.75,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        },
+        {
+          "start": 211.28,
+          "end": 213.3,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 264.19,
+          "end": 265.58,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 266.37,
+          "end": 269.01,
+          "score": 55,
+          "problems": [
+            "match 55 < 72"
+          ]
+        },
+        {
+          "start": 420.44,
+          "end": 422.22,
+          "score": 65,
+          "problems": [
+            "match 65 < 72"
+          ]
+        },
+        {
+          "start": 454.91,
+          "end": 456.69,
+          "score": 65,
+          "problems": [
+            "match 65 < 72"
+          ]
+        },
+        {
+          "start": 523.92,
+          "end": 525.0,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 662.03,
+          "end": 663.63,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 664.3,
+          "end": 665.8,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 669.7,
+          "end": 671.47,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 741.6,
+          "end": 743.6,
+          "score": 59,
+          "problems": [
+            "match 59 < 72"
+          ]
+        },
+        {
+          "start": 753.69,
+          "end": 755.15,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        },
+        {
+          "start": 828.33,
+          "end": 829.92,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 891.84,
+          "end": 893.18,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 45,
+      "script": "Tumne dopamine ka naam suna hoga.",
+      "sourceIn": 257.31,
+      "sourceOut": 259.48,
+      "sameTakeAs": [
+        44
+      ],
+      "pieces": [
+        {
+          "from": 252.73,
+          "to": 259.48
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 88,
+      "heard": "तुमने डोपेमीन का नाम सुना होगा।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 694.09,
+          "end": 695.73,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 901.36,
+          "end": 902.78,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 46,
+      "script": "Log ise \"khushi ka chemical\" kehte hain.",
+      "sourceIn": 261.35,
+      "sourceOut": 265.7,
+      "sameTakeAs": [
+        47
+      ],
+      "pieces": [
+        {
+          "from": 261.2,
+          "to": 269.59
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 72,
+      "heard": "लोग इसे हूषी का कमिकल खेमिकल कहते हैं,",
+      "reason": "FLAG: no clean take; best match used (match 72 < 72)",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 206.76,
+          "end": 208.75,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 211.28,
+          "end": 213.3,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 238.08,
+          "end": 240.99,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 253.24,
+          "end": 257.14,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 386.11,
+          "end": 387.43,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 741.7,
+          "end": 743.6,
+          "score": 58,
+          "problems": [
+            "match 58 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 47,
+      "script": "Lekin science iski kahani thodi alag sunati hai.",
+      "sourceIn": 265.5,
+      "sourceOut": 269.13,
+      "sameTakeAs": [
+        46
+      ],
+      "pieces": [
+        {
+          "from": 261.2,
+          "to": 269.59
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 73,
+      "heard": "लेकिं साइनस इसकी कहानी थोड़ी आलक सुनाती हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 49,
+      "script": "Bandar ko pehle ek light dikhti, aur phir thoda sa juice milta.",
+      "sourceIn": 284.71,
+      "sourceOut": 288.49,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 284.64,
+          "to": 288.49
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "बंदर को पहले एक लाइट दिखी और फिर थोड़ा सा जोइस मिला।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 50,
+      "script": "Shuru mein, jab juice achanak aaya, toh dopamine neurons zor se jaag uthe.",
+      "sourceIn": 292.59,
+      "sourceOut": 299.2,
+      "sameTakeAs": [
+        51
+      ],
+      "pieces": [
+        {
+          "from": 292.55,
+          "to": 313.41
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 81,
+      "heard": "शुरू में जब जूइस अचानक आया, तो डोपेमेन निव्रान्स जोर से जाग उते।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 51,
+      "script": "Lekin jab bandar seekh gaya ki light ke baad juice aata hi hai, toh juice par unka josh kam ho gaya.",
+      "sourceIn": 299.15,
+      "sourceOut": 313.41,
+      "sameTakeAs": [
+        50
+      ],
+      "pieces": [
+        {
+          "from": 292.55,
+          "to": 313.41
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 87,
+      "heard": "लेकिन जब बंदर सीग गया कि लाइट के बाद जूइस आता ही है, तो जूइस पर उनका जोश कम हो गया।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 52,
+      "script": "Matlab dopamine khushi ka nahi, *hisaab* ka signal hai.",
+      "sourceIn": 319.15,
+      "sourceOut": 323.0,
+      "sameTakeAs": [
+        53
+      ],
+      "pieces": [
+        {
+          "from": 319.15,
+          "to": 326.09
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 78,
+      "heard": "मतलब डोबेमीन हुषी का नहीं, हिसाब का सिग्नेल हैं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 720.74,
+          "end": 726.36,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 53,
+      "script": "Wo batata hai, jo socha tha, usse kuch alag hua.",
+      "sourceIn": 322.86,
+      "sourceOut": 326.09,
+      "sameTakeAs": [
+        52
+      ],
+      "pieces": [
+        {
+          "from": 319.15,
+          "to": 326.09
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 97,
+      "heard": "वो बताता है जो सोचा था उससे कुछ अलग हुआ,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 223.5,
+          "end": 230.98,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 790.84,
+          "end": 794.54,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 54,
+      "script": "Scientists ise kehte hain *prediction error*. Andaze ki galti.",
+      "sourceIn": 329.56,
+      "sourceOut": 333.81,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 329.52,
+          "to": 333.86
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 76,
+      "heard": "सांटिस्ट्स इसे कहते है प्रेडिक्शन एरर, अन्दाजे की कल्थी।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 55,
+      "script": "Phir 2003 mein, isi lab ne ek aur cheez dekhi.",
+      "sourceIn": 334.3,
+      "sourceOut": 337.72,
+      "sameTakeAs": [
+        56
+      ],
+      "pieces": [
+        {
+          "from": 334.3,
+          "to": 340.37
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 88,
+      "heard": "फिर 2003 में इसी लेब ने एक और चीज़ देखी,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 56,
+      "script": "Jab juice milne ka chance aadha-aadha tha, fifty-fifty.",
+      "sourceIn": 337.93,
+      "sourceOut": 340.37,
+      "sameTakeAs": [
+        55
+      ],
+      "pieces": [
+        {
+          "from": 334.3,
+          "to": 340.37
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 71,
+      "heard": "जब जॉइस मिलने का चान्स आदा -आदा था,",
+      "reason": "FLAG: no clean take; best match used (match 71 < 72, end missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 57,
+      "script": "Tab neurons mein ek alag signal dikha, juice aane se pehle hi, dheere-dheere badhta hua.",
+      "sourceIn": 347.62,
+      "sourceOut": 353.41,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 347.57,
+          "to": 349.84
+        },
+        {
+          "from": 349.89,
+          "to": 353.42
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 349.84,
+          "to": 349.89,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 80,
+      "heard": "तब न्यूरॉन्स में एक अलग सिग्नेल दिखा, जू इस आने से पहले ही दिरे दिरे बढ़ता हुआ।",
+      "reason": "FLAG: no clean take; best match used (repeat: दिरे)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 58,
+      "script": "Aur ye signal sabse tez tab tha, jab bilkul pata nahi tha ki milega ya nahi.",
+      "sourceIn": 356.31,
+      "sourceOut": 361.33,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 356.25,
+          "to": 361.47
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 92,
+      "heard": "और ये सिगनल सब से तेज तब था, जब बिल्कुल पता ही नहीं था कि मिलेगा या नहीं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 363.01,
+          "end": 370.12,
+          "score": 65,
+          "problems": [
+            "match 65 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 59,
+      "script": "Yahan ek baat saaf kar doon.",
+      "sourceIn": 370.54,
+      "sourceOut": 372.34,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 370.52,
+          "to": 372.34
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 92,
+      "heard": "यहाँ एक बाद साफ कर दू,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 240.58,
+          "end": 244.55,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 247.43,
+          "end": 248.95,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 312.87,
+          "end": 317.04,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 407.9,
+          "end": 409.85,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 617.2,
+          "end": 619.11,
+          "score": 55,
+          "problems": [
+            "match 55 < 72"
+          ]
+        },
+        {
+          "start": 730.6,
+          "end": 732.98,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 749.65,
+          "end": 750.73,
+          "score": 63,
+          "problems": [
+            "match 63 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 754.13,
+          "end": 755.99,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 807.63,
+          "end": 809.23,
+          "score": 60,
+          "problems": [
+            "match 60 < 72"
+          ]
+        },
+        {
+          "start": 836.47,
+          "end": 838.29,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 873.62,
+          "end": 875.14,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 60,
+      "script": "Ye bandaron par lab ka experiment tha, juice ke saath, reels ke saath nahi.",
+      "sourceIn": 373.95,
+      "sourceOut": 381.85,
+      "sameTakeAs": [
+        61,
+        62,
+        63
+      ],
+      "pieces": [
+        {
+          "from": 373.95,
+          "to": 390.95
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "ये बंदरो पर लेब का एक्स्परिमेंट था, जो इसके साथ, रिल्स के साथ नहीं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 61,
+      "script": "Toh phone se iska rishta ek *misaal* hai, saboot nahi.",
+      "sourceIn": 381.65,
+      "sourceOut": 384.99,
+      "sameTakeAs": [
+        60,
+        62,
+        63
+      ],
+      "pieces": [
+        {
+          "from": 373.95,
+          "to": 390.95
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 92,
+      "heard": "तो फोन से इसका रिश्ता एक मिसाल है, सबूत नहीं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 504.7,
+          "end": 507.44,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 62,
+      "script": "Lekin ye misaal bahut kuch samjha deti hai.",
+      "sourceIn": 384.79,
+      "sourceOut": 387.55,
+      "sameTakeAs": [
+        60,
+        61,
+        63
+      ],
+      "pieces": [
+        {
+          "from": 373.95,
+          "to": 390.95
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 95,
+      "heard": "लेकिन ये मिसाल भहुत कुछ सम्जा देती हैं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 625.61,
+          "end": 627.39,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        },
+        {
+          "start": 642.36,
+          "end": 651.15,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 766.26,
+          "end": 768.78,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 63,
+      "script": "Kyunki tumhari feed ka har swipe ek chhota sa *shayad* hai.",
+      "sourceIn": 387.45,
+      "sourceOut": 390.93,
+      "sameTakeAs": [
+        60,
+        61,
+        62
+      ],
+      "pieces": [
+        {
+          "from": 373.95,
+          "to": 390.95
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 89,
+      "heard": "क्यूकि तुमहारे फीड का हर स्वाइप एक छोटा सा शायद हैं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 18.8,
+          "end": 24.58,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 701.82,
+          "end": 704.02,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 64,
+      "script": "Toh kya ye sab jaan-boojh kar banaya gaya hai?",
+      "sourceIn": 394.23,
+      "sourceOut": 397.38,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 394.23,
+          "to": 397.38
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 96,
+      "heard": "तो क्या ये सब जान बोजकर बनाया गया हैं?",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 786.62,
+          "end": 788.88,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 65,
+      "script": "Is par unhi logon ki baat suno, jinhone ye cheezein banayi.",
+      "sourceIn": 397.88,
+      "sourceOut": 403.0,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 397.75,
+          "to": 403.0
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 87,
+      "heard": "इस पर उन ही लोगो की बात सुनो जिन हो ने ये चीज़ बनाईई",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 66,
+      "script": "2006 mein Aza Raskin naam ke ek engineer ne ek feature design kiya, *infinite scroll*.",
+      "sourceIn": 403.94,
+      "sourceOut": 409.97,
+      "sameTakeAs": [
+        67
+      ],
+      "pieces": [
+        {
+          "from": 403.94,
+          "to": 414.0
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 78,
+      "heard": "में आजा रास्किन नाम के एक इंजिनियर ने एक फीचर दिसान किया इंफाइनेट स्क्रोल",
+      "reason": "FLAG: no clean take; best match used (start missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 67,
+      "script": "Page kabhi khatam hi nahi hota. Neeche, aur neeche.",
+      "sourceIn": 410.12,
+      "sourceOut": 413.84,
+      "sameTakeAs": [
+        66
+      ],
+      "pieces": [
+        {
+          "from": 403.94,
+          "to": 414.0
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "पेज कभी खतम ही नहीं होता नीचे और नीचे",
+      "reason": "FLAG: no clean take; best match used (start missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 68,
+      "script": "2018 mein BBC ke ek programme mein unhone kaha ki aaj wo iske liye *guilty* feel karte hain.",
+      "sourceIn": 450.86,
+      "sourceOut": 456.81,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 450.86,
+          "to": 456.91
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 87,
+      "heard": "2018 में बीबीसी के एक प्रॉग्राम में उन्हों नहीं कहा कि आज वो इसके लिए गिल्टी फील करते हैं।",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 416.76,
+          "end": 422.22,
+          "score": 87,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "line": 69,
+      "script": "Unka kehna tha, jab dimaag ko sochne ka waqt hi na mile, toh tum bas scroll karte rehte ho.",
+      "sourceIn": 457.25,
+      "sourceOut": 466.66,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 457.25,
+          "to": 460.92
+        },
+        {
+          "from": 461.88,
+          "to": 463.92
+        },
+        {
+          "from": 464.31,
+          "to": 466.67
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 460.92,
+          "to": 461.88,
+          "why": "pause"
+        },
+        {
+          "from": 463.92,
+          "to": 464.31,
+          "why": "pause"
+        },
+        {
+          "from": 460.78,
+          "to": 460.82,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 84,
+      "heard": "उनका कहना था जब दिमाग को सोचने का वक्त ही ना मिले, तो तुम बस ... तो तुम बस स्क्रोल करते रहते हूं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 70,
+      "script": "Aur apps ke design ke liye unhone ek bahut tez lafz use kiya: \"*behavioural cocaine*\".",
+      "sourceIn": 472.35,
+      "sourceOut": 479.77,
+      "sameTakeAs": [
+        71,
+        72,
+        73,
+        74
+      ],
+      "pieces": [
+        {
+          "from": 472.35,
+          "to": 476.15
+        },
+        {
+          "from": 476.49,
+          "to": 484.45
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 476.15,
+          "to": 476.49,
+          "why": "pause"
+        }
+      ],
+      "matchScore": 77,
+      "heard": "और एप्स के डिजान के लिए उन्होंने एक बहुत तेज लफ्स योस किया। बिहेविरल कोकेण",
+      "reason": "FLAG: no clean take; best match used (end missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 71,
+      "script": "Usi programme mein Facebook ke ek purane employee, Sandy Parakilas, ne kaha, social media bilkul slot machine jaisa hai.",
+      "sourceIn": 479.74,
+      "sourceOut": 495.12,
+      "sameTakeAs": [
+        70,
+        72,
+        73,
+        74
+      ],
+      "pieces": [
+        {
+          "from": 476.49,
+          "to": 484.45
+        },
+        {
+          "from": 484.79,
+          "to": 484.95
+        },
+        {
+          "from": 487.91,
+          "to": 491.26
+        },
+        {
+          "from": 491.7,
+          "to": 498.91
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 484.95,
+          "to": 487.91,
+          "why": "pause"
+        },
+        {
+          "from": 491.26,
+          "to": 491.7,
+          "why": "pause"
+        },
+        {
+          "from": 484.45,
+          "to": 484.59,
+          "why": "breath"
+        },
+        {
+          "from": 484.73,
+          "to": 484.79,
+          "why": "breath"
+        },
+        {
+          "from": 484.84,
+          "to": 484.85,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 78,
+      "heard": "उसी प्रग्लम में फ़ेसबुक के एक पुराने इम्प्लोई सेन्टी पिराकिलस सेंडी पेराकिलस ने कहा सोसियल मेडिया बिल्कुल स्लॉट मशीन जैसा हैं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 72,
+      "script": "Aur Like button banane walon mein se ek, Leah Pearlman, ne bataya ki wo khud likes ki aadi ho gayi thi.",
+      "sourceIn": 494.92,
+      "sourceOut": 503.38,
+      "sameTakeAs": [
+        70,
+        71,
+        73,
+        74
+      ],
+      "pieces": [
+        {
+          "from": 491.7,
+          "to": 498.91
+        },
+        {
+          "from": 499.11,
+          "to": 509.49
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 498.91,
+          "to": 499.11,
+          "why": "pause"
+        }
+      ],
+      "matchScore": 84,
+      "heard": "और लाइक बटन बनाने वालों में से एक लेह प्यार्मेन ने बताया कि वो खुद लाइक्स की आदि हो गई थी,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 73,
+      "script": "Akelapan lagta, toh phone check karti.",
+      "sourceIn": 503.56,
+      "sourceOut": 506.06,
+      "sameTakeAs": [
+        70,
+        71,
+        72,
+        74
+      ],
+      "pieces": [
+        {
+          "from": 499.11,
+          "to": 509.49
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 83,
+      "heard": "अकेला पं लगता तो फोन चैक करती,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 74,
+      "script": "Lekin insaaf ye hai ki dusri taraf bhi suni jaaye.",
+      "sourceIn": 506.12,
+      "sourceOut": 509.33,
+      "sameTakeAs": [
+        70,
+        71,
+        72,
+        73
+      ],
+      "pieces": [
+        {
+          "from": 499.11,
+          "to": 509.49
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 80,
+      "heard": "लेकिन इंसाफ यह है कि दोसिरी तरव भी सुनी जाए।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 203.64,
+          "end": 207.08,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 75,
+      "script": "Facebook ne BBC se kaha ki unke products logon ko apno ke kareeb laane ke liye bane hain.",
+      "sourceIn": 516.43,
+      "sourceOut": 525.12,
+      "sameTakeAs": [
+        76,
+        77
+      ],
+      "pieces": [
+        {
+          "from": 516.43,
+          "to": 528.17
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 84,
+      "heard": "फ़ेसबुक ने बीबीसी से कहा के उनके प्रोडक्ट्स लोगो को अपनो के करीब लाने के लिए बने हैं",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 76,
+      "script": "Aur addictive banana kabhi unka maqsad nahi tha.",
+      "sourceIn": 525.07,
+      "sourceOut": 528.19,
+      "sameTakeAs": [
+        75,
+        77
+      ],
+      "pieces": [
+        {
+          "from": 516.43,
+          "to": 528.17
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 80,
+      "heard": "और एडिक्टिब बनाना कभी उनका मक्सथ नहीं था,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 456.02,
+          "end": 458.19,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 77,
+      "script": "Toh jo log andar the, wo ek baat kehte hain, aur company dusri.",
+      "sourceIn": 528.53,
+      "sourceOut": 535.15,
+      "sameTakeAs": [
+        75,
+        76
+      ],
+      "pieces": [
+        {
+          "from": 528.43,
+          "to": 535.03
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "तो जो लोग अंदर थे वो एक बात कहते हैं और कंपनी दूसरी.",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 78,
+      "script": "Ab ek experiment, jo seedha teenagers par hua.",
+      "sourceIn": 535.68,
+      "sourceOut": 540.37,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 535.64,
+          "to": 540.39
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 86,
+      "heard": "अब एक इकस्परिमेंट जो सीदा टीनेजर्स पर हौआ।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 374.91,
+          "end": 379.73,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 540.76,
+          "end": 545.32,
+          "score": 84,
+          "problems": [
+            "start missing"
+          ]
+        },
+        {
+          "start": 651.15,
+          "end": 653.16,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 79,
+      "script": "2016 mein America ki ek university mein 32 teenagers ko MRI machine mein litaya gaya.",
+      "sourceIn": 546.33,
+      "sourceOut": 553.18,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 546.04,
+          "to": 553.24
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 79,
+      "heard": "2016 में अमेरिका की एक यूनिवर्सिटी में 32 टिनेजर्स को एमराइ मशीन में लिटाय गया।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 80,
+      "script": "Unhe Instagram jaisi ek app mein photos dikhayi gayi.",
+      "sourceIn": 558.3,
+      "sourceOut": 561.87,
+      "sameTakeAs": [
+        81
+      ],
+      "pieces": [
+        {
+          "from": 558.3,
+          "to": 564.87
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 80,
+      "heard": "उन्हें इंस्तग्राम जेसी एक एप में फोटोज दिखाई गयी।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 81,
+      "script": "Kuch photos par bahut saare likes the, kuch par kam.",
+      "sourceIn": 561.87,
+      "sourceOut": 566.89,
+      "sameTakeAs": [
+        80
+      ],
+      "pieces": [
+        {
+          "from": 558.3,
+          "to": 564.87
+        },
+        {
+          "from": 565.67,
+          "to": 566.89
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 564.87,
+          "to": 565.67,
+          "why": "pause"
+        }
+      ],
+      "matchScore": 89,
+      "heard": "कुछ फोटोज पर बहुत सारे लाइक्स थे हूँग। कुछ पर कम",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 152.66,
+          "end": 159.0,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 813.51,
+          "end": 815.41,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "restart word",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 82,
+      "script": "Zyada likes wali photo dekhte hi, dimaag ka reward wala hissa, *nucleus accumbens*, zyada active hua.",
+      "sourceIn": 567.58,
+      "sourceOut": 581.48,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 567.57,
+          "to": 581.59
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 75,
+      "heard": "लाइक्स वाली फोटो देखते ही दिमाग का रिवाड वाला हिस्सा न्यूक्लियस अकम्बेंस ज्यादा एक्टिब हुआ।",
+      "reason": "FLAG: no clean take; best match used (start missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 83,
+      "script": "Aur teenagers bhi unhi photos ko zyada like karne lage, jinpar pehle se zyada likes the.",
+      "sourceIn": 584.05,
+      "sourceOut": 592.21,
+      "sameTakeAs": [
+        84,
+        85
+      ],
+      "pieces": [
+        {
+          "from": 583.78,
+          "to": 597.08
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 86,
+      "heard": "और टिनेजर्स भी उन्ही फोटोस को ज्यादा लाइक करने लगे, जिन पर पहले से ज्यादा लाइक थे।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 84,
+      "script": "Aur mazedaar baat?",
+      "sourceIn": 592.01,
+      "sourceOut": 593.36,
+      "sameTakeAs": [
+        83,
+        85
+      ],
+      "pieces": [
+        {
+          "from": 583.78,
+          "to": 597.08
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 100,
+      "heard": "और मजेदर बात,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 16.34,
+          "end": 17.23,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 20.18,
+          "end": 21.74,
+          "score": 67,
+          "problems": [
+            "match 67 < 72"
+          ]
+        },
+        {
+          "start": 40.28,
+          "end": 41.06,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 53.88,
+          "end": 54.65,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 63.38,
+          "end": 64.09,
+          "score": 78,
+          "problems": []
+        },
+        {
+          "start": 112.96,
+          "end": 114.1,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 175.64,
+          "end": 176.28,
+          "score": 63,
+          "problems": [
+            "match 63 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 230.34,
+          "end": 231.52,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 236.3,
+          "end": 237.07,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 465.43,
+          "end": 466.11,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 495.0,
+          "end": 495.84,
+          "score": 56,
+          "problems": [
+            "match 56 < 72"
+          ]
+        },
+        {
+          "start": 533.9,
+          "end": 536.0,
+          "score": 58,
+          "problems": [
+            "match 58 < 72"
+          ]
+        },
+        {
+          "start": 704.38,
+          "end": 705.22,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 716.04,
+          "end": 717.38,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 727.16,
+          "end": 727.9,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 744.3,
+          "end": 745.26,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 750.87,
+          "end": 751.65,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 793.9,
+          "end": 795.34,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 813.25,
+          "end": 814.87,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 867.37,
+          "end": 868.21,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 886.18,
+          "end": 887.04,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 85,
+      "script": "Wo likes asli the hi nahi. Researchers ne khud lagaye the.",
+      "sourceIn": 593.39,
+      "sourceOut": 599.63,
+      "sameTakeAs": [
+        83,
+        84
+      ],
+      "pieces": [
+        {
+          "from": 583.78,
+          "to": 597.08
+        },
+        {
+          "from": 597.41,
+          "to": 599.96
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 597.08,
+          "to": 597.41,
+          "why": "pause"
+        },
+        {
+          "from": 596.96,
+          "to": 596.99,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 78,
+      "heard": "वो लाइक असली थे ही नहीं। रीसर्चर्स नहीं खुद लागया थे।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 86,
+      "script": "Yaani sirf ek *number* ne dimaag ki activity bhi badli, aur pasand bhi.",
+      "sourceIn": 600.65,
+      "sourceOut": 608.31,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 600.65,
+          "to": 608.4
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 80,
+      "heard": "यानि सिर्व एक नम्बर ने दिमाद की अक्टिविटी भी बदली और पसंद भी।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 87,
+      "script": "Ab ek zaroori sawaal.",
+      "sourceIn": 609.06,
+      "sourceOut": 610.88,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 609.03,
+          "to": 610.93
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 93,
+      "heard": "अब एक जरूरी सवाल।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 80.7,
+          "end": 82.54,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 121.29,
+          "end": 122.43,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 126.06,
+          "end": 127.24,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 207.08,
+          "end": 208.14,
+          "score": 65,
+          "problems": [
+            "match 65 < 72"
+          ]
+        },
+        {
+          "start": 211.66,
+          "end": 212.78,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 234.24,
+          "end": 235.06,
+          "score": 70,
+          "problems": [
+            "match 70 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 293.17,
+          "end": 294.05,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 301.51,
+          "end": 302.57,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 382.35,
+          "end": 383.67,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 493.64,
+          "end": 494.3,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 566.16,
+          "end": 568.27,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 569.57,
+          "end": 570.33,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 620.8,
+          "end": 621.73,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 713.72,
+          "end": 714.86,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 820.55,
+          "end": 823.31,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 864.87,
+          "end": 865.63,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 88,
+      "script": "Kya phone sach mein poori ek generation ko barbaad kar raha hai?",
+      "sourceIn": 618.51,
+      "sourceOut": 622.69,
+      "sameTakeAs": [
+        89,
+        90
+      ],
+      "pieces": [
+        {
+          "from": 618.51,
+          "to": 634.19
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "क्या फोन सच्मे पूरी एक जेनरेशन को बर्बात कर रहा हैं?",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 78.4,
+          "end": 81.34,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 614.24,
+          "end": 617.36,
+          "score": 81,
+          "problems": []
+        }
+      ]
+    },
+    {
+      "line": 89,
+      "script": "Internet par aisa kehne wale bahut mil jaayenge. Lekin data kya kehta hai?",
+      "sourceIn": 622.49,
+      "sourceOut": 627.51,
+      "sameTakeAs": [
+        88,
+        90
+      ],
+      "pieces": [
+        {
+          "from": 618.51,
+          "to": 634.19
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 89,
+      "heard": "इंटरनेट पर ऐसा कहने वाले बहुत मिल जाएंगे, लेकिन डेटा क्या कहता हैं?",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 726.86,
+          "end": 730.08,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 825.77,
+          "end": 829.92,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 90,
+      "script": "2019 mein do researchers, Amy Orben aur Andrew Przybylski, ne teen bade surveys ka data dekha.",
+      "sourceIn": 627.61,
+      "sourceOut": 634.16,
+      "sameTakeAs": [
+        88,
+        89
+      ],
+      "pieces": [
+        {
+          "from": 618.51,
+          "to": 634.19
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 65,
+      "heard": "2019 में दो रिसर्चर्स ने तीन बढ़े सर्वेज का डेटा देखा।",
+      "reason": "FLAG: no clean take; best match used (match 65 < 72)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 91,
+      "script": "Saadhe teen lakh se zyada teenagers.",
+      "sourceIn": 635.94,
+      "sourceOut": 638.56,
+      "sameTakeAs": [
+        92
+      ],
+      "pieces": [
+        {
+          "from": 635.94,
+          "to": 644.15
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 79,
+      "heard": "साडे 3 लाक से ज्यादा टिनेजर्स,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 563.19,
+          "end": 564.77,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 590.25,
+          "end": 592.35,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 769.02,
+          "end": 770.35,
+          "score": 55,
+          "problems": [
+            "match 55 < 72"
+          ]
+        },
+        {
+          "start": 871.96,
+          "end": 873.62,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 92,
+      "script": "Nateeja ye nikla ki technology ka asar negative toh tha, lekin bahut *chhota*.",
+      "sourceIn": 638.74,
+      "sourceOut": 644.2,
+      "sameTakeAs": [
+        91
+      ],
+      "pieces": [
+        {
+          "from": 635.94,
+          "to": 644.15
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 642.23,
+          "to": 642.24,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 87,
+      "heard": "नतीजा ये निकला कि टेक्नोलोजी के आसर नेगेटिप तो था, लेकिन बहुत छोटा।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 93,
+      "script": "Teenagers ki khushi mein jo farq tha, uska zyada se zyada *0.4 percent*.",
+      "sourceIn": 650.52,
+      "sourceOut": 655.01,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 650.52,
+          "to": 655.01
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 79,
+      "heard": "टिनेजर्स की खुशी में जो फरक था, उसका ज्यादा से ज्यादा 0 .4",
+      "reason": "FLAG: no clean take; best match used (end missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 94,
+      "script": "Matlab phone koi zeher nahi hai.",
+      "sourceIn": 655.67,
+      "sourceOut": 657.75,
+      "sameTakeAs": [
+        95
+      ],
+      "pieces": [
+        {
+          "from": 655.67,
+          "to": 662.15
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 78,
+      "heard": "मतलब फोन कोई जहर नहीं है,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 183.8,
+          "end": 185.04,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 319.18,
+          "end": 321.66,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 95,
+      "script": "Lekin ye average hai, aur koi insaan average nahi hota.",
+      "sourceIn": 657.91,
+      "sourceOut": 662.15,
+      "sameTakeAs": [
+        94
+      ],
+      "pieces": [
+        {
+          "from": 655.67,
+          "to": 662.15
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 77,
+      "heard": "लेकिन ये एवरेज है, और कोई इनसान एवरेज नहीं होता",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 523.47,
+          "end": 526.8,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 96,
+      "script": "Kisi ke liye do ghante kuch nahi.",
+      "sourceIn": 664.22,
+      "sourceOut": 666.8,
+      "sameTakeAs": [
+        97
+      ],
+      "pieces": [
+        {
+          "from": 664.16,
+          "to": 671.57
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 88,
+      "heard": "किसे के लिए दो घंटे कुछ नहीं",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 420.44,
+          "end": 422.22,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 454.91,
+          "end": 456.69,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 666.88,
+          "end": 668.6,
+          "score": 68,
+          "problems": [
+            "match 68 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 97,
+      "script": "Aur kisi ke liye wahi do ghante neend, padhai aur rishte, teeno kha jaate hain.",
+      "sourceIn": 666.6,
+      "sourceOut": 671.59,
+      "sameTakeAs": [
+        96
+      ],
+      "pieces": [
+        {
+          "from": 664.16,
+          "to": 671.57
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 83,
+      "heard": "और किसे के लिए वही दो घंटे पढ़ाई नेंद और रिश्ते देनों का जाते हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 796.06,
+          "end": 808.13,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 98,
+      "script": "Isi liye ek trend se bhi bachna, \"*dopamine detox*\".",
+      "sourceIn": 678.56,
+      "sourceOut": 681.92,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 678.47,
+          "to": 682.03
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "इसी लिए एक ट्रेंट से भी बचना, डोपेमिन डिटॉक्स,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 673.9,
+          "end": 677.49,
+          "score": 67,
+          "problems": [
+            "match 67 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 99,
+      "script": "Ek din phone band, aur dimaag reset.",
+      "sourceIn": 682.44,
+      "sourceOut": 685.26,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 682.22,
+          "to": 685.26
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 90,
+      "heard": "एक दिन फोन बन्त और दिमाग रिसेट।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 283.41,
+          "end": 285.95,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 299.23,
+          "end": 300.51,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 580.61,
+          "end": 585.52,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 100,
+      "script": "Harvard Health par ek doctor ne likha ki aisa fast tumhara dopamine kam karta hi nahi.",
+      "sourceIn": 686.97,
+      "sourceOut": 696.15,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 686.88,
+          "to": 692.43
+        },
+        {
+          "from": 692.51,
+          "to": 693.05
+        },
+        {
+          "from": 693.14,
+          "to": 696.15
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 692.43,
+          "to": 692.44,
+          "why": "breath"
+        },
+        {
+          "from": 692.46,
+          "to": 692.47,
+          "why": "breath"
+        },
+        {
+          "from": 692.49,
+          "to": 692.51,
+          "why": "breath"
+        },
+        {
+          "from": 693.05,
+          "to": 693.14,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 87,
+      "heard": "हार्वर्ड हेल्थ पर एक डोक्टर ने लिखा, कि एसा फाष्ट तुम्हारा डोबमिन कम करता ही नहीं",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 101,
+      "script": "Dopamine koi zeher nahi jo body se nikal jaaye. Wo tumhare dimaag ka apna hissa hai.",
+      "sourceIn": 697.98,
+      "sourceOut": 704.14,
+      "sameTakeAs": [
+        102
+      ],
+      "pieces": [
+        {
+          "from": 698.0,
+          "to": 710.63
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 87,
+      "heard": "डोपेमेन कोई जहर नहीं जो बोडि से निकल जाये, वो तुम्हारे दिमाग का आपना हिस्सा है,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 102,
+      "script": "Aur jis doctor ne ye naam mashhoor kiya, Cameron Sepah, unka matlab kuch aur tha.",
+      "sourceIn": 704.3,
+      "sourceOut": 710.63,
+      "sameTakeAs": [
+        101
+      ],
+      "pieces": [
+        {
+          "from": 698.0,
+          "to": 710.63
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 84,
+      "heard": "और जिस डॉक्तर ने ये नाम मशुर किया, कैमेरन सेफा, उनका मतलब कुश और था।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 103,
+      "script": "Wo therapy ka ek tareeqa tha, un cheezon ko kam karna jo aadat ko *jagati* hain.",
+      "sourceIn": 712.46,
+      "sourceOut": 718.78,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 712.34,
+          "to": 718.83
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 92,
+      "heard": "वो थेरेपी का एक तरिका था, उन छीजों को कम करना, जो आदत को जगाती हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 104,
+      "script": "Toh naam galat hai, lekin idea ka ek hissa kaam ka hai.",
+      "sourceIn": 720.52,
+      "sourceOut": 726.48,
+      "sameTakeAs": [
+        105,
+        106,
+        107,
+        108
+      ],
+      "pieces": [
+        {
+          "from": 720.51,
+          "to": 745.39
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "तो नाम गलत है, लेकिन आइडिया काम का है,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 179.84,
+          "end": 185.04,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 264.52,
+          "end": 267.05,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 624.51,
+          "end": 627.39,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 105,
+      "script": "Uspar hum aakhir mein wapas aayenge.",
+      "sourceIn": 726.56,
+      "sourceOut": 729.08,
+      "sameTakeAs": [
+        104,
+        106,
+        107,
+        108
+      ],
+      "pieces": [
+        {
+          "from": 720.51,
+          "to": 745.39
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 91,
+      "heard": "उस पर हम आखिर में वाबस आयेंगे।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 106,
+      "script": "Lekin usse pehle, 1400 saal purani ek baat.",
+      "sourceIn": 728.88,
+      "sourceOut": 732.11,
+      "sameTakeAs": [
+        104,
+        105,
+        107,
+        108
+      ],
+      "pieces": [
+        {
+          "from": 720.51,
+          "to": 745.39
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 74,
+      "heard": "लेकिन उस से पहले चोदा सो साल पूरानी एक बात",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 107,
+      "script": "Sahih Bukhari ki hadith hai. Nabi ﷺ ne farmaya, do naimatein aisi hain, jinmein bahut se log *ghaate* mein rehte hain.",
+      "sourceIn": 731.97,
+      "sourceOut": 743.72,
+      "sameTakeAs": [
+        104,
+        105,
+        106,
+        108
+      ],
+      "pieces": [
+        {
+          "from": 720.51,
+          "to": 745.39
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 68,
+      "heard": "सही बुखारी की हदिसे नभी सलल्लालाओ आलेया सल्लम ने फरमाया, दो नियामते ऐसी हैं जिन में से भूट साइब जिन में भूट से लोग घाटे में रहते हैं",
+      "reason": "FLAG: no clean take; best match used (match 68 < 72)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 108,
+      "script": "Sehat, aur *khaali waqt*.",
+      "sourceIn": 743.52,
+      "sourceOut": 745.38,
+      "sameTakeAs": [
+        104,
+        105,
+        106,
+        107
+      ],
+      "pieces": [
+        {
+          "from": 720.51,
+          "to": 745.39
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "सिहत और खाली वकत",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 54.65,
+          "end": 61.18,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 89.19,
+          "end": 90.29,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 208.48,
+          "end": 211.66,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 253.84,
+          "end": 256.66,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 266.37,
+          "end": 267.69,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 300.23,
+          "end": 301.31,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 459.05,
+          "end": 460.01,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 494.3,
+          "end": 495.54,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 590.63,
+          "end": 592.09,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 771.7,
+          "end": 772.36,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 773.06,
+          "end": 783.46,
+          "score": 69,
+          "problems": [
+            "match 69 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 788.38,
+          "end": 791.32,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 791.88,
+          "end": 793.9,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 892.22,
+          "end": 894.05,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 109,
+      "script": "Ghaate ke liye yahan lafz hai \"maghbun\" (مَغْبُونٌ), aur ye bazaar ka lafz hai.",
+      "sourceIn": 748.19,
+      "sourceOut": 752.71,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 747.84,
+          "to": 752.71
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 79,
+      "heard": "घाटे के लैये यहां लबस म्गबून, और बोजार का लबס योजहै,",
+      "reason": "FLAG: no clean take; best match used (end missing)",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 753.27,
+          "end": 756.69,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 110,
+      "script": "Matlab koi cheez uski asli keemat se bahut kam mein bech dena. Saude mein *thage* jaana.",
+      "sourceIn": 764.87,
+      "sourceOut": 770.42,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 764.87,
+          "to": 770.42
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "मतलब कोई चीज उसकी आसले किमत से बहुत कम्में बेज देना, सोदे में थगे जाना,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 111,
+      "script": "Yaani khaali waqt ek *poonji* hai.",
+      "sourceIn": 782.06,
+      "sourceOut": 784.52,
+      "sameTakeAs": [
+        112
+      ],
+      "pieces": [
+        {
+          "from": 781.66,
+          "to": 789.02
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 95,
+      "heard": "यानि खालि वक्त एक पूंजी है,",
+      "reason": "last of 2 clean takes",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 264.19,
+          "end": 265.58,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 459.05,
+          "end": 460.31,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 639.36,
+          "end": 640.7,
+          "score": 63,
+          "problems": [
+            "match 63 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 771.32,
+          "end": 776.24,
+          "score": 89,
+          "problems": []
+        },
+        {
+          "start": 892.52,
+          "end": 895.31,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 112,
+      "script": "Aaram, neend, ghar walon ke saath hasna, ye ghaata nahi hai.",
+      "sourceIn": 784.78,
+      "sourceOut": 789.0,
+      "sameTakeAs": [
+        111
+      ],
+      "pieces": [
+        {
+          "from": 781.66,
+          "to": 789.02
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 86,
+      "heard": "आराम, निन्द, घर्वालो के साथ असना यह घाता नहीं है,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 653.75,
+          "end": 657.63,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 113,
+      "script": "Ghaata wo hai, jab waqt chala jaaye, aur pata hi na chale ki kis cheez ke badle gaya.",
+      "sourceIn": 791.8,
+      "sourceOut": 803.31,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 791.75,
+          "to": 797.65
+        },
+        {
+          "from": 797.78,
+          "to": 798.11
+        },
+        {
+          "from": 798.22,
+          "to": 798.73
+        },
+        {
+          "from": 798.9,
+          "to": 803.31
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 797.65,
+          "to": 797.68,
+          "why": "breath"
+        },
+        {
+          "from": 797.69,
+          "to": 797.78,
+          "why": "breath"
+        },
+        {
+          "from": 798.11,
+          "to": 798.13,
+          "why": "breath"
+        },
+        {
+          "from": 798.18,
+          "to": 798.22,
+          "why": "breath"
+        },
+        {
+          "from": 798.73,
+          "to": 798.77,
+          "why": "breath"
+        },
+        {
+          "from": 798.8,
+          "to": 798.84,
+          "why": "breath"
+        },
+        {
+          "from": 798.88,
+          "to": 798.9,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 95,
+      "heard": "घाता वो है जब वक्ट चला जाए और पता ही ना चले कि किस चीज़ के लिए बद्ले गया।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 114,
+      "script": "Toh ab apni receipt dekhte hain.",
+      "sourceIn": 805.51,
+      "sourceOut": 808.25,
+      "sameTakeAs": [
+        115,
+        116,
+        117
+      ],
+      "pieces": [
+        {
+          "from": 805.42,
+          "to": 810.07
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 82,
+      "heard": "तो अब अपनी रिस्रिप्ट देखते हैं,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 65.48,
+          "end": 67.2,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 183.8,
+          "end": 185.04,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 325.45,
+          "end": 327.74,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 523.09,
+          "end": 525.0,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 115,
+      "script": "Ek shaam, do ghante.",
+      "sourceIn": 808.13,
+      "sourceOut": 810.09,
+      "sameTakeAs": [
+        114,
+        116,
+        117
+      ],
+      "pieces": [
+        {
+          "from": 805.42,
+          "to": 810.07
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 100,
+      "heard": "एक शाम, दो गंटे,",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 15.94,
+          "end": 17.23,
+          "score": 59,
+          "problems": [
+            "match 59 < 72"
+          ]
+        },
+        {
+          "start": 25.94,
+          "end": 26.48,
+          "score": 74,
+          "problems": [
+            "start missing"
+          ]
+        },
+        {
+          "start": 27.76,
+          "end": 29.04,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 29.26,
+          "end": 30.07,
+          "score": 67,
+          "problems": [
+            "match 67 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 49.04,
+          "end": 51.75,
+          "score": 59,
+          "problems": [
+            "match 59 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 54.65,
+          "end": 60.84,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 93.11,
+          "end": 93.85,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 107.25,
+          "end": 107.81,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 115.0,
+          "end": 115.56,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 117.53,
+          "end": 118.06,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 184.34,
+          "end": 184.98,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 312.48,
+          "end": 302.97,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 326.88,
+          "end": 327.6,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 330.48,
+          "end": 331.16,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 371.66,
+          "end": 374.37,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 375.51,
+          "end": 378.79,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 386.11,
+          "end": 387.01,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 421.3,
+          "end": 421.9,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 455.77,
+          "end": 456.39,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 458.87,
+          "end": 459.59,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 501.92,
+          "end": 503.26,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 601.38,
+          "end": 602.05,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 633.37,
+          "end": 636.67,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 662.97,
+          "end": 663.63,
+          "score": 74,
+          "problems": [
+            "start missing"
+          ]
+        },
+        {
+          "start": 665.22,
+          "end": 665.8,
+          "score": 74,
+          "problems": [
+            "start missing"
+          ]
+        },
+        {
+          "start": 668.0,
+          "end": 668.6,
+          "score": 74,
+          "problems": [
+            "start missing"
+          ]
+        },
+        {
+          "start": 670.54,
+          "end": 671.06,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 682.52,
+          "end": 683.5,
+          "score": 58,
+          "problems": [
+            "match 58 < 72"
+          ]
+        },
+        {
+          "start": 690.77,
+          "end": 691.59,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 717.38,
+          "end": 718.0,
+          "score": 60,
+          "problems": [
+            "match 60 < 72"
+          ]
+        },
+        {
+          "start": 730.6,
+          "end": 731.28,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 741.6,
+          "end": 742.38,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 744.94,
+          "end": 749.25,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 813.25,
+          "end": 814.07,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 829.09,
+          "end": 829.55,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 872.36,
+          "end": 872.9,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 887.18,
+          "end": 887.7,
+          "score": 70,
+          "problems": [
+            "match 70 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 889.46,
+          "end": 890.62,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 116,
+      "script": "Badle mein kya mila?",
+      "sourceIn": 810.33,
+      "sourceOut": 811.65,
+      "sameTakeAs": [
+        114,
+        115,
+        117
+      ],
+      "pieces": [
+        {
+          "from": 810.25,
+          "to": 811.62
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 94,
+      "heard": "बदले में क्या मिला?",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 95.91,
+          "end": 96.91,
+          "score": 67,
+          "problems": [
+            "match 67 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 122.06,
+          "end": 125.88,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 203.64,
+          "end": 204.68,
+          "score": 67,
+          "problems": [
+            "match 67 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 257.68,
+          "end": 258.5,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 344.19,
+          "end": 344.89,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 348.36,
+          "end": 348.96,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 384.87,
+          "end": 385.87,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 386.73,
+          "end": 387.87,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 694.51,
+          "end": 695.21,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 797.0,
+          "end": 803.21,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 847.91,
+          "end": 849.29,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 856.79,
+          "end": 857.73,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 874.8,
+          "end": 875.48,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 889.18,
+          "end": 890.26,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 117,
+      "script": "Thodi hasi, do-teen kaam ki baatein, aur bahut saari aisi reels jo ab yaad bhi nahi.",
+      "sourceIn": 811.85,
+      "sourceOut": 817.51,
+      "sameTakeAs": [
+        114,
+        115,
+        116
+      ],
+      "pieces": [
+        {
+          "from": 811.68,
+          "to": 817.71
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 80,
+      "heard": "तोड़ी हसी, दो तिन काम की बाते, और बहुत सारी ऐसी रिल्स जो अब याद भी नहीं।",
+      "reason": "FLAG: no clean take; best match used (restart word, start missing)",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 118,
+      "script": "Saude mein koi buraai nahi hai.",
+      "sourceIn": 819.34,
+      "sourceOut": 821.37,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 819.34,
+          "to": 821.68
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 75,
+      "heard": "सोदे में कोई बुराई नहीं हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 39.36,
+          "end": 41.06,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 53.0,
+          "end": 54.65,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 386.33,
+          "end": 388.29,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 525.15,
+          "end": 526.27,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 119,
+      "script": "Sawaal bas ye hai ki sauda *tumne* kiya, ya tumhare angoothe ne.",
+      "sourceIn": 822.79,
+      "sourceOut": 826.82,
+      "sameTakeAs": [
+        120,
+        121,
+        122,
+        123
+      ],
+      "pieces": [
+        {
+          "from": 822.79,
+          "to": 826.8
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 93,
+      "heard": "सवाल बस यह है कि सोदा तुम ने किया या तुम्हारे अंगोठे ने",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 120,
+      "script": "Aur yahin Sepah wala asli idea kaam aata hai.",
+      "sourceIn": 826.99,
+      "sourceOut": 830.04,
+      "sameTakeAs": [
+        119,
+        121,
+        122,
+        123
+      ],
+      "pieces": [
+        {
+          "from": 826.97,
+          "to": 845.67
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 79,
+      "heard": "और यहीं सीफा वाली असली आइडिया काम आता हैं",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 324.44,
+          "end": 327.74,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 350.58,
+          "end": 353.29,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing",
+            "repeat: दिरे"
+          ]
+        },
+        {
+          "start": 623.13,
+          "end": 627.39,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 717.52,
+          "end": 726.36,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 121,
+      "script": "Dopamine ko nahi, *trigger* ko pakdo.",
+      "sourceIn": 830.25,
+      "sourceOut": 834.0,
+      "sameTakeAs": [
+        119,
+        120,
+        122,
+        123
+      ],
+      "pieces": [
+        {
+          "from": 826.97,
+          "to": 845.67
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 80,
+      "heard": "डोपेमीन को नहीं, ट्रिगर को पकडो",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 122,
+      "script": "Wo cheez jo scroll shuru karwati hai.",
+      "sourceIn": 834.23,
+      "sourceOut": 837.17,
+      "sameTakeAs": [
+        119,
+        120,
+        121,
+        123
+      ],
+      "pieces": [
+        {
+          "from": 826.97,
+          "to": 845.67
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 74,
+      "heard": "वो चीस जो स्क्रोल छुरू करवा दी हैं",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 123,
+      "script": "Ek notification. Bistar par rakha phone. Bore hote hi haath ka jeb mein jaana.",
+      "sourceIn": 836.97,
+      "sourceOut": 845.41,
+      "sameTakeAs": [
+        119,
+        120,
+        121,
+        122
+      ],
+      "pieces": [
+        {
+          "from": 826.97,
+          "to": 845.67
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 85,
+      "heard": "एक नोटिफिकेशन बिस्तर पर रखा हुआ फोन बोर होते ही हाथ जेब में जाना",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 848.75,
+          "end": 852.75,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 124,
+      "script": "Aza Raskin ne khud apna phone black and white kar rakha hai, taaki apps itna na kheenchein.",
+      "sourceIn": 854.97,
+      "sourceOut": 865.75,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 854.97,
+          "to": 858.39
+        },
+        {
+          "from": 859.05,
+          "to": 859.3
+        },
+        {
+          "from": 860.66,
+          "to": 862.27
+        },
+        {
+          "from": 863.71,
+          "to": 863.99
+        },
+        {
+          "from": 864.77,
+          "to": 865.75
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 858.39,
+          "to": 859.05,
+          "why": "pause"
+        },
+        {
+          "from": 859.3,
+          "to": 860.66,
+          "why": "pause"
+        },
+        {
+          "from": 862.27,
+          "to": 863.71,
+          "why": "pause"
+        },
+        {
+          "from": 863.99,
+          "to": 864.77,
+          "why": "pause"
+        },
+        {
+          "from": 859.15,
+          "to": 859.2,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 76,
+      "heard": "अज़ा रास्किन ने खुत अपना फोन ब्लेक एं वाइट पर रखा था। ताकि एप्स इत्ना ... अजार इसकिन",
+      "reason": "FLAG: no clean take; best match used (end missing)",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 865.63,
+          "end": 870.49,
+          "score": 66,
+          "problems": [
+            "match 66 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 125,
+      "script": "Ye ek insaan ki aadat hai, koi research nahi. Lekin try karne mein kya jaata hai?",
+      "sourceIn": 871.37,
+      "sourceOut": 876.48,
+      "sameTakeAs": [
+        126,
+        127
+      ],
+      "pieces": [
+        {
+          "from": 871.37,
+          "to": 882.32
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 84,
+      "heard": "ये एक इन्सान के आदत थे, कोई रीसर्च नहीं, लेकिन ट्राइ करने में क्या जाता हैं?",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 890.42,
+          "end": 893.18,
+          "score": 55,
+          "problems": [
+            "match 55 < 72",
+            "start missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 126,
+      "script": "Skinner ke kabutar ko kabhi pata nahi chala ki dabba kisne banaya.",
+      "sourceIn": 876.44,
+      "sourceOut": 882.34,
+      "sameTakeAs": [
+        125,
+        127
+      ],
+      "pieces": [
+        {
+          "from": 871.37,
+          "to": 882.32
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 79,
+      "heard": "स्किनर ने कबूतर को कभी पता ही नहीं चलने दिया कि तबबा किस ने बनाया?",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 127,
+      "script": "Tumhe pata hai.",
+      "sourceIn": 882.54,
+      "sourceOut": 883.64,
+      "sameTakeAs": [
+        125,
+        126
+      ],
+      "pieces": [
+        {
+          "from": 882.51,
+          "to": 883.92
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 100,
+      "heard": "तुम्हे पता है!",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 19.21,
+          "end": 20.18,
+          "score": 67,
+          "problems": [
+            "match 67 < 72"
+          ]
+        },
+        {
+          "start": 63.92,
+          "end": 64.37,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 66.36,
+          "end": 67.2,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 84.12,
+          "end": 84.74,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 88.85,
+          "end": 89.79,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 89.95,
+          "end": 90.83,
+          "score": 67,
+          "problems": [
+            "match 67 < 72"
+          ]
+        },
+        {
+          "start": 169.47,
+          "end": 171.29,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 184.62,
+          "end": 185.04,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 204.68,
+          "end": 205.12,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 220.66,
+          "end": 222.28,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 223.68,
+          "end": 224.48,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 228.8,
+          "end": 229.66,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 245.33,
+          "end": 246.07,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 302.14,
+          "end": 310.55,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 302.63,
+          "end": 316.51,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 323.12,
+          "end": 323.72,
+          "score": 67,
+          "problems": [
+            "match 67 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 327.24,
+          "end": 327.74,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 330.78,
+          "end": 331.26,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 359.21,
+          "end": 359.67,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 387.87,
+          "end": 388.29,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 419.08,
+          "end": 419.94,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 532.95,
+          "end": 533.9,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 626.51,
+          "end": 627.39,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 694.09,
+          "end": 694.51,
+          "score": 63,
+          "problems": [
+            "match 63 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 701.82,
+          "end": 703.6,
+          "score": 57,
+          "problems": [
+            "match 57 < 72"
+          ]
+        },
+        {
+          "start": 720.6,
+          "end": 721.6,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 742.38,
+          "end": 743.6,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 788.38,
+          "end": 790.21,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 791.88,
+          "end": 792.9,
+          "score": 57,
+          "problems": [
+            "match 57 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 794.54,
+          "end": 795.58,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 825.35,
+          "end": 826.25,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 829.09,
+          "end": 829.92,
+          "score": 64,
+          "problems": [
+            "match 64 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 851.15,
+          "end": 852.09,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 858.11,
+          "end": 861.1,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 867.97,
+          "end": 869.08,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        },
+        {
+          "start": 875.14,
+          "end": 876.36,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 879.64,
+          "end": 880.14,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 886.74,
+          "end": 887.3,
+          "score": 60,
+          "problems": [
+            "match 60 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 890.42,
+          "end": 891.32,
+          "score": 62,
+          "problems": [
+            "match 62 < 72",
+            "start missing"
+          ]
+        },
+        {
+          "start": 894.05,
+          "end": 895.31,
+          "score": 64,
+          "problems": [
+            "match 64 < 72"
+          ]
+        },
+        {
+          "start": 898.2,
+          "end": 898.88,
+          "score": 61,
+          "problems": [
+            "match 61 < 72",
+            "end missing"
+          ]
+        },
+        {
+          "start": 901.36,
+          "end": 902.5,
+          "score": 58,
+          "problems": [
+            "match 58 < 72",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 128,
+      "script": "Aur jise pata ho ki saamne slot machine hai, wo kam se kam itna toh tay kar sakta hai ki usme kitne sikke daalne hain.",
+      "sourceIn": 886.16,
+      "sourceOut": 893.3,
+      "sameTakeAs": [
+        129
+      ],
+      "pieces": [
+        {
+          "from": 886.16,
+          "to": 897.31
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 91,
+      "heard": "और जिसे पता हो कि सामने स्लॉट मशीन है, वो कम से कम इतना तो ते कर सकता है कि उसमें कितनी सिक्के डालने हैं।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    },
+    {
+      "line": 129,
+      "script": "Waqt tumhari poonji hai. Ise *sasta* mat bechna.",
+      "sourceIn": 893.62,
+      "sourceOut": 897.31,
+      "sameTakeAs": [
+        128
+      ],
+      "pieces": [
+        {
+          "from": 886.16,
+          "to": 897.31
+        }
+      ],
+      "removedInside": [],
+      "matchScore": 92,
+      "heard": "वक्त तुमहारी पूंजी है, इसे सस्ता मत बेचना।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": [
+        {
+          "start": 245.17,
+          "end": 248.19,
+          "score": 56,
+          "problems": [
+            "match 56 < 72",
+            "start missing",
+            "end missing"
+          ]
+        }
+      ]
+    },
+    {
+      "line": 130,
+      "script": "Agar ye video tumhe ek achha sauda laga, toh channel subscribe kar lo.",
+      "sourceIn": 900.38,
+      "sourceOut": 905.38,
+      "sameTakeAs": [],
+      "pieces": [
+        {
+          "from": 900.37,
+          "to": 903.38
+        },
+        {
+          "from": 903.44,
+          "to": 905.44
+        }
+      ],
+      "removedInside": [
+        {
+          "from": 903.38,
+          "to": 903.42,
+          "why": "breath"
+        },
+        {
+          "from": 903.43,
+          "to": 903.44,
+          "why": "breath"
+        }
+      ],
+      "matchScore": 83,
+      "heard": "अगर ये विडियो तुमहें एक अच्छा सोधा लगा, तो चेनेल सब्स्क्रब कर लो।",
+      "reason": "only clean take",
+      "override": null,
+      "otherAttempts": []
+    }
+  ]
+}

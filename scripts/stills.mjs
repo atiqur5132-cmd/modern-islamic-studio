@@ -19,7 +19,8 @@ const serveUrl = await bundle({entryPoint: path.resolve("src/index.ts"), publicD
 const chromiumOptions = {gl: "angle"};
 // Google fonts load over the network at the first frame; a slow line needs more than 30 s.
 const timeoutInMilliseconds = 120000;
-const composition = await selectComposition({serveUrl, id: "Short", inputProps, chromiumOptions, timeoutInMilliseconds});
+// COMP=Long picks another composition (default: the Short).
+const composition = await selectComposition({serveUrl, id: process.env.COMP ?? "Short", inputProps, chromiumOptions, timeoutInMilliseconds});
 for (const frame of frames.map(Number)) {
   const output = path.join(outDir, `f${String(frame).padStart(4, "0")}.png`);
   await renderStill({composition, serveUrl, output, frame, inputProps, chromiumOptions, timeoutInMilliseconds});

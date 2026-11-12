@@ -10,6 +10,9 @@ import {MuminunThumbnail} from "./compositions/MuminunThumbnail";
 import {FilTerrainTest} from "./scenes/fil/TerrainScene";
 import yawmStats from "../projects/yawm-365/quran_stats.json";
 import {Edit, editDurationInFrames, FPS} from "./timeline/types";
+import {Long} from "./compositions/Long";
+import scrollLong from "../projects/scroll-kyun/long.json";
+import {LongProps} from "./long/scroll/types";
 
 const SHORTS = {fps: FPS, width: 1080, height: 1920};
 
@@ -67,6 +70,16 @@ export const Root = () => (
       defaultProps={{photo: "mk-thumb.png", face: [509, 718] as [number, number], at: [509, 1078] as [number, number], scale: 1.0, panelTop: 600}}
       durationInFrames={1}
       {...SHORTS}
+    />
+    <Composition
+      id="Long"
+      component={Long}
+      defaultProps={scrollLong as LongProps}
+      durationInFrames={1}
+      calculateMetadata={({props}) => ({durationInFrames: Math.round(props.durationSeconds * FPS)})}
+      fps={FPS}
+      width={1920}
+      height={1080}
     />
     <Composition id="StudioTest" component={StudioTest} durationInFrames={150} {...SHORTS} />
   </>

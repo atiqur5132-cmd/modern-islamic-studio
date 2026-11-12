@@ -1,0 +1,130 @@
+Ek reel. Phir ek aur. Phir bas *aakhri*.
+Phir ghadi dekhi, aur dedh ghanta ja chuka tha.
+Ye kahani tumhari bhi hai, aur meri bhi.
+Toh chalo, ek chhota sa hisaab lagate hain.
+Agar koi roz sirf *do ghante* scroll kare.
+Toh ek saal mein, saat sau tees ghante.
+Saath saal mein, tetaalees hazaar aath sau ghante.
+Yaani poore *paanch saal*. Din aur raat, bina soye.
+Jaagte waqt ka har *aathwa* ghanta.
+Aur ajeeb baat ye hai ki hum rukna chahte hain.
+Phir bhi ruk nahi paate.
+Kyun?
+Kya hum kamzor hain?
+Ya koi cheez hume pakad kar *kheench* rahi hai?
+Is sawaal ka jawab ek kabutar se shuru hota hai.
+Aur khatam hota hai ek aise lafz par, jo 1400 saal purane bazaar ki zubaan hai.
+Pichhli sadi mein America mein ek psychologist the, B. F. Skinner.
+Unhone ek dabba banaya.
+Andar ek kabutar, aur saamne ek chhota sa button.
+Kabutar button par chonch maarta, toh khaane ka ek daana girta.
+Simple sa khel.
+Lekin phir Skinner ne khel ke rules badal diye.
+Ek dabbe mein daana har baar milta tha.
+Dusre mein har dasween chonch par.
+Aur teesre mein, koi pattern hi nahi.
+Kabhi teesri chonch par, kabhi beeswi par, kabhi do baar lagataar.
+Ab socho, kaun sa kabutar sabse zyada chonch maarta tha?
+Wahi, jise pata hi nahi tha ki agla daana *kab* aayega.
+Aur jab daana aana bilkul band ho gaya, tab bhi sabse der tak wahi laga raha.
+Psychology ki kitabon mein ise kehte hain *variable reward*.
+Inaam milega, lekin kab milega, ye pata nahi.
+Aur kitabein iski sabse mashhoor misaal deti hain: casino ki *slot machine*.
+Lever kheencho. Kuch nahi.
+Phir kheencho. Kuch nahi.
+Phir achanak ghantiyan baj uthti hain.
+Aur insaan sochta hai, bas *ek aur* baar.
+Ab apna phone socho.
+Angootha upar. Ek bekaar reel.
+Phir upar. Ek aur bekaar.
+Aur phir ek aisi reel, jo dil khush kar de.
+Lever wahi hai.
+Bas casino ki jagah, ab wo tumhari *jeb* mein hai.
+Lekin ye "shayad" itna taqatwar kyun hai?
+Iske liye dimaag ke andar chalte hain.
+Tumne dopamine ka naam suna hoga.
+Log ise "khushi ka chemical" kehte hain.
+Lekin science iski kahani thodi alag sunati hai.
+Wolfram Schultz naam ke ek scientist ne bandaron ke dimaag ke neurons record kiye.
+Bandar ko pehle ek light dikhti, aur phir thoda sa juice milta.
+Shuru mein, jab juice achanak aaya, toh dopamine neurons zor se jaag uthe.
+Lekin jab bandar seekh gaya ki light ke baad juice aata hi hai, toh juice par unka josh kam ho gaya.
+Matlab dopamine khushi ka nahi, *hisaab* ka signal hai.
+Wo batata hai, jo socha tha, usse kuch alag hua.
+Scientists ise kehte hain *prediction error*. Andaze ki galti.
+Phir 2003 mein, isi lab ne ek aur cheez dekhi.
+Jab juice milne ka chance aadha-aadha tha, fifty-fifty.
+Tab neurons mein ek alag signal dikha, juice aane se pehle hi, dheere-dheere badhta hua.
+Aur ye signal sabse tez tab tha, jab bilkul pata nahi tha ki milega ya nahi.
+Yahan ek baat saaf kar doon.
+Ye bandaron par lab ka experiment tha, juice ke saath, reels ke saath nahi.
+Toh phone se iska rishta ek *misaal* hai, saboot nahi.
+Lekin ye misaal bahut kuch samjha deti hai.
+Kyunki tumhari feed ka har swipe ek chhota sa *shayad* hai.
+Toh kya ye sab jaan-boojh kar banaya gaya hai?
+Is par unhi logon ki baat suno, jinhone ye cheezein banayi.
+2006 mein Aza Raskin naam ke ek engineer ne ek feature design kiya, *infinite scroll*.
+Page kabhi khatam hi nahi hota. Neeche, aur neeche.
+2018 mein BBC ke ek programme mein unhone kaha ki aaj wo iske liye *guilty* feel karte hain.
+Unka kehna tha, jab dimaag ko sochne ka waqt hi na mile, toh tum bas scroll karte rehte ho.
+Aur apps ke design ke liye unhone ek bahut tez lafz use kiya: "*behavioural cocaine*".
+Usi programme mein Facebook ke ek purane employee, Sandy Parakilas, ne kaha, social media bilkul slot machine jaisa hai.
+Aur Like button banane walon mein se ek, Leah Pearlman, ne bataya ki wo khud likes ki aadi ho gayi thi.
+Akelapan lagta, toh phone check karti.
+Lekin insaaf ye hai ki dusri taraf bhi suni jaaye.
+Facebook ne BBC se kaha ki unke products logon ko apno ke kareeb laane ke liye bane hain.
+Aur addictive banana kabhi unka maqsad nahi tha.
+Toh jo log andar the, wo ek baat kehte hain, aur company dusri.
+Ab ek experiment, jo seedha teenagers par hua.
+2016 mein America ki ek university mein 32 teenagers ko MRI machine mein litaya gaya.
+Unhe Instagram jaisi ek app mein photos dikhayi gayi.
+Kuch photos par bahut saare likes the, kuch par kam.
+Zyada likes wali photo dekhte hi, dimaag ka reward wala hissa, *nucleus accumbens*, zyada active hua.
+Aur teenagers bhi unhi photos ko zyada like karne lage, jinpar pehle se zyada likes the.
+Aur mazedaar baat?
+Wo likes asli the hi nahi. Researchers ne khud lagaye the.
+Yaani sirf ek *number* ne dimaag ki activity bhi badli, aur pasand bhi.
+Ab ek zaroori sawaal.
+Kya phone sach mein poori ek generation ko barbaad kar raha hai?
+Internet par aisa kehne wale bahut mil jaayenge. Lekin data kya kehta hai?
+2019 mein do researchers, Amy Orben aur Andrew Przybylski, ne teen bade surveys ka data dekha.
+Saadhe teen lakh se zyada teenagers.
+Nateeja ye nikla ki technology ka asar negative toh tha, lekin bahut *chhota*.
+Teenagers ki khushi mein jo farq tha, uska zyada se zyada *0.4 percent*.
+Matlab phone koi zeher nahi hai.
+Lekin ye average hai, aur koi insaan average nahi hota.
+Kisi ke liye do ghante kuch nahi.
+Aur kisi ke liye wahi do ghante neend, padhai aur rishte, teeno kha jaate hain.
+Isi liye ek trend se bhi bachna, "*dopamine detox*".
+Ek din phone band, aur dimaag reset.
+Harvard Health par ek doctor ne likha ki aisa fast tumhara dopamine kam karta hi nahi.
+Dopamine koi zeher nahi jo body se nikal jaaye. Wo tumhare dimaag ka apna hissa hai.
+Aur jis doctor ne ye naam mashhoor kiya, Cameron Sepah, unka matlab kuch aur tha.
+Wo therapy ka ek tareeqa tha, un cheezon ko kam karna jo aadat ko *jagati* hain.
+Toh naam galat hai, lekin idea ka ek hissa kaam ka hai.
+Uspar hum aakhir mein wapas aayenge.
+Lekin usse pehle, 1400 saal purani ek baat.
+Sahih Bukhari ki hadith hai. Nabi ﷺ ne farmaya, do naimatein aisi hain, jinmein bahut se log *ghaate* mein rehte hain.
+Sehat, aur *khaali waqt*.
+Ghaate ke liye yahan lafz hai "maghbun" (مَغْبُونٌ), aur ye bazaar ka lafz hai.
+Matlab koi cheez uski asli keemat se bahut kam mein bech dena. Saude mein *thage* jaana.
+Yaani khaali waqt ek *poonji* hai.
+Aaram, neend, ghar walon ke saath hasna, ye ghaata nahi hai.
+Ghaata wo hai, jab waqt chala jaaye, aur pata hi na chale ki kis cheez ke badle gaya.
+Toh ab apni receipt dekhte hain.
+Ek shaam, do ghante.
+Badle mein kya mila?
+Thodi hasi, do-teen kaam ki baatein, aur bahut saari aisi reels jo ab yaad bhi nahi.
+Saude mein koi buraai nahi hai.
+Sawaal bas ye hai ki sauda *tumne* kiya, ya tumhare angoothe ne.
+Aur yahin Sepah wala asli idea kaam aata hai.
+Dopamine ko nahi, *trigger* ko pakdo.
+Wo cheez jo scroll shuru karwati hai.
+Ek notification. Bistar par rakha phone. Bore hote hi haath ka jeb mein jaana.
+Aza Raskin ne khud apna phone black and white kar rakha hai, taaki apps itna na kheenchein.
+Ye ek insaan ki aadat hai, koi research nahi. Lekin try karne mein kya jaata hai?
+Skinner ke kabutar ko kabhi pata nahi chala ki dabba kisne banaya.
+Tumhe pata hai.
+Aur jise pata ho ki saamne slot machine hai, wo kam se kam itna toh tay kar sakta hai ki usme kitne sikke daalne hain.
+Waqt tumhari poonji hai. Ise *sasta* mat bechna.
+Agar ye video tumhe ek achha sauda laga, toh channel subscribe kar lo.

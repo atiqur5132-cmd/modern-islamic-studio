@@ -1,0 +1,18 @@
+Scroll kyun nahi rukta? — sources and assets
+
+Sources (opened 2026-11-12; full ledger in research.md)
+- B. F. Skinner; C. B. Ferster & B. F. Skinner, Schedules of Reinforcement (1957); summary: Lumen Learning, Introduction to Psychology, "Reinforcement Schedules"
+- W. Schultz, P. Dayan, P. R. Montague, "A neural substrate of prediction and reward", Science 275 (1997), PubMed 9054347
+- C. D. Fiorillo, P. N. Tobler, W. Schultz, "Discrete coding of reward probability and uncertainty by dopamine neurons", Science (2003), PubMed 12649484
+- BBC News, Hilary Andersson, "Social media apps are 'deliberately' addictive to users", 3 July 2018 (BBC Panorama): Aza Raskin, Sandy Parakilas, Leah Pearlman, Facebook statement
+- L. E. Sherman et al., "The Power of the Like in Adolescence", Psychological Science 27(7) (2016); APS press release, 31 May 2016
+- A. Orben & A. K. Przybylski, "The association between adolescent well-being and digital technology use", Nature Human Behaviour (2019)
+- P. Grinspoon, "Dopamine fasting: Misunderstanding science spawns a maladaptive fad", Harvard Health Publishing, 26 February 2020
+- Sahih al-Bukhari 6412 (narrated by Ibn 'Abbas), Arabic and English from sunnah.com
+- On ghabn: HadeethEnc no. 5449 (Ibn al-Khazin); SeekersGuidance, Shaykh Anas al-Musa, 16 February 2025
+
+Assets
+- All graphics drawn in code for this video (phone, feed, Skinner box, pigeon, slot machine, brain, receipt, icons, Subscribe button). No third-party images, logos or app screens.
+- Sound effects: public/sfx, made by scripts/make_sfx.py.
+- Fonts: Bricolage Grotesque, Newsreader, Amiri (SIL Open Font License, Google Fonts).
+- Voice: the creator.
