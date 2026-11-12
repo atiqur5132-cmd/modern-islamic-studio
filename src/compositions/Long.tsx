@@ -29,8 +29,11 @@ export const Long = (props: LongProps) => {
   return (
     <AbsoluteFill style={{backgroundColor: LOOK.ground}}>
       {ranges.map(({scene, from, to}, i) => {
+        // Scenes never overlap: a soft one fades up from the ground, and the scene before it
+        // dips out over its last frames, so two scenes' words are never on screen together.
         const cut = scene.cut || i === 0;
-        const start = cut ? from : from - FADE;
+        const start = from;
+        const nextSoft = i + 1 < ranges.length && !ranges[i + 1].scene.cut;
         const cues: Cues = {
           line: (n, offset = 0) => lineStart(n) + Math.round(offset * FPS) - start,
           lineEnd: (n) => Math.round((byLine.get(n)?.end ?? 0) * FPS) - start,
@@ -42,7 +45,7 @@ export const Long = (props: LongProps) => {
         const Scene = scene.Scene;
         return (
           <Sequence key={scene.id} from={start} durationInFrames={Math.max(1, to - start)}>
-            <Fade fadeIn={cut ? 0 : FADE}>
+            <Fade fadeIn={cut ? 0 : FADE} fadeOut={nextSoft ? 6 : 0} length={to - start}>
               <Scene cues={cues} />
             </Fade>
           </Sequence>
@@ -63,8 +66,8 @@ export const Long = (props: LongProps) => {
   );
 };
 
-const Fade = ({fadeIn, children}: {fadeIn: number; children: React.ReactNode}) => {
+const Fade = ({fadeIn, fadeOut, length, children}: {fadeIn: number; fadeOut: number; length: number; children: React.ReactNode}) => {
   const frame = useCurrentFrame();
-  const opacity = fadeIn === 0 ? 1 : Math.min(1, frame / fadeIn);
+  const opacity = Math.min(fadeIn === 0 ? 1 : Math.min(1, frame / fadeIn), fadeOut === 0 ? 1 : Math.min(1, (length - 1 - frame) / fadeOut));
   return <AbsoluteFill style={{opacity}}>{children}</AbsoluteFill>;
 };

@@ -232,7 +232,7 @@ export const DataScene = ({cues}: P) => {
         <Label at={0} left={MARGIN} top={250} size={40}>
           an important question
         </Label>
-        <Big at={l88} top={300} size={110} width={1600}>
+        <Big at={l88} top={320} size={110} width={1600}>
           Is the phone ruining a whole generation?
         </Big>
         <Label at={cues.word(89, 8)} left={MARGIN + 6} top={560} size={56} color={LOOK.amber} weight={800}>
@@ -337,7 +337,7 @@ export const DetoxScene = ({cues}: P) => {
           <div style={{marginTop: 24, fontFamily: SANS, fontWeight: 700, fontSize: 34, color: LOOK.ivory}}>— Peter Grinspoon, MD</div>
           <div style={{marginTop: 6, fontFamily: SANS, fontWeight: 600, fontSize: 28, color: LOOK.muted}}>Expert view · Harvard Health Publishing, 26 February 2020</div>
         </div>
-        <Label at={l101} left={1180} top={180} size={40} color={LOOK.ivory} width={620}>
+        <Label at={l101} left={1180} top={450} size={40} color={LOOK.ivory} width={620}>
           It isn’t a toxin. It’s part of your brain.
         </Label>
       </div>

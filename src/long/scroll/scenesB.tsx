@@ -32,7 +32,7 @@ export const SkinnerScene = ({cues}: P) => {
         <Label at={0} left={MARGIN} top={300} size={40}>
           20th century, America
         </Label>
-        <Big at={cues.word(17, 8)} top={380} size={170}>
+        <Big at={cues.word(17, 5)} top={380} size={170}>
           B. F. Skinner
         </Big>
         <Label at={cues.word(17, 6)} left={MARGIN + 6} top={590} size={44} color={LOOK.ivory} weight={600}>

@@ -1,5 +1,5 @@
 {
-  "seconds": 555.44,
+  "seconds": 533.36,
   "pieces": [
     {
       "lines": [
@@ -211,10 +211,10 @@
         44,
         45
       ],
-      "sourceFrom": 252.73,
+      "sourceFrom": 254.62,
       "sourceTo": 259.48,
       "outFrom": 136.14,
-      "outTo": 142.89
+      "outTo": 141.0
     },
     {
       "lines": [
@@ -223,17 +223,17 @@
       ],
       "sourceFrom": 262.96,
       "sourceTo": 268.25,
-      "outFrom": 143.03,
-      "outTo": 148.32
+      "outFrom": 141.14,
+      "outTo": 146.43
     },
     {
       "lines": [
         48
       ],
-      "sourceFrom": 271.32,
+      "sourceFrom": 274.59,
       "sourceTo": 280.05,
-      "outFrom": 148.87,
-      "outTo": 157.6
+      "outFrom": 146.98,
+      "outTo": 152.44
     },
     {
       "lines": [
@@ -241,18 +241,26 @@
       ],
       "sourceFrom": 284.64,
       "sourceTo": 288.55,
-      "outFrom": 157.74,
-      "outTo": 161.65
+      "outFrom": 152.58,
+      "outTo": 156.49
     },
     {
       "lines": [
-        50,
-        51
+        50
       ],
       "sourceFrom": 292.51,
-      "sourceTo": 313.45,
-      "outFrom": 161.79,
-      "outTo": 182.73
+      "sourceTo": 299.19,
+      "outFrom": 156.63,
+      "outTo": 163.31
+    },
+    {
+      "lines": [
+        51
+      ],
+      "sourceFrom": 306.66,
+      "sourceTo": 313.05,
+      "outFrom": 163.45,
+      "outTo": 169.84
     },
     {
       "lines": [
@@ -261,8 +269,8 @@
       ],
       "sourceFrom": 319.15,
       "sourceTo": 326.09,
-      "outFrom": 182.87,
-      "outTo": 189.81
+      "outFrom": 169.98,
+      "outTo": 176.92
     },
     {
       "lines": [
@@ -272,8 +280,8 @@
       ],
       "sourceFrom": 329.52,
       "sourceTo": 341.43,
-      "outFrom": 189.95,
-      "outTo": 201.86
+      "outFrom": 177.06,
+      "outTo": 188.97
     },
     {
       "lines": [
@@ -281,8 +289,8 @@
       ],
       "sourceFrom": 347.57,
       "sourceTo": 349.84,
-      "outFrom": 202.0,
-      "outTo": 204.27
+      "outFrom": 189.11,
+      "outTo": 191.38
     },
     {
       "lines": [
@@ -290,8 +298,8 @@
       ],
       "sourceFrom": 349.89,
       "sourceTo": 353.48,
-      "outFrom": 204.27,
-      "outTo": 207.86
+      "outFrom": 191.38,
+      "outTo": 194.97
     },
     {
       "lines": [
@@ -299,8 +307,8 @@
       ],
       "sourceFrom": 356.25,
       "sourceTo": 361.47,
-      "outFrom": 208.0,
-      "outTo": 213.22
+      "outFrom": 195.11,
+      "outTo": 200.33
     },
     {
       "lines": [
@@ -308,8 +316,8 @@
       ],
       "sourceFrom": 370.52,
       "sourceTo": 372.28,
-      "outFrom": 213.77,
-      "outTo": 215.53
+      "outFrom": 200.88,
+      "outTo": 202.64
     },
     {
       "lines": [
@@ -320,8 +328,8 @@
       ],
       "sourceFrom": 373.95,
       "sourceTo": 390.96,
-      "outFrom": 215.67,
-      "outTo": 232.68
+      "outFrom": 202.78,
+      "outTo": 219.79
     },
     {
       "lines": [
@@ -332,8 +340,8 @@
       ],
       "sourceFrom": 394.38,
       "sourceTo": 397.59,
-      "outFrom": 233.23,
-      "outTo": 236.44
+      "outFrom": 220.34,
+      "outTo": 223.55
     },
     {
       "lines": [
@@ -344,8 +352,8 @@
       ],
       "sourceFrom": 397.74,
       "sourceTo": 414.01,
-      "outFrom": 236.44,
-      "outTo": 252.71
+      "outFrom": 223.55,
+      "outTo": 239.82
     },
     {
       "lines": [
@@ -354,8 +362,8 @@
       ],
       "sourceFrom": 450.86,
       "sourceTo": 461.02,
-      "outFrom": 252.85,
-      "outTo": 263.01
+      "outFrom": 239.96,
+      "outTo": 250.12
     },
     {
       "lines": [
@@ -363,8 +371,8 @@
       ],
       "sourceFrom": 464.06,
       "sourceTo": 466.73,
-      "outFrom": 263.07,
-      "outTo": 265.74
+      "outFrom": 250.18,
+      "outTo": 252.85
     },
     {
       "lines": [
@@ -373,8 +381,8 @@
       ],
       "sourceFrom": 472.35,
       "sourceTo": 482.42,
-      "outFrom": 265.88,
-      "outTo": 275.95
+      "outFrom": 252.99,
+      "outTo": 263.06
     },
     {
       "lines": [
@@ -383,10 +391,19 @@
         73,
         74
       ],
-      "sourceFrom": 487.73,
+      "sourceFrom": 489.33,
       "sourceTo": 509.62,
-      "outFrom": 276.01,
-      "outTo": 297.9
+      "outFrom": 263.12,
+      "outTo": 283.41
+    },
+    {
+      "lines": [
+        75
+      ],
+      "sourceFrom": 516.45,
+      "sourceTo": 518.92,
+      "outFrom": 283.55,
+      "outTo": 286.02
     },
     {
       "lines": [
@@ -395,10 +412,10 @@
         77,
         78
       ],
-      "sourceFrom": 516.43,
+      "sourceFrom": 521.86,
       "sourceTo": 539.02,
-      "outFrom": 298.04,
-      "outTo": 320.63
+      "outFrom": 286.08,
+      "outTo": 303.24
     },
     {
       "lines": [
@@ -406,8 +423,8 @@
       ],
       "sourceFrom": 546.04,
       "sourceTo": 553.24,
-      "outFrom": 320.77,
-      "outTo": 327.97
+      "outFrom": 303.38,
+      "outTo": 310.58
     },
     {
       "lines": [
@@ -416,8 +433,8 @@
       ],
       "sourceFrom": 558.29,
       "sourceTo": 564.05,
-      "outFrom": 328.11,
-      "outTo": 333.87
+      "outFrom": 310.72,
+      "outTo": 316.48
     },
     {
       "lines": [
@@ -425,8 +442,8 @@
       ],
       "sourceFrom": 565.72,
       "sourceTo": 566.5,
-      "outFrom": 333.93,
-      "outTo": 334.71
+      "outFrom": 316.54,
+      "outTo": 317.32
     },
     {
       "lines": [
@@ -434,8 +451,8 @@
       ],
       "sourceFrom": 573.86,
       "sourceTo": 581.3,
-      "outFrom": 334.85,
-      "outTo": 342.29
+      "outFrom": 317.46,
+      "outTo": 324.9
     },
     {
       "lines": [
@@ -445,8 +462,8 @@
       ],
       "sourceFrom": 586.36,
       "sourceTo": 595.18,
-      "outFrom": 342.43,
-      "outTo": 351.25
+      "outFrom": 325.04,
+      "outTo": 333.86
     },
     {
       "lines": [
@@ -454,17 +471,17 @@
       ],
       "sourceFrom": 597.46,
       "sourceTo": 599.35,
-      "outFrom": 351.31,
-      "outTo": 353.2
+      "outFrom": 333.92,
+      "outTo": 335.81
     },
     {
       "lines": [
         86
       ],
-      "sourceFrom": 600.65,
-      "sourceTo": 608.4,
-      "outFrom": 353.34,
-      "outTo": 361.09
+      "sourceFrom": 603.88,
+      "sourceTo": 608.05,
+      "outFrom": 335.95,
+      "outTo": 340.12
     },
     {
       "lines": [
@@ -472,8 +489,8 @@
       ],
       "sourceFrom": 609.03,
       "sourceTo": 610.93,
-      "outFrom": 361.64,
-      "outTo": 363.54
+      "outFrom": 340.67,
+      "outTo": 342.57
     },
     {
       "lines": [
@@ -483,8 +500,8 @@
       ],
       "sourceFrom": 618.51,
       "sourceTo": 629.11,
-      "outFrom": 363.68,
-      "outTo": 374.28
+      "outFrom": 342.71,
+      "outTo": 353.31
     },
     {
       "lines": [
@@ -492,8 +509,8 @@
       ],
       "sourceFrom": 630.2,
       "sourceTo": 633.75,
-      "outFrom": 374.34,
-      "outTo": 377.89
+      "outFrom": 353.37,
+      "outTo": 356.92
     },
     {
       "lines": [
@@ -502,8 +519,8 @@
       ],
       "sourceFrom": 635.94,
       "sourceTo": 644.19,
-      "outFrom": 378.03,
-      "outTo": 386.28
+      "outFrom": 357.06,
+      "outTo": 365.31
     },
     {
       "lines": [
@@ -513,8 +530,8 @@
       ],
       "sourceFrom": 650.55,
       "sourceTo": 662.03,
-      "outFrom": 386.42,
-      "outTo": 397.9
+      "outFrom": 365.45,
+      "outTo": 376.93
     },
     {
       "lines": [
@@ -523,8 +540,8 @@
       ],
       "sourceFrom": 664.15,
       "sourceTo": 671.57,
-      "outFrom": 398.04,
-      "outTo": 405.46
+      "outFrom": 377.07,
+      "outTo": 384.49
     },
     {
       "lines": [
@@ -533,8 +550,8 @@
       ],
       "sourceFrom": 671.65,
       "sourceTo": 671.83,
-      "outFrom": 405.46,
-      "outTo": 405.64
+      "outFrom": 384.49,
+      "outTo": 384.67
     },
     {
       "lines": [
@@ -543,8 +560,8 @@
       ],
       "sourceFrom": 678.47,
       "sourceTo": 682.07,
-      "outFrom": 406.19,
-      "outTo": 409.79
+      "outFrom": 385.22,
+      "outTo": 388.82
     },
     {
       "lines": [
@@ -553,8 +570,8 @@
       ],
       "sourceFrom": 682.13,
       "sourceTo": 685.14,
-      "outFrom": 409.79,
-      "outTo": 412.8
+      "outFrom": 388.82,
+      "outTo": 391.83
     },
     {
       "lines": [
@@ -562,8 +579,8 @@
       ],
       "sourceFrom": 689.72,
       "sourceTo": 692.43,
-      "outFrom": 412.94,
-      "outTo": 415.65
+      "outFrom": 391.97,
+      "outTo": 394.68
     },
     {
       "lines": [
@@ -571,8 +588,8 @@
       ],
       "sourceFrom": 692.51,
       "sourceTo": 693.05,
-      "outFrom": 415.65,
-      "outTo": 416.19
+      "outFrom": 394.68,
+      "outTo": 395.22
     },
     {
       "lines": [
@@ -580,8 +597,8 @@
       ],
       "sourceFrom": 693.14,
       "sourceTo": 696.1,
-      "outFrom": 416.19,
-      "outTo": 419.15
+      "outFrom": 395.22,
+      "outTo": 398.18
     },
     {
       "lines": [
@@ -590,8 +607,8 @@
       ],
       "sourceFrom": 698.0,
       "sourceTo": 710.63,
-      "outFrom": 419.29,
-      "outTo": 431.92
+      "outFrom": 398.32,
+      "outTo": 410.95
     },
     {
       "lines": [
@@ -599,8 +616,8 @@
       ],
       "sourceFrom": 712.34,
       "sourceTo": 718.84,
-      "outFrom": 432.06,
-      "outTo": 438.56
+      "outFrom": 411.09,
+      "outTo": 417.59
     },
     {
       "lines": [
@@ -608,8 +625,8 @@
       ],
       "sourceFrom": 720.55,
       "sourceTo": 721.58,
-      "outFrom": 438.7,
-      "outTo": 439.73
+      "outFrom": 417.73,
+      "outTo": 418.76
     },
     {
       "lines": [
@@ -620,8 +637,8 @@
       ],
       "sourceFrom": 723.78,
       "sourceTo": 737.74,
-      "outFrom": 439.79,
-      "outTo": 453.75
+      "outFrom": 418.82,
+      "outTo": 432.78
     },
     {
       "lines": [
@@ -630,8 +647,8 @@
       ],
       "sourceFrom": 740.76,
       "sourceTo": 745.39,
-      "outFrom": 453.81,
-      "outTo": 458.44
+      "outFrom": 432.84,
+      "outTo": 437.47
     },
     {
       "lines": [
@@ -639,8 +656,8 @@
       ],
       "sourceFrom": 753.01,
       "sourceTo": 757.68,
-      "outFrom": 458.58,
-      "outTo": 463.25
+      "outFrom": 437.61,
+      "outTo": 442.28
     },
     {
       "lines": [
@@ -648,8 +665,8 @@
       ],
       "sourceFrom": 757.75,
       "sourceTo": 757.99,
-      "outFrom": 463.25,
-      "outTo": 463.49
+      "outFrom": 442.28,
+      "outTo": 442.52
     },
     {
       "lines": [
@@ -657,8 +674,8 @@
       ],
       "sourceFrom": 764.86,
       "sourceTo": 770.42,
-      "outFrom": 463.63,
-      "outTo": 469.19
+      "outFrom": 442.66,
+      "outTo": 448.22
     },
     {
       "lines": [
@@ -667,8 +684,8 @@
       ],
       "sourceFrom": 781.66,
       "sourceTo": 789.02,
-      "outFrom": 469.33,
-      "outTo": 476.69
+      "outFrom": 448.36,
+      "outTo": 455.72
     },
     {
       "lines": [
@@ -676,8 +693,8 @@
       ],
       "sourceFrom": 791.85,
       "sourceTo": 794.52,
-      "outFrom": 476.83,
-      "outTo": 479.5
+      "outFrom": 455.86,
+      "outTo": 458.53
     },
     {
       "lines": [
@@ -685,8 +702,8 @@
       ],
       "sourceFrom": 800.12,
       "sourceTo": 802.85,
-      "outFrom": 479.56,
-      "outTo": 482.29
+      "outFrom": 458.59,
+      "outTo": 461.32
     },
     {
       "lines": [
@@ -697,8 +714,8 @@
       ],
       "sourceFrom": 805.42,
       "sourceTo": 811.62,
-      "outFrom": 482.84,
-      "outTo": 489.04
+      "outFrom": 461.87,
+      "outTo": 468.07
     },
     {
       "lines": [
@@ -709,8 +726,8 @@
       ],
       "sourceFrom": 811.68,
       "sourceTo": 817.71,
-      "outFrom": 489.04,
-      "outTo": 495.07
+      "outFrom": 468.07,
+      "outTo": 474.1
     },
     {
       "lines": [
@@ -718,8 +735,8 @@
       ],
       "sourceFrom": 819.27,
       "sourceTo": 821.83,
-      "outFrom": 495.21,
-      "outTo": 497.77
+      "outFrom": 474.24,
+      "outTo": 476.8
     },
     {
       "lines": [
@@ -731,8 +748,8 @@
       ],
       "sourceFrom": 822.79,
       "sourceTo": 840.44,
-      "outFrom": 497.91,
-      "outTo": 515.56
+      "outFrom": 476.94,
+      "outTo": 494.59
     },
     {
       "lines": [
@@ -740,20 +757,28 @@
       ],
       "sourceFrom": 849.98,
       "sourceTo": 853.13,
-      "outFrom": 515.62,
-      "outTo": 518.77
+      "outFrom": 494.65,
+      "outTo": 497.8
     },
     {
       "lines": [
         124,
-        125,
+        125
+      ],
+      "sourceFrom": 864.56,
+      "sourceTo": 876.52,
+      "outFrom": 497.94,
+      "outTo": 509.9
+    },
+    {
+      "lines": [
         126,
         127
       ],
-      "sourceFrom": 864.56,
+      "sourceFrom": 878.18,
       "sourceTo": 883.92,
-      "outFrom": 518.91,
-      "outTo": 538.27
+      "outFrom": 510.45,
+      "outTo": 516.19
     },
     {
       "lines": [
@@ -762,8 +787,8 @@
       ],
       "sourceFrom": 886.15,
       "sourceTo": 897.31,
-      "outFrom": 538.41,
-      "outTo": 549.57
+      "outFrom": 516.33,
+      "outTo": 527.49
     },
     {
       "lines": [
@@ -771,8 +796,8 @@
       ],
       "sourceFrom": 900.4,
       "sourceTo": 903.38,
-      "outFrom": 550.12,
-      "outTo": 553.1
+      "outFrom": 528.04,
+      "outTo": 531.02
     },
     {
       "lines": [
@@ -780,8 +805,8 @@
       ],
       "sourceFrom": 903.44,
       "sourceTo": 904.98,
-      "outFrom": 553.1,
-      "outTo": 554.64
+      "outFrom": 531.02,
+      "outTo": 532.56
     }
   ],
   "hand": {
@@ -798,16 +823,20 @@
     "26": "'kabhi do...' broke off; restarted 'kabhi do baar lagataar'",
     "30": "pick_takes clipped 'Psychology'; the voice starts at 182.94",
     "46": "started 'log ise' twice; the second start",
-    "48": "first try broke off after the name (268.5-270.3); the full second try",
+    "44": "'iske liye dimaag' stopped (252.8-254.1); the whole restart",
+    "48": "the name tried at 268.5, 271.8 and 272.8; the third, whole try",
+    "75": "'logon ko apno ke kareeb laane ke liye' said twice; the second, after 'unke products' from the first",
+    "51": "first try stopped after 'juice aata hi hai' (299.2-302.8); the whole retake",
     "56": "pick_takes stopped before 'fifty-fifty'",
     "66": "pick_takes clipped 'two thousand six'",
     "69": "'toh tum bas...' broke off and was re-said",
-    "71": "the name said twice; the clear second 'Sandy Parakilas ne kaha' (first try starts 482.6)",
+    "71": "the name said twice; the third, whole 'Sandy Parakilas ne kaha' at 489.4 (tries at 482.6 and 488.0)",
     "78": "the first take is whole; the retake breaks for 0.6 s after 'seedha'",
     "81": "'kuch p-' broke off (564.2-564.6); 'kuch par kam' re-said",
     "82": "first try broke off after 'hissa... zyada' (567.2-572.3); the whole retake",
     "83": "'aur teenagers bhi unhi-' broke off (584.5-585.8); the restart",
     "85": "'resear-' broke off (596.1-596.8); 'researchers ne khud lagaye the' re-said",
+    "86": "first try stopped at 'dimaag ki activity' (600.7-603.3); the whole retake",
     "90": "'do researchers' said twice; the second",
     "93": "pick_takes cut the end of 'percent' (voice runs to 655.2)",
     "100": "'Harvard Health par ek doct-' broke off (687.5-689.0); the restart",
@@ -816,6 +845,7 @@
     "109": "the retake: 'lafz hai maghbun, aur ye bazaar ka lafz hai'",
     "113": "'...kis cheez ke liye badle gaye' re-said as 'aur pata hi na chale ki kis cheez ke badle gaya'",
     "123": "'bore hote hi haath ka jeb mein jaana', third try, as scripted",
+    "126": "'Skinner ne kabutar ko' restarted at 878.2",
     "130": "'agar ye video tumhare liye...' restarted; the second 'agar ye video tumhe...'",
     "124": "first try broke off at 'taaki apps itna...'; the full second try"
   }

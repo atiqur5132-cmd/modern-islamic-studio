@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from make_captions import absorb_single_words, align, group_phrases, parse_script, timed_words  # noqa: E402
 
 PROJECT = ROOT / "projects" / "scroll-kyun"
+MEASURED = {12: (34.88, 35.40)}  # "Kyun?" (re-heard 2026-11-13)
 
 
 def main():
@@ -56,6 +57,10 @@ def main():
                   "emphasis": bool(w["emphasis"]), "line": n, "index": i}
                  for w, (n, i) in zip(words, numbering)]
 
+    # Words Whisper did not write, timed by hand on the finished voiceover (line: start, end).
+    for w in out_words:
+        if w["line"] in MEASURED:
+            w["start"], w["end"] = MEASURED[w["line"]]
     lines = []
     for n in sorted({w["line"] for w in out_words}):
         ws = [w for w in out_words if w["line"] == n]

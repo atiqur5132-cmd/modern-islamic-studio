@@ -10,6 +10,7 @@ script.txt.
 """
 import json
 import pathlib
+import sys
 import wave
 
 import numpy as np
@@ -23,9 +24,11 @@ PAD = 0.3
 
 
 def main():
-    data = json.loads((WORK / "scroll-kyun.medium.transcript.json").read_text(encoding="utf-8"))
+    # Optional stem: scroll-kyun.voicefinal patches the finished voiceover's transcript.
+    stem = sys.argv[1] if len(sys.argv) > 1 else "scroll-kyun"
+    data = json.loads((WORK / f"{stem}.medium.transcript.json").read_text(encoding="utf-8"))
     words = [w for s in data["segments"] for w in s["words"] if w["text"].strip()]
-    with wave.open(str(WORK / "scroll-kyun.16k.wav")) as audio:
+    with wave.open(str(WORK / f"{stem}.16k.wav")) as audio:
         samples = np.frombuffer(audio.readframes(audio.getnframes()), dtype=np.int16).astype(np.float32) / 32768
     frames = samples[: len(samples) // 160 * 160].reshape(-1, 160)
     db = 20 * np.log10(np.sqrt((frames ** 2).mean(1)) + 1e-9)
@@ -79,7 +82,7 @@ def main():
     merged = [w for s in segments for w in s["words"]]
     out = {"language": "hi", "model": "medium", "durationSeconds": data["durationSeconds"],
            "segments": segments}
-    path = WORK / "scroll-kyun.merged.transcript.json"
+    path = WORK / f"{stem}.merged.transcript.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{len(gaps)} gaps, {len(clean)} words added, {len(merged)} words -> {path.relative_to(ROOT)}")
 

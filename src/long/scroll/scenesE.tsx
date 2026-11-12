@@ -339,7 +339,7 @@ export const MidCta = ({at}: {at: number}) => {
   const a = arrive(frame, at, 14) * interpolate(frame, [at + FPS * 2.5, at + FPS * 2.5 + 8], [1, 0], CLAMP);
   if (a <= 0) return null;
   return (
-    <div style={{position: "absolute", right: 90, top: 70, opacity: a, transform: `translateY(${(1 - a) * -12}px)`, display: "flex", alignItems: "center", gap: 18}}>
+    <div style={{position: "absolute", left: 120, top: 30, opacity: a, transform: `translateY(${(1 - a) * -12}px)`, display: "flex", alignItems: "center", gap: 18}}>
       <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 30, color: LOOK.ivory}}>more explainers like this</div>
       <div style={{padding: "12px 30px", borderRadius: 40, background: LOOK.amber, color: LOOK.ground, fontFamily: SANS, fontWeight: 800, fontSize: 30}}>Subscribe</div>
     </div>
