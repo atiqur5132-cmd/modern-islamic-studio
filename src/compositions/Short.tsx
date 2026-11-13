@@ -3,6 +3,7 @@ import {
   Audio,
   Easing,
   Freeze,
+  Img,
   interpolate,
   OffthreadVideo,
   Sequence,
@@ -52,6 +53,7 @@ import {QiblaEarth} from "../overlays/qibla/QiblaEarth";
 import {KStack} from "../overlays/kasawna/Board";
 import {KHook} from "../overlays/kasawna/Hook";
 import {KAyah, KFootage, KPlate, KScience, KTitle, KWord} from "../overlays/kasawna/Pages";
+import {SAyah, SBoard, SCross, SFootage, SHook} from "../overlays/seas/Pages";
 import {CTA_TOP_Y} from "../overlays/Cta";
 import {cameraAt, emphasisPunches, ROOM_FRAMES} from "../timeline/camera";
 import {SOUND_SECONDS, soundCues} from "../timeline/sfx";
@@ -60,6 +62,7 @@ import {
   COVER_TYPES,
   CtaOverlay,
   Edit,
+  editDurationInFrames,
   FPS,
   footageFrames,
   FULL_SCREEN_TYPES,
@@ -153,7 +156,7 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue, palette:
     case "pullquote":
       return <PullQuote o={overlay} cue={cue} palette={palette} />;
     case "cta":
-      return <Cta cta={overlay} />;
+      return <Cta cta={overlay} palette={palette} />;
     case "hook":
       return <Hook title={overlay.title} ayah={overlay.ayah} mirrorAt={overlay.mirrorAt} cue={cue} />;
     case "versetag":
@@ -287,6 +290,19 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue, palette:
     case "kfootage":
     case "kfootagepip":
       return <KFootage o={overlay} />;
+    case "shook":
+      return <SHook o={overlay} cue={cue} />;
+    case "sfootage":
+    case "sfootagepip":
+      return <SFootage o={overlay} cue={cue} />;
+    case "sayah":
+    case "sayahpip":
+      return <SAyah o={overlay} cue={cue} />;
+    case "sboard":
+      return <SBoard o={overlay} cue={cue} />;
+    case "scross":
+    case "scrosspip":
+      return <SCross o={overlay} cue={cue} />;
   }
 };
 
@@ -306,6 +322,8 @@ export const Short = ({
   palette = {ground: NAVY, ink: NAVY, accent: GOLD},
   stretchSounds = true,
   pipCuts = false,
+  captionSpeakerBottom,
+  endCover,
 }: Edit) => {
   const frame = useCurrentFrame();
   const src = staticFile(`footage/${footage}`);
@@ -548,6 +566,13 @@ export const Short = ({
         </Sequence>
       ))}
       {layered.map(renderTimed)}
+      {endCover ? (
+        <Sequence from={editDurationInFrames({segments} as Edit) - toFrames(endCover.seconds)}>
+          <AbsoluteFill style={{backgroundColor: palette.ground}}>
+            <Img src={staticFile(`footage/${endCover.src}`)} style={{width: "100%", height: "100%", objectFit: "cover"}} />
+          </AbsoluteFill>
+        </Sequence>
+      ) : null}
       <Grain vignette={grade?.vignette} color={palette.ground === NAVY ? NAVY : palette.ink} />
       {(hideCaptions ? [] : captions).map((phrase, index) => {
         const start = sourceToOutputFrame(segments, phrase[0].start);
@@ -587,7 +612,18 @@ export const Short = ({
               accent={palette.accent}
               ink={onPage ? palette.ink : undefined}
               // Captions ride with the speaker's window as it moves, never ahead of it.
-              bottom={stack > 0 ? CAPTION_BAND_BOTTOM + (1920 - STACK_HEIGHT + 22 - CAPTION_BAND_BOTTOM) * stack : undefined}
+              // A reel with `captionSpeakerBottom` (face low in the frame): captions sit in the
+              // wall above the cap while the speaker fills the frame, and in the usual band on
+              // the board or over full-screen graphics.
+              bottom={
+                captionSpeakerBottom !== undefined
+                  ? stack === 0 && pip < 0.5
+                    ? captionSpeakerBottom
+                    : undefined
+                  : stack > 0
+                    ? CAPTION_BAND_BOTTOM + (1920 - STACK_HEIGHT + 22 - CAPTION_BAND_BOTTOM) * stack
+                    : undefined
+              }
               words={phrase.map((word) => ({
                 text: word.text,
                 emphasis: word.emphasis,

@@ -1,6 +1,7 @@
 import {FlatOverlay} from "./flatTypes";
 import {KasawnaOverlay} from "./kasawnaTypes";
 import {QiblaOverlay} from "./qiblaTypes";
+import {SeasOverlay} from "./seasTypes";
 
 // All times are in seconds on the source footage, so overlays stay on the
 // same spoken words when the cuts change. Text marked with *stars* is emphasised.
@@ -219,11 +220,16 @@ export type HeadCardOverlay = Timed & {
 // speaker mid-reel; `caption` is the large end card in the caption band, which
 // replaces the captions while it shows. `y` moves a `top` card for other framings;
 // `text` is the engage card's line, in English.
+// `look: "editorial"` (new reels from 2026-11-13) sets the engage question as type on the
+// picture in the reel's serif and accent, with no card behind it; left out, the card look
+// the earlier reels used. `tone` names the picture behind: "light" (the pale wall) takes
+// dark ink, "dark" takes light ink.
 export type CtaOverlay = Timed & {
   type: "cta";
   placement?: "top" | "caption";
   tone?: "light" | "dark";
   y?: number;
+  look?: "card" | "editorial";
 } & ({mode: "follow"} | {mode: "engage"; text: string});
 
 // A real quote set as a pull quote beside the speaker's circle (src/overlays/PullQuote.tsx).
@@ -245,6 +251,7 @@ export type PullQuoteOverlay = Timed & {
 
 export type Overlay =
   | PullQuoteOverlay
+  | SeasOverlay
   | KasawnaOverlay
   | FlatOverlay
   | QiblaOverlay
@@ -297,10 +304,13 @@ export const FULL_SCREEN_TYPES: Overlay["type"][] = [
   "kayahpip",
   "kfootagepip",
   "khookpip",
+  "sfootagepip",
+  "sayahpip",
+  "scrosspip",
 ];
 
 // The speaker moves into the top window and the graphic takes the space below.
-export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto", "qboard", "khook", "kstack"];
+export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto", "qboard", "khook", "kstack", "sboard"];
 
 // These cover the whole frame with the speaker off screen (drawn over the speaker);
 // they join a full-screen stretch they touch, so the circle never flashes between them.
@@ -321,6 +331,10 @@ export const COVER_TYPES: Overlay["type"][] = [
   "kayah",
   "kscience",
   "kfootage",
+  "shook",
+  "sfootage",
+  "sayah",
+  "scross",
 ];
 
 export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};
@@ -376,6 +390,12 @@ export type Edit = {
   stretchSounds?: boolean;
   // The speaker goes into and out of the corner circle on a hard cut, not a slide.
   pipCuts?: boolean;
+  // Where the captions' foot sits (px from the bottom edge) while the speaker fills the
+  // frame, for takes where the face sits low and the usual band would cover the beard.
+  captionSpeakerBottom?: number;
+  // The cover (thumbnail) held full screen for the last `seconds` of the reel, so YouTube
+  // Shorts can pick it as the thumbnail. The last segment's `hold` makes the room for it.
+  endCover?: {src: string; seconds: number};
   // Files in public/footage the reel's components draw by name, for the GitHub render.
   assets?: string[];
 };

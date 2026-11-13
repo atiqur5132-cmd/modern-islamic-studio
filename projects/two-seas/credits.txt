@@ -1,0 +1,49 @@
+Two seas (55:19-21, 25:53): sources and credits
+
+Quranic text
+- 55:19, 55:20, 55:21, 25:53: api.quran.com v4 text_uthmani, cross-checked with api.alquran.cloud
+  (src/data/quran/, fetched 2026-11-11 by scripts/fetch_ayah.py).
+
+Tafsir
+- Ibn Kathir on 55:19: the two seas are the fresh and salty waters, the fresh coming from rivers;
+  the barrier is a barrier of land. Tabari on 55:20: barzakh is anything between two things
+  (Qatada: dry land; Mujahid: a barrier from Allah). Scholars differ on what the barzakh is.
+  (From projects/quran-science/research.md, Ch 2.)
+
+Science
+- The viral "two oceans" picture: Ken Bruland (UC Santa Cruz), Gulf of Alaska, 2007: glacial
+  river silt meeting the ocean. "They do eventually mix." Alaska Dispatch News, Ben Anderson,
+  5 Feb 2013. PolitiFact (2021) rated the "never mix" caption false.
+- Gibraltar two-layer exchange: dense, salty Mediterranean water flows out along the bottom,
+  lighter Atlantic water flows in on top; tides and turbulence mix the layers at the interface.
+  Ocean Science 14, 1547 (2018), os.copernicus.org/articles/14/1547/2018/; NOAA estuary
+  circulation tutorial (oceanservice.noaa.gov) for fresh water riding over salt water.
+
+Music
+- "Nasheed Islamic Background" by sufisama99, Pixabay (Pixabay Content License), supplied by the
+  creator.
+
+Images and footage (licence read on each file's own page, 2026-11-13; prep_assets.py lists every change)
+- Hook, green sea meeting ochre river water: "Aerial View of Diverse River Water Colors", Evgenij Mikhailov,
+  Pexels (pexels.com/video/39711478, near Batumi, Georgia). Pexels licence. Cropped to 9:16.
+- Hook, brown water beside dark water: "Aerial View of Boat on Two-Toned River", Efrem Efre, Pexels
+  (pexels.com/video/40799502). Pexels licence. Cropped to 9:16.
+- Glacier meltwater river: "Majestic Glacier View with Winding River", Caio Cezar, Pexels
+  (pexels.com/video/34476956). Pexels licence. Cropped to 9:16.
+- River mouth meeting the ocean: "Drone View of Ocean and River Mouth on the West Coast", Kiwi Blue, Pexels
+  (pexels.com/video/31229155). Pexels licence. Cropped to 9:16.
+  None of the four is marked AI-generated on its page. None is the viral clip itself; the hook shows real
+  water lines and quotes the claim as text.
+- Gulf of Alaska silt plumes: NASA Earth Observatory image 3744, "Sediments along the Alaskan Coast", Terra MODIS,
+  22 August 2003. Public domain (NASA). Cropped to a vertical window, colours unaltered.
+- Strait of Gibraltar: NASA Earth Observatory image 151478, astronaut photograph ISS069-E-3412, 14 April 2023,
+  ISS Crew Earth Observations Facility. Public domain (NASA). Scaled down only. No country labels are put on it
+  (the page does not state the photo's orientation).
+- The Gibraltar cross-section is drawn in code for this reel (illustration, not to scale).
+
+Fonts
+- Arabic: Amiri Quran (SIL OFL 1.1), whole file public/fonts/amiri-quran.woff.
+- Latin: Bricolage Grotesque, Fraunces, Anton (SIL OFL), via Google Fonts.
+
+Sounds
+- Soft ticks, whooshes and one impact from public/sfx (made in code by scripts/make_sfx.py).

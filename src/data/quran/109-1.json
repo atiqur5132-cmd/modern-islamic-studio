@@ -1,0 +1,8 @@
+{
+  "key": "109:1",
+  "surahNameEnglish": "Al-Kaafiroon",
+  "textUthmani": "قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-12"
+}

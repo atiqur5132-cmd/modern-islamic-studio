@@ -11,6 +11,7 @@ import {
   useVideoConfig,
 } from "remotion";
 import {BRAND, FACEBOOK_BLUE, FACEBOOK_GLYPH, INSTAGRAM_GLYPH, INSTAGRAM_GRADIENT} from "../brand";
+import {FONTS} from "../fonts";
 import {LATIN_FONT, SAFE_AREA} from "../theme";
 import {CtaOverlay} from "../timeline/types";
 
@@ -211,7 +212,84 @@ const EngageRow = ({u, tone, text}: {u: number; tone: Tone; text: string}) => {
   );
 };
 
-export const Cta = ({cta}: {cta: CtaOverlay}) => {
+// The editorial engage card (STYLE.md: type on the picture, not in a box). The real heart
+// and comment icons with a short line beside them, then the question large in the reel's
+// serif, a word at a time; the *starred* words take the accent and an underline sweeps
+// under them once the line has landed.
+const EditorialEngage = ({cta, palette}: {cta: CtaOverlay & {mode: "engage"}; palette: Palette}) => {
+  const frame = useCurrentFrame();
+  const {durationInFrames} = useVideoConfig();
+  const onLight = (cta.tone ?? "light") === "light";
+  const ink = onLight ? palette.ground : palette.ink;
+  const shade = onLight ? "rgba(255,255,255,0.35)" : "rgba(0,0,0,0.45)";
+  // On a pale wall the reel's accent is deepened toward the ink so it still reads.
+  const accentColor = onLight ? `color-mix(in srgb, ${palette.accent} 62%, ${ink})` : palette.accent;
+  const enter = interpolate(frame, [0, ENTER_FRAMES + 4], [0, 1], {...CLAMP, easing: Easing.out(Easing.cubic)});
+  const leave = interpolate(frame, [durationInFrames - EXIT_FRAMES, durationInFrames], [0, 1], {...CLAMP, easing: Easing.in(Easing.cubic)});
+  const filled = interpolate(frame, [HEART_FRAME, HEART_FRAME + 4], [0, 1], CLAMP);
+  const words = cta.text.split(/(\*[^*]+\*)/).filter(Boolean).flatMap((part) => {
+    const accent = part.startsWith("*");
+    return part.replace(/\*/g, "").trim().split(" ").filter(Boolean).map((word) => ({word, accent}));
+  });
+  const landed = 6 + words.length * WORD_STAGGER + 4;
+  const sweep = interpolate(frame, [landed, landed + 12], [0, 1], {...CLAMP, easing: Easing.out(Easing.cubic)});
+  const icon = 50;
+  const serif = FONTS.Fraunces;
+  const sans = FONTS["Bricolage Grotesque"];
+  const placement = cta.placement ?? "top";
+  return (
+    <AbsoluteFill
+      style={{
+        justifyContent: placement === "caption" ? "flex-end" : "flex-start",
+        paddingTop: placement === "top" ? (cta.y ?? CTA_TOP_Y) : 0,
+        paddingBottom: placement === "caption" ? SAFE_AREA.bottom + 20 : 0,
+        paddingLeft: 92,
+        paddingRight: SAFE_AREA.rail,
+      }}
+    >
+      <div style={{opacity: enter * (1 - leave), transform: `translateY(${(1 - enter) * 18 - leave * 10}px)`, filter: `blur(${leave * 5}px)`}}>
+        <div style={{display: "flex", alignItems: "center", gap: 14}}>
+          <svg width={icon} height={icon} viewBox="0 0 24 24" style={{display: "block", transform: `scale(${1 + 0.3 * bump(frame, HEART_FRAME, 8)})`, ...blurIn(frame, 2)}}>
+            <path d={HEART} fill={HEART_RED} fillOpacity={filled} stroke={interpolateColors(filled, [0, 1], [ink, HEART_RED])} strokeWidth={1.8} strokeLinejoin="round" />
+          </svg>
+          <svg width={icon} height={icon} viewBox="0 0 24 24" style={{display: "block", transform: `scale(${1 + 0.15 * bump(frame, HEART_FRAME + 8, 8)})`, ...blurIn(frame, 4)}}>
+            <path d={BUBBLE} fill="none" stroke={ink} strokeWidth={1.8} strokeLinejoin="round" />
+          </svg>
+          <span style={{fontFamily: sans, fontWeight: 600, fontSize: 30, color: ink, opacity: 0.72, marginLeft: 6, ...blurIn(frame, 6)}}>Tell me in the comments</span>
+        </div>
+        <div style={{marginTop: 14, fontFamily: serif, fontStyle: "italic", fontWeight: 600, fontSize: 76, lineHeight: 1.04, letterSpacing: -0.8, color: ink, textShadow: `0 1px 18px ${shade}`, textWrap: "balance"}}>
+          {words.map(({word, accent}, index) => (
+            <span
+              key={`${index}-${word}`}
+              style={{
+                display: "inline-block",
+                marginRight: "0.24em",
+                color: accent ? accentColor : ink,
+                backgroundImage: accent ? `linear-gradient(transparent 88%, ${accentColor} 88%, ${accentColor} 95%, transparent 95%)` : undefined,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: `${sweep * 100}% 100%`,
+                ...blurIn(frame, 6 + index * WORD_STAGGER, 5),
+              }}
+            >
+              {word}
+            </span>
+          ))}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+type Palette = {ground: string; ink: string; accent: string};
+
+export const Cta = ({cta, palette}: {cta: CtaOverlay; palette?: Palette}) => {
+  if (cta.mode === "engage" && cta.look === "editorial" && palette) {
+    return <EditorialEngage cta={cta} palette={palette} />;
+  }
+  return <CardCta cta={cta} />;
+};
+
+const CardCta = ({cta}: {cta: CtaOverlay}) => {
   const placement = cta.placement ?? "top";
   const tone = TONES[cta.tone ?? "light"];
   const u = placement === "caption" ? CAPTION_SCALE : 1;

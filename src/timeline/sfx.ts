@@ -301,5 +301,18 @@ export const soundCues = (
       cues.push({frame: start + AFTER_PICTURE, sound: "tick-soft-2", volume: CTA_TICK_VOLUME * 0.8});
     }
   }
+  // Reels that place their own cues on spoken words (each with its cause on screen).
+  for (const overlay of overlays) {
+    if ("sounds" in overlay && overlay.sounds) {
+      for (const s of overlay.sounds) {
+        const whoosh = s.sound.startsWith("whoosh");
+        cues.push({
+          frame: at(s.at) + (whoosh ? -WHOOSH_PEAK_FRAMES : 0) + AFTER_PICTURE,
+          sound: s.sound,
+          volume: s.volume ?? (whoosh ? WHOOSH_VOLUME * 0.5 : TICK_VOLUME * 1.6),
+        });
+      }
+    }
+  }
   return cues.filter((cue) => cue.frame >= 0).sort((a, b) => a.frame - b.frame);
 };
