@@ -136,7 +136,10 @@ export const SHook = ({o, cue}: {o: SHookOverlay; cue: Cue}) => {
   const plateAt = cue(o.plate.at);
   // The plate arrives on a cut (a hard change of the whole picture is a hook beat; a slow
   // shrink did not register in study_reel.py on the first render).
-  const plate = frame >= plateAt ? 1 : 0;
+  const swapAt = cue(o.plate.swapAt);
+  // On the swap the other water bursts out of the plate to fill the frame (a beat inside
+  // the small plate alone did not register on the second render).
+  const plate = frame >= plateAt && frame < swapAt ? 1 : 0;
   const textOut = frame >= plateAt ? 0 : 1;
   const lineAt = cue(o.line.at);
   const stroke = draw(frame, lineAt, 14);
@@ -153,7 +156,6 @@ export const SHook = ({o, cue}: {o: SHookOverlay; cue: Cue}) => {
     width: interpolate(plate, [0, 1], [1080, plateBox.width]),
     height: interpolate(plate, [0, 1], [1920, plateBox.height]),
   };
-  const swapAt = cue(o.plate.swapAt);
   const plateShot: SeasShot = frame >= swapAt ? {at: o.plate.swapAt, src: o.plate.swapSrc, trim: 3.5, zoom: 1.04, focus: [0.4, 0.5]} : shot;
   const plateSince = frame >= swapAt ? frame - swapAt : since;
   const quote = arrive(frame, plateAt + 2, 12);
@@ -193,7 +195,8 @@ export const SHook = ({o, cue}: {o: SHookOverlay; cue: Cue}) => {
           ))}
         </div>
       </div>
-      {plate > 0 ? (
+      {frame >= swapAt ? <AbsoluteFill style={{background: `linear-gradient(0deg, ${GROUND}00 22%, ${GROUND}D9 34%, ${GROUND}D9 44%, ${GROUND}00 56%)`}} /> : null}
+      {frame >= plateAt ? (
         <div style={{position: "absolute", left: SIDE, right: SIDE, top: plateBox.top + plateBox.height + 30, opacity: quote, transform: `translateY(${(1 - quote) * 14}px)`}}>
           <div style={{fontFamily: SERIF, fontStyle: "italic", fontWeight: 600, fontSize: 64, lineHeight: 1.05, color: INK, textAlign: "center"}}>{o.plate.quote}</div>
           <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 28, color: MUTED, textAlign: "center", marginTop: 10}}>{o.plate.credit}</div>
