@@ -22,7 +22,7 @@ CUTS = [0.1, 3.433, 5.567, 8.533, 11.667, 13.667, 15.4, 17.433, 20.3, 21.633, 23
 # Framing per on-camera shot, so every cut on camera changes the picture.
 ZOOM_AT = {5.567: 1.04, 15.4: 1.08, 35.767: 1.06, 72.933: 1.0}
 
-HOOK_LINE = json.loads((HERE / "hook_line.json").read_text())
+HOOK_LINE = json.loads((HERE / "hook_line_boat.json").read_text())
 NASA_GIB = "Image: NASA, astronaut photo ISS069-E-3412, 14 April 2023"
 NASA_AK = "Image: NASA Terra (MODIS), 22 August 2003"
 SOFT = 0.22  # tick volume for labels
@@ -40,18 +40,21 @@ def whoosh(at, take="whoosh-2", volume=0.18):
 OVERLAYS = [
     # 1-4. "Do samandar, beech mein ek sharp line, aur paani mix nahi hota. Ye viral video
     # tumne zaroor dekha hoga." Creator off screen. Beats at 0 (the line between green sea
-    # and ochre river, "Two seas."), 1.47 (cut tight on the line, a stroke runs along it on
-    # "sharp line"), 2.63 (a second water line, "that never mix?"), 3.43 (the picture
-    # shrinks to a plate with the claim as shared), 4.41 (the plate cuts to the other water).
+    # and ochre river, "Two seas."), 1.47 (cut to brown water beside dark water; a stroke
+    # runs along its edge on "sharp line"), 2.63 (cut back tight on the green/ochre line,
+    # "that never mix?"), 3.43 (cut to a plate with the claim as shared), 4.41 (the plate
+    # cuts to the other water).
     {"type": "shook", "start": 0, "end": 5.567,
+     # Every beat is a hard change of the whole picture: green/ochre wide, brown/dark (the
+     # stroke traces its edge), green/ochre tight, then the plate on a cut.
      "shots": [{"at": 0, "src": "ts-colors.mp4", "trim": 0, "zoom": 1.04, "focus": [0.5, 0.56]},
-               {"at": 1.467, "src": "ts-colors.mp4", "trim": 1.4, "zoom": 2.0, "focus": [0.5, 0.56]},
-               {"at": 2.63, "src": "ts-boat.mp4", "trim": 0.5, "zoom": 1.06, "focus": [0.45, 0.5]}],
+               {"at": 1.467, "src": "ts-boat.mp4", "trim": 0.5, "zoom": 1.0, "focus": [0.5, 0.5]},
+               {"at": 2.63, "src": "ts-colors.mp4", "trim": 1.4, "zoom": 2.0, "focus": [0.5, 0.56]}],
      "title": {"text": "Two seas.", "at": 0},
      "question": {"text": "that *never mix?*", "at": 2.63},
-     "line": {"points": [[x, y] for x, y in HOOK_LINE if y is not None], "at": 1.67},
+     "line": {"points": [[x, y] for x, y in HOOK_LINE if x is not None], "at": 1.67, "src": "ts-boat.mp4"},
      "plate": {"at": 3.433, "quote": "“Two oceans that never mix.”", "credit": "Viral claim · caption on widely shared videos",
-               "swapAt": 4.41, "swapSrc": "ts-colors.mp4"},
+               "swapAt": 4.41, "swapSrc": "ts-boat.mp4"},
      "sounds": [whoosh(1.467, "whoosh"), tick(1.67, 1), whoosh(2.63, "whoosh-3"), whoosh(3.433, "whoosh-2", 0.14), tick(4.41, 2)]},
     # 5. "Lekin ye Gibraltar nahi, Gulf of Alaska hai." Creator on top, the board below:
     # the Strait of Gibraltar from the ISS, struck on "nahi"; the Gulf of Alaska from orbit
@@ -152,9 +155,10 @@ OVERLAYS = [
     # 17. "Aise hi viral daawon ka asli sach jaanne ke liye follow kar lo." End cards.
     # The comment card is type on the wall above the cap (the editorial look), clear of
     # the face and beard.
-    {"type": "cta", "mode": "engage", "start": 72.95, "end": 74.75, "placement": "top", "tone": "light",
+    # It starts once the last caption ("jhutlaoge? Aise", to 73.31) has left the headroom.
+    {"type": "cta", "mode": "engage", "start": 73.35, "end": 74.95, "placement": "top", "tone": "light",
      "look": "editorial", "text": "Which viral claim should we *check next?*"},
-    {"type": "cta", "mode": "follow", "start": 74.75, "end": 76.25, "placement": "top", "tone": "dark"},
+    {"type": "cta", "mode": "follow", "start": 74.95, "end": 76.25, "placement": "top", "tone": "dark"},
 ]
 
 

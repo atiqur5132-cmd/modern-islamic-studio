@@ -22,7 +22,8 @@ export type SHookOverlay = Timed & {
   shots: SeasShot[];
   title: Beat;
   question: Beat;
-  line: {points: [number, number][]; at: number};
+  // `src` is the clip the line was measured on; the stroke shows only on that shot.
+  line: {points: [number, number][]; at: number; src?: string};
   plate: {at: number; quote: string; credit: string; swapAt: number; swapSrc: string};
   sounds?: SeasSound[];
 };

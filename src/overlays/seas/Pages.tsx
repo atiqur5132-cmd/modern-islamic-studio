@@ -134,13 +134,15 @@ export const SHook = ({o, cue}: {o: SHookOverlay; cue: Cue}) => {
   const {shot, from} = shotAt(o.shots, frame, cue);
   const since = frame - from;
   const plateAt = cue(o.plate.at);
-  const plate = interpolate(frame, [plateAt, plateAt + 12], [0, 1], {...CLAMP, easing: Easing.inOut(Easing.cubic)});
-  const textOut = leave(frame, plateAt, 8);
+  // The plate arrives on a cut (a hard change of the whole picture is a hook beat; a slow
+  // shrink did not register in study_reel.py on the first render).
+  const plate = frame >= plateAt ? 1 : 0;
+  const textOut = frame >= plateAt ? 0 : 1;
   const lineAt = cue(o.line.at);
   const stroke = draw(frame, lineAt, 14);
   const questionAt = cue(o.question.at);
   const question = arrive(frame, questionAt, 14);
-  const onFirstClip = shot.src === o.shots[0].src && frame < questionAt;
+  const onLineClip = shot.src === (o.line.src ?? o.shots[0].src) && frame < questionAt;
   const points = o.line.points.map((p) => zoomed(shot, since, p));
   const path = points.map(([x, y], i) => `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
   // The plate: the full frame shrinks to a window 760 x 960 at y 300.
@@ -152,9 +154,9 @@ export const SHook = ({o, cue}: {o: SHookOverlay; cue: Cue}) => {
     height: interpolate(plate, [0, 1], [1920, plateBox.height]),
   };
   const swapAt = cue(o.plate.swapAt);
-  const plateShot: SeasShot = frame >= swapAt ? {at: o.plate.swapAt, src: o.plate.swapSrc, trim: 3.5, zoom: 1.0} : shot;
+  const plateShot: SeasShot = frame >= swapAt ? {at: o.plate.swapAt, src: o.plate.swapSrc, trim: 3.5, zoom: 1.04, focus: [0.4, 0.5]} : shot;
   const plateSince = frame >= swapAt ? frame - swapAt : since;
-  const quote = arrive(frame, plateAt + 6, 16);
+  const quote = arrive(frame, plateAt + 2, 12);
   return (
     <AbsoluteFill style={{backgroundColor: GROUND}}>
       <div
@@ -172,7 +174,7 @@ export const SHook = ({o, cue}: {o: SHookOverlay; cue: Cue}) => {
         {/* The shot keeps its full-frame size inside the shrinking window, scaled down. */}
         <div style={{position: "absolute", left: 0, top: 0, width: 1080, height: 1920, transformOrigin: "0 0", transform: `scale(${box.width / 1080}, ${box.height / 1920})`}}>
           <Shot shot={plateShot} since={plateSince} />
-          {onFirstClip && stroke > 0 ? (
+          {onLineClip && stroke > 0 ? (
             <svg width={1080} height={1920} style={{position: "absolute", left: 0, top: 0}}>
               <path d={path} fill="none" stroke={INK} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - stroke} opacity={0.95} />
             </svg>

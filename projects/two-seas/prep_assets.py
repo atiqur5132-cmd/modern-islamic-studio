@@ -50,6 +50,23 @@ def boundary(clip, at):
     return points
 
 
+def boundary_vertical(clip, at):
+    """The edge between the brown water (left) and the dark water (right) in the boat clip,
+    as points (x, y) every 60 px down the frame."""
+    cap = cv2.VideoCapture(str(clip))
+    cap.set(cv2.CAP_PROP_POS_MSEC, at * 1000)
+    ok, frame = cap.read()
+    assert ok, f"no frame at {at}s in {clip}"
+    value = cv2.cvtColor(cv2.GaussianBlur(frame, (31, 31), 0), cv2.COLOR_BGR2HSV)[:, :, 2].astype(float)
+    dark = (value < 60).astype(float)
+    points = []
+    for y in range(0, frame.shape[0] + 1, 60):
+        row = np.convolve(dark[min(y, frame.shape[0] - 1)], np.ones(41) / 41, mode="same")
+        cols = np.where(row > 0.5)[0]
+        points.append([int(cols[0]) if len(cols) else None, y])
+    return points
+
+
 def main():
     downloads = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "work" / "dl-two-seas"
     OUT.mkdir(parents=True, exist_ok=True)
@@ -69,6 +86,10 @@ def main():
     ffmpeg("-i", downloads / "nasa_gibraltar_iss069.jpg", "-vf", "scale=3000:-2", "-q:v", "2", OUT / "ts-gibraltar.jpg")
     line = boundary(OUT / "ts-colors.mp4", 1.6)
     (ROOT / "projects" / "two-seas" / "hook_line.json").write_text(json.dumps(line))
+    # The hook's stroke runs on the boat clip, 0.2 s after its shot starts at trim 0.5.
+    boat = boundary_vertical(OUT / "ts-boat.mp4", 0.7)
+    (ROOT / "projects" / "two-seas" / "hook_line_boat.json").write_text(json.dumps(boat))
+    print(boat)
     print("Saved ts-colors, ts-boat, ts-glacier, ts-mouth (mp4), ts-alaska, ts-gibraltar (jpg); hook_line.json")
     print(line)
 
