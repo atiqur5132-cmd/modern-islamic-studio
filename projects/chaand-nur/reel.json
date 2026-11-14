@@ -1,0 +1,3962 @@
+{
+ "audio": "chaand-nur.voice.wav",
+ "durationSeconds": 67.5,
+ "lines": [
+  {
+   "n": 1,
+   "start": 0.0,
+   "end": 3.38
+  },
+  {
+   "n": 2,
+   "start": 3.48,
+   "end": 7.18
+  },
+  {
+   "n": 3,
+   "start": 7.18,
+   "end": 11.34
+  },
+  {
+   "n": 4,
+   "start": 11.74,
+   "end": 16.6
+  },
+  {
+   "n": 5,
+   "start": 16.8,
+   "end": 20.62
+  },
+  {
+   "n": 6,
+   "start": 20.74,
+   "end": 25.86
+  },
+  {
+   "n": 7,
+   "start": 25.86,
+   "end": 27.6
+  },
+  {
+   "n": 8,
+   "start": 27.6,
+   "end": 32.04
+  },
+  {
+   "n": 9,
+   "start": 32.04,
+   "end": 36.5
+  },
+  {
+   "n": 10,
+   "start": 36.5,
+   "end": 38.8
+  },
+  {
+   "n": 11,
+   "start": 38.8,
+   "end": 44.42
+  },
+  {
+   "n": 12,
+   "start": 44.42,
+   "end": 50.12
+  },
+  {
+   "n": 13,
+   "start": 50.12,
+   "end": 55.32
+  },
+  {
+   "n": 14,
+   "start": 55.32,
+   "end": 59.98
+  },
+  {
+   "n": 15,
+   "start": 59.98,
+   "end": 63.64
+  },
+  {
+   "n": 16,
+   "start": 63.64,
+   "end": 66.52
+  }
+ ],
+ "words": [
+  {
+   "text": "Suraj",
+   "start": 0.0,
+   "end": 0.52,
+   "emphasis": false,
+   "line": 1,
+   "index": 0
+  },
+  {
+   "text": "abhi",
+   "start": 0.52,
+   "end": 0.8,
+   "emphasis": false,
+   "line": 1,
+   "index": 1
+  },
+  {
+   "text": "bujh",
+   "start": 0.8,
+   "end": 1.1,
+   "emphasis": false,
+   "line": 1,
+   "index": 2
+  },
+  {
+   "text": "jaaye,",
+   "start": 1.1,
+   "end": 1.3,
+   "emphasis": false,
+   "line": 1,
+   "index": 3
+  },
+  {
+   "text": "toh",
+   "start": 1.3,
+   "end": 1.42,
+   "emphasis": false,
+   "line": 1,
+   "index": 4
+  },
+  {
+   "text": "chaand",
+   "start": 1.42,
+   "end": 1.76,
+   "emphasis": false,
+   "line": 1,
+   "index": 5
+  },
+  {
+   "text": "bhi",
+   "start": 1.76,
+   "end": 1.76,
+   "emphasis": false,
+   "line": 1,
+   "index": 6
+  },
+  {
+   "text": "lagbhag",
+   "start": 1.76,
+   "end": 2.12,
+   "emphasis": false,
+   "line": 1,
+   "index": 7
+  },
+  {
+   "text": "aath",
+   "start": 2.12,
+   "end": 2.38,
+   "emphasis": true,
+   "line": 1,
+   "index": 8
+  },
+  {
+   "text": "minute",
+   "start": 2.38,
+   "end": 2.64,
+   "emphasis": true,
+   "line": 1,
+   "index": 9
+  },
+  {
+   "text": "mein",
+   "start": 2.64,
+   "end": 2.74,
+   "emphasis": false,
+   "line": 1,
+   "index": 10
+  },
+  {
+   "text": "bujh",
+   "start": 2.74,
+   "end": 3.04,
+   "emphasis": false,
+   "line": 1,
+   "index": 11
+  },
+  {
+   "text": "jaayega.",
+   "start": 3.04,
+   "end": 3.38,
+   "emphasis": false,
+   "line": 1,
+   "index": 12
+  },
+  {
+   "text": "Kyunki",
+   "start": 3.48,
+   "end": 3.7,
+   "emphasis": false,
+   "line": 2,
+   "index": 0
+  },
+  {
+   "text": "chaand",
+   "start": 3.7,
+   "end": 4.1,
+   "emphasis": false,
+   "line": 2,
+   "index": 1
+  },
+  {
+   "text": "ki",
+   "start": 4.1,
+   "end": 4.22,
+   "emphasis": false,
+   "line": 2,
+   "index": 2
+  },
+  {
+   "text": "apni",
+   "start": 4.22,
+   "end": 4.42,
+   "emphasis": false,
+   "line": 2,
+   "index": 3
+  },
+  {
+   "text": "roshni",
+   "start": 4.42,
+   "end": 4.84,
+   "emphasis": false,
+   "line": 2,
+   "index": 4
+  },
+  {
+   "text": "hi",
+   "start": 4.84,
+   "end": 4.84,
+   "emphasis": false,
+   "line": 2,
+   "index": 5
+  },
+  {
+   "text": "nahi",
+   "start": 4.84,
+   "end": 5.12,
+   "emphasis": false,
+   "line": 2,
+   "index": 6
+  },
+  {
+   "text": "hai.",
+   "start": 5.12,
+   "end": 5.24,
+   "emphasis": false,
+   "line": 2,
+   "index": 7
+  },
+  {
+   "text": "Wo",
+   "start": 5.42,
+   "end": 5.56,
+   "emphasis": false,
+   "line": 2,
+   "index": 8
+  },
+  {
+   "text": "bas",
+   "start": 5.56,
+   "end": 5.72,
+   "emphasis": false,
+   "line": 2,
+   "index": 9
+  },
+  {
+   "text": "suraj",
+   "start": 5.72,
+   "end": 6.14,
+   "emphasis": false,
+   "line": 2,
+   "index": 10
+  },
+  {
+   "text": "ki",
+   "start": 6.14,
+   "end": 6.22,
+   "emphasis": false,
+   "line": 2,
+   "index": 11
+  },
+  {
+   "text": "roshni",
+   "start": 6.22,
+   "end": 6.52,
+   "emphasis": false,
+   "line": 2,
+   "index": 12
+  },
+  {
+   "text": "lautata",
+   "start": 6.52,
+   "end": 6.92,
+   "emphasis": true,
+   "line": 2,
+   "index": 13
+  },
+  {
+   "text": "hai.",
+   "start": 6.92,
+   "end": 7.18,
+   "emphasis": false,
+   "line": 2,
+   "index": 14
+  },
+  {
+   "text": "Isi",
+   "start": 7.18,
+   "end": 7.52,
+   "emphasis": false,
+   "line": 3,
+   "index": 0
+  },
+  {
+   "text": "baat",
+   "start": 7.52,
+   "end": 7.76,
+   "emphasis": false,
+   "line": 3,
+   "index": 1
+  },
+  {
+   "text": "pe",
+   "start": 7.76,
+   "end": 7.86,
+   "emphasis": false,
+   "line": 3,
+   "index": 2
+  },
+  {
+   "text": "ek",
+   "start": 7.86,
+   "end": 8.0,
+   "emphasis": false,
+   "line": 3,
+   "index": 3
+  },
+  {
+   "text": "forward",
+   "start": 8.0,
+   "end": 8.34,
+   "emphasis": false,
+   "line": 3,
+   "index": 4
+  },
+  {
+   "text": "ghoomta",
+   "start": 8.34,
+   "end": 8.7,
+   "emphasis": false,
+   "line": 3,
+   "index": 5
+  },
+  {
+   "text": "hai:",
+   "start": 8.7,
+   "end": 9.1,
+   "emphasis": false,
+   "line": 3,
+   "index": 6
+  },
+  {
+   "text": "Quran",
+   "start": 9.38,
+   "end": 9.44,
+   "emphasis": false,
+   "line": 3,
+   "index": 7
+  },
+  {
+   "text": "ne",
+   "start": 9.44,
+   "end": 9.62,
+   "emphasis": false,
+   "line": 3,
+   "index": 8
+  },
+  {
+   "text": "1400",
+   "start": 9.62,
+   "end": 10.0,
+   "emphasis": false,
+   "line": 3,
+   "index": 9
+  },
+  {
+   "text": "saal",
+   "start": 10.0,
+   "end": 10.3,
+   "emphasis": false,
+   "line": 3,
+   "index": 10
+  },
+  {
+   "text": "pehle",
+   "start": 10.3,
+   "end": 10.6,
+   "emphasis": false,
+   "line": 3,
+   "index": 11
+  },
+  {
+   "text": "hi",
+   "start": 10.6,
+   "end": 10.74,
+   "emphasis": false,
+   "line": 3,
+   "index": 12
+  },
+  {
+   "text": "bata",
+   "start": 10.74,
+   "end": 10.96,
+   "emphasis": false,
+   "line": 3,
+   "index": 13
+  },
+  {
+   "text": "diya",
+   "start": 10.96,
+   "end": 11.12,
+   "emphasis": false,
+   "line": 3,
+   "index": 14
+  },
+  {
+   "text": "tha.",
+   "start": 11.12,
+   "end": 11.34,
+   "emphasis": false,
+   "line": 3,
+   "index": 15
+  },
+  {
+   "text": "Saboot,",
+   "start": 11.74,
+   "end": 12.02,
+   "emphasis": false,
+   "line": 4,
+   "index": 0
+  },
+  {
+   "text": "Surah",
+   "start": 12.02,
+   "end": 12.38,
+   "emphasis": false,
+   "line": 4,
+   "index": 1
+  },
+  {
+   "text": "Nuh",
+   "start": 12.38,
+   "end": 12.56,
+   "emphasis": false,
+   "line": 4,
+   "index": 2
+  },
+  {
+   "text": "ki",
+   "start": 12.56,
+   "end": 12.8,
+   "emphasis": false,
+   "line": 4,
+   "index": 3
+  },
+  {
+   "text": "ye",
+   "start": 12.8,
+   "end": 12.94,
+   "emphasis": false,
+   "line": 4,
+   "index": 4
+  },
+  {
+   "text": "aayat:",
+   "start": 12.94,
+   "end": 13.32,
+   "emphasis": false,
+   "line": 4,
+   "index": 5
+  },
+  {
+   "text": "\"wa",
+   "start": 13.46,
+   "end": 13.6,
+   "emphasis": false,
+   "line": 4,
+   "index": 6
+  },
+  {
+   "text": "ja'alal",
+   "start": 13.72,
+   "end": 13.92,
+   "emphasis": false,
+   "line": 4,
+   "index": 7
+  },
+  {
+   "text": "qamara",
+   "start": 13.92,
+   "end": 14.3,
+   "emphasis": false,
+   "line": 4,
+   "index": 8
+  },
+  {
+   "text": "fihinna",
+   "start": 14.3,
+   "end": 14.86,
+   "emphasis": false,
+   "line": 4,
+   "index": 9
+  },
+  {
+   "text": "nura,",
+   "start": 14.86,
+   "end": 15.14,
+   "emphasis": false,
+   "line": 4,
+   "index": 10
+  },
+  {
+   "text": "wa",
+   "start": 15.24,
+   "end": 15.42,
+   "emphasis": false,
+   "line": 4,
+   "index": 11
+  },
+  {
+   "text": "ja'alash",
+   "start": 15.58,
+   "end": 15.84,
+   "emphasis": false,
+   "line": 4,
+   "index": 12
+  },
+  {
+   "text": "shamsa",
+   "start": 15.84,
+   "end": 16.22,
+   "emphasis": false,
+   "line": 4,
+   "index": 13
+  },
+  {
+   "text": "siraja\".",
+   "start": 16.22,
+   "end": 16.6,
+   "emphasis": false,
+   "line": 4,
+   "index": 14
+  },
+  {
+   "text": "Chaand",
+   "start": 16.8,
+   "end": 17.14,
+   "emphasis": false,
+   "line": 5,
+   "index": 0
+  },
+  {
+   "text": "ko",
+   "start": 17.14,
+   "end": 17.3,
+   "emphasis": false,
+   "line": 5,
+   "index": 1
+  },
+  {
+   "text": "banaya",
+   "start": 17.3,
+   "end": 17.64,
+   "emphasis": false,
+   "line": 5,
+   "index": 2
+  },
+  {
+   "text": "nur.",
+   "start": 17.64,
+   "end": 18.02,
+   "emphasis": true,
+   "line": 5,
+   "index": 3
+  },
+  {
+   "text": "Aur",
+   "start": 18.02,
+   "end": 18.28,
+   "emphasis": false,
+   "line": 5,
+   "index": 4
+  },
+  {
+   "text": "suraj",
+   "start": 18.28,
+   "end": 18.72,
+   "emphasis": false,
+   "line": 5,
+   "index": 5
+  },
+  {
+   "text": "ko",
+   "start": 18.72,
+   "end": 18.8,
+   "emphasis": false,
+   "line": 5,
+   "index": 6
+  },
+  {
+   "text": "siraj,",
+   "start": 18.8,
+   "end": 19.36,
+   "emphasis": true,
+   "line": 5,
+   "index": 7
+  },
+  {
+   "text": "yaani",
+   "start": 19.5,
+   "end": 19.66,
+   "emphasis": false,
+   "line": 5,
+   "index": 8
+  },
+  {
+   "text": "jalta",
+   "start": 19.66,
+   "end": 20.04,
+   "emphasis": false,
+   "line": 5,
+   "index": 9
+  },
+  {
+   "text": "hua",
+   "start": 20.04,
+   "end": 20.22,
+   "emphasis": false,
+   "line": 5,
+   "index": 10
+  },
+  {
+   "text": "chiragh.",
+   "start": 20.22,
+   "end": 20.62,
+   "emphasis": false,
+   "line": 5,
+   "index": 11
+  },
+  {
+   "text": "English",
+   "start": 20.74,
+   "end": 21.04,
+   "emphasis": false,
+   "line": 6,
+   "index": 0
+  },
+  {
+   "text": "translation",
+   "start": 21.04,
+   "end": 21.56,
+   "emphasis": false,
+   "line": 6,
+   "index": 1
+  },
+  {
+   "text": "mein",
+   "start": 21.56,
+   "end": 21.7,
+   "emphasis": false,
+   "line": 6,
+   "index": 2
+  },
+  {
+   "text": "likha",
+   "start": 21.7,
+   "end": 21.83,
+   "emphasis": false,
+   "line": 6,
+   "index": 3
+  },
+  {
+   "text": "hai,",
+   "start": 21.83,
+   "end": 21.96,
+   "emphasis": false,
+   "line": 6,
+   "index": 4
+  },
+  {
+   "text": "a",
+   "start": 21.96,
+   "end": 22.44,
+   "emphasis": false,
+   "line": 6,
+   "index": 5
+  },
+  {
+   "text": "\"reflected\"",
+   "start": 22.58,
+   "end": 23.14,
+   "emphasis": false,
+   "line": 6,
+   "index": 6
+  },
+  {
+   "text": "light.",
+   "start": 23.14,
+   "end": 23.6,
+   "emphasis": false,
+   "line": 6,
+   "index": 7
+  },
+  {
+   "text": "Par",
+   "start": 23.6,
+   "end": 23.72,
+   "emphasis": false,
+   "line": 6,
+   "index": 8
+  },
+  {
+   "text": "ruko,",
+   "start": 23.72,
+   "end": 24.36,
+   "emphasis": false,
+   "line": 6,
+   "index": 9
+  },
+  {
+   "text": "reflected",
+   "start": 24.36,
+   "end": 24.98,
+   "emphasis": false,
+   "line": 6,
+   "index": 10
+  },
+  {
+   "text": "bracket",
+   "start": 24.98,
+   "end": 25.3,
+   "emphasis": true,
+   "line": 6,
+   "index": 11
+  },
+  {
+   "text": "mein",
+   "start": 25.3,
+   "end": 25.44,
+   "emphasis": false,
+   "line": 6,
+   "index": 12
+  },
+  {
+   "text": "hai.",
+   "start": 25.44,
+   "end": 25.86,
+   "emphasis": false,
+   "line": 6,
+   "index": 13
+  },
+  {
+   "text": "Arabic",
+   "start": 25.86,
+   "end": 26.2,
+   "emphasis": false,
+   "line": 7,
+   "index": 0
+  },
+  {
+   "text": "mein",
+   "start": 26.2,
+   "end": 26.32,
+   "emphasis": false,
+   "line": 7,
+   "index": 1
+  },
+  {
+   "text": "ye",
+   "start": 26.32,
+   "end": 26.44,
+   "emphasis": false,
+   "line": 7,
+   "index": 2
+  },
+  {
+   "text": "lafz",
+   "start": 26.44,
+   "end": 26.72,
+   "emphasis": false,
+   "line": 7,
+   "index": 3
+  },
+  {
+   "text": "hai",
+   "start": 26.72,
+   "end": 27.2,
+   "emphasis": false,
+   "line": 7,
+   "index": 4
+  },
+  {
+   "text": "hi",
+   "start": 27.2,
+   "end": 27.2,
+   "emphasis": false,
+   "line": 7,
+   "index": 5
+  },
+  {
+   "text": "nahi.",
+   "start": 27.2,
+   "end": 27.6,
+   "emphasis": false,
+   "line": 7,
+   "index": 6
+  },
+  {
+   "text": "Aur",
+   "start": 27.6,
+   "end": 27.76,
+   "emphasis": false,
+   "line": 8,
+   "index": 0
+  },
+  {
+   "text": "nur",
+   "start": 27.76,
+   "end": 28.04,
+   "emphasis": false,
+   "line": 8,
+   "index": 1
+  },
+  {
+   "text": "ka",
+   "start": 28.04,
+   "end": 28.14,
+   "emphasis": false,
+   "line": 8,
+   "index": 2
+  },
+  {
+   "text": "matlab",
+   "start": 28.14,
+   "end": 28.42,
+   "emphasis": false,
+   "line": 8,
+   "index": 3
+  },
+  {
+   "text": "udhaar",
+   "start": 28.42,
+   "end": 28.76,
+   "emphasis": false,
+   "line": 8,
+   "index": 4
+  },
+  {
+   "text": "ki",
+   "start": 28.76,
+   "end": 28.86,
+   "emphasis": false,
+   "line": 8,
+   "index": 5
+  },
+  {
+   "text": "roshni",
+   "start": 28.86,
+   "end": 29.2,
+   "emphasis": false,
+   "line": 8,
+   "index": 6
+  },
+  {
+   "text": "ho",
+   "start": 29.2,
+   "end": 29.2,
+   "emphasis": false,
+   "line": 8,
+   "index": 7
+  },
+  {
+   "text": "bhi",
+   "start": 29.2,
+   "end": 29.36,
+   "emphasis": false,
+   "line": 8,
+   "index": 8
+  },
+  {
+   "text": "nahi",
+   "start": 29.36,
+   "end": 29.54,
+   "emphasis": false,
+   "line": 8,
+   "index": 9
+  },
+  {
+   "text": "sakta.",
+   "start": 29.68,
+   "end": 30.12,
+   "emphasis": false,
+   "line": 8,
+   "index": 10
+  },
+  {
+   "text": "Quran",
+   "start": 30.12,
+   "end": 30.44,
+   "emphasis": false,
+   "line": 8,
+   "index": 11
+  },
+  {
+   "text": "toh",
+   "start": 30.44,
+   "end": 30.58,
+   "emphasis": false,
+   "line": 8,
+   "index": 12
+  },
+  {
+   "text": "Allah",
+   "start": 30.58,
+   "end": 30.92,
+   "emphasis": false,
+   "line": 8,
+   "index": 13
+  },
+  {
+   "text": "ko",
+   "start": 30.92,
+   "end": 31.12,
+   "emphasis": false,
+   "line": 8,
+   "index": 14
+  },
+  {
+   "text": "bhi",
+   "start": 31.12,
+   "end": 31.18,
+   "emphasis": false,
+   "line": 8,
+   "index": 15
+  },
+  {
+   "text": "nur",
+   "start": 31.18,
+   "end": 31.44,
+   "emphasis": false,
+   "line": 8,
+   "index": 16
+  },
+  {
+   "text": "kehta",
+   "start": 31.44,
+   "end": 31.76,
+   "emphasis": false,
+   "line": 8,
+   "index": 17
+  },
+  {
+   "text": "hai.",
+   "start": 31.76,
+   "end": 32.04,
+   "emphasis": false,
+   "line": 8,
+   "index": 18
+  },
+  {
+   "text": "Toh",
+   "start": 32.04,
+   "end": 32.1,
+   "emphasis": false,
+   "line": 9,
+   "index": 0
+  },
+  {
+   "text": "forward",
+   "start": 32.1,
+   "end": 32.6,
+   "emphasis": false,
+   "line": 9,
+   "index": 1
+  },
+  {
+   "text": "galat",
+   "start": 32.6,
+   "end": 32.9,
+   "emphasis": false,
+   "line": 9,
+   "index": 2
+  },
+  {
+   "text": "nikla?",
+   "start": 32.9,
+   "end": 33.38,
+   "emphasis": false,
+   "line": 9,
+   "index": 3
+  },
+  {
+   "text": "Poora",
+   "start": 33.38,
+   "end": 33.74,
+   "emphasis": false,
+   "line": 9,
+   "index": 4
+  },
+  {
+   "text": "nahi.",
+   "start": 33.74,
+   "end": 34.28,
+   "emphasis": false,
+   "line": 9,
+   "index": 5
+  },
+  {
+   "text": "Asli",
+   "start": 34.28,
+   "end": 34.52,
+   "emphasis": false,
+   "line": 9,
+   "index": 6
+  },
+  {
+   "text": "baat",
+   "start": 34.52,
+   "end": 34.72,
+   "emphasis": false,
+   "line": 9,
+   "index": 7
+  },
+  {
+   "text": "nur",
+   "start": 34.72,
+   "end": 35.06,
+   "emphasis": false,
+   "line": 9,
+   "index": 8
+  },
+  {
+   "text": "mein",
+   "start": 35.06,
+   "end": 35.14,
+   "emphasis": false,
+   "line": 9,
+   "index": 9
+  },
+  {
+   "text": "nahi,",
+   "start": 35.14,
+   "end": 35.54,
+   "emphasis": false,
+   "line": 9,
+   "index": 10
+  },
+  {
+   "text": "siraj",
+   "start": 35.62,
+   "end": 35.96,
+   "emphasis": true,
+   "line": 9,
+   "index": 11
+  },
+  {
+   "text": "mein",
+   "start": 35.96,
+   "end": 36.12,
+   "emphasis": false,
+   "line": 9,
+   "index": 12
+  },
+  {
+   "text": "hai.",
+   "start": 36.12,
+   "end": 36.5,
+   "emphasis": false,
+   "line": 9,
+   "index": 13
+  },
+  {
+   "text": "Ye",
+   "start": 36.5,
+   "end": 36.6,
+   "emphasis": false,
+   "line": 10,
+   "index": 0
+  },
+  {
+   "text": "lafz",
+   "start": 36.6,
+   "end": 36.88,
+   "emphasis": false,
+   "line": 10,
+   "index": 1
+  },
+  {
+   "text": "poore",
+   "start": 36.88,
+   "end": 37.18,
+   "emphasis": false,
+   "line": 10,
+   "index": 2
+  },
+  {
+   "text": "Quran",
+   "start": 37.18,
+   "end": 37.46,
+   "emphasis": false,
+   "line": 10,
+   "index": 3
+  },
+  {
+   "text": "mein",
+   "start": 37.46,
+   "end": 37.66,
+   "emphasis": false,
+   "line": 10,
+   "index": 4
+  },
+  {
+   "text": "bas",
+   "start": 37.66,
+   "end": 37.86,
+   "emphasis": false,
+   "line": 10,
+   "index": 5
+  },
+  {
+   "text": "chaar",
+   "start": 37.86,
+   "end": 38.16,
+   "emphasis": true,
+   "line": 10,
+   "index": 6
+  },
+  {
+   "text": "baar",
+   "start": 38.16,
+   "end": 38.32,
+   "emphasis": false,
+   "line": 10,
+   "index": 7
+  },
+  {
+   "text": "aata",
+   "start": 38.32,
+   "end": 38.66,
+   "emphasis": false,
+   "line": 10,
+   "index": 8
+  },
+  {
+   "text": "hai.",
+   "start": 38.66,
+   "end": 38.8,
+   "emphasis": false,
+   "line": 10,
+   "index": 9
+  },
+  {
+   "text": "Teen",
+   "start": 38.8,
+   "end": 39.0,
+   "emphasis": false,
+   "line": 11,
+   "index": 0
+  },
+  {
+   "text": "baar",
+   "start": 39.0,
+   "end": 39.24,
+   "emphasis": false,
+   "line": 11,
+   "index": 1
+  },
+  {
+   "text": "suraj",
+   "start": 39.24,
+   "end": 39.58,
+   "emphasis": false,
+   "line": 11,
+   "index": 2
+  },
+  {
+   "text": "ke",
+   "start": 39.58,
+   "end": 39.8,
+   "emphasis": false,
+   "line": 11,
+   "index": 3
+  },
+  {
+   "text": "liye.",
+   "start": 39.8,
+   "end": 40.02,
+   "emphasis": false,
+   "line": 11,
+   "index": 4
+  },
+  {
+   "text": "Ek",
+   "start": 40.16,
+   "end": 40.4,
+   "emphasis": false,
+   "line": 11,
+   "index": 5
+  },
+  {
+   "text": "baar",
+   "start": 40.4,
+   "end": 40.52,
+   "emphasis": false,
+   "line": 11,
+   "index": 6
+  },
+  {
+   "text": "Nabi",
+   "start": 40.52,
+   "end": 40.76,
+   "emphasis": false,
+   "line": 11,
+   "index": 7
+  },
+  {
+   "text": "sallallahu",
+   "start": 40.76,
+   "end": 41.34,
+   "emphasis": false,
+   "line": 11,
+   "index": 8
+  },
+  {
+   "text": "alaihi",
+   "start": 41.34,
+   "end": 41.34,
+   "emphasis": false,
+   "line": 11,
+   "index": 9
+  },
+  {
+   "text": "wasallam.",
+   "start": 41.34,
+   "end": 41.6,
+   "emphasis": false,
+   "line": 11,
+   "index": 10
+  },
+  {
+   "text": "Aur",
+   "start": 41.6,
+   "end": 42.3,
+   "emphasis": false,
+   "line": 11,
+   "index": 11
+  },
+  {
+   "text": "chaand",
+   "start": 42.3,
+   "end": 42.64,
+   "emphasis": false,
+   "line": 11,
+   "index": 12
+  },
+  {
+   "text": "ke",
+   "start": 42.64,
+   "end": 42.8,
+   "emphasis": false,
+   "line": 11,
+   "index": 13
+  },
+  {
+   "text": "liye?",
+   "start": 42.8,
+   "end": 43.2,
+   "emphasis": false,
+   "line": 11,
+   "index": 14
+  },
+  {
+   "text": "Ek",
+   "start": 43.2,
+   "end": 43.62,
+   "emphasis": true,
+   "line": 11,
+   "index": 15
+  },
+  {
+   "text": "baar",
+   "start": 43.62,
+   "end": 43.92,
+   "emphasis": true,
+   "line": 11,
+   "index": 16
+  },
+  {
+   "text": "bhi",
+   "start": 43.92,
+   "end": 44.04,
+   "emphasis": true,
+   "line": 11,
+   "index": 17
+  },
+  {
+   "text": "nahi.",
+   "start": 44.04,
+   "end": 44.42,
+   "emphasis": true,
+   "line": 11,
+   "index": 18
+  },
+  {
+   "text": "Aur",
+   "start": 44.42,
+   "end": 44.64,
+   "emphasis": false,
+   "line": 12,
+   "index": 0
+  },
+  {
+   "text": "ye",
+   "start": 44.64,
+   "end": 44.76,
+   "emphasis": false,
+   "line": 12,
+   "index": 1
+  },
+  {
+   "text": "fark",
+   "start": 44.76,
+   "end": 45.1,
+   "emphasis": false,
+   "line": 12,
+   "index": 2
+  },
+  {
+   "text": "sahi",
+   "start": 45.1,
+   "end": 45.36,
+   "emphasis": false,
+   "line": 12,
+   "index": 3
+  },
+  {
+   "text": "baithta",
+   "start": 45.36,
+   "end": 45.7,
+   "emphasis": false,
+   "line": 12,
+   "index": 4
+  },
+  {
+   "text": "hai.",
+   "start": 45.7,
+   "end": 46.02,
+   "emphasis": false,
+   "line": 12,
+   "index": 5
+  },
+  {
+   "text": "Chiragh",
+   "start": 46.02,
+   "end": 46.48,
+   "emphasis": false,
+   "line": 12,
+   "index": 6
+  },
+  {
+   "text": "apna",
+   "start": 46.48,
+   "end": 46.82,
+   "emphasis": false,
+   "line": 12,
+   "index": 7
+  },
+  {
+   "text": "tel",
+   "start": 46.82,
+   "end": 47.04,
+   "emphasis": false,
+   "line": 12,
+   "index": 8
+  },
+  {
+   "text": "jalata",
+   "start": 47.04,
+   "end": 47.46,
+   "emphasis": false,
+   "line": 12,
+   "index": 9
+  },
+  {
+   "text": "hai,",
+   "start": 47.46,
+   "end": 47.66,
+   "emphasis": false,
+   "line": 12,
+   "index": 10
+  },
+  {
+   "text": "suraj",
+   "start": 47.66,
+   "end": 48.06,
+   "emphasis": false,
+   "line": 12,
+   "index": 11
+  },
+  {
+   "text": "apna",
+   "start": 48.06,
+   "end": 48.3,
+   "emphasis": false,
+   "line": 12,
+   "index": 12
+  },
+  {
+   "text": "fuel.",
+   "start": 48.3,
+   "end": 48.64,
+   "emphasis": false,
+   "line": 12,
+   "index": 13
+  },
+  {
+   "text": "Chaand",
+   "start": 48.64,
+   "end": 49.04,
+   "emphasis": false,
+   "line": 12,
+   "index": 14
+  },
+  {
+   "text": "kuch",
+   "start": 49.04,
+   "end": 49.28,
+   "emphasis": false,
+   "line": 12,
+   "index": 15
+  },
+  {
+   "text": "nahi",
+   "start": 49.28,
+   "end": 49.5,
+   "emphasis": false,
+   "line": 12,
+   "index": 16
+  },
+  {
+   "text": "jalata.",
+   "start": 49.5,
+   "end": 50.12,
+   "emphasis": false,
+   "line": 12,
+   "index": 17
+  },
+  {
+   "text": "Haan,",
+   "start": 50.12,
+   "end": 50.3,
+   "emphasis": false,
+   "line": 13,
+   "index": 0
+  },
+  {
+   "text": "chaand",
+   "start": 50.3,
+   "end": 50.82,
+   "emphasis": false,
+   "line": 13,
+   "index": 1
+  },
+  {
+   "text": "ki",
+   "start": 50.82,
+   "end": 50.9,
+   "emphasis": false,
+   "line": 13,
+   "index": 2
+  },
+  {
+   "text": "roshni",
+   "start": 50.9,
+   "end": 51.28,
+   "emphasis": false,
+   "line": 13,
+   "index": 3
+  },
+  {
+   "text": "udhaar",
+   "start": 51.28,
+   "end": 51.66,
+   "emphasis": false,
+   "line": 13,
+   "index": 4
+  },
+  {
+   "text": "ki",
+   "start": 51.66,
+   "end": 51.74,
+   "emphasis": false,
+   "line": 13,
+   "index": 5
+  },
+  {
+   "text": "hai,",
+   "start": 51.74,
+   "end": 52.1,
+   "emphasis": false,
+   "line": 13,
+   "index": 6
+  },
+  {
+   "text": "ye",
+   "start": 52.1,
+   "end": 52.42,
+   "emphasis": false,
+   "line": 13,
+   "index": 7
+  },
+  {
+   "text": "Quran",
+   "start": 52.42,
+   "end": 52.84,
+   "emphasis": false,
+   "line": 13,
+   "index": 8
+  },
+  {
+   "text": "se",
+   "start": 52.84,
+   "end": 53.02,
+   "emphasis": false,
+   "line": 13,
+   "index": 9
+  },
+  {
+   "text": "hazaar",
+   "start": 53.02,
+   "end": 53.36,
+   "emphasis": true,
+   "line": 13,
+   "index": 10
+  },
+  {
+   "text": "saal",
+   "start": 53.36,
+   "end": 53.58,
+   "emphasis": true,
+   "line": 13,
+   "index": 11
+  },
+  {
+   "text": "pehle",
+   "start": 53.58,
+   "end": 53.88,
+   "emphasis": false,
+   "line": 13,
+   "index": 12
+  },
+  {
+   "text": "ek",
+   "start": 53.88,
+   "end": 54.04,
+   "emphasis": false,
+   "line": 13,
+   "index": 13
+  },
+  {
+   "text": "Greek",
+   "start": 54.04,
+   "end": 54.32,
+   "emphasis": false,
+   "line": 13,
+   "index": 14
+  },
+  {
+   "text": "shayar",
+   "start": 54.32,
+   "end": 54.58,
+   "emphasis": false,
+   "line": 13,
+   "index": 15
+  },
+  {
+   "text": "likh",
+   "start": 54.58,
+   "end": 54.76,
+   "emphasis": false,
+   "line": 13,
+   "index": 16
+  },
+  {
+   "text": "chuka",
+   "start": 54.76,
+   "end": 55.0,
+   "emphasis": false,
+   "line": 13,
+   "index": 17
+  },
+  {
+   "text": "tha.",
+   "start": 55.0,
+   "end": 55.32,
+   "emphasis": false,
+   "line": 13,
+   "index": 18
+  },
+  {
+   "text": "Toh",
+   "start": 55.32,
+   "end": 55.38,
+   "emphasis": false,
+   "line": 14,
+   "index": 0
+  },
+  {
+   "text": "Quran",
+   "start": 55.38,
+   "end": 55.8,
+   "emphasis": false,
+   "line": 14,
+   "index": 1
+  },
+  {
+   "text": "ne",
+   "start": 55.8,
+   "end": 55.96,
+   "emphasis": false,
+   "line": 14,
+   "index": 2
+  },
+  {
+   "text": "koi",
+   "start": 55.96,
+   "end": 56.14,
+   "emphasis": false,
+   "line": 14,
+   "index": 3
+  },
+  {
+   "text": "nayi",
+   "start": 56.14,
+   "end": 56.42,
+   "emphasis": false,
+   "line": 14,
+   "index": 4
+  },
+  {
+   "text": "khoj",
+   "start": 56.42,
+   "end": 56.78,
+   "emphasis": false,
+   "line": 14,
+   "index": 5
+  },
+  {
+   "text": "nahi",
+   "start": 56.78,
+   "end": 57.0,
+   "emphasis": false,
+   "line": 14,
+   "index": 6
+  },
+  {
+   "text": "sunayi.",
+   "start": 57.0,
+   "end": 57.52,
+   "emphasis": false,
+   "line": 14,
+   "index": 7
+  },
+  {
+   "text": "Bas",
+   "start": 57.52,
+   "end": 57.74,
+   "emphasis": false,
+   "line": 14,
+   "index": 8
+  },
+  {
+   "text": "wo",
+   "start": 57.74,
+   "end": 57.88,
+   "emphasis": false,
+   "line": 14,
+   "index": 9
+  },
+  {
+   "text": "galti",
+   "start": 57.88,
+   "end": 58.2,
+   "emphasis": false,
+   "line": 14,
+   "index": 10
+  },
+  {
+   "text": "nahi",
+   "start": 58.18,
+   "end": 58.46,
+   "emphasis": false,
+   "line": 14,
+   "index": 11
+  },
+  {
+   "text": "ki,",
+   "start": 58.46,
+   "end": 58.64,
+   "emphasis": false,
+   "line": 14,
+   "index": 12
+  },
+  {
+   "text": "jo",
+   "start": 58.64,
+   "end": 58.9,
+   "emphasis": false,
+   "line": 14,
+   "index": 13
+  },
+  {
+   "text": "bahut",
+   "start": 58.9,
+   "end": 59.2,
+   "emphasis": false,
+   "line": 14,
+   "index": 14
+  },
+  {
+   "text": "aasaan",
+   "start": 59.2,
+   "end": 59.58,
+   "emphasis": false,
+   "line": 14,
+   "index": 15
+  },
+  {
+   "text": "thi.",
+   "start": 59.58,
+   "end": 59.98,
+   "emphasis": false,
+   "line": 14,
+   "index": 16
+  },
+  {
+   "text": "Aasmaan",
+   "start": 59.98,
+   "end": 60.38,
+   "emphasis": false,
+   "line": 15,
+   "index": 0
+  },
+  {
+   "text": "mein",
+   "start": 60.38,
+   "end": 60.52,
+   "emphasis": false,
+   "line": 15,
+   "index": 1
+  },
+  {
+   "text": "chiragh",
+   "start": 60.52,
+   "end": 60.88,
+   "emphasis": false,
+   "line": 15,
+   "index": 2
+  },
+  {
+   "text": "ek",
+   "start": 60.88,
+   "end": 61.16,
+   "emphasis": false,
+   "line": 15,
+   "index": 3
+  },
+  {
+   "text": "hi",
+   "start": 61.16,
+   "end": 61.26,
+   "emphasis": false,
+   "line": 15,
+   "index": 4
+  },
+  {
+   "text": "hai.",
+   "start": 61.26,
+   "end": 61.84,
+   "emphasis": false,
+   "line": 15,
+   "index": 5
+  },
+  {
+   "text": "Aur",
+   "start": 61.84,
+   "end": 61.94,
+   "emphasis": false,
+   "line": 15,
+   "index": 6
+  },
+  {
+   "text": "Quran",
+   "start": 61.94,
+   "end": 62.32,
+   "emphasis": false,
+   "line": 15,
+   "index": 7
+  },
+  {
+   "text": "ne",
+   "start": 62.32,
+   "end": 62.5,
+   "emphasis": false,
+   "line": 15,
+   "index": 8
+  },
+  {
+   "text": "chiragh",
+   "start": 62.5,
+   "end": 62.9,
+   "emphasis": false,
+   "line": 15,
+   "index": 9
+  },
+  {
+   "text": "usi",
+   "start": 62.9,
+   "end": 63.18,
+   "emphasis": true,
+   "line": 15,
+   "index": 10
+  },
+  {
+   "text": "ko",
+   "start": 63.18,
+   "end": 63.28,
+   "emphasis": false,
+   "line": 15,
+   "index": 11
+  },
+  {
+   "text": "kaha.",
+   "start": 63.28,
+   "end": 63.64,
+   "emphasis": false,
+   "line": 15,
+   "index": 12
+  },
+  {
+   "text": "Agli",
+   "start": 63.64,
+   "end": 63.96,
+   "emphasis": false,
+   "line": 16,
+   "index": 0
+  },
+  {
+   "text": "baar",
+   "start": 63.96,
+   "end": 64.14,
+   "emphasis": false,
+   "line": 16,
+   "index": 1
+  },
+  {
+   "text": "chaand",
+   "start": 64.1,
+   "end": 64.48,
+   "emphasis": false,
+   "line": 16,
+   "index": 2
+  },
+  {
+   "text": "dekho,",
+   "start": 64.48,
+   "end": 64.88,
+   "emphasis": false,
+   "line": 16,
+   "index": 3
+  },
+  {
+   "text": "toh",
+   "start": 64.88,
+   "end": 65.04,
+   "emphasis": false,
+   "line": 16,
+   "index": 4
+  },
+  {
+   "text": "ye",
+   "start": 65.04,
+   "end": 65.22,
+   "emphasis": false,
+   "line": 16,
+   "index": 5
+  },
+  {
+   "text": "yaad",
+   "start": 65.22,
+   "end": 65.46,
+   "emphasis": false,
+   "line": 16,
+   "index": 6
+  },
+  {
+   "text": "rakhna.",
+   "start": 65.46,
+   "end": 65.87,
+   "emphasis": false,
+   "line": 16,
+   "index": 7
+  },
+  {
+   "text": "Follow",
+   "start": 65.94,
+   "end": 66.2,
+   "emphasis": false,
+   "line": 16,
+   "index": 8
+  },
+  {
+   "text": "kar",
+   "start": 66.2,
+   "end": 66.38,
+   "emphasis": false,
+   "line": 16,
+   "index": 9
+  },
+  {
+   "text": "lo.",
+   "start": 66.38,
+   "end": 66.52,
+   "emphasis": false,
+   "line": 16,
+   "index": 10
+  }
+ ],
+ "captions": [
+  [
+   {
+    "text": "Suraj",
+    "start": 0.0,
+    "end": 0.52,
+    "emphasis": false,
+    "line": 1,
+    "index": 0
+   },
+   {
+    "text": "abhi",
+    "start": 0.52,
+    "end": 0.8,
+    "emphasis": false,
+    "line": 1,
+    "index": 1
+   },
+   {
+    "text": "bujh",
+    "start": 0.8,
+    "end": 1.1,
+    "emphasis": false,
+    "line": 1,
+    "index": 2
+   },
+   {
+    "text": "jaaye,",
+    "start": 1.1,
+    "end": 1.3,
+    "emphasis": false,
+    "line": 1,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "toh",
+    "start": 1.3,
+    "end": 1.42,
+    "emphasis": false,
+    "line": 1,
+    "index": 4
+   },
+   {
+    "text": "chaand",
+    "start": 1.42,
+    "end": 1.76,
+    "emphasis": false,
+    "line": 1,
+    "index": 5
+   },
+   {
+    "text": "bhi",
+    "start": 1.76,
+    "end": 1.76,
+    "emphasis": false,
+    "line": 1,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "lagbhag",
+    "start": 1.76,
+    "end": 2.12,
+    "emphasis": false,
+    "line": 1,
+    "index": 7
+   },
+   {
+    "text": "aath",
+    "start": 2.12,
+    "end": 2.38,
+    "emphasis": true,
+    "line": 1,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "minute",
+    "start": 2.38,
+    "end": 2.64,
+    "emphasis": true,
+    "line": 1,
+    "index": 9
+   },
+   {
+    "text": "mein",
+    "start": 2.64,
+    "end": 2.74,
+    "emphasis": false,
+    "line": 1,
+    "index": 10
+   },
+   {
+    "text": "bujh",
+    "start": 2.74,
+    "end": 3.04,
+    "emphasis": false,
+    "line": 1,
+    "index": 11
+   },
+   {
+    "text": "jaayega.",
+    "start": 3.04,
+    "end": 3.38,
+    "emphasis": false,
+    "line": 1,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "Kyunki",
+    "start": 3.48,
+    "end": 3.7,
+    "emphasis": false,
+    "line": 2,
+    "index": 0
+   },
+   {
+    "text": "chaand",
+    "start": 3.7,
+    "end": 4.1,
+    "emphasis": false,
+    "line": 2,
+    "index": 1
+   },
+   {
+    "text": "ki",
+    "start": 4.1,
+    "end": 4.22,
+    "emphasis": false,
+    "line": 2,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "apni",
+    "start": 4.22,
+    "end": 4.42,
+    "emphasis": false,
+    "line": 2,
+    "index": 3
+   },
+   {
+    "text": "roshni",
+    "start": 4.42,
+    "end": 4.84,
+    "emphasis": false,
+    "line": 2,
+    "index": 4
+   },
+   {
+    "text": "hi",
+    "start": 4.84,
+    "end": 4.84,
+    "emphasis": false,
+    "line": 2,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "nahi",
+    "start": 4.84,
+    "end": 5.12,
+    "emphasis": false,
+    "line": 2,
+    "index": 6
+   },
+   {
+    "text": "hai.",
+    "start": 5.12,
+    "end": 5.24,
+    "emphasis": false,
+    "line": 2,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "Wo",
+    "start": 5.42,
+    "end": 5.56,
+    "emphasis": false,
+    "line": 2,
+    "index": 8
+   },
+   {
+    "text": "bas",
+    "start": 5.56,
+    "end": 5.72,
+    "emphasis": false,
+    "line": 2,
+    "index": 9
+   },
+   {
+    "text": "suraj",
+    "start": 5.72,
+    "end": 6.14,
+    "emphasis": false,
+    "line": 2,
+    "index": 10
+   },
+   {
+    "text": "ki",
+    "start": 6.14,
+    "end": 6.22,
+    "emphasis": false,
+    "line": 2,
+    "index": 11
+   }
+  ],
+  [
+   {
+    "text": "roshni",
+    "start": 6.22,
+    "end": 6.52,
+    "emphasis": false,
+    "line": 2,
+    "index": 12
+   },
+   {
+    "text": "lautata",
+    "start": 6.52,
+    "end": 6.92,
+    "emphasis": true,
+    "line": 2,
+    "index": 13
+   },
+   {
+    "text": "hai.",
+    "start": 6.92,
+    "end": 7.18,
+    "emphasis": false,
+    "line": 2,
+    "index": 14
+   }
+  ],
+  [
+   {
+    "text": "Isi",
+    "start": 7.18,
+    "end": 7.52,
+    "emphasis": false,
+    "line": 3,
+    "index": 0
+   },
+   {
+    "text": "baat",
+    "start": 7.52,
+    "end": 7.76,
+    "emphasis": false,
+    "line": 3,
+    "index": 1
+   },
+   {
+    "text": "pe",
+    "start": 7.76,
+    "end": 7.86,
+    "emphasis": false,
+    "line": 3,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "ek",
+    "start": 7.86,
+    "end": 8.0,
+    "emphasis": false,
+    "line": 3,
+    "index": 3
+   },
+   {
+    "text": "forward",
+    "start": 8.0,
+    "end": 8.34,
+    "emphasis": false,
+    "line": 3,
+    "index": 4
+   }
+  ],
+  [
+   {
+    "text": "ghoomta",
+    "start": 8.34,
+    "end": 8.7,
+    "emphasis": false,
+    "line": 3,
+    "index": 5
+   },
+   {
+    "text": "hai:",
+    "start": 8.7,
+    "end": 9.1,
+    "emphasis": false,
+    "line": 3,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "Quran",
+    "start": 9.38,
+    "end": 9.44,
+    "emphasis": false,
+    "line": 3,
+    "index": 7
+   },
+   {
+    "text": "ne",
+    "start": 9.44,
+    "end": 9.62,
+    "emphasis": false,
+    "line": 3,
+    "index": 8
+   },
+   {
+    "text": "1400",
+    "start": 9.62,
+    "end": 10.0,
+    "emphasis": false,
+    "line": 3,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "saal",
+    "start": 10.0,
+    "end": 10.3,
+    "emphasis": false,
+    "line": 3,
+    "index": 10
+   },
+   {
+    "text": "pehle",
+    "start": 10.3,
+    "end": 10.6,
+    "emphasis": false,
+    "line": 3,
+    "index": 11
+   },
+   {
+    "text": "hi",
+    "start": 10.6,
+    "end": 10.74,
+    "emphasis": false,
+    "line": 3,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "bata",
+    "start": 10.74,
+    "end": 10.96,
+    "emphasis": false,
+    "line": 3,
+    "index": 13
+   },
+   {
+    "text": "diya",
+    "start": 10.96,
+    "end": 11.12,
+    "emphasis": false,
+    "line": 3,
+    "index": 14
+   },
+   {
+    "text": "tha.",
+    "start": 11.12,
+    "end": 11.34,
+    "emphasis": false,
+    "line": 3,
+    "index": 15
+   }
+  ],
+  [
+   {
+    "text": "Saboot,",
+    "start": 11.74,
+    "end": 12.02,
+    "emphasis": false,
+    "line": 4,
+    "index": 0
+   },
+   {
+    "text": "Surah",
+    "start": 12.02,
+    "end": 12.38,
+    "emphasis": false,
+    "line": 4,
+    "index": 1
+   },
+   {
+    "text": "Nuh",
+    "start": 12.38,
+    "end": 12.56,
+    "emphasis": false,
+    "line": 4,
+    "index": 2
+   },
+   {
+    "text": "ki",
+    "start": 12.56,
+    "end": 12.8,
+    "emphasis": false,
+    "line": 4,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "ye",
+    "start": 12.8,
+    "end": 12.94,
+    "emphasis": false,
+    "line": 4,
+    "index": 4
+   },
+   {
+    "text": "aayat:",
+    "start": 12.94,
+    "end": 13.32,
+    "emphasis": false,
+    "line": 4,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "\"wa",
+    "start": 13.46,
+    "end": 13.6,
+    "emphasis": false,
+    "line": 4,
+    "index": 6
+   },
+   {
+    "text": "ja'alal",
+    "start": 13.72,
+    "end": 13.92,
+    "emphasis": false,
+    "line": 4,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "qamara",
+    "start": 13.92,
+    "end": 14.3,
+    "emphasis": false,
+    "line": 4,
+    "index": 8
+   },
+   {
+    "text": "fihinna",
+    "start": 14.3,
+    "end": 14.86,
+    "emphasis": false,
+    "line": 4,
+    "index": 9
+   },
+   {
+    "text": "nura,",
+    "start": 14.86,
+    "end": 15.14,
+    "emphasis": false,
+    "line": 4,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "wa",
+    "start": 15.24,
+    "end": 15.42,
+    "emphasis": false,
+    "line": 4,
+    "index": 11
+   },
+   {
+    "text": "ja'alash",
+    "start": 15.58,
+    "end": 15.84,
+    "emphasis": false,
+    "line": 4,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "shamsa",
+    "start": 15.84,
+    "end": 16.22,
+    "emphasis": false,
+    "line": 4,
+    "index": 13
+   },
+   {
+    "text": "siraja\".",
+    "start": 16.22,
+    "end": 16.6,
+    "emphasis": false,
+    "line": 4,
+    "index": 14
+   }
+  ],
+  [
+   {
+    "text": "Chaand",
+    "start": 16.8,
+    "end": 17.14,
+    "emphasis": false,
+    "line": 5,
+    "index": 0
+   },
+   {
+    "text": "ko",
+    "start": 17.14,
+    "end": 17.3,
+    "emphasis": false,
+    "line": 5,
+    "index": 1
+   },
+   {
+    "text": "banaya",
+    "start": 17.3,
+    "end": 17.64,
+    "emphasis": false,
+    "line": 5,
+    "index": 2
+   },
+   {
+    "text": "nur.",
+    "start": 17.64,
+    "end": 18.02,
+    "emphasis": true,
+    "line": 5,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "Aur",
+    "start": 18.02,
+    "end": 18.28,
+    "emphasis": false,
+    "line": 5,
+    "index": 4
+   },
+   {
+    "text": "suraj",
+    "start": 18.28,
+    "end": 18.72,
+    "emphasis": false,
+    "line": 5,
+    "index": 5
+   },
+   {
+    "text": "ko",
+    "start": 18.72,
+    "end": 18.8,
+    "emphasis": false,
+    "line": 5,
+    "index": 6
+   },
+   {
+    "text": "siraj,",
+    "start": 18.8,
+    "end": 19.36,
+    "emphasis": true,
+    "line": 5,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "yaani",
+    "start": 19.5,
+    "end": 19.66,
+    "emphasis": false,
+    "line": 5,
+    "index": 8
+   },
+   {
+    "text": "jalta",
+    "start": 19.66,
+    "end": 20.04,
+    "emphasis": false,
+    "line": 5,
+    "index": 9
+   },
+   {
+    "text": "hua",
+    "start": 20.04,
+    "end": 20.22,
+    "emphasis": false,
+    "line": 5,
+    "index": 10
+   },
+   {
+    "text": "chiragh.",
+    "start": 20.22,
+    "end": 20.62,
+    "emphasis": false,
+    "line": 5,
+    "index": 11
+   }
+  ],
+  [
+   {
+    "text": "English",
+    "start": 20.74,
+    "end": 21.04,
+    "emphasis": false,
+    "line": 6,
+    "index": 0
+   },
+   {
+    "text": "translation",
+    "start": 21.04,
+    "end": 21.56,
+    "emphasis": false,
+    "line": 6,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "mein",
+    "start": 21.56,
+    "end": 21.7,
+    "emphasis": false,
+    "line": 6,
+    "index": 2
+   },
+   {
+    "text": "likha",
+    "start": 21.7,
+    "end": 21.83,
+    "emphasis": false,
+    "line": 6,
+    "index": 3
+   },
+   {
+    "text": "hai,",
+    "start": 21.83,
+    "end": 21.96,
+    "emphasis": false,
+    "line": 6,
+    "index": 4
+   }
+  ],
+  [
+   {
+    "text": "a",
+    "start": 21.96,
+    "end": 22.44,
+    "emphasis": false,
+    "line": 6,
+    "index": 5
+   },
+   {
+    "text": "\"reflected\"",
+    "start": 22.58,
+    "end": 23.14,
+    "emphasis": false,
+    "line": 6,
+    "index": 6
+   },
+   {
+    "text": "light.",
+    "start": 23.14,
+    "end": 23.6,
+    "emphasis": false,
+    "line": 6,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "Par",
+    "start": 23.6,
+    "end": 23.72,
+    "emphasis": false,
+    "line": 6,
+    "index": 8
+   },
+   {
+    "text": "ruko,",
+    "start": 23.72,
+    "end": 24.36,
+    "emphasis": false,
+    "line": 6,
+    "index": 9
+   },
+   {
+    "text": "reflected",
+    "start": 24.36,
+    "end": 24.98,
+    "emphasis": false,
+    "line": 6,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "bracket",
+    "start": 24.98,
+    "end": 25.3,
+    "emphasis": true,
+    "line": 6,
+    "index": 11
+   },
+   {
+    "text": "mein",
+    "start": 25.3,
+    "end": 25.44,
+    "emphasis": false,
+    "line": 6,
+    "index": 12
+   },
+   {
+    "text": "hai.",
+    "start": 25.44,
+    "end": 25.86,
+    "emphasis": false,
+    "line": 6,
+    "index": 13
+   }
+  ],
+  [
+   {
+    "text": "Arabic",
+    "start": 25.86,
+    "end": 26.2,
+    "emphasis": false,
+    "line": 7,
+    "index": 0
+   },
+   {
+    "text": "mein",
+    "start": 26.2,
+    "end": 26.32,
+    "emphasis": false,
+    "line": 7,
+    "index": 1
+   },
+   {
+    "text": "ye",
+    "start": 26.32,
+    "end": 26.44,
+    "emphasis": false,
+    "line": 7,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "lafz",
+    "start": 26.44,
+    "end": 26.72,
+    "emphasis": false,
+    "line": 7,
+    "index": 3
+   },
+   {
+    "text": "hai",
+    "start": 26.72,
+    "end": 27.2,
+    "emphasis": false,
+    "line": 7,
+    "index": 4
+   },
+   {
+    "text": "hi",
+    "start": 27.2,
+    "end": 27.2,
+    "emphasis": false,
+    "line": 7,
+    "index": 5
+   },
+   {
+    "text": "nahi.",
+    "start": 27.2,
+    "end": 27.6,
+    "emphasis": false,
+    "line": 7,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "Aur",
+    "start": 27.6,
+    "end": 27.76,
+    "emphasis": false,
+    "line": 8,
+    "index": 0
+   },
+   {
+    "text": "nur",
+    "start": 27.76,
+    "end": 28.04,
+    "emphasis": false,
+    "line": 8,
+    "index": 1
+   },
+   {
+    "text": "ka",
+    "start": 28.04,
+    "end": 28.14,
+    "emphasis": false,
+    "line": 8,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "matlab",
+    "start": 28.14,
+    "end": 28.42,
+    "emphasis": false,
+    "line": 8,
+    "index": 3
+   },
+   {
+    "text": "udhaar",
+    "start": 28.42,
+    "end": 28.76,
+    "emphasis": false,
+    "line": 8,
+    "index": 4
+   },
+   {
+    "text": "ki",
+    "start": 28.76,
+    "end": 28.86,
+    "emphasis": false,
+    "line": 8,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "roshni",
+    "start": 28.86,
+    "end": 29.2,
+    "emphasis": false,
+    "line": 8,
+    "index": 6
+   },
+   {
+    "text": "ho",
+    "start": 29.2,
+    "end": 29.2,
+    "emphasis": false,
+    "line": 8,
+    "index": 7
+   },
+   {
+    "text": "bhi",
+    "start": 29.2,
+    "end": 29.36,
+    "emphasis": false,
+    "line": 8,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "nahi",
+    "start": 29.36,
+    "end": 29.54,
+    "emphasis": false,
+    "line": 8,
+    "index": 9
+   },
+   {
+    "text": "sakta.",
+    "start": 29.68,
+    "end": 30.12,
+    "emphasis": false,
+    "line": 8,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "Quran",
+    "start": 30.12,
+    "end": 30.44,
+    "emphasis": false,
+    "line": 8,
+    "index": 11
+   },
+   {
+    "text": "toh",
+    "start": 30.44,
+    "end": 30.58,
+    "emphasis": false,
+    "line": 8,
+    "index": 12
+   },
+   {
+    "text": "Allah",
+    "start": 30.58,
+    "end": 30.92,
+    "emphasis": false,
+    "line": 8,
+    "index": 13
+   },
+   {
+    "text": "ko",
+    "start": 30.92,
+    "end": 31.12,
+    "emphasis": false,
+    "line": 8,
+    "index": 14
+   }
+  ],
+  [
+   {
+    "text": "bhi",
+    "start": 31.12,
+    "end": 31.18,
+    "emphasis": false,
+    "line": 8,
+    "index": 15
+   },
+   {
+    "text": "nur",
+    "start": 31.18,
+    "end": 31.44,
+    "emphasis": false,
+    "line": 8,
+    "index": 16
+   },
+   {
+    "text": "kehta",
+    "start": 31.44,
+    "end": 31.76,
+    "emphasis": false,
+    "line": 8,
+    "index": 17
+   },
+   {
+    "text": "hai.",
+    "start": 31.76,
+    "end": 32.04,
+    "emphasis": false,
+    "line": 8,
+    "index": 18
+   }
+  ],
+  [
+   {
+    "text": "Toh",
+    "start": 32.04,
+    "end": 32.1,
+    "emphasis": false,
+    "line": 9,
+    "index": 0
+   },
+   {
+    "text": "forward",
+    "start": 32.1,
+    "end": 32.6,
+    "emphasis": false,
+    "line": 9,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "galat",
+    "start": 32.6,
+    "end": 32.9,
+    "emphasis": false,
+    "line": 9,
+    "index": 2
+   },
+   {
+    "text": "nikla?",
+    "start": 32.9,
+    "end": 33.38,
+    "emphasis": false,
+    "line": 9,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "Poora",
+    "start": 33.38,
+    "end": 33.74,
+    "emphasis": false,
+    "line": 9,
+    "index": 4
+   },
+   {
+    "text": "nahi.",
+    "start": 33.74,
+    "end": 34.28,
+    "emphasis": false,
+    "line": 9,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "Asli",
+    "start": 34.28,
+    "end": 34.52,
+    "emphasis": false,
+    "line": 9,
+    "index": 6
+   },
+   {
+    "text": "baat",
+    "start": 34.52,
+    "end": 34.72,
+    "emphasis": false,
+    "line": 9,
+    "index": 7
+   },
+   {
+    "text": "nur",
+    "start": 34.72,
+    "end": 35.06,
+    "emphasis": false,
+    "line": 9,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "mein",
+    "start": 35.06,
+    "end": 35.14,
+    "emphasis": false,
+    "line": 9,
+    "index": 9
+   },
+   {
+    "text": "nahi,",
+    "start": 35.14,
+    "end": 35.54,
+    "emphasis": false,
+    "line": 9,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "siraj",
+    "start": 35.62,
+    "end": 35.96,
+    "emphasis": true,
+    "line": 9,
+    "index": 11
+   },
+   {
+    "text": "mein",
+    "start": 35.96,
+    "end": 36.12,
+    "emphasis": false,
+    "line": 9,
+    "index": 12
+   },
+   {
+    "text": "hai.",
+    "start": 36.12,
+    "end": 36.5,
+    "emphasis": false,
+    "line": 9,
+    "index": 13
+   }
+  ],
+  [
+   {
+    "text": "Ye",
+    "start": 36.5,
+    "end": 36.6,
+    "emphasis": false,
+    "line": 10,
+    "index": 0
+   },
+   {
+    "text": "lafz",
+    "start": 36.6,
+    "end": 36.88,
+    "emphasis": false,
+    "line": 10,
+    "index": 1
+   },
+   {
+    "text": "poore",
+    "start": 36.88,
+    "end": 37.18,
+    "emphasis": false,
+    "line": 10,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "Quran",
+    "start": 37.18,
+    "end": 37.46,
+    "emphasis": false,
+    "line": 10,
+    "index": 3
+   },
+   {
+    "text": "mein",
+    "start": 37.46,
+    "end": 37.66,
+    "emphasis": false,
+    "line": 10,
+    "index": 4
+   },
+   {
+    "text": "bas",
+    "start": 37.66,
+    "end": 37.86,
+    "emphasis": false,
+    "line": 10,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "chaar",
+    "start": 37.86,
+    "end": 38.16,
+    "emphasis": true,
+    "line": 10,
+    "index": 6
+   },
+   {
+    "text": "baar",
+    "start": 38.16,
+    "end": 38.32,
+    "emphasis": false,
+    "line": 10,
+    "index": 7
+   },
+   {
+    "text": "aata",
+    "start": 38.32,
+    "end": 38.66,
+    "emphasis": false,
+    "line": 10,
+    "index": 8
+   },
+   {
+    "text": "hai.",
+    "start": 38.66,
+    "end": 38.8,
+    "emphasis": false,
+    "line": 10,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "Teen",
+    "start": 38.8,
+    "end": 39.0,
+    "emphasis": false,
+    "line": 11,
+    "index": 0
+   },
+   {
+    "text": "baar",
+    "start": 39.0,
+    "end": 39.24,
+    "emphasis": false,
+    "line": 11,
+    "index": 1
+   },
+   {
+    "text": "suraj",
+    "start": 39.24,
+    "end": 39.58,
+    "emphasis": false,
+    "line": 11,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "ke",
+    "start": 39.58,
+    "end": 39.8,
+    "emphasis": false,
+    "line": 11,
+    "index": 3
+   },
+   {
+    "text": "liye.",
+    "start": 39.8,
+    "end": 40.02,
+    "emphasis": false,
+    "line": 11,
+    "index": 4
+   }
+  ],
+  [
+   {
+    "text": "Ek",
+    "start": 40.16,
+    "end": 40.4,
+    "emphasis": false,
+    "line": 11,
+    "index": 5
+   },
+   {
+    "text": "baar",
+    "start": 40.4,
+    "end": 40.52,
+    "emphasis": false,
+    "line": 11,
+    "index": 6
+   },
+   {
+    "text": "Nabi",
+    "start": 40.52,
+    "end": 40.76,
+    "emphasis": false,
+    "line": 11,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "sallallahu",
+    "start": 40.76,
+    "end": 41.34,
+    "emphasis": false,
+    "line": 11,
+    "index": 8
+   },
+   {
+    "text": "alaihi",
+    "start": 41.34,
+    "end": 41.34,
+    "emphasis": false,
+    "line": 11,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "wasallam.",
+    "start": 41.34,
+    "end": 41.6,
+    "emphasis": false,
+    "line": 11,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "Aur",
+    "start": 41.6,
+    "end": 42.3,
+    "emphasis": false,
+    "line": 11,
+    "index": 11
+   },
+   {
+    "text": "chaand",
+    "start": 42.3,
+    "end": 42.64,
+    "emphasis": false,
+    "line": 11,
+    "index": 12
+   },
+   {
+    "text": "ke",
+    "start": 42.64,
+    "end": 42.8,
+    "emphasis": false,
+    "line": 11,
+    "index": 13
+   },
+   {
+    "text": "liye?",
+    "start": 42.8,
+    "end": 43.2,
+    "emphasis": false,
+    "line": 11,
+    "index": 14
+   }
+  ],
+  [
+   {
+    "text": "Ek",
+    "start": 43.2,
+    "end": 43.62,
+    "emphasis": true,
+    "line": 11,
+    "index": 15
+   },
+   {
+    "text": "baar",
+    "start": 43.62,
+    "end": 43.92,
+    "emphasis": true,
+    "line": 11,
+    "index": 16
+   },
+   {
+    "text": "bhi",
+    "start": 43.92,
+    "end": 44.04,
+    "emphasis": true,
+    "line": 11,
+    "index": 17
+   },
+   {
+    "text": "nahi.",
+    "start": 44.04,
+    "end": 44.42,
+    "emphasis": true,
+    "line": 11,
+    "index": 18
+   }
+  ],
+  [
+   {
+    "text": "Aur",
+    "start": 44.42,
+    "end": 44.64,
+    "emphasis": false,
+    "line": 12,
+    "index": 0
+   },
+   {
+    "text": "ye",
+    "start": 44.64,
+    "end": 44.76,
+    "emphasis": false,
+    "line": 12,
+    "index": 1
+   },
+   {
+    "text": "fark",
+    "start": 44.76,
+    "end": 45.1,
+    "emphasis": false,
+    "line": 12,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "sahi",
+    "start": 45.1,
+    "end": 45.36,
+    "emphasis": false,
+    "line": 12,
+    "index": 3
+   },
+   {
+    "text": "baithta",
+    "start": 45.36,
+    "end": 45.7,
+    "emphasis": false,
+    "line": 12,
+    "index": 4
+   },
+   {
+    "text": "hai.",
+    "start": 45.7,
+    "end": 46.02,
+    "emphasis": false,
+    "line": 12,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "Chiragh",
+    "start": 46.02,
+    "end": 46.48,
+    "emphasis": false,
+    "line": 12,
+    "index": 6
+   },
+   {
+    "text": "apna",
+    "start": 46.48,
+    "end": 46.82,
+    "emphasis": false,
+    "line": 12,
+    "index": 7
+   },
+   {
+    "text": "tel",
+    "start": 46.82,
+    "end": 47.04,
+    "emphasis": false,
+    "line": 12,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "jalata",
+    "start": 47.04,
+    "end": 47.46,
+    "emphasis": false,
+    "line": 12,
+    "index": 9
+   },
+   {
+    "text": "hai,",
+    "start": 47.46,
+    "end": 47.66,
+    "emphasis": false,
+    "line": 12,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "suraj",
+    "start": 47.66,
+    "end": 48.06,
+    "emphasis": false,
+    "line": 12,
+    "index": 11
+   },
+   {
+    "text": "apna",
+    "start": 48.06,
+    "end": 48.3,
+    "emphasis": false,
+    "line": 12,
+    "index": 12
+   },
+   {
+    "text": "fuel.",
+    "start": 48.3,
+    "end": 48.64,
+    "emphasis": false,
+    "line": 12,
+    "index": 13
+   }
+  ],
+  [
+   {
+    "text": "Chaand",
+    "start": 48.64,
+    "end": 49.04,
+    "emphasis": false,
+    "line": 12,
+    "index": 14
+   },
+   {
+    "text": "kuch",
+    "start": 49.04,
+    "end": 49.28,
+    "emphasis": false,
+    "line": 12,
+    "index": 15
+   },
+   {
+    "text": "nahi",
+    "start": 49.28,
+    "end": 49.5,
+    "emphasis": false,
+    "line": 12,
+    "index": 16
+   },
+   {
+    "text": "jalata.",
+    "start": 49.5,
+    "end": 50.12,
+    "emphasis": false,
+    "line": 12,
+    "index": 17
+   }
+  ],
+  [
+   {
+    "text": "Haan,",
+    "start": 50.12,
+    "end": 50.3,
+    "emphasis": false,
+    "line": 13,
+    "index": 0
+   },
+   {
+    "text": "chaand",
+    "start": 50.3,
+    "end": 50.82,
+    "emphasis": false,
+    "line": 13,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "ki",
+    "start": 50.82,
+    "end": 50.9,
+    "emphasis": false,
+    "line": 13,
+    "index": 2
+   },
+   {
+    "text": "roshni",
+    "start": 50.9,
+    "end": 51.28,
+    "emphasis": false,
+    "line": 13,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "udhaar",
+    "start": 51.28,
+    "end": 51.66,
+    "emphasis": false,
+    "line": 13,
+    "index": 4
+   },
+   {
+    "text": "ki",
+    "start": 51.66,
+    "end": 51.74,
+    "emphasis": false,
+    "line": 13,
+    "index": 5
+   },
+   {
+    "text": "hai,",
+    "start": 51.74,
+    "end": 52.1,
+    "emphasis": false,
+    "line": 13,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "ye",
+    "start": 52.1,
+    "end": 52.42,
+    "emphasis": false,
+    "line": 13,
+    "index": 7
+   },
+   {
+    "text": "Quran",
+    "start": 52.42,
+    "end": 52.84,
+    "emphasis": false,
+    "line": 13,
+    "index": 8
+   },
+   {
+    "text": "se",
+    "start": 52.84,
+    "end": 53.02,
+    "emphasis": false,
+    "line": 13,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "hazaar",
+    "start": 53.02,
+    "end": 53.36,
+    "emphasis": true,
+    "line": 13,
+    "index": 10
+   },
+   {
+    "text": "saal",
+    "start": 53.36,
+    "end": 53.58,
+    "emphasis": true,
+    "line": 13,
+    "index": 11
+   }
+  ],
+  [
+   {
+    "text": "pehle",
+    "start": 53.58,
+    "end": 53.88,
+    "emphasis": false,
+    "line": 13,
+    "index": 12
+   },
+   {
+    "text": "ek",
+    "start": 53.88,
+    "end": 54.04,
+    "emphasis": false,
+    "line": 13,
+    "index": 13
+   },
+   {
+    "text": "Greek",
+    "start": 54.04,
+    "end": 54.32,
+    "emphasis": false,
+    "line": 13,
+    "index": 14
+   }
+  ],
+  [
+   {
+    "text": "shayar",
+    "start": 54.32,
+    "end": 54.58,
+    "emphasis": false,
+    "line": 13,
+    "index": 15
+   },
+   {
+    "text": "likh",
+    "start": 54.58,
+    "end": 54.76,
+    "emphasis": false,
+    "line": 13,
+    "index": 16
+   }
+  ],
+  [
+   {
+    "text": "chuka",
+    "start": 54.76,
+    "end": 55.0,
+    "emphasis": false,
+    "line": 13,
+    "index": 17
+   },
+   {
+    "text": "tha.",
+    "start": 55.0,
+    "end": 55.32,
+    "emphasis": false,
+    "line": 13,
+    "index": 18
+   }
+  ],
+  [
+   {
+    "text": "Toh",
+    "start": 55.32,
+    "end": 55.38,
+    "emphasis": false,
+    "line": 14,
+    "index": 0
+   },
+   {
+    "text": "Quran",
+    "start": 55.38,
+    "end": 55.8,
+    "emphasis": false,
+    "line": 14,
+    "index": 1
+   },
+   {
+    "text": "ne",
+    "start": 55.8,
+    "end": 55.96,
+    "emphasis": false,
+    "line": 14,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "koi",
+    "start": 55.96,
+    "end": 56.14,
+    "emphasis": false,
+    "line": 14,
+    "index": 3
+   },
+   {
+    "text": "nayi",
+    "start": 56.14,
+    "end": 56.42,
+    "emphasis": false,
+    "line": 14,
+    "index": 4
+   },
+   {
+    "text": "khoj",
+    "start": 56.42,
+    "end": 56.78,
+    "emphasis": false,
+    "line": 14,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "nahi",
+    "start": 56.78,
+    "end": 57.0,
+    "emphasis": false,
+    "line": 14,
+    "index": 6
+   },
+   {
+    "text": "sunayi.",
+    "start": 57.0,
+    "end": 57.52,
+    "emphasis": false,
+    "line": 14,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "Bas",
+    "start": 57.52,
+    "end": 57.74,
+    "emphasis": false,
+    "line": 14,
+    "index": 8
+   },
+   {
+    "text": "wo",
+    "start": 57.74,
+    "end": 57.88,
+    "emphasis": false,
+    "line": 14,
+    "index": 9
+   },
+   {
+    "text": "galti",
+    "start": 57.88,
+    "end": 58.2,
+    "emphasis": false,
+    "line": 14,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "nahi",
+    "start": 58.18,
+    "end": 58.46,
+    "emphasis": false,
+    "line": 14,
+    "index": 11
+   },
+   {
+    "text": "ki,",
+    "start": 58.46,
+    "end": 58.64,
+    "emphasis": false,
+    "line": 14,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "jo",
+    "start": 58.64,
+    "end": 58.9,
+    "emphasis": false,
+    "line": 14,
+    "index": 13
+   },
+   {
+    "text": "bahut",
+    "start": 58.9,
+    "end": 59.2,
+    "emphasis": false,
+    "line": 14,
+    "index": 14
+   },
+   {
+    "text": "aasaan",
+    "start": 59.2,
+    "end": 59.58,
+    "emphasis": false,
+    "line": 14,
+    "index": 15
+   },
+   {
+    "text": "thi.",
+    "start": 59.58,
+    "end": 59.98,
+    "emphasis": false,
+    "line": 14,
+    "index": 16
+   }
+  ],
+  [
+   {
+    "text": "Aasmaan",
+    "start": 59.98,
+    "end": 60.38,
+    "emphasis": false,
+    "line": 15,
+    "index": 0
+   },
+   {
+    "text": "mein",
+    "start": 60.38,
+    "end": 60.52,
+    "emphasis": false,
+    "line": 15,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "chiragh",
+    "start": 60.52,
+    "end": 60.88,
+    "emphasis": false,
+    "line": 15,
+    "index": 2
+   },
+   {
+    "text": "ek",
+    "start": 60.88,
+    "end": 61.16,
+    "emphasis": false,
+    "line": 15,
+    "index": 3
+   },
+   {
+    "text": "hi",
+    "start": 61.16,
+    "end": 61.26,
+    "emphasis": false,
+    "line": 15,
+    "index": 4
+   },
+   {
+    "text": "hai.",
+    "start": 61.26,
+    "end": 61.84,
+    "emphasis": false,
+    "line": 15,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "Aur",
+    "start": 61.84,
+    "end": 61.94,
+    "emphasis": false,
+    "line": 15,
+    "index": 6
+   },
+   {
+    "text": "Quran",
+    "start": 61.94,
+    "end": 62.32,
+    "emphasis": false,
+    "line": 15,
+    "index": 7
+   },
+   {
+    "text": "ne",
+    "start": 62.32,
+    "end": 62.5,
+    "emphasis": false,
+    "line": 15,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "chiragh",
+    "start": 62.5,
+    "end": 62.9,
+    "emphasis": false,
+    "line": 15,
+    "index": 9
+   },
+   {
+    "text": "usi",
+    "start": 62.9,
+    "end": 63.18,
+    "emphasis": true,
+    "line": 15,
+    "index": 10
+   },
+   {
+    "text": "ko",
+    "start": 63.18,
+    "end": 63.28,
+    "emphasis": false,
+    "line": 15,
+    "index": 11
+   },
+   {
+    "text": "kaha.",
+    "start": 63.28,
+    "end": 63.64,
+    "emphasis": false,
+    "line": 15,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "Agli",
+    "start": 63.64,
+    "end": 63.96,
+    "emphasis": false,
+    "line": 16,
+    "index": 0
+   },
+   {
+    "text": "baar",
+    "start": 63.96,
+    "end": 64.14,
+    "emphasis": false,
+    "line": 16,
+    "index": 1
+   },
+   {
+    "text": "chaand",
+    "start": 64.1,
+    "end": 64.48,
+    "emphasis": false,
+    "line": 16,
+    "index": 2
+   },
+   {
+    "text": "dekho,",
+    "start": 64.48,
+    "end": 64.88,
+    "emphasis": false,
+    "line": 16,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "toh",
+    "start": 64.88,
+    "end": 65.04,
+    "emphasis": false,
+    "line": 16,
+    "index": 4
+   },
+   {
+    "text": "ye",
+    "start": 65.04,
+    "end": 65.22,
+    "emphasis": false,
+    "line": 16,
+    "index": 5
+   },
+   {
+    "text": "yaad",
+    "start": 65.22,
+    "end": 65.46,
+    "emphasis": false,
+    "line": 16,
+    "index": 6
+   },
+   {
+    "text": "rakhna.",
+    "start": 65.46,
+    "end": 65.87,
+    "emphasis": false,
+    "line": 16,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "Follow",
+    "start": 65.94,
+    "end": 66.2,
+    "emphasis": false,
+    "line": 16,
+    "index": 8
+   },
+   {
+    "text": "kar",
+    "start": 66.2,
+    "end": 66.38,
+    "emphasis": false,
+    "line": 16,
+    "index": 9
+   },
+   {
+    "text": "lo.",
+    "start": 66.38,
+    "end": 66.52,
+    "emphasis": false,
+    "line": 16,
+    "index": 10
+   }
+  ]
+ ]
+}

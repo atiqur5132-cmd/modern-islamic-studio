@@ -14,6 +14,8 @@ import {Edit, editDurationInFrames, FPS} from "./timeline/types";
 import {Long} from "./compositions/Long";
 import scrollLong from "../projects/scroll-kyun/long.json";
 import {LongProps} from "./long/scroll/types";
+import {Chaand} from "./chaand/Chaand";
+import chaandReel from "../projects/chaand-nur/reel.json";
 
 const SHORTS = {fps: FPS, width: 1080, height: 1920};
 
@@ -88,6 +90,14 @@ export const Root = () => (
       fps={FPS}
       width={1920}
       height={1080}
+    />
+    <Composition
+      id="Chaand"
+      component={Chaand}
+      defaultProps={chaandReel as LongProps}
+      durationInFrames={1}
+      calculateMetadata={({props}) => ({durationInFrames: Math.round(props.durationSeconds * FPS)})}
+      {...SHORTS}
     />
     <Composition id="StudioTest" component={StudioTest} durationInFrames={150} {...SHORTS} />
   </>

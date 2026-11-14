@@ -1,0 +1,87 @@
+{
+  "title": "Suraj chiragh hai, chaand nahi (faceless, 67.5 s)",
+  "lines": [
+    {"line": "Suraj abhi bujh jaaye, toh chaand bhi lagbhag *aath minute* mein bujh jaayega.", "section": "hook",
+     "options": [
+      {"layout": "full-screen graphic (faceless)", "visual": "0.0 s: NASA full Moon fills the upper two-thirds, the Sun (NASA SDO) burning at the left edge, a flat switch beside it set to ON, the Moon drifting slowly. 0.8 s 'bujh': the switch flicks, the Sun goes black at once, the Moon still lit. 1.9 s 'aath minute': an 08:20 timer slams in under the Moon and races down. 2.9 s 'bujh jaayega': 00:00, the Moon goes dark in 0.3 s, a faint grey rim left.", "text": "SUN: ON / OFF, 08:20", "tag": "", "sound": "low hum from frame 0, hard click on the switch, fast ticks under the timer, silence when the Moon goes out", "why": "The research storyboard: four hard beats in 3 s, the surprise (Moon goes out too) is the picture itself, reads with sound off."},
+      {"layout": "full-screen graphic (faceless)", "visual": "0.0 s: Sun top, Moon bottom, a thin beam of light already running between them. 0.8 s: the Sun collapses to black. 1.9 s: the last light travels down the beam with an '8 min 20 s' counter riding on it. 2.9 s: the light reaches the Moon and the Moon dies.", "text": "8 min 20 s", "tag": "", "sound": "hum, a low thud on the Sun, a rising tone along the beam, cut to silence", "why": "Shows why it takes 8 minutes (light travel), but the beam is thinner at thumbnail size."},
+      {"layout": "full-screen real image", "visual": "0.0 s: a real night photo of a full Moon over a city skyline; 0.8 s: the sky flashes darker; 1.9 s: 08:20 timer at the top; 2.9 s: the Moon in the photo blacks out.", "text": "08:20", "tag": "", "sound": "city night ambience, click, ticks, silence", "why": "Feels real, but needs a free-licence skyline photo and the Sun is never seen, so 'suraj bujh' is not shown in 1.5 s."}
+     ]},
+    {"line": "Kyunki chaand ki apni roshni hi nahi hai. Wo bas suraj ki roshni *lautata* hai.", "section": "hook",
+     "options": [
+      {"layout": "full-screen graphic", "visual": "3.5 s: hard cut, the dark Moon alone on night ground; 'No light of its own' sets in serif. 5.0 s: the Sun is back at the left edge, a broad sheet of amber light crosses and lights the Moon's left half. 6.1 s 'lautata': the light scatters off the Moon toward the viewer (soft rays reaching the lens).", "text": "No light of its own.", "tag": "Established science · NASA, 'Moonlight'", "sound": "soft whoosh on the cut, warm swell as the light arrives", "why": "Answers the hook at once and plants the amber = own light rule."},
+      {"layout": "split: Moon top, diagram below", "visual": "NASA Moon photo top; a small Sun-Moon-Earth diagram below with arrows.", "text": "Sunlight → Moon → you", "tag": "Established science · NASA", "sound": "tick on each arrow", "why": "Clear but a textbook look."},
+      {"layout": "full-screen real image", "visual": "NASA LRO close-up of the grey Moon surface, raking sunlight sweeping across the craters.", "text": "No light of its own.", "tag": "Established science · NASA", "sound": "warm swell", "why": "Beautiful, but 'lautata' is not visible."}
+     ]},
+    {"line": "Isi baat pe ek forward ghoomta hai: Quran ne 1400 saal pehle hi bata diya tha.", "section": "claim",
+     "options": [
+      {"layout": "full-screen graphic", "visual": "A generic chat forward (no app name, no real account) slides up over the lit Moon: 'Forwarded many times' on top, then the message: '1400 years ago the Quran said the Moon's light is reflected.' On '1400' the number is marked.", "text": "1400 years ago the Quran said the Moon's light is reflected.", "tag": "Viral claim", "sound": "phone buzz on arrival", "why": "The viewer has seen this forward; it names the claim we check."},
+      {"layout": "full-screen type", "visual": "'1400 years' huge in serif, the claim below.", "text": "1400 years ago…", "tag": "Viral claim", "sound": "low hit", "why": "Clean, but without the forward it loses the 'you have seen this' feeling."}
+     ]},
+    {"line": "Saboot, Surah Nuh ki ye aayat: \"wa ja'alal qamara fihinna nura, wa ja'alash shamsa siraja\".", "section": "evidence",
+     "options": [
+      {"layout": "full-screen Ayah page", "visual": "71:16 in Amiri Quran on the night ground, set in two halves: the moon half in ivory, the sun half below; each half lights as it is recited, نورا and سراجا underlined as spoken. Captions hidden.", "text": "Surah Nuh 71:16", "tag": "Quranic text · Nuh 71:16", "sound": "none under the recitation", "why": "Lets the Ayah be the hero; recitation is never captioned from Whisper."},
+      {"layout": "Ayah over Moon photo", "visual": "The Ayah over a dimmed full Moon.", "text": "Surah Nuh 71:16", "tag": "Quranic text", "sound": "none", "why": "Pretty, but lower contrast for the Arabic."}
+     ]},
+    {"line": "Chaand ko banaya *nur*. Aur suraj ko *siraj*, yaani jalta hua chiragh.", "section": "evidence",
+     "options": [
+      {"layout": "top/bottom split", "visual": "Top: the Moon with نور (nur) and 'light'. Bottom: a real clay oil lamp burning (free-licence photo/footage), سراج (siraj) in amber with 'a burning lamp'. The lamp flame flickers.", "text": "nur, light / siraj, a burning lamp", "tag": "Quranic context · 71:16", "sound": "soft tick per word, a match-strike on the flame", "why": "Shows the real object behind the word siraj."},
+      {"layout": "full-screen type pair", "visual": "nur and siraj side by side in serif with meanings.", "text": "nur / siraj", "tag": "Quranic context", "sound": "ticks", "why": "Simpler, no real lamp."}
+     ]},
+    {"line": "English translation mein likha hai, a \"reflected\" light. Par ruko, reflected *bracket* mein hai.", "section": "turn",
+     "options": [
+      {"layout": "full-screen pull quote on a paper-tinted page", "visual": "The Saheeh International line set as type: 'And made the moon therein a [reflected] light'. 'reflected' marked as spoken; on 'bracket' a hand-drawn ring closes around the square brackets and the page zooms in on them.", "text": "And made the moon therein a [reflected] light", "tag": "Translation · Saheeh International, 71:16 (quran.com)", "sound": "pen scratch on the ring", "why": "The bracket is the whole reveal; one phrase big, one credit line."},
+      {"layout": "screenshot of quran.com", "visual": "A real quran.com screenshot with the bracket ringed.", "text": "", "tag": "Translation · Saheeh International", "sound": "pen scratch", "why": "A real artifact, but site screenshots carry their branding and small type."}
+     ]},
+    {"line": "Arabic mein ye lafz hai hi nahi.", "section": "turn",
+     "options": [
+      {"layout": "full-screen word-by-word", "visual": "The four Arabic words of the moon half, each with its English gloss under it (and made / the moon / in them / a light). The word 'reflected' slides in looking for a place, finds no Arabic word above it, and falls away.", "text": "and made · the moon · in them · a light", "tag": "Linguistic observation · Arabic of 71:16", "sound": "a soft drop as 'reflected' falls", "why": "Makes 'not in the Arabic' visible in 1.7 s."},
+      {"layout": "full-screen type", "visual": "'[reflected]' fades out of the line.", "text": "", "tag": "Linguistic observation", "sound": "", "why": "Quicker but weaker."}
+     ]},
+    {"line": "Aur nur ka matlab udhaar ki roshni ho bhi nahi sakta. Quran toh Allah ko bhi nur kehta hai.", "section": "turn",
+     "options": [
+      {"layout": "full-screen Ayah page", "visual": "'nur ≠ borrowed light' first (borrowed struck by a drawn line on 'udhaar'), then 24:35 words 1–4 in Arabic with 'Allah is the Light of the heavens and the earth.' and نور lit on 'nur kehta hai'.", "text": "Allah is the Light of the heavens and the earth.", "tag": "Quranic text · An-Nur 24:35", "sound": "soft tick when nur lights", "why": "The critics' own point, shown with the verse."},
+      {"layout": "split: type top, Ayah below", "visual": "Same content stacked.", "text": "", "tag": "Quranic text", "sound": "", "why": "Busier."}
+     ]},
+    {"line": "Toh forward galat nikla? Poora nahi. Asli baat nur mein nahi, *siraj* mein hai.", "section": "turn",
+     "options": [
+      {"layout": "full-screen graphic, then word", "visual": "The forward returns; on 'galat' it tilts and dims; on 'poora nahi' it stops halfway and slides off. On 'siraj' the word سراج lands huge in amber with the lamp flame behind it.", "text": "siraj", "tag": "", "sound": "low hit on siraj", "why": "The second gap of the reel: there is something real here."},
+      {"layout": "full-screen type", "visual": "'Not entirely.' in serif then 'siraj'.", "text": "Not entirely.", "tag": "", "sound": "hit", "why": "Plainer."}
+     ]},
+    {"line": "Ye lafz poore Quran mein bas *chaar* baar aata hai.", "section": "proof",
+     "options": [
+      {"layout": "full-screen", "visual": "Four small lamps in a row, each lighting with its reference (25:61, 33:46, 71:16, 78:13); '4' lands big on 'chaar'.", "text": "4 times in the Quran", "tag": "Numerical observation · Quranic Arabic Corpus, root s-r-j", "sound": "four soft ticks (rotated takes)", "why": "Counts on screen as it is said."},
+      {"layout": "full-screen", "visual": "A mushaf-style strip with four highlights.", "text": "", "tag": "Numerical observation", "sound": "ticks", "why": "Needs a mushaf image with a usable licence."}
+     ]},
+    {"line": "Teen baar suraj ke liye. Ek baar Nabi sallallahu alaihi wasallam. Aur chaand ke liye? *Ek baar bhi nahi*.", "section": "proof",
+     "options": [
+      {"layout": "full-screen", "visual": "The four lamps sort: three fly to the Sun (25:61, 71:16, 78:13), one to 'the Prophet ﷺ (33:46)' as type; the Moon's slot stays empty and '0' lands under it on 'ek baar bhi nahi'.", "text": "Sun 3 · the Prophet ﷺ 1 · Moon 0", "tag": "Numerical observation · Quranic Arabic Corpus", "sound": "tick per lamp, silence for the zero", "why": "The finding of the reel, shown as a count."},
+      {"layout": "table", "visual": "A three-row tally.", "text": "", "tag": "", "sound": "", "why": "Reads as a spreadsheet."}
+     ]},
+    {"line": "Aur ye fark sahi baithta hai. Chiragh apna tel jalata hai, suraj apna fuel. Chaand kuch nahi jalata.", "section": "proof",
+     "options": [
+      {"layout": "full-screen real footage, three hard cuts", "visual": "A real oil-lamp flame (free-licence footage) 'burns oil'; NASA SDO footage of the Sun's surface 'burns its own fuel (fusion)'; NASA Moon, cold and grey, 'burns nothing'.", "text": "burns oil / its own fuel / nothing", "tag": "Established science · NASA", "sound": "flame crackle, low solar rumble, silence", "why": "Real pictures carry the logic; three hard cuts keep pace."},
+      {"layout": "three-panel graphic", "visual": "Three icons side by side.", "text": "", "tag": "", "sound": "", "why": "Icon look, weaker."}
+     ]},
+    {"line": "Haan, chaand ki roshni udhaar ki hai, ye Quran se *hazaar saal* pehle ek Greek shayar likh chuka tha.", "section": "context",
+     "options": [
+      {"layout": "full-screen real artifact + pull quote", "visual": "A free-licence photo of a Parmenides bust; pull quote 'Shining by night with borrowed light' (Burnet), then a timeline line from c. 475 BCE to 610 CE with '≈1,100 years' on 'hazaar saal'.", "text": "Shining by night with borrowed light", "tag": "Historical record · Parmenides, fr. 14 (c. 475 BCE), tr. Burnet", "sound": "paper turn, tick on the timeline", "why": "The honest half of the verdict, with a real face and source."},
+      {"layout": "type only", "visual": "The quote alone.", "text": "", "tag": "", "sound": "", "why": "No real artifact."}
+     ]},
+    {"line": "Toh Quran ne koi nayi khoj nahi sunayi. Bas wo galti nahi ki, jo bahut aasaan thi.", "section": "verdict",
+     "options": [
+      {"layout": "full-screen verdict page", "visual": "'Half true.' lands in serif (no stamp). Two lines below: '\"Reflected\" was added by the translator.' and 'The Sun is a lamp; the Moon is never called one.' On 'galti' the easy mistake appears as type, 'the moon, a lamp', and a drawn line crosses it.", "text": "Half true.", "tag": "Interpretation · our verdict", "sound": "one low impact on 'Half true'", "why": "The verdict, written as an editor would, not a sticker."},
+      {"layout": "verdict meter", "visual": "A true/false meter at half.", "text": "", "tag": "", "sound": "", "why": "Template tell."}
+     ]},
+    {"line": "Aasmaan mein chiragh ek hi hai. Aur Quran ne chiragh *usi* ko kaha.", "section": "payoff",
+     "options": [
+      {"layout": "full-screen", "visual": "Wide night sky: the Sun alone in amber, the Moon pale beside it; 'One lamp in the sky.' sets and holds still for 2 s+; on 'usi' سراج rises over the Sun.", "text": "One lamp in the sky.", "tag": "", "sound": "warm swell, then quiet", "why": "The payoff picture; holds for the last line."},
+      {"layout": "full-screen", "visual": "Real NASA Sun footage with the line.", "text": "", "tag": "", "sound": "", "why": "Less clear pairing with the Moon."}
+     ]},
+    {"line": "Agli baar chaand dekho, toh ye yaad rakhna. Follow kar lo.", "section": "cta",
+     "options": [
+      {"layout": "full-screen real image + CTA", "visual": "The real full Moon (NASA) rises slowly; Follow animation with real Instagram and Facebook icons, then like and comment icons with 'Which Quran \"fact\" forward have you seen most?'", "text": "Which Quran 'fact' forward have you seen most?", "tag": "", "sound": "soft pop per icon", "why": "Ends on the Moon the viewer will look at tonight."},
+      {"layout": "end card", "visual": "Plain end card.", "text": "", "tag": "", "sound": "", "why": "Flat."}
+     ]}
+  ]
+}

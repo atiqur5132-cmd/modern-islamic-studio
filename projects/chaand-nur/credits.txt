@@ -1,0 +1,22 @@
+Suraj chiragh hai, chaand nahi (71:16) - credits and sources
+
+Images (all checked on Wikimedia Commons, 2026-11-14; licences allow commercial use and editing)
+- cn-moon.jpg, cn-moon-close.jpg (crop): "Moon nearside LRO 5000.jpg" by NASA/GSFC/Arizona State University, Public domain, https://commons.wikimedia.org/wiki/File:Moon_nearside_LRO_5000.jpg
+- cn-sun.jpg, cn-sun-close.jpg (crop): "Image of Sun From NASA's Solar Dynamics Observatory (PIA26681).jpg" by NASA/GSFC/Solar Dynamics Observatory, Public domain, https://commons.wikimedia.org/wiki/File:Image_of_Sun_From_NASA%E2%80%99s_Solar_Dynamics_Observatory_(PIA26681).jpg
+- cn-lamp.jpg: "அகல்.jpg" (clay oil lamp) by Saral Shots, CC0, https://commons.wikimedia.org/wiki/File:%E0%AE%85%E0%AE%95%E0%AE%B2%E0%AF%8D.jpg
+- cn-parmenides.jpg: "Busto di Parmenide (cropped).jpg" by Sergio Spolti, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Busto_di_Parmenide_(cropped).jpg (shown dimmed and cropped)
+
+Quran
+- Arabic text: 71:16, 24:35 (words 1-4), 25:61 (word 9), 33:46 (word 5), 78:13 (word 2), fetched with scripts/fetch_ayah.py from api.quran.com v4 (text_uthmani), cross-checked with api.alquran.cloud.
+- English of 71:16 and 24:35: Saheeh International (quran.com).
+- Root s-r-j count (4: 25:61, 33:46, 71:16, 78:13): Quranic Arabic Corpus, https://corpus.quran.com/qurandictionary.jsp?q=srj
+
+Science
+- Moonlight is sunlight scattered off the Moon: NASA Science, "Moonlight", https://science.nasa.gov/moon/moonlight/
+- Sunlight takes about 8 min 20 s to cross 1 AU: NASA.
+- The Sun shines by nuclear fusion in its core: NASA Science, "The Sun".
+
+History
+- Parmenides, fragment DK 28 B14, "Shining by night with borrowed light, wandering round the earth" (tr. John Burnet, Early Greek Philosophy); text at https://lexundria.com/parm_frag/14/b
+
+Fonts: Plus Jakarta Sans, Newsreader, Amiri Quran (SIL OFL, Google Fonts).

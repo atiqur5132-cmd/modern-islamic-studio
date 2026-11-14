@@ -1,0 +1,23 @@
+{
+  "seconds": 67.5,
+  "pausesShrunk": [
+    [
+      65.71,
+      66.25
+    ]
+  ],
+  "pieces": [
+    {
+      "sourceFrom": 0.0,
+      "sourceTo": 65.87,
+      "outFrom": 0.0,
+      "outTo": 65.87
+    },
+    {
+      "sourceFrom": 66.09,
+      "sourceTo": 66.92,
+      "outFrom": 65.87,
+      "outTo": 66.7
+    }
+  ]
+}

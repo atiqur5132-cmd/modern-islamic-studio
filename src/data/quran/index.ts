@@ -26,7 +26,9 @@ import a21_33 from "./21-33.json";
 import a23_12 from "./23-12.json";
 import a23_13 from "./23-13.json";
 import a23_14 from "./23-14.json";
+import a24_35 from "./24-35.json";
 import a25_53 from "./25-53.json";
+import a25_61 from "./25-61.json";
 import a27_16 from "./27-16.json";
 import a27_18 from "./27-18.json";
 import a27_19 from "./27-19.json";
@@ -37,6 +39,7 @@ import a30_3 from "./30-3.json";
 import a30_4 from "./30-4.json";
 import a31_10 from "./31-10.json";
 import a32_14 from "./32-14.json";
+import a33_46 from "./33-46.json";
 import a35_12 from "./35-12.json";
 import a36_1 from "./36-1.json";
 import a39_5 from "./39-5.json";
@@ -52,10 +55,12 @@ import a57_20 from "./57-20.json";
 import a57_25 from "./57-25.json";
 import a6_108 from "./6-108.json";
 import a7_26 from "./7-26.json";
+import a71_16 from "./71-16.json";
 import a71_19 from "./71-19.json";
 import a75_3 from "./75-3.json";
 import a75_4 from "./75-4.json";
 import a76_3 from "./76-3.json";
+import a78_13 from "./78-13.json";
 import a78_6 from "./78-6.json";
 import a78_7 from "./78-7.json";
 import a79_30 from "./79-30.json";
@@ -103,7 +108,9 @@ export const AYAHS = {
   [a23_12.key]: a23_12,
   [a23_13.key]: a23_13,
   [a23_14.key]: a23_14,
+  [a24_35.key]: a24_35,
   [a25_53.key]: a25_53,
+  [a25_61.key]: a25_61,
   [a27_16.key]: a27_16,
   [a27_18.key]: a27_18,
   [a27_19.key]: a27_19,
@@ -114,6 +121,7 @@ export const AYAHS = {
   [a30_4.key]: a30_4,
   [a31_10.key]: a31_10,
   [a32_14.key]: a32_14,
+  [a33_46.key]: a33_46,
   [a35_12.key]: a35_12,
   [a36_1.key]: a36_1,
   [a39_5.key]: a39_5,
@@ -129,10 +137,12 @@ export const AYAHS = {
   [a57_25.key]: a57_25,
   [a6_108.key]: a6_108,
   [a7_26.key]: a7_26,
+  [a71_16.key]: a71_16,
   [a71_19.key]: a71_19,
   [a75_3.key]: a75_3,
   [a75_4.key]: a75_4,
   [a76_3.key]: a76_3,
+  [a78_13.key]: a78_13,
   [a78_6.key]: a78_6,
   [a78_7.key]: a78_7,
   [a79_30.key]: a79_30,
