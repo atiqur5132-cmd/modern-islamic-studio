@@ -42,7 +42,7 @@ export const Hook3D = ({cues}: {cues: Cues}) => {
       cam: lerp3([2.6, -0.4, 11.6], [2.2, -0.3, 10.4], k),
       target: [-1.9, 1.6, 0],
       moon: {pos: MOON, r: 3, light: 1, spin: 0.3},
-      sun: {pos: SUN, r: 4.6, power: flare},
+      sun: {pos: SUN, r: 4.6, power: flare, dead: true},
       lightFrom: [-30, 12, 40],
       shell: {r: ringR, opacity: frame > off ? 0.9 : 0},
     };
@@ -54,7 +54,7 @@ export const Hook3D = ({cues}: {cues: Cues}) => {
       up: UP_SUN,
       fov: 40,
       moon: {pos: MOON, r: 3, light: 1, spin: 0.3},
-      sun: {pos: SUN, r: 4.6, power: 0},
+      sun: {pos: SUN, r: 4.6, power: 0, dead: true},
       lightFrom: SUN,
       shell: {r: ringR, opacity: 1},
     };
@@ -64,7 +64,7 @@ export const Hook3D = ({cues}: {cues: Cues}) => {
       cam: lerp3([1.4, 0.5, 8.2], [1.2, 0.45, 7.6], k),
       target: [0.2, 0.1, 0],
       moon: {pos: MOON, r: 3, light: 1 - t01(frame, darkAt, darkAt + 9, (t) => t), spin: 0.3},
-      sun: {pos: SUN, r: 4.6, power: 0},
+      sun: {pos: SUN, r: 4.6, power: 0, dead: true},
       lightFrom: [-30, 12, 40],
       shell: {r: ringR, opacity: frame < darkAt + 6 ? 0.7 : 0},
     };

@@ -17,7 +17,8 @@ export type SpaceState = {
   roll?: number;
   up?: V3;
   moon: {pos: V3; r: number; spin?: number; light: number; tilt?: number};
-  sun: {pos: V3; r: number; power: number};
+  // `dead`: draw the Sun even with no power (a black body against the stars, the hook only).
+  sun: {pos: V3; r: number; power: number; dead?: boolean};
   // The sunlight's direction at the Moon can be set apart from where the Sun is drawn.
   lightFrom?: V3;
   shell?: {r: number; opacity: number};
@@ -206,9 +207,11 @@ export const Space3D = ({s, time}: {s: SpaceState; time: number}) => {
           <mesh position={s.moon.pos} rotation={[s.moon.tilt ?? 0.1, (s.moon.spin ?? 0) - Math.PI / 2, 0]} material={mats.moon}>
             <sphereGeometry args={[s.moon.r, 128, 64]} />
           </mesh>
-          <mesh position={s.sun.pos} rotation={[0.2, time * 0.01, 0]} material={mats.sun}>
-            <sphereGeometry args={[s.sun.r, 96, 48]} />
-          </mesh>
+          {s.sun.power > 0.001 || s.sun.dead ? (
+            <mesh position={s.sun.pos} rotation={[0.2, time * 0.01, 0]} material={mats.sun}>
+              <sphereGeometry args={[s.sun.r, 96, 48]} />
+            </mesh>
+          ) : null}
           {s.sun.power > 0.001 ? (
             <>
               <sprite position={s.sun.pos} scale={[s.sun.r * 5.2, s.sun.r * 5.2, 1]} material={mats.corona} />

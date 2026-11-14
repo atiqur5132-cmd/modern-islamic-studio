@@ -20,56 +20,65 @@ Script changed to the take (2026-11-14): line 2 "apni roshni hi nahi hai" (no "k
   the reel is faceless by design (series brief and research). The report says so, not "pass".
 - No music (none approved for this reel).
 
+## Rebuild (2026-11-14, after the creator's review)
+
+The first render (flat graphics on a dark ground, mostly type) was rejected by the creator:
+"jyadatar texts the and visuals and motion graphics promising nahi the". It also failed the
+hook gates (study_reel.py: beats 0.0 and 3.1 s only). The reel was rebuilt in one continuous
+3D sky (`src/chaand/Space3D.tsx`, three.js): a real Moon sphere with the Solar System Scope
+map (NASA LRO data, CC BY 4.0) lit only by the Sun's direction, so its terminator is real; an
+animated Sun sphere with a corona; the Milky Way behind. The creator approved the 3D hook
+preview ("Yes, build the rest") before the other scenes were rebuilt.
+
 ## The three biggest visual decisions
 
-1. **The hook is the surprise itself.** The real NASA Moon and Sun on a night ground with a
-   SUN switch; the switch flicks, the Sun dies, an `08:20` timer races down, and the Moon dies
-   too. Four hard beats in 3 s, readable with the sound off.
-2. **The bracket is shown, not told.** The translation moves to a light moon-paper page (the
-   only light ground in the reel); "[reflected]" is marked, the page pushes in, and a ring is
-   drawn round the brackets. Next, the Arabic words with their meanings leave "reflected" no
-   word to stand under, and it falls away.
-3. **One accent means "a light of its own".** Amber marks only the Sun, the lamp and the word
-   *siraj* (and its count). The Moon is always ivory/grey, so by the payoff the viewer reads the
-   colours as the argument: one amber lamp in the sky.
+1. **The hook is the physics itself.** The Sun dies on "bujh", its last light leaves as a ring;
+   side on, the ring travels to the Moon under a racing `08:20`; close up, the Moon goes dark
+   as it arrives. Then the Moon's real surface: lit, dark ("roshni hi nahi"), lit again from
+   the side as the Sun returns.
+2. **Words on real paper.** Every Ayah and the translation sit on a torn paper card floating
+   in the sky (the Towards Eternity reference), the word ringed by hand as it is said: nur in
+   ink, siraj in amber, "[reflected]" in rust; then "[reflected]" falls off the card into the dark.
+3. **One accent means "a light of its own".** Amber marks only the Sun, the lamp and siraj; the
+   count ends with three siraj words flying into the burning 3D Sun, one to the Prophet ﷺ, and
+   a 0 beside the Moon.
 
 ## Look
 
 | Role | Value |
 | --- | --- |
-| Ground | night ink #151A26 (fine grain, faint fixed stars: the subject is the sky), deep #0E121B |
-| Ink | moon ivory #ECE5D5 |
-| Muted | stone #8E8C86 (credits, what steps back) |
+| World | 3D night sky (#0B0E16), the Milky Way at 55%, Moon and Sun spheres |
+| Ink | moon ivory #ECE5D5, with a soft dark shadow over the sky |
+| Paper | warm card #F1EADB→#DDD2BA, fibre grain, torn edge; ink #1D2230; tag rust #A4572A |
 | Accent | lamp amber #E1A24A. One meaning: a light of its own (Sun, lamp, siraj) |
-| Paper page (lines 6–7) | moon paper #E7E1D3, ink #1D2230, muted #6F6D68 |
 | Sans | Plus Jakarta Sans 600/700/800 (labels, credits, numbers) |
-| Serif | Newsreader 500 and italic (big lines, meanings, quote) |
+| Serif | Newsreader 500 and italic (big lines, meanings, the quote) |
 | Arabic | Amiri Quran (whole file) |
-| Captions | `editorial`: Plus Jakarta Sans 66 px sentence case, words at half strength until spoken, `*emphasis*` in Newsreader italic 1.28×; warm white on night, paper ink on the paper page; foot at y 1310 |
-| Motion | arrivals 14–16 frames eased out (exp), exits 5–8; hard cuts between lines; snaps (5–6 frames) only for hook beats and number hits |
-| Sound | voice; sub-hit at frame 0, a click on the switch, ticks under the timer, sub-hit as the Moon dies, soft whooshes on chapter cuts, soft ticks (three takes rotated) on marks, impacts on "4" and "Half true" |
+| Captions | `editorial`, Plus Jakarta Sans 66 px, emphasis in Newsreader italic; none in the hook (0–3.4 s) |
+| Motion | camera moves in the 3D sky; hard cuts between lines; cards land on a 3D tilt and drift; rings drawn 12–14 frames |
+| Sound | voice; sub-hit at frame 0, impacts and soft ticks (three takes rotated) on beats, whooshes on chapter cuts |
 
-## Beats (times on the voiceover; built in `src/chaand/scenesA.tsx`, `scenesB.tsx`)
+## Beats (times on the voiceover; `src/chaand/Hook3D.tsx`, `scenes3D.tsx`)
 
-| # | Time | Line (short) | Picture | On screen (English) | Claim tag (credit line) |
-| --- | --- | --- | --- | --- | --- |
-| 1 | 0.00–3.42 | Suraj abhi bujh jaaye … aath minute … bujh jaayega | Full Moon (NASA LRO) upper frame, Sun (NASA SDO) top left, flat switch | Frame 0: "If the Sun went out now…" + SUN: ON. 0.80 switch → OFF, Sun black. 2.06 `08:20` slams in, races to 00:00. 2.87 Moon dark in 0.3 s | — |
-| 2 | 3.42–7.12 | Kyunki chaand ki apni roshni … lautata hai | Dark Moon; 4.42 hard push in; 5.6 Sun back at left, amber sheet lights the near half; 6.52 rays scatter toward viewer | "No light of its own." · "sunlight, sent back to you" | Established science · NASA, "Moonlight" |
-| 3 | 7.12–11.68 | Isi baat pe ek forward … 1400 saal pehle | Generic forward (no app, no account) rises over the dimmed Moon | "The Quran said it 1400 years ago: the Moon's light is reflected." 9.62 "1400 years ago" underlined + push | Viral claim · a forward shared widely |
-| 4 | 11.68–16.74 | Saboot, Surah Nuh ki ye aayat … | 71:16 as fetched: moon half (words 1–4) over sun half (5–7); each half lights as recited (13.46 / 15.24), نورا underlined (14.86), سراجا amber (16.22); small Moon and Sun beside their halves | "Surah Nuh, 71:16" · captions hidden 13.46–16.80 | Quranic text · Nuh 71:16 |
-| 5 | 16.74–20.68 | Chaand ko banaya nur … jalta hua chiragh | Moon full; 18.02 split: real clay lamp rises into the lower half | نورا "nur, light" (17.64) · سراجا in amber "siraj" (18.80) · "a burning lamp" (19.66) | Quranic context · Nuh 71:16 · Photo: Saral Shots, CC0 |
-| 6 | 20.68–25.80 | English translation … reflected bracket mein hai | Moon-paper page | "And made the moon therein a [reflected] light" (Saheeh International); 22.58 highlighter on "[reflected]"; 24.36 push in ×1.42; 24.98 ring drawn round it | Translation · Saheeh International, 71:16 (quran.com) |
-| 7 | 25.80–27.54 | Arabic mein ye lafz hai hi nahi | Paper page: the four Arabic words with meanings, right to left | "and made · the moon · therein · a light"; "[reflected]" under an empty dashed box (26.44), falls away (27.20) | Linguistic observation · the Arabic of 71:16, word by word |
-| 8 | 27.54–31.98 | nur ka matlab udhaar … Allah ko bhi nur | "nur ≠ borrowed light", struck on "udhaar" (28.42); 30.12 cut to 24:35 words 1–4, نور underlined on "nur" (31.18) | "Allah is the Light of the heavens and the earth." | Quranic text · An-Nur 24:35 · Saheeh International |
-| 9 | 31.98–36.44 | Toh forward galat nikla? Poora nahi … siraj mein hai | Forward back; tilts and dims on "galat" (32.60); "Not entirely." (33.38); slides off (34.28); "nur" muted (34.72); سراجا huge in amber over the lamp (35.62) | "Not entirely." · "siraj" | — |
-| 10 | 36.44–44.36 | Ye lafz … chaar baar … teen suraj … Nabi ﷺ … chaand ek baar bhi nahi | Four siraj words (from 25:61, 33:46, 71:16, 78:13, as fetched) light in a row; "4" (37.86); columns Sun / the Prophet ﷺ / Moon (38.80); three fly to the Sun (39.24), one to the Prophet ﷺ (40.52); Moon's dashed empty place (42.30); "0" (43.20) | "4 times in the whole Quran" · 3 · 1 · 0 | Numerical observation · Quranic Arabic Corpus, root s-r-j |
-| 11 | 44.36–50.06 | Aur ye fark sahi baithta hai … Chaand kuch nahi jalata | Real pictures, hard cuts: clay lamp (push at 46.02), NASA SDO Sun (47.66), NASA Moon, grey (48.64) | "A lamp burns its own oil." · "The Sun, its own fuel." · "The Moon burns nothing." | Established science · nuclear fusion · NASA/SDO; NASA/GSFC/ASU |
-| 12 | 50.06–55.26 | Haan, chaand ki roshni udhaar ki hai … Greek shayar | Parmenides bust (CC BY-SA), dimmed, right; quote (51.28); timeline c. 475 BCE → 610 CE drawn on "hazaar saal" (53.02); name on "Greek" (54.04) | "Shining by night with borrowed light" · "about 1,100 years" · "Parmenides, Greek poet, c. 475 BCE" | Historical record · Parmenides, fr. 14, tr. Burnet |
-| 13 | 55.26–59.92 | Toh Quran ne koi nayi khoj nahi … galti nahi ki … aasaan | "Half true." lands (55.38); the two halves (56.42); "the easy mistake: “The Moon is a lamp”" (57.88), struck on "aasaan" (59.20) | "Half true." · "“Reflected” is the translator’s word, not the Quran’s." · "The Sun is called a lamp. The Moon, never." | Interpretation · our verdict |
-| 14 | 59.92–63.58 | Aasmaan mein chiragh ek hi hai … usi ko kaha | Night sky: Sun (amber) and the Moon lit from its side; slow push | "One lamp in the sky." (60.52, holds to the cut) · سراجا rises over the Sun on "usi" (62.90) | — |
-| 15 | 63.58–67.50 | Agli baar chaand dekho … Follow kar lo | The real Moon rises | Comment ask (63.64–65.74): "Which Quran ‘fact’ forward have you seen most?"; Follow card with real Instagram and Facebook icons in the caption band (65.81–end) | Image: NASA/GSFC/ASU |
+| # | Time | Line (short) | Picture | Claim tag |
+| --- | --- | --- | --- | --- |
+| 1 | 0.00–3.42 | Suraj abhi bujh jaaye … | 3D Moon and burning Sun, "If the Sun went out now…"; 0.8 Sun dies, ring leaves; 2.06 side shot, ring travels, `08:20`; 2.7 close, Moon goes dark | — |
+| 2 | 3.42–7.12 | Kyunki chaand ki apni roshni … | Moon surface lit, dark on "nahi", sunlight sweeps back; pull back to Sun and half-lit Moon; "No light of its own." | Established science · NASA |
+| 3 | 7.12–11.68 | forward … 1400 saal | A phone tilts up out of the sky with the generic forward; "1400 years ago?" bursts out of it | Viral claim |
+| 4 | 11.68–16.74 | Saboot, Surah Nuh ki ye aayat | 71:16 on a paper card; halves darken as recited; نورا ringed in ink, سراجا in amber | Quranic text · Nuh 71:16 |
+| 5 | 16.74–20.68 | nur … siraj, jalta hua chiragh | Whole 3D Moon, "nur, light"; split: the real clay lamp, "siraj, a burning lamp" | Quranic context |
+| 6 | 20.68–25.80 | English translation … bracket | Saheeh International line on a card; "[reflected]" marked, push in, ringed | Translation · Saheeh International |
+| 7 | 25.80–27.54 | Arabic mein ye lafz hai hi nahi | The four Arabic words with meanings; "[reflected]" falls off the card | Linguistic observation |
+| 8 | 27.54–31.98 | nur ≠ udhaar … Allah ko bhi nur | "nur / borrowed light?" struck; 24:35 on a card, نور ringed | Quranic text · An-Nur 24:35 |
+| 9 | 31.98–36.44 | forward galat? Poora nahi … siraj | The phone tilts and falls, "Not entirely."; سراجا huge in amber over the lamp's flame | — |
+| 10 | 36.44–44.36 | chaar baar … teen suraj … Nabi ﷺ … chaand: 0 | Four siraj words in the sky, "4"; the Sun ignites, three fly into it, one to the Prophet ﷺ, 0 by the Moon | Numerical observation · Quranic Arabic Corpus |
+| 11 | 44.36–50.06 | Chiragh tel … suraj fuel … chaand kuch nahi | Real lamp; 3D Sun surface close; 3D Moon, cold | Established science |
+| 12 | 50.06–55.26 | Greek shayar … hazaar saal | Parmenides on a paper card, the quote, a line of light to 610 CE: "about 1,100 years" | Historical record |
+| 13 | 55.26–59.92 | nayi khoj nahi … galti nahi ki | "Half true." and its two halves; "The Moon is a lamp" struck | Interpretation · our verdict |
+| 14 | 59.92–63.58 | Aasmaan mein chiragh ek hi hai | The Sun burning, the Moon lit by it; "One lamp in the sky."; سراجا over the Sun on "usi" | — |
+| 15 | 63.58–67.50 | Agli baar chaand dekho … Follow | The Moon rises; comment ask, then Follow with real Instagram/Facebook icons | — |
 
-Mid-video CTA: Follow card at the top, 44.42–47.0 (over the proof footage; not the hook, not the payoff).
+Mid-video CTA: Follow card at the top, 44.42–47.0 (proof footage; not hook or payoff).
 
 ## Captions
 
