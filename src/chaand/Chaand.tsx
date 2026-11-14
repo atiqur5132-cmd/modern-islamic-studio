@@ -7,9 +7,8 @@ import {Cues, LongProps} from "../long/scroll/types";
 import {Sound, SOUND_SECONDS} from "../timeline/sfx";
 import {FPS} from "../timeline/types";
 import {ACCENT, GROUND, INK, PAPER_INK} from "./look";
-import {Ayah7116, Bracket, Claim, NoWord, NurAllah, NurSiraj} from "./scenesA";
 import {Hook3D, NoLight3D} from "./Hook3D";
-import {Burns, Count, End, Greek, Payoff, Turn, Verdict} from "./scenesB";
+import {Ayah3D, Bracket3D, Burns3D, Claim3D, Count3D, End3D, Greek3D, NoWord3D, NurAllah3D, NurSiraj3D, Payoff3D, Turn3D, Verdict3D} from "./scenes3D";
 
 // The faceless chaand-nur Short (projects/chaand-nur/beats.md): one approved voiceover,
 // one scene per script line (lines 10-11 share the count), hard cuts on the line starts,
@@ -19,19 +18,19 @@ type Scene = {id: string; from: number; Scene: (p: {cues: Cues}) => React.ReactE
 const SCENES: Scene[] = [
   {id: "hook", from: 1, Scene: Hook3D},
   {id: "nolight", from: 2, Scene: NoLight3D},
-  {id: "claim", from: 3, Scene: Claim},
-  {id: "ayah", from: 4, Scene: Ayah7116},
-  {id: "nursiraj", from: 5, Scene: NurSiraj},
-  {id: "bracket", from: 6, Scene: Bracket, paper: true},
-  {id: "noword", from: 7, Scene: NoWord, paper: true},
-  {id: "nurallah", from: 8, Scene: NurAllah},
-  {id: "turn", from: 9, Scene: Turn},
-  {id: "count", from: 10, Scene: Count},
-  {id: "burns", from: 12, Scene: Burns},
-  {id: "greek", from: 13, Scene: Greek},
-  {id: "verdict", from: 14, Scene: Verdict},
-  {id: "payoff", from: 15, Scene: Payoff},
-  {id: "end", from: 16, Scene: End},
+  {id: "claim", from: 3, Scene: Claim3D},
+  {id: "ayah", from: 4, Scene: Ayah3D},
+  {id: "nursiraj", from: 5, Scene: NurSiraj3D},
+  {id: "bracket", from: 6, Scene: Bracket3D},
+  {id: "noword", from: 7, Scene: NoWord3D},
+  {id: "nurallah", from: 8, Scene: NurAllah3D},
+  {id: "turn", from: 9, Scene: Turn3D},
+  {id: "count", from: 10, Scene: Count3D},
+  {id: "burns", from: 12, Scene: Burns3D},
+  {id: "greek", from: 13, Scene: Greek3D},
+  {id: "verdict", from: 14, Scene: Verdict3D},
+  {id: "payoff", from: 15, Scene: Payoff3D},
+  {id: "end", from: 16, Scene: End3D},
 ];
 
 // Scenes cut this many frames before their line's first word, so the picture is there
