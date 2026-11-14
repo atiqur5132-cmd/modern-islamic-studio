@@ -11,8 +11,10 @@ Composition: `Chaand` (`src/chaand/`), one scene per script line, hard cuts 2 fr
 line's first word.
 
 Script changed to the take (2026-11-14): line 2 "apni roshni hi nahi hai" (no "koi"), line 3
-"1400 saal pehle hi bata diya tha" (no "ye"), line 11 "Ek baar Nabi sallallahu alaihi wasallam."
-(no "ke liye" heard in three passes), line 16 "yaad rakhna". Original kept as `script.original.txt`.
+"1400 saal pehle hi bata diya tha" (no "ye"), line 16 "yaad rakhna". Line 11 keeps "ke liye"
+after the durood: Whisper missed it, the creator confirmed it is said; its words are timed by hand
+from the voice's loudness (`MEASURED` in build_props.py). The creator confirmed the script on
+2026-11-14. Original kept as `script.original.txt`.
 
 ## Rules for this reel
 
