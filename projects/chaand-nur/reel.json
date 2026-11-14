@@ -1,6 +1,6 @@
 {
  "audio": "chaand-nur.voice.wav",
- "durationSeconds": 67.5,
+ "durationSeconds": 68.1,
  "lines": [
   {
    "n": 1,
@@ -3200,9 +3200,7 @@
     "emphasis": false,
     "line": 11,
     "index": 9
-   }
-  ],
-  [
+   },
    {
     "text": "wasallam.",
     "start": 41.34,

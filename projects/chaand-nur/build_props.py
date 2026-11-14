@@ -19,6 +19,7 @@ from make_captions import absorb_single_words, align, group_phrases, parse_scrip
 PROJECT = ROOT / "projects" / "chaand-nur"
 WORK = ROOT / "work"
 PATCH_FROM, PATCH_TO = 51.8, 66.9
+END_HOLD = 0.6
 
 
 def main():
@@ -60,10 +61,20 @@ def main():
         ws = [w for w in out_words if w["line"] == n]
         lines.append({"n": n, "start": ws[0]["start"], "end": ws[-1]["end"]})
     phrases = absorb_single_words(group_phrases(timed))
+    # A lone word left over ("wasallam.") joins the group before it when that stays at 4
+    # words or fewer, so the durood is never split across two captions.
+    merged = []
+    for ph in phrases:
+        if len(ph) == 1 and merged and len(merged[-1]) <= 3:
+            merged[-1] = merged[-1] + ph
+        else:
+            merged.append(ph)
+    phrases = merged
     by_id = {id(w): o for w, o in zip(timed, out_words)}
     captions = [[by_id[id(w)] for w in phrase] for phrase in phrases]
 
-    props = {"audio": "chaand-nur.voice.wav", "durationSeconds": vmap["seconds"], "lines": lines,
+    # The end Follow card needs 2-3 s (QUALITY.md 2a): the picture holds END_HOLD past the voice file.
+    props = {"audio": "chaand-nur.voice.wav", "durationSeconds": round(vmap["seconds"] + END_HOLD, 3), "lines": lines,
              "words": out_words, "captions": captions}
     (PROJECT / "reel.json").write_text(json.dumps(props, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     low = [(w["text"], round(w["start"], 2)) for w in timed if w.get("score", 1) < 0.5]
