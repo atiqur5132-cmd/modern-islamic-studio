@@ -5,9 +5,12 @@ import {Credit, Forward, Label, Line, Moon, Photo, Stars, Strike, Sun} from "./p
 
 const CLAMP = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
 
-// Lines 1: the hook. Frame 0 is the cover: the full Moon, the Sun burning beside it, a
-// SUN switch set to ON and one line on top. "bujh" flicks the switch and the Sun goes
-// black; "aath minute" slams in an 08:20 timer that races down; at 00:00 the Moon dies.
+// Line 1: the hook. Every beat changes most of the frame (study_reel.py counts a beat only
+// when the whole picture moves). Frame 0 is the cover: a big full Moon, the Sun at the top
+// left with its warm light washing the sky, a SUN switch set to ON, one line on top.
+// "bujh": the switch flicks, the Sun and its light are gone at once, the Moon still lit.
+// "aath": hard cut, the Moon fills the frame under an 08:20 timer that races down.
+// At 00:00 ("bujh jaayega") the whole Moon goes dark.
 export const Hook = ({cues}: {cues: Cues}) => {
   const frame = useCurrentFrame();
   const off = cues.word(1, 2); // "bujh"
@@ -15,84 +18,111 @@ export const Hook = ({cues}: {cues: Cues}) => {
   const darkAt = cues.word(1, 11) + 4; // "bujh jaayega"
   const sun = 1 - snap(frame, off, 3);
   const flip = snap(frame, off, 5);
-  const timerIn = snap(frame, timerAt, 6);
+  const close = frame >= timerAt;
+  const timerIn = snap(frame, timerAt, 5);
   const runFrames = Math.max(1, darkAt - timerAt - 6);
   const left = Math.round(interpolate(frame, [timerAt + 4, timerAt + 4 + runFrames], [500, 0], CLAMP));
   const mm = String(Math.floor(left / 60)).padStart(2, "0");
   const ss = String(left % 60).padStart(2, "0");
   const moon = 1 - interpolate(frame, [darkAt, darkAt + 9], [0, 1], CLAMP);
   const drift = 1 + frame * 0.0005;
-  const titleOut = leave(frame, timerAt - 3, 5);
   return (
     <AbsoluteFill style={{backgroundColor: GROUND}}>
       <Stars count={60} seed="hook" />
-      <Moon x={665} y={720} d={740 * drift} light={moon} />
-      <Sun x={210} y={480} d={330} light={sun} />
-      {/* The switch: a flat toggle under the Sun. */}
-      <div style={{position: "absolute", left: 150, top: 690, width: 120, height: 200, borderRadius: 26, background: "#232A3A", boxShadow: `inset 0 0 0 3px ${sun > 0.5 ? ACCENT : "#3A4153"}`}}>
-        <div style={{position: "absolute", left: 18, top: 18 + 80 * flip, width: 84, height: 84, borderRadius: 20, background: sun > 0.5 ? ACCENT : "#59606F"}} />
-      </div>
-      <div style={{position: "absolute", left: 96, top: 912, width: 228, textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 46, letterSpacing: 1, color: INK}}>
-        SUN: <span style={{color: flip > 0.5 ? MUTED : ACCENT}}>{flip > 0.5 ? "OFF" : "ON"}</span>
-      </div>
-      <div style={{position: "absolute", left: SIDE, right: SIDE, top: TEXT_TOP - 4, fontFamily: SERIF, fontStyle: "italic", fontWeight: 500, fontSize: 84, lineHeight: 1.04, color: INK, opacity: titleOut, textAlign: "left"}}>
-        If the Sun went out now…
-      </div>
-      {frame >= timerAt ? (
+      {/* Sunlight over the whole sky while the Sun burns. */}
+      <AbsoluteFill style={{opacity: sun * (close ? 0 : 1), background: "radial-gradient(circle at 12% 24%, rgba(225,162,74,0.85) 0%, rgba(225,162,74,0.42) 26%, rgba(120,86,44,0.22) 55%, rgba(21,26,38,0) 85%)"}} />
+      {close ? (
+        <Moon x={540} y={1180} d={1560 * drift} light={moon} />
+      ) : (
+        <>
+          <Moon x={600} y={980} d={960 * drift} light={1} />
+          <Sun x={150} y={470} d={540} light={sun} />
+          {/* The switch, top right. */}
+          <div style={{position: "absolute", left: 856, top: 380, width: 120, height: 200, borderRadius: 26, background: "#232A3A", boxShadow: `inset 0 0 0 3px ${sun > 0.5 ? ACCENT : "#3A4153"}`}}>
+            <div style={{position: "absolute", left: 18, top: 18 + 80 * flip, width: 84, height: 84, borderRadius: 20, background: sun > 0.5 ? ACCENT : "#59606F"}} />
+          </div>
+          <div style={{position: "absolute", left: 800, top: 596, width: 232, textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 44, letterSpacing: 1, color: INK, textShadow: "0 2px 10px rgba(14,18,27,0.8)"}}>
+            SUN: <span style={{color: flip > 0.5 ? MUTED : ACCENT}}>{flip > 0.5 ? "OFF" : "ON"}</span>
+          </div>
+          <div style={{position: "absolute", left: SIDE, right: 260, top: TEXT_TOP - 4, fontFamily: SERIF, fontStyle: "italic", fontWeight: 500, fontSize: 84, lineHeight: 1.04, color: INK, textShadow: "0 2px 16px rgba(14,18,27,0.6)"}}>
+            If the Sun went out now…
+          </div>
+        </>
+      )}
+      {close ? (
         <div
           style={{
             position: "absolute",
             left: 0,
             right: 0,
-            top: TEXT_TOP - 30,
+            top: TEXT_TOP - 20,
             textAlign: "center",
             fontFamily: SANS,
             fontWeight: 800,
-            fontSize: 150,
+            fontSize: 170,
             letterSpacing: 2,
             fontVariantNumeric: "tabular-nums",
             color: left === 0 ? MUTED : INK,
             opacity: timerIn,
-            transform: `scale(${1.25 - 0.25 * timerIn})`,
+            transform: `scale(${1.2 - 0.2 * timerIn})`,
           }}
         >
           {mm}:{ss}
+        </div>
+      ) : null}
+      {close ? (
+        <div style={{position: "absolute", left: 0, right: 0, top: TEXT_TOP + 180, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 38, color: MUTED, opacity: timerIn}}>
+          until the Moon goes dark
         </div>
       ) : null}
     </AbsoluteFill>
   );
 };
 
-// Line 2: the dark Moon alone; on "roshni" a hard push in and "No light of its own."; on
-// "suraj" the Sun comes back from the left and lights its near half; on "lautata" the
-// light scatters off the Moon toward the viewer.
+// Line 2: hard cut to the Moon's real surface, bright, filling the frame. On "nahi hai" the
+// light goes out of it (it has none of its own); on "suraj" sunlight sweeps back across it
+// from the left with the Sun at the edge; on "lautata" hard cut out to the whole half-lit
+// Moon, its light scattering toward the viewer.
 export const NoLight = ({cues}: {cues: Cues}) => {
   const frame = useCurrentFrame();
-  const push = cues.word(2, 4); // "roshni"
+  const titleAt = cues.word(2, 4); // "roshni"
+  const darkAt = cues.word(2, 6); // "nahi"
   const sunAt = cues.word(2, 10) - 4; // "suraj"
   const backAt = cues.word(2, 13); // "lautata"
-  const close = frame >= push;
-  const lit = arrive(frame, sunAt + 4, 14);
-  const sunIn = arrive(frame, sunAt, 14);
-  const d = close ? 680 : 560;
+  const wide = frame >= backAt;
+  const dim = 1 - snap(frame, darkAt, 6);
+  const sweep = interpolate(frame, [sunAt, sunAt + 12], [0, 1], {...CLAMP, easing: (t) => 1 - Math.pow(1 - t, 3)});
+  const sunIn = arrive(frame, sunAt, 10);
   return (
     <AbsoluteFill style={{backgroundColor: GROUND}}>
-      <Stars count={40} seed="dark" opacity={0.7} />
-      <Moon x={close ? 660 : 600} y={close ? 700 : 720} d={d * (1 + frame * 0.0004)} light={0.03 + 0.97 * lit} side={lit > 0 ? 1 : 0} />
-      {/* The sunlight: a broad amber sheet from the left edge to the Moon. */}
-      <div style={{position: "absolute", left: 0, top: 360, width: 520, height: 1000, opacity: 0.22 * lit, background: `linear-gradient(90deg, ${ACCENT} 0%, rgba(225,162,74,0) 100%)`, WebkitMaskImage: "linear-gradient(180deg, transparent, black 30%, black 70%, transparent)"}} />
-      <Sun x={-60} y={860} d={420} light={sunIn} style={{opacity: sunIn}} />
-      {/* Scattered light: thin rays from the lit face toward the viewer. */}
-      {[0, 1, 2, 3, 4].map((i) => {
-        const t = draw(frame, backAt + i * 2, 14);
-        const angle = 115 + i * 13;
-        return (
-          <div key={i} style={{position: "absolute", left: 326, top: 640 + i * 34, width: 380 * t, height: 3, background: INK, opacity: 0.8 * t, transform: `rotate(${angle}deg)`, transformOrigin: "left center", borderRadius: 2}} />
-        );
-      })}
-      <Line at={push} y={TEXT_TOP} size={92}>No light of its own.</Line>
-      <Label at={backAt + 4} x={SIDE} y={TEXT_TOP + 112} color={INK} size={36} weight={600}>sunlight, sent back to you</Label>
-      <Credit text="Established science · NASA, “Moonlight”" at={push + 6} />
+      {!wide ? (
+        <>
+          <AbsoluteFill style={{transform: `scale(${1.04 + frame * 0.0006})`}}>
+            <Photo src="cn-moon-close.jpg" fileAspect={1300 / 2310} filter={`saturate(0) brightness(${0.1 + 0.95 * dim})`} from={1} to={1} />
+          </AbsoluteFill>
+          {/* The sunlit part, revealed from the left. */}
+          <AbsoluteFill style={{transform: `scale(${1.04 + frame * 0.0006})`, WebkitMaskImage: `linear-gradient(90deg, black ${sweep * 75}%, transparent ${sweep * 75 + 18}%)`, maskImage: `linear-gradient(90deg, black ${sweep * 75}%, transparent ${sweep * 75 + 18}%)`, opacity: sweep > 0 ? 1 : 0}}>
+            <Photo src="cn-moon-close.jpg" fileAspect={1300 / 2310} filter="saturate(0) brightness(1.05)" from={1} to={1} />
+          </AbsoluteFill>
+          <Sun x={-90} y={760} d={460} light={sunIn} style={{opacity: sunIn}} />
+          <AbsoluteFill style={{background: "linear-gradient(180deg, rgba(14,18,27,0.7) 0%, rgba(14,18,27,0) 26%)"}} />
+        </>
+      ) : (
+        <>
+          <Stars count={40} seed="dark" opacity={0.7} />
+          <Moon x={660} y={700} d={680} light={1} side={1} />
+          <div style={{position: "absolute", left: 0, top: 360, width: 520, height: 1000, opacity: 0.22, background: `linear-gradient(90deg, ${ACCENT} 0%, rgba(225,162,74,0) 100%)`, WebkitMaskImage: "linear-gradient(180deg, transparent, black 30%, black 70%, transparent)"}} />
+          <Sun x={-60} y={760} d={420} light={1} />
+          {[0, 1, 2, 3, 4].map((i) => {
+            const t = draw(frame, backAt + 2 + i * 2, 12);
+            const angle = 115 + i * 13;
+            return <div key={i} style={{position: "absolute", left: 326, top: 640 + i * 34, width: 380 * t, height: 3, background: INK, opacity: 0.8 * t, transform: `rotate(${angle}deg)`, transformOrigin: "left center", borderRadius: 2}} />;
+          })}
+          <Label at={backAt + 4} x={SIDE} y={TEXT_TOP + 112} color={INK} size={36} weight={600}>sunlight, sent back to you</Label>
+        </>
+      )}
+      <Line at={titleAt} y={TEXT_TOP} size={92} style={{textShadow: "0 2px 16px rgba(14,18,27,0.85)"}}>No light of its own.</Line>
+      <Credit text="Established science · NASA, “Moonlight” · Image: NASA/GSFC/ASU" at={titleAt + 6} />
     </AbsoluteFill>
   );
 };

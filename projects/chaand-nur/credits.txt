@@ -20,3 +20,6 @@ History
 - Parmenides, fragment DK 28 B14, "Shining by night with borrowed light, wandering round the earth" (tr. John Burnet, Early Greek Philosophy); text at https://lexundria.com/parm_frag/14/b
 
 Fonts: Plus Jakarta Sans, Newsreader, Amiri Quran (SIL OFL, Google Fonts).
+
+3D textures (the Moon and Sun spheres, the Milky Way)
+- cn-tex-moon.jpg, cn-tex-sun.jpg, cn-tex-stars.jpg: "Solarsystemscope texture 8k moon/sun/stars milky way.jpg" by Solar System Scope (based on NASA data), CC BY 4.0, https://commons.wikimedia.org/wiki/File:Solarsystemscope_texture_8k_moon.jpg

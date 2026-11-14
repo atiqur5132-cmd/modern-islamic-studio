@@ -7,7 +7,8 @@ import {Cues, LongProps} from "../long/scroll/types";
 import {Sound, SOUND_SECONDS} from "../timeline/sfx";
 import {FPS} from "../timeline/types";
 import {ACCENT, GROUND, INK, PAPER_INK} from "./look";
-import {Ayah7116, Bracket, Claim, Hook, NoLight, NoWord, NurAllah, NurSiraj} from "./scenesA";
+import {Ayah7116, Bracket, Claim, NoWord, NurAllah, NurSiraj} from "./scenesA";
+import {Hook3D, NoLight3D} from "./Hook3D";
 import {Burns, Count, End, Greek, Payoff, Turn, Verdict} from "./scenesB";
 
 // The faceless chaand-nur Short (projects/chaand-nur/beats.md): one approved voiceover,
@@ -16,8 +17,8 @@ import {Burns, Count, End, Greek, Payoff, Turn, Verdict} from "./scenesB";
 type Scene = {id: string; from: number; Scene: (p: {cues: Cues}) => React.ReactElement; paper?: boolean};
 
 const SCENES: Scene[] = [
-  {id: "hook", from: 1, Scene: Hook},
-  {id: "nolight", from: 2, Scene: NoLight},
+  {id: "hook", from: 1, Scene: Hook3D},
+  {id: "nolight", from: 2, Scene: NoLight3D},
   {id: "claim", from: 3, Scene: Claim},
   {id: "ayah", from: 4, Scene: Ayah7116},
   {id: "nursiraj", from: 5, Scene: NurSiraj},
@@ -59,6 +60,8 @@ export const Chaand = (props: LongProps) => {
   // Captions step aside where the graphic is the hero: the recited Ayah (its Roman
   // transliteration is never captioned) and the end Follow card.
   const hide: [number, number][] = [
+    // The hook carries its words itself (title, switch, timer): no caption track (STYLE.md).
+    [0, lineStart(2) - LEAD],
     [wordAt(4, 6), lineStart(5)],
     [wordAt(16, 8) - 4, total],
   ];
