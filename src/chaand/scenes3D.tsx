@@ -385,8 +385,8 @@ export const Count3D = ({cues}: {cues: Cues}) => {
   const fourAt = cues.word(10, 6);
   const sortAt = cues.word(11, 2);
   const prophetAt = cues.word(11, 7);
-  const moonAt = cues.word(11, 12);
-  const zeroAt = cues.word(11, 15);
+  const moonAt = cues.word(11, 14); // "chaand"
+  const zeroAt = cues.word(11, 17); // "Ek baar bhi nahi"
   const sorting = frame >= cues.word(11, 0);
   const sunGrow = t01(frame, cues.word(11, 0), cues.word(11, 0) + 14, easeOut);
   const s: SpaceState = {
@@ -412,7 +412,6 @@ export const Count3D = ({cues}: {cues: Cues}) => {
         const goAt = p.to === "sun" ? sortAt + sunSlot * 4 : prophetAt;
         if (p.to === "sun") sunSlot++;
         const go = t01(frame, goAt, goAt + 12, (t) => t * t);
-        const fade = frame < cues.word(11, 0) ? 1 : 1;
         const start = [165 + i * 250, 700];
         const end = p.to === "sun" ? SUN_XY : PROPHET_XY;
         const x = start[0] + (end[0] - start[0]) * go;

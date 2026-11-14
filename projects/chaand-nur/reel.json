@@ -1231,34 +1231,50 @@
   {
    "text": "sallallahu",
    "start": 40.76,
-   "end": 41.34,
+   "end": 41.08,
    "emphasis": false,
    "line": 11,
    "index": 8
   },
   {
    "text": "alaihi",
-   "start": 41.34,
-   "end": 41.34,
+   "start": 41.08,
+   "end": 41.28,
    "emphasis": false,
    "line": 11,
    "index": 9
   },
   {
-   "text": "wasallam.",
-   "start": 41.34,
-   "end": 41.6,
+   "text": "wasallam",
+   "start": 41.28,
+   "end": 41.55,
    "emphasis": false,
    "line": 11,
    "index": 10
   },
   {
-   "text": "Aur",
-   "start": 41.6,
-   "end": 42.3,
+   "text": "ke",
+   "start": 41.56,
+   "end": 41.74,
    "emphasis": false,
    "line": 11,
    "index": 11
+  },
+  {
+   "text": "liye.",
+   "start": 41.78,
+   "end": 42.0,
+   "emphasis": false,
+   "line": 11,
+   "index": 12
+  },
+  {
+   "text": "Aur",
+   "start": 42.12,
+   "end": 42.3,
+   "emphasis": false,
+   "line": 11,
+   "index": 13
   },
   {
    "text": "chaand",
@@ -1266,7 +1282,7 @@
    "end": 42.64,
    "emphasis": false,
    "line": 11,
-   "index": 12
+   "index": 14
   },
   {
    "text": "ke",
@@ -1274,7 +1290,7 @@
    "end": 42.8,
    "emphasis": false,
    "line": 11,
-   "index": 13
+   "index": 15
   },
   {
    "text": "liye?",
@@ -1282,7 +1298,7 @@
    "end": 43.2,
    "emphasis": false,
    "line": 11,
-   "index": 14
+   "index": 16
   },
   {
    "text": "Ek",
@@ -1290,7 +1306,7 @@
    "end": 43.62,
    "emphasis": true,
    "line": 11,
-   "index": 15
+   "index": 17
   },
   {
    "text": "baar",
@@ -1298,7 +1314,7 @@
    "end": 43.92,
    "emphasis": true,
    "line": 11,
-   "index": 16
+   "index": 18
   },
   {
    "text": "bhi",
@@ -1306,7 +1322,7 @@
    "end": 44.04,
    "emphasis": true,
    "line": 11,
-   "index": 17
+   "index": 19
   },
   {
    "text": "nahi.",
@@ -1314,7 +1330,7 @@
    "end": 44.42,
    "emphasis": true,
    "line": 11,
-   "index": 18
+   "index": 20
   },
   {
    "text": "Aur",
@@ -3188,36 +3204,54 @@
    {
     "text": "sallallahu",
     "start": 40.76,
-    "end": 41.34,
+    "end": 41.08,
     "emphasis": false,
     "line": 11,
     "index": 8
    },
    {
     "text": "alaihi",
-    "start": 41.34,
-    "end": 41.34,
+    "start": 41.08,
+    "end": 41.28,
     "emphasis": false,
     "line": 11,
     "index": 9
-   },
+   }
+  ],
+  [
    {
-    "text": "wasallam.",
-    "start": 41.34,
-    "end": 41.6,
+    "text": "wasallam",
+    "start": 41.28,
+    "end": 41.55,
     "emphasis": false,
     "line": 11,
     "index": 10
+   },
+   {
+    "text": "ke",
+    "start": 41.56,
+    "end": 41.74,
+    "emphasis": false,
+    "line": 11,
+    "index": 11
+   },
+   {
+    "text": "liye.",
+    "start": 41.78,
+    "end": 42.0,
+    "emphasis": false,
+    "line": 11,
+    "index": 12
    }
   ],
   [
    {
     "text": "Aur",
-    "start": 41.6,
+    "start": 42.12,
     "end": 42.3,
     "emphasis": false,
     "line": 11,
-    "index": 11
+    "index": 13
    },
    {
     "text": "chaand",
@@ -3225,7 +3259,7 @@
     "end": 42.64,
     "emphasis": false,
     "line": 11,
-    "index": 12
+    "index": 14
    },
    {
     "text": "ke",
@@ -3233,7 +3267,7 @@
     "end": 42.8,
     "emphasis": false,
     "line": 11,
-    "index": 13
+    "index": 15
    },
    {
     "text": "liye?",
@@ -3241,7 +3275,7 @@
     "end": 43.2,
     "emphasis": false,
     "line": 11,
-    "index": 14
+    "index": 16
    }
   ],
   [
@@ -3251,7 +3285,7 @@
     "end": 43.62,
     "emphasis": true,
     "line": 11,
-    "index": 15
+    "index": 17
    },
    {
     "text": "baar",
@@ -3259,7 +3293,7 @@
     "end": 43.92,
     "emphasis": true,
     "line": 11,
-    "index": 16
+    "index": 18
    },
    {
     "text": "bhi",
@@ -3267,7 +3301,7 @@
     "end": 44.04,
     "emphasis": true,
     "line": 11,
-    "index": 17
+    "index": 19
    },
    {
     "text": "nahi.",
@@ -3275,7 +3309,7 @@
     "end": 44.42,
     "emphasis": true,
     "line": 11,
-    "index": 18
+    "index": 20
    }
   ],
   [

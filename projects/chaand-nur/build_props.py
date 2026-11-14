@@ -20,6 +20,11 @@ PROJECT = ROOT / "projects" / "chaand-nur"
 WORK = ROOT / "work"
 PATCH_FROM, PATCH_TO = 51.8, 66.9
 END_HOLD = 0.6
+# Words Whisper merged or missed, timed by hand from the cut voice's loudness (20 ms steps,
+# 2026-11-14): (line, word index) -> (start, end) on the voiceover. "ke liye" after the durood
+# is spoken (confirmed by the creator); the pause before "Aur" is 42.02-42.11.
+MEASURED = {(11, 8): (40.76, 41.08), (11, 9): (41.08, 41.28), (11, 10): (41.28, 41.55),
+            (11, 11): (41.56, 41.74), (11, 12): (41.78, 42.0), (11, 13): (42.12, 42.3)}
 
 
 def main():
@@ -53,6 +58,9 @@ def main():
         for i, _ in enumerate(parse_script(line)):
             numbering.append((n, i))
     assert len(numbering) == len(timed), (len(numbering), len(timed))
+    for w, key in zip(timed, numbering):
+        if key in MEASURED:
+            w["start"], w["end"] = MEASURED[key]
     out_words = [{"text": w["text"], "start": round(w["start"], 3), "end": round(w["end"], 3),
                   "emphasis": bool(w["emphasis"]), "line": n, "index": i}
                  for w, (n, i) in zip(timed, numbering)]
