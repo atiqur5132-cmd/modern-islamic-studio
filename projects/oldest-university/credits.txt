@@ -1,0 +1,57 @@
+Credits: "Duniya ki sabse purani university?" (oldest-university)
+
+Licences checked on each file's own Commons page (2026-11-17). CC BY-SA images are credited
+on screen where they appear and in the post description.
+
+IMAGES (Wikimedia Commons)
+- ou-nalanda-corridor.jpg, ou-card-nalanda.jpg
+  "Nalanda Ruins (29).jpg" by Sumitsurai, CC BY-SA 4.0
+  https://commons.wikimedia.org/wiki/File:Nalanda_Ruins_(29).jpg
+- ou-nalanda-court.jpg
+  "Monastery 1 - Nalanda Mahavihara (48).jpg" by Sumitsurai, CC BY-SA 4.0
+- ou-nalanda-walls.jpg
+  "Monastery 5 - Nalanda Mahavihara (1).jpg" by Sumitsurai, CC BY-SA 4.0
+- ou-nalanda-temple12.jpg
+  "Temple 12 - Nalanda Mahavihara (21).jpg" by Sumitsurai, CC BY-SA 4.0
+- ou-nalanda-empty.jpg
+  "Nalanda Ruins (60).jpg" by Sumitsurai, CC BY-SA 4.0
+- ou-nalanda-door.jpg
+  "Nalanda Monastery 4 ei7-07.jpg" by G41rn8, CC BY-SA 4.0
+- ou-qarawiyyin-court.jpg, ou-card-qarawiyyin.jpg
+  "Al-Qarawiyyin courtyard" (Morocco-120) by Dennis G. Jarvis, CC BY-SA 2.0
+  https://commons.wikimedia.org/wiki/File:Al-Qarawiyyin_courtyard,_(old_name_%22Morocco-120_(2219047022)%22.jpg).jpg
+- ou-qarawiyyin-pavilion.jpg
+  "Qarawiyyin sahn pavilion.jpg" by Ahmed.magdy, CC BY-SA 4.0
+- ou-qarawiyyin-door.jpg
+  "Bab Maqsura Qarawiyyin 10.jpg" by Robert Prazeres, CC BY-SA 4.0
+- ou-bologna-lecture.jpg
+  "Laurentius de Voltolina Vorlesung vor Studenten - Min 1233 - Kupferstichkabinett Berlin.jpg"
+  Laurentius de Voltolina, c. 1350, public domain (Public Domain Mark, owner)
+- ou-bologna-archiginnasio / ou-card-bologna.jpg
+  "Archiginnasio di Bologna e cortile2.jpg" by Ugeorge, CC BY-SA 4.0
+- ou-coin-gupta.png
+  "Gold coin of Kumaragupta I.jpg", Wikimedia Commons, CC BY-SA 3.0 (cut to a circle for the 3D coin)
+- ou-coin-idrisid.png
+  "Idrisids coin minted at Al Aliyah Morocco 840 CE.jpg" by PHGCOM, public domain (cut to a circle)
+
+3D GLOBE
+- ou-earth.jpg and ou-patch-{india,maghreb,italy}.jpg
+  NASA Blue Marble Next Generation with shaded relief and bathymetry (Reto Stockli, NASA
+  Earth Observatory), public domain, served by NASA GIBS
+  (projects/oldest-university/make_globe_patches.py)
+- cn-tex-stars.jpg: Solar System Scope, CC BY 4.0
+
+ILLUSTRATIONS (made for this reel)
+- The 80-vihara model is illustrative (tagged "Reconstruction"), not the site plan.
+- Routes on the globe are simplified.
+
+SOURCES FOR CLAIMS
+- Guinness World Records, "Oldest higher-learning institution" (read 2026-11-17):
+  https://www.guinnessworldrecords.com/world-records/oldest-university
+  "The oldest existing and continually operating educational institution in the world is the
+  University of Karueein, founded in 859 AD in Fez, Morocco." Bologna: founded 1088, the
+  oldest in Europe.
+- Dharmasvamin: 80 small viharas, two in use; Rahula Shribhadra with about 70 students
+  (biography, Roerich trans. 1959; summary at https://en.wikipedia.org/wiki/Dharmasvamin)
+- Others in research.md (Tabaqat-i Nasiri debate, Ibn Abi Zar's Rawd al-Qirtas, Nalanda's
+  founder seal, al-Qarawiyyin's 1963 decree).

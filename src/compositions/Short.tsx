@@ -54,6 +54,8 @@ import {KStack} from "../overlays/kasawna/Board";
 import {KHook} from "../overlays/kasawna/Hook";
 import {KAyah, KFootage, KPlate, KScience, KTitle, KWord} from "../overlays/kasawna/Pages";
 import {SAyah, SBoard, SCross, SFootage, SHook} from "../overlays/seas/Pages";
+import {UGlobe, UStack, UWall} from "../overlays/uni/Hook";
+import {UBlocks, UCoin, UPhoto, UTimeline} from "../overlays/uni/Scenes";
 import {CTA_TOP_Y} from "../overlays/Cta";
 import {cameraAt, emphasisPunches, ROOM_FRAMES} from "../timeline/camera";
 import {SOUND_SECONDS, soundCues} from "../timeline/sfx";
@@ -303,6 +305,22 @@ const renderOverlay = (overlay: Overlay, overlays: Overlay[], cue: Cue, palette:
     case "scross":
     case "scrosspip":
       return <SCross o={overlay} cue={cue} />;
+    case "ustack":
+      return <UStack o={overlay} cue={cue} />;
+    case "uglobe":
+    case "uglobepip":
+      return <UGlobe o={overlay} cue={cue} />;
+    case "uwall":
+      return <UWall o={overlay} cue={cue} />;
+    case "uphoto":
+    case "uphotopip":
+      return <UPhoto o={overlay} cue={cue} />;
+    case "ucoin":
+      return <UCoin o={overlay} cue={cue} />;
+    case "ublocks":
+      return <UBlocks o={overlay} cue={cue} />;
+    case "utimeline":
+      return <UTimeline o={overlay} cue={cue} />;
   }
 };
 
@@ -398,7 +416,7 @@ export const Short = ({
     // These start on the creator's cuts: the camera settles after the cut, not before
     // it, so the cut itself still changes the framing.
     ...overlays
-      .filter((o) => (o.type === "headcard" && o.headroom) || o.type === "posts")
+      .filter((o) => (o.type === "headcard" && o.headroom) || o.type === "posts" || o.type === "uwall")
       .map((o) => outputRange(segments, o))
       .map(({start, end}) => ({start: start + ROOM_FRAMES, end})),
   ];

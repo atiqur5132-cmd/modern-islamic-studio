@@ -2,6 +2,7 @@ import {FlatOverlay} from "./flatTypes";
 import {KasawnaOverlay} from "./kasawnaTypes";
 import {QiblaOverlay} from "./qiblaTypes";
 import {SeasOverlay} from "./seasTypes";
+import {UniOverlay} from "./uniTypes";
 
 // All times are in seconds on the source footage, so overlays stay on the
 // same spoken words when the cuts change. Text marked with *stars* is emphasised.
@@ -252,6 +253,7 @@ export type PullQuoteOverlay = Timed & {
 export type Overlay =
   | PullQuoteOverlay
   | SeasOverlay
+  | UniOverlay
   | KasawnaOverlay
   | FlatOverlay
   | QiblaOverlay
@@ -307,10 +309,13 @@ export const FULL_SCREEN_TYPES: Overlay["type"][] = [
   "sfootagepip",
   "sayahpip",
   "scrosspip",
+  "uglobepip",
+  "uphotopip",
+  "utimeline",
 ];
 
 // The speaker moves into the top window and the graphic takes the space below.
-export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto", "qboard", "khook", "kstack", "sboard"];
+export const STACK_TYPES: Overlay["type"][] = ["ledger", "flatboard", "readinto", "qboard", "khook", "kstack", "sboard", "ustack"];
 
 // These cover the whole frame with the speaker off screen (drawn over the speaker);
 // they join a full-screen stretch they touch, so the circle never flashes between them.
@@ -335,6 +340,9 @@ export const COVER_TYPES: Overlay["type"][] = [
   "sfootage",
   "sayah",
   "scross",
+  "uglobe",
+  "uphoto",
+  "ublocks",
 ];
 
 export type CaptionWord = {text: string; start: number; end: number; emphasis: boolean};

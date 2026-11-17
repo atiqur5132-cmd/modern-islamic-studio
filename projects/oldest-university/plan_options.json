@@ -1,0 +1,477 @@
+{
+  "title": "Oldest university: Nalanda or al-Qarawiyyin? (talking head + one 3D world, 76.1 s)",
+  "lines": [
+    {
+      "line": "Duniya ki sabse purani university kaunsi hai?",
+      "section": "hook",
+      "options": [
+        {
+          "layout": "split: you on top, two real photos below, then cut to the 3D globe",
+          "visual": "0.0 s: split screen. You talking on top. Below, two real photos side by side: Nalanda's red-brick monastery on the left, the al-Qarawiyyin courtyard (green tiles, white arches) on the right. Both photos already drift apart slowly. One bold serif line across the seam. 1.3 s on 'university': the photo half cuts to the 3D Earth, lit warm from the side and turning fast towards Asia and Africa. Two pins start rising.",
+          "text": "The world's oldest university?",
+          "tag": "",
+          "sound": "your voice from frame 0, a low paper-thud on the first frame, a soft whoosh as the globe cuts in",
+          "why": "Frame 0 has your face, two places people recognise, and the question. It reads at 270 px and is the thumbnail. The first beat lands in 1.3 s, and the globe tells the viewer this is a journey."
+        },
+        {
+          "layout": "you in a circle over a full-screen 3D globe",
+          "visual": "0.0 s: the 3D Earth fills the frame with both places already pinned and their photos standing on the pins. You are in a circle at the bottom centre. 1.3 s: the camera rushes towards the globe.",
+          "text": "The world's oldest university?",
+          "tag": "",
+          "sound": "low drone, a whoosh on the camera rush",
+          "why": "More 3D from the first frame, but your face is small and the photos on pins are small at thumbnail size."
+        },
+        {
+          "layout": "you full screen, two torn photo cards beside your head",
+          "visual": "0.0 s: you full screen. Two torn paper photos (Nalanda, al-Qarawiyyin) slap onto the wall on either side of your cap. 1.3 s: they swap sides.",
+          "text": "Oldest university?",
+          "tag": "",
+          "sound": "two paper slaps",
+          "why": "Your face is biggest, but the visual is small and the beats are only cards moving, which the beat gate does not count."
+        }
+      ]
+    },
+    {
+      "line": "Ye sawaal poocho, to do naam aate hain. *Nalanda* aur *al-Qarawiyyin*.",
+      "section": "hook",
+      "options": [
+        {
+          "layout": "full-screen 3D globe, you in a circle (top left)",
+          "visual": "2.5 s on your cut: layout cut. The globe takes the whole frame and you shrink into a circle at the top left. 3.9 s on 'Nalanda': the camera swoops down onto Bihar, a gold pin rises and the Nalanda photo flips up from it like a card, with 'Nalanda' in gold serif. 5.2 s on 'al-Qarawiyyin': the camera whips west over Arabia and the Sahara (motion blur) onto Fez, and the al-Qarawiyyin photo flips up.",
+          "text": "Nalanda · Bihar, India / al-Qarawiyyin · Fez, Morocco",
+          "tag": "",
+          "sound": "whoosh on the swoop, a soft card flip on each name, a second, different whoosh on the whip",
+          "why": "Every 1.3-1.5 s the whole frame changes: layout cut, swoop, whip. Each name is spoken and shown on its own place, and the distance between them is felt."
+        },
+        {
+          "layout": "split: you on top, globe below",
+          "visual": "The globe stays in the lower half: one pin and photo for Nalanda, then the globe spins to Morocco.",
+          "text": "Nalanda / al-Qarawiyyin",
+          "tag": "",
+          "sound": "whoosh, card flips",
+          "why": "Keeps your face big, but half-frame moves feel smaller."
+        },
+        {
+          "layout": "full-screen photos, hard cuts",
+          "visual": "Hard cut to the Nalanda photo full screen on 'Nalanda', then the al-Qarawiyyin photo on 'al-Qarawiyyin', with the names big.",
+          "text": "Nalanda / al-Qarawiyyin",
+          "tag": "",
+          "sound": "two hits",
+          "why": "Simple and punchy, but no 3D and no sense of where they are."
+        }
+      ]
+    },
+    {
+      "line": "Aur log aapas mein ladte rehte hain ki sahi kaun hai.",
+      "section": "hook",
+      "options": [
+        {
+          "layout": "split: you on top, the two photos face off below",
+          "visual": "6.17 s on your cut: back to the split. The two photo cards fly in from left and right and press against each other in the middle, each pushing. A thin crack runs down the seam between them. 'or' sits small between the names.",
+          "text": "Nalanda or al-Qarawiyyin?",
+          "tag": "",
+          "sound": "two cards hitting, a low rumble while they push",
+          "why": "The fight is shown as the two places pushing, not as fake comments, and it stays readable."
+        },
+        {
+          "layout": "you full screen",
+          "visual": "You full screen with a punch-in. The two names bounce left and right over the wall.",
+          "text": "Nalanda? al-Qarawiyyin?",
+          "tag": "",
+          "sound": "soft ticks",
+          "why": "Calm, but it loses the picture."
+        },
+        {
+          "layout": "full-screen comment wall",
+          "visual": "A scrolling wall of comment-style cards arguing.",
+          "text": "",
+          "tag": "",
+          "sound": "pops",
+          "why": "Not recommended: made-up comments are fabricated posts."
+        }
+      ]
+    },
+    {
+      "line": "Mazedaar baat ye hai ki dono sahi hain. Bas dono alag sawaal ka jawab hain.",
+      "section": "hook",
+      "options": [
+        {
+          "layout": "you full screen, words on the wall above your cap",
+          "visual": "8.73 s: you full screen (zoom 1.06). On 'dono sahi hain' the two cards drop into the wall above your cap, side by side and still. 10.57 s on your cut: they slide apart and a question writes in under each one, 'Opened first?' under Nalanda and 'Still open?' under al-Qarawiyyin. These two questions come back at the end.",
+          "text": "Both are right. / Opened first? · Still open?",
+          "tag": "",
+          "sound": "a light chime on 'sahi', a pen scratch as the questions write in",
+          "why": "Opens the loop the whole reel closes: two questions, two answers. The clean wall above your cap is the natural place for text."
+        },
+        {
+          "layout": "split: you on top, a two-column board below",
+          "visual": "A paper board with two columns, 'First' and 'Still running', filling in later.",
+          "text": "First / Still running",
+          "tag": "",
+          "sound": "pen",
+          "why": "Clear, but a board reads as a slide."
+        },
+        {
+          "layout": "you in a circle over the globe",
+          "visual": "The globe zooms out to show both pins at once, with a line linking them.",
+          "text": "Both are right.",
+          "tag": "",
+          "sound": "soft chime",
+          "why": "Keeps the 3D, but the two questions get no space."
+        }
+      ]
+    },
+    {
+      "line": "Pehle Nalanda chalte hain. Bihar, 5th century, aur Gupta rajaon ka zamaana.",
+      "section": "Nalanda",
+      "options": [
+        {
+          "layout": "full-screen 3D, you off screen",
+          "visual": "12.37 s on your cut: the camera dives from space down through cloud onto real 3D terrain of the Rajgir hills in Bihar (satellite picture on real elevation), sliding low across the ridges to a gold pin, 'Nalanda'. On '5th century', 'c. 427 CE' sets in beside it. 15.5 s on 'Gupta': a real gold coin of Kumaragupta I spins up out of the ground in 3D, catching the light.",
+          "text": "Nalanda · Bihar / c. 427 CE / Gold coin of Kumaragupta I",
+          "tag": "Historical record · founder named on a seal as Shakraditya, identified with Kumaragupta I",
+          "sound": "a long whoosh for the dive, wind over the hills, a coin ring",
+          "why": "This is the 'speechless' moment: a real place in 3D, with a real coin from the king's own time."
+        },
+        {
+          "layout": "you in a circle over a 2D map",
+          "visual": "A flat paper map of India with Bihar marked and the coin photo beside it.",
+          "text": "Bihar · 5th century",
+          "tag": "Historical record",
+          "sound": "paper",
+          "why": "Quicker to build, but flat."
+        }
+      ]
+    },
+    {
+      "line": "Socho, ek aisi jagah, jahan log padhte bhi the, aur wahin rehte bhi the.",
+      "section": "Nalanda",
+      "options": [
+        {
+          "layout": "split: you on top, the real ruins below",
+          "visual": "16.8 s: split. Below, a real photo of Monastery 1 at Nalanda, rows of small brick rooms, with a slow 3D parallax push (the walls come forward). On 'padhte' a courtyard lights up; on 'rehte' the small cells along the walls are ringed one after another.",
+          "text": "Study here. Live here.",
+          "tag": "Historical record · Monastery 1, Nalanda (photo: Sumitsurai, CC BY-SA 4.0)",
+          "sound": "soft ticks on each ring",
+          "why": "The real rooms show what 'residential' means without a word of explanation."
+        },
+        {
+          "layout": "full-screen 3D model",
+          "visual": "A brick monastery model built in 3D, camera orbiting.",
+          "text": "Residential",
+          "tag": "RECONSTRUCTION",
+          "sound": "drone",
+          "why": "Looks impressive, but a real photo beats a model here."
+        }
+      ]
+    },
+    {
+      "line": "China aur Korea se mahino ka safar karke log yahan padhne aate the.",
+      "section": "Nalanda",
+      "options": [
+        {
+          "layout": "full-screen 3D globe, you in a circle",
+          "visual": "21.37 s: back up to the globe over Asia. Gold routes draw themselves from Chang'an (China) and from Korea, over Central Asia and down to Nalanda, while a small light travels along each line. On 'mahino': the label 'months on foot' rides the line.",
+          "text": "China → Nalanda / Korea → Nalanda / months on the road",
+          "tag": "Historical record · Xuanzang (7th c.) and Korean monks recorded by Yijing; routes simplified",
+          "sound": "a rising soft tone along the routes",
+          "why": "Distance is felt, not told: the routes cross half of Asia."
+        },
+        {
+          "layout": "split with a flat map",
+          "visual": "A flat route map in the lower half.",
+          "text": "China · Korea",
+          "tag": "Historical record",
+          "sound": "pen",
+          "why": "Simpler, less wow."
+        }
+      ]
+    },
+    {
+      "line": "Phir 1200 ke aas-paas Turk hamle hue, aur Nalanda ko bahut nuksaan pahuncha.",
+      "section": "Nalanda",
+      "options": [
+        {
+          "layout": "full-screen photo, then you in a circle",
+          "visual": "24.87 s: the Nalanda terrain again, with the year counter racing from 427 to c. 1200 at the top while the colour drains from warm to grey. 27.07 s on your cut: the real ruined brick walls of Temple 12 full screen, slow push, dark grade. You are in a small circle. No soldiers or fire are drawn.",
+          "text": "c. 1200 CE",
+          "tag": "Historical record · raids on Bihar's monasteries; Tibetan account of Dharmasvamin",
+          "sound": "the counter ticks faster, then one low boom on 1200, wind",
+          "why": "Shows loss and time honestly, without dramatising or naming anyone, as you said it."
+        },
+        {
+          "layout": "you full screen",
+          "visual": "You full screen, the year 1200 set big on the wall above.",
+          "text": "c. 1200",
+          "tag": "",
+          "sound": "low hit",
+          "why": "Calmer, but a key turn without a picture."
+        }
+      ]
+    },
+    {
+      "line": "1235 mein ek Tibetan monk wahan pahuncha, to sirf do building mein padhai bachi thi.",
+      "section": "Nalanda",
+      "options": [
+        {
+          "layout": "full-screen 3D model, you off screen",
+          "visual": "29.1 s: a thin route draws from Tibet over the Himalaya down to Nalanda: 'Dharmasvamin, 1235'. 31.57 s on your cut: a top-down 3D model of the monastery blocks in red brick, all softly lit. On 'sirf do' every block goes dark except two.",
+          "text": "Dharmasvamin · 1235 / Only 2 still teaching",
+          "tag": "RECONSTRUCTION · illustrative layout · Dharmasvamin's account (Roerich trans.)",
+          "sound": "light switches clicking off down the rows, then quiet",
+          "why": "The two lit blocks among the dark ones make 'only two left' instantly clear."
+        },
+        {
+          "layout": "split: you on top, photo below",
+          "visual": "The ruins photo below with two rooms ringed.",
+          "text": "Only 2 left",
+          "tag": "Historical record",
+          "sound": "ticks",
+          "why": "Simpler, but the rings on a ruin do not say 'everything else stopped'."
+        }
+      ]
+    },
+    {
+      "line": "Aur phir dheere-dheere wahan *sannata* chha gaya.",
+      "section": "Nalanda",
+      "options": [
+        {
+          "layout": "full-screen photo, you off screen",
+          "visual": "33.53 s: the Nalanda ruins at their widest, one slow drift, the colour almost gone. The captions go quiet; only 'sannata' appears, small, in serif italic.",
+          "text": "",
+          "tag": "",
+          "sound": "everything drops to near-silence: just wind",
+          "why": "Silence after a busy run makes people stop scrolling and feel the loss. It sets up the jump to Morocco."
+        },
+        {
+          "layout": "you full screen",
+          "visual": "You full screen, slow push.",
+          "text": "",
+          "tag": "",
+          "sound": "silence",
+          "why": "Fine, but the ruin carries the feeling better."
+        }
+      ]
+    },
+    {
+      "line": "Ab Morocco chalte hain. Fez shehar, saal 859.",
+      "section": "al-Qarawiyyin",
+      "options": [
+        {
+          "layout": "full-screen 3D globe and terrain, you off screen",
+          "visual": "35.77 s: the camera pulls out of Bihar to the globe and flies west in one long arc over Arabia and North Africa (colour comes back), then dives into real 3D terrain of the Fez valley under the Middle Atlas: pin 'Fez, Morocco'. On '859': '859 CE · 245 AH' sets in.",
+          "text": "Fez, Morocco / 859 CE · 245 AH",
+          "tag": "",
+          "sound": "a big whoosh for the flight, then city air",
+          "why": "The biggest camera move of the reel, at the exact point the story crosses continents."
+        },
+        {
+          "layout": "hard cut to a Fez photo",
+          "visual": "A Fez old-city photo full screen with the year.",
+          "text": "Fez · 859",
+          "tag": "",
+          "sound": "hit",
+          "why": "Fast, but no journey."
+        }
+      ]
+    },
+    {
+      "line": "Wahan ek masjid banti hai, al-Qarawiyyin.",
+      "section": "al-Qarawiyyin",
+      "options": [
+        {
+          "layout": "split: you on top, the real courtyard below",
+          "visual": "39.27 s: split. Below, the real al-Qarawiyyin courtyard photo (vertical, green-tiled roofs, the fountain pavilion), slow push in. The name sets in on 'al-Qarawiyyin'. The first mid-video Follow animation plays small in the lower corner (2.5 s).",
+          "text": "al-Qarawiyyin Mosque · Fez",
+          "tag": "Photo: Reda.bnhd, CC BY-SA 4.0",
+          "sound": "a soft cue on the name",
+          "why": "A calm moment after the Nalanda arc, so a good place for the first follow ask."
+        },
+        {
+          "layout": "full-screen photo",
+          "visual": "The courtyard photo full screen.",
+          "text": "al-Qarawiyyin",
+          "tag": "",
+          "sound": "soft cue",
+          "why": "Bigger picture, no face."
+        }
+      ]
+    },
+    {
+      "line": "Kehte hain Fatima al-Fihri naam ki ek aurat ne apni virasat ka paisa isme laga diya.",
+      "section": "al-Qarawiyyin",
+      "options": [
+        {
+          "layout": "you full screen, a paper card beside you",
+          "visual": "41.93 s: you full screen. A parchment card sets in on the wall: 'Fatima al-Fihri' in serif with فاطمة الفهرية under it, and the credit line 'Later report · Ibn Abi Zar, 14th century'. No portrait (none exists). 44.27 s on your cut, on 'virasat ka paisa': a real Idrisid silver coin, minted near Fez around 840, spins in 3D onto the card.",
+          "text": "Fatima al-Fihri",
+          "tag": "Later report · Ibn Abi Zar, Rawd al-Qirtas, 14th century",
+          "sound": "paper, a coin ring",
+          "why": "Honest: her story comes from a later book, and the card says so. A real coin from her city and era makes 'her money' concrete without inventing a face."
+        },
+        {
+          "layout": "split with an illustration of a woman",
+          "visual": "An illustrated veiled figure.",
+          "text": "",
+          "tag": "",
+          "sound": "",
+          "why": "Not recommended: there is no real image of her, and a made-up one would look like a portrait."
+        }
+      ]
+    },
+    {
+      "line": "Masjid mein padhai shuru hui, aur woh aaj tak *ruki nahi*.",
+      "section": "al-Qarawiyyin",
+      "options": [
+        {
+          "layout": "full-screen 3D timeline, you in a circle",
+          "visual": "46.1 s: two glowing paths run across a dark 3D floor, the camera tracking alongside. The Nalanda path starts at 427 and crumbles into brick dust at about 1200. The al-Qarawiyyin path starts at 859 and keeps running past 1200, 1500, 1900, to 2026, still lit. On 'ruki nahi' the camera stops at 2026: '1,167 years'.",
+          "text": "Nalanda 427 → c. 1200 / al-Qarawiyyin 859 → today / 1,167 years",
+          "tag": "Historical record · founding years per Xuanzang's founder and Ibn Abi Zar",
+          "sound": "a continuous rising tone along the paths, crumble sound on Nalanda's end",
+          "why": "The whole idea of the reel in one picture: one line broke, one never stopped."
+        },
+        {
+          "layout": "split with a flat timeline",
+          "visual": "A flat paper timeline in the lower half.",
+          "text": "859 → today",
+          "tag": "",
+          "sound": "pen",
+          "why": "Clear, but flat."
+        }
+      ]
+    },
+    {
+      "line": "Isliye Guinness ise duniya ka sabse purana *chalta hua* educational institution maanta hai.",
+      "section": "al-Qarawiyyin",
+      "options": [
+        {
+          "layout": "full-screen pull quote over the courtyard",
+          "visual": "49.23 s: the courtyard photo blurred and darkened behind a pull quote: 'oldest existing, and continually operating educational institution in the world'. 'continually operating' is marked in the accent on 'chalta hua'. You are in a small circle at the bottom. No Guinness logo, only the credit.",
+          "text": "“Oldest existing, and continually operating educational institution in the world.”",
+          "tag": "Record · Guinness World Records, University of Karueein, 859",
+          "sound": "a highlighter swipe",
+          "why": "The real record wording, quoted exactly, with no implied endorsement."
+        },
+        {
+          "layout": "you full screen",
+          "visual": "Just the words 'Still running' above your cap.",
+          "text": "Still running",
+          "tag": "Guinness World Records",
+          "sound": "soft hit",
+          "why": "Shorter, but loses the exact wording."
+        }
+      ]
+    },
+    {
+      "line": "Aur ek twist bhi hai. Agar university ka matlab degree dene wala system hai, to record Italy ke Bologna ke paas hai, 1088 se.",
+      "section": "twist",
+      "options": [
+        {
+          "layout": "you full screen, then the medieval artwork, then the globe",
+          "visual": "54.17 s: you full screen, a quick punch-in on 'twist'. 55.3 s on your cut, 'degree dene wala system': the real 14th-century painting of a lecture at the University of Bologna (Laurentius de Voltolina) full screen, drifting across the students. 58.13 s on 'Bologna': back to the 3D globe, a third pin rises in Italy with the Archiginnasio photo, and '1088' sets in big at 60.6 s.",
+          "text": "University = a degree-giving body? / Bologna · 1088",
+          "tag": "Historical record · Laurentius de Voltolina, c. 1350, Kupferstichkabinett Berlin (public domain)",
+          "sound": "a soft record-skip on 'twist', a whoosh for the globe",
+          "why": "A real medieval painting of Bologna students is something few viewers have seen, and the third pin makes the twist visible."
+        },
+        {
+          "layout": "split: you on top, Archiginnasio photo below",
+          "visual": "Just the Bologna building and the year.",
+          "text": "Bologna · 1088",
+          "tag": "",
+          "sound": "hit",
+          "why": "Simpler."
+        }
+      ]
+    },
+    {
+      "line": "To jawab is par depend karta hai ki tum pooch kya rahe ho.",
+      "section": "answer",
+      "options": [
+        {
+          "layout": "you full screen, the two questions return",
+          "visual": "61.83 s: you full screen. The two questions from the hook slide back onto the wall above your cap: 'Opened first?' and 'Still open?'.",
+          "text": "Opened first? · Still open?",
+          "tag": "",
+          "sound": "a soft chime (the same one as in the hook)",
+          "why": "Callback: the viewer feels the loop close."
+        },
+        {
+          "layout": "you full screen, no text",
+          "visual": "Slow push only.",
+          "text": "",
+          "tag": "",
+          "sound": "",
+          "why": "Quiet, but misses the callback."
+        }
+      ]
+    },
+    {
+      "line": "Ilm ka darwaza sabse pehle kisne khola? *Nalanda*.",
+      "section": "answer",
+      "options": [
+        {
+          "layout": "full-screen photo, you off screen",
+          "visual": "64.9 s: the camera pushes through a real Nalanda brick doorway (the porch of Monastery 1) full screen. On 'Nalanda' the answer sets under 'Opened first?'.",
+          "text": "Opened first: Nalanda",
+          "tag": "Photo: Sumitsurai, CC BY-SA 4.0",
+          "sound": "a stone-door rumble, quiet",
+          "why": "The door metaphor becomes a real door."
+        },
+        {
+          "layout": "split",
+          "visual": "You on top, the doorway below.",
+          "text": "Nalanda",
+          "tag": "",
+          "sound": "",
+          "why": "Keeps your face."
+        }
+      ]
+    },
+    {
+      "line": "Aur kaunsa darwaza aaj tak khula hai? *al-Qarawiyyin*.",
+      "section": "answer",
+      "options": [
+        {
+          "layout": "full-screen photo, then you",
+          "visual": "68.0 s: the real carved door of al-Qarawiyyin (Bab al-Maqsura) full screen, light falling through it as the camera moves in. On 'al-Qarawiyyin': 'Still open: al-Qarawiyyin' under the second question. The last word holds 2 s.",
+          "text": "Still open: al-Qarawiyyin",
+          "tag": "Photo: Robert Prazeres, CC BY-SA 4.0",
+          "sound": "a warm, open tone",
+          "why": "Two real doors, one ruined and one in use: the payoff the viewer can screenshot."
+        },
+        {
+          "layout": "split: both doors side by side",
+          "visual": "The two doors side by side, the Nalanda one dim and the al-Qarawiyyin one lit.",
+          "text": "Opened first · Still open",
+          "tag": "",
+          "sound": "",
+          "why": "A good final frame, but it loses the one-door-at-a-time rhythm."
+        }
+      ]
+    },
+    {
+      "line": "Tumhe kaunsi kahani zyada inspiring lagi? Comment mein likho, aur aisi videos ke liye follow bhi kar lo.",
+      "section": "CTA",
+      "options": [
+        {
+          "layout": "you full screen, comment ask and Follow animation",
+          "visual": "71.27 s: you full screen. The two door photos sit small above your cap as two choices. The comment icon with 'Nalanda or al-Qarawiyyin?' sets in. On 'follow', the real Instagram and Facebook icons with a Follow button animate, clear of the right-hand rail.",
+          "text": "Nalanda or al-Qarawiyyin? Tell us in the comments.",
+          "tag": "",
+          "sound": "a soft pop on the follow tap",
+          "why": "The comment question can be answered in one word, which brings comments."
+        },
+        {
+          "layout": "end card",
+          "visual": "A plain end card with the icons.",
+          "text": "Follow",
+          "tag": "",
+          "sound": "",
+          "why": "Plainer."
+        }
+      ]
+    }
+  ]
+}
