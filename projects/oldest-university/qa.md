@@ -5,6 +5,8 @@ Final file: `projects/oldest-university/oldest-university-final.mp4` (not commit
 (76.4 s: the reel, then the cover held for 0.5 s). Checked 2026-11-17. The first render
 (44121363077, at 11e1740) failed §4 on text size; this one fixes it.
 
+**Approved by the creator on 2026-11-17** after watching this render.
+
 | Gate | Result | Evidence |
 |---|---|---|
 | §0 Recording: eyes near y 640 | **Fail (worked around)** | Eyes at y ≈ 870, beard to y ≈ 1240; captions stand above the cap while the speaker fills the frame (`captionSpeakerBottom` 1505) |
