@@ -100,12 +100,12 @@ REST = [
          {"at": 12.72, "lat": NALANDA[0], "lon": NALANDA[1], "alt": 0.17, "tilt": 58, "y": 160, "move": 1.05},
      ],
      "pins": [{"place": NALANDA, "at": 13.5}],
-     "labels": [{"text": "Nalanda", "sub": "Bihar, India", "place": NALANDA, "at": 13.82, "lift": 0.006}],
+     "labels": [{"text": "Nalanda", "sub": "Bihar, India", "place": NALANDA, "at": 13.82, "lift": 0.014}],
      "titles": [{"text": "c. 427 CE", "sub": "The Gupta age", "at": 14.46, "y": 380, "size": 150}],
-     "credit": "Historical record · a seal names the founder Shakraditya, identified with Kumaragupta I",
+     "credit": "Historical record · a seal names the founder Shakraditya, identified with Kumaragupta I · Coin: gold coin of Kumaragupta I, CC BY-SA 3.0",
      "sounds": [whoosh(12.72, "whoosh-3", 0.18), tick(13.82, 1), tick(14.46, 2)]},
     {"type": "ucoin", "start": 15.5, "end": 16.8, "src": "ou-coin-gupta.png", "at": 15.68, "x": 770, "y": 560, "size": 340,
-     "metal": "gold", "label": "Gold coin of Kumaragupta I\nr. c. 415-455 · CC BY-SA 3.0",
+     "metal": "gold",
      "sounds": [tick(15.75, 3, 0.28)]},
     # 6. "Socho, ek aisi jagah, jahan log padhte bhi the, aur wahin rehte bhi the." Speaker
     # on top; Monastery 1's courtyard with its raised platform ringed on "padhte"; cut to the
@@ -113,7 +113,7 @@ REST = [
     {"type": "ustack", "mode": "photo", "start": 16.8, "end": 21.367,
      "shots": [{"at": 16.8, "src": "ou-nalanda-court.jpg", "zoom": 1.04, "to": 1.12},
                {"at": 20.16, "src": "ou-nalanda-corridor.jpg", "focus": [0.45, 0.5], "zoom": 1.04, "to": 1.1}],
-     "labels": [{"text": "Study *here.*", "at": 19.14, "x": 92, "y": 96}, {"text": "Live *here.*", "at": 20.56, "x": 92, "y": 96}],
+     "labels": [{"text": "Study *here.*", "at": 19.14, "x": 92, "y": 116}, {"text": "Live *here.*", "at": 20.56, "x": 92, "y": 116}],
      "rings": [{"x": 450, "y": 740, "rx": 310, "ry": 150, "at": 19.14},
                {"x": 700, "y": 640, "rx": 70, "ry": 140, "at": 20.56},
                {"x": 880, "y": 690, "rx": 100, "ry": 210, "at": 20.75}],
@@ -174,14 +174,14 @@ REST = [
      "keys": [{"at": 35.767, "lat": NALANDA[0], "lon": NALANDA[1], "alt": 0.5, "tilt": 30, "y": 200},
               {"at": 35.96, "lat": FEZ[0], "lon": FEZ[1], "alt": 0.42, "tilt": 44, "y": 180, "move": 1.15, "arc": 1.6}],
      "pins": [{"place": FEZ, "at": 36.9}],
-     "labels": [{"text": "Fez", "sub": "Morocco", "place": FEZ, "at": 37.02, "lift": 0.006}],
+     "labels": [{"text": "Fez", "sub": "Morocco", "place": FEZ, "at": 37.02, "lift": 0.032}],
      "titles": [{"text": "859 CE", "sub": "245 AH", "at": 38.28, "y": 380, "size": 160}],
      "sounds": [whoosh(35.96, "whoosh", 0.2), tick(37.02, 1), {"at": 38.28, "sound": "impact", "volume": 0.18}]},
     # 12. "Wahan ek masjid banti hai, al-Qarawiyyin." Speaker on top, the courtyard pavilion
     # below; the name on "al-Qarawiyyin". The mid-reel follow card, small, in the board.
     {"type": "ustack", "mode": "photo", "start": 39.267, "end": 41.933,
      "shots": [{"at": 39.267, "src": "ou-qarawiyyin-pavilion.jpg", "focus": [0.5, 0.4], "zoom": 1.04, "to": 1.12}],
-     "labels": [{"text": "al-*Qarawiyyin*", "at": 40.94, "x": 92, "y": 70}],
+     "labels": [{"text": "al-*Qarawiyyin*", "at": 40.94, "x": 92, "y": 116}],
      "credit": "al-Qarawiyyin Mosque, Fez · Photo: Ahmed.magdy, CC BY-SA 4.0",
      "sounds": [tick(40.94, 2)]},
     {"type": "cta", "mode": "follow", "start": 39.4, "end": 41.85, "placement": "top", "tone": "dark", "y": 1000},
@@ -282,11 +282,13 @@ LOOK = {
     "punchToZoom": 1.1,
     "stretchSounds": False,
     "pipCuts": True,
+    # The cover held full screen for the last 0.5 s (silent freeze), so YouTube Shorts can pick it.
+    "endCover": {"src": "ou-cover.png", "seconds": 0.5},
     "assets": ["ou-nalanda-corridor.jpg", "ou-qarawiyyin-court.jpg", "ou-card-nalanda.jpg", "ou-card-qarawiyyin.jpg",
                "ou-card-bologna.jpg", "ou-earth.jpg", "ou-patch-india.jpg", "ou-patch-maghreb.jpg", "ou-patch-italy.jpg",
                "cn-tex-stars.jpg", "ou-coin-gupta.png", "ou-coin-idrisid.png", "ou-nalanda-court.jpg", "ou-nalanda-walls.jpg",
                "ou-nalanda-temple12.jpg", "ou-nalanda-empty.jpg", "ou-nalanda-door.jpg", "ou-qarawiyyin-pavilion.jpg",
-               "ou-qarawiyyin-door.jpg", "ou-bologna-lecture.jpg"],
+               "ou-qarawiyyin-door.jpg", "ou-bologna-lecture.jpg", "ou-cover.png"],
 }
 
 
@@ -295,6 +297,7 @@ def main():
     edit = json.loads(path.read_text(encoding="utf-8"))
     edit = {k: edit[k] for k in ("footage", "segments", "captions", "face")}
     edit.update(LOOK)
+    edit["segments"][-1]["hold"] = 0.5
     edit["overlays"] = OVERLAYS
     path.write_text(json.dumps(edit, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(OVERLAYS)} overlays, {len(edit['segments'])} segments -> {path.name}")

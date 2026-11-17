@@ -142,7 +142,7 @@ export const UStack = ({o, cue}: {o: UStackOverlay; cue: Cue}) => {
     const creditIn = arrive(frame, cue(o.start) + 14, 14);
     return (
       <AbsoluteFill style={{top, height: BOARD_H, backgroundColor: GROUND, overflow: "hidden"}}>
-        <div style={{position: "absolute", left: 0, top: 0, width: 1080, height: 396, backgroundColor: PAPER, boxShadow: "0 18px 40px rgba(0,0,0,0.35)"}}>
+        <div style={{position: "absolute", left: 0, top: 0, width: 1080, height: 414, backgroundColor: PAPER, boxShadow: "0 18px 40px rgba(0,0,0,0.35)"}}>
           <AbsoluteFill style={{background: "radial-gradient(ellipse at 40% 30%, rgba(255,255,255,0.35), rgba(80,50,20,0.16))"}} />
         </div>
         <div style={{position: "absolute", left: SIDE, top: 40, opacity: nameIn, transform: `translateY(${(1 - nameIn) * 18}px)`, fontFamily: SERIF, fontSize: 112, lineHeight: 1, color: WALL_INK}}>

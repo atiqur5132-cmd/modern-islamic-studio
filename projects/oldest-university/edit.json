@@ -9,7 +9,8 @@
   {
    "from": 38.666667,
    "to": 76.1,
-   "zoom": 1
+   "zoom": 1,
+   "hold": 0.5
   }
  ],
  "captions": [
@@ -3236,6 +3237,10 @@
  "punchToZoom": 1.1,
  "stretchSounds": false,
  "pipCuts": true,
+ "endCover": {
+  "src": "ou-cover.png",
+  "seconds": 0.5
+ },
  "assets": [
   "ou-nalanda-corridor.jpg",
   "ou-qarawiyyin-court.jpg",
@@ -3256,7 +3261,8 @@
   "ou-nalanda-door.jpg",
   "ou-qarawiyyin-pavilion.jpg",
   "ou-qarawiyyin-door.jpg",
-  "ou-bologna-lecture.jpg"
+  "ou-bologna-lecture.jpg",
+  "ou-cover.png"
  ],
  "overlays": [
   {
@@ -3564,7 +3570,7 @@
       85.4436
      ],
      "at": 13.82,
-     "lift": 0.006
+     "lift": 0.014
     }
    ],
    "titles": [
@@ -3576,7 +3582,7 @@
      "size": 150
     }
    ],
-   "credit": "Historical record · a seal names the founder Shakraditya, identified with Kumaragupta I",
+   "credit": "Historical record · a seal names the founder Shakraditya, identified with Kumaragupta I · Coin: gold coin of Kumaragupta I, CC BY-SA 3.0",
    "sounds": [
     {
      "at": 12.72,
@@ -3605,7 +3611,6 @@
    "y": 560,
    "size": 340,
    "metal": "gold",
-   "label": "Gold coin of Kumaragupta I\nr. c. 415-455 · CC BY-SA 3.0",
    "sounds": [
     {
      "at": 15.75,
@@ -3642,13 +3647,13 @@
      "text": "Study *here.*",
      "at": 19.14,
      "x": 92,
-     "y": 96
+     "y": 116
     },
     {
      "text": "Live *here.*",
      "at": 20.56,
      "x": 92,
-     "y": 96
+     "y": 116
     }
    ],
    "rings": [
@@ -4145,7 +4150,7 @@
       -4.9733
      ],
      "at": 37.02,
-     "lift": 0.006
+     "lift": 0.032
     }
    ],
    "titles": [
@@ -4197,7 +4202,7 @@
      "text": "al-*Qarawiyyin*",
      "at": 40.94,
      "x": 92,
-     "y": 70
+     "y": 116
     }
    ],
    "credit": "al-Qarawiyyin Mosque, Fez · Photo: Ahmed.magdy, CC BY-SA 4.0",

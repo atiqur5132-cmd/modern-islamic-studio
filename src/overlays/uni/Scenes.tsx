@@ -47,7 +47,7 @@ export const Title = ({t, cue, color = INK, italicColor = ACCENT, shadow = true}
 export const Credit = ({text, top = TEXT_TOP, color = MUTED, strong = INK, width = 520}: {text: string; top?: number; color?: string; strong?: string; width?: number}) => {
   const [kind, ...rest] = text.split(" · ");
   return (
-    <div style={{position: "absolute", left: SIDE, top, width, fontFamily: SANS, fontWeight: 600, fontSize: 24, lineHeight: 1.4, color, textShadow: strong === INK ? SHADOW : undefined}}>
+    <div style={{position: "absolute", left: SIDE, top, width, fontFamily: SANS, fontWeight: 600, fontSize: 28, lineHeight: 1.36, color, textShadow: strong === INK ? SHADOW : undefined}}>
       <span style={{color: strong, fontWeight: 700}}>{kind}</span>
       {rest.length ? ` · ${rest.join(" · ")}` : ""}
     </div>
@@ -185,7 +185,7 @@ export const UCoin = ({o, cue}: {o: UCoinOverlay; cue: Cue}) => {
         </ThreeCanvas>
       </div>
       {o.label ? (
-        <div style={{position: "absolute", left: o.x - 260, width: 520, top: o.y + o.size / 2 + 28, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 26, lineHeight: 1.35, color: INK, opacity: labelShow, textShadow: SHADOW, whiteSpace: "pre-line"}}>
+        <div style={{position: "absolute", left: o.x - 260, width: 520, top: o.y + o.size / 2 + 28, textAlign: "center", fontFamily: SANS, fontWeight: 600, fontSize: 28, lineHeight: 1.35, color: INK, opacity: labelShow, textShadow: SHADOW, whiteSpace: "pre-line"}}>
           {o.label}
         </div>
       ) : null}

@@ -34,6 +34,10 @@ IMAGES (Wikimedia Commons)
 - ou-coin-idrisid.png
   "Idrisids coin minted at Al Aliyah Morocco 840 CE.jpg" by PHGCOM, public domain (cut to a circle)
 
+COVER (OldestThumbnail, public/footage/ou-cover.png, also the last 0.5 s of the reel)
+- The creator's own take, frame at 1.5 s (whole, not cut out)
+- ou-nalanda-corridor.jpg and ou-qarawiyyin-court.jpg as above
+
 3D GLOBE
 - ou-earth.jpg and ou-patch-{india,maghreb,italy}.jpg
   NASA Blue Marble Next Generation with shaded relief and bathymetry (Reto Stockli, NASA

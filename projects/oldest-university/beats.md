@@ -77,5 +77,9 @@ Photos: credits.txt. No logo of Guinness; no portrait of Fatima al-Fihri.
 | 68.0 | "Aur kaunsa darwaza aaj tak khula hai? *al-Qarawiyyin*." | photo, speaker off, then circle from 71.27 | Push through al-Qarawiyyin's open Bab al-Maqsura; the answer holds 2.2 s | "Still open?" → "*al-Qarawiyyin* · since 859" | photo credit | tick, shimmer |
 | 72.6 | "Tumhe kaunsi kahani zyada inspiring lagi? Comment mein likho, aur aisi videos ke liye follow bhi kar lo." | speaker full | Comment card (72.7-74.4), then Follow card (74.4-76.1) | "Nalanda or *al-Qarawiyyin?*" | | CTA ticks |
 
+**End cover:** the cover (`OldestThumbnail`, `public/footage/ou-cover.png`) holds full screen for the
+last 0.5 s over a silent freeze (`hold: 0.5` on the last segment), so YouTube Shorts can pick it as
+the thumbnail. Reel length 76.4 s.
+
 Captions are off where the words are already on screen: 0-12.37 (hook), 46.1-49.23
 (timeline), 49.23-54.17 (Guinness quote), 61.83-76.2 (questions, answers, end cards).
