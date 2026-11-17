@@ -1,8 +1,9 @@
-# QA: "Duniya ki sabse purani university?" (render 44121363077)
+# QA: "Duniya ki sabse purani university?" (render 44130907655)
 
 Final file: `projects/oldest-university/oldest-university-final.mp4` (not committed), made by
-`scripts/finalize.py` from the GitHub render of branch `feat/oldest-university` at 11e1740.
-Checked 2026-11-17.
+`scripts/finalize.py` from the GitHub render of branch `feat/oldest-university` at fd4efdb
+(76.4 s: the reel, then the cover held for 0.5 s). Checked 2026-11-17. The first render
+(44121363077, at 11e1740) failed §4 on text size; this one fixes it.
 
 | Gate | Result | Evidence |
 |---|---|---|
@@ -26,22 +27,25 @@ Checked 2026-11-17.
 | §4 Creator confirmed the script | **Not confirmed in words** | The take's changes were listed on 2026-11-17; the creator did not object and approved the year fix |
 | §4 English on-screen text, Arabic only for her name | Pass | |
 | §4 Text inside y 168-1330 | Pass | Checked on stills and the contact sheet |
-| §4 Nothing meant to be read under 28 px | **Fail** | Credit lines are 24 px (`Credit` in `src/overlays/uni/Scenes.tsx`), the Gupta coin label 26 px |
+| §4 Nothing meant to be read under 28 px | Pass | Credits and labels 28 px or more (`Credit` in `src/overlays/uni/Scenes.tsx`); the coin's credit joined the scene credit line. The shared follow/comment cards are the existing `Cta` component |
 | §4 STYLE caption look named | Pass | `editorial`, Plus Jakarta Sans + Instrument Serif (beats.md) |
 | §5 Claim tags on full-screen graphics | Pass | Historical record / Later report / Record / Reconstruction in each credit line |
 | §5 Look written as numbers, not the previous palette | Pass | beats.md: night umber, ivory, Nalanda brick |
 | §5 3-5 transition kinds | Pass | Hard cuts, camera flights and whips (with motion blur), prints standing up, layout cuts, the face-off push |
 | §5 No template tells | Pass | No stamps, ticks or eyebrow labels; type on the picture with a one-line credit |
-| §6 −14 LUFS ±1, true peak ≤ −1 dBTP | Pass | finalize: −14.0 LUFS, −1.4 dBTP |
+| §6 −14 LUFS ±1, true peak ≤ −1 dBTP | Pass | finalize: −14.0 LUFS, −1.4 dBTP; the 0.5 s cover hold is silent (mean −91 dB) |
 | §6 Voice clear on a phone speaker | Not checked | Claude cannot listen |
 | §6 Music only with approval | Pass | No music |
 | §7 TV range, 1080x1920, 30 fps, H.264 + AAC 48 kHz, faststart | Pass | ffprobe: yuv420p tv, 48000 Hz; moov at byte 36 |
+| End cover (creator rule, 2026-11-13) | Pass | `OldestThumbnail` → `ou-cover.png` full screen 75.9-76.4 s; text reads at 128 px; checked in the 4:5, 3:4 and 9:16 crops |
 | §8 Accuracy | Pass, with notes | research.md and credits.txt; Guinness wording read on its page; Dharmasvamin's figures from a summary of Roerich's translation (primary not opened); Khalji line dropped by the creator |
 | §9 Contact sheet every 2 s | Pass | `final_contact_sheet.jpg` looked at |
 | §9 Frames around every cut | Partly | The "-teen" cut (38.40-38.54 s) has no visible jump; other cuts judged from stills and the sheet only |
 | Linux render: Arabic glyphs | Pass | فاطمة الفهرية joined, no boxes (43.6 s) |
 
-Small things seen: the Fez pin's head shows through the "Fez" label at 37-39 s.
+Fixed in this render: the Fez label now sits clear of its pin; the Gupta coin's label no longer
+crosses the Nalanda name.
 
-**Not finished while §4 (text under 28 px) fails.** Fix: credits and the coin label to 28 px,
-re-check the stills where credits sit near titles (pip scenes), render again.
+Open: the two gates failed by choice or by the take (§0 framing, §2a CTA length as spoken), and
+the checks only the creator can do (voice on a phone speaker, watching the motion), plus the
+LIBRARY comparison.
