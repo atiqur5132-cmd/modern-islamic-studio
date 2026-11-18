@@ -71,7 +71,7 @@ or the reel does not ship.
 - Final mix at −14 LUFS integrated (±1), true peak at or under −1 dBTP, measured on the rendered file (`scripts/finalize.py` does both and prints the numbers).
 - Voice is clear on a phone speaker; nothing clips.
 - Each sound effect has a cause on screen, peaks one frame after its picture and sits 3–6 dB over the bed; a repeated sound rotates two or three takes.
-- Music only with the creator's approval for that reel.
+- Sound design follows `SOUND.md`: no music, the palette, levels, spotting and licences. Vocal-only tracks only with the creator's approval for that reel.
 
 ## 7. Picture
 

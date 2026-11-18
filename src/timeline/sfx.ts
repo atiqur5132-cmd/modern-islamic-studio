@@ -19,7 +19,24 @@ export type Sound =
   | "tick-soft-3"
   | "riser"
   | "sub-hit"
-  | "shimmer";
+  | "shimmer"
+  | "amb-city"
+  | "amb-morning"
+  | "amb-night"
+  | "amb-rain"
+  | "amb-wind"
+  | "bed-room"
+  | "cloth"
+  | "map-unroll"
+  | "page-turn-1"
+  | "page-turn-2"
+  | "paper-slide-1"
+  | "paper-slide-2"
+  | "paper-tear-1"
+  | "paper-tear-2"
+  | "pen-circle-1"
+  | "pen-circle-2"
+  | "pen-circle-3";
 export type SoundCue = {frame: number; sound: Sound; volume: number};
 
 // Seconds of each file (scripts/make_sfx.py), so no sound is cut short.
@@ -35,6 +52,24 @@ export const SOUND_SECONDS: Record<Sound, number> = {
   riser: 1.2,
   "sub-hit": 1.4,
   shimmer: 1.9,
+  // Recorded sounds (public/sfx/CREDITS.md); beds are looped or cut by the reel.
+  "amb-city": 90.00,
+  "amb-morning": 38.94,
+  "amb-night": 90.00,
+  "amb-rain": 54.88,
+  "amb-wind": 42.96,
+  "bed-room": 92.98,
+  "cloth": 1.76,
+  "map-unroll": 5.17,
+  "page-turn-1": 0.66,
+  "page-turn-2": 1.13,
+  "paper-slide-1": 1.46,
+  "paper-slide-2": 1.32,
+  "paper-tear-1": 2.00,
+  "paper-tear-2": 0.29,
+  "pen-circle-1": 0.23,
+  "pen-circle-2": 0.72,
+  "pen-circle-3": 0.71,
 };
 
 // A repeated sound rotates through its takes (QUALITY.md).
