@@ -1,0 +1,9 @@
+{
+  "key": "2:127",
+  "surahNameEnglish": "Al-Baqara",
+  "textUthmani": "ٱلْقَوَاعِدَ مِنَ ٱلْبَيْتِ",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-17",
+  "excerptWords": "4-6"
+}

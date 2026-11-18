@@ -1,13 +1,20 @@
 """Fetch an Ayah from Quran.com and cross-check it against alquran.cloud.
 
 Usage: py scripts/fetch_ayah.py 96:1
+       py scripts/fetch_ayah.py 57:20 --words 14-18
 
 Quranic text must only ever enter this project through this script. Never type
 or edit it by hand. The script stops if the two sources disagree.
+
+--words a-b keeps only words a to b (counting words with letters, from 1), for a
+reel that shows part of a long Ayah. Only that part is cross-checked and saved, so a
+spelling difference elsewhere in the Ayah does not block it; the record says it is
+an excerpt.
 """
 import datetime
 import json
 import pathlib
+import re
 import sys
 import unicodedata
 import urllib.request
@@ -39,6 +46,30 @@ def comparable(text):
     return "".join(c for c in "".join(text.split()) if c not in TAJWEED_ONLY_MARKS)
 
 
+HAS_LETTER = re.compile("[ء-يٱ-ۓ]")
+
+
+def excerpt(text, first, last):
+    """Words first..last (1-based, counting only tokens with letters), as given.
+
+    Pause marks standing alone between the kept words stay; those before the first
+    or after the last word are left out.
+    """
+    tokens = text.split()
+    word = 0
+    start = end = None
+    for index, token in enumerate(tokens):
+        if HAS_LETTER.search(token):
+            word += 1
+            if word == first:
+                start = index
+            if word == last:
+                end = index
+    if start is None or end is None or first > last:
+        raise ValueError(f"Words {first}-{last} not in an Ayah of {word} words")
+    return " ".join(tokens[start:end + 1])
+
+
 def write_index():
     """Regenerate the list of verified Ayahs that compositions can show."""
     names = sorted(path.stem for path in OUT_DIR.glob("*.json"))
@@ -56,6 +87,11 @@ def write_index():
 def main():
     key = sys.argv[1]
     surah, ayah = key.split(":")
+    words = None
+    if len(sys.argv) == 4 and sys.argv[2] == "--words":
+        words = tuple(int(n) for n in sys.argv[3].split("-"))
+    elif len(sys.argv) != 2:
+        sys.exit(__doc__)
 
     primary = get_json(f"https://api.quran.com/api/v4/verses/by_key/{key}?fields=text_uthmani")
     text = primary["verse"]["text_uthmani"].strip()
@@ -67,6 +103,10 @@ def main():
     # alquran.cloud prepends the Basmala to Ayah 1 of most Surahs.
     if ayah == "1" and surah not in ("1", "9"):
         second_text = " ".join(second_text.split()[HAFS_BASMALA_WORDS:])
+
+    if words:
+        text = excerpt(text, *words)
+        second_text = excerpt(second_text, *words)
 
     if comparable(text) != comparable(second_text):
         print("Primary:", text.encode("unicode_escape").decode())
@@ -83,9 +123,12 @@ def main():
         "crossCheckedWith": "api.alquran.cloud quran-uthmani",
         "fetchedOn": datetime.date.today().isoformat(),
     }
+    if words:
+        record["excerptWords"] = f"{words[0]}-{words[1]}"
     path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     write_index()
-    print(f"OK {key} verified by both sources: {path.relative_to(ROOT)}")
+    part = f" (words {words[0]}-{words[1]} only)" if words else ""
+    print(f"OK {key}{part} verified by both sources: {path.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

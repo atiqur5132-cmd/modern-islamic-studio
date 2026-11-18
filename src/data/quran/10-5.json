@@ -1,0 +1,9 @@
+{
+  "key": "10:5",
+  "surahNameEnglish": "Yunus",
+  "textUthmani": "هُوَ ٱلَّذِى جَعَلَ ٱلشَّمْسَ ضِيَآءً وَٱلْقَمَرَ نُورًا وَقَدَّرَهُۥ مَنَازِلَ",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-14",
+  "excerptWords": "1-9"
+}

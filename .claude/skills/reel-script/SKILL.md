@@ -46,7 +46,7 @@ Research process: search broadly first (several queries in one turn; `/deep-rese
 
 ## 3. The script
 
-**Length:** 45–60 s including the CTA. The creator speaks about 3.3 Hinglish words a second (measured: 275 words in 79 s, 146 words in 49 s), so 150–200 words.
+**Length:** 45–60 s including the CTA. The creator speaks about 3.3 Hinglish words a second (measured: 275 words in 79 s, 146 words in 49 s), so 150–200 words. Continuity outranks length (creator, 2026-11-12): when a script runs over, cut a whole fact, never the bridges between lines. Each line should be caused by the one before it (a question, a "toh", a problem and its result), so the reel reads as one story a human wrote, not stacked facts. Going a few seconds over a target is fine.
 
 **Clarity first (creator, 2026-11-09).** Viewers of the flat-earth reel commented that the concept was not clear: it packed two claims, two Arabic words, a nest-vs-egg detail and a scholar's quote into 70 s. A human scriptwriter picks ONE idea per reel and makes sure it lands. Before writing, state that idea in one sentence a 15-year-old could repeat to a friend. Explain it with one concrete picture or analogy (map vs globe, chadar bichhana), build it step by step, and cut every fact that does not serve it, however true or interesting (park it in research.md for another reel). Read the draft as a viewer who knows nothing: at each line, would they still follow?
 

@@ -1,0 +1,9 @@
+{
+  "key": "16:69",
+  "surahNameEnglish": "An-Nahl",
+  "textUthmani": "ثُمَّ كُلِى مِن كُلِّ ٱلثَّمَرَٰتِ فَٱسْلُكِى سُبُلَ رَبِّكِ ذُلُلًا ۚ يَخْرُجُ مِنۢ بُطُونِهَا شَرَابٌ مُّخْتَلِفٌ أَلْوَٰنُهُۥ فِيهِ شِفَآءٌ لِّلنَّاسِ",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-13",
+  "excerptWords": "1-18"
+}

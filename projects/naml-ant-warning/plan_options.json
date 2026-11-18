@@ -1,0 +1,497 @@
+{
+ "title": "Chiti ki cheekh, chiti ka dil (An-Naml 27:18)",
+ "lines": [
+  {
+   "line": "Chiti ke paas zabaan nahi hoti. Lekin khatra aaye, toh wo bhi *chillati* hai.",
+   "section": "hook",
+   "options": [
+    {
+     "layout": "top/bottom split: creator top, macro ant below",
+     "visual": "0.0: creator on screen, speaking; bottom half is real macro footage of one ant, head-on, antennae already twitching (Pexels/Pixabay free licence). 'zabaan' sits big in the serif beside the creator: NO TONGUE. 1.4: hard cut in the lower half to the ant's open mandibles in extreme close-up. 2.8 ('khatra'): lower half cuts to a shadow sweeping over a line of ants, they scatter. 3.8 ('chillati'): the word SCREAMS lands big, the ants freeze.",
+     "text": "No tongue. / It screams.",
+     "tag": "-",
+     "sound": "voice from frame 0; soft low thud at 2.8 when the shadow falls",
+     "why": "Frame 0 = a face plus a giant ant head: reads at 270 px. Four picture beats before 4 s, all real footage. The contradiction (no tongue, still screams) is in the first 4 words.",
+     "ref": "references/towards-eternity-ant-crush/hook.jpg"
+    },
+    {
+     "layout": "creator full screen, ant footage cut-outs around",
+     "visual": "0.0: creator full frame; a macro ant cut-out walks across the lower third. 1.4: a second, bigger ant freezes by the creator's shoulder. 2.8: a cut-out ant opens its jaws towards camera. 3.8: SCREAMS set in the serif beside the head.",
+     "text": "No tongue. / It screams.",
+     "tag": "-",
+     "sound": "voice; a tiny tick as each ant lands",
+     "why": "Keeps the face biggest and friendly, but cut-out ants over a talking head can look like stickers (STYLE.md tells); weaker frame 0 than A.",
+     "ref": "references/yevorqq-ai-websites/hook.jpg"
+    },
+    {
+     "layout": "creator in a circle over full-screen macro footage",
+     "visual": "0.0: full-screen macro of an ant colony at a nest entrance, creator in a lower-left circle. 1.4: cut to one ant lifting its head. 2.8: cut to ants racing out of the hole. 3.8: SCREAMS over the swarm.",
+     "text": "It screams.",
+     "tag": "-",
+     "sound": "voice; rising soft rumble under the swarm",
+     "why": "Most cinematic picture, but the creator is small at frame 0, so the thumbnail reads as a nature clip, not our channel."
+    }
+   ]
+  },
+  {
+   "line": "Bas uski cheekh awaaz nahi, ek *khushboo* hoti hai.",
+   "section": "hook",
+   "options": [
+    {
+     "layout": "top/bottom split continues; the lower half turns into the scent graphic",
+     "visual": "4.5 ('awaaz nahi'): in the lower half a sound-wave line under the ant flattens to nothing. 5.6 ('khushboo'): from the ant's head a soft amber haze blooms outward in rings over the real footage. KHUSHBOO / SCENT appears small beside the creator.",
+     "text": "Not a sound. A scent.",
+     "tag": "-",
+     "sound": "a soft 'sniff' air sound on 'khushboo', no music hit",
+     "why": "Two more beats before 6 s and the hook's answer is drawn: the amber scent becomes the reel's accent colour for the whole video."
+    },
+    {
+     "layout": "full-screen macro, creator off",
+     "visual": "4.5: full screen, one ant in extreme macro; a muted speaker icon crosses out... 5.6: amber haze rises off its head.",
+     "text": "Not a sound. A scent.",
+     "tag": "-",
+     "sound": "air sound",
+     "why": "Strong image, but taking the creator off before 6 s breaks the 2–3 s rule only if line 1 runs short; also the speaker icon is close to a template tell."
+    },
+    {
+     "layout": "creator full screen, haze graphic beside",
+     "visual": "4.5: creator full frame, an amber haze rises from the bottom edge beside them; 5.6: the word scent written in the serif in the haze.",
+     "text": "A scent.",
+     "tag": "-",
+     "sound": "air sound",
+     "why": "Simple and calm, but only one beat and no real ant: weak against the 1.5 s rule."
+    }
+   ]
+  },
+  {
+   "line": "Khatra mehsoos hote hi, wo hawa mein ek chemical chhod deti hai.",
+   "section": "explain",
+   "options": [
+    {
+     "layout": "full-screen macro footage, creator off",
+     "visual": "A real ant in macro, head raised; an amber cloud animates out of its head (drawn over the footage, low opacity, grain), drifting on the air.",
+     "text": "Alarm pheromone",
+     "tag": "Established science · E. O. Wilson, Psyche 65 (1958)",
+     "sound": "soft air",
+     "why": "Shows exactly what the line says, on a real ant; the drawn scent is labelled with the real term once."
+    },
+    {
+     "layout": "full-screen scientific illustration on the reel's sand ground",
+     "visual": "A clean drawn ant in profile; the head glands light amber; dots drift out into the air.",
+     "text": "Alarm pheromone, from the head",
+     "tag": "Established science · E. O. Wilson, Psyche 65 (1958)",
+     "sound": "soft air",
+     "why": "Clear and calm, but a drawing after a real ant hook is a step down; use it only if no good macro clip is found."
+    }
+   ]
+  },
+  {
+   "line": "Scientist E. O. Wilson ne 1958 mein ise naapa tha. Paas wali chitiyan, chaar se nau second mein alert.",
+   "section": "explain",
+   "options": [
+    {
+     "layout": "real artifact first: the 1958 paper, then the measure",
+     "visual": "Cut to the first page of Wilson's 1958 Psyche paper (scan from the Psyche archive; licence to check), the title underlined as 'Wilson' is said; small photo of E. O. Wilson (Wikimedia Commons, licence to check) beside. On 'chaar se nau second': split into a top-down nest diagram: a drop at the centre, a 5 cm ring, a stopwatch counting 0 → 4 → 9 s while nearby ants turn amber.",
+     "text": "5 cm · 4–9 seconds",
+     "tag": "Established science · E. O. Wilson, Psyche 65 (1958) · harvester ant, lab test",
+     "sound": "page turn, then a quiet clock tick",
+     "why": "A real paper beats a typed claim (STYLE.md); the ring and the timer make 'how fast' felt, not just said.",
+     "ref": "references/nitish-rajput-black-box/detail-split-and-crash.jpg"
+    },
+    {
+     "layout": "creator full screen with a headroom card",
+     "visual": "The creator speaks; a small card in the headroom shows the paper's title and 'within four to nine seconds' underlined as spoken.",
+     "text": "within four to nine seconds",
+     "tag": "Established science · E. O. Wilson, Psyche 65 (1958)",
+     "sound": "tick",
+     "why": "Keeps the face in the middle of the science, but the paper is tiny and the speed is not shown."
+    }
+   ]
+  },
+  {
+   "line": "Phir wo bhi wahi khushboo chhodti hain. Aur dekhte hi dekhte, poora bil jaag jaata hai.",
+   "section": "explain",
+   "options": [
+    {
+     "layout": "full-screen top-down nest map (drawn), creator off",
+     "visual": "Top-down cut-away of a nest: tunnels and chambers in sand tones, dozens of ant dots. One amber dot at the entrance; the amber spreads dot to dot as a wave through the tunnels until the whole nest glows ('poora bil jaag jaata hai').",
+     "text": "The whole nest wakes",
+     "tag": "Established science · E. O. Wilson, Psyche 65 (1958)",
+     "sound": "a soft rising swell under the spread",
+     "why": "This is the reel's key motion graphic: the chain reaction cannot be filmed, but drawn it is understood in 3 seconds."
+    },
+    {
+     "layout": "full-screen real footage",
+     "visual": "Real footage of ants pouring out of a nest entrance after a disturbance.",
+     "text": "-",
+     "tag": "Established science · E. O. Wilson, Psyche 65 (1958)",
+     "sound": "crowd-like rustle",
+     "why": "Real and lively, but it shows the result, not the scent passing from ant to ant."
+    },
+    {
+     "layout": "circle over the nest map",
+     "visual": "Same nest map as A, with the creator in a small circle top-left reacting.",
+     "text": "The whole nest wakes",
+     "tag": "Established science · E. O. Wilson, Psyche 65 (1958)",
+     "sound": "swell",
+     "why": "Adds the creator's reaction; use if the creator has been off screen for more than ~8 s."
+    }
+   ]
+  },
+  {
+   "line": "Ab yahi manzar Quran mein dekho. Surah Naml mein.",
+   "section": "bridge",
+   "options": [
+    {
+     "layout": "creator full screen, a real Mushaf close-up as a cut-in",
+     "visual": "Creator to camera on 'Ab yahi manzar Quran mein dekho'; on 'Surah Naml' cut to a real Mushaf close-up, a finger on the line (we film our own Mushaf), with 'An-Naml · Surah 27' small on the margin.",
+     "text": "An-Naml · Surah 27",
+     "tag": "Quranic context",
+     "sound": "a soft page sound",
+     "why": "Marks the turn from science to Quran with a real object we own; the creator returns after the science run.",
+     "ref": "references/towards-eternity-ant-crush/hook.jpg"
+    },
+    {
+     "layout": "creator full screen only",
+     "visual": "Creator to camera, slow push-in; the surah name in the serif in the headroom.",
+     "text": "Surah An-Naml",
+     "tag": "Quranic context",
+     "sound": "none",
+     "why": "Calm reset, but no visual beat for ~3 s."
+    }
+   ]
+  },
+  {
+   "line": "Sulaiman alaihissalam ki fauj ek waadi se guzar rahi thi. Chitiyon ki waadi.",
+   "section": "story",
+   "options": [
+    {
+     "layout": "full-screen 3D valley (our terrain tooling), no people",
+     "visual": "A generic, unnamed rocky valley in 3D (RECONSTRUCTION), low dawn light; dust rises on the far ridge and rolls down: the army is shown only as dust and a long moving shadow, never as figures. On 'chitiyon ki waadi' the camera drops to ground level among ant hills.",
+     "text": "The valley of the ants",
+     "tag": "RECONSTRUCTION",
+     "sound": "a distant low rumble of marching, building",
+     "why": "Tells the scene without depicting a Prophet or soldiers (SERIES.md rules) and without naming a disputed place (Sham vs Ta'if); the drop to ant level sets up the ant's view.",
+     "ref": "references/seerah-atlas-badr/detail-armies-and-route.jpg"
+    },
+    {
+     "layout": "full-screen real footage + sound",
+     "visual": "Real low-angle macro of ants on sandy ground; the ground trembles slightly and dust drifts across; the rumble does the storytelling.",
+     "text": "The valley of the ants",
+     "tag": "-",
+     "sound": "rumble",
+     "why": "Cheaper and real, but loses the sense of a great army approaching."
+    }
+   ]
+  },
+  {
+   "line": "Tabhi ek chiti boli,",
+   "section": "story",
+   "options": [
+    {
+     "layout": "full-screen macro, one ant raises its head",
+     "visual": "Cut to one ant on a pebble, head lifting towards camera; a faint amber breath leaves its head (callback to the science).",
+     "text": "-",
+     "tag": "-",
+     "sound": "silence under the rumble for half a second",
+     "why": "A short beat that makes 'one ant' the hero and ties the Quran's scene to the scent we just learned."
+    },
+    {
+     "layout": "creator full screen, leaning in",
+     "visual": "Creator lowers their voice for 'Tabhi ek chiti boli'; slight push-in.",
+     "text": "-",
+     "tag": "-",
+     "sound": "rumble ducks",
+     "why": "Storyteller moment, but the line is short; better kept on the ant."
+    }
+   ]
+  },
+  {
+   "line": "\"Ae chitiyo, apne gharon mein chali jao.",
+   "section": "story",
+   "options": [
+    {
+     "layout": "Ayah card (torn paper on the sand ground), the words lit as spoken",
+     "visual": "Ayah card with 27:18 from src/data/quran (Arabic), the phrase udkhulu masakinakum ringed in amber as 'apne gharon mein chali jao' is spoken; the English meaning under it.",
+     "text": "“Enter your dwellings”",
+     "tag": "Quranic text · An-Naml 27:18 · tr. Mufti Taqi Usmani",
+     "sound": "paper rustle in, soft",
+     "why": "The Quran's own words on screen at the moment they are spoken; ring = our one mark with meaning.",
+     "ref": "references/towards-eternity-ant-crush/detail-ayah-card-and-word.jpg"
+    },
+    {
+     "layout": "full-screen macro, ants running into a hole, Ayah as a lower band",
+     "visual": "Real footage of ants filing into a nest entrance; the Arabic phrase as a slim band at y ≈ 1150.",
+     "text": "“Enter your dwellings”",
+     "tag": "Quranic text · An-Naml 27:18 · tr. Mufti Taqi Usmani",
+     "sound": "rustle",
+     "why": "Picture matches the words, but real ants often attack rather than hide, so the footage may imply a science claim we don't make."
+    }
+   ]
+  },
+  {
+   "line": "Kahin Sulaiman aur unka lashkar tumhe kuchal na de... aur unhe *pata bhi na chale*.\"",
+   "section": "story",
+   "options": [
+    {
+     "layout": "same Ayah card, push-in to the last phrase",
+     "visual": "Card stays; the ring moves to wa hum la yash'urun, which is underlined slowly and held; the dust and rumble return behind the card.",
+     "text": "“…and they will not even know”",
+     "tag": "Quranic text · An-Naml 27:18 · tr. Mufti Taqi Usmani",
+     "sound": "rumble swells, then stops dead after 'pata bhi na chale'",
+     "why": "Plants the payoff phrase visually now, so its return in line 14 is recognised."
+    },
+    {
+     "layout": "split: Ayah card top, dust/shadow over ants below",
+     "visual": "Top half the card; bottom half the army's shadow sliding over the ant hills.",
+     "text": "“…and they will not even know”",
+     "tag": "Quranic text · An-Naml 27:18 · tr. Mufti Taqi Usmani",
+     "sound": "rumble",
+     "why": "Shows the danger and the words together, but halves the card's size."
+    }
+   ]
+  },
+  {
+   "line": "Khatra dekha, sabko khabar kar di. Bilkul asli chitiyon ki tarah.",
+   "section": "story",
+   "options": [
+    {
+     "layout": "split: Quran scene top, the nest map below",
+     "visual": "Top: the ant on the pebble (line 8 shot). Bottom: the nest map from line 5 lights up again, amber wave. Both halves pulse together on 'Bilkul asli chitiyon ki tarah'.",
+     "text": "Same warning",
+     "tag": "Established science + Quranic context",
+     "sound": "a soft single chime",
+     "why": "Puts the Quran's scene and the science side by side: this is where the two halves of the reel meet."
+    },
+    {
+     "layout": "creator full screen",
+     "visual": "Creator to camera, a small inset of the nest map in the headroom.",
+     "text": "Same warning",
+     "tag": "Established science",
+     "sound": "none",
+     "why": "Personal, but the comparison is less visible."
+    }
+   ]
+  },
+  {
+   "line": "Aur Allah ke diye ilm se, Sulaiman ne uski baat samajh li.",
+   "section": "story",
+   "options": [
+    {
+     "layout": "creator full screen, calm",
+     "visual": "Creator to camera; '27:16' small in the headroom with 'taught the speech of birds' as a one-line note.",
+     "text": "A gift from Allah · 27:16",
+     "tag": "Quranic context · An-Naml 27:16",
+     "sound": "none",
+     "why": "Clean statement of what the reel does NOT claim (no science test of Sulaiman's understanding). The creator's face carries trust here."
+    },
+    {
+     "layout": "Ayah card 27:16",
+     "visual": "Short Ayah card for 27:16 (fetched), the phrase 'ullimna mantiq at-tayr' ringed.",
+     "text": "“We have been taught the speech of birds”",
+     "tag": "Quranic text · An-Naml 27:16 · tr. Mufti Taqi Usmani",
+     "sound": "rustle",
+     "why": "Sources the line on screen, but a second card this close can feel heavy."
+    }
+   ]
+  },
+  {
+   "line": "Lekin is kahani ka sabse khoobsurat hissa abhi baaki hai.",
+   "section": "turn",
+   "options": [
+    {
+     "layout": "creator full screen, the music drops out; small follow card (mid-video CTA)",
+     "visual": "Creator leans in; the bed music fades to near silence. A small Instagram/Facebook follow card slides into the headroom for 2.5 s (Cta 'follow', placement top).",
+     "text": "-",
+     "tag": "-",
+     "sound": "music out; the silence is the cue",
+     "why": "A calm moment after a mini-payoff (about 45% in) is where the CTA rules want the mid-video follow, and the silence makes the turn felt."
+    },
+    {
+     "layout": "creator full screen, no CTA",
+     "visual": "Same, without the follow card.",
+     "text": "-",
+     "tag": "-",
+     "sound": "music out",
+     "why": "If the creator prefers the mid-video CTA after line 17 instead."
+    }
+   ]
+  },
+  {
+   "line": "Uski aakhri baat phir se suno. \"Unhe pata bhi na chale.\"",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "the Ayah card returns, the phrase alone",
+     "visual": "The 27:18 card again, everything faded except wa hum la yash'urun, now large; the English 'and they will not even know' set as a serif pull quote below.",
+     "text": "“…and they will not even know”",
+     "tag": "Quranic text · An-Naml 27:18 · tr. Mufti Taqi Usmani",
+     "sound": "a single soft piano note",
+     "why": "Recognition: the viewer saw this ring in line 10; now it is the whole frame."
+    },
+    {
+     "layout": "pull quote beside the creator's circle",
+     "visual": "PullQuote overlay: the English line big in the serif beside the creator's circle, the Arabic small above.",
+     "text": "“…and they will not even know”",
+     "tag": "Quranic text · An-Naml 27:18 · tr. Mufti Taqi Usmani",
+     "sound": "piano note",
+     "why": "Built component (PullQuote.tsx), keeps the face; slightly less dramatic than A."
+    }
+   ]
+  },
+  {
+   "line": "Poori qaum ki jaan khatre mein thi. Phir bhi usne fauj ko *zaalim* nahi kaha.",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "full-screen macro, slow motion",
+     "visual": "Slow-motion macro of the ant on the pebble as the army's shadow reaches it; 'zaalim' set small in the serif, then struck through with one hand-drawn line.",
+     "text": "not “cruel”",
+     "tag": "Tafsir · al-Qurtubi",
+     "sound": "rumble under, very low",
+     "why": "The danger is felt again while the line says she did not accuse; the one strike-through is a mark with meaning, not decoration."
+    },
+    {
+     "layout": "creator full screen",
+     "visual": "Creator to camera, emotional delivery, slow push.",
+     "text": "-",
+     "tag": "-",
+     "sound": "low rumble",
+     "why": "Lets the creator carry the emotion; fine if the slow-motion clip isn't good enough."
+    }
+   ]
+  },
+  {
+   "line": "Bas itna kaha, wo jaan boojh kar aisa nahi karenge.",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "creator full screen",
+     "visual": "Creator to camera; the words 'not on purpose' appear softly in the serif beside them.",
+     "text": "Not on purpose.",
+     "tag": "Tafsir · al-Qurtubi",
+     "sound": "none",
+     "why": "A short human line; the face should say it."
+    },
+    {
+     "layout": "full-screen macro continues",
+     "visual": "The ant stays on screen; the shadow passes over without harming it.",
+     "text": "-",
+     "tag": "-",
+     "sound": "rumble fades away",
+     "why": "Visual relief, but the face gives the line more warmth."
+    }
+   ]
+  },
+  {
+   "line": "Imam Qurtubi likhte hain, kuch ulama ke mutabiq Sulaiman isi baat par muskuraye the.",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "real artifact: a printed page of Tafsir al-Qurtubi",
+     "visual": "A printed Arabic page of al-Jami' li-Ahkam al-Quran at this passage (scan from archive.org or a library, licence to check), the phrase on Sulaiman's smile highlighted as spoken; credit line below.",
+     "text": "Some scholars: he smiled at this",
+     "tag": "Tafsir · al-Qurtubi, al-Jami' li-Ahkam al-Quran, on 27:18–19",
+     "sound": "page sound",
+     "why": "A real source on screen makes 'kuch ulama ke mutabiq' visible and honest (STYLE.md: real artifact first)."
+    },
+    {
+     "layout": "pull quote beside the creator's circle",
+     "visual": "PullQuote: 'Some said his smile was joy at her words.' with the credit 'al-Qurtubi, on 27:18–19'.",
+     "text": "Some said his smile was joy at her words.",
+     "tag": "Tafsir (a reported view) · al-Qurtubi",
+     "sound": "none",
+     "why": "Use if no scan with a usable licence is found."
+    }
+   ]
+  },
+  {
+   "line": "Ek chhoti si chiti, aur itna bada *dil*.",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "full-screen macro, the ant small in a large frame",
+     "visual": "Wide macro: one tiny ant on a big stone, lots of empty space; 'itna bada dil' as one phrase in the serif.",
+     "text": "Such a small ant. Such a big heart.",
+     "tag": "-",
+     "sound": "soft piano",
+     "why": "Scale contrast makes the line literal; empty space is calm and premium."
+    },
+    {
+     "layout": "creator full screen",
+     "visual": "Creator smiles to camera.",
+     "text": "-",
+     "tag": "-",
+     "sound": "piano",
+     "why": "Warm, but the picture adds nothing."
+    }
+   ]
+  },
+  {
+   "line": "Aur hum? Kisi ka reply thoda late aa jaaye, toh dimaag mein poori kahani bana lete hain.",
+   "section": "reflection",
+   "options": [
+    {
+     "layout": "creator full screen + a phone mock beside",
+     "visual": "Creator to camera; beside them a plain phone screen (our own design, no real app UI) shows a chat with 'typing…' then 'seen', and three thought bubbles stack up as 'poori kahani' is said.",
+     "text": "seen · 2 hours ago",
+     "tag": "Reflection",
+     "sound": "a light message tick",
+     "why": "Brings the lesson into the viewer's life; a little humour after the emotion. No real app branding."
+    },
+    {
+     "layout": "creator full screen only",
+     "visual": "Creator to camera, a raised eyebrow on 'Aur hum?'.",
+     "text": "-",
+     "tag": "-",
+     "sound": "none",
+     "why": "The delivery alone may land the joke."
+    }
+   ]
+  },
+  {
+   "line": "Science ne chiti ki *cheekh* naapi. Quran ne uska *dil* dikhaya.",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "two-part card on the sand ground, then hold 2 s",
+     "visual": "Left-aligned, two lines in the serif: 'Science measured her scream.' (with the amber nest map faint behind) then 'The Quran showed her heart.' (with the Ayah phrase faint behind). Held still for 2 s.",
+     "text": "Science measured her scream. / The Quran showed her heart.",
+     "tag": "Reflection",
+     "sound": "one soft chord, then quiet",
+     "why": "The quotable line gets the whole frame and a dead-still hold (QUALITY.md §2: last line holds 2 s)."
+    },
+    {
+     "layout": "creator full screen, line set beside",
+     "visual": "Creator to camera; the two lines beside them as a pull quote.",
+     "text": "Science measured her scream. / The Quran showed her heart.",
+     "tag": "Reflection",
+     "sound": "chord",
+     "why": "Keeps the face for the last line; the type is smaller."
+    }
+   ]
+  },
+  {
+   "line": "Aisi aayatein aur samajhni hain? Toh follow kar lo.",
+   "section": "cta",
+   "options": [
+    {
+     "layout": "end card: follow + comment ask",
+     "visual": "Cta 'follow' end card in the caption band with the real Instagram and Facebook icons, then the engage card with the comment question.",
+     "text": "Follow · Have you ever overthought a late reply?",
+     "tag": "-",
+     "sound": "soft tick",
+     "why": "Follow on the spoken CTA; a specific, easy comment question tied to the reel's lesson."
+    },
+    {
+     "layout": "end card: follow only",
+     "visual": "Follow card only.",
+     "text": "Follow",
+     "tag": "-",
+     "sound": "soft tick",
+     "why": "Shorter end; loses the comment prompt."
+    }
+   ]
+  }
+ ]
+}
