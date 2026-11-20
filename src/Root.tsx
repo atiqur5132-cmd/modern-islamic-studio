@@ -18,6 +18,8 @@ import scrollLong from "../projects/scroll-kyun/long.json";
 import {LongProps} from "./long/scroll/types";
 import {Chaand} from "./chaand/Chaand";
 import chaandReel from "../projects/chaand-nur/reel.json";
+import {EmiLong, EmiProps} from "./compositions/EmiLong";
+import emiLong from "../projects/en/finance-vo/long.json";
 
 const SHORTS = {fps: FPS, width: 1080, height: 1920};
 
@@ -114,6 +116,16 @@ export const Root = () => (
       durationInFrames={1}
       calculateMetadata={({props}) => ({durationInFrames: Math.round(props.durationSeconds * FPS)})}
       {...SHORTS}
+    />
+    <Composition
+      id="EmiLong"
+      component={EmiLong}
+      defaultProps={emiLong as EmiProps}
+      durationInFrames={1}
+      calculateMetadata={({props}) => ({durationInFrames: Math.round(props.durationSeconds * FPS)})}
+      fps={FPS}
+      width={1920}
+      height={1080}
     />
     <Composition id="StudioTest" component={StudioTest} durationInFrames={150} {...SHORTS} />
   </>
