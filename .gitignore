@@ -22,3 +22,7 @@ output/
 references/**/*.jpg
 references/**/*.png
 references/**/*.webp
+
+# Licensed music tracks (Pixabay licence: no redistribution of the files on their own)
+projects/**/music/
+public/music/

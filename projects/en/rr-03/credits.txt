@@ -1,0 +1,4 @@
+broll-rr03-zuckerberg.jpg: "Mark Zuckerberg F8 2019 Keynote (32830578717) (cropped).jpg" by Anthony Quintano from Westminster, United States, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_F8_2019_Keynote_(32830578717)_(cropped).jpg
+broll-rr03-jobs.jpg: "Steve Jobs Headshot 2010-CROP.jpg" by Matthew Yohe (talk), CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP.jpg
+broll-rr03-brin.jpg: "Sergey Brin Ted 2010 (cropped).jpg" by Steve Jurvetson, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Sergey_Brin_Ted_2010_(cropped).jpg
+broll-rr03-page.jpg: "Larry Page in the European Parliament, 17.06.2009.jpg" by Marcin Mycielski, European Parliament, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Larry_Page_in_the_European_Parliament,_17.06.2009.jpg

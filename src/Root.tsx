@@ -20,6 +20,12 @@ import {Chaand} from "./chaand/Chaand";
 import chaandReel from "../projects/chaand-nur/reel.json";
 import {EmiLong, EmiProps} from "./compositions/EmiLong";
 import emiLong from "../projects/en/finance-vo/long.json";
+import {EmiThumbnail, ThumbProps} from "./compositions/EmiThumbnail";
+import {RewardsLong, RewardsProps} from "./compositions/RewardsLong";
+import rewardsLong from "../projects/en/card-rewards/long.json";
+import {RewardsThumbnail, RewardsThumbProps} from "./compositions/RewardsThumbnail";
+import {SalaryLong, SalaryProps} from "./compositions/SalaryLong";
+import salaryLong from "../projects/en/rr-03/long.json";
 
 const SHORTS = {fps: FPS, width: 1080, height: 1920};
 
@@ -127,6 +133,28 @@ export const Root = () => (
       width={1920}
       height={1080}
     />
+    <Composition
+      id="RewardsLong"
+      component={RewardsLong}
+      defaultProps={rewardsLong as RewardsProps}
+      durationInFrames={1}
+      calculateMetadata={({props}) => ({durationInFrames: Math.round(props.durationSeconds * FPS)})}
+      fps={FPS}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="SalaryLong"
+      component={SalaryLong}
+      defaultProps={salaryLong as SalaryProps}
+      durationInFrames={1}
+      calculateMetadata={({props}) => ({durationInFrames: Math.round(props.durationSeconds * FPS)})}
+      fps={FPS}
+      width={1920}
+      height={1080}
+    />
+    <Composition id="RewardsThumbnail" component={RewardsThumbnail} defaultProps={{variant: "deadbeat"} as RewardsThumbProps} durationInFrames={1} fps={FPS} width={1280} height={720} />
+    <Composition id="EmiThumbnail" component={EmiThumbnail} defaultProps={{variant: "trap"} as ThumbProps} durationInFrames={1} fps={FPS} width={1280} height={720} />
     <Composition id="StudioTest" component={StudioTest} durationInFrames={150} {...SHORTS} />
   </>
 );
