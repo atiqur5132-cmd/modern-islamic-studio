@@ -12,7 +12,7 @@ export const HOOK_SHOTS: Shot[] = [
   {at: 3.6, x: -2000, y: 20, z: 1, frames: 26}, // "walk into a store"
   {at: 6.3, x: -420, y: -10, z: 1.12, frames: 26}, // "$1,200 smartphone"
   {at: 9.8, x: -180, y: 0, z: 1, frames: 26}, // the jar beside it
-  {at: 15.3, x: -300, y: 330, z: 1, frames: 30}, // "right below the price"
+  {at: 15.3, x: -200, y: 330, z: 1, frames: 30}, // "right below the price"
   {at: 21.9, x: 1560, y: 420, z: 1, frames: 30}, // the 12-month strip
   {at: 27.5, x: 1900, y: 400, z: 0.82, frames: 30}, // beating the system
   {at: 30.0, x: 1560, y: 1180, z: 1, frames: 30}, // today → tomorrow
@@ -120,12 +120,12 @@ const Jar = () => {
       ))}
       <Write text="savings" x={110} y={360} size={52} color={LOOK.dim} anchor="middle" at={11.9} />
       <Stroke d={hand([[-60, -160], [0, -110], [60, -60], [100, -30]], 2, 55)} at={10.9} frames={16} width={4} dash="14 14" />
-      <Write text="?" x={130} y={-50} size={84} weight={700} at={12.1} />
+      <Write text="?" x={130} y={-50} size={84} weight={700} at={12.1} until={15.2} />
       {/* The lid goes on. */}
       <g transform={`translate(0 ${interpolate(frame, [sec(13.4), sec(13.4) + 12], [-40, 0], CLAMP)})`}>
         <Stroke d={box(0, -42, 220, 36, 10, 57)} at={13.4} frames={10} />
       </g>
-      <Write text="not today" x={250} y={60} size={56} color={LOOK.dim} at={14.0} rotate={-4} />
+      <Write text="not today" x={250} y={60} size={56} color={LOOK.dim} at={14.0} rotate={-4} until={15.2} />
     </g>
   );
 };

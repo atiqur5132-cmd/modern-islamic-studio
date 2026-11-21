@@ -73,7 +73,8 @@ const PartE = () => {
       <Write text="2" x={-820} y={-310} size={110} weight={700} color={LOOK.coral} at={151.4} />
       <Write text="fees & invisible taxes" x={-740} y={-320} size={70} at={152.2} cps={30} />
       {/* "Even when the interest is offset by a discount" */}
-      <Write text="interest  –  discount  =  0" x={-760} y={-200} size={56} color={LOOK.dim} at={154.5} cps={34} />
+      <Write text="interest  –  discount  =  0" x={-760} y={-200} size={56} at={154.5} cps={34} />
+      <Stroke d={ring(-332, -218, 36, 40, 913)} at={156.9} frames={10} />
       {/* The statement: interest billed every single month. */}
       <Stroke d={box(-760, -150, 560, 620, 10, 910)} at={157.9} frames={14} />
       <Write text="statement" x={-730} y={-100} size={50} weight={700} at={159.2} />
@@ -169,7 +170,7 @@ const PartG = () => {
       <Write text="$100 gone" x={-340} y={-80} size={52} at={204.8} until={211.0} />
       <Write text="lesson learned" x={-720} y={400} size={52} color={LOOK.dim} at={205.6} until={211.0} />
       <Arrow from={[-420, 300]} to={[-160, 300]} at={206.5} until={211.0} />
-      <Write text="the real trap" x={-80} y={-380} size={70} weight={700} at={208.0} until={216.5} />
+      <Write text="the real trap" x={-80} y={-380} size={70} weight={700} at={208.0} until={211.3} />
       <Head x={140} y={0} at={208.0} s={0.9} />
       <Write text="not the fees" x={-80} y={-300} size={52} color={LOOK.dim} at={210.2} until={216.5} />
       <Brain x={130} y={-60} at={212.0} s={0.8} />

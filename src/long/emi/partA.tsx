@@ -152,8 +152,9 @@ const PartC = () => {
         </g>
       ) : null}
       <Write text="15%" x={170} y={260} size={80} weight={700} at={116.9} cps={20} />
-      <Write text="wins" x={-560} y={540} size={52} color={LOOK.dim} anchor="middle" at={119.0} />
-      <Write text="wins" x={-20} y={540} size={52} color={LOOK.dim} anchor="middle" at={119.3} />
+      <Write text="wins" x={-560} y={540} size={62} weight={700} anchor="middle" at={118.7} />
+      <Write text="wins" x={-20} y={540} size={62} weight={700} anchor="middle" at={119.1} />
+      <Stroke d={ring(170, 240, 90, 50, 871)} at={117.4} frames={10} />
       {/* "...except you." */}
       <Stroke d={ring(520, 330, 120, 220, 861)} at={120.4} frames={12} color={LOOK.coral} width={6} />
       <Write text="except you" x={520} y={600} size={64} weight={700} anchor="middle" color={LOOK.coral} at={120.6} cps={24} />

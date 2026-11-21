@@ -14,7 +14,7 @@ export type EmiProps = {audio: string; durationSeconds: number};
 
 const SHOTS = [...HOOK_SHOTS, ...A_SHOTS, ...B_SHOTS, ...C_SHOTS].sort((a, b) => a.at - b.at);
 
-// "No-Cost EMI" (Ateeq Decoded long form): one chalk board, a camera moving across it,
+// "No-Cost EMI" (The Rich Rules long form): one chalk board, a camera moving across it,
 // the creator's AI voiceover. No subtitles (creator's brief). beats.md has the plan.
 export const EmiLong = ({audio}: EmiProps) => {
   const frame = useCurrentFrame();

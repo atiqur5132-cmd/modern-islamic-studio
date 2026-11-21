@@ -93,10 +93,11 @@ const PartJ = () => {
       <Strike x1={370} y1={440} x2={640} y2={430} at={286.6} />
       <Write text="working for the past" x={-100} y={460} size={50} color={LOOK.dim} at={287.6} />
       {/* "things that are already losing value" */}
+      <Stroke d={box(-780, -100, 440, 545, 16, 1045)} at={289.4} frames={14} color={LOOK.coral} width={4} />
       {[0, 1, 2, 3].map((i) => (
-        <Stroke key={i} d={hand([[-330, 350 - i * 130], [-330, 400 - i * 130]], 1, 1040 + i)} at={290.1 + i * 0.08} frames={5} width={4} color={LOOK.dim} />
+        <Arrow key={i} from={[-320, 350 - i * 130]} to={[-320, 410 - i * 130]} at={290.0 + i * 0.1} frames={5} width={4} seed={1040 + i * 3} />
       ))}
-      <Write text="losing value" x={-760} y={500} size={44} color={LOOK.dim} at={290.3} />
+      <Write text="losing value" x={-760} y={510} size={56} weight={700} at={290.3} />
     </Part>
   );
 };
@@ -165,7 +166,8 @@ const PartM = () => {
       <Write text="the reverse EMI" x={-780} y={-300} size={96} weight={700} at={324.6} cps={22} />
       <Write text="pay yourself first" x={-780} y={-220} size={52} color={LOOK.dim} at={326.4} />
       {/* The usual way: item today, the bank $100 a month. */}
-      <Phone x={-700} y={-110} at={328.3} s={0.45} />
+      <Phone x={-700} y={-110} at={328.3} s={0.6} />
+      <Write text="$1,200" x={-560} y={-60} size={56} weight={700} at={328.8} />
       <Write text="today" x={-700} y={0} size={40} color={LOOK.dim} anchor="middle" at={329.6} />
       <Arrow from={[-640, -110]} to={[-160, -110]} at={330.4} />
       <Bank x={-60} y={-90} at={330.8} s={0.45} />
@@ -205,7 +207,8 @@ const PartN = () => {
   return (
     <Part o={N} from={349.8} to={373}>
       <Write text="sign up for a 0-cost plan?" x={-780} y={-420} size={46} color={LOOK.dim} at={350.8} until={361.8} />
-      <Write text="one question" x={-780} y={-320} size={56} color={LOOK.dim} at={353.3} until={361.8} />
+      <Stroke d={hand([[-780, -362], [-720, -388], [-680, -352], [-620, -384], [-560, -354], [-480, -374], [-380, -366]], 3, 1080)} at={351.1} frames={18} until={361.8} />
+      <Write text="one question" x={-780} y={-290} size={60} weight={700} at={353.3} until={361.8} />
       <Write text="?" x={300} y={240} size={200} weight={700} at={354.2} until={358.0} />
       <Write text="Am I buying this because I can afford it?" x={-780} y={-200} size={66} at={355.5} cps={30} until={361.8} />
       {/* "...or because someone sliced the price small enough..." */}
