@@ -11,3 +11,6 @@ Config.setPixelFormat("yuv420p");
 // 3D scenes need WebGL. On the laptop ANGLE uses the Intel GPU; the GitHub
 // runner has no GPU, so the workflow overrides this with software rendering.
 Config.setChromiumOpenGlRenderer("angle");
+// Heavy 3D scenes (sharaab-fayda: PBR textures, HDRI, glTF models, post-processing) take far
+// longer than the default 30 s to draw their first frame under software WebGL on GitHub.
+Config.setDelayRenderTimeoutInMilliseconds(240000);
