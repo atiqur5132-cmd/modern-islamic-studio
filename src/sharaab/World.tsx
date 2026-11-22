@@ -3,7 +3,7 @@ import {AbsoluteFill, Easing, useCurrentFrame} from "remotion";
 import {Cues} from "../long/scroll/types";
 import {ACCENT, arrive, fall, INK, leave, MUTED, SANS, SERIF, SIDE, swing, t01} from "./look";
 import {BOOK_AT, BOOK_YAW, CALENDAR_AT, LANCET_AT, LANCET_CITE, LANCET_DEBATE, WHO_AT, WHO_HL} from "./set";
-import {lerp3, project, Studio3D, StudioState, V3, Weight} from "./Studio3D";
+import {lerp3, panAt, project, RULER, rulerZ, Studio3D, StudioState, V3, Weight} from "./Studio3D";
 
 // Lines 5-12 (WorldA) and 15-24 (WorldB) in the one studio. Each line opens on a hard cut
 // to its own framing; inside a line the picture changes on the spoken word (a weight lands,
@@ -108,20 +108,17 @@ export const WorldA = ({cues}: {cues: Cues}) => {
     swing(f, profit + 9, 0.05) +
     swing(f, ironAt + 7, -0.55, 0.34, 0.12);
   const flipT = t01(f, flip2, flip2 + 22, (t) => t);
-  const whoSlide = t01(f, W(9, 8) - 2, W(9, 8) + 16, out);
-  const hl = t01(f, W(10, 2), W(10, 6) + 4, ease);
   const base: Omit<StudioState, "cam" | "target"> = {
     beam,
     weights,
     bottle: f < liftAt + 30 ? {on: "left", lift: lift(f, liftAt)} : undefined,
     book: {pos: BOOK_AT, yaw: BOOK_YAW, open: 0.985, flip: flipT, page: flipT > 0.55 ? "5:91" : "2:219"},
-    docs: f >= W(9, 8) - 2 ? [{which: "who", pos: WHO_AT, yaw: 0, slide: whoSlide, hl: [{...WHO_HL, p: hl}]}] : [],
     calendar: {pos: CALENDAR_AT, yaw: 0.35, flip: t01(f, W(11, 4) - 3, W(11, 4) + 9, ease)},
   };
 
   let s: StudioState;
   let words: React.ReactNode = null;
-  const docShot = (f >= W(9, 8) + 8 && f < L(10) - 2) || (f >= L(10) - 2 && f < ironAt - 1);
+  const docShot = false;
   if (f < L(6) - 2) {
     // Line 5: pull back off the open book to the whole table; the question lands on the wall.
     const k = t01(f, 0, L(6) - 2, ease);
@@ -152,8 +149,8 @@ export const WorldA = ({cues}: {cues: Cues}) => {
   } else if (f < L(9) - 2) {
     // Line 8: looking down into the pan as Joy, Pleasure and Profit land.
     const k = t01(f, L(8) - 2, L(9) - 2, (t) => t);
-    s = {...base, cam: lerp3([-1.3, 2.75, 1.85], [-1.28, 2.65, 1.7], k), target: [-1.25, 1.28, -0.05], fov: 40, focus: [-1.25, 1.3, 0], range: 0.7, key: 1.15};
-    const pan = (dx: number, dz: number): V3 => [-1.25 + dx, 1.32 + 0.42, dz];
+    s = {...base, cam: lerp3([-1.3, 2.6, 1.85], [-1.28, 2.5, 1.7], k), target: [-1.25, 1.15, -0.05], fov: 40, focus: [-1.25, 1.3, 0], range: 0.7, key: 1.15};
+    const pan = (dx: number, dz: number): V3 => [-1.25 + dx, panAt("left", beam)[1] + 0.42, dz];
     words = (
       <>
         <Pin s={s} p={pan(0, 0)} at={W(8, 1)} size={76} dy={-70}>Joy</Pin>
@@ -161,21 +158,11 @@ export const WorldA = ({cues}: {cues: Cues}) => {
         <Pin s={s} p={pan(0.02, -0.22)} at={W(8, 8)} size={76} dy={-90}>Profit</Pin>
       </>
     );
-  } else if (f < L(10) - 2) {
-    // Line 9: whip across to the harm side; WHO's release slides onto the table.
-    const kw = t01(f, L(9) - 2, L(9) + 12, ease);
-    const kd = t01(f, W(9, 8), L(10) - 2, ease);
-    const c1 = lerp3([-1.2, 1.9, 2.6], [2.3, 1.75, 3.0], kw);
-    const t1 = lerp3([-1.25, 1.35, 0], [1.5, 0.7, 0.6], kw);
-    const whole = overDoc(docPoint(WHO_AT, WHO_ASPECT, 0.5, 0.5), 1.25);
-    s = {...base, cam: lerp3(c1, whole.cam, kd), target: lerp3(t1, whole.target, kd), fov: 38 - 4 * kd, focus: lerp3([1.25, 1.3, 0], whole.focus, kd), range: 0.8};
-    words = <Credit at={W(9, 9)} y={1150} text="Established data · WHO news release, 25 June 2024" />;
   } else if (f < ironAt - 1) {
-    // Line 10, first half: on the release; the highlighter runs under "2.6 million deaths".
-    const k = t01(f, L(10) - 2, ironAt, (t) => t);
-    const line = overDoc(docPoint(WHO_AT, WHO_ASPECT, 0.34, WHO_HL.v + 0.13), 0.6 - 0.04 * k);
-    s = {...base, ...line};
-    words = <Credit at={0} y={1150} text="Established data · WHO news release, 25 June 2024" />;
+    // Line 9: whip across to the harm side. From "World Health Organisation" to the iron
+    // weight, WHO's release plays full screen over these frames (DocPage in Sharaab.tsx).
+    const kw = t01(f, L(9) - 2, L(9) + 12, ease);
+    s = {...base, cam: lerp3([-1.2, 1.9, 2.6], [2.6, 1.85, 3.1], kw), target: lerp3([-1.25, 1.35, 0], [1.25, 1.25, 0], kw), fov: 38, focus: [1.25, 1.3, 0], range: 0.9};
   } else if (f < L(11) - 2) {
     // Line 10, second half: the iron weight slams into the harm pan.
     const k = t01(f, ironAt - 1, L(11) - 2, (t) => t);
@@ -216,8 +203,6 @@ export const WorldB = ({cues}: {cues: Cues}) => {
   const f = useCurrentFrame();
   const L = cues.line;
   const W = cues.word;
-  const smallAt = W(19, 13) - 6;
-  const zero = W(20, 10);
   const weights: Weight[] = [
     {pan: "left", kind: "brass", slot: 0, drop: 0},
     {pan: "left", kind: "brass", slot: 2, drop: 0},
@@ -225,98 +210,89 @@ export const WorldB = ({cues}: {cues: Cues}) => {
     {pan: "left", kind: "coin", slot: 3, drop: 0.022},
     {pan: "left", kind: "coin", slot: 3, drop: 0.044},
     {pan: "right", kind: "iron", slot: 0, drop: 0},
-    {pan: "left", kind: "small", slot: 4, drop: fallIn(f, smallAt, 1.2) + lift(f, zero - 2, 14)},
   ];
-  const beam = -0.4 + swing(f, smallAt + 7, 0.012) + swing(f, zero, -0.012) + swing(f, W(21, 12) - 2, -0.04);
+  const beam = -0.4 + swing(f, W(21, 12) - 2, -0.04);
   const closeAt = L(15) + 4;
   const reopen = L(21) - 2;
   const open = f < reopen ? 0.985 * (1 - t01(f, closeAt, closeAt + 26, ease)) : 0.985 * t01(f, reopen + 4, reopen + 22, ease);
-  const lancetSlide = t01(f, L(17) + 2, L(17) + 20, out);
-  // Spot beats on line 22: light on the benefit pan, then the harm pan.
-  const beat22 = f >= W(22, 1) - 1 && f < W(22, 4) - 1 ? "left" : f >= W(22, 4) - 1 && f < W(22, 7) - 2 ? "right" : null;
+  // The age ruler: the slider runs to 40 and the 40+ stretch warms; then 15-39 lights rust.
+  const marker = 15 + 25 * t01(f, W(19, 4) - 4, W(19, 4) + 14, ease) - 12 * t01(f, W(20, 1) - 2, W(20, 1) + 14, ease);
+  const ruler = f >= L(19) - 2 ? {old: t01(f, W(19, 5), W(19, 5) + 14) * (1 - 0.6 * t01(f, W(20, 1), W(20, 1) + 10)), young: t01(f, W(20, 1), W(20, 1) + 14), marker} : undefined;
+  const riskAt = W(20, 12) - 2;
+  const spotLeft = f >= L(22) - 2 && f < W(22, 4) - 2;
+  const spotRight = (f >= W(22, 4) - 2 && f < W(22, 7) - 2) || (f >= riskAt && f < L(21) - 2);
   const base: Omit<StudioState, "cam" | "target"> = {
     beam,
     weights,
     book: {pos: BOOK_AT, yaw: BOOK_YAW, open, page: f < reopen ? "5:91" : "2:219"},
-    docs: [
-      {which: "who", pos: WHO_AT, yaw: 0, slide: 1, hl: [{...WHO_HL, p: 1}]},
-      ...(f >= L(17) + 2
-        ? [{which: "lancet" as const, pos: LANCET_AT, yaw: 0, slide: lancetSlide, hl: [{...LANCET_CITE, p: t01(f, W(18, 7), W(18, 7) + 14, ease)}, {...LANCET_DEBATE, p: t01(f, W(18, 10) + 2, W(18, 12) + 6, ease)}]}]
-        : []),
-    ],
     calendar: {pos: CALENDAR_AT, yaw: 0.35, flip: 1},
-    key: beat22 ? 0.35 : f >= W(20, 13) - 1 && f < L(21) - 2 ? 0.45 : 1,
-    spot: beat22 === "left" ? {pos: [-1.3, 4.2, 1.0], target: [-1.25, 1.3, 0], power: 150, angle: 0.22} : beat22 === "right" || (f >= W(20, 13) - 1 && f < L(21) - 2) ? {pos: [1.3, 4.2, 1.0], target: [1.25, 1.3, 0], power: 150, angle: 0.22} : undefined,
+    ruler,
+    key: spotLeft || spotRight ? 0.4 : 1,
+    spot: spotLeft ? {pos: [-1.3, 4.4, 1.2], target: [-1.25, 1.8, 0], power: 160, angle: 0.22} : spotRight ? {pos: [1.3, 3.6, 1.2], target: [1.25, 0.82, 0], power: 160, angle: 0.24} : undefined,
   };
+  // Straight down on the ruler, its length running top (15) to bottom (80) of the frame.
+  const rulerTop = (z: number, h: number) => ({cam: [RULER.x + 0.22, h, z + 0.001] as V3, target: [RULER.x + 0.22, 0, z] as V3, up: [0, 0, -1] as V3, fov: 36, focus: [RULER.x, 0.03, z] as V3, range: 1.2});
 
   let s: StudioState;
   let words: React.ReactNode = null;
-  const docShot = f >= L(18) - 2 && f < L(19) - 2;
+  const docShot = false;
   if (f < L(16) - 2) {
     // Line 15: the Quran closes; the gold title catches the light.
     const k = t01(f, 0, L(16) - 2, (t) => t);
     s = {...base, cam: lerp3([1.45, 1.15, 2.6], [1.38, 1.08, 2.45], k), target: [0.95, 0.12, 1.2], fov: 36, focus: [0.95, 0.15, 1.15], range: 0.6};
     words = <Big at={W(15, 6) - 2} size={92} y={240}>For a Muslim, it is <span style={{fontStyle: "italic"}}>Allah’s command.</span></Big>;
-  } else if (f < L(17) - 2) {
-    // Line 16: up from the book to the scale, still down on the harm side.
-    const k = t01(f, L(16) - 2, L(17) - 2, ease);
-    s = {...base, cam: lerp3([1.4, 1.1, 2.65], [2.6, 2.1, 4.6], k), target: lerp3([0.95, 0.15, 1.2], [0.1, 1.45, 0], k), fov: 40, focus: lerp3([0.95, 0.2, 1.15], [0, 1.4, 0], k), range: 1.8};
-  } else if (f < L(18) - 2) {
-    // Line 17: a printed paper slides onto the table.
-    const k = t01(f, L(17) - 2, L(18) - 2, (t) => t);
-    s = {...base, cam: lerp3([-0.55, 1.05, 3.35], [-0.6, 1.0, 3.2], k), target: [LANCET_AT[0], 0.02, LANCET_AT[2]], fov: 38, focus: [LANCET_AT[0], 0, LANCET_AT[2]], range: 0.8};
   } else if (f < L(19) - 2) {
-    // Line 18: close on the record: the journal line, then "...continue to be debated."
-    const cite = overDoc(docPoint(LANCET_AT, LANCET_ASPECT, 0.2, LANCET_CITE.v + 0.1), 0.4);
-    const deb = overDoc(docPoint(LANCET_AT, LANCET_ASPECT, 0.72, LANCET_DEBATE.v + 0.08), 0.42);
-    const k = t01(f, W(18, 10) - 2, W(18, 10) + 14, ease);
-    s = {...base, cam: lerp3(cite.cam, deb.cam, k), target: lerp3(cite.target, deb.target, k), fov: 34, focus: lerp3(cite.focus, deb.focus, k), range: 0.5};
-    words = <Credit at={W(18, 7)} y={1150} text="Established science · GBD 2020 Alcohol Collaborators, The Lancet, 2022 · CC BY 4.0" />;
+    // Line 16: up from the book to the scale, still down on the harm side. (Lines 17-18:
+    // the Lancet record plays full screen over these frames, DocPage in Sharaab.tsx.)
+    const k = t01(f, L(16) - 2, L(17) + 10, ease);
+    s = {...base, cam: lerp3([1.4, 1.1, 2.65], [2.6, 2.1, 4.6], k), target: lerp3([0.95, 0.15, 1.2], [0.1, 1.45, 0], k), fov: 40, focus: lerp3([0.95, 0.2, 1.15], [0, 1.4, 0], k), range: 1.8};
   } else if (f < L(20) - 2) {
-    // Line 19: over 40, maybe a little: a tiny weight barely moves the beam.
+    // Line 19: straight down on the age ruler; the slider runs to 40, the 40+ end warms.
     const k = t01(f, L(19) - 2, L(20) - 2, (t) => t);
-    s = {...base, cam: lerp3([-2.5, 1.8, 2.7], [-2.3, 1.75, 2.45], k), target: [-1.2, 1.35, 0], fov: 36, focus: [-1.25, 1.35, 0], range: 0.9};
+    s = {...base, ...rulerTop(rulerZ(47.5), 4.1 - 0.25 * k)};
     words = (
       <>
-        <Big at={W(19, 4)} size={96}>Over 40:</Big>
-        <Big at={W(19, 16)} y={350} size={96}>
-          <span style={{fontStyle: "italic"}}>maybe, a little.</span>
+        <Pin s={s} p={[RULER.x + 0.2, 0.03, rulerZ(50)]} at={W(19, 4)} dx={170} dy={30} size={110} italic={false}>40+</Pin>
+        <Big at={W(19, 16)} size={92} y={240}><span style={{fontStyle: "italic"}}>maybe, a little.</span></Big>
+        <Credit at={W(19, 5)} y={360} text="Established science, debated · The Lancet, 2022" />
+      </>
+    );
+  } else if (f < riskAt) {
+    // Line 20: closer, on the young end; 15-39 lights rust: zero benefit.
+    const k = t01(f, L(20) - 2, riskAt, (t) => t);
+    s = {...base, ...rulerTop(rulerZ(28), 2.6 - 0.2 * k)};
+    words = (
+      <>
+        <Pin s={s} p={[RULER.x + 0.2, 0.03, rulerZ(27)]} at={W(20, 1)} dx={270} dy={30} size={104} italic={false} color={ACCENT}>15–39</Pin>
+        <Big at={W(20, 10)} y={240} size={170}>
+          0 <span style={{fontStyle: "italic", fontSize: 72}}>benefit</span>
         </Big>
-        <Credit at={W(19, 5)} y={480} text="Established science, debated · The Lancet, 2022" />
+        <Credit at={W(20, 2)} y={440} text="Established science · The Lancet, 2022" />
       </>
     );
   } else if (f < L(21) - 2) {
-    // Line 20: ages 15-39: zero benefit, only risk.
-    const k = t01(f, L(20) - 2, L(21) - 2, (t) => t);
-    s = {...base, cam: lerp3([3.3, 2.05, 4.4], [3.15, 2.0, 4.2], k), target: [0.1, 1.35, 0], fov: 42, focus: [0, 1.3, 0], range: 2.2};
-    words = (
-      <>
-        <Big at={W(20, 1)} size={84}>Ages 15–39</Big>
-        <Big at={zero} y={340} size={170}>
-          0 <span style={{fontStyle: "italic", fontSize: 72}}>benefit</span>
-        </Big>
-        <Pin s={s} p={[1.25, 1.35, 0]} at={W(20, 13)} dy={-150} color={ACCENT} size={70}>only risk</Pin>
-        <Credit at={W(20, 2)} y={560} text="Established science · The Lancet, 2022" />
-      </>
-    );
+    // "Sirf risk hai": close on the iron weight in a narrow light.
+    const k = t01(f, riskAt, L(21) - 2, (t) => t);
+    s = {...base, cam: lerp3([2.1, 1.3, 1.4], [2.0, 1.25, 1.3], k), target: [1.25, 0.85, 0], fov: 36, focus: [1.25, 0.9, 0], range: 0.7};
+    words = <Big at={riskAt + 4} size={110} color={ACCENT}><span style={{fontStyle: "italic"}}>only risk.</span></Big>;
   } else if (f < L(22) - 2) {
-    // Line 21: the Quran open again beside the scale: the same scale it set.
+    // Line 21: low behind the open Quran; focus pulls from its page to the scale.
     const k = t01(f, L(21) - 2, L(22) - 2, (t) => t);
-    s = {...base, cam: lerp3([3.0, 2.3, 5.9], [2.8, 2.2, 5.5], k), target: [0.35, 1.0, 0.4], fov: 42, focus: [0.6, 0.8, 0.6], range: 2.4};
+    const rack = t01(f, W(21, 8) - 6, W(21, 8) + 14, ease);
+    s = {...base, cam: lerp3([2.15, 1.2, 3.3], [2.05, 1.22, 3.15], k), target: [0.75, 0.55, 0.8], fov: 40, focus: lerp3([0.95, 0.16, 1.2], [0, 1.4, 0], rack), range: 0.5, bokeh: 4.5};
     words = (
       <Big at={W(21, 8)} size={88}>
         Benefit, yes. <span style={{fontStyle: "italic", color: ACCENT}}>Harm, greater.</span>
       </Big>
     );
+  } else if (f < W(22, 4) - 2) {
+    // Line 22, "fayda gina": close on the benefit pan in its own light.
+    s = {...base, cam: [-2.0, 2.45, 1.55], target: [-1.25, 1.8, 0], fov: 36, focus: [-1.25, 1.82, 0], range: 0.7};
+    words = <Big at={W(22, 1)} size={110}><span style={{fontStyle: "italic"}}>counted,</span></Big>;
   } else if (f < W(22, 7) - 2) {
-    // Line 22: counted, weighed: light on one pan, then the other.
-    s = {...base, cam: [-3.4, 2.0, 4.6], target: [0.05, 1.4, 0], fov: 42, focus: [0, 1.4, 0], range: 2.4};
-    words = (
-      <>
-        <Pin s={s} p={[-1.25, 1.35, 0]} at={W(22, 1)} end={W(22, 4) - 2} dy={-110} size={78}>counted</Pin>
-        <Pin s={s} p={[1.25, 1.35, 0]} at={W(22, 4)} end={W(22, 7) - 3} dy={-110} color={ACCENT} size={78}>weighed</Pin>
-      </>
-    );
+    // "nuksaan gina": the harm pan.
+    s = {...base, cam: [2.05, 1.4, 1.6], target: [1.25, 0.82, 0], fov: 36, focus: [1.25, 0.85, 0], range: 0.7};
+    words = <Big at={W(22, 4)} size={110} color={ACCENT}><span style={{fontStyle: "italic"}}>weighed,</span></Big>;
   } else if (f < L(23) - 2) {
     // "phir faisla kiya": close on the pointer against the dial: the verdict.
     const k = t01(f, W(22, 7) - 2, L(23) - 2, out);
@@ -335,9 +311,11 @@ export const WorldB = ({cues}: {cues: Cues}) => {
       </>
     );
   } else {
-    // Line 24 and the end card: a slow drift round the scale.
-    const k = t01(f, L(24) - 2, L(24) + 130, (t) => t);
-    s = {...base, cam: lerp3([-1.2, 1.75, 6.8], [-2.1, 1.85, 6.3], k), target: [0, 1.5, 0], fov: 40, focus: [0, 1.5, 0], range: 2.5};
+    // Line 24 and the end card: straight down over the whole table, turning slowly: the
+    // scale, the Quran, the calendar and the ruler, the case laid out.
+    const k = t01(f, L(24) - 2, L(24) + 150, (t) => t);
+    const r = -0.35 + 0.5 * k;
+    s = {...base, cam: [0.1, 8.4 - 0.8 * k, 0.75], target: [0.1, 0, 0.75], up: [Math.sin(r), 0, -Math.cos(r)], fov: 40, focus: [0, 1.0, 0.5], range: 3, key: 1.1};
   }
   return (
     <AbsoluteFill>

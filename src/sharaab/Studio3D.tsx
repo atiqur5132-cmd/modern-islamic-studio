@@ -7,7 +7,7 @@ import {ARABIC} from "../overlays/kasawna/look";
 import {Assets, heightOf, loadAssets} from "./assets";
 import {ARM, Balance, HANG, PAN_R, panAt, PIVOT, V3, WEIGHT_GEO} from "./Balance";
 import {Post} from "./Post";
-import {ayahPage, brushedOnce, calendarLeaf, coverOnce, pageEdge} from "./textures";
+import {ayahPage, brushedOnce, calendarLeaf, coverOnce, pageEdge, rulerFace} from "./textures";
 
 // One continuous 3D studio for the sharaab-fayda reel (projects/sharaab-fayda/beats.md):
 // a black-walnut table against a painted plaster wall, lit by a warm key and an oil lamp
@@ -31,6 +31,10 @@ export type StudioState = {
   book?: {pos: V3; yaw?: number; drop?: number; open?: number; flip?: number; page?: "2:219" | "5:91"};
   docs?: Doc[];
   calendar?: {pos: V3; yaw?: number; flip: number};
+  // The age ruler (lines 19-20): glow on the 15-39 and 40+ stretches, a brass slider at an age.
+  ruler?: {young: number; old: number; marker: number};
+  // Camera up vector, for straight-down shots where a roll is not enough.
+  up?: V3;
   lamp?: number;
   sweep?: number;
   key?: number;
@@ -42,6 +46,9 @@ export type StudioState = {
 };
 
 export const BOOK = {w: 1.0, h: 0.16, d: 1.37};
+// The age ruler lies along z (15 far, 80 near) so it runs top to bottom in a straight-down shot.
+export const RULER = {x: -0.75, z0: 1.0, len: 2.4, w: 0.3};
+export const rulerZ = (age: number) => RULER.z0 + 0.1 + ((age - 15) / 65) * (RULER.len - 0.2);
 export const LAMP_AT: V3 = [2.25, 0, -1.35];
 const BOTTLE_H = 1.15;
 const LAMP_H = 1.7;
@@ -54,7 +61,8 @@ const Camera = ({s}: {s: StudioState}) => {
     c.near = 0.05;
     c.far = 60;
     c.position.set(...s.cam);
-    c.up.set(Math.sin(s.roll ?? 0), Math.cos(s.roll ?? 0), 0);
+    if (s.up) c.up.set(...s.up);
+    else c.up.set(Math.sin(s.roll ?? 0), Math.cos(s.roll ?? 0), 0);
     c.lookAt(...s.target);
     c.updateProjectionMatrix();
   }, [camera, s]);
@@ -130,8 +138,12 @@ export const Studio3D = ({s}: {s: StudioState}) => {
       who: new THREE.MeshStandardMaterial({map: assets.who, roughness: 0.85, color: "#E8E2D6"}),
       lancet: new THREE.MeshStandardMaterial({map: assets.lancet, roughness: 0.85, color: "#E8E2D6"}),
       highlight: new THREE.MeshBasicMaterial({color: "#F2C95C", transparent: true, opacity: 0.45, depthWrite: false}),
-      leafPlain: new THREE.MeshStandardMaterial({map: calendarLeaf("1", "day", "EVERY DAY"), roughness: 0.9, side: THREE.DoubleSide}),
+      leafPlain: new THREE.MeshStandardMaterial({map: calendarLeaf("1", "day", "EVERY DAY"), roughness: 0.9}),
+      leafBack: new THREE.MeshStandardMaterial({color: "#E6DCCB", roughness: 0.95}),
       leafCount: new THREE.MeshStandardMaterial({map: calendarLeaf("≈ 7,000", "deaths, every day", "EVERY DAY"), roughness: 0.9}),
+      rulerFace: new THREE.MeshStandardMaterial({map: rulerFace(), roughness: 0.75}),
+      glowYoung: new THREE.MeshBasicMaterial({color: "#C4593B", transparent: true, opacity: 0, depthWrite: false}),
+      glowOld: new THREE.MeshBasicMaterial({color: "#E3B964", transparent: true, opacity: 0, depthWrite: false}),
       wood: new THREE.MeshStandardMaterial({map: assets.walnut.map, normalMap: assets.walnut.normal, color: "#5A4030", roughness: 0.7}),
       sheet: new THREE.MeshStandardMaterial({color: "#E0D4BC", roughness: 1, side: THREE.DoubleSide}),
       weightGeo: WEIGHT_GEO(),
@@ -228,6 +240,10 @@ export const Studio3D = ({s}: {s: StudioState}) => {
                   <mesh position={[0, -0.26, 0]} material={m.leafPlain} castShadow>
                     <planeGeometry args={[0.42, 0.52]} />
                   </mesh>
+                  {/* The leaf's back: plain paper, not the mirrored print. */}
+                  <mesh position={[0, -0.26, -0.001]} rotation={[0, Math.PI, 0]} material={m.leafBack}>
+                    <planeGeometry args={[0.42, 0.52]} />
+                  </mesh>
                 </group>
               </group>
               <mesh position={[0, 0.06, -0.16]} rotation={[0.5, 0, 0]} material={m.wood} castShadow>
@@ -235,6 +251,34 @@ export const Studio3D = ({s}: {s: StudioState}) => {
               </mesh>
             </group>
           ) : null}
+          {s.ruler ? (() => {
+            const r = s.ruler;
+            m.glowYoung.opacity = 0.62 * r.young;
+            m.glowOld.opacity = 0.55 * r.old;
+            const zA = (age: number) => RULER.z0 + 0.1 + ((age - 15) / 65) * (RULER.len - 0.2);
+            return (
+              <group position={[RULER.x, 0, 0]}>
+                <mesh position={[0, 0.016, RULER.z0 + RULER.len / 2]} material={m.wood} castShadow receiveShadow>
+                  <boxGeometry args={[RULER.w, 0.03, RULER.len]} />
+                </mesh>
+                <mesh position={[0, 0.0315, RULER.z0 + RULER.len / 2]} rotation={[-Math.PI / 2, 0, 0]} material={m.rulerFace} receiveShadow>
+                  <planeGeometry args={[RULER.w - 0.02, RULER.len - 0.02]} />
+                </mesh>
+                <mesh position={[0, 0.033, (zA(15) + zA(39.5)) / 2]} rotation={[-Math.PI / 2, 0, 0]} material={m.glowYoung}>
+                  <planeGeometry args={[RULER.w - 0.02, zA(39.5) - zA(15)]} />
+                </mesh>
+                <mesh position={[0, 0.033, (zA(40) + zA(80)) / 2]} rotation={[-Math.PI / 2, 0, 0]} material={m.glowOld}>
+                  <planeGeometry args={[RULER.w - 0.02, zA(80) - zA(40)]} />
+                </mesh>
+                <mesh position={[RULER.w / 2 + 0.03, 0.04, zA(r.marker)]} material={m.brass} castShadow>
+                  <boxGeometry args={[0.06, 0.07, 0.035]} />
+                </mesh>
+                <mesh position={[RULER.w / 2 - 0.02, 0.05, zA(r.marker)]} rotation={[0, 0, Math.PI / 2]} material={m.brass} castShadow>
+                  <coneGeometry args={[0.018, 0.07, 12]} />
+                </mesh>
+              </group>
+            );
+          })() : null}
           {book ? (
             <group position={[book.pos[0], book.pos[1] + (book.drop ?? 0), book.pos[2]]} rotation={[0, book.yaw ?? 0, 0]}>
               <mesh position={[0, 0.012, 0]} material={m.leather} castShadow receiveShadow>

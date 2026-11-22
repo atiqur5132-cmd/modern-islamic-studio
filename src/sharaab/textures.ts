@@ -374,3 +374,33 @@ export const calendarLeaf = (big: string, small: string, top: string) => {
   g.fillText(small, W / 2, 530);
   return tex(c);
 };
+
+// The age ruler's face: boxwood with a tick per year from 15 to 80, a number every five.
+// Portrait: age 15 at the top of the canvas (the far end of the ruler on the table).
+export const rulerFace = once(() => {
+  const W = 300, H = 2400;
+  const {c, g} = canvas(W, H);
+  g.fillStyle = "#D8C49B";
+  g.fillRect(0, 0, W, H);
+  grain(g, W, H, 14, 29);
+  const r = rand(37);
+  for (let k = 0; k < 120; k++) {
+    g.strokeStyle = `rgba(120,90,50,${0.05 + r() * 0.08})`;
+    g.lineWidth = 1 + r() * 2;
+    const x = r() * W;
+    g.beginPath();
+    g.moveTo(x, 0);
+    g.lineTo(x + (r() - 0.5) * 20, H);
+    g.stroke();
+  }
+  const y = (age: number) => 100 + ((age - 15) / 65) * (H - 200);
+  g.fillStyle = "#2A1F17";
+  for (let a = 15; a <= 80; a++) {
+    const len = a % 5 === 0 ? 90 : 40;
+    g.fillRect(0, y(a) - 2, len, 4);
+  }
+  g.font = `700 58px "Bricolage Grotesque", sans-serif`;
+  g.textBaseline = "middle";
+  for (let a = 15; a <= 80; a += 5) g.fillText(String(a), 120, y(a));
+  return tex(c);
+});

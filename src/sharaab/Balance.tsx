@@ -13,8 +13,9 @@ export const HANG = 1.25;
 export const PAN_R = 0.5;
 
 export const panAt = (side: "left" | "right", beam: number): V3 => {
+  // The beam turns counter-clockwise by `beam`: its left end goes down, its right end up.
   const s = side === "left" ? -1 : 1;
-  return [PIVOT[0] + s * ARM * Math.cos(beam), PIVOT[1] - s * ARM * Math.sin(beam) - HANG, PIVOT[2]];
+  return [PIVOT[0] + s * ARM * Math.cos(beam), PIVOT[1] + s * ARM * Math.sin(beam) - HANG, PIVOT[2]];
 };
 
 const lathe = (pts: [number, number][], seg = 96) => new THREE.LatheGeometry(pts.map(([x, y]) => new THREE.Vector2(Math.max(0, x), y)), seg);
@@ -107,8 +108,8 @@ export const Balance = ({beam, m}: {beam: number; m: BalanceMats}) => {
   const left = panAt("left", beam);
   const right = panAt("right", beam);
   const ends: Record<"left" | "right", V3> = {
-    left: [PIVOT[0] - ARM * Math.cos(beam), PIVOT[1] + ARM * Math.sin(beam) - 0.02, PIVOT[2]],
-    right: [PIVOT[0] + ARM * Math.cos(beam), PIVOT[1] - ARM * Math.sin(beam) - 0.02, PIVOT[2]],
+    left: [PIVOT[0] - ARM * Math.cos(beam), PIVOT[1] - ARM * Math.sin(beam) - 0.02, PIVOT[2]],
+    right: [PIVOT[0] + ARM * Math.cos(beam), PIVOT[1] + ARM * Math.sin(beam) - 0.02, PIVOT[2]],
   };
   const pans = {left, right};
   return (

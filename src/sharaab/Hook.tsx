@@ -35,11 +35,11 @@ export const Hook = ({cues}: {cues: Cues}) => {
   const flip = t01(frame, flipAt, flipAt + 22);
   if (frame < closeAt) {
     const k = t01(frame, 0, closeAt, (t) => t);
-    s = {...base, cam: lerp3([-1.9, 1.5, 3.8], [-1.8, 1.53, 3.6], k), target: [-1.1, 1.42, 0], fov: 38};
+    s = {...base, cam: lerp3([-1.9, 1.5, 3.8], [-1.8, 1.53, 3.6], k), target: [-1.1, 1.2, 0], fov: 38};
   } else if (frame < cutBook) {
     // Close and low on the pan as the weight lands.
     const k = t01(frame, closeAt, cutBook, (t) => t);
-    s = {...base, cam: lerp3([-0.95, 2.75, 0.75], [-1.0, 2.6, 0.68], k), target: [-1.28, 1.25, -0.05], fov: 40, spot: {pos: [-1.0, 3.6, 0.9], target: [-1.25, 1.25, 0], power: 110, angle: 0.3}};
+    s = {...base, cam: lerp3([-0.95, 2.53, 0.75], [-1.0, 2.38, 0.68], k), target: [-1.28, 1.03, -0.05], fov: 40, spot: {pos: [-1.0, 3.4, 0.9], target: [-1.25, 1.05, 0], power: 110, angle: 0.3}};
   } else if (frame < line2) {
     // Straight down on the table: the Quran falls into the pool of light.
     const k = t01(frame, cutBook, line2, (t) => t);

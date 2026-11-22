@@ -7,6 +7,7 @@ import {Cues, LongProps} from "../long/scroll/types";
 import {Sound, SOUND_SECONDS} from "../timeline/sfx";
 import {FPS} from "../timeline/types";
 import {AyahPage, AyahPage591} from "./AyahPage";
+import {DocPage} from "./DocPage";
 import {Hook} from "./Hook";
 import {ACCENT, GROUND, INK, PAPER_INK, SANS, SERIF} from "./look";
 import {WorldA, WorldB} from "./World";
@@ -62,6 +63,51 @@ export const Sharaab = (props: LongProps) => {
     {from: followAt, to: total, cta: {type: "cta", mode: "follow", placement: "caption", tone: "dark", start: 0, end: 0} as const},
   ];
 
+  // The two real documents, full screen over the studio (DocPage): WHO's release from "World
+  // Health Organisation" to the iron weight; the Lancet record from "Ab science" to line 19.
+  const whoFrom = wordAt(9, 8) - 2;
+  const whoTo = wordAt(10, 7) - 4;
+  const lancetFrom = lineStart(17) + 4;
+  const lancetTo = lineStart(19) - LEAD;
+  const docs = [
+    {
+      from: whoFrom,
+      to: whoTo,
+      el: (
+        <DocPage
+          src="footage/sf-who-2024-06-25.png"
+          aspect={1350 / 1770}
+          shots={[
+            {at: 0, u: 0.5, v: 0.5, scale: 1},
+            {at: lineStart(10) - 2 - whoFrom, u: 0.31, v: 0.777, scale: 2.2},
+          ]}
+          marks={[{at: wordAt(10, 2) - whoFrom, end: wordAt(10, 6) + 4 - whoFrom, u0: 0.097, u1: 0.79, v: 0.777, h: 0.055}]}
+          credit="Established data · WHO news release, 25 June 2024"
+        />
+      ),
+    },
+    {
+      from: lancetFrom,
+      to: lancetTo,
+      el: (
+        <DocPage
+          src="footage/sf-lancet-gbd2020-pmc.png"
+          aspect={2010 / 2370}
+          shots={[
+            {at: 0, u: 0.5, v: 0.42, scale: 1},
+            {at: wordAt(18, 0) - 6 - lancetFrom, u: 0.17, v: 0.06, scale: 3},
+            {at: wordAt(18, 10) - 4 - lancetFrom, u: 0.7, v: 0.835, scale: 2.35},
+          ]}
+          marks={[
+            {at: wordAt(18, 7) - lancetFrom, end: wordAt(18, 7) + 12 - lancetFrom, u0: 0.02, u1: 0.6, v: 0.043, h: 0.03},
+            {at: wordAt(18, 10) + 8 - lancetFrom, end: wordAt(18, 13) + 6 - lancetFrom, u0: 0.485, u1: 0.862, v: 0.835, h: 0.036},
+          ]}
+          credit="Established science · GBD 2020 Alcohol Collaborators, The Lancet, 2022 · CC BY 4.0"
+        />
+      ),
+    },
+  ];
+
   // Sound (SOUND.md): a cause on screen for each, one frame after its picture. Nothing under
   // the Ayah pages (lines 3-4 and 13-14): the bed is out and no effect plays. 2 impacts and
   // 1 sub-hit in all. The payoff (line 23) lands in near silence.
@@ -85,7 +131,7 @@ export const Sharaab = (props: LongProps) => {
     {frame: w(8, 3) + 1, sound: "knock-3", volume: 0.65},
     {frame: w(8, 8) + 2, sound: "knock-1", volume: 0.5},
     {frame: lineStart(9) - 6, sound: "whoosh", volume: 0.2},
-    {frame: w(9, 8) + 2, sound: "paper-slide-2", volume: 0.45},
+    {frame: whoFrom + 2, sound: "paper-slide-2", volume: 0.45},
     {frame: w(10, 2), sound: "pen-circle-2", volume: 0.35},
     {frame: w(10, 7) + 5, sound: "impact", volume: 0.5},
     {frame: w(11, 4) - 2, sound: "page-turn-1", volume: 0.42},
@@ -93,11 +139,11 @@ export const Sharaab = (props: LongProps) => {
     // Lines 15-24
     {frame: lineStart(15) + 30, sound: "book-thud", volume: 0.35},
     {frame: lineStart(16) + 6, sound: "tick-soft-1", volume: 0.4},
-    {frame: lineStart(17) + 3, sound: "paper-slide-1", volume: 0.45},
+    {frame: lancetFrom + 2, sound: "paper-slide-1", volume: 0.45},
     {frame: w(18, 7), sound: "pen-circle-1", volume: 0.32},
-    {frame: w(18, 11), sound: "pen-circle-3", volume: 0.32},
+    {frame: w(18, 10) + 8, sound: "pen-circle-3", volume: 0.32},
     {frame: w(19, 4) + 1, sound: "tick-soft-2", volume: 0.4},
-    {frame: w(19, 13) + 1, sound: "knock-3", volume: 0.35},
+    {frame: w(19, 4) - 2, sound: "paper-slide-2", volume: 0.22},
     {frame: w(20, 1) + 1, sound: "tick-soft-3", volume: 0.4},
     {frame: w(20, 10) + 1, sound: "impact", volume: 0.4},
     {frame: lineStart(21) - 3, sound: "whoosh-3", volume: 0.12},
@@ -137,6 +183,11 @@ export const Sharaab = (props: LongProps) => {
         );
       })}
       <Grain vignette={sceneAt(frame)?.scene.paper ? 0 : 0.32} color={GROUND} />
+      {docs.map((d, i) => (
+        <Sequence key={`doc-${i}`} from={d.from} durationInFrames={Math.max(1, d.to - d.from)}>
+          {d.el}
+        </Sequence>
+      ))}
       {ctas.map((c, i) => (
         <Sequence key={`cta-${i}`} from={c.from} durationInFrames={Math.max(1, c.to - c.from)}>
           <Cta cta={c.cta} palette={{ground: GROUND, ink: INK, accent: ACCENT}} />
