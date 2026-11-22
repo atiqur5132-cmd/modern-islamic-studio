@@ -36,7 +36,11 @@ export type Sound =
   | "paper-tear-2"
   | "pen-circle-1"
   | "pen-circle-2"
-  | "pen-circle-3";
+  | "pen-circle-3"
+  | "knock-1"
+  | "knock-2"
+  | "knock-3"
+  | "book-thud";
 export type SoundCue = {frame: number; sound: Sound; volume: number};
 
 // Seconds of each file (scripts/make_sfx.py), so no sound is cut short.
@@ -70,6 +74,11 @@ export const SOUND_SECONDS: Record<Sound, number> = {
   "pen-circle-1": 0.23,
   "pen-circle-2": 0.72,
   "pen-circle-3": 0.71,
+  // The sharaab-fayda foley (projects/sharaab-fayda/make_sfx.py).
+  "knock-1": 0.22,
+  "knock-2": 0.22,
+  "knock-3": 0.22,
+  "book-thud": 0.45,
 };
 
 // A repeated sound rotates through its takes (QUALITY.md).

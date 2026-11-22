@@ -17,6 +17,8 @@ import {Long} from "./compositions/Long";
 import scrollLong from "../projects/scroll-kyun/long.json";
 import {LongProps} from "./long/scroll/types";
 import {Chaand} from "./chaand/Chaand";
+import {Sharaab} from "./sharaab/Sharaab";
+import sharaabReel from "../projects/sharaab-fayda/reel.json";
 import chaandReel from "../projects/chaand-nur/reel.json";
 import {EmiLong, EmiProps} from "./compositions/EmiLong";
 import emiLong from "../projects/en/finance-vo/long.json";
@@ -114,6 +116,14 @@ export const Root = () => (
       fps={FPS}
       width={1920}
       height={1080}
+    />
+    <Composition
+      id="Sharaab"
+      component={Sharaab}
+      defaultProps={sharaabReel as LongProps}
+      durationInFrames={1}
+      calculateMetadata={({props}) => ({durationInFrames: Math.round(props.durationSeconds * FPS)})}
+      {...SHORTS}
     />
     <Composition
       id="Chaand"

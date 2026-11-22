@@ -1,0 +1,20 @@
+Sharaab mein fayda? — sources (accessed 2026-11-22)
+
+Quran 2:219 (words 1-14), 5:91: text via scripts/fetch_ayah.py (api.quran.com, cross-checked with api.alquran.cloud); translation Sahih International.
+Tafsir Ibn Kathir on 2:219 (benefits listed): https://quran.com/2:219/tafsirs/en-tafsir-ibn-kathir
+WHO, 25 June 2024, alcohol and drug deaths report: https://www.who.int/news/item/25-06-2024-over-3-million-annual-deaths-due-to-alcohol-and-drug-use-majority-among-men
+WHO alcohol fact sheet: https://www.who.int/news-room/fact-sheets/detail/alcohol
+GBD 2020 Alcohol Collaborators, The Lancet, 14 July 2022: https://healthdata.org/research-article/population-level-risks-alcohol-consumption-amount-geography-age-sex-and-year
+
+Visual assets: see the 3D assets list below.
+
+3D assets (all CC0 1.0, Poly Haven, polyhaven.com/license; downloaded 2026-11-22 with the creator's approval; in public/sharaab/):
+- black_walnut_veneer_01 (2k diffuse/normal/rough) by Jenelle van Heerden: https://polyhaven.com/a/black_walnut_veneer_01
+- painted_plaster_wall (1k) by Amal Kumar: https://polyhaven.com/a/painted_plaster_wall
+- brown_leather (1k) by Rob Tuytel: https://polyhaven.com/a/brown_leather
+- brown_photostudio_02 HDRI (1k) by Sergej Majboroda: https://polyhaven.com/a/brown_photostudio_02
+- wine_bottles_01 (1k glTF; labels are Poly Haven's own fictional designs) by Rico Cilliers and Jurita Burger: https://polyhaven.com/a/wine_bottles_01
+- vintage_oil_lamp (1k glTF) by Monsta3D: https://polyhaven.com/a/vintage_oil_lamp
+Built in code (ours): the brass balance, weights, the Quran's cover art (debossed gold border and title), page block, studio layout.
+Library: postprocessing 6.39.6 (MIT), depth of field, bloom, tone mapping.
+Foley: knock-1/2/3, book-thud made with FFmpeg (projects/sharaab-fayda/make_sfx.py).

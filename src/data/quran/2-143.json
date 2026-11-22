@@ -1,0 +1,9 @@
+{
+  "key": "2:143",
+  "surahNameEnglish": "Al-Baqara",
+  "textUthmani": "وَكَذَٰلِكَ جَعَلْنَـٰكُمْ أُمَّةً وَسَطًا",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-21",
+  "excerptWords": "1-4"
+}

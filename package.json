@@ -13,6 +13,8 @@
     "@remotion/cli": "4.0.539",
     "@remotion/google-fonts": "4.0.539",
     "@remotion/three": "4.0.539",
+    "lucide-react": "0.468.0",
+    "postprocessing": "^6.39.6",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "remotion": "4.0.539",

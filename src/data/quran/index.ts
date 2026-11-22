@@ -24,10 +24,13 @@ import a16_69 from "./16-69.json";
 import a18_10 from "./18-10.json";
 import a18_13 from "./18-13.json";
 import a2_127 from "./2-127.json";
+import a2_143 from "./2-143.json";
 import a2_144 from "./2-144.json";
 import a2_152 from "./2-152.json";
 import a2_203 from "./2-203.json";
+import a2_219 from "./2-219.json";
 import a2_23 from "./2-23.json";
+import a2_255 from "./2-255.json";
 import a2_261 from "./2-261.json";
 import a2_264 from "./2-264.json";
 import a2_265 from "./2-265.json";
@@ -37,6 +40,8 @@ import a23_12 from "./23-12.json";
 import a23_13 from "./23-13.json";
 import a23_14 from "./23-14.json";
 import a24_35 from "./24-35.json";
+import a24_39 from "./24-39.json";
+import a24_40 from "./24-40.json";
 import a25_53 from "./25-53.json";
 import a25_59 from "./25-59.json";
 import a25_61 from "./25-61.json";
@@ -51,17 +56,21 @@ import a30_4 from "./30-4.json";
 import a31_10 from "./31-10.json";
 import a32_14 from "./32-14.json";
 import a32_4 from "./32-4.json";
+import a33_37 from "./33-37.json";
 import a33_46 from "./33-46.json";
 import a35_12 from "./35-12.json";
 import a36_1 from "./36-1.json";
 import a39_5 from "./39-5.json";
 import a39_6 from "./39-6.json";
+import a4_43 from "./4-43.json";
 import a41_10 from "./41-10.json";
 import a41_11 from "./41-11.json";
 import a41_12 from "./41-12.json";
 import a41_9 from "./41-9.json";
 import a43_83 from "./43-83.json";
 import a49_14 from "./49-14.json";
+import a5_90 from "./5-90.json";
+import a5_91 from "./5-91.json";
 import a50_38 from "./50-38.json";
 import a54_1 from "./54-1.json";
 import a54_2 from "./54-2.json";
@@ -128,10 +137,13 @@ export const AYAHS = {
   [a18_10.key]: a18_10,
   [a18_13.key]: a18_13,
   [a2_127.key]: a2_127,
+  [a2_143.key]: a2_143,
   [a2_144.key]: a2_144,
   [a2_152.key]: a2_152,
   [a2_203.key]: a2_203,
+  [a2_219.key]: a2_219,
   [a2_23.key]: a2_23,
+  [a2_255.key]: a2_255,
   [a2_261.key]: a2_261,
   [a2_264.key]: a2_264,
   [a2_265.key]: a2_265,
@@ -141,6 +153,8 @@ export const AYAHS = {
   [a23_13.key]: a23_13,
   [a23_14.key]: a23_14,
   [a24_35.key]: a24_35,
+  [a24_39.key]: a24_39,
+  [a24_40.key]: a24_40,
   [a25_53.key]: a25_53,
   [a25_59.key]: a25_59,
   [a25_61.key]: a25_61,
@@ -155,17 +169,21 @@ export const AYAHS = {
   [a31_10.key]: a31_10,
   [a32_14.key]: a32_14,
   [a32_4.key]: a32_4,
+  [a33_37.key]: a33_37,
   [a33_46.key]: a33_46,
   [a35_12.key]: a35_12,
   [a36_1.key]: a36_1,
   [a39_5.key]: a39_5,
   [a39_6.key]: a39_6,
+  [a4_43.key]: a4_43,
   [a41_10.key]: a41_10,
   [a41_11.key]: a41_11,
   [a41_12.key]: a41_12,
   [a41_9.key]: a41_9,
   [a43_83.key]: a43_83,
   [a49_14.key]: a49_14,
+  [a5_90.key]: a5_90,
+  [a5_91.key]: a5_91,
   [a50_38.key]: a50_38,
   [a54_1.key]: a54_1,
   [a54_2.key]: a54_2,

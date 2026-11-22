@@ -1,0 +1,4906 @@
+{
+ "audio": "sharaab-fayda.voice.wav",
+ "durationSeconds": 84.111,
+ "lines": [
+  {
+   "n": 1,
+   "start": 0.0,
+   "end": 2.38
+  },
+  {
+   "n": 2,
+   "start": 2.38,
+   "end": 5.64
+  },
+  {
+   "n": 3,
+   "start": 5.64,
+   "end": 9.24
+  },
+  {
+   "n": 4,
+   "start": 9.24,
+   "end": 13.12
+  },
+  {
+   "n": 5,
+   "start": 13.12,
+   "end": 16.9
+  },
+  {
+   "n": 6,
+   "start": 16.9,
+   "end": 18.74
+  },
+  {
+   "n": 7,
+   "start": 18.74,
+   "end": 22.56
+  },
+  {
+   "n": 8,
+   "start": 22.56,
+   "end": 26.3
+  },
+  {
+   "n": 9,
+   "start": 26.3,
+   "end": 30.78
+  },
+  {
+   "n": 10,
+   "start": 30.78,
+   "end": 34.78
+  },
+  {
+   "n": 11,
+   "start": 34.78,
+   "end": 36.84
+  },
+  {
+   "n": 12,
+   "start": 36.84,
+   "end": 40.62
+  },
+  {
+   "n": 13,
+   "start": 40.62,
+   "end": 44.24
+  },
+  {
+   "n": 14,
+   "start": 44.24,
+   "end": 46.88
+  },
+  {
+   "n": 15,
+   "start": 46.88,
+   "end": 50.24
+  },
+  {
+   "n": 16,
+   "start": 50.24,
+   "end": 53.4
+  },
+  {
+   "n": 17,
+   "start": 53.4,
+   "end": 54.82
+  },
+  {
+   "n": 18,
+   "start": 54.82,
+   "end": 58.82
+  },
+  {
+   "n": 19,
+   "start": 58.82,
+   "end": 64.84
+  },
+  {
+   "n": 20,
+   "start": 64.84,
+   "end": 69.06
+  },
+  {
+   "n": 21,
+   "start": 69.06,
+   "end": 72.86
+  },
+  {
+   "n": 22,
+   "start": 72.86,
+   "end": 75.98
+  },
+  {
+   "n": 23,
+   "start": 75.98,
+   "end": 78.24
+  },
+  {
+   "n": 24,
+   "start": 78.24,
+   "end": 81.64
+  }
+ ],
+ "words": [
+  {
+   "text": "Sharaab",
+   "start": 0.0,
+   "end": 0.54,
+   "emphasis": false,
+   "line": 1,
+   "index": 0
+  },
+  {
+   "text": "mein",
+   "start": 0.54,
+   "end": 0.68,
+   "emphasis": false,
+   "line": 1,
+   "index": 1
+  },
+  {
+   "text": "fayda",
+   "start": 0.68,
+   "end": 1.08,
+   "emphasis": true,
+   "line": 1,
+   "index": 2
+  },
+  {
+   "text": "hai.",
+   "start": 1.08,
+   "end": 1.22,
+   "emphasis": false,
+   "line": 1,
+   "index": 3
+  },
+  {
+   "text": "Yeh",
+   "start": 1.3,
+   "end": 1.36,
+   "emphasis": false,
+   "line": 1,
+   "index": 4
+  },
+  {
+   "text": "Quran",
+   "start": 1.36,
+   "end": 1.66,
+   "emphasis": false,
+   "line": 1,
+   "index": 5
+  },
+  {
+   "text": "kehta",
+   "start": 1.66,
+   "end": 2.08,
+   "emphasis": false,
+   "line": 1,
+   "index": 6
+  },
+  {
+   "text": "hai.",
+   "start": 2.08,
+   "end": 2.38,
+   "emphasis": false,
+   "line": 1,
+   "index": 7
+  },
+  {
+   "text": "Haan,",
+   "start": 2.38,
+   "end": 2.58,
+   "emphasis": false,
+   "line": 2,
+   "index": 0
+  },
+  {
+   "text": "sahi",
+   "start": 2.58,
+   "end": 2.86,
+   "emphasis": false,
+   "line": 2,
+   "index": 1
+  },
+  {
+   "text": "suna",
+   "start": 2.86,
+   "end": 3.08,
+   "emphasis": false,
+   "line": 2,
+   "index": 2
+  },
+  {
+   "text": "tumne.",
+   "start": 3.08,
+   "end": 3.4,
+   "emphasis": false,
+   "line": 2,
+   "index": 3
+  },
+  {
+   "text": "Quran",
+   "start": 3.46,
+   "end": 3.82,
+   "emphasis": false,
+   "line": 2,
+   "index": 4
+  },
+  {
+   "text": "ki",
+   "start": 3.82,
+   "end": 3.92,
+   "emphasis": false,
+   "line": 2,
+   "index": 5
+  },
+  {
+   "text": "Surah",
+   "start": 3.92,
+   "end": 4.22,
+   "emphasis": false,
+   "line": 2,
+   "index": 6
+  },
+  {
+   "text": "Baqarah,",
+   "start": 4.22,
+   "end": 4.5,
+   "emphasis": false,
+   "line": 2,
+   "index": 7
+  },
+  {
+   "text": "verse",
+   "start": 4.66,
+   "end": 5.06,
+   "emphasis": false,
+   "line": 2,
+   "index": 8
+  },
+  {
+   "text": "219.",
+   "start": 5.18,
+   "end": 5.64,
+   "emphasis": false,
+   "line": 2,
+   "index": 9
+  },
+  {
+   "text": "\"Inmein",
+   "start": 5.64,
+   "end": 6.22,
+   "emphasis": false,
+   "line": 3,
+   "index": 0
+  },
+  {
+   "text": "badi",
+   "start": 6.22,
+   "end": 6.54,
+   "emphasis": false,
+   "line": 3,
+   "index": 1
+  },
+  {
+   "text": "buraai",
+   "start": 6.54,
+   "end": 6.82,
+   "emphasis": false,
+   "line": 3,
+   "index": 2
+  },
+  {
+   "text": "hai,",
+   "start": 6.82,
+   "end": 7.3,
+   "emphasis": false,
+   "line": 3,
+   "index": 3
+  },
+  {
+   "text": "aur",
+   "start": 7.3,
+   "end": 7.4,
+   "emphasis": false,
+   "line": 3,
+   "index": 4
+  },
+  {
+   "text": "logon",
+   "start": 7.4,
+   "end": 7.82,
+   "emphasis": false,
+   "line": 3,
+   "index": 5
+  },
+  {
+   "text": "ke",
+   "start": 7.82,
+   "end": 7.9,
+   "emphasis": false,
+   "line": 3,
+   "index": 6
+  },
+  {
+   "text": "liye",
+   "start": 7.9,
+   "end": 8.04,
+   "emphasis": false,
+   "line": 3,
+   "index": 7
+  },
+  {
+   "text": "kuch",
+   "start": 8.04,
+   "end": 8.22,
+   "emphasis": false,
+   "line": 3,
+   "index": 8
+  },
+  {
+   "text": "fayde",
+   "start": 8.22,
+   "end": 8.64,
+   "emphasis": true,
+   "line": 3,
+   "index": 9
+  },
+  {
+   "text": "bhi",
+   "start": 8.64,
+   "end": 8.74,
+   "emphasis": false,
+   "line": 3,
+   "index": 10
+  },
+  {
+   "text": "hain.\"",
+   "start": 8.74,
+   "end": 9.24,
+   "emphasis": false,
+   "line": 3,
+   "index": 11
+  },
+  {
+   "text": "Aur",
+   "start": 9.24,
+   "end": 9.4,
+   "emphasis": false,
+   "line": 4,
+   "index": 0
+  },
+  {
+   "text": "agli",
+   "start": 9.4,
+   "end": 9.66,
+   "emphasis": false,
+   "line": 4,
+   "index": 1
+  },
+  {
+   "text": "hi",
+   "start": 9.66,
+   "end": 9.78,
+   "emphasis": false,
+   "line": 4,
+   "index": 2
+  },
+  {
+   "text": "line",
+   "start": 9.78,
+   "end": 10.02,
+   "emphasis": false,
+   "line": 4,
+   "index": 3
+  },
+  {
+   "text": "mein:",
+   "start": 10.02,
+   "end": 10.54,
+   "emphasis": false,
+   "line": 4,
+   "index": 4
+  },
+  {
+   "text": "\"Lekin",
+   "start": 10.56,
+   "end": 10.96,
+   "emphasis": false,
+   "line": 4,
+   "index": 5
+  },
+  {
+   "text": "inki",
+   "start": 10.96,
+   "end": 11.26,
+   "emphasis": false,
+   "line": 4,
+   "index": 6
+  },
+  {
+   "text": "buraai,",
+   "start": 11.26,
+   "end": 11.62,
+   "emphasis": false,
+   "line": 4,
+   "index": 7
+  },
+  {
+   "text": "inke",
+   "start": 11.62,
+   "end": 11.96,
+   "emphasis": false,
+   "line": 4,
+   "index": 8
+  },
+  {
+   "text": "fayde",
+   "start": 11.96,
+   "end": 12.34,
+   "emphasis": false,
+   "line": 4,
+   "index": 9
+  },
+  {
+   "text": "se",
+   "start": 12.34,
+   "end": 12.46,
+   "emphasis": false,
+   "line": 4,
+   "index": 10
+  },
+  {
+   "text": "badi",
+   "start": 12.46,
+   "end": 12.72,
+   "emphasis": true,
+   "line": 4,
+   "index": 11
+  },
+  {
+   "text": "hai.\"",
+   "start": 12.72,
+   "end": 13.12,
+   "emphasis": false,
+   "line": 4,
+   "index": 12
+  },
+  {
+   "text": "Toh",
+   "start": 13.12,
+   "end": 13.2,
+   "emphasis": false,
+   "line": 5,
+   "index": 0
+  },
+  {
+   "text": "sawaal",
+   "start": 13.2,
+   "end": 13.62,
+   "emphasis": false,
+   "line": 5,
+   "index": 1
+  },
+  {
+   "text": "yeh",
+   "start": 13.62,
+   "end": 13.72,
+   "emphasis": false,
+   "line": 5,
+   "index": 2
+  },
+  {
+   "text": "banta",
+   "start": 13.72,
+   "end": 14.08,
+   "emphasis": false,
+   "line": 5,
+   "index": 3
+  },
+  {
+   "text": "hai",
+   "start": 14.08,
+   "end": 14.2,
+   "emphasis": false,
+   "line": 5,
+   "index": 4
+  },
+  {
+   "text": "ki",
+   "start": 14.2,
+   "end": 14.32,
+   "emphasis": false,
+   "line": 5,
+   "index": 5
+  },
+  {
+   "text": "jab",
+   "start": 14.32,
+   "end": 14.48,
+   "emphasis": false,
+   "line": 5,
+   "index": 6
+  },
+  {
+   "text": "fayda",
+   "start": 14.48,
+   "end": 14.92,
+   "emphasis": false,
+   "line": 5,
+   "index": 7
+  },
+  {
+   "text": "maan",
+   "start": 14.92,
+   "end": 15.16,
+   "emphasis": false,
+   "line": 5,
+   "index": 8
+  },
+  {
+   "text": "liya,",
+   "start": 15.16,
+   "end": 15.72,
+   "emphasis": false,
+   "line": 5,
+   "index": 9
+  },
+  {
+   "text": "toh",
+   "start": 15.72,
+   "end": 15.86,
+   "emphasis": false,
+   "line": 5,
+   "index": 10
+  },
+  {
+   "text": "phir",
+   "start": 15.86,
+   "end": 16.06,
+   "emphasis": false,
+   "line": 5,
+   "index": 11
+  },
+  {
+   "text": "mana",
+   "start": 16.06,
+   "end": 16.38,
+   "emphasis": false,
+   "line": 5,
+   "index": 12
+  },
+  {
+   "text": "kyun",
+   "start": 16.38,
+   "end": 16.58,
+   "emphasis": false,
+   "line": 5,
+   "index": 13
+  },
+  {
+   "text": "kiya.",
+   "start": 16.58,
+   "end": 16.9,
+   "emphasis": false,
+   "line": 5,
+   "index": 14
+  },
+  {
+   "text": "Iske",
+   "start": 16.9,
+   "end": 17.36,
+   "emphasis": false,
+   "line": 6,
+   "index": 0
+  },
+  {
+   "text": "liye",
+   "start": 17.36,
+   "end": 17.46,
+   "emphasis": false,
+   "line": 6,
+   "index": 1
+  },
+  {
+   "text": "ek",
+   "start": 17.46,
+   "end": 17.68,
+   "emphasis": false,
+   "line": 6,
+   "index": 2
+  },
+  {
+   "text": "tarazu",
+   "start": 17.68,
+   "end": 18.08,
+   "emphasis": false,
+   "line": 6,
+   "index": 3
+  },
+  {
+   "text": "imagine",
+   "start": 18.08,
+   "end": 18.46,
+   "emphasis": false,
+   "line": 6,
+   "index": 4
+  },
+  {
+   "text": "karo.",
+   "start": 18.46,
+   "end": 18.74,
+   "emphasis": false,
+   "line": 6,
+   "index": 5
+  },
+  {
+   "text": "Ek",
+   "start": 18.74,
+   "end": 19.04,
+   "emphasis": false,
+   "line": 7,
+   "index": 0
+  },
+  {
+   "text": "taraf",
+   "start": 19.04,
+   "end": 19.26,
+   "emphasis": false,
+   "line": 7,
+   "index": 1
+  },
+  {
+   "text": "woh",
+   "start": 19.26,
+   "end": 19.44,
+   "emphasis": false,
+   "line": 7,
+   "index": 2
+  },
+  {
+   "text": "fayde",
+   "start": 19.44,
+   "end": 19.78,
+   "emphasis": false,
+   "line": 7,
+   "index": 3
+  },
+  {
+   "text": "rakho,",
+   "start": 19.78,
+   "end": 20.12,
+   "emphasis": false,
+   "line": 7,
+   "index": 4
+  },
+  {
+   "text": "jo",
+   "start": 20.12,
+   "end": 20.34,
+   "emphasis": false,
+   "line": 7,
+   "index": 5
+  },
+  {
+   "text": "purane",
+   "start": 20.34,
+   "end": 20.68,
+   "emphasis": false,
+   "line": 7,
+   "index": 6
+  },
+  {
+   "text": "Islamic",
+   "start": 20.68,
+   "end": 21.18,
+   "emphasis": false,
+   "line": 7,
+   "index": 7
+  },
+  {
+   "text": "scholars",
+   "start": 21.18,
+   "end": 21.68,
+   "emphasis": false,
+   "line": 7,
+   "index": 8
+  },
+  {
+   "text": "ne",
+   "start": 21.68,
+   "end": 21.72,
+   "emphasis": false,
+   "line": 7,
+   "index": 9
+  },
+  {
+   "text": "khud",
+   "start": 21.72,
+   "end": 21.94,
+   "emphasis": false,
+   "line": 7,
+   "index": 10
+  },
+  {
+   "text": "likhe",
+   "start": 21.94,
+   "end": 22.28,
+   "emphasis": false,
+   "line": 7,
+   "index": 11
+  },
+  {
+   "text": "hain.",
+   "start": 22.28,
+   "end": 22.56,
+   "emphasis": false,
+   "line": 7,
+   "index": 12
+  },
+  {
+   "text": "Thodi",
+   "start": 22.56,
+   "end": 22.8,
+   "emphasis": false,
+   "line": 8,
+   "index": 0
+  },
+  {
+   "text": "khushi,",
+   "start": 22.8,
+   "end": 23.52,
+   "emphasis": false,
+   "line": 8,
+   "index": 1
+  },
+  {
+   "text": "thoda",
+   "start": 23.66,
+   "end": 23.96,
+   "emphasis": false,
+   "line": 8,
+   "index": 2
+  },
+  {
+   "text": "maza,",
+   "start": 23.96,
+   "end": 24.44,
+   "emphasis": false,
+   "line": 8,
+   "index": 3
+  },
+  {
+   "text": "aur",
+   "start": 24.56,
+   "end": 24.7,
+   "emphasis": false,
+   "line": 8,
+   "index": 4
+  },
+  {
+   "text": "bechne",
+   "start": 24.7,
+   "end": 25.18,
+   "emphasis": false,
+   "line": 8,
+   "index": 5
+  },
+  {
+   "text": "walon",
+   "start": 25.18,
+   "end": 25.48,
+   "emphasis": false,
+   "line": 8,
+   "index": 6
+  },
+  {
+   "text": "ka",
+   "start": 25.48,
+   "end": 25.52,
+   "emphasis": false,
+   "line": 8,
+   "index": 7
+  },
+  {
+   "text": "profit.",
+   "start": 25.52,
+   "end": 26.3,
+   "emphasis": true,
+   "line": 8,
+   "index": 8
+  },
+  {
+   "text": "Ab",
+   "start": 26.3,
+   "end": 26.44,
+   "emphasis": false,
+   "line": 9,
+   "index": 0
+  },
+  {
+   "text": "doosri",
+   "start": 26.44,
+   "end": 26.86,
+   "emphasis": false,
+   "line": 9,
+   "index": 1
+  },
+  {
+   "text": "taraf",
+   "start": 26.86,
+   "end": 27.1,
+   "emphasis": false,
+   "line": 9,
+   "index": 2
+  },
+  {
+   "text": "ka",
+   "start": 27.1,
+   "end": 27.24,
+   "emphasis": false,
+   "line": 9,
+   "index": 3
+  },
+  {
+   "text": "hisaab",
+   "start": 27.24,
+   "end": 27.48,
+   "emphasis": false,
+   "line": 9,
+   "index": 4
+  },
+  {
+   "text": "dekho,",
+   "start": 27.48,
+   "end": 28.08,
+   "emphasis": false,
+   "line": 9,
+   "index": 5
+  },
+  {
+   "text": "jo",
+   "start": 28.14,
+   "end": 28.3,
+   "emphasis": false,
+   "line": 9,
+   "index": 6
+  },
+  {
+   "text": "aaj",
+   "start": 28.3,
+   "end": 28.62,
+   "emphasis": false,
+   "line": 9,
+   "index": 7
+  },
+  {
+   "text": "World",
+   "start": 28.62,
+   "end": 29.02,
+   "emphasis": false,
+   "line": 9,
+   "index": 8
+  },
+  {
+   "text": "Health",
+   "start": 29.02,
+   "end": 29.4,
+   "emphasis": false,
+   "line": 9,
+   "index": 9
+  },
+  {
+   "text": "Organisation",
+   "start": 29.4,
+   "end": 30.08,
+   "emphasis": false,
+   "line": 9,
+   "index": 10
+  },
+  {
+   "text": "deta",
+   "start": 30.08,
+   "end": 30.42,
+   "emphasis": false,
+   "line": 9,
+   "index": 11
+  },
+  {
+   "text": "hai.",
+   "start": 30.42,
+   "end": 30.78,
+   "emphasis": false,
+   "line": 9,
+   "index": 12
+  },
+  {
+   "text": "Duniya",
+   "start": 30.78,
+   "end": 31.16,
+   "emphasis": false,
+   "line": 10,
+   "index": 0
+  },
+  {
+   "text": "mein",
+   "start": 31.16,
+   "end": 31.24,
+   "emphasis": false,
+   "line": 10,
+   "index": 1
+  },
+  {
+   "text": "har",
+   "start": 31.24,
+   "end": 31.44,
+   "emphasis": false,
+   "line": 10,
+   "index": 2
+  },
+  {
+   "text": "saal",
+   "start": 31.44,
+   "end": 31.7,
+   "emphasis": false,
+   "line": 10,
+   "index": 3
+  },
+  {
+   "text": "lagbhag",
+   "start": 31.7,
+   "end": 32.06,
+   "emphasis": false,
+   "line": 10,
+   "index": 4
+  },
+  {
+   "text": "26",
+   "start": 32.06,
+   "end": 32.42,
+   "emphasis": true,
+   "line": 10,
+   "index": 5
+  },
+  {
+   "text": "lakh",
+   "start": 32.42,
+   "end": 32.72,
+   "emphasis": true,
+   "line": 10,
+   "index": 6
+  },
+  {
+   "text": "log",
+   "start": 32.72,
+   "end": 32.98,
+   "emphasis": false,
+   "line": 10,
+   "index": 7
+  },
+  {
+   "text": "sirf",
+   "start": 32.98,
+   "end": 33.22,
+   "emphasis": false,
+   "line": 10,
+   "index": 8
+  },
+  {
+   "text": "sharaab",
+   "start": 33.22,
+   "end": 33.54,
+   "emphasis": false,
+   "line": 10,
+   "index": 9
+  },
+  {
+   "text": "ki",
+   "start": 33.54,
+   "end": 33.66,
+   "emphasis": false,
+   "line": 10,
+   "index": 10
+  },
+  {
+   "text": "wajah",
+   "start": 33.66,
+   "end": 33.86,
+   "emphasis": false,
+   "line": 10,
+   "index": 11
+  },
+  {
+   "text": "se",
+   "start": 33.86,
+   "end": 34.0,
+   "emphasis": false,
+   "line": 10,
+   "index": 12
+  },
+  {
+   "text": "mar",
+   "start": 34.0,
+   "end": 34.18,
+   "emphasis": false,
+   "line": 10,
+   "index": 13
+  },
+  {
+   "text": "jaate",
+   "start": 34.18,
+   "end": 34.54,
+   "emphasis": false,
+   "line": 10,
+   "index": 14
+  },
+  {
+   "text": "hain.",
+   "start": 34.54,
+   "end": 34.78,
+   "emphasis": false,
+   "line": 10,
+   "index": 15
+  },
+  {
+   "text": "Yaani",
+   "start": 34.78,
+   "end": 35.0,
+   "emphasis": false,
+   "line": 11,
+   "index": 0
+  },
+  {
+   "text": "har",
+   "start": 35.0,
+   "end": 35.26,
+   "emphasis": false,
+   "line": 11,
+   "index": 1
+  },
+  {
+   "text": "roz",
+   "start": 35.26,
+   "end": 35.48,
+   "emphasis": false,
+   "line": 11,
+   "index": 2
+  },
+  {
+   "text": "lagbhag",
+   "start": 35.48,
+   "end": 35.88,
+   "emphasis": false,
+   "line": 11,
+   "index": 3
+  },
+  {
+   "text": "7",
+   "start": 35.88,
+   "end": 36.46,
+   "emphasis": true,
+   "line": 11,
+   "index": 4
+  },
+  {
+   "text": "hazaar",
+   "start": 36.46,
+   "end": 36.46,
+   "emphasis": true,
+   "line": 11,
+   "index": 5
+  },
+  {
+   "text": "log.",
+   "start": 36.46,
+   "end": 36.84,
+   "emphasis": false,
+   "line": 11,
+   "index": 6
+  },
+  {
+   "text": "Lekin",
+   "start": 36.84,
+   "end": 37.18,
+   "emphasis": false,
+   "line": 12,
+   "index": 0
+  },
+  {
+   "text": "dhyaan",
+   "start": 37.18,
+   "end": 37.48,
+   "emphasis": false,
+   "line": 12,
+   "index": 1
+  },
+  {
+   "text": "do,",
+   "start": 37.48,
+   "end": 37.78,
+   "emphasis": false,
+   "line": 12,
+   "index": 2
+  },
+  {
+   "text": "Quran",
+   "start": 37.88,
+   "end": 38.14,
+   "emphasis": false,
+   "line": 12,
+   "index": 3
+  },
+  {
+   "text": "ne",
+   "start": 38.14,
+   "end": 38.3,
+   "emphasis": false,
+   "line": 12,
+   "index": 4
+  },
+  {
+   "text": "mana",
+   "start": 38.3,
+   "end": 38.56,
+   "emphasis": false,
+   "line": 12,
+   "index": 5
+  },
+  {
+   "text": "karte",
+   "start": 38.56,
+   "end": 38.84,
+   "emphasis": false,
+   "line": 12,
+   "index": 6
+  },
+  {
+   "text": "waqt",
+   "start": 38.84,
+   "end": 39.0,
+   "emphasis": false,
+   "line": 12,
+   "index": 7
+  },
+  {
+   "text": "health",
+   "start": 39.0,
+   "end": 39.32,
+   "emphasis": false,
+   "line": 12,
+   "index": 8
+  },
+  {
+   "text": "ki",
+   "start": 39.32,
+   "end": 39.46,
+   "emphasis": false,
+   "line": 12,
+   "index": 9
+  },
+  {
+   "text": "baat",
+   "start": 39.46,
+   "end": 39.76,
+   "emphasis": false,
+   "line": 12,
+   "index": 10
+  },
+  {
+   "text": "ki",
+   "start": 39.76,
+   "end": 40.1,
+   "emphasis": false,
+   "line": 12,
+   "index": 11
+  },
+  {
+   "text": "hi",
+   "start": 40.1,
+   "end": 40.18,
+   "emphasis": false,
+   "line": 12,
+   "index": 12
+  },
+  {
+   "text": "nahi.",
+   "start": 40.18,
+   "end": 40.62,
+   "emphasis": false,
+   "line": 12,
+   "index": 13
+  },
+  {
+   "text": "Usne",
+   "start": 40.62,
+   "end": 40.88,
+   "emphasis": false,
+   "line": 13,
+   "index": 0
+  },
+  {
+   "text": "kaha,",
+   "start": 40.88,
+   "end": 41.32,
+   "emphasis": false,
+   "line": 13,
+   "index": 1
+  },
+  {
+   "text": "isse",
+   "start": 41.4,
+   "end": 41.66,
+   "emphasis": false,
+   "line": 13,
+   "index": 2
+  },
+  {
+   "text": "logon",
+   "start": 41.66,
+   "end": 42.1,
+   "emphasis": false,
+   "line": 13,
+   "index": 3
+  },
+  {
+   "text": "ke",
+   "start": 42.1,
+   "end": 42.18,
+   "emphasis": false,
+   "line": 13,
+   "index": 4
+  },
+  {
+   "text": "beech",
+   "start": 42.18,
+   "end": 42.54,
+   "emphasis": false,
+   "line": 13,
+   "index": 5
+  },
+  {
+   "text": "dushmani",
+   "start": 42.54,
+   "end": 43.08,
+   "emphasis": true,
+   "line": 13,
+   "index": 6
+  },
+  {
+   "text": "aur",
+   "start": 43.08,
+   "end": 43.24,
+   "emphasis": false,
+   "line": 13,
+   "index": 7
+  },
+  {
+   "text": "nafrat",
+   "start": 43.24,
+   "end": 43.6,
+   "emphasis": false,
+   "line": 13,
+   "index": 8
+  },
+  {
+   "text": "badhti",
+   "start": 43.6,
+   "end": 43.96,
+   "emphasis": false,
+   "line": 13,
+   "index": 9
+  },
+  {
+   "text": "hai.",
+   "start": 43.96,
+   "end": 44.24,
+   "emphasis": false,
+   "line": 13,
+   "index": 10
+  },
+  {
+   "text": "Aur",
+   "start": 44.24,
+   "end": 44.4,
+   "emphasis": false,
+   "line": 14,
+   "index": 0
+  },
+  {
+   "text": "insaan",
+   "start": 44.4,
+   "end": 44.74,
+   "emphasis": false,
+   "line": 14,
+   "index": 1
+  },
+  {
+   "text": "Allah",
+   "start": 44.74,
+   "end": 45.12,
+   "emphasis": false,
+   "line": 14,
+   "index": 2
+  },
+  {
+   "text": "ko,",
+   "start": 45.12,
+   "end": 45.48,
+   "emphasis": false,
+   "line": 14,
+   "index": 3
+  },
+  {
+   "text": "namaz",
+   "start": 45.48,
+   "end": 45.9,
+   "emphasis": false,
+   "line": 14,
+   "index": 4
+  },
+  {
+   "text": "ko",
+   "start": 45.9,
+   "end": 46.08,
+   "emphasis": false,
+   "line": 14,
+   "index": 5
+  },
+  {
+   "text": "bhool",
+   "start": 46.08,
+   "end": 46.32,
+   "emphasis": false,
+   "line": 14,
+   "index": 6
+  },
+  {
+   "text": "jaata",
+   "start": 46.32,
+   "end": 46.72,
+   "emphasis": false,
+   "line": 14,
+   "index": 7
+  },
+  {
+   "text": "hai.",
+   "start": 46.72,
+   "end": 46.88,
+   "emphasis": false,
+   "line": 14,
+   "index": 8
+  },
+  {
+   "text": "Ek",
+   "start": 46.88,
+   "end": 47.08,
+   "emphasis": false,
+   "line": 15,
+   "index": 0
+  },
+  {
+   "text": "Muslim",
+   "start": 47.08,
+   "end": 47.46,
+   "emphasis": false,
+   "line": 15,
+   "index": 1
+  },
+  {
+   "text": "ke",
+   "start": 47.46,
+   "end": 47.62,
+   "emphasis": false,
+   "line": 15,
+   "index": 2
+  },
+  {
+   "text": "liye",
+   "start": 47.62,
+   "end": 47.82,
+   "emphasis": false,
+   "line": 15,
+   "index": 3
+  },
+  {
+   "text": "toh",
+   "start": 47.82,
+   "end": 47.94,
+   "emphasis": false,
+   "line": 15,
+   "index": 4
+  },
+  {
+   "text": "yeh",
+   "start": 47.94,
+   "end": 48.04,
+   "emphasis": false,
+   "line": 15,
+   "index": 5
+  },
+  {
+   "text": "Allah",
+   "start": 48.04,
+   "end": 48.36,
+   "emphasis": false,
+   "line": 15,
+   "index": 6
+  },
+  {
+   "text": "ka",
+   "start": 48.36,
+   "end": 48.5,
+   "emphasis": false,
+   "line": 15,
+   "index": 7
+  },
+  {
+   "text": "hukm",
+   "start": 48.5,
+   "end": 48.74,
+   "emphasis": false,
+   "line": 15,
+   "index": 8
+  },
+  {
+   "text": "hai,",
+   "start": 48.74,
+   "end": 48.96,
+   "emphasis": false,
+   "line": 15,
+   "index": 9
+  },
+  {
+   "text": "data",
+   "start": 49.16,
+   "end": 49.48,
+   "emphasis": false,
+   "line": 15,
+   "index": 10
+  },
+  {
+   "text": "ho",
+   "start": 49.48,
+   "end": 49.74,
+   "emphasis": false,
+   "line": 15,
+   "index": 11
+  },
+  {
+   "text": "ya",
+   "start": 49.74,
+   "end": 49.82,
+   "emphasis": false,
+   "line": 15,
+   "index": 12
+  },
+  {
+   "text": "na",
+   "start": 49.82,
+   "end": 49.82,
+   "emphasis": false,
+   "line": 15,
+   "index": 13
+  },
+  {
+   "text": "ho.",
+   "start": 49.82,
+   "end": 50.24,
+   "emphasis": false,
+   "line": 15,
+   "index": 14
+  },
+  {
+   "text": "But",
+   "start": 50.24,
+   "end": 50.36,
+   "emphasis": false,
+   "line": 16,
+   "index": 0
+  },
+  {
+   "text": "data",
+   "start": 50.36,
+   "end": 50.7,
+   "emphasis": false,
+   "line": 16,
+   "index": 1
+  },
+  {
+   "text": "dekh",
+   "start": 50.7,
+   "end": 50.92,
+   "emphasis": false,
+   "line": 16,
+   "index": 2
+  },
+  {
+   "text": "ke",
+   "start": 50.92,
+   "end": 51.06,
+   "emphasis": false,
+   "line": 16,
+   "index": 3
+  },
+  {
+   "text": "koi",
+   "start": 51.06,
+   "end": 51.32,
+   "emphasis": false,
+   "line": 16,
+   "index": 4
+  },
+  {
+   "text": "bhi",
+   "start": 51.32,
+   "end": 51.44,
+   "emphasis": false,
+   "line": 16,
+   "index": 5
+  },
+  {
+   "text": "samajh",
+   "start": 51.44,
+   "end": 51.64,
+   "emphasis": false,
+   "line": 16,
+   "index": 6
+  },
+  {
+   "text": "jayega",
+   "start": 51.64,
+   "end": 52.0,
+   "emphasis": false,
+   "line": 16,
+   "index": 7
+  },
+  {
+   "text": "ki",
+   "start": 52.0,
+   "end": 52.12,
+   "emphasis": false,
+   "line": 16,
+   "index": 8
+  },
+  {
+   "text": "iske",
+   "start": 52.12,
+   "end": 52.4,
+   "emphasis": false,
+   "line": 16,
+   "index": 9
+  },
+  {
+   "text": "peeche",
+   "start": 52.4,
+   "end": 52.68,
+   "emphasis": false,
+   "line": 16,
+   "index": 10
+  },
+  {
+   "text": "logic",
+   "start": 52.68,
+   "end": 53.04,
+   "emphasis": false,
+   "line": 16,
+   "index": 11
+  },
+  {
+   "text": "kya",
+   "start": 53.04,
+   "end": 53.28,
+   "emphasis": false,
+   "line": 16,
+   "index": 12
+  },
+  {
+   "text": "hai.",
+   "start": 53.28,
+   "end": 53.4,
+   "emphasis": false,
+   "line": 16,
+   "index": 13
+  },
+  {
+   "text": "Ab",
+   "start": 53.4,
+   "end": 53.62,
+   "emphasis": false,
+   "line": 17,
+   "index": 0
+  },
+  {
+   "text": "science",
+   "start": 53.62,
+   "end": 53.96,
+   "emphasis": false,
+   "line": 17,
+   "index": 1
+  },
+  {
+   "text": "ki",
+   "start": 53.96,
+   "end": 54.08,
+   "emphasis": false,
+   "line": 17,
+   "index": 2
+  },
+  {
+   "text": "baat",
+   "start": 54.08,
+   "end": 54.26,
+   "emphasis": false,
+   "line": 17,
+   "index": 3
+  },
+  {
+   "text": "karte",
+   "start": 54.26,
+   "end": 54.58,
+   "emphasis": false,
+   "line": 17,
+   "index": 4
+  },
+  {
+   "text": "hain.",
+   "start": 54.58,
+   "end": 54.82,
+   "emphasis": false,
+   "line": 17,
+   "index": 5
+  },
+  {
+   "text": "2022",
+   "start": 54.82,
+   "end": 55.34,
+   "emphasis": false,
+   "line": 18,
+   "index": 0
+  },
+  {
+   "text": "mein",
+   "start": 55.34,
+   "end": 55.6,
+   "emphasis": false,
+   "line": 18,
+   "index": 1
+  },
+  {
+   "text": "duniya",
+   "start": 55.6,
+   "end": 55.96,
+   "emphasis": false,
+   "line": 18,
+   "index": 2
+  },
+  {
+   "text": "ke",
+   "start": 55.96,
+   "end": 56.04,
+   "emphasis": false,
+   "line": 18,
+   "index": 3
+  },
+  {
+   "text": "bade",
+   "start": 56.04,
+   "end": 56.32,
+   "emphasis": false,
+   "line": 18,
+   "index": 4
+  },
+  {
+   "text": "medical",
+   "start": 56.32,
+   "end": 56.7,
+   "emphasis": false,
+   "line": 18,
+   "index": 5
+  },
+  {
+   "text": "journal,",
+   "start": 56.7,
+   "end": 57.08,
+   "emphasis": false,
+   "line": 18,
+   "index": 6
+  },
+  {
+   "text": "The",
+   "start": 57.08,
+   "end": 57.14,
+   "emphasis": false,
+   "line": 18,
+   "index": 7
+  },
+  {
+   "text": "Lancet,",
+   "start": 57.14,
+   "end": 57.74,
+   "emphasis": false,
+   "line": 18,
+   "index": 8
+  },
+  {
+   "text": "mein",
+   "start": 57.74,
+   "end": 57.86,
+   "emphasis": false,
+   "line": 18,
+   "index": 9
+  },
+  {
+   "text": "ek",
+   "start": 57.86,
+   "end": 58.14,
+   "emphasis": false,
+   "line": 18,
+   "index": 10
+  },
+  {
+   "text": "badi",
+   "start": 58.14,
+   "end": 58.38,
+   "emphasis": true,
+   "line": 18,
+   "index": 11
+  },
+  {
+   "text": "study",
+   "start": 58.38,
+   "end": 58.62,
+   "emphasis": false,
+   "line": 18,
+   "index": 12
+  },
+  {
+   "text": "aayi.",
+   "start": 58.62,
+   "end": 58.82,
+   "emphasis": false,
+   "line": 18,
+   "index": 13
+  },
+  {
+   "text": "Study",
+   "start": 58.82,
+   "end": 59.36,
+   "emphasis": false,
+   "line": 19,
+   "index": 0
+  },
+  {
+   "text": "ke",
+   "start": 59.36,
+   "end": 59.48,
+   "emphasis": false,
+   "line": 19,
+   "index": 1
+  },
+  {
+   "text": "hisaab",
+   "start": 59.48,
+   "end": 59.84,
+   "emphasis": false,
+   "line": 19,
+   "index": 2
+  },
+  {
+   "text": "se,",
+   "start": 59.84,
+   "end": 60.08,
+   "emphasis": false,
+   "line": 19,
+   "index": 3
+  },
+  {
+   "text": "40",
+   "start": 60.08,
+   "end": 60.46,
+   "emphasis": false,
+   "line": 19,
+   "index": 4
+  },
+  {
+   "text": "saal",
+   "start": 60.46,
+   "end": 60.76,
+   "emphasis": false,
+   "line": 19,
+   "index": 5
+  },
+  {
+   "text": "se",
+   "start": 60.76,
+   "end": 60.86,
+   "emphasis": false,
+   "line": 19,
+   "index": 6
+  },
+  {
+   "text": "upar",
+   "start": 60.86,
+   "end": 61.18,
+   "emphasis": false,
+   "line": 19,
+   "index": 7
+  },
+  {
+   "text": "ke",
+   "start": 61.18,
+   "end": 61.32,
+   "emphasis": false,
+   "line": 19,
+   "index": 8
+  },
+  {
+   "text": "kuch",
+   "start": 61.32,
+   "end": 61.48,
+   "emphasis": false,
+   "line": 19,
+   "index": 9
+  },
+  {
+   "text": "logon",
+   "start": 61.48,
+   "end": 61.88,
+   "emphasis": false,
+   "line": 19,
+   "index": 10
+  },
+  {
+   "text": "ko",
+   "start": 61.88,
+   "end": 62.06,
+   "emphasis": false,
+   "line": 19,
+   "index": 11
+  },
+  {
+   "text": "bahut",
+   "start": 62.06,
+   "end": 62.46,
+   "emphasis": false,
+   "line": 19,
+   "index": 12
+  },
+  {
+   "text": "thodi",
+   "start": 62.46,
+   "end": 62.72,
+   "emphasis": false,
+   "line": 19,
+   "index": 13
+  },
+  {
+   "text": "sharaab",
+   "start": 62.72,
+   "end": 63.06,
+   "emphasis": false,
+   "line": 19,
+   "index": 14
+  },
+  {
+   "text": "se",
+   "start": 63.06,
+   "end": 63.24,
+   "emphasis": false,
+   "line": 19,
+   "index": 15
+  },
+  {
+   "text": "shayad",
+   "start": 63.24,
+   "end": 63.72,
+   "emphasis": true,
+   "line": 19,
+   "index": 16
+  },
+  {
+   "text": "thoda",
+   "start": 63.72,
+   "end": 64.04,
+   "emphasis": false,
+   "line": 19,
+   "index": 17
+  },
+  {
+   "text": "fayda",
+   "start": 64.04,
+   "end": 64.34,
+   "emphasis": false,
+   "line": 19,
+   "index": 18
+  },
+  {
+   "text": "ho",
+   "start": 64.34,
+   "end": 64.46,
+   "emphasis": false,
+   "line": 19,
+   "index": 19
+  },
+  {
+   "text": "sakta",
+   "start": 64.46,
+   "end": 64.76,
+   "emphasis": false,
+   "line": 19,
+   "index": 20
+  },
+  {
+   "text": "hai.",
+   "start": 64.76,
+   "end": 64.84,
+   "emphasis": false,
+   "line": 19,
+   "index": 21
+  },
+  {
+   "text": "Lekin",
+   "start": 64.84,
+   "end": 65.3,
+   "emphasis": false,
+   "line": 20,
+   "index": 0
+  },
+  {
+   "text": "15",
+   "start": 65.3,
+   "end": 65.62,
+   "emphasis": false,
+   "line": 20,
+   "index": 1
+  },
+  {
+   "text": "se",
+   "start": 65.62,
+   "end": 65.8,
+   "emphasis": false,
+   "line": 20,
+   "index": 2
+  },
+  {
+   "text": "39",
+   "start": 65.8,
+   "end": 66.16,
+   "emphasis": false,
+   "line": 20,
+   "index": 3
+  },
+  {
+   "text": "saal",
+   "start": 66.16,
+   "end": 66.54,
+   "emphasis": false,
+   "line": 20,
+   "index": 4
+  },
+  {
+   "text": "ke",
+   "start": 66.54,
+   "end": 66.62,
+   "emphasis": false,
+   "line": 20,
+   "index": 5
+  },
+  {
+   "text": "logon",
+   "start": 66.62,
+   "end": 67.0,
+   "emphasis": false,
+   "line": 20,
+   "index": 6
+  },
+  {
+   "text": "ke",
+   "start": 67.0,
+   "end": 67.12,
+   "emphasis": false,
+   "line": 20,
+   "index": 7
+  },
+  {
+   "text": "liye",
+   "start": 67.12,
+   "end": 67.26,
+   "emphasis": false,
+   "line": 20,
+   "index": 8
+  },
+  {
+   "text": "fayda",
+   "start": 67.26,
+   "end": 67.68,
+   "emphasis": false,
+   "line": 20,
+   "index": 9
+  },
+  {
+   "text": "zero",
+   "start": 67.68,
+   "end": 67.94,
+   "emphasis": true,
+   "line": 20,
+   "index": 10
+  },
+  {
+   "text": "hai.",
+   "start": 67.94,
+   "end": 68.1,
+   "emphasis": false,
+   "line": 20,
+   "index": 11
+  },
+  {
+   "text": "Sirf",
+   "start": 68.1,
+   "end": 68.56,
+   "emphasis": false,
+   "line": 20,
+   "index": 12
+  },
+  {
+   "text": "risk",
+   "start": 68.56,
+   "end": 68.84,
+   "emphasis": false,
+   "line": 20,
+   "index": 13
+  },
+  {
+   "text": "hai.",
+   "start": 68.84,
+   "end": 69.06,
+   "emphasis": false,
+   "line": 20,
+   "index": 14
+  },
+  {
+   "text": "Yaani",
+   "start": 69.06,
+   "end": 69.46,
+   "emphasis": false,
+   "line": 21,
+   "index": 0
+  },
+  {
+   "text": "wahi",
+   "start": 69.46,
+   "end": 69.72,
+   "emphasis": false,
+   "line": 21,
+   "index": 1
+  },
+  {
+   "text": "tarazu,",
+   "start": 69.72,
+   "end": 70.16,
+   "emphasis": false,
+   "line": 21,
+   "index": 2
+  },
+  {
+   "text": "jo",
+   "start": 70.16,
+   "end": 70.26,
+   "emphasis": false,
+   "line": 21,
+   "index": 3
+  },
+  {
+   "text": "Quran",
+   "start": 70.26,
+   "end": 70.7,
+   "emphasis": false,
+   "line": 21,
+   "index": 4
+  },
+  {
+   "text": "ne",
+   "start": 70.7,
+   "end": 70.82,
+   "emphasis": false,
+   "line": 21,
+   "index": 5
+  },
+  {
+   "text": "rakha",
+   "start": 70.82,
+   "end": 71.14,
+   "emphasis": false,
+   "line": 21,
+   "index": 6
+  },
+  {
+   "text": "hai.",
+   "start": 71.14,
+   "end": 71.3,
+   "emphasis": false,
+   "line": 21,
+   "index": 7
+  },
+  {
+   "text": "Fayda",
+   "start": 71.3,
+   "end": 71.8,
+   "emphasis": false,
+   "line": 21,
+   "index": 8
+  },
+  {
+   "text": "hai,",
+   "start": 71.8,
+   "end": 71.94,
+   "emphasis": false,
+   "line": 21,
+   "index": 9
+  },
+  {
+   "text": "par",
+   "start": 71.94,
+   "end": 72.1,
+   "emphasis": false,
+   "line": 21,
+   "index": 10
+  },
+  {
+   "text": "nuksaan",
+   "start": 72.1,
+   "end": 72.5,
+   "emphasis": false,
+   "line": 21,
+   "index": 11
+  },
+  {
+   "text": "bada",
+   "start": 72.5,
+   "end": 72.78,
+   "emphasis": true,
+   "line": 21,
+   "index": 12
+  },
+  {
+   "text": "hai.",
+   "start": 72.78,
+   "end": 72.86,
+   "emphasis": false,
+   "line": 21,
+   "index": 13
+  },
+  {
+   "text": "Pehle",
+   "start": 72.86,
+   "end": 73.24,
+   "emphasis": false,
+   "line": 22,
+   "index": 0
+  },
+  {
+   "text": "fayda",
+   "start": 73.24,
+   "end": 73.62,
+   "emphasis": false,
+   "line": 22,
+   "index": 1
+  },
+  {
+   "text": "gina,",
+   "start": 73.62,
+   "end": 74.02,
+   "emphasis": false,
+   "line": 22,
+   "index": 2
+  },
+  {
+   "text": "phir",
+   "start": 74.06,
+   "end": 74.22,
+   "emphasis": false,
+   "line": 22,
+   "index": 3
+  },
+  {
+   "text": "nuksaan",
+   "start": 74.22,
+   "end": 74.66,
+   "emphasis": false,
+   "line": 22,
+   "index": 4
+  },
+  {
+   "text": "gina,",
+   "start": 74.66,
+   "end": 75.04,
+   "emphasis": false,
+   "line": 22,
+   "index": 5
+  },
+  {
+   "text": "phir",
+   "start": 75.1,
+   "end": 75.26,
+   "emphasis": false,
+   "line": 22,
+   "index": 6
+  },
+  {
+   "text": "faisla",
+   "start": 75.26,
+   "end": 75.66,
+   "emphasis": false,
+   "line": 22,
+   "index": 7
+  },
+  {
+   "text": "kiya.",
+   "start": 75.66,
+   "end": 75.98,
+   "emphasis": false,
+   "line": 22,
+   "index": 8
+  },
+  {
+   "text": "Not",
+   "start": 75.98,
+   "end": 76.24,
+   "emphasis": true,
+   "line": 23,
+   "index": 0
+  },
+  {
+   "text": "a",
+   "start": 76.24,
+   "end": 76.44,
+   "emphasis": true,
+   "line": 23,
+   "index": 1
+  },
+  {
+   "text": "blind",
+   "start": 76.44,
+   "end": 76.62,
+   "emphasis": true,
+   "line": 23,
+   "index": 2
+  },
+  {
+   "text": "order.",
+   "start": 76.62,
+   "end": 77.0,
+   "emphasis": true,
+   "line": 23,
+   "index": 3
+  },
+  {
+   "text": "A",
+   "start": 77.38,
+   "end": 77.58,
+   "emphasis": true,
+   "line": 23,
+   "index": 4
+  },
+  {
+   "text": "balance",
+   "start": 77.58,
+   "end": 77.9,
+   "emphasis": true,
+   "line": 23,
+   "index": 5
+  },
+  {
+   "text": "sheet.",
+   "start": 77.9,
+   "end": 78.24,
+   "emphasis": true,
+   "line": 23,
+   "index": 6
+  },
+  {
+   "text": "Muslims",
+   "start": 78.24,
+   "end": 78.86,
+   "emphasis": false,
+   "line": 24,
+   "index": 0
+  },
+  {
+   "text": "ke",
+   "start": 78.86,
+   "end": 78.92,
+   "emphasis": false,
+   "line": 24,
+   "index": 1
+  },
+  {
+   "text": "baare",
+   "start": 78.92,
+   "end": 79.12,
+   "emphasis": false,
+   "line": 24,
+   "index": 2
+  },
+  {
+   "text": "mein",
+   "start": 79.12,
+   "end": 79.24,
+   "emphasis": false,
+   "line": 24,
+   "index": 3
+  },
+  {
+   "text": "koi",
+   "start": 79.24,
+   "end": 79.46,
+   "emphasis": false,
+   "line": 24,
+   "index": 4
+  },
+  {
+   "text": "bhi",
+   "start": 79.46,
+   "end": 79.54,
+   "emphasis": false,
+   "line": 24,
+   "index": 5
+  },
+  {
+   "text": "sawaal",
+   "start": 79.54,
+   "end": 79.88,
+   "emphasis": false,
+   "line": 24,
+   "index": 6
+  },
+  {
+   "text": "ho,",
+   "start": 79.88,
+   "end": 80.04,
+   "emphasis": false,
+   "line": 24,
+   "index": 7
+  },
+  {
+   "text": "toh",
+   "start": 80.04,
+   "end": 80.18,
+   "emphasis": false,
+   "line": 24,
+   "index": 8
+  },
+  {
+   "text": "comment",
+   "start": 80.18,
+   "end": 80.46,
+   "emphasis": false,
+   "line": 24,
+   "index": 9
+  },
+  {
+   "text": "karo,",
+   "start": 80.46,
+   "end": 80.82,
+   "emphasis": false,
+   "line": 24,
+   "index": 10
+  },
+  {
+   "text": "aur",
+   "start": 80.82,
+   "end": 81.18,
+   "emphasis": false,
+   "line": 24,
+   "index": 11
+  },
+  {
+   "text": "follow",
+   "start": 81.18,
+   "end": 81.4,
+   "emphasis": false,
+   "line": 24,
+   "index": 12
+  },
+  {
+   "text": "karo.",
+   "start": 81.4,
+   "end": 81.64,
+   "emphasis": false,
+   "line": 24,
+   "index": 13
+  }
+ ],
+ "captions": [
+  [
+   {
+    "text": "Sharaab",
+    "start": 0.0,
+    "end": 0.54,
+    "emphasis": false,
+    "line": 1,
+    "index": 0
+   },
+   {
+    "text": "mein",
+    "start": 0.54,
+    "end": 0.68,
+    "emphasis": false,
+    "line": 1,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "fayda",
+    "start": 0.68,
+    "end": 1.08,
+    "emphasis": true,
+    "line": 1,
+    "index": 2
+   },
+   {
+    "text": "hai.",
+    "start": 1.08,
+    "end": 1.22,
+    "emphasis": false,
+    "line": 1,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "Yeh",
+    "start": 1.3,
+    "end": 1.36,
+    "emphasis": false,
+    "line": 1,
+    "index": 4
+   },
+   {
+    "text": "Quran",
+    "start": 1.36,
+    "end": 1.66,
+    "emphasis": false,
+    "line": 1,
+    "index": 5
+   },
+   {
+    "text": "kehta",
+    "start": 1.66,
+    "end": 2.08,
+    "emphasis": false,
+    "line": 1,
+    "index": 6
+   },
+   {
+    "text": "hai.",
+    "start": 2.08,
+    "end": 2.38,
+    "emphasis": false,
+    "line": 1,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "Haan,",
+    "start": 2.38,
+    "end": 2.58,
+    "emphasis": false,
+    "line": 2,
+    "index": 0
+   },
+   {
+    "text": "sahi",
+    "start": 2.58,
+    "end": 2.86,
+    "emphasis": false,
+    "line": 2,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "suna",
+    "start": 2.86,
+    "end": 3.08,
+    "emphasis": false,
+    "line": 2,
+    "index": 2
+   },
+   {
+    "text": "tumne.",
+    "start": 3.08,
+    "end": 3.4,
+    "emphasis": false,
+    "line": 2,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "Quran",
+    "start": 3.46,
+    "end": 3.82,
+    "emphasis": false,
+    "line": 2,
+    "index": 4
+   },
+   {
+    "text": "ki",
+    "start": 3.82,
+    "end": 3.92,
+    "emphasis": false,
+    "line": 2,
+    "index": 5
+   },
+   {
+    "text": "Surah",
+    "start": 3.92,
+    "end": 4.22,
+    "emphasis": false,
+    "line": 2,
+    "index": 6
+   },
+   {
+    "text": "Baqarah,",
+    "start": 4.22,
+    "end": 4.5,
+    "emphasis": false,
+    "line": 2,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "verse",
+    "start": 4.66,
+    "end": 5.06,
+    "emphasis": false,
+    "line": 2,
+    "index": 8
+   },
+   {
+    "text": "219.",
+    "start": 5.18,
+    "end": 5.64,
+    "emphasis": false,
+    "line": 2,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "\"Inmein",
+    "start": 5.64,
+    "end": 6.22,
+    "emphasis": false,
+    "line": 3,
+    "index": 0
+   },
+   {
+    "text": "badi",
+    "start": 6.22,
+    "end": 6.54,
+    "emphasis": false,
+    "line": 3,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "buraai",
+    "start": 6.54,
+    "end": 6.82,
+    "emphasis": false,
+    "line": 3,
+    "index": 2
+   },
+   {
+    "text": "hai,",
+    "start": 6.82,
+    "end": 7.3,
+    "emphasis": false,
+    "line": 3,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "aur",
+    "start": 7.3,
+    "end": 7.4,
+    "emphasis": false,
+    "line": 3,
+    "index": 4
+   },
+   {
+    "text": "logon",
+    "start": 7.4,
+    "end": 7.82,
+    "emphasis": false,
+    "line": 3,
+    "index": 5
+   },
+   {
+    "text": "ke",
+    "start": 7.82,
+    "end": 7.9,
+    "emphasis": false,
+    "line": 3,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "liye",
+    "start": 7.9,
+    "end": 8.04,
+    "emphasis": false,
+    "line": 3,
+    "index": 7
+   },
+   {
+    "text": "kuch",
+    "start": 8.04,
+    "end": 8.22,
+    "emphasis": false,
+    "line": 3,
+    "index": 8
+   },
+   {
+    "text": "fayde",
+    "start": 8.22,
+    "end": 8.64,
+    "emphasis": true,
+    "line": 3,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "bhi",
+    "start": 8.64,
+    "end": 8.74,
+    "emphasis": false,
+    "line": 3,
+    "index": 10
+   },
+   {
+    "text": "hain.\"",
+    "start": 8.74,
+    "end": 9.24,
+    "emphasis": false,
+    "line": 3,
+    "index": 11
+   }
+  ],
+  [
+   {
+    "text": "Aur",
+    "start": 9.24,
+    "end": 9.4,
+    "emphasis": false,
+    "line": 4,
+    "index": 0
+   }
+  ],
+  [
+   {
+    "text": "agli",
+    "start": 9.4,
+    "end": 9.66,
+    "emphasis": false,
+    "line": 4,
+    "index": 1
+   },
+   {
+    "text": "hi",
+    "start": 9.66,
+    "end": 9.78,
+    "emphasis": false,
+    "line": 4,
+    "index": 2
+   },
+   {
+    "text": "line",
+    "start": 9.78,
+    "end": 10.02,
+    "emphasis": false,
+    "line": 4,
+    "index": 3
+   },
+   {
+    "text": "mein:",
+    "start": 10.02,
+    "end": 10.54,
+    "emphasis": false,
+    "line": 4,
+    "index": 4
+   }
+  ],
+  [
+   {
+    "text": "\"Lekin",
+    "start": 10.56,
+    "end": 10.96,
+    "emphasis": false,
+    "line": 4,
+    "index": 5
+   },
+   {
+    "text": "inki",
+    "start": 10.96,
+    "end": 11.26,
+    "emphasis": false,
+    "line": 4,
+    "index": 6
+   },
+   {
+    "text": "buraai,",
+    "start": 11.26,
+    "end": 11.62,
+    "emphasis": false,
+    "line": 4,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "inke",
+    "start": 11.62,
+    "end": 11.96,
+    "emphasis": false,
+    "line": 4,
+    "index": 8
+   },
+   {
+    "text": "fayde",
+    "start": 11.96,
+    "end": 12.34,
+    "emphasis": false,
+    "line": 4,
+    "index": 9
+   },
+   {
+    "text": "se",
+    "start": 12.34,
+    "end": 12.46,
+    "emphasis": false,
+    "line": 4,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "badi",
+    "start": 12.46,
+    "end": 12.72,
+    "emphasis": true,
+    "line": 4,
+    "index": 11
+   },
+   {
+    "text": "hai.\"",
+    "start": 12.72,
+    "end": 13.12,
+    "emphasis": false,
+    "line": 4,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "Toh",
+    "start": 13.12,
+    "end": 13.2,
+    "emphasis": false,
+    "line": 5,
+    "index": 0
+   }
+  ],
+  [
+   {
+    "text": "sawaal",
+    "start": 13.2,
+    "end": 13.62,
+    "emphasis": false,
+    "line": 5,
+    "index": 1
+   },
+   {
+    "text": "yeh",
+    "start": 13.62,
+    "end": 13.72,
+    "emphasis": false,
+    "line": 5,
+    "index": 2
+   },
+   {
+    "text": "banta",
+    "start": 13.72,
+    "end": 14.08,
+    "emphasis": false,
+    "line": 5,
+    "index": 3
+   },
+   {
+    "text": "hai",
+    "start": 14.08,
+    "end": 14.2,
+    "emphasis": false,
+    "line": 5,
+    "index": 4
+   },
+   {
+    "text": "ki",
+    "start": 14.2,
+    "end": 14.32,
+    "emphasis": false,
+    "line": 5,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "jab",
+    "start": 14.32,
+    "end": 14.48,
+    "emphasis": false,
+    "line": 5,
+    "index": 6
+   },
+   {
+    "text": "fayda",
+    "start": 14.48,
+    "end": 14.92,
+    "emphasis": false,
+    "line": 5,
+    "index": 7
+   },
+   {
+    "text": "maan",
+    "start": 14.92,
+    "end": 15.16,
+    "emphasis": false,
+    "line": 5,
+    "index": 8
+   },
+   {
+    "text": "liya,",
+    "start": 15.16,
+    "end": 15.72,
+    "emphasis": false,
+    "line": 5,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "toh",
+    "start": 15.72,
+    "end": 15.86,
+    "emphasis": false,
+    "line": 5,
+    "index": 10
+   },
+   {
+    "text": "phir",
+    "start": 15.86,
+    "end": 16.06,
+    "emphasis": false,
+    "line": 5,
+    "index": 11
+   },
+   {
+    "text": "mana",
+    "start": 16.06,
+    "end": 16.38,
+    "emphasis": false,
+    "line": 5,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "kyun",
+    "start": 16.38,
+    "end": 16.58,
+    "emphasis": false,
+    "line": 5,
+    "index": 13
+   },
+   {
+    "text": "kiya.",
+    "start": 16.58,
+    "end": 16.9,
+    "emphasis": false,
+    "line": 5,
+    "index": 14
+   }
+  ],
+  [
+   {
+    "text": "Iske",
+    "start": 16.9,
+    "end": 17.36,
+    "emphasis": false,
+    "line": 6,
+    "index": 0
+   },
+   {
+    "text": "liye",
+    "start": 17.36,
+    "end": 17.46,
+    "emphasis": false,
+    "line": 6,
+    "index": 1
+   },
+   {
+    "text": "ek",
+    "start": 17.46,
+    "end": 17.68,
+    "emphasis": false,
+    "line": 6,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "tarazu",
+    "start": 17.68,
+    "end": 18.08,
+    "emphasis": false,
+    "line": 6,
+    "index": 3
+   },
+   {
+    "text": "imagine",
+    "start": 18.08,
+    "end": 18.46,
+    "emphasis": false,
+    "line": 6,
+    "index": 4
+   },
+   {
+    "text": "karo.",
+    "start": 18.46,
+    "end": 18.74,
+    "emphasis": false,
+    "line": 6,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "Ek",
+    "start": 18.74,
+    "end": 19.04,
+    "emphasis": false,
+    "line": 7,
+    "index": 0
+   },
+   {
+    "text": "taraf",
+    "start": 19.04,
+    "end": 19.26,
+    "emphasis": false,
+    "line": 7,
+    "index": 1
+   },
+   {
+    "text": "woh",
+    "start": 19.26,
+    "end": 19.44,
+    "emphasis": false,
+    "line": 7,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "fayde",
+    "start": 19.44,
+    "end": 19.78,
+    "emphasis": false,
+    "line": 7,
+    "index": 3
+   },
+   {
+    "text": "rakho,",
+    "start": 19.78,
+    "end": 20.12,
+    "emphasis": false,
+    "line": 7,
+    "index": 4
+   }
+  ],
+  [
+   {
+    "text": "jo",
+    "start": 20.12,
+    "end": 20.34,
+    "emphasis": false,
+    "line": 7,
+    "index": 5
+   },
+   {
+    "text": "purane",
+    "start": 20.34,
+    "end": 20.68,
+    "emphasis": false,
+    "line": 7,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "Islamic",
+    "start": 20.68,
+    "end": 21.18,
+    "emphasis": false,
+    "line": 7,
+    "index": 7
+   },
+   {
+    "text": "scholars",
+    "start": 21.18,
+    "end": 21.68,
+    "emphasis": false,
+    "line": 7,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "ne",
+    "start": 21.68,
+    "end": 21.72,
+    "emphasis": false,
+    "line": 7,
+    "index": 9
+   },
+   {
+    "text": "khud",
+    "start": 21.72,
+    "end": 21.94,
+    "emphasis": false,
+    "line": 7,
+    "index": 10
+   },
+   {
+    "text": "likhe",
+    "start": 21.94,
+    "end": 22.28,
+    "emphasis": false,
+    "line": 7,
+    "index": 11
+   },
+   {
+    "text": "hain.",
+    "start": 22.28,
+    "end": 22.56,
+    "emphasis": false,
+    "line": 7,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "Thodi",
+    "start": 22.56,
+    "end": 22.8,
+    "emphasis": false,
+    "line": 8,
+    "index": 0
+   },
+   {
+    "text": "khushi,",
+    "start": 22.8,
+    "end": 23.52,
+    "emphasis": false,
+    "line": 8,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "thoda",
+    "start": 23.66,
+    "end": 23.96,
+    "emphasis": false,
+    "line": 8,
+    "index": 2
+   },
+   {
+    "text": "maza,",
+    "start": 23.96,
+    "end": 24.44,
+    "emphasis": false,
+    "line": 8,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "aur",
+    "start": 24.56,
+    "end": 24.7,
+    "emphasis": false,
+    "line": 8,
+    "index": 4
+   },
+   {
+    "text": "bechne",
+    "start": 24.7,
+    "end": 25.18,
+    "emphasis": false,
+    "line": 8,
+    "index": 5
+   },
+   {
+    "text": "walon",
+    "start": 25.18,
+    "end": 25.48,
+    "emphasis": false,
+    "line": 8,
+    "index": 6
+   },
+   {
+    "text": "ka",
+    "start": 25.48,
+    "end": 25.52,
+    "emphasis": false,
+    "line": 8,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "profit.",
+    "start": 25.52,
+    "end": 26.3,
+    "emphasis": true,
+    "line": 8,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "Ab",
+    "start": 26.3,
+    "end": 26.44,
+    "emphasis": false,
+    "line": 9,
+    "index": 0
+   },
+   {
+    "text": "doosri",
+    "start": 26.44,
+    "end": 26.86,
+    "emphasis": false,
+    "line": 9,
+    "index": 1
+   },
+   {
+    "text": "taraf",
+    "start": 26.86,
+    "end": 27.1,
+    "emphasis": false,
+    "line": 9,
+    "index": 2
+   },
+   {
+    "text": "ka",
+    "start": 27.1,
+    "end": 27.24,
+    "emphasis": false,
+    "line": 9,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "hisaab",
+    "start": 27.24,
+    "end": 27.48,
+    "emphasis": false,
+    "line": 9,
+    "index": 4
+   },
+   {
+    "text": "dekho,",
+    "start": 27.48,
+    "end": 28.08,
+    "emphasis": false,
+    "line": 9,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "jo",
+    "start": 28.14,
+    "end": 28.3,
+    "emphasis": false,
+    "line": 9,
+    "index": 6
+   },
+   {
+    "text": "aaj",
+    "start": 28.3,
+    "end": 28.62,
+    "emphasis": false,
+    "line": 9,
+    "index": 7
+   },
+   {
+    "text": "World",
+    "start": 28.62,
+    "end": 29.02,
+    "emphasis": false,
+    "line": 9,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "Health",
+    "start": 29.02,
+    "end": 29.4,
+    "emphasis": false,
+    "line": 9,
+    "index": 9
+   },
+   {
+    "text": "Organisation",
+    "start": 29.4,
+    "end": 30.08,
+    "emphasis": false,
+    "line": 9,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "deta",
+    "start": 30.08,
+    "end": 30.42,
+    "emphasis": false,
+    "line": 9,
+    "index": 11
+   },
+   {
+    "text": "hai.",
+    "start": 30.42,
+    "end": 30.78,
+    "emphasis": false,
+    "line": 9,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "Duniya",
+    "start": 30.78,
+    "end": 31.16,
+    "emphasis": false,
+    "line": 10,
+    "index": 0
+   },
+   {
+    "text": "mein",
+    "start": 31.16,
+    "end": 31.24,
+    "emphasis": false,
+    "line": 10,
+    "index": 1
+   },
+   {
+    "text": "har",
+    "start": 31.24,
+    "end": 31.44,
+    "emphasis": false,
+    "line": 10,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "saal",
+    "start": 31.44,
+    "end": 31.7,
+    "emphasis": false,
+    "line": 10,
+    "index": 3
+   },
+   {
+    "text": "lagbhag",
+    "start": 31.7,
+    "end": 32.06,
+    "emphasis": false,
+    "line": 10,
+    "index": 4
+   },
+   {
+    "text": "26",
+    "start": 32.06,
+    "end": 32.42,
+    "emphasis": true,
+    "line": 10,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "lakh",
+    "start": 32.42,
+    "end": 32.72,
+    "emphasis": true,
+    "line": 10,
+    "index": 6
+   },
+   {
+    "text": "log",
+    "start": 32.72,
+    "end": 32.98,
+    "emphasis": false,
+    "line": 10,
+    "index": 7
+   },
+   {
+    "text": "sirf",
+    "start": 32.98,
+    "end": 33.22,
+    "emphasis": false,
+    "line": 10,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "sharaab",
+    "start": 33.22,
+    "end": 33.54,
+    "emphasis": false,
+    "line": 10,
+    "index": 9
+   },
+   {
+    "text": "ki",
+    "start": 33.54,
+    "end": 33.66,
+    "emphasis": false,
+    "line": 10,
+    "index": 10
+   },
+   {
+    "text": "wajah",
+    "start": 33.66,
+    "end": 33.86,
+    "emphasis": false,
+    "line": 10,
+    "index": 11
+   },
+   {
+    "text": "se",
+    "start": 33.86,
+    "end": 34.0,
+    "emphasis": false,
+    "line": 10,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "mar",
+    "start": 34.0,
+    "end": 34.18,
+    "emphasis": false,
+    "line": 10,
+    "index": 13
+   },
+   {
+    "text": "jaate",
+    "start": 34.18,
+    "end": 34.54,
+    "emphasis": false,
+    "line": 10,
+    "index": 14
+   },
+   {
+    "text": "hain.",
+    "start": 34.54,
+    "end": 34.78,
+    "emphasis": false,
+    "line": 10,
+    "index": 15
+   }
+  ],
+  [
+   {
+    "text": "Yaani",
+    "start": 34.78,
+    "end": 35.0,
+    "emphasis": false,
+    "line": 11,
+    "index": 0
+   },
+   {
+    "text": "har",
+    "start": 35.0,
+    "end": 35.26,
+    "emphasis": false,
+    "line": 11,
+    "index": 1
+   },
+   {
+    "text": "roz",
+    "start": 35.26,
+    "end": 35.48,
+    "emphasis": false,
+    "line": 11,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "lagbhag",
+    "start": 35.48,
+    "end": 35.88,
+    "emphasis": false,
+    "line": 11,
+    "index": 3
+   },
+   {
+    "text": "7",
+    "start": 35.88,
+    "end": 36.46,
+    "emphasis": true,
+    "line": 11,
+    "index": 4
+   },
+   {
+    "text": "hazaar",
+    "start": 36.46,
+    "end": 36.46,
+    "emphasis": true,
+    "line": 11,
+    "index": 5
+   },
+   {
+    "text": "log.",
+    "start": 36.46,
+    "end": 36.84,
+    "emphasis": false,
+    "line": 11,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "Lekin",
+    "start": 36.84,
+    "end": 37.18,
+    "emphasis": false,
+    "line": 12,
+    "index": 0
+   },
+   {
+    "text": "dhyaan",
+    "start": 37.18,
+    "end": 37.48,
+    "emphasis": false,
+    "line": 12,
+    "index": 1
+   },
+   {
+    "text": "do,",
+    "start": 37.48,
+    "end": 37.78,
+    "emphasis": false,
+    "line": 12,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "Quran",
+    "start": 37.88,
+    "end": 38.14,
+    "emphasis": false,
+    "line": 12,
+    "index": 3
+   },
+   {
+    "text": "ne",
+    "start": 38.14,
+    "end": 38.3,
+    "emphasis": false,
+    "line": 12,
+    "index": 4
+   },
+   {
+    "text": "mana",
+    "start": 38.3,
+    "end": 38.56,
+    "emphasis": false,
+    "line": 12,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "karte",
+    "start": 38.56,
+    "end": 38.84,
+    "emphasis": false,
+    "line": 12,
+    "index": 6
+   },
+   {
+    "text": "waqt",
+    "start": 38.84,
+    "end": 39.0,
+    "emphasis": false,
+    "line": 12,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "health",
+    "start": 39.0,
+    "end": 39.32,
+    "emphasis": false,
+    "line": 12,
+    "index": 8
+   },
+   {
+    "text": "ki",
+    "start": 39.32,
+    "end": 39.46,
+    "emphasis": false,
+    "line": 12,
+    "index": 9
+   },
+   {
+    "text": "baat",
+    "start": 39.46,
+    "end": 39.76,
+    "emphasis": false,
+    "line": 12,
+    "index": 10
+   },
+   {
+    "text": "ki",
+    "start": 39.76,
+    "end": 40.1,
+    "emphasis": false,
+    "line": 12,
+    "index": 11
+   }
+  ],
+  [
+   {
+    "text": "hi",
+    "start": 40.1,
+    "end": 40.18,
+    "emphasis": false,
+    "line": 12,
+    "index": 12
+   },
+   {
+    "text": "nahi.",
+    "start": 40.18,
+    "end": 40.62,
+    "emphasis": false,
+    "line": 12,
+    "index": 13
+   }
+  ],
+  [
+   {
+    "text": "Usne",
+    "start": 40.62,
+    "end": 40.88,
+    "emphasis": false,
+    "line": 13,
+    "index": 0
+   },
+   {
+    "text": "kaha,",
+    "start": 40.88,
+    "end": 41.32,
+    "emphasis": false,
+    "line": 13,
+    "index": 1
+   }
+  ],
+  [
+   {
+    "text": "isse",
+    "start": 41.4,
+    "end": 41.66,
+    "emphasis": false,
+    "line": 13,
+    "index": 2
+   },
+   {
+    "text": "logon",
+    "start": 41.66,
+    "end": 42.1,
+    "emphasis": false,
+    "line": 13,
+    "index": 3
+   },
+   {
+    "text": "ke",
+    "start": 42.1,
+    "end": 42.18,
+    "emphasis": false,
+    "line": 13,
+    "index": 4
+   }
+  ],
+  [
+   {
+    "text": "beech",
+    "start": 42.18,
+    "end": 42.54,
+    "emphasis": false,
+    "line": 13,
+    "index": 5
+   },
+   {
+    "text": "dushmani",
+    "start": 42.54,
+    "end": 43.08,
+    "emphasis": true,
+    "line": 13,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "aur",
+    "start": 43.08,
+    "end": 43.24,
+    "emphasis": false,
+    "line": 13,
+    "index": 7
+   },
+   {
+    "text": "nafrat",
+    "start": 43.24,
+    "end": 43.6,
+    "emphasis": false,
+    "line": 13,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "badhti",
+    "start": 43.6,
+    "end": 43.96,
+    "emphasis": false,
+    "line": 13,
+    "index": 9
+   },
+   {
+    "text": "hai.",
+    "start": 43.96,
+    "end": 44.24,
+    "emphasis": false,
+    "line": 13,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "Aur",
+    "start": 44.24,
+    "end": 44.4,
+    "emphasis": false,
+    "line": 14,
+    "index": 0
+   },
+   {
+    "text": "insaan",
+    "start": 44.4,
+    "end": 44.74,
+    "emphasis": false,
+    "line": 14,
+    "index": 1
+   },
+   {
+    "text": "Allah",
+    "start": 44.74,
+    "end": 45.12,
+    "emphasis": false,
+    "line": 14,
+    "index": 2
+   },
+   {
+    "text": "ko,",
+    "start": 45.12,
+    "end": 45.48,
+    "emphasis": false,
+    "line": 14,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "namaz",
+    "start": 45.48,
+    "end": 45.9,
+    "emphasis": false,
+    "line": 14,
+    "index": 4
+   },
+   {
+    "text": "ko",
+    "start": 45.9,
+    "end": 46.08,
+    "emphasis": false,
+    "line": 14,
+    "index": 5
+   },
+   {
+    "text": "bhool",
+    "start": 46.08,
+    "end": 46.32,
+    "emphasis": false,
+    "line": 14,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "jaata",
+    "start": 46.32,
+    "end": 46.72,
+    "emphasis": false,
+    "line": 14,
+    "index": 7
+   },
+   {
+    "text": "hai.",
+    "start": 46.72,
+    "end": 46.88,
+    "emphasis": false,
+    "line": 14,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "Ek",
+    "start": 46.88,
+    "end": 47.08,
+    "emphasis": false,
+    "line": 15,
+    "index": 0
+   },
+   {
+    "text": "Muslim",
+    "start": 47.08,
+    "end": 47.46,
+    "emphasis": false,
+    "line": 15,
+    "index": 1
+   },
+   {
+    "text": "ke",
+    "start": 47.46,
+    "end": 47.62,
+    "emphasis": false,
+    "line": 15,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "liye",
+    "start": 47.62,
+    "end": 47.82,
+    "emphasis": false,
+    "line": 15,
+    "index": 3
+   },
+   {
+    "text": "toh",
+    "start": 47.82,
+    "end": 47.94,
+    "emphasis": false,
+    "line": 15,
+    "index": 4
+   },
+   {
+    "text": "yeh",
+    "start": 47.94,
+    "end": 48.04,
+    "emphasis": false,
+    "line": 15,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "Allah",
+    "start": 48.04,
+    "end": 48.36,
+    "emphasis": false,
+    "line": 15,
+    "index": 6
+   },
+   {
+    "text": "ka",
+    "start": 48.36,
+    "end": 48.5,
+    "emphasis": false,
+    "line": 15,
+    "index": 7
+   },
+   {
+    "text": "hukm",
+    "start": 48.5,
+    "end": 48.74,
+    "emphasis": false,
+    "line": 15,
+    "index": 8
+   },
+   {
+    "text": "hai,",
+    "start": 48.74,
+    "end": 48.96,
+    "emphasis": false,
+    "line": 15,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "data",
+    "start": 49.16,
+    "end": 49.48,
+    "emphasis": false,
+    "line": 15,
+    "index": 10
+   },
+   {
+    "text": "ho",
+    "start": 49.48,
+    "end": 49.74,
+    "emphasis": false,
+    "line": 15,
+    "index": 11
+   },
+   {
+    "text": "ya",
+    "start": 49.74,
+    "end": 49.82,
+    "emphasis": false,
+    "line": 15,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "na",
+    "start": 49.82,
+    "end": 49.82,
+    "emphasis": false,
+    "line": 15,
+    "index": 13
+   },
+   {
+    "text": "ho.",
+    "start": 49.82,
+    "end": 50.24,
+    "emphasis": false,
+    "line": 15,
+    "index": 14
+   }
+  ],
+  [
+   {
+    "text": "But",
+    "start": 50.24,
+    "end": 50.36,
+    "emphasis": false,
+    "line": 16,
+    "index": 0
+   },
+   {
+    "text": "data",
+    "start": 50.36,
+    "end": 50.7,
+    "emphasis": false,
+    "line": 16,
+    "index": 1
+   },
+   {
+    "text": "dekh",
+    "start": 50.7,
+    "end": 50.92,
+    "emphasis": false,
+    "line": 16,
+    "index": 2
+   },
+   {
+    "text": "ke",
+    "start": 50.92,
+    "end": 51.06,
+    "emphasis": false,
+    "line": 16,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "koi",
+    "start": 51.06,
+    "end": 51.32,
+    "emphasis": false,
+    "line": 16,
+    "index": 4
+   },
+   {
+    "text": "bhi",
+    "start": 51.32,
+    "end": 51.44,
+    "emphasis": false,
+    "line": 16,
+    "index": 5
+   },
+   {
+    "text": "samajh",
+    "start": 51.44,
+    "end": 51.64,
+    "emphasis": false,
+    "line": 16,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "jayega",
+    "start": 51.64,
+    "end": 52.0,
+    "emphasis": false,
+    "line": 16,
+    "index": 7
+   },
+   {
+    "text": "ki",
+    "start": 52.0,
+    "end": 52.12,
+    "emphasis": false,
+    "line": 16,
+    "index": 8
+   },
+   {
+    "text": "iske",
+    "start": 52.12,
+    "end": 52.4,
+    "emphasis": false,
+    "line": 16,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "peeche",
+    "start": 52.4,
+    "end": 52.68,
+    "emphasis": false,
+    "line": 16,
+    "index": 10
+   },
+   {
+    "text": "logic",
+    "start": 52.68,
+    "end": 53.04,
+    "emphasis": false,
+    "line": 16,
+    "index": 11
+   },
+   {
+    "text": "kya",
+    "start": 53.04,
+    "end": 53.28,
+    "emphasis": false,
+    "line": 16,
+    "index": 12
+   },
+   {
+    "text": "hai.",
+    "start": 53.28,
+    "end": 53.4,
+    "emphasis": false,
+    "line": 16,
+    "index": 13
+   }
+  ],
+  [
+   {
+    "text": "Ab",
+    "start": 53.4,
+    "end": 53.62,
+    "emphasis": false,
+    "line": 17,
+    "index": 0
+   },
+   {
+    "text": "science",
+    "start": 53.62,
+    "end": 53.96,
+    "emphasis": false,
+    "line": 17,
+    "index": 1
+   },
+   {
+    "text": "ki",
+    "start": 53.96,
+    "end": 54.08,
+    "emphasis": false,
+    "line": 17,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "baat",
+    "start": 54.08,
+    "end": 54.26,
+    "emphasis": false,
+    "line": 17,
+    "index": 3
+   },
+   {
+    "text": "karte",
+    "start": 54.26,
+    "end": 54.58,
+    "emphasis": false,
+    "line": 17,
+    "index": 4
+   },
+   {
+    "text": "hain.",
+    "start": 54.58,
+    "end": 54.82,
+    "emphasis": false,
+    "line": 17,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "2022",
+    "start": 54.82,
+    "end": 55.34,
+    "emphasis": false,
+    "line": 18,
+    "index": 0
+   },
+   {
+    "text": "mein",
+    "start": 55.34,
+    "end": 55.6,
+    "emphasis": false,
+    "line": 18,
+    "index": 1
+   },
+   {
+    "text": "duniya",
+    "start": 55.6,
+    "end": 55.96,
+    "emphasis": false,
+    "line": 18,
+    "index": 2
+   },
+   {
+    "text": "ke",
+    "start": 55.96,
+    "end": 56.04,
+    "emphasis": false,
+    "line": 18,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "bade",
+    "start": 56.04,
+    "end": 56.32,
+    "emphasis": false,
+    "line": 18,
+    "index": 4
+   },
+   {
+    "text": "medical",
+    "start": 56.32,
+    "end": 56.7,
+    "emphasis": false,
+    "line": 18,
+    "index": 5
+   },
+   {
+    "text": "journal,",
+    "start": 56.7,
+    "end": 57.08,
+    "emphasis": false,
+    "line": 18,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "The",
+    "start": 57.08,
+    "end": 57.14,
+    "emphasis": false,
+    "line": 18,
+    "index": 7
+   },
+   {
+    "text": "Lancet,",
+    "start": 57.14,
+    "end": 57.74,
+    "emphasis": false,
+    "line": 18,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "mein",
+    "start": 57.74,
+    "end": 57.86,
+    "emphasis": false,
+    "line": 18,
+    "index": 9
+   },
+   {
+    "text": "ek",
+    "start": 57.86,
+    "end": 58.14,
+    "emphasis": false,
+    "line": 18,
+    "index": 10
+   },
+   {
+    "text": "badi",
+    "start": 58.14,
+    "end": 58.38,
+    "emphasis": true,
+    "line": 18,
+    "index": 11
+   }
+  ],
+  [
+   {
+    "text": "study",
+    "start": 58.38,
+    "end": 58.62,
+    "emphasis": false,
+    "line": 18,
+    "index": 12
+   },
+   {
+    "text": "aayi.",
+    "start": 58.62,
+    "end": 58.82,
+    "emphasis": false,
+    "line": 18,
+    "index": 13
+   }
+  ],
+  [
+   {
+    "text": "Study",
+    "start": 58.82,
+    "end": 59.36,
+    "emphasis": false,
+    "line": 19,
+    "index": 0
+   },
+   {
+    "text": "ke",
+    "start": 59.36,
+    "end": 59.48,
+    "emphasis": false,
+    "line": 19,
+    "index": 1
+   },
+   {
+    "text": "hisaab",
+    "start": 59.48,
+    "end": 59.84,
+    "emphasis": false,
+    "line": 19,
+    "index": 2
+   },
+   {
+    "text": "se,",
+    "start": 59.84,
+    "end": 60.08,
+    "emphasis": false,
+    "line": 19,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "40",
+    "start": 60.08,
+    "end": 60.46,
+    "emphasis": false,
+    "line": 19,
+    "index": 4
+   },
+   {
+    "text": "saal",
+    "start": 60.46,
+    "end": 60.76,
+    "emphasis": false,
+    "line": 19,
+    "index": 5
+   },
+   {
+    "text": "se",
+    "start": 60.76,
+    "end": 60.86,
+    "emphasis": false,
+    "line": 19,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "upar",
+    "start": 60.86,
+    "end": 61.18,
+    "emphasis": false,
+    "line": 19,
+    "index": 7
+   },
+   {
+    "text": "ke",
+    "start": 61.18,
+    "end": 61.32,
+    "emphasis": false,
+    "line": 19,
+    "index": 8
+   },
+   {
+    "text": "kuch",
+    "start": 61.32,
+    "end": 61.48,
+    "emphasis": false,
+    "line": 19,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "logon",
+    "start": 61.48,
+    "end": 61.88,
+    "emphasis": false,
+    "line": 19,
+    "index": 10
+   },
+   {
+    "text": "ko",
+    "start": 61.88,
+    "end": 62.06,
+    "emphasis": false,
+    "line": 19,
+    "index": 11
+   },
+   {
+    "text": "bahut",
+    "start": 62.06,
+    "end": 62.46,
+    "emphasis": false,
+    "line": 19,
+    "index": 12
+   }
+  ],
+  [
+   {
+    "text": "thodi",
+    "start": 62.46,
+    "end": 62.72,
+    "emphasis": false,
+    "line": 19,
+    "index": 13
+   },
+   {
+    "text": "sharaab",
+    "start": 62.72,
+    "end": 63.06,
+    "emphasis": false,
+    "line": 19,
+    "index": 14
+   },
+   {
+    "text": "se",
+    "start": 63.06,
+    "end": 63.24,
+    "emphasis": false,
+    "line": 19,
+    "index": 15
+   }
+  ],
+  [
+   {
+    "text": "shayad",
+    "start": 63.24,
+    "end": 63.72,
+    "emphasis": true,
+    "line": 19,
+    "index": 16
+   },
+   {
+    "text": "thoda",
+    "start": 63.72,
+    "end": 64.04,
+    "emphasis": false,
+    "line": 19,
+    "index": 17
+   }
+  ],
+  [
+   {
+    "text": "fayda",
+    "start": 64.04,
+    "end": 64.34,
+    "emphasis": false,
+    "line": 19,
+    "index": 18
+   },
+   {
+    "text": "ho",
+    "start": 64.34,
+    "end": 64.46,
+    "emphasis": false,
+    "line": 19,
+    "index": 19
+   },
+   {
+    "text": "sakta",
+    "start": 64.46,
+    "end": 64.76,
+    "emphasis": false,
+    "line": 19,
+    "index": 20
+   },
+   {
+    "text": "hai.",
+    "start": 64.76,
+    "end": 64.84,
+    "emphasis": false,
+    "line": 19,
+    "index": 21
+   }
+  ],
+  [
+   {
+    "text": "Lekin",
+    "start": 64.84,
+    "end": 65.3,
+    "emphasis": false,
+    "line": 20,
+    "index": 0
+   },
+   {
+    "text": "15",
+    "start": 65.3,
+    "end": 65.62,
+    "emphasis": false,
+    "line": 20,
+    "index": 1
+   },
+   {
+    "text": "se",
+    "start": 65.62,
+    "end": 65.8,
+    "emphasis": false,
+    "line": 20,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "39",
+    "start": 65.8,
+    "end": 66.16,
+    "emphasis": false,
+    "line": 20,
+    "index": 3
+   },
+   {
+    "text": "saal",
+    "start": 66.16,
+    "end": 66.54,
+    "emphasis": false,
+    "line": 20,
+    "index": 4
+   },
+   {
+    "text": "ke",
+    "start": 66.54,
+    "end": 66.62,
+    "emphasis": false,
+    "line": 20,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "logon",
+    "start": 66.62,
+    "end": 67.0,
+    "emphasis": false,
+    "line": 20,
+    "index": 6
+   },
+   {
+    "text": "ke",
+    "start": 67.0,
+    "end": 67.12,
+    "emphasis": false,
+    "line": 20,
+    "index": 7
+   },
+   {
+    "text": "liye",
+    "start": 67.12,
+    "end": 67.26,
+    "emphasis": false,
+    "line": 20,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "fayda",
+    "start": 67.26,
+    "end": 67.68,
+    "emphasis": false,
+    "line": 20,
+    "index": 9
+   },
+   {
+    "text": "zero",
+    "start": 67.68,
+    "end": 67.94,
+    "emphasis": true,
+    "line": 20,
+    "index": 10
+   },
+   {
+    "text": "hai.",
+    "start": 67.94,
+    "end": 68.1,
+    "emphasis": false,
+    "line": 20,
+    "index": 11
+   }
+  ],
+  [
+   {
+    "text": "Sirf",
+    "start": 68.1,
+    "end": 68.56,
+    "emphasis": false,
+    "line": 20,
+    "index": 12
+   },
+   {
+    "text": "risk",
+    "start": 68.56,
+    "end": 68.84,
+    "emphasis": false,
+    "line": 20,
+    "index": 13
+   },
+   {
+    "text": "hai.",
+    "start": 68.84,
+    "end": 69.06,
+    "emphasis": false,
+    "line": 20,
+    "index": 14
+   }
+  ],
+  [
+   {
+    "text": "Yaani",
+    "start": 69.06,
+    "end": 69.46,
+    "emphasis": false,
+    "line": 21,
+    "index": 0
+   },
+   {
+    "text": "wahi",
+    "start": 69.46,
+    "end": 69.72,
+    "emphasis": false,
+    "line": 21,
+    "index": 1
+   },
+   {
+    "text": "tarazu,",
+    "start": 69.72,
+    "end": 70.16,
+    "emphasis": false,
+    "line": 21,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "jo",
+    "start": 70.16,
+    "end": 70.26,
+    "emphasis": false,
+    "line": 21,
+    "index": 3
+   },
+   {
+    "text": "Quran",
+    "start": 70.26,
+    "end": 70.7,
+    "emphasis": false,
+    "line": 21,
+    "index": 4
+   },
+   {
+    "text": "ne",
+    "start": 70.7,
+    "end": 70.82,
+    "emphasis": false,
+    "line": 21,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "rakha",
+    "start": 70.82,
+    "end": 71.14,
+    "emphasis": false,
+    "line": 21,
+    "index": 6
+   },
+   {
+    "text": "hai.",
+    "start": 71.14,
+    "end": 71.3,
+    "emphasis": false,
+    "line": 21,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "Fayda",
+    "start": 71.3,
+    "end": 71.8,
+    "emphasis": false,
+    "line": 21,
+    "index": 8
+   },
+   {
+    "text": "hai,",
+    "start": 71.8,
+    "end": 71.94,
+    "emphasis": false,
+    "line": 21,
+    "index": 9
+   }
+  ],
+  [
+   {
+    "text": "par",
+    "start": 71.94,
+    "end": 72.1,
+    "emphasis": false,
+    "line": 21,
+    "index": 10
+   },
+   {
+    "text": "nuksaan",
+    "start": 72.1,
+    "end": 72.5,
+    "emphasis": false,
+    "line": 21,
+    "index": 11
+   },
+   {
+    "text": "bada",
+    "start": 72.5,
+    "end": 72.78,
+    "emphasis": true,
+    "line": 21,
+    "index": 12
+   },
+   {
+    "text": "hai.",
+    "start": 72.78,
+    "end": 72.86,
+    "emphasis": false,
+    "line": 21,
+    "index": 13
+   }
+  ],
+  [
+   {
+    "text": "Pehle",
+    "start": 72.86,
+    "end": 73.24,
+    "emphasis": false,
+    "line": 22,
+    "index": 0
+   },
+   {
+    "text": "fayda",
+    "start": 73.24,
+    "end": 73.62,
+    "emphasis": false,
+    "line": 22,
+    "index": 1
+   },
+   {
+    "text": "gina,",
+    "start": 73.62,
+    "end": 74.02,
+    "emphasis": false,
+    "line": 22,
+    "index": 2
+   }
+  ],
+  [
+   {
+    "text": "phir",
+    "start": 74.06,
+    "end": 74.22,
+    "emphasis": false,
+    "line": 22,
+    "index": 3
+   },
+   {
+    "text": "nuksaan",
+    "start": 74.22,
+    "end": 74.66,
+    "emphasis": false,
+    "line": 22,
+    "index": 4
+   },
+   {
+    "text": "gina,",
+    "start": 74.66,
+    "end": 75.04,
+    "emphasis": false,
+    "line": 22,
+    "index": 5
+   }
+  ],
+  [
+   {
+    "text": "phir",
+    "start": 75.1,
+    "end": 75.26,
+    "emphasis": false,
+    "line": 22,
+    "index": 6
+   },
+   {
+    "text": "faisla",
+    "start": 75.26,
+    "end": 75.66,
+    "emphasis": false,
+    "line": 22,
+    "index": 7
+   },
+   {
+    "text": "kiya.",
+    "start": 75.66,
+    "end": 75.98,
+    "emphasis": false,
+    "line": 22,
+    "index": 8
+   }
+  ],
+  [
+   {
+    "text": "Not",
+    "start": 75.98,
+    "end": 76.24,
+    "emphasis": true,
+    "line": 23,
+    "index": 0
+   },
+   {
+    "text": "a",
+    "start": 76.24,
+    "end": 76.44,
+    "emphasis": true,
+    "line": 23,
+    "index": 1
+   },
+   {
+    "text": "blind",
+    "start": 76.44,
+    "end": 76.62,
+    "emphasis": true,
+    "line": 23,
+    "index": 2
+   },
+   {
+    "text": "order.",
+    "start": 76.62,
+    "end": 77.0,
+    "emphasis": true,
+    "line": 23,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "A",
+    "start": 77.38,
+    "end": 77.58,
+    "emphasis": true,
+    "line": 23,
+    "index": 4
+   },
+   {
+    "text": "balance",
+    "start": 77.58,
+    "end": 77.9,
+    "emphasis": true,
+    "line": 23,
+    "index": 5
+   },
+   {
+    "text": "sheet.",
+    "start": 77.9,
+    "end": 78.24,
+    "emphasis": true,
+    "line": 23,
+    "index": 6
+   }
+  ],
+  [
+   {
+    "text": "Muslims",
+    "start": 78.24,
+    "end": 78.86,
+    "emphasis": false,
+    "line": 24,
+    "index": 0
+   },
+   {
+    "text": "ke",
+    "start": 78.86,
+    "end": 78.92,
+    "emphasis": false,
+    "line": 24,
+    "index": 1
+   },
+   {
+    "text": "baare",
+    "start": 78.92,
+    "end": 79.12,
+    "emphasis": false,
+    "line": 24,
+    "index": 2
+   },
+   {
+    "text": "mein",
+    "start": 79.12,
+    "end": 79.24,
+    "emphasis": false,
+    "line": 24,
+    "index": 3
+   }
+  ],
+  [
+   {
+    "text": "koi",
+    "start": 79.24,
+    "end": 79.46,
+    "emphasis": false,
+    "line": 24,
+    "index": 4
+   },
+   {
+    "text": "bhi",
+    "start": 79.46,
+    "end": 79.54,
+    "emphasis": false,
+    "line": 24,
+    "index": 5
+   },
+   {
+    "text": "sawaal",
+    "start": 79.54,
+    "end": 79.88,
+    "emphasis": false,
+    "line": 24,
+    "index": 6
+   },
+   {
+    "text": "ho,",
+    "start": 79.88,
+    "end": 80.04,
+    "emphasis": false,
+    "line": 24,
+    "index": 7
+   }
+  ],
+  [
+   {
+    "text": "toh",
+    "start": 80.04,
+    "end": 80.18,
+    "emphasis": false,
+    "line": 24,
+    "index": 8
+   },
+   {
+    "text": "comment",
+    "start": 80.18,
+    "end": 80.46,
+    "emphasis": false,
+    "line": 24,
+    "index": 9
+   },
+   {
+    "text": "karo,",
+    "start": 80.46,
+    "end": 80.82,
+    "emphasis": false,
+    "line": 24,
+    "index": 10
+   }
+  ],
+  [
+   {
+    "text": "aur",
+    "start": 80.82,
+    "end": 81.18,
+    "emphasis": false,
+    "line": 24,
+    "index": 11
+   },
+   {
+    "text": "follow",
+    "start": 81.18,
+    "end": 81.4,
+    "emphasis": false,
+    "line": 24,
+    "index": 12
+   },
+   {
+    "text": "karo.",
+    "start": 81.4,
+    "end": 81.64,
+    "emphasis": false,
+    "line": 24,
+    "index": 13
+   }
+  ]
+ ]
+}

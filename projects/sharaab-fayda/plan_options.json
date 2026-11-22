@@ -1,0 +1,549 @@
+{
+ "title": "Sharaab mein fayda? (faceless, one 3D world, ~83 s)",
+ "lines": [
+  {
+   "line": "Sharaab mein *fayda* hai. Yeh Quran kehta hai.",
+   "section": "hook",
+   "options": [
+    {
+     "layout": "full-screen 3D (faceless)",
+     "visual": "0.0 s: low camera on a dark walnut table; a big brass balance fills the frame, a green glass bottle sits on its left pan, the beam already swinging. 0.6 s 'fayda': a brass weight marked + drops into the left pan, the beam dips, dust lifts in the key light. 1.5 s: hard cut, the camera is overhead, 'Benefit?' set big in serif beside the pan. 2.4 s 'Quran': whip pan right, a 3D Quran (deep green leather, gold geometric border, القرآن الكريم) lands flat on the table beside the scale. 3.3 s: push in on the gold title as the cover starts to open.",
+     "text": "Benefit?",
+     "tag": "",
+     "sound": "sub-hit on frame 0 under the voice, brass clink on the weight, whoosh on the whip, soft book thud",
+     "why": "The whole reel's idea (a scale) is the first picture; the contradiction (alcohol + benefit + Quran) is on screen inside 2.5 s and reads with the sound off."
+    },
+    {
+     "layout": "full-screen 3D (faceless)",
+     "visual": "0.0 s: the 3D Quran already open in close-up, light raking across the page. 0.6 s 'fayda': the word مَنَٰفِعُ lifts off the page in gold. 1.5 s: cut to the bottle on the scale. 2.4 s: back to the book closing to show its cover.",
+     "text": "",
+     "tag": "",
+     "sound": "page turn, clink, book thud",
+     "why": "Starts on the Quran, but the bottle (the surprise) arrives later than 1.5 s."
+    },
+    {
+     "layout": "full-screen 3D (faceless)",
+     "visual": "0.0 s: a bottle spins slowly in a pool of light, 'BENEFIT' written on its label in our type; 1.5 s: the label tears away; 2.4 s: the Quran rises behind it.",
+     "text": "",
+     "tag": "",
+     "sound": "glass ring, paper tear",
+     "why": "Striking, but a 'product shot' of a bottle can look like an alcohol ad."
+    }
+   ]
+  },
+  {
+   "line": "Haan, sahi suna tumne. Quran ki Surah Baqarah, verse 219.",
+   "section": "hook",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "The cover swings open; pages fan past in one fast flip and settle; a small paper tag slides onto the page: Al-Baqarah 2:219.",
+     "text": "Al-Baqarah 2:219",
+     "tag": "",
+     "sound": "page flutter, paper slide on the tag",
+     "why": "The book itself carries the reference; two beats (open, flip) keep the hook moving."
+    },
+    {
+     "layout": "full-screen 3D",
+     "visual": "Camera orbits the closed book while '2:219' writes itself in gold on the table.",
+     "text": "2:219",
+     "tag": "",
+     "sound": "pen scratch",
+     "why": "Calmer, but one beat only."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (Al-Baqarah 2:219) set in serif on the dark wall.",
+     "text": "Al-Baqarah 2:219",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "\"Inmein badi buraai hai, aur logon ke liye kuch *fayde* bhi hain.\"",
+   "section": "ayah",
+   "options": [
+    {
+     "layout": "full-screen 3D book page (Ayah card)",
+     "visual": "Close on the open page: 2:219 words 1–14 in Amiri Quran (fetched). As each half is spoken a hand-drawn ring closes: إِثْمٌ كَبِيرٌ in rust, then مَنَٰفِعُ لِلنَّاسِ in brass. The Sahih International line sits below in serif.",
+     "text": "In them is great sin, and some benefit for people.",
+     "tag": "Quranic text · Al-Baqarah 2:219 · Sahih International",
+     "sound": "pen circle under each ring; bed out (an Ayah on screen)",
+     "why": "The real words on a real page, the two sides of the scale already coloured."
+    },
+    {
+     "layout": "torn paper card over the 3D table",
+     "visual": "The Ayah on a torn paper card floating over the scale.",
+     "text": "",
+     "tag": "Quranic text · 2:219",
+     "sound": "paper slide",
+     "why": "The approved chaand-nur card, but the 3D book is the stronger object here."
+    }
+   ]
+  },
+  {
+   "line": "Aur agli hi line mein: \"Lekin inki buraai, inke fayde se *badi* hai.\"",
+   "section": "ayah",
+   "options": [
+    {
+     "layout": "full-screen 3D book page",
+     "visual": "The camera slides down the page to وَإِثْمُهُمَآ أَكْبَرُ مِن نَّفْعِهِمَا; on 'badi' the word أَكْبَرُ is ringed in rust and a small brass scale drawn in ink on the page margin tips to the harm side.",
+     "text": "But their sin is greater than their benefit.",
+     "tag": "Quranic text · Al-Baqarah 2:219",
+     "sound": "pen circle, soft brass clink on the tip",
+     "why": "The verdict word gets the ring; the ink scale on the page sets up the 3D scale."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (But their sin is greater than their benefit.) set in serif on the dark wall.",
+     "text": "But their sin is greater than their benefit.",
+     "tag": "Quranic text · Al-Baqarah 2:219",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Toh sawaal yeh banta hai ki jab fayda maan liya, toh phir mana kyun kiya.",
+   "section": "question",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "The camera lifts off the book and pulls back over the table: the book on the right, the big scale in the centre, the bottle on its pan. One line lands on the dark wall behind: 'Then why ban it?'",
+     "text": "Then why ban it?",
+     "tag": "",
+     "sound": "low whoosh on the pull back",
+     "why": "The question the whole reel answers, said on the wide shot that shows every player."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (Then why ban it?) set in serif on the dark wall.",
+     "text": "Then why ban it?",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Iske liye ek tarazu imagine karo.",
+   "section": "scale",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "The bottle lifts off; both pans empty and level; the camera dollies to a hero angle of the scale, the beam glinting. Two words in the wall's dark at the pans: Benefit (left), Harm (right).",
+     "text": "Benefit / Harm",
+     "tag": "",
+     "sound": "brass settle, room tone",
+     "why": "Resets the scale so the viewer can watch it fill."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (Benefit / Harm) set in serif on the dark wall.",
+     "text": "Benefit / Harm",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Ek taraf woh fayde rakho, jo purane Islamic scholars ne khud likhe hain.",
+   "section": "scale",
+   "options": [
+    {
+     "layout": "full-screen 3D + real page",
+     "visual": "A sheet from Ibn Kathir's tafsir (quran.com English page, cropped to the benefits sentence) slides across the table under the left pan; the sentence is underlined as spoken.",
+     "text": "",
+     "tag": "Tafsir · Ibn Kathir on 2:219",
+     "sound": "paper slide, pen underline",
+     "why": "A real artifact for 'scholars ne khud likhe'."
+    },
+    {
+     "layout": "full-screen 3D",
+     "visual": "An old book (no title) opens beside the pan.",
+     "text": "Ibn Kathir",
+     "tag": "Tafsir · Ibn Kathir",
+     "sound": "page turn",
+     "why": "Simpler, but a made-up book."
+    }
+   ]
+  },
+  {
+   "line": "Thodi khushi, thoda maza, aur bechne walon ka *profit*.",
+   "section": "scale",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "Three brass weights drop into the left pan on the three words, each with an engraved label: Joy, Pleasure, Profit; on 'profit' a short stack of coins. The beam dips left a little each time.",
+     "text": "Joy · Pleasure · Profit",
+     "tag": "",
+     "sound": "three brass clinks (rotated takes), coin chink on profit",
+     "why": "Three beats, each a real object hitting the scale."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (Joy · Pleasure · Profit) set in serif on the dark wall.",
+     "text": "Joy · Pleasure · Profit",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Ab doosri taraf ka hisaab dekho, jo aaj World Health Organisation deta hai.",
+   "section": "harm",
+   "options": [
+    {
+     "layout": "full-screen 3D + real page",
+     "visual": "The camera swings to the right pan. A printed sheet of WHO's 25 June 2024 news release slides onto the table, cropped to its headline and date (WHO forbids its emblem without written permission, so no logo). Credit line names the source in full.",
+     "text": "World Health Organization",
+     "tag": "Established data · WHO, Global status report on alcohol and health, 2024",
+     "sound": "whoosh on the swing, paper slide",
+     "why": "A real artifact carries the source; the emblem stays off by WHO's rule."
+    },
+    {
+     "layout": "full-screen 3D",
+     "visual": "The organisation's full name typeset large in our sans on the wall, the year below.",
+     "text": "World Health Organization · 2024",
+     "tag": "Established data · WHO",
+     "sound": "tick",
+     "why": "Cleanest; no artifact."
+    }
+   ]
+  },
+  {
+   "line": "Duniya mein har saal lagbhag *26 lakh* log sirf sharaab ki wajah se mar jaate hain.",
+   "section": "harm",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "A heavy iron weight engraved 2.6 million drops into the right pan on '26 lakh'; the beam slams down to the harm side, the left pan's brass weights jump. The number lands big on the wall: 26,00,000 / year.",
+     "text": "26,00,000 deaths a year",
+     "tag": "Established data · WHO, 2019 figures",
+     "sound": "impact on the drop",
+     "why": "The reel's biggest physical moment, on its biggest number."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (26,00,000 deaths a year) set in serif on the dark wall.",
+     "text": "26,00,000 deaths a year",
+     "tag": "Established data · WHO, 2019 figures",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Yaani har roz lagbhag *7 hazaar* log.",
+   "section": "harm",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "A desk calendar on the table flips one day; '≈ 7,000' prints on the page as the camera pushes in.",
+     "text": "≈ 7,000 every day",
+     "tag": "Our arithmetic · 26,00,000 ÷ 365",
+     "sound": "page flip",
+     "why": "Turns a yearly number into a day the viewer can picture."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (≈ 7,000 every day) set in serif on the dark wall.",
+     "text": "≈ 7,000 every day",
+     "tag": "Our arithmetic · 26,00,000 ÷ 365",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Lekin dhyaan do, Quran ne mana karte waqt health ki baat ki hi nahi.",
+   "section": "reason",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "Camera back to the Quran; the pages turn to Al-Ma'idah; a faint word 'Health' on the wall fades out as the page settles.",
+     "text": "",
+     "tag": "",
+     "sound": "page turn",
+     "why": "Moves the viewer from data back to the text."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (none) set in serif on the dark wall.",
+     "text": "",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Usne kaha, isse logon ke beech *dushmani* aur nafrat badhti hai.",
+   "section": "reason",
+   "options": [
+    {
+     "layout": "full-screen 3D book page",
+     "visual": "5:91 on the page (fetched); ٱلْعَدَٰوَةَ وَٱلْبَغْضَآءَ ringed in rust, the meaning beside it.",
+     "text": "enmity and hatred",
+     "tag": "Quranic text · Al-Ma'idah 5:91 · Sahih International",
+     "sound": "pen circle; bed out",
+     "why": "The Quran's own reason, on its own words."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (enmity and hatred) set in serif on the dark wall.",
+     "text": "enmity and hatred",
+     "tag": "Quranic text · Al-Ma'idah 5:91 · Sahih International",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Aur insaan Allah ko, namaz ko bhool jaata hai.",
+   "section": "reason",
+   "options": [
+    {
+     "layout": "full-screen 3D book page",
+     "visual": "Second ring on ذِكْرِ ٱللَّهِ وَعَنِ ٱلصَّلَوٰةِ, the meaning beside it.",
+     "text": "the remembrance of Allah and prayer",
+     "tag": "Quranic text · 5:91",
+     "sound": "pen circle",
+     "why": "Completes the Quran's stated reason."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (the remembrance of Allah and prayer) set in serif on the dark wall.",
+     "text": "the remembrance of Allah and prayer",
+     "tag": "Quranic text · 5:91",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Ek Muslim ke liye toh yeh Allah ka hukm hai, data ho ya na ho.",
+   "section": "bridge",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "The book closes slowly; warm light settles on the gold title; one line on the wall: For a Muslim, it is Allah's command.",
+     "text": "For a Muslim, it is Allah's command.",
+     "tag": "",
+     "sound": "soft book close, room tone only",
+     "why": "Says plainly that the data is not the reason for the ruling."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (For a Muslim, it is Allah's command.) set in serif on the dark wall.",
+     "text": "For a Muslim, it is Allah's command.",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "But data dekh ke koi bhi samajh jayega ki iske peeche logic kya hai.",
+   "section": "bridge",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "Camera rises from the book to the scale, still tipped to harm; the beam catches the light.",
+     "text": "",
+     "tag": "",
+     "sound": "low whoosh",
+     "why": "Hands the viewer back to the logic."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (none) set in serif on the dark wall.",
+     "text": "",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Ab science ki baat karte hain.",
+   "section": "science",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "A printed journal paper slides in from the right across the table.",
+     "text": "",
+     "tag": "",
+     "sound": "paper slide",
+     "why": "Short line, one clean beat."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (none) set in serif on the dark wall.",
+     "text": "",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "2022 mein duniya ke bade medical journal, The Lancet, mein ek *badi* study aayi.",
+   "section": "science",
+   "options": [
+    {
+     "layout": "full-screen 3D + real page",
+     "visual": "The real first page of the GBD 2020 alcohol paper (The Lancet, July 2022, open access CC BY 4.0) lies on the table; camera pushes onto the title and the journal name.",
+     "text": "The Lancet · July 2022",
+     "tag": "Established science · GBD 2020 Alcohol Collaborators, The Lancet 2022 (CC BY 4.0)",
+     "sound": "paper settle, tick",
+     "why": "The real paper, legally reusable, carries the claim."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (The Lancet · July 2022) set in serif on the dark wall.",
+     "text": "The Lancet · July 2022",
+     "tag": "Established science · GBD 2020 Alcohol Collaborators, The Lancet 2022 (CC BY 4.0)",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Study ke hisaab se, 40 saal se upar ke kuch logon ko bahut thodi sharaab se *shayad* thoda fayda ho sakta hai.",
+   "section": "science",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "Back to the scale: a tiny brass weight marked 40+ drops into the benefit pan; the beam barely moves. Word on the wall: maybe.",
+     "text": "40+ · maybe, a little",
+     "tag": "Established science, debated · The Lancet 2022",
+     "sound": "small clink",
+     "why": "The honest nuance made physical: a benefit that hardly moves the beam."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (40+ · maybe, a little) set in serif on the dark wall.",
+     "text": "40+ · maybe, a little",
+     "tag": "Established science, debated · The Lancet 2022",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Lekin 15 se 39 saal ke logon ke liye fayda *zero* hai. Sirf risk hai.",
+   "section": "science",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "Hard cut: the benefit pan empties; a big 0 lands over it; the harm pan stays down.",
+     "text": "Ages 15–39 · 0 benefit",
+     "tag": "Established science · The Lancet 2022",
+     "sound": "sub-hit on 0",
+     "why": "The age the audience is; the number is the hit."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (Ages 15–39 · 0 benefit) set in serif on the dark wall.",
+     "text": "Ages 15–39 · 0 benefit",
+     "tag": "Established science · The Lancet 2022",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Yaani wahi tarazu, jo Quran ne rakha tha. Fayda hai, par nuksaan *bada* hai.",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "Wide: the Quran open beside the scale; the small ink scale from the page and the brass scale tip together to the same side.",
+     "text": "",
+     "tag": "",
+     "sound": "brass clink",
+     "why": "Ties the hook's verse to the data: one image of the reel's idea."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (none) set in serif on the dark wall.",
+     "text": "",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Pehle fayda gina, phir nuksaan gina, phir faisla kiya.",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "Three beats: light on the benefit pan, light on the harm pan, then the bottle lifted off the table out of frame.",
+     "text": "",
+     "tag": "",
+     "sound": "bed pulls out before the next line",
+     "why": "Counted, weighed, decided: three pictures for three verbs."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (none) set in serif on the dark wall.",
+     "text": "",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "*Not a blind order. A balance sheet.*",
+   "section": "payoff",
+   "options": [
+    {
+     "layout": "full-screen 3D",
+     "visual": "Near silence. The scale alone, still, centred; the line set big in serif on the wall and held 2 s.",
+     "text": "Not a blind order. A balance sheet.",
+     "tag": "",
+     "sound": "silence, room tone only",
+     "why": "The quotable last line lands in the quiet beat."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (Not a blind order. A balance sheet.) set in serif on the dark wall.",
+     "text": "Not a blind order. A balance sheet.",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  },
+  {
+   "line": "Muslims ke baare mein koi bhi sawaal ho, toh comment karo, aur follow karo.",
+   "section": "cta",
+   "options": [
+    {
+     "layout": "end card over the 3D table",
+     "visual": "Comment ask with the comment icon, then the Follow animation with real Instagram and Facebook icons.",
+     "text": "What should we answer next?",
+     "tag": "",
+     "sound": "soft tick on the tap and the heart",
+     "why": "QUALITY §2a CTA; the comment question invites the next 'why' topic."
+    },
+    {
+     "layout": "full-screen 3D, calmer",
+     "visual": "Same beat with no new object: the camera drifts slowly over the scale or the book and the key words (What should we answer next?) set in serif on the dark wall.",
+     "text": "What should we answer next?",
+     "tag": "",
+     "sound": "room tone, one soft tick",
+     "why": "Quieter and cheaper to build, but fewer visible changes (QUALITY §2 wants one every 2-4 s)."
+    }
+   ]
+  }
+ ]
+}
