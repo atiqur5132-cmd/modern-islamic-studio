@@ -69,6 +69,7 @@ import a41_12 from "./41-12.json";
 import a41_9 from "./41-9.json";
 import a43_83 from "./43-83.json";
 import a49_14 from "./49-14.json";
+import a5_3 from "./5-3.json";
 import a5_90 from "./5-90.json";
 import a5_91 from "./5-91.json";
 import a50_38 from "./50-38.json";
@@ -182,6 +183,7 @@ export const AYAHS = {
   [a41_9.key]: a41_9,
   [a43_83.key]: a43_83,
   [a49_14.key]: a49_14,
+  [a5_3.key]: a5_3,
   [a5_90.key]: a5_90,
   [a5_91.key]: a5_91,
   [a50_38.key]: a50_38,

@@ -1,0 +1,9 @@
+{
+  "key": "5:3",
+  "surahNameEnglish": "Al-Maaida",
+  "textUthmani": "حُرِّمَتْ عَلَيْكُمُ ٱلْمَيْتَةُ وَٱلدَّمُ",
+  "source": "api.quran.com v4, text_uthmani",
+  "crossCheckedWith": "api.alquran.cloud quran-uthmani",
+  "fetchedOn": "2026-11-24",
+  "excerptWords": "1-4"
+}

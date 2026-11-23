@@ -81,7 +81,7 @@ def search(query, kind):
                 (out_dir / f"{number:02d}.jpg").write_bytes(response.read())
 
 
-def fetch(title, name, project):
+def fetch(title, name, project, wide=False):
     page = next(iter(file_info({"titles": title})["query"]["pages"].values()))
     item = describe(page)
     if not licence_ok(item["licence"]):
@@ -104,6 +104,9 @@ def fetch(title, name, project):
         output = footage / f"broll-{name}.jpg"
         command = ["-vf", "scale=1300:2310:force_original_aspect_ratio=increase,crop=1300:2310",
                    "-q:v", "3"]
+        if wide:
+            # 16:9 long form: the whole picture, uncropped, at most 2400 px wide.
+            command = ["-vf", "scale='min(2400,iw)':-2", "-q:v", "3"]
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw), *command, str(output)],
                    check=True)
     raw.unlink()
@@ -129,11 +132,12 @@ def main():
     take.add_argument("title")
     take.add_argument("--name", required=True)
     take.add_argument("--project", required=True)
+    take.add_argument("--wide", action="store_true", help="keep the whole picture (16:9 long form), no 9:16 crop")
     args = parser.parse_args()
     if args.command == "search":
         search(args.query, args.kind)
     else:
-        fetch(args.title, args.name, args.project)
+        fetch(args.title, args.name, args.project, args.wide)
 
 
 if __name__ == "__main__":

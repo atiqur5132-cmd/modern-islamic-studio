@@ -26,3 +26,6 @@ references/**/*.webp
 # Licensed music tracks (Pixabay licence: no redistribution of the files on their own)
 projects/**/music/
 public/music/
+
+# Raw takes and Audio Library music: never committed (CLAUDE.md, LONG_FORM_HI.md)
+Raw footages/

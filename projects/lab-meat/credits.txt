@@ -1,0 +1,22 @@
+broll-lab-upside.jpg: "UPSIDE Foods — the world's first FDA Approval of Cultivated Meat (52504910490).jpg" by Steve Jurvetson from Los Altos, USA, CC BY 2.0, https://commons.wikimedia.org/wiki/File:UPSIDE_Foods_%E2%80%94_the_world%27s_first_FDA_Approval_of_Cultivated_Meat_(52504910490).jpg
+broll-lab-goodmeat-dish.jpg: "Good Meat Cultivated Chicken pasta dish.jpg" by Jpatokal, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Good_Meat_Cultivated_Chicken_pasta_dish.jpg
+broll-lab-burger-fried.jpg: "First cultured hamburger fried.png" by World Economic Forum, CC BY 3.0, https://commons.wikimedia.org/wiki/File:First_cultured_hamburger_fried.png
+broll-lab-burger-raw.jpg: "First cultured hamburger unfried.png" by World Economic Forum, CC BY 3.0, https://commons.wikimedia.org/wiki/File:First_cultured_hamburger_unfried.png
+broll-lab-markpost.jpg: "Mark Post with Maastricht Burger.jpg" by Mosa Meat, CC BY 4.0, https://commons.wikimedia.org/wiki/File:Mark_Post_with_Maastricht_Burger.jpg
+broll-lab-tasting.jpg: "Hanni Rützler tastes world's first cultured hamburger.png" by World Economic Forum, CC BY 3.0, https://commons.wikimedia.org/wiki/File:Hanni_R%C3%BCtzler_tastes_world%27s_first_cultured_hamburger.png
+broll-lab-hen.jpg: "Portrait of a Hen (Unsplash).jpg" by Stephen Mierendorf schmirk, CC0, https://commons.wikimedia.org/wiki/File:Portrait_of_a_Hen_(Unsplash).jpg
+broll-lab-goat.jpg: "Domestic Goat Portrait (aka).jpg" by André Karwath aka Aka, CC BY-SA 2.5, https://commons.wikimedia.org/wiki/File:Domestic_Goat_Portrait_(aka).jpg
+broll-lab-cow.jpg: "Cows grazing at the Korosica pasture 02.jpg" by Ajznponar, CC0, https://commons.wikimedia.org/wiki/File:Cows_grazing_at_the_Korosica_pasture_02.jpg
+broll-lab-pig.jpg: "Cochon domestique (Sus scrofa domesticus) (2).jpg" by Gzen92, CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(2).jpg
+broll-lab-camel.jpg: "Dromedary Arabian camel (8455362102).jpg" by shankar s. from Dubai, united arab emirates, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Dromedary_Arabian_camel_(8455362102).jpg
+broll-lab-sheep.jpg: "Fat tailed sheep, Afghanistan, 1976.jpg" by Ian Alexander, CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Fat_tailed_sheep,_Afghanistan,_1976.jpg
+broll-lab-steak.jpg: "Assembly of fibrous muscle, fat, and vascular tissues to cultured steak.webp" by Authors of the study: Dong-Hee Kang, Fiona Louis, Hao Liu, Hiroshi Shimoda, Yasutaka Nishiyama, Hajime Nozawa, Makoto Kakitani, Daisuke Takagi, Daijiro Kasa, Eiji Nagamori, Shinji Irie, Shiro Kitano &amp; Michiya Matsusaki, CC BY 4.0, https://commons.wikimedia.org/wiki/File:Assembly_of_fibrous_muscle,_fat,_and_vascular_tissues_to_cultured_steak.webp
+
+Documents quoted on screen (typeset, verbatim):
+MUIS, "Fatwa on cultivated meat", media release, 3 Feb 2024, https://www.muis.gov.sg/resources/media-releases/3-feb-24-fatwa-on-cultivated-meat/
+International Islamic Fiqh Academy, Resolution No. 265 (10/26), Doha, 4-8 May 2025, posted 20 Nov 2025, https://iifa-aifi.org/en/56085.html
+Jami` at-Tirmidhi 1480, Hasan (Darussalam), https://sunnah.com/tirmidhi:1480
+Quran 5:3 (opening words), text via api.quran.com; translation: Sahih International
+Other sources named on screen: NPR 5 Aug 2013; Al Jazeera 2 Dec 2020; Good Food Institute tracker; Food Navigator 21 May 2024 and 12 Feb 2024; Hamdan et al., Heliyon 2024 (PMC11004531); FoodBev 17 Dec 2025; Green Queen; Genetic Literacy Project 26 Mar 2025; Fortune 31 May 2024; UPSIDE Foods / New Food 17 Nov 2026; Kang et al., Nature Communications 2021 (s41467-021-25236-9).
+Earth texture: NASA Earth Observatory, Blue Marble Next Generation (public domain).
+HDRI: Poly Haven, Monochrome Studio 02, Grzegorz Wronkowski, CC0.
